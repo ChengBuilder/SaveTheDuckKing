@@ -19,7 +19,7 @@ System.register('chunks:///_virtual/TooYueManager.ts', [], function (e) {
         return (
           (t.initTooYue = function () {}),
           (t.loginTooYue = function () {
-            return Promise.resolve(null);
+            return Promise.resolve({ userTags: [], shortId: '', shareUserCount: 50 });
           }),
           (t.showVideoAd = function (e, t, n) {
             return (t && t({ isEnded: !0 }), Promise.resolve({ isEnded: !0 }));
@@ -101,7 +101,7 @@ System.register('chunks:///_virtual/TooYueManager.ts', [], function (e) {
       })();
       ((t._instance = new t()),
         (t.shortId = ''),
-        (t.userMsg = null),
+        (t.userMsg = { userTags: [], shortId: '', shareUserCount: 50 }),
         (t.subscribeMessage = !1),
         (t.feedSubscribeStatus = !1),
         (t.startGameScene = null),
