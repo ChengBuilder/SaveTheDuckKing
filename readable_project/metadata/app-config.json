@@ -1,0 +1,46 @@
+{
+  "deviceOrientation": "portrait",
+  "networkTimeout": {
+    "request": 5000,
+    "connectSocket": 5000,
+    "uploadFile": 5000,
+    "downloadFile": 500000
+  },
+  "iOSHighPerformance": true,
+  "iOSHighPerformance+": true,
+  "__warning__": "无效的 game.json [\"iOSHighPerformance\"]、game.json [\"iOSHighPerformance+\"]",
+  "subPackages": [
+    {
+      "name": "resources",
+      "root": "subpackages/resources/"
+    },
+    {
+      "name": "main",
+      "root": "subpackages/main/"
+    },
+    {
+      "name": "aniBundle",
+      "root": "subpackages/aniBundle/"
+    },
+    {
+      "name": "audioBundle",
+      "root": "subpackages/audioBundle/"
+    },
+    {
+      "name": "DuckBundle",
+      "root": "subpackages/DuckBundle/"
+    },
+    {
+      "name": "Game2Bundle",
+      "root": "subpackages/Game2Bundle/"
+    },
+    {
+      "name": "HomeBundle",
+      "root": "subpackages/HomeBundle/"
+    },
+    {
+      "name": "uiBundle",
+      "root": "subpackages/uiBundle/"
+    }
+  ]
+}

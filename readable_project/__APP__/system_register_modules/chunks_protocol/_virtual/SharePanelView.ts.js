@@ -1,0 +1,271 @@
+/**
+ * Extracted from game.js.
+ * Parent define module: assets/start-scene/index.b370a.js
+ * System.register("chunks:///_virtual/SharePanelView.ts")
+ */
+
+System.register(
+  'chunks:///_virtual/SharePanelView.ts',
+  [
+    './rollupPluginModLoBabelHelpers.js',
+    'cc',
+    './AudioManager.ts',
+    './GameModel2.ts',
+    './ResManager.ts',
+    './GameCtrl.ts',
+    './ReceivePanelView.ts',
+    './ConfigTable.ts',
+    './TooYueManager.ts'
+  ],
+  function (e) {
+    var t, n, i, o, r, a, s, l, c, u, d, h, p, f, g, m, v, y, _, b, S, C, w, N, k, T;
+    return {
+      setters: [
+        function (e) {
+          ((t = e.applyDecoratedDescriptor),
+            (n = e.inheritsLoose),
+            (i = e.initializerDefineProperty),
+            (o = e.assertThisInitialized));
+        },
+        function (e) {
+          ((r = e.cclegacy),
+            (a = e._decorator),
+            (s = e.Node),
+            (l = e.Button),
+            (c = e.SpriteFrame),
+            (u = e.tween),
+            (d = e.UIOpacity),
+            (h = e.v3),
+            (p = e.assetManager),
+            (f = e.Prefab),
+            (g = e.Label),
+            (m = e.instantiate),
+            (v = e.find),
+            (y = e.director),
+            (_ = e.Component));
+        },
+        function (e) {
+          b = e.AudioManager;
+        },
+        function (e) {
+          S = e.GameModel;
+        },
+        function (e) {
+          C = e.ResManager;
+        },
+        function (e) {
+          w = e.GameCtrl;
+        },
+        function (e) {
+          N = e.ReceivePanelView;
+        },
+        function (e) {
+          k = e.UIConfigTable;
+        },
+        function (e) {
+          T = e.TooYueManager;
+        }
+      ],
+      execute: function () {
+        var B, A, P, M, I, F, R, L, x, D, G, E, O, H, V, U, z;
+        r._RF.push({}, '85037TXT4xPbYTPd529+wy0', 'SharePanelView', void 0);
+        var W = a.ccclass,
+          j = a.property;
+        (e(
+          'SharePanelView',
+          ((B = W('SharePanelView')),
+          (A = j(s)),
+          (P = j(s)),
+          (M = j(l)),
+          (I = j(l)),
+          (F = j(s)),
+          (R = j(s)),
+          (L = j([c])),
+          B(
+            ((G = t(
+              (D = (function (e) {
+                function t() {
+                  for (var t, n = arguments.length, r = new Array(n), a = 0; a < n; a++)
+                    r[a] = arguments[a];
+                  return (
+                    (t = e.call.apply(e, [this].concat(r)) || this),
+                    i(t, 'black', G, o(t)),
+                    i(t, 'panel', E, o(t)),
+                    i(t, 'closeBtn', O, o(t)),
+                    i(t, 'shareBtn', H, o(t)),
+                    i(t, 'wordSpr', V, o(t)),
+                    i(t, 'wordLabel', U, o(t)),
+                    i(t, 'wordSpriteFrame', z, o(t)),
+                    (t.model = null),
+                    t
+                  );
+                }
+                n(t, e);
+                var r = t.prototype;
+                return (
+                  (r.onLoad = function () {
+                    (this.initPanel(), this.setPanel());
+                  }),
+                  (r.start = function () {
+                    (u(this.black.getComponent(d)).to(0.1, { opacity: 220 }).start(),
+                      u(this.panel)
+                        .delay(0.1)
+                        .to(0.3, { position: h(0, 0, 0) }, { easing: 'backOut' })
+                        .call(function () {
+                          w.instance.btnCanTouch = !0;
+                        })
+                        .start());
+                  }),
+                  (r.onEnable = function () {
+                    this.registerEvents();
+                  }),
+                  (r.onDisable = function () {
+                    (this.unregisterEvents(), p.getBundle('uiBundle').release(k.ShareUI.path, f));
+                  }),
+                  (r.initPanel = function () {
+                    ((this.black.getComponent(d).opacity = 0),
+                      this.panel.setPosition(0, S.instance.screenHeight),
+                      this.panel.setScale(1, 1, 1));
+                  }),
+                  (r.setPanel = function () {
+                    this.wordLabel.getComponent(g).string =
+                      '今日剩余次数(' + S.instance.shareSuccessNum + '/' + T._ins.shareGift + ')';
+                  }),
+                  (r.registerEvents = function () {
+                    (this.shareBtn.node.on('click', this.onShare, this),
+                      this.closeBtn.node.on('click', this.onClose, this));
+                  }),
+                  (r.unregisterEvents = function () {
+                    (this.shareBtn.node.off('click', this.onShare, this),
+                      this.closeBtn.node.off('click', this.onClose, this));
+                  }),
+                  (r.onClose = function () {
+                    var e = this;
+                    w.instance.btnCanTouch &&
+                      ((w.instance.btnCanTouch = !1),
+                      b.instance.playSound('click'),
+                      u(this.panel)
+                        .to(
+                          0.3,
+                          { position: h(0, S.instance.screenHeight, 0) },
+                          { easing: 'backIn' }
+                        )
+                        .start(),
+                      u(this.black.getComponent(d))
+                        .delay(0.3)
+                        .to(0.1, { opacity: 0 })
+                        .call(function () {
+                          (e.node.destroy(), (w.instance.btnCanTouch = !0));
+                        })
+                        .start());
+                  }),
+                  (r.onShare = function () {
+                    var e = this;
+                    w.instance.btnCanTouch &&
+                      ((this.shareBtn.interactable = !1),
+                      (w.instance.btnCanTouch = !1),
+                      b.instance.playSound('click'),
+                      u(this.panel)
+                        .to(
+                          0.3,
+                          { position: h(0, S.instance.screenHeight, 0) },
+                          { easing: 'backIn' }
+                        )
+                        .start(),
+                      u(this.black.getComponent(d))
+                        .delay(0.3)
+                        .to(0.1, { opacity: 0 })
+                        .call(function () {
+                          e.node.destroy();
+                        })
+                        .start(),
+                      T._ins.shareApp(!1, null, this.shareFinishBack, this.shareErrBack));
+                  }),
+                  (r.shareFinishBack = function () {
+                    S.instance.shareSuccessNum < T._ins.shareGift
+                      ? C.instance.bundleLoad('uiBundle', k.ReceiveUI.path, null, function (e, t) {
+                          if (e) return (console.log(e), void (w.instance.btnCanTouch = !0));
+                          var n = m(t);
+                          ((n.parent = v('Canvas')),
+                            n.getComponent(N).setPanel(2),
+                            (S.instance.shareSuccessNum += 1),
+                            'HomeScene' == y.getScene().name
+                              ? S.instance.shareSuccessNum == T._ins.shareGift &&
+                                (v('Canvas/shareBtn/shareTips').active = !1)
+                              : y.getScene().name);
+                        })
+                      : (w.instance.btnCanTouch = !0);
+                  }),
+                  (r.shareErrBack = function () {
+                    w.instance.btnCanTouch = !0;
+                  }),
+                  t
+                );
+              })(_)).prototype,
+              'black',
+              [A],
+              {
+                configurable: !0,
+                enumerable: !0,
+                writable: !0,
+                initializer: function () {
+                  return null;
+                }
+              }
+            )),
+            (E = t(D.prototype, 'panel', [P], {
+              configurable: !0,
+              enumerable: !0,
+              writable: !0,
+              initializer: function () {
+                return null;
+              }
+            })),
+            (O = t(D.prototype, 'closeBtn', [M], {
+              configurable: !0,
+              enumerable: !0,
+              writable: !0,
+              initializer: function () {
+                return null;
+              }
+            })),
+            (H = t(D.prototype, 'shareBtn', [I], {
+              configurable: !0,
+              enumerable: !0,
+              writable: !0,
+              initializer: function () {
+                return null;
+              }
+            })),
+            (V = t(D.prototype, 'wordSpr', [F], {
+              configurable: !0,
+              enumerable: !0,
+              writable: !0,
+              initializer: function () {
+                return null;
+              }
+            })),
+            (U = t(D.prototype, 'wordLabel', [R], {
+              configurable: !0,
+              enumerable: !0,
+              writable: !0,
+              initializer: function () {
+                return null;
+              }
+            })),
+            (z = t(D.prototype, 'wordSpriteFrame', [L], {
+              configurable: !0,
+              enumerable: !0,
+              writable: !0,
+              initializer: function () {
+                return [];
+              }
+            })),
+            (x = D))
+          ) || x)
+        ),
+          r._RF.pop());
+      }
+    };
+  }
+);

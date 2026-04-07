@@ -1,0 +1,16 @@
+{
+  "bundleFile": "subpackages/main/game.js",
+  "outputDir": "subpackages/main",
+  "defineModuleCount": 1,
+  "systemRegisterModuleCount": 1,
+  "modules": [
+    {
+      "id": "subpackages/main/game.js",
+      "outputFile": "define_modules/subpackages/main/game.js",
+      "systemRegisterModuleCount": 1,
+      "systemRegisterFiles": [
+        "system_register_modules/chunks_protocol/_virtual/main.js"
+      ]
+    }
+  ]
+}

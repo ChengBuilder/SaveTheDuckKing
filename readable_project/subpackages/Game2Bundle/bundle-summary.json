@@ -1,0 +1,17 @@
+{
+  "bundleFile": "subpackages/Game2Bundle/game.js",
+  "outputDir": "subpackages/Game2Bundle",
+  "defineModuleCount": 1,
+  "systemRegisterModuleCount": 2,
+  "modules": [
+    {
+      "id": "subpackages/Game2Bundle/game.js",
+      "outputFile": "define_modules/subpackages/Game2Bundle/game.js",
+      "systemRegisterModuleCount": 2,
+      "systemRegisterFiles": [
+        "system_register_modules/chunks_protocol/_virtual/fruit2.ts.js",
+        "system_register_modules/chunks_protocol/_virtual/Game2Bundle.js"
+      ]
+    }
+  ]
+}

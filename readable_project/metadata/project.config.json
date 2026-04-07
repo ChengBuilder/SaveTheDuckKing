@@ -1,0 +1,22 @@
+{
+  "description": "Assembled runnable WeChat mini game project from exported wxapkg artifacts.",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true,
+    "postcss": false,
+    "minified": true,
+    "ignoreUploadUnusedFiles": true,
+    "compileHotReLoad": false
+  },
+  "compileType": "game",
+  "libVersion": "3.15.1",
+  "appid": "wxf5df710b4d8b61af",
+  "projectname": "duck_game_wxf5df710b4d8b61af",
+  "simulatorType": "game",
+  "condition": {},
+  "isGameTourist": true
+}

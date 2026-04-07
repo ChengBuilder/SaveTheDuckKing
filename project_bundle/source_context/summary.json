@@ -1,0 +1,1005 @@
+{
+  "appid": "wx244b1cb66c8ac4b4",
+  "source": "/Users/mac/Library/Containers/com.tencent.xinWeChat/Data/Documents/app_data/radium/users/1259216a2b497704dda1a52bb7a2c5f6/applet/packages/wx244b1cb66c8ac4b4/11",
+  "output": "/Users/mac/PyCharmMiscProject/huirong_feature/data/wechat_unpack/wx244b1cb66c8ac4b4/11",
+  "generatedAt": "2026-04-07T07:54:22.307Z",
+  "packages": [
+    {
+      "packageName": "__APP__",
+      "sourceFile": "/Users/mac/Library/Containers/com.tencent.xinWeChat/Data/Documents/app_data/radium/users/1259216a2b497704dda1a52bb7a2c5f6/applet/packages/wx244b1cb66c8ac4b4/11/__APP__.wxapkg",
+      "rawCopy": "/Users/mac/PyCharmMiscProject/huirong_feature/data/wechat_unpack/wx244b1cb66c8ac4b4/11/raw/__APP__.wxapkg",
+      "decryptedFile": "/Users/mac/PyCharmMiscProject/huirong_feature/data/wechat_unpack/wx244b1cb66c8ac4b4/11/decrypted/__APP__.decrypted.wxapkg",
+      "unpackedDir": "/Users/mac/PyCharmMiscProject/huirong_feature/data/wechat_unpack/wx244b1cb66c8ac4b4/11/unpacked_by_pkg/__APP__",
+      "encrypted": true,
+      "header": {
+        "firstMark": 190,
+        "unknownInfo": 0,
+        "infoListLength": 589,
+        "dataLength": 3286186,
+        "lastMark": 237,
+        "fileCount": 11
+      },
+      "previewFiles": [
+        {
+          "name": "/assets/internal/config.e60ba.json",
+          "offset": 603,
+          "size": 1932
+        },
+        {
+          "name": "/assets/internal/import/0c/0ca60d3e4.ea248.json",
+          "offset": 2535,
+          "size": 101460
+        },
+        {
+          "name": "/assets/start-scene/config.b370a.json",
+          "offset": 103995,
+          "size": 1124
+        },
+        {
+          "name": "/assets/start-scene/import/0c/0cd5fa212.c4590.json",
+          "offset": 105119,
+          "size": 8676
+        },
+        {
+          "name": "/assets/start-scene/native/14/14a6befbc.f5f92.png",
+          "offset": 113795,
+          "size": 38373
+        },
+        {
+          "name": "/assets/start-scene/native/dc/dcf4a19a-368c-405f-b6e3-d8e9a729a4da.30c62.jpg",
+          "offset": 152168,
+          "size": 17147
+        },
+        {
+          "name": "/assets/start-scene/native/e8/e89a716c-d5b8-4c6b-a418-a3425054af82.a0fe4.png",
+          "offset": 169315,
+          "size": 23991
+        },
+        {
+          "name": "/cocos-js/assets/spine-CC34fKUR.wasm",
+          "offset": 193306,
+          "size": 205175
+        },
+        {
+          "name": "/src/settings.28e9d.json",
+          "offset": 398481,
+          "size": 3560
+        },
+        {
+          "name": "/game.js",
+          "offset": 402041,
+          "size": 2884021
+        },
+        {
+          "name": "/app-config.json",
+          "offset": 3286062,
+          "size": 727
+        }
+      ]
+    },
+    {
+      "packageName": "_subpackages_aniBundle_",
+      "sourceFile": "/Users/mac/Library/Containers/com.tencent.xinWeChat/Data/Documents/app_data/radium/users/1259216a2b497704dda1a52bb7a2c5f6/applet/packages/wx244b1cb66c8ac4b4/11/_subpackages_aniBundle_.wxapkg",
+      "rawCopy": "/Users/mac/PyCharmMiscProject/huirong_feature/data/wechat_unpack/wx244b1cb66c8ac4b4/11/raw/_subpackages_aniBundle_.wxapkg",
+      "decryptedFile": "/Users/mac/PyCharmMiscProject/huirong_feature/data/wechat_unpack/wx244b1cb66c8ac4b4/11/decrypted/_subpackages_aniBundle_.decrypted.wxapkg",
+      "unpackedDir": "/Users/mac/PyCharmMiscProject/huirong_feature/data/wechat_unpack/wx244b1cb66c8ac4b4/11/unpacked_by_pkg/_subpackages_aniBundle_",
+      "encrypted": true,
+      "header": {
+        "firstMark": 190,
+        "unknownInfo": 0,
+        "infoListLength": 12032,
+        "dataLength": 3155590,
+        "lastMark": 237,
+        "fileCount": 130
+      },
+      "previewFiles": [
+        {
+          "name": "/subpackages/aniBundle/config.a0180.json",
+          "offset": 12046,
+          "size": 13715
+        },
+        {
+          "name": "/subpackages/aniBundle/import/00/00748592-63a6-4108-a839-69028365dd22.a2533.json",
+          "offset": 25761,
+          "size": 72
+        },
+        {
+          "name": "/subpackages/aniBundle/import/00/00748592-63a6-4108-a839-69028365dd22@f9941.1fd31.json",
+          "offset": 25833,
+          "size": 718
+        },
+        {
+          "name": "/subpackages/aniBundle/import/05/0599c030-38ec-4e55-8ec6-e400c1f90e7d@f9941.59117.json",
+          "offset": 26551,
+          "size": 718
+        },
+        {
+          "name": "/subpackages/aniBundle/import/07/07ced7bf-caa1-4d01-96df-b286a9fa9924.621e2.json",
+          "offset": 27269,
+          "size": 99
+        },
+        {
+          "name": "/subpackages/aniBundle/import/09/090b3eee-0a78-4e40-96f8-f4b42cef2146.a2533.json",
+          "offset": 27368,
+          "size": 72
+        },
+        {
+          "name": "/subpackages/aniBundle/import/09/090b3eee-0a78-4e40-96f8-f4b42cef2146@f9941.000ef.json",
+          "offset": 27440,
+          "size": 722
+        },
+        {
+          "name": "/subpackages/aniBundle/import/09/09d91ef2-7134-4514-a845-dfb11a5846cb.a2533.json",
+          "offset": 28162,
+          "size": 72
+        },
+        {
+          "name": "/subpackages/aniBundle/import/09/09d91ef2-7134-4514-a845-dfb11a5846cb@f9941.bd616.json",
+          "offset": 28234,
+          "size": 746
+        },
+        {
+          "name": "/subpackages/aniBundle/import/0a/0a3d48d62.f4943.json",
+          "offset": 28980,
+          "size": 764
+        },
+        {
+          "name": "/subpackages/aniBundle/import/0c/0c037270-d1a8-4b36-81af-908e7350f5cb.621e2.json",
+          "offset": 29744,
+          "size": 99
+        },
+        {
+          "name": "/subpackages/aniBundle/import/0f/0f70c22cd.3965d.json",
+          "offset": 29843,
+          "size": 325201
+        },
+        {
+          "name": "/subpackages/aniBundle/import/13/135aec12-874e-4bd8-841e-6359ff461316@f9941.6abfc.json",
+          "offset": 355044,
+          "size": 714
+        },
+        {
+          "name": "/subpackages/aniBundle/import/14/14609467-055d-4d63-8af1-406a624f9889.621e2.json",
+          "offset": 355758,
+          "size": 99
+        },
+        {
+          "name": "/subpackages/aniBundle/import/1f/1f149e4f-cd20-4f91-ad8a-c4e2b5b5af1f.c0309.json",
+          "offset": 355857,
+          "size": 22367
+        },
+        {
+          "name": "/subpackages/aniBundle/import/24/24966e82-a9b5-4fbd-8b16-3c7d4ba20fc4.621e2.json",
+          "offset": 378224,
+          "size": 99
+        },
+        {
+          "name": "/subpackages/aniBundle/import/2c/2c0c1a1f-1bce-4b98-b093-dd92b680ade9@f9941.0bdbf.json",
+          "offset": 378323,
+          "size": 699
+        },
+        {
+          "name": "/subpackages/aniBundle/import/2d/2dba4078-9361-4d12-bd36-3fa59e21875b.621e2.json",
+          "offset": 379022,
+          "size": 99
+        },
+        {
+          "name": "/subpackages/aniBundle/import/2e/2ee458bc-7b2b-4baf-a74b-a5f0417033b5@f9941.18bbb.json",
+          "offset": 379121,
+          "size": 716
+        },
+        {
+          "name": "/subpackages/aniBundle/import/2f/2f220c09-fefc-4092-b3ed-48b656b6440d.a2533.json",
+          "offset": 379837,
+          "size": 72
+        }
+      ]
+    },
+    {
+      "packageName": "_subpackages_audioBundle_",
+      "sourceFile": "/Users/mac/Library/Containers/com.tencent.xinWeChat/Data/Documents/app_data/radium/users/1259216a2b497704dda1a52bb7a2c5f6/applet/packages/wx244b1cb66c8ac4b4/11/_subpackages_audioBundle_.wxapkg",
+      "rawCopy": "/Users/mac/PyCharmMiscProject/huirong_feature/data/wechat_unpack/wx244b1cb66c8ac4b4/11/raw/_subpackages_audioBundle_.wxapkg",
+      "decryptedFile": "/Users/mac/PyCharmMiscProject/huirong_feature/data/wechat_unpack/wx244b1cb66c8ac4b4/11/decrypted/_subpackages_audioBundle_.decrypted.wxapkg",
+      "unpackedDir": "/Users/mac/PyCharmMiscProject/huirong_feature/data/wechat_unpack/wx244b1cb66c8ac4b4/11/unpacked_by_pkg/_subpackages_audioBundle_",
+      "encrypted": true,
+      "header": {
+        "firstMark": 190,
+        "unknownInfo": 0,
+        "infoListLength": 12257,
+        "dataLength": 1860632,
+        "lastMark": 237,
+        "fileCount": 132
+      },
+      "previewFiles": [
+        {
+          "name": "/subpackages/audioBundle/config.3b519.json",
+          "offset": 12271,
+          "size": 4900
+        },
+        {
+          "name": "/subpackages/audioBundle/import/05/05f0576d-20ca-45e5-8cac-7bde0505a9ef.7447a.json",
+          "offset": 17171,
+          "size": 123
+        },
+        {
+          "name": "/subpackages/audioBundle/import/09/099bc925-a0f0-485a-be12-49e4e0b69297.7cc67.json",
+          "offset": 17294,
+          "size": 126
+        },
+        {
+          "name": "/subpackages/audioBundle/import/0b/0b114abf-f089-44f0-9904-c46a707e665d.205d7.json",
+          "offset": 17420,
+          "size": 126
+        },
+        {
+          "name": "/subpackages/audioBundle/import/0d/0d4b6f77-3e37-433d-a761-d2301d183f8d.89c2f.json",
+          "offset": 17546,
+          "size": 118
+        },
+        {
+          "name": "/subpackages/audioBundle/import/12/12c1b8af-48d2-46ee-a695-c172e4402e83.05ac1.json",
+          "offset": 17664,
+          "size": 120
+        },
+        {
+          "name": "/subpackages/audioBundle/import/19/198fd24d-fe85-473b-a3c3-e4715b9a8da9.20804.json",
+          "offset": 17784,
+          "size": 123
+        },
+        {
+          "name": "/subpackages/audioBundle/import/22/22a6dd72-d08b-46c9-9da5-5d2a4fefacc2.a0322.json",
+          "offset": 17907,
+          "size": 119
+        },
+        {
+          "name": "/subpackages/audioBundle/import/22/22ab7843-385b-4773-ab9b-1adce8b8584a.ca4d9.json",
+          "offset": 18026,
+          "size": 120
+        },
+        {
+          "name": "/subpackages/audioBundle/import/25/254db0b6-c388-4e1f-877d-0c50cfe81643.f1a89.json",
+          "offset": 18146,
+          "size": 123
+        },
+        {
+          "name": "/subpackages/audioBundle/import/2e/2e5be8e9-e343-4990-acfd-51e7942ab2c4.02dbf.json",
+          "offset": 18269,
+          "size": 119
+        },
+        {
+          "name": "/subpackages/audioBundle/import/31/317cbbaa-6213-481b-b327-2b666d6e835b.59f2f.json",
+          "offset": 18388,
+          "size": 124
+        },
+        {
+          "name": "/subpackages/audioBundle/import/32/32a130e2-5a90-4c07-b4b2-42fa07f85ccb.b3f30.json",
+          "offset": 18512,
+          "size": 129
+        },
+        {
+          "name": "/subpackages/audioBundle/import/35/35cf13de-f938-4b03-b983-0398b824720b.910d6.json",
+          "offset": 18641,
+          "size": 124
+        },
+        {
+          "name": "/subpackages/audioBundle/import/37/376cbf2b-51ed-4917-b52e-18c34ba34095.f9d83.json",
+          "offset": 18765,
+          "size": 123
+        },
+        {
+          "name": "/subpackages/audioBundle/import/37/377b04d2-5b96-4b2e-97f3-7032e7ee05cb.4e562.json",
+          "offset": 18888,
+          "size": 126
+        },
+        {
+          "name": "/subpackages/audioBundle/import/37/379509ce-e715-43be-8f74-634aee694e4a.0c9df.json",
+          "offset": 19014,
+          "size": 123
+        },
+        {
+          "name": "/subpackages/audioBundle/import/3e/3e5523b9-a4ba-4f88-9a47-0b3bb0ab312a.6e27e.json",
+          "offset": 19137,
+          "size": 116
+        },
+        {
+          "name": "/subpackages/audioBundle/import/40/40601e4b-21b0-419e-9279-5f195824038f.93907.json",
+          "offset": 19253,
+          "size": 120
+        },
+        {
+          "name": "/subpackages/audioBundle/import/48/486bd684-acd2-4179-86a0-4982c3d2b577.4cc3f.json",
+          "offset": 19373,
+          "size": 123
+        }
+      ]
+    },
+    {
+      "packageName": "_subpackages_DuckBundle_",
+      "sourceFile": "/Users/mac/Library/Containers/com.tencent.xinWeChat/Data/Documents/app_data/radium/users/1259216a2b497704dda1a52bb7a2c5f6/applet/packages/wx244b1cb66c8ac4b4/11/_subpackages_DuckBundle_.wxapkg",
+      "rawCopy": "/Users/mac/PyCharmMiscProject/huirong_feature/data/wechat_unpack/wx244b1cb66c8ac4b4/11/raw/_subpackages_DuckBundle_.wxapkg",
+      "decryptedFile": "/Users/mac/PyCharmMiscProject/huirong_feature/data/wechat_unpack/wx244b1cb66c8ac4b4/11/decrypted/_subpackages_DuckBundle_.decrypted.wxapkg",
+      "unpackedDir": "/Users/mac/PyCharmMiscProject/huirong_feature/data/wechat_unpack/wx244b1cb66c8ac4b4/11/unpacked_by_pkg/_subpackages_DuckBundle_",
+      "encrypted": true,
+      "header": {
+        "firstMark": 190,
+        "unknownInfo": 0,
+        "infoListLength": 98342,
+        "dataLength": 2301163,
+        "lastMark": 237,
+        "fileCount": 1045
+      },
+      "previewFiles": [
+        {
+          "name": "/subpackages/DuckBundle/config.d301a.json",
+          "offset": 98356,
+          "size": 96148
+        },
+        {
+          "name": "/subpackages/DuckBundle/import/01/01853a000.6934c.json",
+          "offset": 194504,
+          "size": 3284
+        },
+        {
+          "name": "/subpackages/DuckBundle/import/02/0227bf610.11f04.json",
+          "offset": 197788,
+          "size": 3252
+        },
+        {
+          "name": "/subpackages/DuckBundle/import/02/02cc6743-eb92-47b2-bd0a-c3bc58df2455.a2533.json",
+          "offset": 201040,
+          "size": 72
+        },
+        {
+          "name": "/subpackages/DuckBundle/import/02/02cc6743-eb92-47b2-bd0a-c3bc58df2455@f9941.50eff.json",
+          "offset": 201112,
+          "size": 535
+        },
+        {
+          "name": "/subpackages/DuckBundle/import/03/036443be-b646-4581-af1d-b0905c25a9bb.a2533.json",
+          "offset": 201647,
+          "size": 72
+        },
+        {
+          "name": "/subpackages/DuckBundle/import/03/036443be-b646-4581-af1d-b0905c25a9bb@f9941.b11d2.json",
+          "offset": 201719,
+          "size": 567
+        },
+        {
+          "name": "/subpackages/DuckBundle/import/04/045b20c10.e4f07.json",
+          "offset": 202286,
+          "size": 7086
+        },
+        {
+          "name": "/subpackages/DuckBundle/import/04/04ab37f9-e6df-4484-8acf-c37edd95bc26.a2533.json",
+          "offset": 209372,
+          "size": 72
+        },
+        {
+          "name": "/subpackages/DuckBundle/import/04/04ab37f9-e6df-4484-8acf-c37edd95bc26@f9941.60bf0.json",
+          "offset": 209444,
+          "size": 549
+        },
+        {
+          "name": "/subpackages/DuckBundle/import/06/063e0e14c.01d40.json",
+          "offset": 209993,
+          "size": 3777
+        },
+        {
+          "name": "/subpackages/DuckBundle/import/06/06de34f87.9473a.json",
+          "offset": 213770,
+          "size": 9469
+        },
+        {
+          "name": "/subpackages/DuckBundle/import/07/0798ff36-6460-4cc2-94a3-462024eaa7c0.f242b.json",
+          "offset": 223239,
+          "size": 2947
+        },
+        {
+          "name": "/subpackages/DuckBundle/import/07/07e9a187-8f4e-445a-85f2-34df1ecdc7ce.a2533.json",
+          "offset": 226186,
+          "size": 72
+        },
+        {
+          "name": "/subpackages/DuckBundle/import/07/07e9a187-8f4e-445a-85f2-34df1ecdc7ce@f9941.940ff.json",
+          "offset": 226258,
+          "size": 549
+        },
+        {
+          "name": "/subpackages/DuckBundle/import/07/07eafa16-1748-4615-9b33-51deab0f10c3.7583e.json",
+          "offset": 226807,
+          "size": 2460
+        },
+        {
+          "name": "/subpackages/DuckBundle/import/08/085c930f-0233-42dd-954f-ed398494f9ff.a2533.json",
+          "offset": 229267,
+          "size": 72
+        },
+        {
+          "name": "/subpackages/DuckBundle/import/08/085c930f-0233-42dd-954f-ed398494f9ff@f9941.9b033.json",
+          "offset": 229339,
+          "size": 566
+        },
+        {
+          "name": "/subpackages/DuckBundle/import/08/086e0f59-d5ae-4610-b388-5b44c2f3fa05.a2533.json",
+          "offset": 229905,
+          "size": 72
+        },
+        {
+          "name": "/subpackages/DuckBundle/import/08/086e0f59-d5ae-4610-b388-5b44c2f3fa05@f9941.5933d.json",
+          "offset": 229977,
+          "size": 561
+        }
+      ]
+    },
+    {
+      "packageName": "_subpackages_Game2Bundle_",
+      "sourceFile": "/Users/mac/Library/Containers/com.tencent.xinWeChat/Data/Documents/app_data/radium/users/1259216a2b497704dda1a52bb7a2c5f6/applet/packages/wx244b1cb66c8ac4b4/11/_subpackages_Game2Bundle_.wxapkg",
+      "rawCopy": "/Users/mac/PyCharmMiscProject/huirong_feature/data/wechat_unpack/wx244b1cb66c8ac4b4/11/raw/_subpackages_Game2Bundle_.wxapkg",
+      "decryptedFile": "/Users/mac/PyCharmMiscProject/huirong_feature/data/wechat_unpack/wx244b1cb66c8ac4b4/11/decrypted/_subpackages_Game2Bundle_.decrypted.wxapkg",
+      "unpackedDir": "/Users/mac/PyCharmMiscProject/huirong_feature/data/wechat_unpack/wx244b1cb66c8ac4b4/11/unpacked_by_pkg/_subpackages_Game2Bundle_",
+      "encrypted": true,
+      "header": {
+        "firstMark": 190,
+        "unknownInfo": 0,
+        "infoListLength": 7510,
+        "dataLength": 471518,
+        "lastMark": 237,
+        "fileCount": 84
+      },
+      "previewFiles": [
+        {
+          "name": "/subpackages/Game2Bundle/config.7deca.json",
+          "offset": 7524,
+          "size": 13537
+        },
+        {
+          "name": "/subpackages/Game2Bundle/import/01/018ba27f0.b241d.json",
+          "offset": 21061,
+          "size": 626
+        },
+        {
+          "name": "/subpackages/Game2Bundle/import/04/04347e9f-92dc-4a0d-8650-1a2e1a5676f1.8d917.json",
+          "offset": 21687,
+          "size": 2342
+        },
+        {
+          "name": "/subpackages/Game2Bundle/import/06/064e4764d.af1d3.json",
+          "offset": 24029,
+          "size": 9704
+        },
+        {
+          "name": "/subpackages/Game2Bundle/import/09/094fe2b70.6217c.json",
+          "offset": 33733,
+          "size": 8791
+        },
+        {
+          "name": "/subpackages/Game2Bundle/import/09/097fea458.3a271.json",
+          "offset": 42524,
+          "size": 1922
+        },
+        {
+          "name": "/subpackages/Game2Bundle/import/0a/0ab23018-5863-4aa5-9a81-98767146624b.d7508.json",
+          "offset": 44446,
+          "size": 2359
+        },
+        {
+          "name": "/subpackages/Game2Bundle/import/0f/0f648df8a.bc71f.json",
+          "offset": 46805,
+          "size": 606
+        },
+        {
+          "name": "/subpackages/Game2Bundle/import/10/1024541f-022d-4a4a-819a-e04b2fddb93b.8958a.json",
+          "offset": 47411,
+          "size": 2352
+        },
+        {
+          "name": "/subpackages/Game2Bundle/import/13/13fe0656-aa95-45bb-ac0d-01c749038722.bab33.json",
+          "offset": 49763,
+          "size": 2460
+        },
+        {
+          "name": "/subpackages/Game2Bundle/import/16/164e4764d.890c7.json",
+          "offset": 52223,
+          "size": 76
+        },
+        {
+          "name": "/subpackages/Game2Bundle/import/16/1673fb44-6b76-40f8-a0d4-13b4dc742b6b.3b3b6.json",
+          "offset": 52299,
+          "size": 2373
+        },
+        {
+          "name": "/subpackages/Game2Bundle/import/19/194fe2b70.fe3de.json",
+          "offset": 54672,
+          "size": 78
+        },
+        {
+          "name": "/subpackages/Game2Bundle/import/19/197fea458.55534.json",
+          "offset": 54750,
+          "size": 76
+        },
+        {
+          "name": "/subpackages/Game2Bundle/import/1c/1c169947-9a9e-480e-ae4a-140c6c43d8aa.a2533.json",
+          "offset": 54826,
+          "size": 72
+        },
+        {
+          "name": "/subpackages/Game2Bundle/import/1c/1c169947-9a9e-480e-ae4a-140c6c43d8aa@f9941.53d91.json",
+          "offset": 54898,
+          "size": 590
+        },
+        {
+          "name": "/subpackages/Game2Bundle/import/1d/1de52838-a9e7-4894-a7e5-08709d42acf6.84ba5.json",
+          "offset": 55488,
+          "size": 2358
+        },
+        {
+          "name": "/subpackages/Game2Bundle/import/1f/1f648df8a.bb709.json",
+          "offset": 57846,
+          "size": 76
+        },
+        {
+          "name": "/subpackages/Game2Bundle/import/23/23acdc1c-3cfe-402d-9ce0-c8ac381b9aae.0c546.json",
+          "offset": 57922,
+          "size": 2321
+        },
+        {
+          "name": "/subpackages/Game2Bundle/import/24/24619469-c82a-47aa-af86-da1fe67314a9.ca63b.json",
+          "offset": 60243,
+          "size": 2446
+        }
+      ]
+    },
+    {
+      "packageName": "_subpackages_HomeBundle_",
+      "sourceFile": "/Users/mac/Library/Containers/com.tencent.xinWeChat/Data/Documents/app_data/radium/users/1259216a2b497704dda1a52bb7a2c5f6/applet/packages/wx244b1cb66c8ac4b4/11/_subpackages_HomeBundle_.wxapkg",
+      "rawCopy": "/Users/mac/PyCharmMiscProject/huirong_feature/data/wechat_unpack/wx244b1cb66c8ac4b4/11/raw/_subpackages_HomeBundle_.wxapkg",
+      "decryptedFile": "/Users/mac/PyCharmMiscProject/huirong_feature/data/wechat_unpack/wx244b1cb66c8ac4b4/11/decrypted/_subpackages_HomeBundle_.decrypted.wxapkg",
+      "unpackedDir": "/Users/mac/PyCharmMiscProject/huirong_feature/data/wechat_unpack/wx244b1cb66c8ac4b4/11/unpacked_by_pkg/_subpackages_HomeBundle_",
+      "encrypted": true,
+      "header": {
+        "firstMark": 190,
+        "unknownInfo": 0,
+        "infoListLength": 20969,
+        "dataLength": 2898219,
+        "lastMark": 237,
+        "fileCount": 225
+      },
+      "previewFiles": [
+        {
+          "name": "/subpackages/HomeBundle/config.b8a64.json",
+          "offset": 20983,
+          "size": 19880
+        },
+        {
+          "name": "/subpackages/HomeBundle/import/00/00b2f448-fd39-4b00-a1fa-42528b6752ca.a2533.json",
+          "offset": 40863,
+          "size": 72
+        },
+        {
+          "name": "/subpackages/HomeBundle/import/00/00b2f448-fd39-4b00-a1fa-42528b6752ca@f9941.9cade.json",
+          "offset": 40935,
+          "size": 644
+        },
+        {
+          "name": "/subpackages/HomeBundle/import/01/01457198-91b3-4563-a986-6d565250f877.a2533.json",
+          "offset": 41579,
+          "size": 72
+        },
+        {
+          "name": "/subpackages/HomeBundle/import/03/037589a7-07a8-4c55-99aa-782590c0cff2.a2533.json",
+          "offset": 41651,
+          "size": 72
+        },
+        {
+          "name": "/subpackages/HomeBundle/import/03/037589a7-07a8-4c55-99aa-782590c0cff2@f9941.e20f7.json",
+          "offset": 41723,
+          "size": 637
+        },
+        {
+          "name": "/subpackages/HomeBundle/import/03/03924e66f.34cb2.json",
+          "offset": 42360,
+          "size": 1286
+        },
+        {
+          "name": "/subpackages/HomeBundle/import/04/04566ce2-0854-4a7d-80cc-14e1a6cf668b.c16a8.json",
+          "offset": 43646,
+          "size": 72
+        },
+        {
+          "name": "/subpackages/HomeBundle/import/04/04566ce2-0854-4a7d-80cc-14e1a6cf668b@f9941.6c22c.json",
+          "offset": 43718,
+          "size": 563
+        },
+        {
+          "name": "/subpackages/HomeBundle/import/07/07efff0f9.9f8f9.json",
+          "offset": 44281,
+          "size": 1384
+        },
+        {
+          "name": "/subpackages/HomeBundle/import/0a/0aab58136.84ea8.json",
+          "offset": 45665,
+          "size": 2368
+        },
+        {
+          "name": "/subpackages/HomeBundle/import/0d/0d1516fd-e805-48a6-971d-2d50055e97c1.a2533.json",
+          "offset": 48033,
+          "size": 72
+        },
+        {
+          "name": "/subpackages/HomeBundle/import/0d/0d1516fd-e805-48a6-971d-2d50055e97c1@f9941.70d34.json",
+          "offset": 48105,
+          "size": 688
+        },
+        {
+          "name": "/subpackages/HomeBundle/import/0d/0de7fa31f.ef3cc.json",
+          "offset": 48793,
+          "size": 3189
+        },
+        {
+          "name": "/subpackages/HomeBundle/import/11/116a25be3.eb319.json",
+          "offset": 51982,
+          "size": 76
+        },
+        {
+          "name": "/subpackages/HomeBundle/import/14/149f66e7-869d-4be7-99cb-8e9c92321525.a2533.json",
+          "offset": 52058,
+          "size": 72
+        },
+        {
+          "name": "/subpackages/HomeBundle/import/14/149f66e7-869d-4be7-99cb-8e9c92321525@f9941.574cc.json",
+          "offset": 52130,
+          "size": 661
+        },
+        {
+          "name": "/subpackages/HomeBundle/import/17/1721d8ac-4cf9-4893-bd87-ad44595ad1e1.a2533.json",
+          "offset": 52791,
+          "size": 72
+        },
+        {
+          "name": "/subpackages/HomeBundle/import/17/1721d8ac-4cf9-4893-bd87-ad44595ad1e1@f9941.9a43a.json",
+          "offset": 52863,
+          "size": 612
+        },
+        {
+          "name": "/subpackages/HomeBundle/import/17/178da429-a0db-4a75-935c-4d3ce7baa453.a2533.json",
+          "offset": 53475,
+          "size": 72
+        }
+      ]
+    },
+    {
+      "packageName": "_subpackages_main_",
+      "sourceFile": "/Users/mac/Library/Containers/com.tencent.xinWeChat/Data/Documents/app_data/radium/users/1259216a2b497704dda1a52bb7a2c5f6/applet/packages/wx244b1cb66c8ac4b4/11/_subpackages_main_.wxapkg",
+      "rawCopy": "/Users/mac/PyCharmMiscProject/huirong_feature/data/wechat_unpack/wx244b1cb66c8ac4b4/11/raw/_subpackages_main_.wxapkg",
+      "decryptedFile": "/Users/mac/PyCharmMiscProject/huirong_feature/data/wechat_unpack/wx244b1cb66c8ac4b4/11/decrypted/_subpackages_main_.decrypted.wxapkg",
+      "unpackedDir": "/Users/mac/PyCharmMiscProject/huirong_feature/data/wechat_unpack/wx244b1cb66c8ac4b4/11/unpacked_by_pkg/_subpackages_main_",
+      "encrypted": true,
+      "header": {
+        "firstMark": 190,
+        "unknownInfo": 0,
+        "infoListLength": 17744,
+        "dataLength": 10026541,
+        "lastMark": 237,
+        "fileCount": 223
+      },
+      "previewFiles": [
+        {
+          "name": "/subpackages/main/config.14565.json",
+          "offset": 17758,
+          "size": 19647
+        },
+        {
+          "name": "/subpackages/main/import/00/00a7ff24-ffbd-42d7-8597-8d1d451f0256.a2533.json",
+          "offset": 37405,
+          "size": 72
+        },
+        {
+          "name": "/subpackages/main/import/01/015216800.ab208.json",
+          "offset": 37477,
+          "size": 2255
+        },
+        {
+          "name": "/subpackages/main/import/01/01bfaaa23.70d60.json",
+          "offset": 39732,
+          "size": 18286
+        },
+        {
+          "name": "/subpackages/main/import/01/01d37c23d.a271f.json",
+          "offset": 58018,
+          "size": 9729
+        },
+        {
+          "name": "/subpackages/main/import/02/02a38064-da00-4ca7-a93b-3e53c6ce5879.c16a8.json",
+          "offset": 67747,
+          "size": 72
+        },
+        {
+          "name": "/subpackages/main/import/02/02c960b2-a56d-4aab-a517-3ba441a0a458.a2533.json",
+          "offset": 67819,
+          "size": 72
+        },
+        {
+          "name": "/subpackages/main/import/03/0353ef82c.cc362.json",
+          "offset": 67891,
+          "size": 2733
+        },
+        {
+          "name": "/subpackages/main/import/03/0361f2d0d.36476.json",
+          "offset": 70624,
+          "size": 4086
+        },
+        {
+          "name": "/subpackages/main/import/03/039c4b6f8.04133.json",
+          "offset": 74710,
+          "size": 3699
+        },
+        {
+          "name": "/subpackages/main/import/03/03a4cca66.76cc9.json",
+          "offset": 78409,
+          "size": 3298
+        },
+        {
+          "name": "/subpackages/main/import/03/03f2b8907.9b682.json",
+          "offset": 81707,
+          "size": 3624065
+        },
+        {
+          "name": "/subpackages/main/import/04/0477c566e.f0408.json",
+          "offset": 3705772,
+          "size": 4069
+        },
+        {
+          "name": "/subpackages/main/import/04/04e7c26e4.34704.json",
+          "offset": 3709841,
+          "size": 27540
+        },
+        {
+          "name": "/subpackages/main/import/05/0599c030-38ec-4e55-8ec6-e400c1f90e7d.a2533.json",
+          "offset": 3737381,
+          "size": 72
+        },
+        {
+          "name": "/subpackages/main/import/05/05c250e9e.5a45d.json",
+          "offset": 3737453,
+          "size": 1702
+        },
+        {
+          "name": "/subpackages/main/import/06/062b1717-90b0-4678-aec0-84cced2a3125.a2533.json",
+          "offset": 3739155,
+          "size": 72
+        },
+        {
+          "name": "/subpackages/main/import/06/0642fb2f4.5c3df.json",
+          "offset": 3739227,
+          "size": 144647
+        },
+        {
+          "name": "/subpackages/main/import/07/0749c9f40.f0bee.json",
+          "offset": 3883874,
+          "size": 48576
+        },
+        {
+          "name": "/subpackages/main/import/07/07f9bf2d5.3a2af.json",
+          "offset": 3932450,
+          "size": 4983
+        }
+      ]
+    },
+    {
+      "packageName": "_subpackages_resources_",
+      "sourceFile": "/Users/mac/Library/Containers/com.tencent.xinWeChat/Data/Documents/app_data/radium/users/1259216a2b497704dda1a52bb7a2c5f6/applet/packages/wx244b1cb66c8ac4b4/11/_subpackages_resources_.wxapkg",
+      "rawCopy": "/Users/mac/PyCharmMiscProject/huirong_feature/data/wechat_unpack/wx244b1cb66c8ac4b4/11/raw/_subpackages_resources_.wxapkg",
+      "decryptedFile": "/Users/mac/PyCharmMiscProject/huirong_feature/data/wechat_unpack/wx244b1cb66c8ac4b4/11/decrypted/_subpackages_resources_.decrypted.wxapkg",
+      "unpackedDir": "/Users/mac/PyCharmMiscProject/huirong_feature/data/wechat_unpack/wx244b1cb66c8ac4b4/11/unpacked_by_pkg/_subpackages_resources_",
+      "encrypted": true,
+      "header": {
+        "firstMark": 190,
+        "unknownInfo": 0,
+        "infoListLength": 1140,
+        "dataLength": 89974,
+        "lastMark": 237,
+        "fileCount": 16
+      },
+      "previewFiles": [
+        {
+          "name": "/subpackages/resources/config.075ae.json",
+          "offset": 1154,
+          "size": 2515
+        },
+        {
+          "name": "/subpackages/resources/import/03/03ccd410a.a3f7a.json",
+          "offset": 3669,
+          "size": 12359
+        },
+        {
+          "name": "/subpackages/resources/import/08/0895e4eee.ba01e.json",
+          "offset": 16028,
+          "size": 136
+        },
+        {
+          "name": "/subpackages/resources/import/08/08a2f272f.11063.json",
+          "offset": 16164,
+          "size": 1866
+        },
+        {
+          "name": "/subpackages/resources/import/09/09efe5537.f73e5.json",
+          "offset": 18030,
+          "size": 1530
+        },
+        {
+          "name": "/subpackages/resources/import/0f/0ff002d21.804a9.json",
+          "offset": 19560,
+          "size": 3680
+        },
+        {
+          "name": "/subpackages/resources/import/18/1863cabe-3984-478c-81c9-d17b5d5e7585.374d4.json",
+          "offset": 23240,
+          "size": 748
+        },
+        {
+          "name": "/subpackages/resources/import/18/18a2f272f.a69ef.json",
+          "offset": 23988,
+          "size": 75
+        },
+        {
+          "name": "/subpackages/resources/import/1f/1ff002d21.bb82a.json",
+          "offset": 24063,
+          "size": 75
+        },
+        {
+          "name": "/subpackages/resources/import/2d/2d216e91-2320-4f38-b8f8-6518920a83af.04064.json",
+          "offset": 24138,
+          "size": 781
+        },
+        {
+          "name": "/subpackages/resources/import/44/4423cbfc-6924-404e-b6c4-505fb57e25e7.a2533.json",
+          "offset": 24919,
+          "size": 72
+        },
+        {
+          "name": "/subpackages/resources/import/57/57bbc929-3902-4764-a818-a30c094275b7.6d82b.json",
+          "offset": 24991,
+          "size": 548
+        },
+        {
+          "name": "/subpackages/resources/native/18/18a2f272f.53b29.png",
+          "offset": 25539,
+          "size": 10969
+        },
+        {
+          "name": "/subpackages/resources/native/1f/1ff002d21.02b34.png",
+          "offset": 36508,
+          "size": 28710
+        },
+        {
+          "name": "/subpackages/resources/native/44/4423cbfc-6924-404e-b6c4-505fb57e25e7.84bd9.png",
+          "offset": 65218,
+          "size": 17937
+        },
+        {
+          "name": "/subpackages/resources/game.js",
+          "offset": 83155,
+          "size": 7973
+        }
+      ]
+    },
+    {
+      "packageName": "_subpackages_uiBundle_",
+      "sourceFile": "/Users/mac/Library/Containers/com.tencent.xinWeChat/Data/Documents/app_data/radium/users/1259216a2b497704dda1a52bb7a2c5f6/applet/packages/wx244b1cb66c8ac4b4/11/_subpackages_uiBundle_.wxapkg",
+      "rawCopy": "/Users/mac/PyCharmMiscProject/huirong_feature/data/wechat_unpack/wx244b1cb66c8ac4b4/11/raw/_subpackages_uiBundle_.wxapkg",
+      "decryptedFile": "/Users/mac/PyCharmMiscProject/huirong_feature/data/wechat_unpack/wx244b1cb66c8ac4b4/11/decrypted/_subpackages_uiBundle_.decrypted.wxapkg",
+      "unpackedDir": "/Users/mac/PyCharmMiscProject/huirong_feature/data/wechat_unpack/wx244b1cb66c8ac4b4/11/unpacked_by_pkg/_subpackages_uiBundle_",
+      "encrypted": true,
+      "header": {
+        "firstMark": 190,
+        "unknownInfo": 0,
+        "infoListLength": 8335,
+        "dataLength": 2141092,
+        "lastMark": 237,
+        "fileCount": 115
+      },
+      "previewFiles": [
+        {
+          "name": "/subpackages/uiBundle/config.ac41f.json",
+          "offset": 8349,
+          "size": 38678
+        },
+        {
+          "name": "/subpackages/uiBundle/import/01/010f053dc.147d8.json",
+          "offset": 47027,
+          "size": 4565
+        },
+        {
+          "name": "/subpackages/uiBundle/import/01/01775311c.4f4ad.json",
+          "offset": 51592,
+          "size": 1681
+        },
+        {
+          "name": "/subpackages/uiBundle/import/01/018f90870.fbeef.json",
+          "offset": 53273,
+          "size": 1752
+        },
+        {
+          "name": "/subpackages/uiBundle/import/02/02300d1e9.ec414.json",
+          "offset": 55025,
+          "size": 889
+        },
+        {
+          "name": "/subpackages/uiBundle/import/02/028d38f65.dfa3c.json",
+          "offset": 55914,
+          "size": 601
+        },
+        {
+          "name": "/subpackages/uiBundle/import/02/02cd0da06.aa8b8.json",
+          "offset": 56515,
+          "size": 4341
+        },
+        {
+          "name": "/subpackages/uiBundle/import/03/0361f2d0d.36476.json",
+          "offset": 60856,
+          "size": 4086
+        },
+        {
+          "name": "/subpackages/uiBundle/import/03/0397f6716.c20b4.json",
+          "offset": 64942,
+          "size": 895
+        },
+        {
+          "name": "/subpackages/uiBundle/import/03/03a4cca66.76cc9.json",
+          "offset": 65837,
+          "size": 3298
+        },
+        {
+          "name": "/subpackages/uiBundle/import/04/0494ec16-4da2-4b69-b7ec-b42b369e33f7.e8f5b.json",
+          "offset": 69135,
+          "size": 5492
+        },
+        {
+          "name": "/subpackages/uiBundle/import/04/04a8798ac.3f7b0.json",
+          "offset": 74627,
+          "size": 2214
+        },
+        {
+          "name": "/subpackages/uiBundle/import/04/04b387916.33a73.json",
+          "offset": 76841,
+          "size": 12883
+        },
+        {
+          "name": "/subpackages/uiBundle/import/05/052454659.70912.json",
+          "offset": 89724,
+          "size": 1664
+        },
+        {
+          "name": "/subpackages/uiBundle/import/06/0624fb9f0.edd3e.json",
+          "offset": 91388,
+          "size": 1409
+        },
+        {
+          "name": "/subpackages/uiBundle/import/07/0756253c6.7ea42.json",
+          "offset": 92797,
+          "size": 4748
+        },
+        {
+          "name": "/subpackages/uiBundle/import/07/07fa6a7f4.d2817.json",
+          "offset": 97545,
+          "size": 6372
+        },
+        {
+          "name": "/subpackages/uiBundle/import/08/08df2582e.7b181.json",
+          "offset": 103917,
+          "size": 4139
+        },
+        {
+          "name": "/subpackages/uiBundle/import/09/093044ba5.2aa03.json",
+          "offset": 108056,
+          "size": 26856
+        },
+        {
+          "name": "/subpackages/uiBundle/import/09/093c593ec.2a242.json",
+          "offset": 134912,
+          "size": 1671
+        }
+      ]
+    }
+  ]
+}

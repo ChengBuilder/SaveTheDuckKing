@@ -1,0 +1,363 @@
+/**
+ * Extracted from game.js.
+ * Parent define module: subpackages-bootstrap.js
+ * System.register("chunks:///_virtual/MultTextures.ts")
+ */
+
+System.register('chunks:///_virtual/MultTextures.ts', ['cc', './env'], function (t) {
+  var e, r, a, i, s, n, u, l, h, c, o, f, d, p, D, v, _, y, M, g;
+  return {
+    setters: [
+      function (t) {
+        ((e = t.cclegacy),
+          (r = t.gfx),
+          (a = t.Material),
+          (i = t.Component),
+          (s = t.ImageAsset),
+          (n = t.Texture2D),
+          (u = t.game),
+          (l = t.Game),
+          (h = t.director),
+          (c = t.Director),
+          (o = t.StencilManager),
+          (f = t.resources),
+          (d = t.renderer),
+          (p = t.murmurhash2_32_gc),
+          (D = t.Label),
+          (v = t.BitmapFont),
+          (_ = t.Sprite),
+          (y = t.MotionStreak),
+          (M = t.TiledLayer));
+      },
+      function (t) {
+        g = t.JSB;
+      }
+    ],
+    execute: function () {
+      (e._RF.push({}, 'bd7e7vtojdMUJODlbuIb/Yi', 'MultTextures', void 0),
+        (r.Texture.prototype.texID = -1),
+        (a.prototype.isMult = !1),
+        (i.prototype.useMult = !1));
+      var m = t('MultBatch2D', {
+          native: !1,
+          enable: !1,
+          parent: null,
+          incID: 0,
+          count: 0,
+          hash: 0,
+          reset: function () {
+            ((this.incID += this.count), (this.count = 0));
+          }
+        }),
+        x = new s({
+          width: 1,
+          height: 1,
+          _compressed: !1,
+          format: r.Format.RGBA32F,
+          _data: new Float32Array(4).fill(0)
+        }),
+        I = new n();
+      (I.setFilters(1, 1), (I.image = x), I.addRef());
+      var T = function () {
+          ((m.enable = !1),
+            f.load('multTextures/Mult-material', a, function (t, r) {
+              if (!t) {
+                var i = e.builtinResMgr.get('ui-sprite-material');
+                i &&
+                  ((i._hash = m.hash = a.getHash(i)), (m.parent = r), (m.enable = !0), r.addRef());
+              }
+            }));
+        },
+        b = 0,
+        V = [];
+      (u.once(l.EVENT_GAME_INITED, function () {
+        m.native || T();
+      }),
+        u.once(l.EVENT_ENGINE_INITED, function () {
+          if (!m.native) {
+            (!(function () {
+              D.prototype.useMult = !0;
+              var t = D.Assembler;
+              if (t) {
+                var e = t.getAssembler;
+                t.getAssembler = function (t) {
+                  var r = e.call(this, t);
+                  if (null == r.changeUV) {
+                    r.changeUV = function (t) {
+                      var e = t.renderData;
+                      e && (e.dataDirty = 1);
+                    };
+                    var a = r.updateUVs;
+                    a &&
+                      (t.font instanceof v || t.cacheMode === D.CacheMode.CHAR
+                        ? (r.updateUVs = function (t) {
+                            (a.call(this, t), this.changeUV(t));
+                          })
+                        : (r.updateUVs = function (t) {
+                            (a.call(this, t), t.renderData && t.ttfSpriteFrame && this.changeUV(t));
+                          }));
+                  }
+                  return r;
+                };
+              }
+            })(),
+              (function () {
+                _.prototype.useMult = !0;
+                var t = _.Assembler;
+                if (t) {
+                  var e = t.getAssembler;
+                  t.getAssembler = function (t) {
+                    var r = e.call(this, t);
+                    if (null == r.changeUV) {
+                      r.changeUV = function (t) {
+                        var e = t.renderData;
+                        e && (e.dataDirty = 1);
+                      };
+                      var a = r.updateUVs;
+                      a &&
+                        (t.type == _.Type.FILLED
+                          ? t.fillType != _.FillType.RADIAL &&
+                            (r.updateUVs = function (t, e, r) {
+                              (a.call(this, t, e, r), this.changeUV(t));
+                            })
+                          : t.type != _.Type.TILED &&
+                            (r.updateUVs = function (t) {
+                              (a.call(this, t), t.spriteFrame && this.changeUV(t));
+                            }));
+                      var i = r.updateWorldVertexAndUVData;
+                      i &&
+                        (r.updateWorldVertexAndUVData = function (t, e) {
+                          (i.call(this, t, e), this.changeUV(t));
+                        });
+                    }
+                    return r;
+                  };
+                }
+              })(),
+              (function () {
+                var t = e.UI.RenderData.prototype;
+                ((t.texID = -1),
+                  (t.isMult = !1),
+                  (t.matDirty = !0),
+                  (t.texDirty = !0),
+                  (t.dataDirty = 0),
+                  (t.updateHash = function () {
+                    if (this.isMult && m.enable) {
+                      var t = '' + (this.chunk ? this.chunk.bufferId : -1) + this.layer + '98k';
+                      ((this.dataHash = p(t, 666)), (this.hashDirty = !1));
+                    } else {
+                      var e =
+                        '' +
+                        (this.chunk ? this.chunk.bufferId : -1) +
+                        this.layer +
+                        ' ' +
+                        this.textureHash;
+                      ((this.dataHash = p(e, 666)), (this.hashDirty = !1));
+                    }
+                    this.matDirty = !1;
+                  }),
+                  Object.defineProperty(t, 'textureDirty', {
+                    get: function () {
+                      return this.texDirty;
+                    },
+                    set: function (t) {
+                      ((this.texDirty = t), !0 === t && (this.texID = -1));
+                    }
+                  }));
+                var r = function (t, e) {
+                    t.isMult = !1;
+                    var r = e.getRenderMaterial(0);
+                    r &&
+                      m.enable &&
+                      e.useMult &&
+                      ((r._hash = r.hash || r._hash),
+                      r._hash || (r._hash = a.getHash(r)),
+                      (t.isMult = m.hash == r._hash));
+                  },
+                  i = t.updatePass;
+                t.updatePass = function (t) {
+                  (r(this, t), i.call(this, t));
+                };
+                var s = t.updateRenderData;
+                t.updateRenderData = function (t, e) {
+                  (this.passDirty && r(this, t), s.call(this, t, e));
+                };
+              })(),
+              (function () {
+                if (M && !g) {
+                  var t = M.prototype;
+                  ((t.useMult = !0), (t.dataDirty = !1));
+                  var e = t.setUserNodeDirty;
+                  ((t.setUserNodeDirty = function (t) {
+                    (e.call(this, t), t || (this.dataDirty = !0));
+                  }),
+                    (t._render = function (t) {
+                      for (
+                        var e = this,
+                          r = this.node.layer,
+                          a = function (a) {
+                            e._tiledDataArrayIdx = i;
+                            var n = e._tiledDataArray[i];
+                            if ((e._drawInfoList[a], n.subNodes))
+                              n.subNodes.forEach(function (e) {
+                                e && (t.walk(e.node), a++);
+                              });
+                            else {
+                              var u = n;
+                              if (u.texture) {
+                                var l = !1,
+                                  h = u.renderData;
+                                ((h.material = e.getRenderMaterial(0)),
+                                  h.texture !== u.texture && (h.texture = u.texture),
+                                  h.layer !== r && ((h.layer = r), (l = !0)),
+                                  (h.isMult = !0),
+                                  l && h.updateHash(),
+                                  e.dataDirty && (h.dataDirty = 1),
+                                  t.commitComp(e, u.renderData, u.texture, e._assembler, null),
+                                  a++);
+                              }
+                            }
+                            s = a;
+                          },
+                          i = 0,
+                          s = 0;
+                        i < this._tiledDataArray.length;
+                        i++
+                      )
+                        a(s);
+                      ((this.dataDirty = !1), (this.node._static = !0));
+                    }));
+                }
+              })(),
+              (function () {
+                if (y) {
+                  var t = y.prototype;
+                  t.useMult = !0;
+                  var e = t.lateUpdate;
+                  t.lateUpdate = function (t) {
+                    if ((e.call(this, t), this._assembler && this.points.length >= 2)) {
+                      var r = this.renderData;
+                      r && (r.dataDirty = 1);
+                    }
+                  };
+                }
+              })(),
+              h.on(c.EVENT_AFTER_DRAW, function (t) {
+                (m.reset(), (b = 0));
+              }));
+            var t = e.internal.Batcher2D.prototype;
+            ((t.isMult = !1),
+              (t.isNative = g),
+              (t.cacheTextures = []),
+              (t.currMaterial = null),
+              Object.defineProperty(t, '_currMaterial', {
+                get: function () {
+                  return this.currMaterial;
+                },
+                set: function (t) {
+                  var e = this._currRenderData;
+                  (t == this._emptyMaterial && (e = null),
+                    (this.currMaterial = (function (t, e) {
+                      void 0 === e && (e = null);
+                      var r = m;
+                      if ((r.reset(), !(r.enable && t && e && e.isMult))) return t;
+                      if (!r.parent || !r.parent.isValid) return (T(), t);
+                      var a = V[b++];
+                      if (!a || !a.isValid) {
+                        var i = { parent: r.parent };
+                        ((a = new d.MaterialInstance(i)),
+                          (V[b - 1] = a),
+                          (a.cacheTextures = []),
+                          (a.isMult = !0),
+                          a.addRef());
+                      }
+                      return a;
+                    })(t, e)),
+                    (this.isMult = !1),
+                    m.enable &&
+                      this.currMaterial &&
+                      this.currMaterial.isMult &&
+                      ((this.cacheTextures = this.currMaterial.cacheTextures), (this.isMult = !0)));
+                }
+              }),
+              (t.commitComp = function (t, e, r, a, i) {
+                var s = 0,
+                  n = null,
+                  u = -1;
+                if (e && e.chunk) {
+                  if (!e.isValid()) return;
+                  ((s = e.dataHash), (n = e.material), (u = e.chunk.bufferId));
+                }
+                2 === t.stencilStage || 6 === t.stencilStage
+                  ? this._insertMaskBatch(t)
+                  : (t.stencilStage = o.sharedManager.stage);
+                var l = t.stencilStage,
+                  h = -1,
+                  c = null,
+                  f = m,
+                  d = !1,
+                  p = this.isNative;
+                if (
+                  (f.enable &&
+                    e &&
+                    e.isMult &&
+                    (r && r.isValid && (c = r.getGFXTexture()),
+                    c &&
+                      (void 0 === c.texID && (c.texID = -1),
+                      (d = (h = c.texID - f.incID) < 0 && f.count >= 8),
+                      this.isMult && (n = this._currMaterial))),
+                  (d ||
+                    this._currHash !== s ||
+                    0 === s ||
+                    this._currMaterial !== n ||
+                    this._currDepthStencilStateStage !== l) &&
+                    (this.autoMergeBatches(this._currComponent),
+                    p || !e || e._isMeshBuffer || this.updateBuffer(e.vertexFormat, u),
+                    (this._currRenderData = e),
+                    (this._currHash = e ? e.dataHash : 0),
+                    (this._currComponent = t),
+                    (this._currTransform = i),
+                    (this._currMaterial = t.getRenderMaterial(0)),
+                    (this._currDepthStencilStateStage = l),
+                    (this._currLayer = t.node.layer),
+                    r
+                      ? ((this._currTexture = r.getGFXTexture()),
+                        (this._currSampler = r.getGFXSampler()),
+                        (this._currTextureHash = r.getHash()),
+                        (this._currSamplerHash = this._currSampler.hash))
+                      : ((this._currTexture = null),
+                        (this._currSampler = null),
+                        (this._currTextureHash = 0),
+                        (this._currSamplerHash = 0))),
+                  p || a.fillBuffers(t, this),
+                  c)
+                ) {
+                  if (h < 0 || 0 === f.count) {
+                    ((h = f.count++), (c.texID = h + f.incID));
+                    var D = this.cacheTextures;
+                    D[h] !== c &&
+                      ((D[h] = c),
+                      (c = r.texture) || (c = r),
+                      this._currMaterial.setProperty('texture' + h, c));
+                  }
+                  (this.fillTextureID(e, h), p && e.renderDrawInfo.setMaterial(this._currMaterial));
+                }
+              }),
+              (t.fillTextureID = function (t, e) {
+                var r = t.chunk.vb,
+                  a = 0,
+                  i = r.length;
+                if (1 === t.dataDirty)
+                  for (var s = 0; s < i; s += 9)
+                    ((a = ~~(1e5 * r[s + 3])), (r[s + 3] = 10 * a + e));
+                else if (t.texID !== e)
+                  for (var n = 0; n < i; n += 9)
+                    ((a = ~~(0.1 * r[n + 3])), (r[n + 3] = 10 * a + e));
+                ((t.dataDirty = 0), (t.texID = e));
+              }));
+          }
+        }),
+        e._RF.pop());
+    }
+  };
+});

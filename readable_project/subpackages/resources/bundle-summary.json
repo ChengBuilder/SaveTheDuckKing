@@ -1,0 +1,17 @@
+{
+  "bundleFile": "subpackages/resources/game.js",
+  "outputDir": "subpackages/resources",
+  "defineModuleCount": 1,
+  "systemRegisterModuleCount": 2,
+  "modules": [
+    {
+      "id": "subpackages/resources/game.js",
+      "outputFile": "define_modules/subpackages/resources/game.js",
+      "systemRegisterModuleCount": 2,
+      "systemRegisterFiles": [
+        "system_register_modules/chunks_protocol/_virtual/MultTextures.ts.js",
+        "system_register_modules/chunks_protocol/_virtual/resources.js"
+      ]
+    }
+  ]
+}

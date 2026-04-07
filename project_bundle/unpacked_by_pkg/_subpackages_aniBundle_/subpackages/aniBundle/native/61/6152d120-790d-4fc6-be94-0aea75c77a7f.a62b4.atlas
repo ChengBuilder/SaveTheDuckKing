@@ -1,0 +1,48 @@
+
+skeleton.png
+size: 1025,266
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+香蕉右手
+  rotate: false
+  xy: 862, 84
+  size: 82, 91
+  orig: 82, 91
+  offset: 0, 0
+  index: -1
+香蕉右腿
+  rotate: true
+  xy: 862, 4
+  size: 78, 92
+  orig: 78, 92
+  offset: 0, 0
+  index: -1
+香蕉左手
+  rotate: false
+  xy: 862, 177
+  size: 88, 87
+  orig: 89, 87
+  offset: 1, 0
+  index: -1
+香蕉左腿
+  rotate: false
+  xy: 952, 173
+  size: 71, 91
+  orig: 71, 91
+  offset: 0, 0
+  index: -1
+香蕉身子
+  rotate: true
+  xy: 2, 8
+  size: 256, 628
+  orig: 256, 628
+  offset: 0, 0
+  index: -1
+马桶
+  rotate: false
+  xy: 632, 2
+  size: 228, 262
+  orig: 228, 262
+  offset: 0, 0
+  index: -1
