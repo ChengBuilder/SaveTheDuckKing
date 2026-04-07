@@ -13,4 +13,5 @@
 ```bash
 node runnable_wechat_project/architecture/tools/run-guardrails.js
 node runnable_wechat_project/architecture/tools/generate-iteration-report.js
+node runnable_wechat_project/architecture/tools/run-iteration-cycle.js
 ```

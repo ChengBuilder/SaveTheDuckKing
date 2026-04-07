@@ -47,8 +47,7 @@ function generateModuleIndex() {
   lines.push('');
 
   fs.writeFileSync(outputPath, lines.join('\n'));
-  console.log('[generate-module-index] wrote:', outputPath);
+  console.log('[模块索引] 已生成:', outputPath);
 }
 
 generateModuleIndex();
-

@@ -1,5 +1,7 @@
 'use strict';
 
+const { logWarn, logDebug } = require('./boot-logger');
+
 /**
  * 安全读取微信系统信息。
  * @returns {Record<string, any>} 微信系统信息对象
@@ -7,10 +9,16 @@
 function getSystemInfoSafely() {
   try {
     if (typeof wx !== 'undefined' && typeof wx.getSystemInfoSync === 'function') {
-      return wx.getSystemInfoSync() || {};
+      const runtimeSystemInfo = wx.getSystemInfoSync() || {};
+      logDebug('读取系统信息成功。', {
+        platform: runtimeSystemInfo.platform,
+        benchmarkLevel: runtimeSystemInfo.benchmarkLevel,
+        pixelRatio: runtimeSystemInfo.pixelRatio
+      });
+      return runtimeSystemInfo;
     }
   } catch (error) {
-    console.warn('[Boot] 读取系统信息失败，使用默认值继续启动。', error);
+    logWarn('读取系统信息失败，将使用默认值继续启动。', error);
   }
   return {};
 }

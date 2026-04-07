@@ -1,5 +1,7 @@
 'use strict';
 
+const { logWarn, logDebug } = require('./boot-logger');
+
 const CANVAS_BASE_SIZE_KEY = '__duckCanvasBaseSize';
 const CANVAS_RENDER_DPR_KEY = '__duckRenderDpr';
 
@@ -39,6 +41,7 @@ function normalizeCanvasOrientation(systemInfo) {
  */
 function applyRenderResolutionPolicy(systemInfo, renderPixelRatioCap) {
   if (typeof canvas === 'undefined' || !canvas || typeof window === 'undefined') {
+    logDebug('当前环境不支持渲染分辨率策略，已跳过。');
     return;
   }
 
@@ -61,12 +64,22 @@ function applyRenderResolutionPolicy(systemInfo, renderPixelRatioCap) {
     canvas.width === targetRenderWidth &&
     canvas.height === targetRenderHeight;
   if (hasSameRenderState) {
+    logDebug('渲染尺寸未变化，跳过重复设置。', {
+      renderDpr: renderDpr,
+      width: targetRenderWidth,
+      height: targetRenderHeight
+    });
     return;
   }
 
   canvas.width = targetRenderWidth;
   canvas.height = targetRenderHeight;
   canvas[CANVAS_RENDER_DPR_KEY] = renderDpr;
+  logDebug('渲染分辨率策略已生效。', {
+    renderDpr: renderDpr,
+    width: targetRenderWidth,
+    height: targetRenderHeight
+  });
 }
 
 /**
@@ -79,6 +92,7 @@ function applyRenderResolutionPolicy(systemInfo, renderPixelRatioCap) {
  */
 function applyFrameRatePolicy(systemInfo, lowEndBenchmarkLevel, lowEndFps, defaultFps) {
   if (typeof wx === 'undefined' || typeof wx.setPreferredFramesPerSecond !== 'function') {
+    logDebug('当前环境不支持帧率设置，已跳过帧率策略。');
     return;
   }
 
@@ -89,8 +103,12 @@ function applyFrameRatePolicy(systemInfo, lowEndBenchmarkLevel, lowEndFps, defau
 
   try {
     wx.setPreferredFramesPerSecond(targetFps);
+    logDebug('帧率策略已生效。', {
+      benchmarkLevel: benchmarkLevel,
+      targetFps: targetFps
+    });
   } catch (error) {
-    console.warn('[Boot] 设置帧率失败，保持微信默认值。', error);
+    logWarn('设置帧率失败，保持微信默认值。', error);
   }
 }
 

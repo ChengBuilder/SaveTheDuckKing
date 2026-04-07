@@ -81,7 +81,7 @@ function generateAssetCodeReport() {
   markdownLines.push('');
 
   fs.writeFileSync(outputPath, markdownLines.join('\n'));
-  console.log('[generate-asset-code-report] wrote:', outputPath);
+  console.log('[素材分层报告] 已生成:', outputPath);
 }
 
 /**

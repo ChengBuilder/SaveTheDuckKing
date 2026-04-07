@@ -14,6 +14,7 @@ const {
 } = require('./runtime-bridge');
 const { startApplicationLifecycle } = require('./app-lifecycle');
 const { getRuntimeGlobalObject, getRuntimeStateStore } = require('./global-context');
+const { logInfo, logWarn, logError, logDebug } = require('./boot-logger');
 
 /**
  * 启动配置的最终兜底值。
@@ -52,7 +53,7 @@ function resolveBootConfigSafely() {
     const resolvedConfig = configResolver();
     return normalizeBootConfig(resolvedConfig, fallbackConfig);
   } catch (error) {
-    console.warn('[Boot] 解析启动配置失败，已回退到默认配置。', error);
+    logWarn('解析启动配置失败，已回退到默认配置。', error);
     return fallbackConfig;
   }
 }
@@ -176,6 +177,10 @@ function resolveBootRuntimeState() {
 function markBootStatus(runtimeBootState, nextStatus) {
   runtimeBootState.status = nextStatus;
   runtimeBootState.updatedAt = new Date().toISOString();
+  logDebug('启动状态已更新。', {
+    status: nextStatus,
+    updatedAt: runtimeBootState.updatedAt
+  });
 }
 
 /**
@@ -198,6 +203,7 @@ function shouldSkipBoot(runtimeBootState) {
 function runBootSequence(requireFn, runtimeBootState) {
   markBootStatus(runtimeBootState, BOOT_STATUS_RUNNING);
   const bootConfig = resolveBootConfigSafely();
+  logInfo('开始执行启动序列。', bootConfig);
   const systemInfo = getSystemInfoSafely();
   exposeRuntimeRequire(requireFn);
   loadRuntimeDependencies(requireFn);
@@ -223,10 +229,11 @@ function runBootSequence(requireFn, runtimeBootState) {
   return startApplicationLifecycle(requireFn, loadingView, bootConfig)
     .then(function onBootSuccess() {
       markBootStatus(runtimeBootState, BOOT_STATUS_COMPLETED);
+      logInfo('启动完成。');
     })
     .catch(function onBootError(error) {
       markBootStatus(runtimeBootState, BOOT_STATUS_FAILED);
-      console.error('[Boot] 启动失败。', error);
+      logError('启动失败。', error);
     });
 }
 
@@ -238,7 +245,9 @@ function runBootSequence(requireFn, runtimeBootState) {
 function bootGameRuntime(requireFn) {
   const runtimeBootState = resolveBootRuntimeState();
   if (shouldSkipBoot(runtimeBootState)) {
-    console.warn('[Boot] 已存在启动流程，忽略重复调用。当前状态:', runtimeBootState.status);
+    logWarn('已存在启动流程，忽略重复调用。', {
+      status: runtimeBootState.status
+    });
     return;
   }
   markBootStatus(runtimeBootState, BOOT_STATUS_PENDING);

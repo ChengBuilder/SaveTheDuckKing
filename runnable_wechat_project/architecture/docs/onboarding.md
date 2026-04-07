@@ -8,6 +8,8 @@
 5. `runnable_wechat_project/architecture/memory/project-memory.md`
 6. `runnable_wechat_project/architecture/skills/maintainer/SKILL.md`
 7. `runnable_wechat_project/architecture/docs/iterations/README.md`
+8. `runnable_wechat_project/architecture/docs/iteration-workflow.md`
+9. `runnable_wechat_project/architecture/docs/debug-output.md`
 
 ## 从哪里开始改
 1. 启动与平台适配：改 `architecture/boot/*`
@@ -24,6 +26,8 @@
    `node runnable_wechat_project/architecture/tools/check-asset-code-separation.js`
 6. 每轮优化完成后执行：
    `node runnable_wechat_project/architecture/tools/generate-iteration-report.js`
+7. 如果希望一次性完成全部流程，执行：
+   `node runnable_wechat_project/architecture/tools/run-iteration-cycle.js`
 
 ## 性能排查优先级
 1. 启动阶段：像素比、帧率、首屏链路

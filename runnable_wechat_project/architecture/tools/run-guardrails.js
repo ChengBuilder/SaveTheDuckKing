@@ -12,23 +12,29 @@ function runGuardrails() {
   const commands = [
     'node -c runnable_wechat_project/game.js',
     'node -c runnable_wechat_project/architecture/boot/game-bootstrap.js',
+    'node -c runnable_wechat_project/architecture/boot/config.js',
     'node -c runnable_wechat_project/architecture/boot/global-context.js',
+    'node -c runnable_wechat_project/architecture/boot/boot-logger.js',
+    'node -c runnable_wechat_project/architecture/boot/system-info.js',
     'node -c runnable_wechat_project/architecture/boot/render-policies.js',
+    'node -c runnable_wechat_project/architecture/boot/runtime-bridge.js',
+    'node -c runnable_wechat_project/architecture/boot/app-lifecycle.js',
     'node -c runnable_wechat_project/architecture/tools/generate-iteration-report.js',
+    'node -c runnable_wechat_project/architecture/tools/run-iteration-cycle.js',
     'node runnable_wechat_project/architecture/tools/check-architecture-style.js',
     'node runnable_wechat_project/architecture/tools/check-asset-code-separation.js',
     'node runnable_wechat_project/architecture/tools/verify-runtime-safety.js'
   ];
 
   for (const command of commands) {
-    console.log('[guardrails] run:', command);
+    console.log('[护栏检查] 执行命令:', command);
     execSync(command, {
       cwd: workspace,
       stdio: 'inherit'
     });
   }
 
-  console.log('[guardrails] 全部通过');
+  console.log('[护栏检查] 全部通过');
 }
 
 runGuardrails();

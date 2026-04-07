@@ -1,5 +1,7 @@
 'use strict';
 
+const { logInfo, logWarn, logDebug } = require('./boot-logger');
+
 /**
  * 启动业务应用生命周期。
  * @param {Function} requireFn 当前模块 require 函数
@@ -8,6 +10,10 @@
  * @returns {Promise<void>}
  */
 function startApplicationLifecycle(requireFn, loadingView, bootConfig) {
+  logInfo('开始执行应用生命周期启动流程。', {
+    startScene: bootConfig.startScene,
+    startStyle: bootConfig.startStyle
+  });
   return callLoadingViewMethodSafely(
     loadingView,
     'start',
@@ -22,6 +28,7 @@ function startApplicationLifecycle(requireFn, loadingView, bootConfig) {
       });
     })
     .then(function createApplication(applicationModule) {
+      logDebug('应用模块加载完成，准备创建 Application 实例。');
       return new applicationModule.Application();
     })
     .then(function updateProgressTo40(applicationInstance) {
@@ -42,6 +49,7 @@ function startApplicationLifecycle(requireFn, loadingView, bootConfig) {
         })
         .then(function finalizeAndStart() {
           return callLoadingViewMethodSafely(loadingView, 'end').then(function startApplication() {
+            logInfo('加载页结束，准备启动应用实例。');
             return applicationInstance.start();
           });
         });
@@ -60,6 +68,7 @@ function callLoadingViewMethodSafely(loadingView, methodName, methodArgs) {
   const normalizedArgs = Array.isArray(methodArgs) ? methodArgs : [];
   const method = loadingView ? loadingView[methodName] : null;
   if (typeof method !== 'function') {
+    logDebug('loadingView 不存在目标方法，已跳过调用。', methodName);
     return Promise.resolve();
   }
 
@@ -67,7 +76,10 @@ function callLoadingViewMethodSafely(loadingView, methodName, methodArgs) {
     const result = method.apply(loadingView, normalizedArgs);
     return Promise.resolve(result);
   } catch (error) {
-    console.warn('[Boot] 调用 loadingView 方法失败:', methodName, error);
+    logWarn('调用 loadingView 方法失败，已忽略并继续启动。', {
+      methodName: methodName,
+      error: error
+    });
     return Promise.resolve();
   }
 }

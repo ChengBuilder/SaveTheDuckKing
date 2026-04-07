@@ -10,6 +10,7 @@ const { execSync } = require('child_process');
  */
 function generateIterationReport() {
   const projectRoot = path.resolve(__dirname, '..', '..');
+  const workspaceRoot = path.resolve(projectRoot, '..');
   const reportDirectoryPath = path.join(projectRoot, 'architecture', 'docs', 'iterations');
   const indexPath = path.join(reportDirectoryPath, 'README.md');
 
@@ -18,9 +19,9 @@ function generateIterationReport() {
   const currentDate = new Date();
   const reportFileName = 'iteration-' + formatTimestampForFileName(currentDate) + '.md';
   const reportPath = path.join(reportDirectoryPath, reportFileName);
-  const gitBranchName = safeRunGitCommand('git branch --show-current', projectRoot, 'unknown');
-  const gitHeadCommit = safeRunGitCommand('git rev-parse --short HEAD', projectRoot, 'unknown');
-  const changedFiles = resolveChangedFiles(projectRoot);
+  const gitBranchName = safeRunGitCommand('git branch --show-current', workspaceRoot, 'unknown');
+  const gitHeadCommit = safeRunGitCommand('git rev-parse --short HEAD', workspaceRoot, 'unknown');
+  const changedFiles = resolveChangedFiles(workspaceRoot);
   const bootModulePaths = collectBootModulePaths(projectRoot);
   const reportLines = buildReportLines({
     generatedAtText: formatTimestampForText(currentDate),
@@ -33,8 +34,8 @@ function generateIterationReport() {
   fs.writeFileSync(reportPath, reportLines.join('\n') + '\n');
   updateIterationIndex(reportDirectoryPath, indexPath);
 
-  console.log('[generate-iteration-report] wrote:', reportPath);
-  console.log('[generate-iteration-report] updated index:', indexPath);
+  console.log('[迭代报告] 已生成:', reportPath);
+  console.log('[迭代报告] 已更新索引:', indexPath);
 }
 
 /**
@@ -88,6 +89,7 @@ function buildReportLines(input) {
   lines.push('node runnable_wechat_project/architecture/tools/check-asset-code-separation.js');
   lines.push('node runnable_wechat_project/architecture/tools/generate-asset-code-report.js');
   lines.push('node runnable_wechat_project/architecture/tools/generate-iteration-report.js');
+  lines.push('node runnable_wechat_project/architecture/tools/run-iteration-cycle.js');
   lines.push('```');
   lines.push('');
   lines.push('## 备注');
@@ -157,9 +159,10 @@ function collectBootModulePaths(projectRoot) {
  * @param {string} projectRoot 项目根目录
  * @returns {string[]}
  */
-function resolveChangedFiles(projectRoot) {
-  const stagedOutput = safeRunGitCommand('git diff --cached --name-only', projectRoot, '');
-  const unstagedOutput = safeRunGitCommand('git diff --name-only', projectRoot, '');
+function resolveChangedFiles(workspaceRoot) {
+  const stagedOutput = safeRunGitCommand('git diff --cached --name-only', workspaceRoot, '');
+  const unstagedOutput = safeRunGitCommand('git diff --name-only', workspaceRoot, '');
+  const untrackedOutput = safeRunGitCommand('git ls-files --others --exclude-standard', workspaceRoot, '');
   const changedFileSet = new Set();
 
   for (const outputLine of stagedOutput.split('\n')) {
@@ -170,6 +173,13 @@ function resolveChangedFiles(projectRoot) {
   }
 
   for (const outputLine of unstagedOutput.split('\n')) {
+    const filePath = outputLine.trim();
+    if (filePath.length > 0) {
+      changedFileSet.add(filePath);
+    }
+  }
+
+  for (const outputLine of untrackedOutput.split('\n')) {
     const filePath = outputLine.trim();
     if (filePath.length > 0) {
       changedFileSet.add(filePath);
@@ -257,4 +267,3 @@ function padTwoDigits(value) {
 }
 
 generateIterationReport();
-

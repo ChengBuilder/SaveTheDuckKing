@@ -40,3 +40,13 @@ node runnable_wechat_project/architecture/tools/generate-asset-code-report.js
 ```bash
 node runnable_wechat_project/architecture/tools/generate-iteration-report.js
 ```
+
+## 9) 一键执行完整迭代闭环（推荐）
+```bash
+node runnable_wechat_project/architecture/tools/run-iteration-cycle.js
+```
+
+## 10) 启动调试日志开关（代码片段）
+```js
+globalThis.__DUCK_BOOT_DEBUG = true;
+```

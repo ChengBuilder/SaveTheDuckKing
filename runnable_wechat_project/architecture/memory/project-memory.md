@@ -31,6 +31,18 @@
 3. 报告内容固定包含：项目架构、入口链路、启动模块、常用命令、本轮变更文件。
 4. 约定每轮优化后都要生成一份迭代报告，保证“看文档即可接手”。
 
+## 最新沉淀（2026-04-07 第四轮）
+1. 新增一键迭代流水线：`tools/run-iteration-cycle.js`。
+2. 流水线自动执行：模块索引 -> 分层报告 -> 护栏检查 -> 迭代报告。
+3. 新增迭代工作流文档：`docs/iteration-workflow.md`。
+4. 启动桥接路径规范化：`boot/runtime-bridge.js` 增加 `normalizeRuntimeModulePath`。
+
+## 最新沉淀（2026-04-08 第五轮）
+1. 新增启动日志模块：`boot/boot-logger.js`，统一中文日志输出。
+2. 支持调试日志开关：`globalThis.__DUCK_BOOT_DEBUG` / `globalThis.__DUCK_DEBUG`。
+3. 启动链路日志统一中文化（boot/app-lifecycle/system-info/render/runtime-bridge）。
+4. 根目录新增 `.gitignore`，已忽略 `.idea/` 与 `.DS_Store`。
+
 ## 关键风险与约束
 1. `game.js` 内大量压缩代码不可控，深改风险极高。
 2. 允许改动 `game.js` 的范围：仅限启动桥接与必要接入点。
@@ -41,11 +53,13 @@
 node -c runnable_wechat_project/game.js
 node -c runnable_wechat_project/architecture/boot/game-bootstrap.js
 node -c runnable_wechat_project/architecture/boot/global-context.js
+node -c runnable_wechat_project/architecture/boot/boot-logger.js
 node -c runnable_wechat_project/architecture/boot/render-policies.js
 node runnable_wechat_project/architecture/tools/check-architecture-style.js
 node runnable_wechat_project/architecture/tools/check-asset-code-separation.js
 node runnable_wechat_project/architecture/tools/verify-runtime-safety.js
 node runnable_wechat_project/architecture/tools/generate-iteration-report.js
+node runnable_wechat_project/architecture/tools/run-iteration-cycle.js
 node runnable_wechat_project/architecture/tools/run-guardrails.js
 ```
 

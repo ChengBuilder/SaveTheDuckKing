@@ -26,3 +26,12 @@ globalThis.__DUCK_BOOT_OVERRIDES = {
 1. 如果画面糊：把 `RENDER_PIXEL_RATIO_CAP` 从 `2` 调到 `2.5`
 2. 如果低端机掉帧：把 `LOW_END_FPS` 从 `45` 调到 `30`
 3. 如果高端机发热：把 `DEFAULT_FPS` 从 `60` 调到 `50`
+
+## 调试输出开关
+在启动前设置：
+
+```js
+globalThis.__DUCK_BOOT_DEBUG = true;
+```
+
+开启后可看到中文调试日志（启动状态、DPR 计算、帧率策略等）。
