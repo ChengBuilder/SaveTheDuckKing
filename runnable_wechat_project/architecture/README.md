@@ -7,3 +7,9 @@
 - 自动化脚本：`tools/`
 - 项目长期记忆：`memory/`
 - 项目内技能说明：`skills/`
+
+建议每次迭代后至少执行：
+
+```bash
+node runnable_wechat_project/architecture/tools/run-guardrails.js
+```

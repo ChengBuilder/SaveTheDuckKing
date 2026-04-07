@@ -25,3 +25,13 @@ node -c runnable_wechat_project/game.js
 ```bash
 node runnable_wechat_project/architecture/tools/run-guardrails.js
 ```
+
+## 6) 检查素材与代码是否分离
+```bash
+node runnable_wechat_project/architecture/tools/check-asset-code-separation.js
+```
+
+## 7) 生成素材与代码分层报告
+```bash
+node runnable_wechat_project/architecture/tools/generate-asset-code-report.js
+```

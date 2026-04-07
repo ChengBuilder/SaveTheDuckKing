@@ -1,11 +1,14 @@
 'use strict';
 
+const { getRuntimeGlobalObject } = require('./global-context');
+
 /**
  * 将自定义 require 暴露给全局，保持与原包行为一致。
  * @param {Function} requireFn 当前模块 require 函数
  */
 function exposeRuntimeRequire(requireFn) {
-  globalThis.__wxRequire = requireFn;
+  const runtimeGlobal = getRuntimeGlobalObject();
+  runtimeGlobal.__wxRequire = requireFn;
 }
 
 /**
@@ -24,12 +27,14 @@ function loadRuntimeDependencies(requireFn) {
  * @returns {(pluginPath: string) => any}
  */
 function resolvePluginRequire() {
+  const runtimeGlobal = getRuntimeGlobalObject();
+
   if (typeof requirePlugin === 'function') {
     return requirePlugin;
   }
 
-  if (typeof globalThis !== 'undefined' && typeof globalThis.requirePlugin === 'function') {
-    return globalThis.requirePlugin;
+  if (typeof runtimeGlobal.requirePlugin === 'function') {
+    return runtimeGlobal.requirePlugin;
   }
 
   return function missingPluginRequire(pluginPath) {
@@ -67,4 +72,3 @@ module.exports = {
   loadRuntimeDependencies: loadRuntimeDependencies,
   warmupSystemRuntime: warmupSystemRuntime
 };
-

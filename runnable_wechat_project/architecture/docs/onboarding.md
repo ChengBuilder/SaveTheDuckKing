@@ -3,9 +3,10 @@
 ## 先看什么
 1. `runnable_wechat_project/architecture/docs/README.md`
 2. `runnable_wechat_project/architecture/docs/naming-conventions.md`
-3. `runnable_wechat_project/architecture/boot/game-bootstrap.js`
-4. `runnable_wechat_project/architecture/memory/project-memory.md`
-5. `runnable_wechat_project/architecture/skills/maintainer/SKILL.md`
+3. `runnable_wechat_project/architecture/docs/asset-code-boundaries.md`
+4. `runnable_wechat_project/architecture/boot/game-bootstrap.js`
+5. `runnable_wechat_project/architecture/memory/project-memory.md`
+6. `runnable_wechat_project/architecture/skills/maintainer/SKILL.md`
 
 ## 从哪里开始改
 1. 启动与平台适配：改 `architecture/boot/*`
@@ -18,6 +19,8 @@
 3. 每次改造单独提交，提交信息包含“范围 + 目的”
 4. 每次改造结束后执行：
    `node runnable_wechat_project/architecture/tools/run-guardrails.js`
+5. 如涉及资源包调整，再执行：
+   `node runnable_wechat_project/architecture/tools/check-asset-code-separation.js`
 
 ## 性能排查优先级
 1. 启动阶段：像素比、帧率、首屏链路

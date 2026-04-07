@@ -1,5 +1,7 @@
 'use strict';
 
+const { getRuntimeGlobalObject } = require('./global-context');
+
 /**
  * 默认启动配置。
  */
@@ -40,10 +42,8 @@ function resolveBootConfig() {
  * @returns {Record<string, any>}
  */
 function getGlobalBootOverrides() {
-  if (typeof globalThis === 'undefined') {
-    return {};
-  }
-  const overrides = globalThis.__DUCK_BOOT_OVERRIDES;
+  const runtimeGlobal = getRuntimeGlobalObject();
+  const overrides = runtimeGlobal.__DUCK_BOOT_OVERRIDES;
   if (!overrides || typeof overrides !== 'object') {
     return {};
   }

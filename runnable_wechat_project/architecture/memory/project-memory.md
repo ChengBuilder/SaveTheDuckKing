@@ -17,6 +17,14 @@
 4. 新增项目内技能文档：`skills/maintainer/SKILL.md`。
 5. 启动参数支持运行时覆盖：`globalThis.__DUCK_BOOT_OVERRIDES`。
 
+## 最新沉淀（2026-04-07 第二轮）
+1. 新增运行时上下文模块：`boot/global-context.js`，统一处理全局对象兼容。
+2. 修复重复启动风险：`boot/game-bootstrap.js` 新增启动状态机（pending/running/completed/failed）。
+3. 修复分辨率重复放大风险：`boot/render-policies.js` 改为基于“逻辑尺寸 + DPR”计算，不再累乘。
+4. 修复 loadingView 兼容风险：`boot/app-lifecycle.js` 对 `start/setProgress/end` 统一做 Promise 安全包装。
+5. 新增素材/代码分离护栏：`tools/check-asset-code-separation.js`。
+6. 新增结构报告生成：`tools/generate-asset-code-report.js` + `docs/asset-code-layout.md`。
+
 ## 关键风险与约束
 1. `game.js` 内大量压缩代码不可控，深改风险极高。
 2. 允许改动 `game.js` 的范围：仅限启动桥接与必要接入点。
@@ -26,7 +34,10 @@
 ```bash
 node -c runnable_wechat_project/game.js
 node -c runnable_wechat_project/architecture/boot/game-bootstrap.js
+node -c runnable_wechat_project/architecture/boot/global-context.js
+node -c runnable_wechat_project/architecture/boot/render-policies.js
 node runnable_wechat_project/architecture/tools/check-architecture-style.js
+node runnable_wechat_project/architecture/tools/check-asset-code-separation.js
 node runnable_wechat_project/architecture/tools/verify-runtime-safety.js
 node runnable_wechat_project/architecture/tools/run-guardrails.js
 ```

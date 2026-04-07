@@ -8,12 +8,16 @@
 1. 先在 `architecture/` 做可维护层改造，再桥接到 `game.js`
 2. 不深改 `game.js` 压缩业务代码
 3. 每次改动后必须执行运行安全检查
+4. 素材与代码目录必须保持分层，不在 `architecture/` 混入二进制素材
 
 ## 必跑命令
 ```bash
 node -c runnable_wechat_project/game.js
 node -c runnable_wechat_project/architecture/boot/game-bootstrap.js
+node -c runnable_wechat_project/architecture/boot/global-context.js
+node -c runnable_wechat_project/architecture/boot/render-policies.js
 node runnable_wechat_project/architecture/tools/check-architecture-style.js
+node runnable_wechat_project/architecture/tools/check-asset-code-separation.js
 node runnable_wechat_project/architecture/tools/verify-runtime-safety.js
 ```
 
@@ -22,4 +26,3 @@ node runnable_wechat_project/architecture/tools/verify-runtime-safety.js
 2. 仅修改本次目标相关模块
 3. 运行必跑命令
 4. 更新 `project-memory.md` 的“已落地决策/下阶段路线”
-

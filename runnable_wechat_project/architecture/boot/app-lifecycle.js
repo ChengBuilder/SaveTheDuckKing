@@ -8,13 +8,16 @@
  * @returns {Promise<void>}
  */
 function startApplicationLifecycle(requireFn, loadingView, bootConfig) {
-  return loadingView
-    .start(bootConfig.startScene, bootConfig.startStyle, bootConfig.autoHideSplash)
+  return callLoadingViewMethodSafely(
+    loadingView,
+    'start',
+    [bootConfig.startScene, bootConfig.startStyle, bootConfig.autoHideSplash]
+  )
     .then(function loadApplicationModule() {
       return System.import('./application.67fff.js');
     })
     .then(function updateProgressTo20(applicationModule) {
-      return loadingView.setProgress(0.2).then(function passModule() {
+      return callLoadingViewMethodSafely(loadingView, 'setProgress', [0.2]).then(function passModule() {
         return applicationModule;
       });
     })
@@ -22,14 +25,14 @@ function startApplicationLifecycle(requireFn, loadingView, bootConfig) {
       return new applicationModule.Application();
     })
     .then(function updateProgressTo40(applicationInstance) {
-      return loadingView.setProgress(0.4).then(function passInstance() {
+      return callLoadingViewMethodSafely(loadingView, 'setProgress', [0.4]).then(function passInstance() {
         return applicationInstance;
       });
     })
     .then(function initializeEngineAndRun(applicationInstance) {
       return System.import('cc')
         .then(function updateProgressTo60(engineModule) {
-          return loadingView.setProgress(0.6).then(function passEngineModule() {
+          return callLoadingViewMethodSafely(loadingView, 'setProgress', [0.6]).then(function passEngineModule() {
             return engineModule;
           });
         })
@@ -38,14 +41,37 @@ function startApplicationLifecycle(requireFn, loadingView, bootConfig) {
           return applicationInstance.init(engineModule);
         })
         .then(function finalizeAndStart() {
-          return loadingView.end().then(function startApplication() {
+          return callLoadingViewMethodSafely(loadingView, 'end').then(function startApplication() {
             return applicationInstance.start();
           });
         });
     });
 }
 
+/**
+ * 安全调用 loadingView 的生命周期方法。
+ * 兼容方法不存在、返回值非 Promise 的场景，避免启动链路中断。
+ * @param {Record<string, any>} loadingView 首屏 loading 控制器
+ * @param {string} methodName 方法名
+ * @param {any[]} methodArgs 方法参数
+ * @returns {Promise<any>}
+ */
+function callLoadingViewMethodSafely(loadingView, methodName, methodArgs) {
+  const normalizedArgs = Array.isArray(methodArgs) ? methodArgs : [];
+  const method = loadingView ? loadingView[methodName] : null;
+  if (typeof method !== 'function') {
+    return Promise.resolve();
+  }
+
+  try {
+    const result = method.apply(loadingView, normalizedArgs);
+    return Promise.resolve(result);
+  } catch (error) {
+    console.warn('[Boot] 调用 loadingView 方法失败:', methodName, error);
+    return Promise.resolve();
+  }
+}
+
 module.exports = {
   startApplicationLifecycle: startApplicationLifecycle
 };
-

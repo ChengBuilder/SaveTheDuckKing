@@ -8,6 +8,11 @@
 - `docs/`: 维护规范、命名规范、迭代指南
 - `tools/`: 可读化与分析工具脚本（面向压缩产物）
 
+## 推荐先读
+1. `architecture/docs/naming-conventions.md`
+2. `architecture/docs/asset-code-boundaries.md`
+3. `architecture/docs/onboarding.md`
+
 ## 设计原则
 1. 单一职责：一个模块只负责一种能力。
 2. 命名可读：变量和函数按“语义优先”命名，禁止单字母命名（循环计数器除外）。

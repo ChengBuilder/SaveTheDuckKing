@@ -11,11 +11,13 @@ function verifyRuntimeSafety() {
   const projectRoot = path.resolve(__dirname, '..', '..');
   const gamePath = path.join(projectRoot, 'game.js');
   const bootPath = path.join(projectRoot, 'architecture', 'boot', 'game-bootstrap.js');
+  const globalContextPath = path.join(projectRoot, 'architecture', 'boot', 'global-context.js');
 
   const errors = [];
 
   assertFileExists(gamePath, errors, '缺少主入口 game.js');
   assertFileExists(bootPath, errors, '缺少可维护启动入口 game-bootstrap.js');
+  assertFileExists(globalContextPath, errors, '缺少运行时上下文模块 global-context.js');
 
   if (errors.length === 0) {
     const gameSource = fs.readFileSync(gamePath, 'utf8');

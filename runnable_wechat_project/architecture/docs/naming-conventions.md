@@ -28,3 +28,7 @@
 - 分析脚本仅放在 `architecture/tools`
 - 文档仅放在 `architecture/docs`
 
+## 7. 素材与代码边界
+- `architecture` 目录禁止提交图片、音频、视频、字体和二进制素材
+- `native` 目录只放素材，不放脚本
+- `import` 目录只放配置/元数据，不放素材二进制

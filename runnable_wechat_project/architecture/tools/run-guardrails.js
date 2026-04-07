@@ -12,7 +12,10 @@ function runGuardrails() {
   const commands = [
     'node -c runnable_wechat_project/game.js',
     'node -c runnable_wechat_project/architecture/boot/game-bootstrap.js',
+    'node -c runnable_wechat_project/architecture/boot/global-context.js',
+    'node -c runnable_wechat_project/architecture/boot/render-policies.js',
     'node runnable_wechat_project/architecture/tools/check-architecture-style.js',
+    'node runnable_wechat_project/architecture/tools/check-asset-code-separation.js',
     'node runnable_wechat_project/architecture/tools/verify-runtime-safety.js'
   ];
 
@@ -28,4 +31,3 @@ function runGuardrails() {
 }
 
 runGuardrails();
-

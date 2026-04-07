@@ -13,6 +13,7 @@ const {
   warmupSystemRuntime
 } = require('./runtime-bridge');
 const { startApplicationLifecycle } = require('./app-lifecycle');
+const { getRuntimeGlobalObject, getRuntimeStateStore } = require('./global-context');
 
 /**
  * 启动配置的最终兜底值。
@@ -27,6 +28,13 @@ const HARD_FALLBACK_BOOT_CONFIG = Object.freeze({
   lowEndFps: 45,
   defaultFps: 60
 });
+
+const BOOT_RUNTIME_STATE_KEY = '__DUCK_BOOT_RUNTIME_STATE';
+const BOOT_STATUS_IDLE = 'idle';
+const BOOT_STATUS_PENDING = 'pending';
+const BOOT_STATUS_RUNNING = 'running';
+const BOOT_STATUS_COMPLETED = 'completed';
+const BOOT_STATUS_FAILED = 'failed';
 
 /**
  * 解析并规范化启动配置，确保返回对象始终可用。
@@ -149,10 +157,46 @@ function pickNumber(currentValue, fallbackValue) {
 }
 
 /**
+ * 读取启动状态对象。
+ * @returns {Record<string, any>}
+ */
+function resolveBootRuntimeState() {
+  const runtimeBootState = getRuntimeStateStore(BOOT_RUNTIME_STATE_KEY);
+  if (typeof runtimeBootState.status !== 'string') {
+    runtimeBootState.status = BOOT_STATUS_IDLE;
+  }
+  return runtimeBootState;
+}
+
+/**
+ * 更新启动状态。
+ * @param {Record<string, any>} runtimeBootState 启动状态对象
+ * @param {string} nextStatus 目标状态
+ */
+function markBootStatus(runtimeBootState, nextStatus) {
+  runtimeBootState.status = nextStatus;
+  runtimeBootState.updatedAt = new Date().toISOString();
+}
+
+/**
+ * 判断当前是否应跳过重复启动。
+ * @param {Record<string, any>} runtimeBootState 启动状态对象
+ * @returns {boolean}
+ */
+function shouldSkipBoot(runtimeBootState) {
+  return runtimeBootState.status === BOOT_STATUS_PENDING ||
+    runtimeBootState.status === BOOT_STATUS_RUNNING ||
+    runtimeBootState.status === BOOT_STATUS_COMPLETED;
+}
+
+/**
  * 执行完整启动流程。
  * @param {Function} requireFn 当前模块 require 函数
+ * @param {Record<string, any>} runtimeBootState 启动状态对象
+ * @returns {Promise<void>}
  */
-function runBootSequence(requireFn) {
+function runBootSequence(requireFn, runtimeBootState) {
+  markBootStatus(runtimeBootState, BOOT_STATUS_RUNNING);
   const bootConfig = resolveBootConfigSafely();
   const systemInfo = getSystemInfoSafely();
   exposeRuntimeRequire(requireFn);
@@ -168,16 +212,22 @@ function runBootSequence(requireFn) {
   warmupSystemRuntime(requireFn);
 
   const loadingView = requireFn('./first-screen');
+  const runtimeGlobal = getRuntimeGlobalObject();
 
-  globalThis.__DUCK_BOOT_INFO = {
+  runtimeGlobal.__DUCK_BOOT_INFO = {
     bootAt: new Date().toISOString(),
     benchmarkLevel: Number(systemInfo.benchmarkLevel || 0),
     pixelRatio: getRuntimePixelRatio(systemInfo)
   };
 
-  return startApplicationLifecycle(requireFn, loadingView, bootConfig).catch(function onBootError(error) {
-    console.error('[Boot] 启动失败。', error);
-  });
+  return startApplicationLifecycle(requireFn, loadingView, bootConfig)
+    .then(function onBootSuccess() {
+      markBootStatus(runtimeBootState, BOOT_STATUS_COMPLETED);
+    })
+    .catch(function onBootError(error) {
+      markBootStatus(runtimeBootState, BOOT_STATUS_FAILED);
+      console.error('[Boot] 启动失败。', error);
+    });
 }
 
 /**
@@ -186,6 +236,13 @@ function runBootSequence(requireFn) {
  * @param {Function} requireFn 当前模块 require 函数
  */
 function bootGameRuntime(requireFn) {
+  const runtimeBootState = resolveBootRuntimeState();
+  if (shouldSkipBoot(runtimeBootState)) {
+    console.warn('[Boot] 已存在启动流程，忽略重复调用。当前状态:', runtimeBootState.status);
+    return;
+  }
+  markBootStatus(runtimeBootState, BOOT_STATUS_PENDING);
+
   const systemInfo = getSystemInfoSafely();
 
   if (
@@ -194,12 +251,12 @@ function bootGameRuntime(requireFn) {
     typeof GameGlobal.requestAnimationFrame === 'function'
   ) {
     GameGlobal.requestAnimationFrame(function startOnNextFrame() {
-      runBootSequence(requireFn);
+      runBootSequence(requireFn, runtimeBootState);
     });
     return;
   }
 
-  runBootSequence(requireFn);
+  runBootSequence(requireFn, runtimeBootState);
 }
 
 module.exports = {
