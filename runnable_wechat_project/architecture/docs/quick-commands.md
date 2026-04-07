@@ -35,3 +35,8 @@ node runnable_wechat_project/architecture/tools/check-asset-code-separation.js
 ```bash
 node runnable_wechat_project/architecture/tools/generate-asset-code-report.js
 ```
+
+## 8) 生成本轮优化迭代报告（含架构/入口/使用说明）
+```bash
+node runnable_wechat_project/architecture/tools/generate-iteration-report.js
+```

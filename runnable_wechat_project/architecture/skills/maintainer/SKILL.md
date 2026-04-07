@@ -9,6 +9,7 @@
 2. 不深改 `game.js` 压缩业务代码
 3. 每次改动后必须执行运行安全检查
 4. 素材与代码目录必须保持分层，不在 `architecture/` 混入二进制素材
+5. 每轮优化结束后必须生成迭代报告，记录架构/入口/使用方式
 
 ## 必跑命令
 ```bash
@@ -19,6 +20,7 @@ node -c runnable_wechat_project/architecture/boot/render-policies.js
 node runnable_wechat_project/architecture/tools/check-architecture-style.js
 node runnable_wechat_project/architecture/tools/check-asset-code-separation.js
 node runnable_wechat_project/architecture/tools/verify-runtime-safety.js
+node runnable_wechat_project/architecture/tools/generate-iteration-report.js
 ```
 
 ## 标准迭代流程

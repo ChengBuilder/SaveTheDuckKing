@@ -14,6 +14,7 @@ function runGuardrails() {
     'node -c runnable_wechat_project/architecture/boot/game-bootstrap.js',
     'node -c runnable_wechat_project/architecture/boot/global-context.js',
     'node -c runnable_wechat_project/architecture/boot/render-policies.js',
+    'node -c runnable_wechat_project/architecture/tools/generate-iteration-report.js',
     'node runnable_wechat_project/architecture/tools/check-architecture-style.js',
     'node runnable_wechat_project/architecture/tools/check-asset-code-separation.js',
     'node runnable_wechat_project/architecture/tools/verify-runtime-safety.js'

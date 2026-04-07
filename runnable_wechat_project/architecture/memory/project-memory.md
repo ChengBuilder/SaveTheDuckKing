@@ -25,6 +25,12 @@
 5. 新增素材/代码分离护栏：`tools/check-asset-code-separation.js`。
 6. 新增结构报告生成：`tools/generate-asset-code-report.js` + `docs/asset-code-layout.md`。
 
+## 最新沉淀（2026-04-07 第三轮）
+1. 新增迭代报告生成器：`tools/generate-iteration-report.js`。
+2. 新增迭代报告索引目录：`docs/iterations/README.md`（自动维护）。
+3. 报告内容固定包含：项目架构、入口链路、启动模块、常用命令、本轮变更文件。
+4. 约定每轮优化后都要生成一份迭代报告，保证“看文档即可接手”。
+
 ## 关键风险与约束
 1. `game.js` 内大量压缩代码不可控，深改风险极高。
 2. 允许改动 `game.js` 的范围：仅限启动桥接与必要接入点。
@@ -39,6 +45,7 @@ node -c runnable_wechat_project/architecture/boot/render-policies.js
 node runnable_wechat_project/architecture/tools/check-architecture-style.js
 node runnable_wechat_project/architecture/tools/check-asset-code-separation.js
 node runnable_wechat_project/architecture/tools/verify-runtime-safety.js
+node runnable_wechat_project/architecture/tools/generate-iteration-report.js
 node runnable_wechat_project/architecture/tools/run-guardrails.js
 ```
 

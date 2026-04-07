@@ -7,6 +7,7 @@
 4. `runnable_wechat_project/architecture/boot/game-bootstrap.js`
 5. `runnable_wechat_project/architecture/memory/project-memory.md`
 6. `runnable_wechat_project/architecture/skills/maintainer/SKILL.md`
+7. `runnable_wechat_project/architecture/docs/iterations/README.md`
 
 ## 从哪里开始改
 1. 启动与平台适配：改 `architecture/boot/*`
@@ -21,6 +22,8 @@
    `node runnable_wechat_project/architecture/tools/run-guardrails.js`
 5. 如涉及资源包调整，再执行：
    `node runnable_wechat_project/architecture/tools/check-asset-code-separation.js`
+6. 每轮优化完成后执行：
+   `node runnable_wechat_project/architecture/tools/generate-iteration-report.js`
 
 ## 性能排查优先级
 1. 启动阶段：像素比、帧率、首屏链路

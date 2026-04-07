@@ -12,6 +12,7 @@
 1. `architecture/docs/naming-conventions.md`
 2. `architecture/docs/asset-code-boundaries.md`
 3. `architecture/docs/onboarding.md`
+4. `architecture/docs/iterations/README.md`
 
 ## 设计原则
 1. 单一职责：一个模块只负责一种能力。
