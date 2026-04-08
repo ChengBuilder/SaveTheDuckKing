@@ -41,3 +41,5 @@
 - 音频统一放在 `audio/<玩法或场景>/<事件名>`，例如 `audio/fruit-game/eliminate-3`
 - 动画统一放在 `animation/<玩法或场景>/<动作名>`，不要继续沿用 `skeleton2`、`video5` 这类编号式名称
 - 编译产物层的 `import/`、`native/` 仍可能保留 UUID 文件名；在没有源资源重建链路前，不直接硬改这类文件名，先通过 bundle 语义目录与自动资产目录完成可读化治理
+- `audioBundle` 的 canonical 路径优先收敛到 `bgm/`、`duckGame/`、`fruitGame/`、`sceneTransition/`、`ui/`、`comboMusic/`、`woodDrop/` 这些一级目录
+- 新增音频禁止继续直接落在 `audioBundle` 根层；确有历史遗留时，必须先在治理记录里说明语义，再安排下一轮收敛

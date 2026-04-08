@@ -8,6 +8,8 @@
 - 自动化脚本：`tools/`
 - 项目长期记忆：`memory/`
 - 项目内技能说明：`skills/`
+- 素材治理记录：`docs/asset-governance-log.md`
+- 音频治理审计：`docs/audio-usage-audit.md`
 
 当前启动层已按职责拆到：
 - `boot/config.js`：配置解析与兜底

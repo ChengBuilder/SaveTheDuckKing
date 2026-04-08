@@ -3,7 +3,7 @@
 > 本文件由 `architecture/tools/generate-bundle-asset-catalog.js` 生成。
 
 ## 总览
-- 生成时间：2026-04-08T05:58:09.495Z
+- 生成时间：2026-04-08T06:39:02.601Z
 - Bundle 总数：10
 - Root bundle 数：2
 - Subpackage bundle 数：8
@@ -22,7 +22,7 @@
 | `Game2Bundle` | `fruit-game` | subpackage-bundle | `main` | 161 | 0 | tex / prefab |
 | `HomeBundle` | `home-hall` | subpackage-bundle | `main` | 231 | 0 | tex / prefab |
 | `aniBundle` | `animation-assets` | subpackage-bundle | `main`、`start-scene` | 156 | 0 | 神兽动画合集 / 骨骼动画 / 小三视频 |
-| `audioBundle` | `audio-assets` | subpackage-bundle | 无 | 65 | 0 | fruitGame / comboMusic / woodDrop |
+| `audioBundle` | `audio-assets` | subpackage-bundle | 无 | 65 | 0 | fruitGame / comboMusic / duckGame |
 | `main` | `main-scenes` | subpackage-bundle | `start-scene` | 5 | 5 | db: |
 | `resources` | `shared-effects` | subpackage-bundle | 无 | 27 | 0 | lz / 彩带 / 粒子 |
 | `uiBundle` | `ui-assets` | subpackage-bundle | `main` | 400 | 0 | tex / prefab |
@@ -400,13 +400,9 @@
   - `gz`：1
   - `ls`：1
   - `lz`：1
-  - `p1`：1
-  - `p2`：1
   - `pop`：1
-  - `qt`：1
   - `win`：1
 - 命名噪声样例路径：
-  - `p2`
   - `win`
   - `adz`
   - `fly`
@@ -416,49 +412,47 @@
   - `lz`
   - `pop`
   - `gz`
-  - `p1`
-  - `qt`
 - 主要路径前缀：
-  - `fruitGame`：13
+  - `fruitGame`：16
   - `comboMusic`：10
+  - `duckGame`：9
+  - `ui`：8
+  - `sceneTransition`：3
   - `woodDrop`：3
+  - `bgm`：2
   - `adz`：1
   - `bdz`：1
-  - `bgm`：1
-  - `breakDoor`：1
   - `clap`：1
-  - `click`：1
-  - `colide`：1
-  - `colliderStone`：1
-  - `colorBgm`：1
+  - `door`：1
+  - `fail`：1
 - 主要语义路径：
   - `adz`：1
   - `bdz`：1
   - `bgm`：1
-  - `breakDoor`：1
+  - `bgm/pureColor`：1
   - `clap`：1
-  - `click`：1
-  - `colide`：1
-  - `colliderStone`：1
-  - `colorBgm`：1
   - `comboMusic/combo_1`：1
   - `comboMusic/combo_10`：1
   - `comboMusic/combo_2`：1
+  - `comboMusic/combo_3`：1
+  - `comboMusic/combo_4`：1
+  - `comboMusic/combo_5`：1
+  - `comboMusic/combo_6`：1
 - 样例路径：
   - `comboMusic/combo_3`
   - `fruitGame/eliminate3`
   - `fruitGame/eliminate8`
-  - `p2`
+  - `duckGame/woodAssembleFollow`
   - `comboMusic/combo_4`
-  - `warning`
+  - `ui/warningPrompt`
   - `win`
   - `clap`
-  - `getDuck`
+  - `ui/duckUnlock`
   - `adz`
   - `fruitGame/FruitWin`
-  - `colliderStone`
+  - `duckGame/stoneCollision`
   - `fruitGame/eliminate1`
-  - `colorBgm`
+  - `bgm/pureColor`
   - `fruitGame/eliminate6`
   - `comboMusic/combo_5`
 - 场景路径：

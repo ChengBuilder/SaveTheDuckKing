@@ -105,6 +105,21 @@
 3. 本轮资源治理策略明确收敛为“两层治理”：运行时继续保留稳定 UUID 编译产物，维护层通过 bundle 目录、资产目录文档和关键 JSON 可读化先建立语义骨架，再分批替换高价值资源命名。
 4. `run-iteration-cycle.js` 与 `run-guardrails.js` 已接入新工具，后续每轮优化都能自动补齐 JSON 可读化与 bundle 资产目录沉淀。
 
+## 最新沉淀（2026-04-08 第十六轮）
+1. `audioBundle` 已完成第一批真实语义化 rename，把一批平铺音频路径收敛到 `bgm/`、`duckGame/`、`fruitGame/`、`sceneTransition/`、`ui/` 等一级目录。
+2. 本轮已同步修改 canonical bundle 配置、微信开发者工具兼容配置副本、对应 `AudioClip` import 元数据，以及 `game.js` 中的直接字符串引用。
+3. 新增 `docs/asset-governance-log.md`，只记录治理历史与待处理遗留项，不参与运行时映射。
+
+## 最新沉淀（2026-04-08 第十七轮）
+1. `audioBundle` 第二批 rename 已继续收敛 `p1`、`p2`、`plateUnlock`、`showGame`，其中 `p1/p2` 按木板重组动画用途落为 `duckGame/woodAssembleLead`、`duckGame/woodAssembleFollow`。
+2. 新增 `tools/generate-audio-usage-audit.js`，会自动扫描 `game.js` 中的 `playSound/playMusic/playLongSound` 引用，并与 `audioBundle` canonical 路径比对。
+3. 音频使用审计产物输出到 `docs/audio-usage-audit.md` / `.json`，并已接入 `run-iteration-cycle.js`；后续定位未引用候选和低可读命名不再需要纯手工排查。
+
+## 最新沉淀（2026-04-08 第十八轮）
+1. `audioBundle` 第三批 rename 已继续把高频根层音效收敛进 `ui/`、`fruitGame/`、`duckGame/`、`sceneTransition/`，本轮新增包括 `ui/buttonClick`、`ui/duckUnlock`、`ui/levelComplete`、`ui/failureStinger`、`ui/warningPrompt`、`ui/victoryStinger`、`ui/ribbonBurst`、`fruitGame/slotFull`、`duckGame/duckQuack`、`duckGame/errorPrompt`、`sceneTransition/duckDrop`。
+2. `tools/generate-audio-usage-audit.js` 已新增“根层路径候选”输出，后续不用手工翻配置，也能直接看到还停留在 bundle 根层、最该继续分层的音频。
+3. 当前 `audioBundle` 已收敛到 15 个根层候选，其中明确低可读遗留项仍为 `adz`、`bdz`、`ls`、`lz`、`gz`；其余 `clap/fail/win/fly/door/pop/over/levelup/show/bgm` 已进入下一轮优先判定清单。
+
 ## 关键风险与约束
 1. `game.js` 内大量压缩代码不可控，深改风险极高。
 2. 允许改动 `game.js` 的范围：仅限启动桥接与必要接入点。

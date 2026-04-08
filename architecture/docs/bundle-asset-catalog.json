@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-08T05:58:09.495Z",
+  "generatedAt": "2026-04-08T06:39:02.601Z",
   "summary": {
     "totalBundles": 10,
     "rootBundles": 2,
@@ -716,15 +716,31 @@
       "topLevelGroups": [
         {
           "name": "fruitGame",
-          "count": 13
+          "count": 16
         },
         {
           "name": "comboMusic",
           "count": 10
         },
         {
+          "name": "duckGame",
+          "count": 9
+        },
+        {
+          "name": "ui",
+          "count": 8
+        },
+        {
+          "name": "sceneTransition",
+          "count": 3
+        },
+        {
           "name": "woodDrop",
           "count": 3
+        },
+        {
+          "name": "bgm",
+          "count": 2
         },
         {
           "name": "adz",
@@ -735,31 +751,15 @@
           "count": 1
         },
         {
-          "name": "bgm",
-          "count": 1
-        },
-        {
-          "name": "breakDoor",
-          "count": 1
-        },
-        {
           "name": "clap",
           "count": 1
         },
         {
-          "name": "click",
+          "name": "door",
           "count": 1
         },
         {
-          "name": "colide",
-          "count": 1
-        },
-        {
-          "name": "colliderStone",
-          "count": 1
-        },
-        {
-          "name": "colorBgm",
+          "name": "fail",
           "count": 1
         }
       ],
@@ -777,27 +777,11 @@
           "count": 1
         },
         {
-          "name": "breakDoor",
+          "name": "bgm/pureColor",
           "count": 1
         },
         {
           "name": "clap",
-          "count": 1
-        },
-        {
-          "name": "click",
-          "count": 1
-        },
-        {
-          "name": "colide",
-          "count": 1
-        },
-        {
-          "name": "colliderStone",
-          "count": 1
-        },
-        {
-          "name": "colorBgm",
           "count": 1
         },
         {
@@ -811,28 +795,43 @@
         {
           "name": "comboMusic/combo_2",
           "count": 1
+        },
+        {
+          "name": "comboMusic/combo_3",
+          "count": 1
+        },
+        {
+          "name": "comboMusic/combo_4",
+          "count": 1
+        },
+        {
+          "name": "comboMusic/combo_5",
+          "count": 1
+        },
+        {
+          "name": "comboMusic/combo_6",
+          "count": 1
         }
       ],
       "samplePaths": [
         "comboMusic/combo_3",
         "fruitGame/eliminate3",
         "fruitGame/eliminate8",
-        "p2",
+        "duckGame/woodAssembleFollow",
         "comboMusic/combo_4",
-        "warning",
+        "ui/warningPrompt",
         "win",
         "clap",
-        "getDuck",
+        "ui/duckUnlock",
         "adz",
         "fruitGame/FruitWin",
-        "colliderStone",
+        "duckGame/stoneCollision",
         "fruitGame/eliminate1",
-        "colorBgm",
+        "bgm/pureColor",
         "fruitGame/eliminate6",
         "comboMusic/combo_5"
       ],
       "namingNoisePaths": [
-        "p2",
         "win",
         "adz",
         "fly",
@@ -841,9 +840,7 @@
         "ls",
         "lz",
         "pop",
-        "gz",
-        "p1",
-        "qt"
+        "gz"
       ],
       "namingNoiseTokens": [
         {
@@ -875,19 +872,7 @@
           "count": 1
         },
         {
-          "name": "p1",
-          "count": 1
-        },
-        {
-          "name": "p2",
-          "count": 1
-        },
-        {
           "name": "pop",
-          "count": 1
-        },
-        {
-          "name": "qt",
           "count": 1
         },
         {
