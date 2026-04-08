@@ -3,7 +3,7 @@
 > 本文件由 `architecture/tools/generate-bundle-asset-catalog.js` 生成。
 
 ## 总览
-- 生成时间：2026-04-08T06:39:02.601Z
+- 生成时间：2026-04-08T07:56:14.794Z
 - Bundle 总数：10
 - Root bundle 数：2
 - Subpackage bundle 数：8
@@ -11,7 +11,7 @@
 - 场景路径数：6
 - 编译产物文件数：import 1299 / native 660
 - UUID 风格编译文件数：1959
-- 存在低可读命名候选的 bundle 数：6
+- 存在低可读命名候选的 bundle 数：5
 
 ## Bundle 一览
 | Bundle ID | 治理标签 | 类型 | 依赖 | 资产数 | 场景数 | 主要路径前缀 |
@@ -22,9 +22,9 @@
 | `Game2Bundle` | `fruit-game` | subpackage-bundle | `main` | 161 | 0 | tex / prefab |
 | `HomeBundle` | `home-hall` | subpackage-bundle | `main` | 231 | 0 | tex / prefab |
 | `aniBundle` | `animation-assets` | subpackage-bundle | `main`、`start-scene` | 156 | 0 | 神兽动画合集 / 骨骼动画 / 小三视频 |
-| `audioBundle` | `audio-assets` | subpackage-bundle | 无 | 65 | 0 | fruitGame / comboMusic / duckGame |
+| `audioBundle` | `audio-assets` | subpackage-bundle | 无 | 65 | 0 | fruitGame / comboMusic / ui |
 | `main` | `main-scenes` | subpackage-bundle | `start-scene` | 5 | 5 | db: |
-| `resources` | `shared-effects` | subpackage-bundle | 无 | 27 | 0 | lz / 彩带 / 粒子 |
+| `resources` | `shared-effects` | subpackage-bundle | 无 | 27 | 0 | particleEffects / ribbonBurst / multiTexture |
 | `uiBundle` | `ui-assets` | subpackage-bundle | `main` | 400 | 0 | tex / prefab |
 
 ## 分 Bundle 明细
@@ -415,22 +415,21 @@
 - 主要路径前缀：
   - `fruitGame`：16
   - `comboMusic`：10
+  - `ui`：10
   - `duckGame`：9
-  - `ui`：8
   - `sceneTransition`：3
   - `woodDrop`：3
   - `bgm`：2
   - `adz`：1
   - `bdz`：1
-  - `clap`：1
   - `door`：1
-  - `fail`：1
+  - `fly`：1
+  - `gz`：1
 - 主要语义路径：
   - `adz`：1
   - `bdz`：1
-  - `bgm`：1
+  - `bgm/defaultGameplay`：1
   - `bgm/pureColor`：1
-  - `clap`：1
   - `comboMusic/combo_1`：1
   - `comboMusic/combo_10`：1
   - `comboMusic/combo_2`：1
@@ -438,6 +437,7 @@
   - `comboMusic/combo_4`：1
   - `comboMusic/combo_5`：1
   - `comboMusic/combo_6`：1
+  - `comboMusic/combo_7`：1
 - 样例路径：
   - `comboMusic/combo_3`
   - `fruitGame/eliminate3`
@@ -446,7 +446,7 @@
   - `comboMusic/combo_4`
   - `ui/warningPrompt`
   - `win`
-  - `clap`
+  - `ui/applause`
   - `ui/duckUnlock`
   - `adz`
   - `fruitGame/FruitWin`
@@ -502,71 +502,44 @@
 - 编译产物文件：import 11 / native 3
 - UUID 风格编译文件：14
 - 命名噪声高频片段：
-  - `lz`：15
-  - `cd1`：1
-  - `cd2`：1
-  - `cd3`：1
-  - `cd4`：1
-  - `cd5`：1
-  - `cd6`：1
-  - `cd7`：1
-  - `xg1`：1
-  - `xg10`：1
-  - `xg11`：1
-  - `xg12`：1
+  - 无
 - 命名噪声样例路径：
-  - `lz/xg2/spriteFrame`
-  - `粒子/lz`
-  - `彩带/cd5/spriteFrame`
-  - `lz/xg3/spriteFrame`
-  - `lz/xg9/spriteFrame`
-  - `lz/xg12/spriteFrame`
-  - `彩带/cd4/spriteFrame`
-  - `lz/xg8/spriteFrame`
-  - `lz/xg6/spriteFrame`
-  - `彩带/cd7/spriteFrame`
-  - `彩带/cd6/spriteFrame`
-  - `lz/xg7/spriteFrame`
-  - `彩带/cd1/spriteFrame`
-  - `lz/xg5/spriteFrame`
-  - `lz/xg1/spriteFrame`
-  - `lz/xg10/spriteFrame`
+  - 无
 - 主要路径前缀：
-  - `lz`：14
-  - `彩带`：7
-  - `粒子`：3
-  - `multTextures`：2
-  - `DuckJson`：1
+  - `particleEffects`：17
+  - `ribbonBurst`：7
+  - `multiTexture`：2
+  - `duck`：1
 - 主要语义路径：
-  - `彩带/cd1`：1
-  - `彩带/cd2`：1
-  - `彩带/cd3`：1
-  - `彩带/cd4`：1
-  - `彩带/cd5`：1
-  - `彩带/cd6`：1
-  - `彩带/cd7`：1
-  - `粒子/circle`：1
-  - `粒子/fragment`：1
-  - `粒子/lz`：1
-  - `DuckJson`：1
-  - `lz/xg1`：1
+  - `duck/duckLevelTemplates`：1
+  - `multiTexture/multiTextureEffect`：1
+  - `multiTexture/multiTextureMaterial`：1
+  - `particleEffects/colorMarker1`：1
+  - `particleEffects/colorMarker10`：1
+  - `particleEffects/colorMarker11`：1
+  - `particleEffects/colorMarker12`：1
+  - `particleEffects/colorMarker13`：1
+  - `particleEffects/colorMarker14`：1
+  - `particleEffects/colorMarker2`：1
+  - `particleEffects/colorMarker3`：1
+  - `particleEffects/colorMarker4`：1
 - 样例路径：
-  - `lz/xg2/spriteFrame`
-  - `粒子/lz`
-  - `彩带/cd5/spriteFrame`
-  - `粒子/fragment`
-  - `lz/xg3/spriteFrame`
-  - `lz/xg9/spriteFrame`
-  - `multTextures/Mult-material`
-  - `lz/xg12/spriteFrame`
-  - `彩带/cd4/spriteFrame`
-  - `DuckJson`
-  - `lz/xg8/spriteFrame`
-  - `lz/xg6/spriteFrame`
-  - `彩带/cd7/spriteFrame`
-  - `彩带/cd6/spriteFrame`
-  - `lz/xg7/spriteFrame`
-  - `multTextures/Mult-effect`
+  - `particleEffects/colorMarker2/spriteFrame`
+  - `particleEffects/colorMarkerParticle`
+  - `ribbonBurst/ribbon5/spriteFrame`
+  - `particleEffects/fragmentShard`
+  - `particleEffects/colorMarker3/spriteFrame`
+  - `particleEffects/colorMarker9/spriteFrame`
+  - `multiTexture/multiTextureMaterial`
+  - `particleEffects/colorMarker12/spriteFrame`
+  - `ribbonBurst/ribbon4/spriteFrame`
+  - `duck/duckLevelTemplates`
+  - `particleEffects/colorMarker8/spriteFrame`
+  - `particleEffects/colorMarker6/spriteFrame`
+  - `ribbonBurst/ribbon7/spriteFrame`
+  - `ribbonBurst/ribbon6/spriteFrame`
+  - `particleEffects/colorMarker7/spriteFrame`
+  - `multiTexture/multiTextureEffect`
 - 场景路径：
   - 无
 

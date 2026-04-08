@@ -120,6 +120,21 @@
 2. `tools/generate-audio-usage-audit.js` 已新增“根层路径候选”输出，后续不用手工翻配置，也能直接看到还停留在 bundle 根层、最该继续分层的音频。
 3. 当前 `audioBundle` 已收敛到 15 个根层候选，其中明确低可读遗留项仍为 `adz`、`bdz`、`ls`、`lz`、`gz`；其余 `clap/fail/win/fly/door/pop/over/levelup/show/bgm` 已进入下一轮优先判定清单。
 
+## 最新沉淀（2026-04-08 第十九轮）
+1. `audioBundle` 第四批 rename 已继续清理根层高频音效，把 `bgm`、`fail`、`clap` 收敛为 `bgm/defaultGameplay`、`ui/failurePrompt`、`ui/applause`。
+2. 当前根层候选已进一步聚焦到“低可读遗留 + 未确认语义的未引用资源”，后续可优先继续处理 `win/fly/door/pop/over/levelup/show`，并保守挂账 `adz/bdz/ls/lz/gz`。
+
+## 最新沉淀（2026-04-08 第二十轮）
+1. `resources` 分包已完成第一批共享特效 rename，把 `彩带/cd1..7` 收敛为 `ribbonBurst/ribbon1..7`，并同步更新 `SpriteFrame` 名与 `game.js` 中的 `ribbon` 直接引用。
+2. `resources` 分包第二批 rename 已继续清理 `粒子/*`、`lz/xg*`、`multTextures/*`、`DuckJson`，当前共享资源主前缀已收敛为 `particleEffects/`、`ribbonBurst/`、`multiTexture/`、`duck/`。
+3. 本轮已通过“代码上下文 + 原始 atlas 视觉核对”双重确认语义：`deletePulseCircle` 对应删除脉冲圈、`fragmentShard` 对应刚体碎片、`colorMarker*` 对应按颜色区分的高亮粒子，不再保留 `lz/xg` 这类缩写。
+
+## 最新沉淀（2026-04-08 第二十一轮）
+1. 新增 `tools/generate-asset-readability-audit.js`，会自动扫描全部 bundle 的 canonical 路径，输出 `docs/asset-readability-audit.md` / `.json`，统一暴露短缩写、短缩写加序号、符号残留与中文目录等可读性候选。
+2. `run-iteration-cycle.js` 已接入“素材可读性审计”，后续每轮都会自动刷新全项目候选清单，不再需要手工逐个 bundle 盘点。
+3. `run-guardrails.js` 已接入该工具的语法检查，确保后续扩展审计规则时不会把迭代流水线带坏。
+4. 当前报告已确认下一批优先对象可以聚焦三组：`DuckBundle` 的 `tex/wood/a..f/*` 木板缩写群、`HomeBundle` 的 `BgParticle/p1..p4` 与 `BgThings*/f1/m1/b1`、`audioBundle` 剩余 `gz/ls/lz` 三个低可读根层音频。
+
 ## 关键风险与约束
 1. `game.js` 内大量压缩代码不可控，深改风险极高。
 2. 允许改动 `game.js` 的范围：仅限启动桥接与必要接入点。
@@ -142,6 +157,7 @@ node architecture/tools/run-guardrails.js
 ```
 
 ## 下阶段迭代路线
-1. 继续清理 bundle 目录名、缩写名和高频语义不明入口，但每次只做闭环 rename，保证运行链不中断。
-2. 在 `architecture/boot` 中继续拆分更细粒度策略模块（首屏加载资源策略、异常恢复策略）。
-3. 对高频改动逻辑优先做“可维护层替换”。
+1. 继续按 `asset-readability-audit.md` 的高优先级候选逐批清理缩写资产，优先从 `DuckBundle` 木板资源群开始，保持每次只处理一组可闭环 rename。
+2. 对 `HomeBundle` / `uiBundle` 中“语义明确但命名语言不统一”的目录做分层规划，先统一目录骨架，再决定是否逐批改英文语义名。
+3. 在 `architecture/boot` 中继续拆分更细粒度策略模块（首屏加载资源策略、异常恢复策略）。
+4. 对高频改动逻辑优先做“可维护层替换”。

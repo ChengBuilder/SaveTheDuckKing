@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-08T06:39:02.674Z",
+  "generatedAt": "2026-04-08T07:56:14.946Z",
   "bundleName": "audioBundle",
   "totalAudioPaths": 65,
   "directReferenceCount": 27,
@@ -7,22 +7,17 @@
   "directMatchCount": 27,
   "dynamicPrefixMatchCount": 15,
   "unreferencedCount": 23,
-  "rootLevelCandidateCount": 15,
+  "rootLevelCandidateCount": 12,
   "exactReferences": [
     {
       "method": "playMusic",
-      "value": "bgm",
+      "value": "bgm/defaultGameplay",
       "count": 12
     },
     {
       "method": "playMusic",
       "value": "bgm/pureColor",
       "count": 3
-    },
-    {
-      "method": "playSound",
-      "value": "clap",
-      "count": 1
     },
     {
       "method": "playSound",
@@ -70,11 +65,6 @@
       "count": 1
     },
     {
-      "method": "playSound",
-      "value": "fail",
-      "count": 2
-    },
-    {
       "method": "playMusic",
       "value": "fruitGame/fruitBgm",
       "count": 5
@@ -106,6 +96,11 @@
     },
     {
       "method": "playSound",
+      "value": "ui/applause",
+      "count": 1
+    },
+    {
+      "method": "playSound",
       "value": "ui/buttonClick",
       "count": 94
     },
@@ -113,6 +108,11 @@
       "method": "playSound",
       "value": "ui/duckUnlock",
       "count": 1
+    },
+    {
+      "method": "playSound",
+      "value": "ui/failurePrompt",
+      "count": 2
     },
     {
       "method": "playSound",
@@ -192,14 +192,6 @@
       "lowReadability": false
     },
     {
-      "path": "clap",
-      "usageStatus": "direct",
-      "matchedBy": [
-        "clap <- playSound"
-      ],
-      "lowReadability": false
-    },
-    {
       "path": "adz",
       "usageStatus": "unreferenced",
       "matchedBy": [],
@@ -209,14 +201,6 @@
       "path": "fly",
       "usageStatus": "unreferenced",
       "matchedBy": [],
-      "lowReadability": false
-    },
-    {
-      "path": "fail",
-      "usageStatus": "direct",
-      "matchedBy": [
-        "fail <- playSound"
-      ],
       "lowReadability": false
     },
     {
@@ -271,14 +255,6 @@
       "path": "show",
       "usageStatus": "unreferenced",
       "matchedBy": [],
-      "lowReadability": false
-    },
-    {
-      "path": "bgm",
-      "usageStatus": "direct",
-      "matchedBy": [
-        "bgm <- playMusic"
-      ],
       "lowReadability": false
     }
   ],
@@ -359,10 +335,10 @@
       "lowReadability": false
     },
     {
-      "path": "clap",
+      "path": "ui/applause",
       "usageStatus": "direct",
       "matchedBy": [
-        "clap <- playSound"
+        "ui/applause <- playSound"
       ],
       "lowReadability": false
     },
@@ -433,10 +409,10 @@
       "lowReadability": false
     },
     {
-      "path": "fail",
+      "path": "ui/failurePrompt",
       "usageStatus": "direct",
       "matchedBy": [
-        "fail <- playSound"
+        "ui/failurePrompt <- playSound"
       ],
       "lowReadability": false
     },
@@ -751,10 +727,10 @@
       "lowReadability": false
     },
     {
-      "path": "bgm",
+      "path": "bgm/defaultGameplay",
       "usageStatus": "direct",
       "matchedBy": [
-        "bgm <- playMusic"
+        "bgm/defaultGameplay <- playMusic"
       ],
       "lowReadability": false
     },

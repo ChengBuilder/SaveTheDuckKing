@@ -46,137 +46,137 @@
   ],
   "paths": {
     "0": [
-      "lz/xg2/spriteFrame",
+      "particleEffects/colorMarker2/spriteFrame",
       2,
       1
     ],
     "1": [
-      "粒子/lz",
+      "particleEffects/colorMarkerParticle",
       4,
       1
     ],
     "4": [
-      "彩带/cd5/spriteFrame",
+      "ribbonBurst/ribbon5/spriteFrame",
       2,
       1
     ],
     "5": [
-      "粒子/fragment",
+      "particleEffects/fragmentShard",
       4,
       1
     ],
     "6": [
-      "lz/xg3/spriteFrame",
+      "particleEffects/colorMarker3/spriteFrame",
       2,
       1
     ],
     "8": [
-      "lz/xg9/spriteFrame",
+      "particleEffects/colorMarker9/spriteFrame",
       2,
       1
     ],
     "9": [
-      "multTextures/Mult-material",
+      "multiTexture/multiTextureMaterial",
       3,
       1
     ],
     "10": [
-      "lz/xg12/spriteFrame",
+      "particleEffects/colorMarker12/spriteFrame",
       2,
       1
     ],
     "11": [
-      "彩带/cd4/spriteFrame",
+      "ribbonBurst/ribbon4/spriteFrame",
       2,
       1
     ],
     "12": [
-      "DuckJson",
+      "duck/duckLevelTemplates",
       1,
       1
     ],
     "13": [
-      "lz/xg8/spriteFrame",
+      "particleEffects/colorMarker8/spriteFrame",
       2,
       1
     ],
     "14": [
-      "lz/xg6/spriteFrame",
+      "particleEffects/colorMarker6/spriteFrame",
       2,
       1
     ],
     "15": [
-      "彩带/cd7/spriteFrame",
+      "ribbonBurst/ribbon7/spriteFrame",
       2,
       1
     ],
     "16": [
-      "彩带/cd6/spriteFrame",
+      "ribbonBurst/ribbon6/spriteFrame",
       2,
       1
     ],
     "17": [
-      "lz/xg7/spriteFrame",
+      "particleEffects/colorMarker7/spriteFrame",
       2,
       1
     ],
     "18": [
-      "multTextures/Mult-effect",
+      "multiTexture/multiTextureEffect",
       0,
       1
     ],
     "19": [
-      "彩带/cd1/spriteFrame",
+      "ribbonBurst/ribbon1/spriteFrame",
       2,
       1
     ],
     "20": [
-      "lz/xg5/spriteFrame",
+      "particleEffects/colorMarker5/spriteFrame",
       2,
       1
     ],
     "21": [
-      "粒子/circle",
+      "particleEffects/deletePulseCircle",
       4,
       1
     ],
     "22": [
-      "lz/xg1/spriteFrame",
+      "particleEffects/colorMarker1/spriteFrame",
       2,
       1
     ],
     "23": [
-      "lz/xg10/spriteFrame",
+      "particleEffects/colorMarker10/spriteFrame",
       2,
       1
     ],
     "24": [
-      "lz/xg13/spriteFrame",
+      "particleEffects/colorMarker13/spriteFrame",
       2,
       1
     ],
     "25": [
-      "彩带/cd3/spriteFrame",
+      "ribbonBurst/ribbon3/spriteFrame",
       2,
       1
     ],
     "26": [
-      "lz/xg4/spriteFrame",
+      "particleEffects/colorMarker4/spriteFrame",
       2,
       1
     ],
     "27": [
-      "lz/xg14/spriteFrame",
+      "particleEffects/colorMarker14/spriteFrame",
       2,
       1
     ],
     "28": [
-      "lz/xg11/spriteFrame",
+      "particleEffects/colorMarker11/spriteFrame",
       2,
       1
     ],
     "29": [
-      "彩带/cd2/spriteFrame",
+      "ribbonBurst/ribbon2/spriteFrame",
       2,
       1
     ]

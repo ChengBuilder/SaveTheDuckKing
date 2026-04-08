@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-08T06:39:02.601Z",
+  "generatedAt": "2026-04-08T07:56:14.794Z",
   "summary": {
     "totalBundles": 10,
     "rootBundles": 2,
@@ -9,7 +9,7 @@
     "totalImportFiles": 1299,
     "totalNativeFiles": 660,
     "totalUuidLikeCompiledFiles": 1959,
-    "bundlesWithNamingNoise": 6
+    "bundlesWithNamingNoise": 5
   },
   "bundles": [
     {
@@ -723,12 +723,12 @@
           "count": 10
         },
         {
-          "name": "duckGame",
-          "count": 9
+          "name": "ui",
+          "count": 10
         },
         {
-          "name": "ui",
-          "count": 8
+          "name": "duckGame",
+          "count": 9
         },
         {
           "name": "sceneTransition",
@@ -751,15 +751,15 @@
           "count": 1
         },
         {
-          "name": "clap",
-          "count": 1
-        },
-        {
           "name": "door",
           "count": 1
         },
         {
-          "name": "fail",
+          "name": "fly",
+          "count": 1
+        },
+        {
+          "name": "gz",
           "count": 1
         }
       ],
@@ -773,15 +773,11 @@
           "count": 1
         },
         {
-          "name": "bgm",
+          "name": "bgm/defaultGameplay",
           "count": 1
         },
         {
           "name": "bgm/pureColor",
-          "count": 1
-        },
-        {
-          "name": "clap",
           "count": 1
         },
         {
@@ -811,6 +807,10 @@
         {
           "name": "comboMusic/combo_6",
           "count": 1
+        },
+        {
+          "name": "comboMusic/combo_7",
+          "count": 1
         }
       ],
       "samplePaths": [
@@ -821,7 +821,7 @@
         "comboMusic/combo_4",
         "ui/warningPrompt",
         "win",
-        "clap",
+        "ui/applause",
         "ui/duckUnlock",
         "adz",
         "fruitGame/FruitWin",
@@ -941,162 +941,92 @@
       "scenePaths": [],
       "topLevelGroups": [
         {
-          "name": "lz",
-          "count": 14
+          "name": "particleEffects",
+          "count": 17
         },
         {
-          "name": "彩带",
+          "name": "ribbonBurst",
           "count": 7
         },
         {
-          "name": "粒子",
-          "count": 3
-        },
-        {
-          "name": "multTextures",
+          "name": "multiTexture",
           "count": 2
         },
         {
-          "name": "DuckJson",
+          "name": "duck",
           "count": 1
         }
       ],
       "topSemanticPaths": [
         {
-          "name": "彩带/cd1",
+          "name": "duck/duckLevelTemplates",
           "count": 1
         },
         {
-          "name": "彩带/cd2",
+          "name": "multiTexture/multiTextureEffect",
           "count": 1
         },
         {
-          "name": "彩带/cd3",
+          "name": "multiTexture/multiTextureMaterial",
           "count": 1
         },
         {
-          "name": "彩带/cd4",
+          "name": "particleEffects/colorMarker1",
           "count": 1
         },
         {
-          "name": "彩带/cd5",
+          "name": "particleEffects/colorMarker10",
           "count": 1
         },
         {
-          "name": "彩带/cd6",
+          "name": "particleEffects/colorMarker11",
           "count": 1
         },
         {
-          "name": "彩带/cd7",
+          "name": "particleEffects/colorMarker12",
           "count": 1
         },
         {
-          "name": "粒子/circle",
+          "name": "particleEffects/colorMarker13",
           "count": 1
         },
         {
-          "name": "粒子/fragment",
+          "name": "particleEffects/colorMarker14",
           "count": 1
         },
         {
-          "name": "粒子/lz",
+          "name": "particleEffects/colorMarker2",
           "count": 1
         },
         {
-          "name": "DuckJson",
+          "name": "particleEffects/colorMarker3",
           "count": 1
         },
         {
-          "name": "lz/xg1",
+          "name": "particleEffects/colorMarker4",
           "count": 1
         }
       ],
       "samplePaths": [
-        "lz/xg2/spriteFrame",
-        "粒子/lz",
-        "彩带/cd5/spriteFrame",
-        "粒子/fragment",
-        "lz/xg3/spriteFrame",
-        "lz/xg9/spriteFrame",
-        "multTextures/Mult-material",
-        "lz/xg12/spriteFrame",
-        "彩带/cd4/spriteFrame",
-        "DuckJson",
-        "lz/xg8/spriteFrame",
-        "lz/xg6/spriteFrame",
-        "彩带/cd7/spriteFrame",
-        "彩带/cd6/spriteFrame",
-        "lz/xg7/spriteFrame",
-        "multTextures/Mult-effect"
+        "particleEffects/colorMarker2/spriteFrame",
+        "particleEffects/colorMarkerParticle",
+        "ribbonBurst/ribbon5/spriteFrame",
+        "particleEffects/fragmentShard",
+        "particleEffects/colorMarker3/spriteFrame",
+        "particleEffects/colorMarker9/spriteFrame",
+        "multiTexture/multiTextureMaterial",
+        "particleEffects/colorMarker12/spriteFrame",
+        "ribbonBurst/ribbon4/spriteFrame",
+        "duck/duckLevelTemplates",
+        "particleEffects/colorMarker8/spriteFrame",
+        "particleEffects/colorMarker6/spriteFrame",
+        "ribbonBurst/ribbon7/spriteFrame",
+        "ribbonBurst/ribbon6/spriteFrame",
+        "particleEffects/colorMarker7/spriteFrame",
+        "multiTexture/multiTextureEffect"
       ],
-      "namingNoisePaths": [
-        "lz/xg2/spriteFrame",
-        "粒子/lz",
-        "彩带/cd5/spriteFrame",
-        "lz/xg3/spriteFrame",
-        "lz/xg9/spriteFrame",
-        "lz/xg12/spriteFrame",
-        "彩带/cd4/spriteFrame",
-        "lz/xg8/spriteFrame",
-        "lz/xg6/spriteFrame",
-        "彩带/cd7/spriteFrame",
-        "彩带/cd6/spriteFrame",
-        "lz/xg7/spriteFrame",
-        "彩带/cd1/spriteFrame",
-        "lz/xg5/spriteFrame",
-        "lz/xg1/spriteFrame",
-        "lz/xg10/spriteFrame"
-      ],
-      "namingNoiseTokens": [
-        {
-          "name": "lz",
-          "count": 15
-        },
-        {
-          "name": "cd1",
-          "count": 1
-        },
-        {
-          "name": "cd2",
-          "count": 1
-        },
-        {
-          "name": "cd3",
-          "count": 1
-        },
-        {
-          "name": "cd4",
-          "count": 1
-        },
-        {
-          "name": "cd5",
-          "count": 1
-        },
-        {
-          "name": "cd6",
-          "count": 1
-        },
-        {
-          "name": "cd7",
-          "count": 1
-        },
-        {
-          "name": "xg1",
-          "count": 1
-        },
-        {
-          "name": "xg10",
-          "count": 1
-        },
-        {
-          "name": "xg11",
-          "count": 1
-        },
-        {
-          "name": "xg12",
-          "count": 1
-        }
-      ],
+      "namingNoisePaths": [],
+      "namingNoiseTokens": [],
       "uuidCount": 39,
       "compiledImportFileCount": 11,
       "compiledNativeFileCount": 3,

@@ -3,19 +3,18 @@
 > 本文件由 `architecture/tools/generate-audio-usage-audit.js` 生成。
 
 ## 总览
-- 生成时间：2026-04-08T06:39:02.674Z
+- 生成时间：2026-04-08T07:56:14.946Z
 - Bundle：`audioBundle`
 - 音频 canonical 路径数：65
 - 直接引用条目数：27
 - 动态前缀匹配条目数：15
 - 未引用候选数：23
 - 低可读命名候选数：5
-- 根层路径候选数：15
+- 根层路径候选数：12
 
 ## 直接引用
-- `bgm`：`playMusic` x 12
+- `bgm/defaultGameplay`：`playMusic` x 12
 - `bgm/pureColor`：`playMusic` x 3
-- `clap`：`playSound` x 1
 - `duckGame/cageBreak`：`playSound` x 2
 - `duckGame/duckQuack`：`playSound` x 2
 - `duckGame/duckVictory`：`playLongSound` x 1
@@ -25,15 +24,16 @@
 - `duckGame/woodAssembleFollow`：`playSound` x 2
 - `duckGame/woodAssembleLead`：`playSound` x 2
 - `duckGame/woodCollision`：`playSound` x 1
-- `fail`：`playSound` x 2
 - `fruitGame/fruitBgm`：`playMusic` x 5
 - `fruitGame/fruitClick`：`playSound` x 2
 - `fruitGame/FruitWin`：`playLongSound` x 1
 - `fruitGame/slotFull`：`playSound` x 3
 - `sceneTransition/duckDrop`：`playSound` x 1
 - `sceneTransition/fruitGameReveal`：`playSound` x 1
+- `ui/applause`：`playSound` x 1
 - `ui/buttonClick`：`playSound` x 94
 - `ui/duckUnlock`：`playSound` x 1
+- `ui/failurePrompt`：`playSound` x 2
 - `ui/failureStinger`：`playSound` x 2
 - `ui/levelComplete`：`playSound` x 2
 - `ui/powerConsume`：`playSound` x 2
@@ -47,10 +47,8 @@
 
 ## 根层路径候选
 - `win`：`unreferenced` / `待分层`，命中：无
-- `clap`：`direct` / `待分层`，命中：clap <- playSound
 - `adz`：`unreferenced` / `低可读`，命中：无
 - `fly`：`unreferenced` / `待分层`，命中：无
-- `fail`：`direct` / `待分层`，命中：fail <- playSound
 - `bdz`：`unreferenced` / `低可读`，命中：无
 - `door`：`unreferenced` / `待分层`，命中：无
 - `ls`：`unreferenced` / `低可读`，命中：无
@@ -60,7 +58,6 @@
 - `gz`：`unreferenced` / `低可读`，命中：无
 - `levelup`：`unreferenced` / `待分层`，命中：无
 - `show`：`unreferenced` / `待分层`，命中：无
-- `bgm`：`direct` / `待分层`，命中：bgm <- playMusic
 
 ## 低可读命名候选
 - `adz`：`unreferenced`，命中：无
