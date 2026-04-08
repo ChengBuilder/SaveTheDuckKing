@@ -14,6 +14,7 @@
 7. 控制台输出优先中文，可读性优先，调试日志默认关闭按需开启
 8. 启动层优先沿 `config -> boot-safety -> platform-strategy -> game-bootstrap` 方向继续拆分，而不是重新把逻辑塞回入口
 9. 涉及性能与调试时，优先复用 `performance-strategy` 与 `boot-observer`，不要在入口里零散拼快照字段
+10. 涉及启动失败处理时，优先复用 `recovery-strategy` 统一收敛错误摘要、失败阶段与恢复策略
 
 ## 必跑命令
 ```bash
@@ -21,6 +22,7 @@ node -c game.js
 node -c architecture/boot/game-bootstrap.js
 node -c architecture/boot/global-context.js
 node -c architecture/boot/boot-logger.js
+node -c architecture/boot/recovery-strategy.js
 node -c architecture/boot/render-policies.js
 node architecture/tools/check-architecture-style.js
 node architecture/tools/check-asset-code-separation.js

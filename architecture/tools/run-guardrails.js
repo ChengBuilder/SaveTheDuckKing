@@ -54,6 +54,7 @@ function buildGuardrailSteps(layout) {
     createSyntaxCheckStep(layout, '启动配置语法检查', 'architecture/boot/config.js'),
     createSyntaxCheckStep(layout, '启动安全语法检查', 'architecture/boot/boot-safety.js'),
     createSyntaxCheckStep(layout, '启动观测语法检查', 'architecture/boot/boot-observer.js'),
+    createSyntaxCheckStep(layout, '启动恢复策略语法检查', 'architecture/boot/recovery-strategy.js'),
     createSyntaxCheckStep(layout, '运行时上下文语法检查', 'architecture/boot/global-context.js'),
     createSyntaxCheckStep(layout, '启动日志语法检查', 'architecture/boot/boot-logger.js'),
     createSyntaxCheckStep(layout, '平台策略语法检查', 'architecture/boot/platform-strategy.js'),

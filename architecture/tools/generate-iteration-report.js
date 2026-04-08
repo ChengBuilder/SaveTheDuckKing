@@ -15,6 +15,7 @@ const { resolvePlatformStrategySnapshot } = require('../boot/platform-strategy')
 const { resolveBootSafetySnapshot } = require('../boot/boot-safety');
 const { resolvePerformanceStrategySnapshot } = require('../boot/performance-strategy');
 const { resolveBootObservationSnapshot } = require('../boot/boot-observer');
+const { resolveRecoveryStrategySnapshot } = require('../boot/recovery-strategy');
 
 const GUARDRAIL_REPORT_JSON_PATH = 'architecture/docs/guardrail-report.json';
 const MAX_CHANGED_FILES_FOR_FULL_LIST = 80;
@@ -44,6 +45,7 @@ function generateIterationReport() {
   const bootSafetySnapshot = resolveBootSafetySnapshot();
   const performanceStrategySnapshot = resolvePerformanceStrategySnapshot(bootConfigSnapshot);
   const bootObservationSnapshot = resolveBootObservationSnapshot();
+  const recoveryStrategySnapshot = resolveRecoveryStrategySnapshot();
   const reportLines = buildReportLines({
     layout: layout,
     generatedAtText: formatTimestampForText(currentDate),
@@ -56,7 +58,8 @@ function generateIterationReport() {
     platformStrategySnapshot: platformStrategySnapshot,
     bootSafetySnapshot: bootSafetySnapshot,
     performanceStrategySnapshot: performanceStrategySnapshot,
-    bootObservationSnapshot: bootObservationSnapshot
+    bootObservationSnapshot: bootObservationSnapshot,
+    recoveryStrategySnapshot: recoveryStrategySnapshot
   });
 
   fs.writeFileSync(reportPath, reportLines.join('\n') + '\n');
@@ -80,7 +83,8 @@ function generateIterationReport() {
  *  platformStrategySnapshot: any,
  *  bootSafetySnapshot: any,
  *  performanceStrategySnapshot: any,
- *  bootObservationSnapshot: any
+ *  bootObservationSnapshot: any,
+ *  recoveryStrategySnapshot: any
  * }} input 报告输入
  * @returns {string[]}
  */
@@ -120,9 +124,10 @@ function buildReportLines(input) {
   lines.push('## 启动配置快照');
   appendBootConfigSnapshotLines(lines, input.bootConfigSnapshot);
   lines.push('');
-  lines.push('## 平台与安全策略快照');
+  lines.push('## 平台、安全与恢复策略快照');
   appendPlatformStrategyLines(lines, input.platformStrategySnapshot);
   appendBootSafetyLines(lines, input.bootSafetySnapshot);
+  appendRecoveryStrategyLines(lines, input.recoveryStrategySnapshot);
   lines.push('');
   lines.push('## 性能与运行时观测快照');
   appendPerformanceStrategyLines(lines, input.performanceStrategySnapshot);
@@ -244,6 +249,33 @@ function appendBootSafetyLines(lines, bootSafetySnapshot) {
 }
 
 /**
+ * 追加启动恢复策略快照内容。
+ * @param {string[]} lines 输出行
+ * @param {{
+ *  runtimeInfoKey?: string,
+ *  runtimeStateKey?: string,
+ *  failurePhaseName?: string,
+ *  defaultRecoveryStrategy?: string,
+ *  recordStackPreview?: boolean,
+ *  maxErrorStackLines?: number,
+ *  trackedErrorKeys?: string[]
+ * }} recoveryStrategySnapshot 启动恢复策略快照
+ */
+function appendRecoveryStrategyLines(lines, recoveryStrategySnapshot) {
+  if (!recoveryStrategySnapshot || typeof recoveryStrategySnapshot !== 'object') {
+    lines.push('- 无法读取启动恢复策略快照');
+    return;
+  }
+
+  lines.push('- 失败观测入口：`globalThis.' + String(recoveryStrategySnapshot.runtimeInfoKey || '__DUCK_BOOT_INFO') + '`');
+  lines.push('- 失败状态入口：`globalThis.' + String(recoveryStrategySnapshot.runtimeStateKey || '__DUCK_BOOT_RUNTIME_STATE') + '`');
+  lines.push('- 失败阶段名：`' + String(recoveryStrategySnapshot.failurePhaseName || 'boot-failed') + '`');
+  lines.push('- 默认恢复策略：`' + String(recoveryStrategySnapshot.defaultRecoveryStrategy || 'manual-retry') + '`');
+  lines.push('- 错误字段：`' + (recoveryStrategySnapshot.trackedErrorKeys || []).join(' / ') + '`');
+  lines.push('- 堆栈预览：`' + String(recoveryStrategySnapshot.recordStackPreview ? '开启' : '关闭') + '`，最多 `' + String(recoveryStrategySnapshot.maxErrorStackLines || 0) + '` 行');
+}
+
+/**
  * 追加性能策略快照内容。
  * @param {string[]} lines 输出行
  * @param {{renderPolicy?: Record<string, any>, frameRatePolicy?: Record<string, any>, runtimeMetricKeys?: string[]}} performanceStrategySnapshot 性能策略快照
@@ -268,7 +300,7 @@ function appendPerformanceStrategyLines(lines, performanceStrategySnapshot) {
 /**
  * 追加启动观测快照内容。
  * @param {string[]} lines 输出行
- * @param {{runtimeInfoKey?: string, trackedPhases?: string[], trackedMetricKeys?: string[]}} bootObservationSnapshot 启动观测快照
+ * @param {{runtimeInfoKey?: string, trackedPhases?: string[], trackedMetricKeys?: string[], trackedTimingKeys?: string[]}} bootObservationSnapshot 启动观测快照
  */
 function appendBootObservationLines(lines, bootObservationSnapshot) {
   if (!bootObservationSnapshot || typeof bootObservationSnapshot !== 'object') {
@@ -279,6 +311,8 @@ function appendBootObservationLines(lines, bootObservationSnapshot) {
   lines.push('- 运行时观测入口：`globalThis.' + String(bootObservationSnapshot.runtimeInfoKey || '__DUCK_BOOT_INFO') + '`');
   lines.push('- 关键阶段：`' + (bootObservationSnapshot.trackedPhases || []).join(' / ') + '`');
   lines.push('- 关键指标：`' + (bootObservationSnapshot.trackedMetricKeys || []).join(' / ') + '`');
+  lines.push('- 耗时字段：`' + (bootObservationSnapshot.trackedTimingKeys || []).join(' / ') + '`');
+  lines.push('- 耗时说明：总耗时看 `durationMs`，阶段累计耗时看 `phases[].sinceBootMs`，相邻阶段间隔看 `phases[].sincePreviousPhaseMs`。');
 }
 
 /**

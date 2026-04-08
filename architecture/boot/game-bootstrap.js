@@ -14,8 +14,7 @@ const {
   BOOT_STATUS_COMPLETED,
   resolveBootRuntimeState,
   markBootStatus,
-  shouldSkipBoot,
-  markBootFailure
+  shouldSkipBoot
 } = require('./boot-safety');
 const {
   resolvePlatformStartupStrategy,
@@ -30,7 +29,8 @@ const {
   updateBootMetrics,
   finalizeBootObserver
 } = require('./boot-observer');
-const { logInfo, logWarn, logError, logDebug } = require('./boot-logger');
+const { handleBootFailure } = require('./recovery-strategy');
+const { logInfo, logWarn, logDebug } = require('./boot-logger');
 
 /**
  * 执行完整启动流程。
@@ -95,11 +95,7 @@ function runBootSequence(requireFn, runtimeBootState, systemInfo, platformStartu
       logInfo('启动完成。');
     })
     .catch(function onBootError(error) {
-      markBootFailure(runtimeBootState, error);
-      finalizeBootObserver(bootObserver, 'failed', {
-        lastErrorMessage: resolveErrorMessage(error)
-      });
-      logError('启动失败。', error);
+      handleBootFailure(runtimeBootState, bootObserver, error);
     });
 }
 
@@ -136,18 +132,6 @@ function resolveInitialBootObserverState(bootConfig, systemInfo, platformStartup
  */
 function isObject(value) {
   return Boolean(value) && typeof value === 'object';
-}
-
-/**
- * 提取错误的可读文本。
- * @param {any} error 错误对象
- * @returns {string}
- */
-function resolveErrorMessage(error) {
-  if (error && typeof error.message === 'string' && error.message.length > 0) {
-    return error.message;
-  }
-  return String(error || '未知错误');
 }
 
 /**

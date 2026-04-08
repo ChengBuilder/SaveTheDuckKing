@@ -21,7 +21,13 @@ function createBootObserver(initialInfo) {
     bootAt: bootStartedAt,
     status: 'booting',
     phases: [],
-    metrics: {}
+    metrics: {},
+    phaseSummary: {
+      totalPhases: 0,
+      averagePhaseGapMs: 0,
+      longestGapPhaseName: null,
+      longestGapDurationMs: 0
+    }
   }, normalizedInitialInfo);
 
   runtimeGlobal[BOOT_INFO_KEY] = bootObserver;
@@ -40,9 +46,15 @@ function markBootPhase(bootObserver, phaseName, extraData) {
   }
 
   const normalizedExtraData = extraData && typeof extraData === 'object' ? extraData : {};
+  const phaseAt = new Date().toISOString();
+  const previousPhaseAt = typeof bootObserver.lastPhaseAt === 'string'
+    ? bootObserver.lastPhaseAt
+    : bootObserver.bootAt;
   const phaseRecord = Object.assign({
     name: phaseName,
-    at: new Date().toISOString()
+    at: phaseAt,
+    sinceBootMs: resolveDurationMs(bootObserver.bootAt, phaseAt),
+    sincePreviousPhaseMs: resolveDurationMs(previousPhaseAt, phaseAt)
   }, normalizedExtraData);
 
   if (!Array.isArray(bootObserver.phases)) {
@@ -51,6 +63,8 @@ function markBootPhase(bootObserver, phaseName, extraData) {
 
   bootObserver.phases.push(phaseRecord);
   bootObserver.lastPhase = phaseName;
+  bootObserver.lastPhaseAt = phaseAt;
+  updateBootPhaseSummary(bootObserver, phaseRecord);
 }
 
 /**
@@ -86,6 +100,7 @@ function finalizeBootObserver(bootObserver, finalStatus, extraData) {
   bootObserver.status = finalStatus;
   bootObserver.finishedAt = finishedAt;
   bootObserver.durationMs = resolveDurationMs(bootObserver.bootAt, finishedAt);
+  finalizeBootPhaseSummary(bootObserver);
 
   for (const dataKey of Object.keys(normalizedExtraData)) {
     bootObserver[dataKey] = normalizedExtraData[dataKey];
@@ -111,13 +126,23 @@ function resolveBootObservationSnapshot() {
       'application-created',
       'engine-module-loaded',
       'application-initialized',
-      'application-started'
+      'application-started',
+      'boot-failed'
     ],
     trackedMetricKeys: [
       'metrics.performance.renderPolicy.targetRenderDpr',
       'metrics.performance.renderPolicy.targetRenderWidth',
       'metrics.performance.frameRatePolicy.targetFps',
       'platformStrategy.startupMode'
+    ],
+    trackedTimingKeys: [
+      'durationMs',
+      'phases[].sinceBootMs',
+      'phases[].sincePreviousPhaseMs',
+      'phaseSummary.totalPhases',
+      'phaseSummary.averagePhaseGapMs',
+      'phaseSummary.longestGapPhaseName',
+      'phaseSummary.longestGapDurationMs'
     ]
   };
 }
@@ -156,6 +181,51 @@ function resolveDurationMs(startedAt, finishedAt) {
     return null;
   }
   return Math.max(0, finishedAtMs - startedAtMs);
+}
+
+/**
+ * 更新启动阶段耗时摘要。
+ * @param {Record<string, any>} bootObserver 启动观测对象
+ * @param {{name: string, at: string, sincePreviousPhaseMs: number | null}} phaseRecord 阶段记录
+ */
+function updateBootPhaseSummary(bootObserver, phaseRecord) {
+  const currentSummary = bootObserver.phaseSummary && typeof bootObserver.phaseSummary === 'object'
+    ? bootObserver.phaseSummary
+    : {};
+  const previousGapTotalMs = Number(currentSummary.phaseGapTotalMs || 0);
+  const phaseGapMs = Number(phaseRecord.sincePreviousPhaseMs || 0);
+  const totalPhases = Array.isArray(bootObserver.phases) ? bootObserver.phases.length : 0;
+  const nextGapTotalMs = previousGapTotalMs + phaseGapMs;
+  const longestGapDurationMs = Number(currentSummary.longestGapDurationMs || 0);
+  const shouldReplaceLongestGap = phaseGapMs >= longestGapDurationMs;
+
+  bootObserver.phaseSummary = Object.assign({}, currentSummary, {
+    totalPhases: totalPhases,
+    lastPhaseName: phaseRecord.name,
+    lastPhaseAt: phaseRecord.at,
+    phaseGapTotalMs: nextGapTotalMs,
+    averagePhaseGapMs: totalPhases > 0 ? Math.round(nextGapTotalMs / totalPhases) : 0,
+    longestGapPhaseName: shouldReplaceLongestGap
+      ? phaseRecord.name
+      : currentSummary.longestGapPhaseName || null,
+    longestGapDurationMs: shouldReplaceLongestGap
+      ? phaseGapMs
+      : longestGapDurationMs
+  });
+}
+
+/**
+ * 在启动结束时补全阶段耗时摘要。
+ * @param {Record<string, any>} bootObserver 启动观测对象
+ */
+function finalizeBootPhaseSummary(bootObserver) {
+  const currentSummary = bootObserver.phaseSummary && typeof bootObserver.phaseSummary === 'object'
+    ? bootObserver.phaseSummary
+    : {};
+  bootObserver.phaseSummary = Object.assign({}, currentSummary, {
+    totalDurationMs: bootObserver.durationMs,
+    completedPhaseName: bootObserver.lastPhase || null
+  });
 }
 
 const bootObserverApi = {

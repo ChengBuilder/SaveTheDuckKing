@@ -15,6 +15,7 @@
 - `boot/platform-strategy.js`：平台启动调度策略
 - `boot/performance-strategy.js`：渲染/帧率性能策略
 - `boot/boot-observer.js`：运行时观测与阶段记录
+- `boot/recovery-strategy.js`：启动失败归档与恢复策略
 
 建议每次迭代后至少执行：
 

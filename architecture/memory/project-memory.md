@@ -65,6 +65,16 @@
 4. 迭代报告新增“性能与运行时观测快照”，可直接看到性能默认参数、观测入口、关键阶段与关键指标。
 5. 风格护栏已修正为“只认紧邻函数的 JSDoc”，不再需要用重复注释规避检查。
 
+## 最新沉淀（2026-04-08 第九轮）
+1. `boot/boot-observer.js` 已为每个启动阶段记录 `sinceBootMs` 与 `sincePreviousPhaseMs`，可直接查看累计耗时与阶段间隔。
+2. 启动观测新增 `phaseSummary`，会汇总阶段数量、平均阶段间隔、最长阶段间隔与总耗时。
+3. `generate-iteration-report.js` 已把启动耗时字段写入“运行时观测快照”，后续定位启动慢点不需要先翻源码。
+
+## 最新沉淀（2026-04-08 第十轮）
+1. 新增启动恢复策略模块：`boot/recovery-strategy.js`，统一处理错误摘要、失败阶段记录与恢复策略归档。
+2. `boot/game-bootstrap.js` 的失败分支已进一步瘦身，入口只保留编排职责，不再散落错误归档细节。
+3. 迭代报告新增恢复策略快照，能直接看到失败阶段名、错误字段与堆栈预览规则。
+
 ## 关键风险与约束
 1. `game.js` 内大量压缩代码不可控，深改风险极高。
 2. 允许改动 `game.js` 的范围：仅限启动桥接与必要接入点。
@@ -76,6 +86,7 @@ node -c game.js
 node -c architecture/boot/game-bootstrap.js
 node -c architecture/boot/global-context.js
 node -c architecture/boot/boot-logger.js
+node -c architecture/boot/recovery-strategy.js
 node -c architecture/boot/render-policies.js
 node architecture/tools/check-architecture-style.js
 node architecture/tools/check-asset-code-separation.js
@@ -87,5 +98,5 @@ node architecture/tools/run-guardrails.js
 
 ## 下阶段迭代路线
 1. 在 `architecture/boot` 中继续拆分更细粒度策略模块（首屏加载资源策略、异常恢复策略）。
-2. 继续增强自动化报告，补充运行时快照样例与阶段耗时摘要。
+2. 继续增强自动化报告，补充运行时快照样例与异常场景说明。
 3. 对高频改动逻辑优先做“可维护层替换”。
