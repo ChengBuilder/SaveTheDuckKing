@@ -1,0 +1,458 @@
+[
+  {
+    "moduleId": "chunks:///_virtual/AddPowerPanelView.ts",
+    "selected": true,
+    "aliasCount": 21,
+    "outputFile": "restored/start-scene/AddPowerPanelView.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/AddProgramPanelView.ts",
+    "selected": true,
+    "aliasCount": 23,
+    "outputFile": "restored/start-scene/AddProgramPanelView.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/AddTablePanelView.ts",
+    "selected": true,
+    "aliasCount": 27,
+    "outputFile": "restored/start-scene/AddTablePanelView.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/AdManager_KS.ts",
+    "selected": true,
+    "aliasCount": 5,
+    "outputFile": "restored/start-scene/AdManager_KS.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/AdManager_WX.ts",
+    "selected": true,
+    "aliasCount": 12,
+    "outputFile": "restored/start-scene/AdManager_WX.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/AdManager_ZJ.ts",
+    "selected": true,
+    "aliasCount": 13,
+    "outputFile": "restored/start-scene/AdManager_ZJ.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/AdManager.ts",
+    "selected": true,
+    "aliasCount": 6,
+    "outputFile": "restored/start-scene/AdManager.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/ArrayUtil.ts",
+    "selected": true,
+    "aliasCount": 1,
+    "outputFile": "restored/start-scene/ArrayUtil.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/AudioManager.ts",
+    "selected": true,
+    "aliasCount": 12,
+    "outputFile": "restored/start-scene/AudioManager.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/AutoManager.ts",
+    "selected": true,
+    "aliasCount": 11,
+    "outputFile": "restored/start-scene/AutoManager.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/AwemePanelView.ts",
+    "selected": true,
+    "aliasCount": 27,
+    "outputFile": "restored/start-scene/AwemePanelView.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/bird.ts",
+    "selected": true,
+    "aliasCount": 25,
+    "outputFile": "restored/start-scene/bird.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/BoardLayout.ts",
+    "selected": true,
+    "aliasCount": 3,
+    "outputFile": "restored/start-scene/BoardLayout.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/BookPanelView.ts",
+    "selected": true,
+    "aliasCount": 38,
+    "outputFile": "restored/start-scene/BookPanelView.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/BookPigeonPanelView.ts",
+    "selected": true,
+    "aliasCount": 31,
+    "outputFile": "restored/start-scene/BookPigeonPanelView.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/CollisionUtil.ts",
+    "selected": true,
+    "aliasCount": 1,
+    "outputFile": "restored/start-scene/CollisionUtil.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/ConfigTable.ts",
+    "selected": true,
+    "aliasCount": 1,
+    "outputFile": "restored/start-scene/ConfigTable.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/DefaultRowCounts.ts",
+    "selected": true,
+    "aliasCount": 3,
+    "outputFile": "restored/start-scene/DefaultRowCounts.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/DuckController.ts",
+    "selected": true,
+    "aliasCount": 55,
+    "outputFile": "restored/start-scene/DuckController.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/Enum.ts",
+    "selected": true,
+    "aliasCount": 1,
+    "outputFile": "restored/start-scene/Enum.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/EventManager.ts",
+    "selected": true,
+    "aliasCount": 4,
+    "outputFile": "restored/start-scene/EventManager.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/Fruit.ts",
+    "selected": true,
+    "aliasCount": 31,
+    "outputFile": "restored/start-scene/Fruit.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/FruitHole.ts",
+    "selected": true,
+    "aliasCount": 8,
+    "outputFile": "restored/start-scene/FruitHole.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/FruitManager.ts",
+    "selected": true,
+    "aliasCount": 22,
+    "outputFile": "restored/start-scene/FruitManager.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/FruitNodePool.ts",
+    "selected": true,
+    "aliasCount": 9,
+    "outputFile": "restored/start-scene/FruitNodePool.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/Game.ts",
+    "selected": true,
+    "aliasCount": 51,
+    "outputFile": "restored/start-scene/Game.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/Game2Controller.ts",
+    "selected": true,
+    "aliasCount": 44,
+    "outputFile": "restored/start-scene/Game2Controller.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/GameCtl.ts",
+    "selected": true,
+    "aliasCount": 27,
+    "outputFile": "restored/start-scene/GameCtl.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/GameCtrl.ts",
+    "selected": true,
+    "aliasCount": 5,
+    "outputFile": "restored/start-scene/GameCtrl.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/GameData.ts",
+    "selected": true,
+    "aliasCount": 6,
+    "outputFile": "restored/start-scene/GameData.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/GameData2.ts",
+    "selected": true,
+    "aliasCount": 6,
+    "outputFile": "restored/start-scene/GameData2.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/GameModel.ts",
+    "selected": true,
+    "aliasCount": 13,
+    "outputFile": "restored/start-scene/GameModel.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/GameModel2.ts",
+    "selected": true,
+    "aliasCount": 7,
+    "outputFile": "restored/start-scene/GameModel2.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/Grid.ts",
+    "selected": true,
+    "aliasCount": 1,
+    "outputFile": "restored/start-scene/Grid.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/GridManager.ts",
+    "selected": true,
+    "aliasCount": 6,
+    "outputFile": "restored/start-scene/GridManager.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/GyroscopeManager.ts",
+    "selected": true,
+    "aliasCount": 2,
+    "outputFile": "restored/start-scene/GyroscopeManager.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/HomeScene.ts",
+    "selected": true,
+    "aliasCount": 35,
+    "outputFile": "restored/start-scene/HomeScene.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/itemNode.ts",
+    "selected": true,
+    "aliasCount": 16,
+    "outputFile": "restored/start-scene/itemNode.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/itemPigeonNode.ts",
+    "selected": true,
+    "aliasCount": 13,
+    "outputFile": "restored/start-scene/itemPigeonNode.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/itemSpecialNode.ts",
+    "selected": true,
+    "aliasCount": 13,
+    "outputFile": "restored/start-scene/itemSpecialNode.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/JumpTween.ts",
+    "selected": true,
+    "aliasCount": 4,
+    "outputFile": "restored/start-scene/JumpTween.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/LevelMechanismManager.ts",
+    "selected": true,
+    "aliasCount": 14,
+    "outputFile": "restored/start-scene/LevelMechanismManager.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/LoadScene.ts",
+    "selected": true,
+    "aliasCount": 31,
+    "outputFile": "restored/start-scene/LoadScene.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/MathGameManager.ts",
+    "selected": true,
+    "aliasCount": 20,
+    "outputFile": "restored/start-scene/MathGameManager.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/MathGridItem.ts",
+    "selected": true,
+    "aliasCount": 16,
+    "outputFile": "restored/start-scene/MathGridItem.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/MathLevelGenerator.ts",
+    "selected": true,
+    "aliasCount": 2,
+    "outputFile": "restored/start-scene/MathLevelGenerator.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/MathScreenAdapter.ts",
+    "selected": true,
+    "aliasCount": 18,
+    "outputFile": "restored/start-scene/MathScreenAdapter.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/MoreGamePanelView.ts",
+    "selected": true,
+    "aliasCount": 18,
+    "outputFile": "restored/start-scene/MoreGamePanelView.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/Nail.ts",
+    "selected": true,
+    "aliasCount": 29,
+    "outputFile": "restored/start-scene/Nail.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/OverPanelView.ts",
+    "selected": true,
+    "aliasCount": 36,
+    "outputFile": "restored/start-scene/OverPanelView.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/OverPigeonPanelView.ts",
+    "selected": true,
+    "aliasCount": 30,
+    "outputFile": "restored/start-scene/OverPigeonPanelView.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/PoolManager.ts",
+    "selected": true,
+    "aliasCount": 6,
+    "outputFile": "restored/start-scene/PoolManager.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/PowerBox.ts",
+    "selected": true,
+    "aliasCount": 16,
+    "outputFile": "restored/start-scene/PowerBox.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/PropPanelView.ts",
+    "selected": true,
+    "aliasCount": 32,
+    "outputFile": "restored/start-scene/PropPanelView.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/ReceivePanelView.ts",
+    "selected": true,
+    "aliasCount": 22,
+    "outputFile": "restored/start-scene/ReceivePanelView.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/ReportPanelView.ts",
+    "selected": true,
+    "aliasCount": 10,
+    "outputFile": "restored/start-scene/ReportPanelView.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/ResManager.ts",
+    "selected": true,
+    "aliasCount": 10,
+    "outputFile": "restored/start-scene/ResManager.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/RevivePanelView.ts",
+    "selected": true,
+    "aliasCount": 34,
+    "outputFile": "restored/start-scene/RevivePanelView.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/RopeGenerator.ts",
+    "selected": true,
+    "aliasCount": 4,
+    "outputFile": "restored/start-scene/RopeGenerator.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/ServiceManager.ts",
+    "selected": true,
+    "aliasCount": 6,
+    "outputFile": "restored/start-scene/ServiceManager.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/Set2UIPanelView.ts",
+    "selected": true,
+    "aliasCount": 18,
+    "outputFile": "restored/start-scene/Set2UIPanelView.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/SetBtnView.ts",
+    "selected": true,
+    "aliasCount": 13,
+    "outputFile": "restored/start-scene/SetBtnView.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/SetPanelView.ts",
+    "selected": true,
+    "aliasCount": 37,
+    "outputFile": "restored/start-scene/SetPanelView.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/ShareFriendPanelView.ts",
+    "selected": true,
+    "aliasCount": 26,
+    "outputFile": "restored/start-scene/ShareFriendPanelView.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/SharePanelView.ts",
+    "selected": true,
+    "aliasCount": 25,
+    "outputFile": "restored/start-scene/SharePanelView.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/SideBarPanelView.ts",
+    "selected": true,
+    "aliasCount": 25,
+    "outputFile": "restored/start-scene/SideBarPanelView.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/Singleton.ts",
+    "selected": true,
+    "aliasCount": 1,
+    "outputFile": "restored/start-scene/Singleton.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/start-scene",
+    "selected": true,
+    "aliasCount": 0,
+    "outputFile": "restored/start-scene/start-scene.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/SubscribePanelView.ts",
+    "selected": true,
+    "aliasCount": 28,
+    "outputFile": "restored/start-scene/SubscribePanelView.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/SuccessPanelView.ts",
+    "selected": true,
+    "aliasCount": 40,
+    "outputFile": "restored/start-scene/SuccessPanelView.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/SuccessPigeonPanelView.ts",
+    "selected": true,
+    "aliasCount": 30,
+    "outputFile": "restored/start-scene/SuccessPigeonPanelView.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/TooYueManager.ts",
+    "selected": true,
+    "aliasCount": 0,
+    "outputFile": "restored/start-scene/TooYueManager.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/tysdk.js",
+    "selected": true,
+    "aliasCount": 0,
+    "outputFile": "restored/start-scene/tysdk.js.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/tysdk.mjs_cjs=&original=.js",
+    "selected": true,
+    "aliasCount": 0,
+    "outputFile": "restored/start-scene/tysdk.mjs_cjs__original_.js.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/Util.ts",
+    "selected": true,
+    "aliasCount": 20,
+    "outputFile": "restored/start-scene/Util.ts.restored.js"
+  },
+  {
+    "moduleId": "chunks:///_virtual/Wood.ts",
+    "selected": true,
+    "aliasCount": 24,
+    "outputFile": "restored/start-scene/Wood.ts.restored.js"
+  }
+]
