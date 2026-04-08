@@ -141,6 +141,8 @@ function buildReportLines(input) {
   lines.push(formatNodeCommand([formatProjectPathFromWorkspace(input.layout, 'architecture/tools/run-guardrails.js')]));
   lines.push(formatNodeCommand([formatProjectPathFromWorkspace(input.layout, 'architecture/tools/check-asset-code-separation.js')]));
   lines.push(formatNodeCommand([formatProjectPathFromWorkspace(input.layout, 'architecture/tools/generate-asset-code-report.js')]));
+  lines.push(formatNodeCommand([formatProjectPathFromWorkspace(input.layout, 'architecture/tools/format-project-json.js')]));
+  lines.push(formatNodeCommand([formatProjectPathFromWorkspace(input.layout, 'architecture/tools/generate-bundle-asset-catalog.js')]));
   lines.push(formatNodeCommand([formatProjectPathFromWorkspace(input.layout, 'architecture/tools/generate-iteration-report.js')]));
   lines.push(formatNodeCommand([formatProjectPathFromWorkspace(input.layout, 'architecture/tools/run-iteration-cycle.js')]));
   lines.push('```');

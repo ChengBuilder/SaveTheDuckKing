@@ -37,6 +37,10 @@ const ASSET_EXTENSIONS = new Set([
   '.bin'
 ]);
 
+const IMPORT_METADATA_EXTENSIONS = new Set([
+  '.bin'
+]);
+
 const IGNORED_DIRECTORY_NAMES = new Set([
   '.git',
   '.idea',
@@ -236,13 +240,28 @@ function ensureDirectoryStats(directoryStatsMap, directoryPath) {
  */
 function classifyFile(filePath) {
   const extension = path.extname(filePath).toLowerCase();
-  if (CODE_EXTENSIONS.has(extension)) {
+  if (CODE_EXTENSIONS.has(extension) || isImportMetadataFile(filePath, extension)) {
     return 'code';
   }
   if (ASSET_EXTENSIONS.has(extension)) {
     return 'asset';
   }
   return 'other';
+}
+
+/**
+ * 判断是否为 import 目录下的编译元数据文件。
+ * Cocos 的 `.bin`（CCON）虽然是二进制，但语义属于 import 元数据。
+ * @param {string} filePath 文件路径
+ * @param {string} extension 文件扩展名
+ * @returns {boolean}
+ */
+function isImportMetadataFile(filePath, extension) {
+  if (!IMPORT_METADATA_EXTENSIONS.has(extension)) {
+    return false;
+  }
+
+  return normalizePath(filePath).split('/').includes('import');
 }
 
 /**
@@ -274,13 +293,22 @@ function collectFiles(rootDir) {
 }
 
 /**
+ * 规范化路径分隔符为正斜杠。
+ * @param {string} targetPath 目标路径
+ * @returns {string}
+ */
+function normalizePath(targetPath) {
+  return targetPath.replace(/\\/g, '/');
+}
+
+/**
  * 转换为统一分隔符的相对路径。
  * @param {string} rootDir 根目录
  * @param {string} targetPath 目标路径
  * @returns {string}
  */
 function toRelative(rootDir, targetPath) {
-  return path.relative(rootDir, targetPath).replace(/\\/g, '/');
+  return normalizePath(path.relative(rootDir, targetPath));
 }
 
 generateAssetCodeReport();

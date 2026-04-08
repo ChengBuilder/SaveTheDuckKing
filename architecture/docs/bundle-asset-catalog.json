@@ -1,0 +1,1284 @@
+{
+  "generatedAt": "2026-04-08T05:58:09.495Z",
+  "summary": {
+    "totalBundles": 10,
+    "rootBundles": 2,
+    "subpackageBundles": 8,
+    "totalAssetPaths": 2293,
+    "totalScenes": 6,
+    "totalImportFiles": 1299,
+    "totalNativeFiles": 660,
+    "totalUuidLikeCompiledFiles": 1959,
+    "bundlesWithNamingNoise": 6
+  },
+  "bundles": [
+    {
+      "bundleId": "internal",
+      "semanticLabel": "engine-internal",
+      "bundleType": "root-bundle",
+      "directoryPath": "assets/internal",
+      "configPath": "assets/internal/config.internal.json",
+      "dependencies": [],
+      "assetCount": 18,
+      "sceneCount": 0,
+      "scenePaths": [],
+      "topLevelGroups": [
+        {
+          "name": "db:",
+          "count": 18
+        }
+      ],
+      "topSemanticPaths": [
+        {
+          "name": "db:/internal",
+          "count": 18
+        }
+      ],
+      "samplePaths": [
+        "db:/internal/effects/internal/builtin-graphics",
+        "db:/internal/default_materials/ui-alpha-test-material",
+        "db:/internal/effects/for2d/builtin-sprite",
+        "db:/internal/effects/internal/builtin-clear-stencil",
+        "db:/internal/effects/util/profiler",
+        "db:/internal/default_materials/default-clear-stencil",
+        "db:/internal/effects/util/splash-screen",
+        "db:/internal/effects/builtin-unlit",
+        "db:/internal/default_materials/default-spine-material",
+        "db:/internal/default_materials/missing-effect-material",
+        "db:/internal/effects/for2d/builtin-spine",
+        "db:/internal/default_materials/missing-material",
+        "db:/internal/default_materials/ui-sprite-gray-alpha-sep-material",
+        "db:/internal/default_materials/ui-base-material",
+        "db:/internal/default_materials/ui-sprite-gray-material",
+        "db:/internal/default_materials/ui-graphics-material"
+      ],
+      "namingNoisePaths": [],
+      "namingNoiseTokens": [],
+      "uuidCount": 19,
+      "compiledImportFileCount": 1,
+      "compiledNativeFileCount": 0,
+      "compiledUuidLikeFileCount": 1
+    },
+    {
+      "bundleId": "start-scene",
+      "semanticLabel": "start-scene",
+      "bundleType": "root-bundle",
+      "directoryPath": "assets/start-scene",
+      "configPath": "assets/start-scene/config.start-scene.json",
+      "dependencies": [],
+      "assetCount": 3,
+      "sceneCount": 1,
+      "scenePaths": [
+        "db://assets/scene/LoadScene.scene"
+      ],
+      "topLevelGroups": [
+        {
+          "name": "db:",
+          "count": 3
+        }
+      ],
+      "topSemanticPaths": [
+        {
+          "name": "db:/internal",
+          "count": 2
+        },
+        {
+          "name": "db:/assets",
+          "count": 1
+        }
+      ],
+      "samplePaths": [
+        "db:/assets/scene/LoadScene",
+        "db:/internal/physics/default-physics-material",
+        "db:/internal/default_renderpipeline/builtin-forward"
+      ],
+      "namingNoisePaths": [],
+      "namingNoiseTokens": [],
+      "uuidCount": 19,
+      "compiledImportFileCount": 1,
+      "compiledNativeFileCount": 3,
+      "compiledUuidLikeFileCount": 4
+    },
+    {
+      "bundleId": "DuckBundle",
+      "semanticLabel": "duck-game",
+      "bundleType": "subpackage-bundle",
+      "directoryPath": "subpackages/DuckBundle",
+      "configPath": "subpackages/DuckBundle/config.duck-bundle.json",
+      "dependencies": [
+        "main",
+        "resources"
+      ],
+      "assetCount": 1227,
+      "sceneCount": 0,
+      "scenePaths": [],
+      "topLevelGroups": [
+        {
+          "name": "tex",
+          "count": 1173
+        },
+        {
+          "name": "prefab",
+          "count": 54
+        }
+      ],
+      "topSemanticPaths": [
+        {
+          "name": "tex/wood",
+          "count": 774
+        },
+        {
+          "name": "tex/nail",
+          "count": 99
+        },
+        {
+          "name": "tex/fragment",
+          "count": 90
+        },
+        {
+          "name": "tex/newBg",
+          "count": 60
+        },
+        {
+          "name": "prefab/wood",
+          "count": 43
+        },
+        {
+          "name": "tex/newNail",
+          "count": 39
+        },
+        {
+          "name": "tex/bg",
+          "count": 33
+        },
+        {
+          "name": "tex/难度飙升",
+          "count": 18
+        },
+        {
+          "name": "tex/bubble",
+          "count": 18
+        },
+        {
+          "name": "tex/circle",
+          "count": 6
+        },
+        {
+          "name": "tex/star",
+          "count": 6
+        },
+        {
+          "name": "tex/%2",
+          "count": 3
+        }
+      ],
+      "samplePaths": [
+        "tex/nail/sfa",
+        "tex/wood/e/e26",
+        "tex/wood/b/b34",
+        "tex/wood/d/d16",
+        "tex/wood/a/a5",
+        "tex/wood/e/e31",
+        "tex/难度飙升/上层阴影",
+        "tex/wood/e/e18",
+        "tex/wood/f/f15",
+        "tex/wood/a/a2",
+        "tex/wood/e/e25",
+        "tex/wood/d/d29",
+        "tex/wood/c/c37",
+        "tex/wood/c/c32",
+        "tex/wood/f/f20",
+        "tex/nail/fenn"
+      ],
+      "namingNoisePaths": [
+        "tex/nail/sfa",
+        "tex/wood/e/e26",
+        "tex/wood/b/b34",
+        "tex/wood/d/d16",
+        "tex/wood/a/a5",
+        "tex/wood/e/e31",
+        "tex/wood/e/e18",
+        "tex/wood/f/f15",
+        "tex/wood/a/a2",
+        "tex/wood/e/e25",
+        "tex/wood/d/d29",
+        "tex/wood/c/c37",
+        "tex/wood/c/c32",
+        "tex/wood/f/f20",
+        "tex/wood/b/b30",
+        "tex/wood/e/e17"
+      ],
+      "namingNoiseTokens": [
+        {
+          "name": "a",
+          "count": 147
+        },
+        {
+          "name": "b",
+          "count": 147
+        },
+        {
+          "name": "c",
+          "count": 147
+        },
+        {
+          "name": "d",
+          "count": 147
+        },
+        {
+          "name": "e",
+          "count": 147
+        },
+        {
+          "name": "f",
+          "count": 129
+        },
+        {
+          "name": "bg",
+          "count": 33
+        },
+        {
+          "name": "%2",
+          "count": 3
+        },
+        {
+          "name": "a1",
+          "count": 3
+        },
+        {
+          "name": "a10",
+          "count": 3
+        },
+        {
+          "name": "a11",
+          "count": 3
+        },
+        {
+          "name": "a12",
+          "count": 3
+        }
+      ],
+      "uuidCount": 1251,
+      "compiledImportFileCount": 708,
+      "compiledNativeFileCount": 335,
+      "compiledUuidLikeFileCount": 1043
+    },
+    {
+      "bundleId": "Game2Bundle",
+      "semanticLabel": "fruit-game",
+      "bundleType": "subpackage-bundle",
+      "directoryPath": "subpackages/Game2Bundle",
+      "configPath": "subpackages/Game2Bundle/config.game2-bundle.json",
+      "dependencies": [
+        "main"
+      ],
+      "assetCount": 161,
+      "sceneCount": 0,
+      "scenePaths": [],
+      "topLevelGroups": [
+        {
+          "name": "tex",
+          "count": 125
+        },
+        {
+          "name": "prefab",
+          "count": 36
+        }
+      ],
+      "topSemanticPaths": [
+        {
+          "name": "tex/fruit",
+          "count": 36
+        },
+        {
+          "name": "tex/fruitShadow",
+          "count": 34
+        },
+        {
+          "name": "tex/背景",
+          "count": 15
+        },
+        {
+          "name": "tex/道具",
+          "count": 12
+        },
+        {
+          "name": "tex/fruitHole",
+          "count": 9
+        },
+        {
+          "name": "tex/解锁进度",
+          "count": 7
+        },
+        {
+          "name": "tex/解锁进度2",
+          "count": 6
+        },
+        {
+          "name": "tex/scene",
+          "count": 6
+        },
+        {
+          "name": "prefab/fruit",
+          "count": 1
+        },
+        {
+          "name": "prefab/fruit1",
+          "count": 1
+        },
+        {
+          "name": "prefab/fruit10",
+          "count": 1
+        },
+        {
+          "name": "prefab/fruit11",
+          "count": 1
+        }
+      ],
+      "samplePaths": [
+        "tex/道具/移除槽位中的水果",
+        "tex/道具/打乱水果位置",
+        "tex/背景/game2_bg2",
+        "tex/解锁进度2/game3_front",
+        "tex/道具/消除2组水果",
+        "tex/背景/game2_bg3",
+        "tex/道具/剩余",
+        "tex/背景/game2_bg1",
+        "tex/背景/game2_bg5",
+        "tex/背景/game2_bg4",
+        "tex/解锁进度2/game3_s1",
+        "tex/fruit/fruit17/spriteFrame",
+        "tex/fruitShadow/fruitShadow23/spriteFrame",
+        "tex/fruit/fruit21/spriteFrame",
+        "prefab/fruit14",
+        "tex/scene/洞"
+      ],
+      "namingNoisePaths": [],
+      "namingNoiseTokens": [],
+      "uuidCount": 175,
+      "compiledImportFileCount": 67,
+      "compiledNativeFileCount": 15,
+      "compiledUuidLikeFileCount": 82
+    },
+    {
+      "bundleId": "HomeBundle",
+      "semanticLabel": "home-hall",
+      "bundleType": "subpackage-bundle",
+      "directoryPath": "subpackages/HomeBundle",
+      "configPath": "subpackages/HomeBundle/config.home-bundle.json",
+      "dependencies": [
+        "main"
+      ],
+      "assetCount": 231,
+      "sceneCount": 0,
+      "scenePaths": [],
+      "topLevelGroups": [
+        {
+          "name": "tex",
+          "count": 228
+        },
+        {
+          "name": "prefab",
+          "count": 3
+        }
+      ],
+      "topSemanticPaths": [
+        {
+          "name": "tex/BgThings1",
+          "count": 36
+        },
+        {
+          "name": "tex/BgThings2",
+          "count": 36
+        },
+        {
+          "name": "tex/BgThings3",
+          "count": 36
+        },
+        {
+          "name": "tex/BgThings4",
+          "count": 36
+        },
+        {
+          "name": "tex/BgThings5",
+          "count": 36
+        },
+        {
+          "name": "tex/BgThings0",
+          "count": 27
+        },
+        {
+          "name": "tex/BgParticle",
+          "count": 12
+        },
+        {
+          "name": "tex/光",
+          "count": 3
+        },
+        {
+          "name": "tex/获得100只鹅解锁",
+          "count": 3
+        },
+        {
+          "name": "tex/获得100只鸭子解锁",
+          "count": 3
+        },
+        {
+          "name": "prefab/bgThing",
+          "count": 1
+        },
+        {
+          "name": "prefab/gooseTip",
+          "count": 1
+        }
+      ],
+      "samplePaths": [
+        "tex/BgThings2/front/f5",
+        "tex/获得100只鸭子解锁",
+        "tex/BgThings3/front/f3",
+        "tex/BgThings2/bottom2",
+        "tex/BgThings1/middle/m2",
+        "tex/BgThings1/front/f4",
+        "tex/BgThings3/front/f1",
+        "tex/BgThings3/middle/m1",
+        "tex/BgThings4/front/f5",
+        "tex/BgThings5/front/f1",
+        "tex/BgThings2/back/b2",
+        "tex/BgThings0/middle/m1",
+        "tex/BgThings0/last/l1",
+        "tex/BgThings3/back/b1",
+        "tex/获得100只鹅解锁",
+        "tex/BgThings5/middle/m2"
+      ],
+      "namingNoisePaths": [
+        "tex/BgThings2/front/f5",
+        "tex/BgThings3/front/f3",
+        "tex/BgThings1/middle/m2",
+        "tex/BgThings1/front/f4",
+        "tex/BgThings3/front/f1",
+        "tex/BgThings3/middle/m1",
+        "tex/BgThings4/front/f5",
+        "tex/BgThings5/front/f1",
+        "tex/BgThings2/back/b2",
+        "tex/BgThings0/middle/m1",
+        "tex/BgThings0/last/l1",
+        "tex/BgThings3/back/b1",
+        "tex/BgThings5/middle/m2",
+        "tex/BgThings2/front/f4",
+        "tex/BgThings5/front/f4",
+        "tex/BgThings5/last/l1"
+      ],
+      "namingNoiseTokens": [
+        {
+          "name": "b1",
+          "count": 18
+        },
+        {
+          "name": "b2",
+          "count": 18
+        },
+        {
+          "name": "l1",
+          "count": 18
+        },
+        {
+          "name": "m1",
+          "count": 18
+        },
+        {
+          "name": "f1",
+          "count": 16
+        },
+        {
+          "name": "f2",
+          "count": 16
+        },
+        {
+          "name": "f3",
+          "count": 16
+        },
+        {
+          "name": "f4",
+          "count": 16
+        },
+        {
+          "name": "f5",
+          "count": 16
+        },
+        {
+          "name": "m2",
+          "count": 16
+        },
+        {
+          "name": "p1",
+          "count": 3
+        },
+        {
+          "name": "p2",
+          "count": 3
+        }
+      ],
+      "uuidCount": 239,
+      "compiledImportFileCount": 149,
+      "compiledNativeFileCount": 74,
+      "compiledUuidLikeFileCount": 223
+    },
+    {
+      "bundleId": "aniBundle",
+      "semanticLabel": "animation-assets",
+      "bundleType": "subpackage-bundle",
+      "directoryPath": "subpackages/aniBundle",
+      "configPath": "subpackages/aniBundle/config.animation-bundle.json",
+      "dependencies": [
+        "main",
+        "start-scene"
+      ],
+      "assetCount": 156,
+      "sceneCount": 0,
+      "scenePaths": [],
+      "topLevelGroups": [
+        {
+          "name": "神兽动画合集",
+          "count": 30
+        },
+        {
+          "name": "骨骼动画",
+          "count": 25
+        },
+        {
+          "name": "小三视频",
+          "count": 17
+        },
+        {
+          "name": "破门动画",
+          "count": 8
+        },
+        {
+          "name": "比比拉布",
+          "count": 5
+        },
+        {
+          "name": "标题动画1",
+          "count": 5
+        },
+        {
+          "name": "吃饱动画",
+          "count": 5
+        },
+        {
+          "name": "戴夫",
+          "count": 5
+        },
+        {
+          "name": "鸽子动画",
+          "count": 5
+        },
+        {
+          "name": "救救水果鸭",
+          "count": 5
+        },
+        {
+          "name": "开始动画",
+          "count": 5
+        },
+        {
+          "name": "每日",
+          "count": 5
+        }
+      ],
+      "topSemanticPaths": [
+        {
+          "name": "骨骼动画/鸭子动画",
+          "count": 20
+        },
+        {
+          "name": "比比拉布/skeleton",
+          "count": 5
+        },
+        {
+          "name": "吃饱动画/Done for eat",
+          "count": 5
+        },
+        {
+          "name": "戴夫/skeleton",
+          "count": 5
+        },
+        {
+          "name": "鸽子动画/new_dove",
+          "count": 5
+        },
+        {
+          "name": "骨骼动画/门动画",
+          "count": 5
+        },
+        {
+          "name": "救救水果鸭/skeleton",
+          "count": 5
+        },
+        {
+          "name": "开始动画/skeleton",
+          "count": 5
+        },
+        {
+          "name": "每日/skeleton",
+          "count": 5
+        },
+        {
+          "name": "破门动画/skeleton",
+          "count": 5
+        },
+        {
+          "name": "圈动画/ZYQ",
+          "count": 5
+        },
+        {
+          "name": "杀手动画/skeleton",
+          "count": 5
+        }
+      ],
+      "samplePaths": [
+        "神兽动画合集/百鹅朝麟/skeleton",
+        "陀螺仪/skeleton",
+        "神兽动画合集/百鹅朝凤/skeleton",
+        "小三视频/skeleton",
+        "神兽动画合集/百鸭朝龙/skeleton",
+        "神兽动画合集/百鹅朝鹏/skeleton",
+        "破门动画/skeleton",
+        "开始动画/skeleton",
+        "小三视频/skeleton2",
+        "神兽动画合集/百鹅朝麟/skeleton",
+        "神兽动画合集/百鹅朝鹏/skeleton",
+        "神兽动画合集/百鸭朝雀/skeleton",
+        "杀手动画/skeleton",
+        "小三视频/skeleton5",
+        "神兽动画合集/百鸭朝鲲/skeleton",
+        "戴夫/skeleton"
+      ],
+      "namingNoisePaths": [
+        "小三视频/skeleton2",
+        "小三视频/skeleton5",
+        "小三视频/skeleton3",
+        "圈动画/ZYQ",
+        "小三视频/skeleton4",
+        "破门动画/skeleton2",
+        "小三视频/skeleton2/texture",
+        "小三视频/skeleton2/spriteFrame",
+        "骨骼动画/鸭子动画/skeleton4",
+        "骨骼动画/鸭子动画/skeleton4/texture",
+        "骨骼动画/鸭子动画/skeleton4/spriteFrame",
+        "小三视频/skeleton5/texture",
+        "小三视频/skeleton5/spriteFrame",
+        "小三视频/skeleton3/texture",
+        "小三视频/skeleton3/spriteFrame",
+        "骨骼动画/鸭子动画/skeleton6"
+      ],
+      "namingNoiseTokens": [
+        {
+          "name": "skeleton2",
+          "count": 9
+        },
+        {
+          "name": "skeleton3",
+          "count": 6
+        },
+        {
+          "name": "skeleton4",
+          "count": 6
+        },
+        {
+          "name": "skeleton5",
+          "count": 6
+        },
+        {
+          "name": "ZYQ",
+          "count": 5
+        },
+        {
+          "name": "skeleton6",
+          "count": 3
+        }
+      ],
+      "uuidCount": 159,
+      "compiledImportFileCount": 86,
+      "compiledNativeFileCount": 42,
+      "compiledUuidLikeFileCount": 128
+    },
+    {
+      "bundleId": "audioBundle",
+      "semanticLabel": "audio-assets",
+      "bundleType": "subpackage-bundle",
+      "directoryPath": "subpackages/audioBundle",
+      "configPath": "subpackages/audioBundle/config.audio-bundle.json",
+      "dependencies": [],
+      "assetCount": 65,
+      "sceneCount": 0,
+      "scenePaths": [],
+      "topLevelGroups": [
+        {
+          "name": "fruitGame",
+          "count": 13
+        },
+        {
+          "name": "comboMusic",
+          "count": 10
+        },
+        {
+          "name": "woodDrop",
+          "count": 3
+        },
+        {
+          "name": "adz",
+          "count": 1
+        },
+        {
+          "name": "bdz",
+          "count": 1
+        },
+        {
+          "name": "bgm",
+          "count": 1
+        },
+        {
+          "name": "breakDoor",
+          "count": 1
+        },
+        {
+          "name": "clap",
+          "count": 1
+        },
+        {
+          "name": "click",
+          "count": 1
+        },
+        {
+          "name": "colide",
+          "count": 1
+        },
+        {
+          "name": "colliderStone",
+          "count": 1
+        },
+        {
+          "name": "colorBgm",
+          "count": 1
+        }
+      ],
+      "topSemanticPaths": [
+        {
+          "name": "adz",
+          "count": 1
+        },
+        {
+          "name": "bdz",
+          "count": 1
+        },
+        {
+          "name": "bgm",
+          "count": 1
+        },
+        {
+          "name": "breakDoor",
+          "count": 1
+        },
+        {
+          "name": "clap",
+          "count": 1
+        },
+        {
+          "name": "click",
+          "count": 1
+        },
+        {
+          "name": "colide",
+          "count": 1
+        },
+        {
+          "name": "colliderStone",
+          "count": 1
+        },
+        {
+          "name": "colorBgm",
+          "count": 1
+        },
+        {
+          "name": "comboMusic/combo_1",
+          "count": 1
+        },
+        {
+          "name": "comboMusic/combo_10",
+          "count": 1
+        },
+        {
+          "name": "comboMusic/combo_2",
+          "count": 1
+        }
+      ],
+      "samplePaths": [
+        "comboMusic/combo_3",
+        "fruitGame/eliminate3",
+        "fruitGame/eliminate8",
+        "p2",
+        "comboMusic/combo_4",
+        "warning",
+        "win",
+        "clap",
+        "getDuck",
+        "adz",
+        "fruitGame/FruitWin",
+        "colliderStone",
+        "fruitGame/eliminate1",
+        "colorBgm",
+        "fruitGame/eliminate6",
+        "comboMusic/combo_5"
+      ],
+      "namingNoisePaths": [
+        "p2",
+        "win",
+        "adz",
+        "fly",
+        "bdz",
+        "fruitGame/eat",
+        "ls",
+        "lz",
+        "pop",
+        "gz",
+        "p1",
+        "qt"
+      ],
+      "namingNoiseTokens": [
+        {
+          "name": "adz",
+          "count": 1
+        },
+        {
+          "name": "bdz",
+          "count": 1
+        },
+        {
+          "name": "eat",
+          "count": 1
+        },
+        {
+          "name": "fly",
+          "count": 1
+        },
+        {
+          "name": "gz",
+          "count": 1
+        },
+        {
+          "name": "ls",
+          "count": 1
+        },
+        {
+          "name": "lz",
+          "count": 1
+        },
+        {
+          "name": "p1",
+          "count": 1
+        },
+        {
+          "name": "p2",
+          "count": 1
+        },
+        {
+          "name": "pop",
+          "count": 1
+        },
+        {
+          "name": "qt",
+          "count": 1
+        },
+        {
+          "name": "win",
+          "count": 1
+        }
+      ],
+      "uuidCount": 65,
+      "compiledImportFileCount": 65,
+      "compiledNativeFileCount": 65,
+      "compiledUuidLikeFileCount": 130
+    },
+    {
+      "bundleId": "main",
+      "semanticLabel": "main-scenes",
+      "bundleType": "subpackage-bundle",
+      "directoryPath": "subpackages/main",
+      "configPath": "subpackages/main/config.main.json",
+      "dependencies": [
+        "start-scene"
+      ],
+      "assetCount": 5,
+      "sceneCount": 5,
+      "scenePaths": [
+        "db://assets/scene/DuckScene.scene",
+        "db://assets/scene/FruitScene.scene",
+        "db://assets/scene/Game2Scene.scene",
+        "db://assets/scene/HomeScene.scene",
+        "db://assets/scene/PigeonScene.scene"
+      ],
+      "topLevelGroups": [
+        {
+          "name": "db:",
+          "count": 5
+        }
+      ],
+      "topSemanticPaths": [
+        {
+          "name": "db:/assets",
+          "count": 5
+        }
+      ],
+      "samplePaths": [
+        "db:/assets/scene/DuckScene",
+        "db:/assets/scene/FruitScene",
+        "db:/assets/scene/PigeonScene",
+        "db:/assets/scene/Game2Scene",
+        "db:/assets/scene/HomeScene"
+      ],
+      "namingNoisePaths": [],
+      "namingNoiseTokens": [],
+      "uuidCount": 523,
+      "compiledImportFileCount": 122,
+      "compiledNativeFileCount": 99,
+      "compiledUuidLikeFileCount": 221
+    },
+    {
+      "bundleId": "resources",
+      "semanticLabel": "shared-effects",
+      "bundleType": "subpackage-bundle",
+      "directoryPath": "subpackages/resources",
+      "configPath": "subpackages/resources/config.resources.json",
+      "dependencies": [],
+      "assetCount": 27,
+      "sceneCount": 0,
+      "scenePaths": [],
+      "topLevelGroups": [
+        {
+          "name": "lz",
+          "count": 14
+        },
+        {
+          "name": "彩带",
+          "count": 7
+        },
+        {
+          "name": "粒子",
+          "count": 3
+        },
+        {
+          "name": "multTextures",
+          "count": 2
+        },
+        {
+          "name": "DuckJson",
+          "count": 1
+        }
+      ],
+      "topSemanticPaths": [
+        {
+          "name": "彩带/cd1",
+          "count": 1
+        },
+        {
+          "name": "彩带/cd2",
+          "count": 1
+        },
+        {
+          "name": "彩带/cd3",
+          "count": 1
+        },
+        {
+          "name": "彩带/cd4",
+          "count": 1
+        },
+        {
+          "name": "彩带/cd5",
+          "count": 1
+        },
+        {
+          "name": "彩带/cd6",
+          "count": 1
+        },
+        {
+          "name": "彩带/cd7",
+          "count": 1
+        },
+        {
+          "name": "粒子/circle",
+          "count": 1
+        },
+        {
+          "name": "粒子/fragment",
+          "count": 1
+        },
+        {
+          "name": "粒子/lz",
+          "count": 1
+        },
+        {
+          "name": "DuckJson",
+          "count": 1
+        },
+        {
+          "name": "lz/xg1",
+          "count": 1
+        }
+      ],
+      "samplePaths": [
+        "lz/xg2/spriteFrame",
+        "粒子/lz",
+        "彩带/cd5/spriteFrame",
+        "粒子/fragment",
+        "lz/xg3/spriteFrame",
+        "lz/xg9/spriteFrame",
+        "multTextures/Mult-material",
+        "lz/xg12/spriteFrame",
+        "彩带/cd4/spriteFrame",
+        "DuckJson",
+        "lz/xg8/spriteFrame",
+        "lz/xg6/spriteFrame",
+        "彩带/cd7/spriteFrame",
+        "彩带/cd6/spriteFrame",
+        "lz/xg7/spriteFrame",
+        "multTextures/Mult-effect"
+      ],
+      "namingNoisePaths": [
+        "lz/xg2/spriteFrame",
+        "粒子/lz",
+        "彩带/cd5/spriteFrame",
+        "lz/xg3/spriteFrame",
+        "lz/xg9/spriteFrame",
+        "lz/xg12/spriteFrame",
+        "彩带/cd4/spriteFrame",
+        "lz/xg8/spriteFrame",
+        "lz/xg6/spriteFrame",
+        "彩带/cd7/spriteFrame",
+        "彩带/cd6/spriteFrame",
+        "lz/xg7/spriteFrame",
+        "彩带/cd1/spriteFrame",
+        "lz/xg5/spriteFrame",
+        "lz/xg1/spriteFrame",
+        "lz/xg10/spriteFrame"
+      ],
+      "namingNoiseTokens": [
+        {
+          "name": "lz",
+          "count": 15
+        },
+        {
+          "name": "cd1",
+          "count": 1
+        },
+        {
+          "name": "cd2",
+          "count": 1
+        },
+        {
+          "name": "cd3",
+          "count": 1
+        },
+        {
+          "name": "cd4",
+          "count": 1
+        },
+        {
+          "name": "cd5",
+          "count": 1
+        },
+        {
+          "name": "cd6",
+          "count": 1
+        },
+        {
+          "name": "cd7",
+          "count": 1
+        },
+        {
+          "name": "xg1",
+          "count": 1
+        },
+        {
+          "name": "xg10",
+          "count": 1
+        },
+        {
+          "name": "xg11",
+          "count": 1
+        },
+        {
+          "name": "xg12",
+          "count": 1
+        }
+      ],
+      "uuidCount": 39,
+      "compiledImportFileCount": 11,
+      "compiledNativeFileCount": 3,
+      "compiledUuidLikeFileCount": 14
+    },
+    {
+      "bundleId": "uiBundle",
+      "semanticLabel": "ui-assets",
+      "bundleType": "subpackage-bundle",
+      "directoryPath": "subpackages/uiBundle",
+      "configPath": "subpackages/uiBundle/config.ui-bundle.json",
+      "dependencies": [
+        "main"
+      ],
+      "assetCount": 400,
+      "sceneCount": 0,
+      "scenePaths": [],
+      "topLevelGroups": [
+        {
+          "name": "tex",
+          "count": 372
+        },
+        {
+          "name": "prefab",
+          "count": 28
+        }
+      ],
+      "topSemanticPaths": [
+        {
+          "name": "tex/book",
+          "count": 151
+        },
+        {
+          "name": "tex/主页素材",
+          "count": 48
+        },
+        {
+          "name": "tex/过关页面",
+          "count": 27
+        },
+        {
+          "name": "tex/道具",
+          "count": 21
+        },
+        {
+          "name": "tex/设置",
+          "count": 17
+        },
+        {
+          "name": "tex/失败页面",
+          "count": 15
+        },
+        {
+          "name": "tex/复活",
+          "count": 14
+        },
+        {
+          "name": "tex/更多玩法",
+          "count": 9
+        },
+        {
+          "name": "tex/投诉页面",
+          "count": 8
+        },
+        {
+          "name": "tex/体力获取",
+          "count": 7
+        },
+        {
+          "name": "tex/喊人页面",
+          "count": 6
+        },
+        {
+          "name": "tex/设置二级",
+          "count": 6
+        }
+      ],
+      "samplePaths": [
+        "tex/过关页面/还差/spriteFrame",
+        "tex/book/duck/y30/spriteFrame",
+        "tex/过关页面/成功进度/只鸭解锁百鸭朝雀/spriteFrame",
+        "tex/设置/放弃挑战/spriteFrame",
+        "tex/更多玩法/图标算数/spriteFrame",
+        "tex/book/tex/全部/spriteFrame",
+        "tex/主页素材/排行榜/名次底2/spriteFrame",
+        "tex/失败页面/继续挑战/spriteFrame",
+        "tex/book/duck/y51/spriteFrame",
+        "tex/book/duck/y75/spriteFrame",
+        "tex/book/分享鸭/张飞鸭/spriteFrame",
+        "tex/book/鸽鸽图鉴/皮肤图鉴/p8/spriteFrame",
+        "tex/设置/音效图标/spriteFrame",
+        "prefab/ShareUI",
+        "tex/book/tex/100/spriteFrame",
+        "tex/book/duck/y17/spriteFrame"
+      ],
+      "namingNoisePaths": [
+        "tex/book/duck/y30/spriteFrame",
+        "tex/book/duck/y51/spriteFrame",
+        "tex/book/duck/y75/spriteFrame",
+        "tex/book/鸽鸽图鉴/皮肤图鉴/p8/spriteFrame",
+        "tex/book/duck/y17/spriteFrame",
+        "tex/book/duck/y10/spriteFrame",
+        "tex/book/duck/y34/spriteFrame",
+        "tex/book/duck/y38/spriteFrame",
+        "tex/book/duck/y40/spriteFrame",
+        "tex/book/鸽鸽图鉴/皮肤图鉴/p10/spriteFrame",
+        "tex/book/duck/y77/spriteFrame",
+        "tex/book/duck/y11/spriteFrame",
+        "tex/book/duck/y12/spriteFrame",
+        "tex/book/duck/y39/spriteFrame",
+        "tex/book/duck/y55/spriteFrame",
+        "tex/book/duck/y21/spriteFrame"
+      ],
+      "namingNoiseTokens": [
+        {
+          "name": "new",
+          "count": 3
+        },
+        {
+          "name": "%",
+          "count": 2
+        },
+        {
+          "name": "NO",
+          "count": 1
+        },
+        {
+          "name": "p1",
+          "count": 1
+        },
+        {
+          "name": "p10",
+          "count": 1
+        },
+        {
+          "name": "p2",
+          "count": 1
+        },
+        {
+          "name": "p3",
+          "count": 1
+        },
+        {
+          "name": "p4",
+          "count": 1
+        },
+        {
+          "name": "p5",
+          "count": 1
+        },
+        {
+          "name": "p6",
+          "count": 1
+        },
+        {
+          "name": "p7",
+          "count": 1
+        },
+        {
+          "name": "p8",
+          "count": 1
+        }
+      ],
+      "uuidCount": 538,
+      "compiledImportFileCount": 89,
+      "compiledNativeFileCount": 24,
+      "compiledUuidLikeFileCount": 113
+    }
+  ]
+}

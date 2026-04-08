@@ -10,12 +10,14 @@
 7. `architecture/boot/performance-strategy.js`
 8. `architecture/boot/boot-observer.js`
 9. `architecture/boot/recovery-strategy.js`
-10. `architecture/memory/project-memory.md`
-11. `architecture/skills/maintainer/SKILL.md`
-12. `architecture/docs/guardrail-report.md`
-13. `architecture/docs/iterations/README.md`
-14. `architecture/docs/iteration-workflow.md`
-15. `architecture/docs/debug-output.md`
+10. `src/runtime-settings.json`
+11. `architecture/docs/module-index.md`
+12. `architecture/memory/project-memory.md`
+13. `architecture/skills/maintainer/SKILL.md`
+14. `architecture/docs/guardrail-report.md`
+15. `architecture/docs/iterations/README.md`
+16. `architecture/docs/iteration-workflow.md`
+17. `architecture/docs/debug-output.md`
 
 ## 从哪里开始改
 1. 启动与平台适配：改 `architecture/boot/*`

@@ -63,6 +63,10 @@ const IMPORT_FORBIDDEN_EXTENSIONS = new Set([
   '.mov'
 ]);
 
+const IMPORT_METADATA_EXTENSIONS = new Set([
+  '.bin'
+]);
+
 const ALLOWED_MIXED_DIRECTORIES = new Set([
   'cocos-js/assets'
 ]);
@@ -179,11 +183,11 @@ function checkMixedDirectories(projectRoot, files, issues) {
     const extension = path.extname(filePath).toLowerCase();
     const directoryStats = ensureDirectoryStats(directoryStatsMap, directoryPath);
 
-    if (CODE_EXTENSIONS.has(extension)) {
+    if (CODE_EXTENSIONS.has(extension) || isImportMetadataFile(filePath, extension)) {
       directoryStats.hasCodeFile = true;
     }
 
-    if (ASSET_EXTENSIONS.has(extension)) {
+    if (ASSET_EXTENSIONS.has(extension) && !isImportMetadataFile(filePath, extension)) {
       directoryStats.hasAssetFile = true;
     }
 
@@ -253,6 +257,17 @@ function collectFiles(rootDir) {
   }
 
   return results;
+}
+
+/**
+ * 判断是否为 import 目录下的编译元数据文件。
+ * Cocos 会将部分导入期资源编译为 `.bin`（CCON），语义上仍属于 import 元数据。
+ * @param {string} filePath 文件路径
+ * @param {string} extension 文件扩展名
+ * @returns {boolean}
+ */
+function isImportMetadataFile(filePath, extension) {
+  return IMPORT_METADATA_EXTENSIONS.has(extension) && containsPathSegment(filePath, 'import');
 }
 
 /**

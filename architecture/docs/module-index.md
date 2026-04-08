@@ -3,7 +3,7 @@
 > 本文件由 `architecture/tools/generate-module-index.js` 生成。
 
 ## 统计
-- define 模块数：25
+- define 模块数：51
 - System.register 模块数：91
 
 ## define 模块
@@ -14,9 +14,27 @@
 - `@babel/runtime/helpers/regeneratorRuntime.js`
 - `@babel/runtime/helpers/typeof.js`
 - `@babel/runtime/helpers/unsupportedIterableToArray.js`
-- `application.67fff.js`
-- `assets/internal/index.e60ba.js`
-- `assets/start-scene/index.b370a.js`
+- `application-main.js`
+- `assets/DuckBundlebundle/index.js`
+- `assets/Game2Bundlebundle/index.js`
+- `assets/HomeBundlebundle/index.js`
+- `assets/aniBundlebundle/index.js`
+- `assets/anibundle/index.js`
+- `assets/audioBundlebundle/index.js`
+- `assets/audiobundle/index.js`
+- `assets/duckbundle/index.js`
+- `assets/game2bundle/index.js`
+- `assets/homebundle/index.js`
+- `assets/internal/index.internal.js`
+- `assets/internal/index.js`
+- `assets/internalbundle/index.js`
+- `assets/mainbundle/index.js`
+- `assets/resourcesbundle/index.js`
+- `assets/start-scene/index.js`
+- `assets/start-scene/index.start-scene.js`
+- `assets/start-scenebundle/index.js`
+- `assets/uiBundlebundle/index.js`
+- `assets/uibundle/index.js`
 - `cocos-js/_virtual_cc-cf1p7Jgo.js`
 - `cocos-js/cc.1e1cd.js`
 - `cocos-js/spine-BGFFnNyc.js`
@@ -26,11 +44,19 @@
 - `engine-adapter.js`
 - `first-screen.js`
 - `game.js`
-- `src/chunks/bundle.a5cc1.js`
+- `src/chunks/game-scripts.js`
 - `src/import-map.ae243.js`
 - `src/polyfills.bundle.43263.js`
 - `src/system.bundle.f45da.js`
 - `subpackages-bootstrap.js`
+- `subpackages/DuckBundle/game.js`
+- `subpackages/Game2Bundle/game.js`
+- `subpackages/HomeBundle/game.js`
+- `subpackages/aniBundle/game.js`
+- `subpackages/audioBundle/game.js`
+- `subpackages/main/game.js`
+- `subpackages/resources/game.js`
+- `subpackages/uiBundle/game.js`
 - `web-adapter.js`
 
 ## System.register 模块

@@ -36,33 +36,58 @@ node architecture/tools/check-asset-code-separation.js
 node architecture/tools/generate-asset-code-report.js
 ```
 
-## 8) 生成本轮优化迭代报告（含架构/入口/使用说明）
+## 8) 格式化关键 JSON 清单
+```bash
+node architecture/tools/format-project-json.js
+```
+
+## 9) 生成 Bundle 资产目录
+```bash
+node architecture/tools/generate-bundle-asset-catalog.js
+```
+
+## 10) 生成本轮优化迭代报告（含架构/入口/使用说明）
 ```bash
 node architecture/tools/generate-iteration-report.js
 ```
 
-## 9) 一键执行完整迭代闭环（推荐）
+## 11) 查看运行时设置清单
+```bash
+node -e "const settings=require('./src/runtime-settings.json'); console.log(JSON.stringify({bundleVers: settings.assets.bundleVers, scriptPackages: settings.scripting.scriptPackages}, null, 2));"
+```
+
+## 12) 一键执行完整迭代闭环（推荐）
 ```bash
 node architecture/tools/run-iteration-cycle.js
 ```
 
-## 10) 启动调试日志开关（代码片段）
+## 13) 启动调试日志开关（代码片段）
 ```js
 globalThis.__DUCK_BOOT_DEBUG = true;
 ```
 
-## 11) 查看最近一次护栏报告
+## 14) 查看最近一次护栏报告
 ```bash
 sed -n '1,220p' architecture/docs/guardrail-report.md
 ```
 
-## 12) 查看最新迭代报告中的策略快照
+## 15) 查看最新 Bundle 资产目录
+```bash
+sed -n '1,260p' architecture/docs/bundle-asset-catalog.md
+```
+
+## 16) 查看最新迭代报告中的策略快照
 ```bash
 ls -1t architecture/docs/iterations | head -n 3
 sed -n '1,260p' architecture/docs/iterations/$(ls -1t architecture/docs/iterations | head -n 1)
 ```
 
-## 13) 运行时查看启动观测快照
+## 17) 查看当前模块索引
+```bash
+sed -n '1,260p' architecture/docs/module-index.md
+```
+
+## 18) 运行时查看启动观测快照
 ```js
 globalThis.__DUCK_BOOT_INFO
 ```

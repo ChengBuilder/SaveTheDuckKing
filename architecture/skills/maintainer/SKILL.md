@@ -15,6 +15,7 @@
 8. 启动层优先沿 `config -> boot-safety -> platform-strategy -> game-bootstrap` 方向继续拆分，而不是重新把逻辑塞回入口
 9. 涉及性能与调试时，优先复用 `performance-strategy` 与 `boot-observer`，不要在入口里零散拼快照字段
 10. 涉及启动失败处理时，优先复用 `recovery-strategy` 统一收敛错误摘要、失败阶段与恢复策略
+11. 涉及哈希名/语义不明名治理时，优先直接做语义化 rename，禁止再引入运行时映射表或中间台账
 
 ## 必跑命令
 ```bash
@@ -37,4 +38,4 @@ node architecture/tools/run-iteration-cycle.js
 3. 运行必跑命令
 4. 查看 `architecture/docs/guardrail-report.md`，确认失败项已清零
 5. 查看最新迭代报告，确认“启动配置快照 / 平台与安全策略快照”符合预期
-6. 更新 `project-memory.md` 的“已落地决策/下阶段路线”
+6. 更新 `project-memory.md` 的“已落地决策 / 下阶段路线 / 已完成命名清理”

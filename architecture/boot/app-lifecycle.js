@@ -1,5 +1,9 @@
 'use strict';
 
+const {
+  applyFlatAssetPathPatch,
+  applyRootBundleRequestPatch
+} = require('./asset-path-normalizer');
 const { logInfo, logWarn, logDebug } = require('./boot-logger');
 
 /**
@@ -30,7 +34,7 @@ function startApplicationLifecycle(requireFn, loadingView, bootConfig, lifecycle
       });
     })
     .then(function loadApplicationModule() {
-      return System.import('./application.67fff.js');
+      return System.import('./application-main.js');
     })
     .then(function markApplicationModuleLoaded(applicationModule) {
       notifyLifecyclePhase(lifecycleObserver, 'application-module-loaded');
@@ -74,6 +78,8 @@ function startApplicationLifecycle(requireFn, loadingView, bootConfig, lifecycle
         })
         .then(function initApplication(engineModule) {
           requireFn('./engine-adapter');
+          applyRootBundleRequestPatch(engineModule);
+          applyFlatAssetPathPatch(engineModule);
           return callApplicationMethodAsPromise(
             applicationInstance,
             'init',

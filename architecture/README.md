@@ -17,9 +17,13 @@
 - `boot/boot-observer.js`：运行时观测与阶段记录
 - `boot/recovery-strategy.js`：启动失败归档与恢复策略
 
+命名清理策略统一采用“直接语义化 rename”，不再维护额外的运行时映射表。
+
 建议每次迭代后至少执行：
 
 ```bash
+node architecture/tools/format-project-json.js
+node architecture/tools/generate-bundle-asset-catalog.js
 node architecture/tools/run-guardrails.js
 node architecture/tools/generate-iteration-report.js
 node architecture/tools/run-iteration-cycle.js

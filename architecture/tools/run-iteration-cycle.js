@@ -16,7 +16,9 @@ function runIterationCycle() {
   const layout = resolveProjectLayout(__dirname);
   const steps = [
     createScriptStep(layout, '生成模块索引', 'architecture/tools/generate-module-index.js'),
+    createScriptStep(layout, '格式化关键 JSON 清单', 'architecture/tools/format-project-json.js'),
     createScriptStep(layout, '生成素材分层报告', 'architecture/tools/generate-asset-code-report.js'),
+    createScriptStep(layout, '生成 Bundle 资产目录', 'architecture/tools/generate-bundle-asset-catalog.js'),
     createScriptStep(layout, '执行护栏检查', 'architecture/tools/run-guardrails.js'),
     createScriptStep(layout, '生成迭代报告', 'architecture/tools/generate-iteration-report.js')
   ];

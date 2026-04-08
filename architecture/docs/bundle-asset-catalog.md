@@ -1,0 +1,655 @@
+# Bundle 资产目录（自动生成）
+
+> 本文件由 `architecture/tools/generate-bundle-asset-catalog.js` 生成。
+
+## 总览
+- 生成时间：2026-04-08T05:58:09.495Z
+- Bundle 总数：10
+- Root bundle 数：2
+- Subpackage bundle 数：8
+- 资产路径记录数：2293
+- 场景路径数：6
+- 编译产物文件数：import 1299 / native 660
+- UUID 风格编译文件数：1959
+- 存在低可读命名候选的 bundle 数：6
+
+## Bundle 一览
+| Bundle ID | 治理标签 | 类型 | 依赖 | 资产数 | 场景数 | 主要路径前缀 |
+| --- | --- | --- | --- | ---: | ---: | --- |
+| `internal` | `engine-internal` | root-bundle | 无 | 18 | 0 | db: |
+| `start-scene` | `start-scene` | root-bundle | 无 | 3 | 1 | db: |
+| `DuckBundle` | `duck-game` | subpackage-bundle | `main`、`resources` | 1227 | 0 | tex / prefab |
+| `Game2Bundle` | `fruit-game` | subpackage-bundle | `main` | 161 | 0 | tex / prefab |
+| `HomeBundle` | `home-hall` | subpackage-bundle | `main` | 231 | 0 | tex / prefab |
+| `aniBundle` | `animation-assets` | subpackage-bundle | `main`、`start-scene` | 156 | 0 | 神兽动画合集 / 骨骼动画 / 小三视频 |
+| `audioBundle` | `audio-assets` | subpackage-bundle | 无 | 65 | 0 | fruitGame / comboMusic / woodDrop |
+| `main` | `main-scenes` | subpackage-bundle | `start-scene` | 5 | 5 | db: |
+| `resources` | `shared-effects` | subpackage-bundle | 无 | 27 | 0 | lz / 彩带 / 粒子 |
+| `uiBundle` | `ui-assets` | subpackage-bundle | `main` | 400 | 0 | tex / prefab |
+
+## 分 Bundle 明细
+
+### internal
+- 治理标签：`engine-internal`
+- 类型：`root-bundle`
+- 目录：`assets/internal`
+- 配置：`assets/internal/config.internal.json`
+- 依赖：无
+- 资产路径数：18
+- 场景路径数：0
+- UUID 记录数：19
+- 编译产物文件：import 1 / native 0
+- UUID 风格编译文件：1
+- 命名噪声高频片段：
+  - 无
+- 命名噪声样例路径：
+  - 无
+- 主要路径前缀：
+  - `db:`：18
+- 主要语义路径：
+  - `db:/internal`：18
+- 样例路径：
+  - `db:/internal/effects/internal/builtin-graphics`
+  - `db:/internal/default_materials/ui-alpha-test-material`
+  - `db:/internal/effects/for2d/builtin-sprite`
+  - `db:/internal/effects/internal/builtin-clear-stencil`
+  - `db:/internal/effects/util/profiler`
+  - `db:/internal/default_materials/default-clear-stencil`
+  - `db:/internal/effects/util/splash-screen`
+  - `db:/internal/effects/builtin-unlit`
+  - `db:/internal/default_materials/default-spine-material`
+  - `db:/internal/default_materials/missing-effect-material`
+  - `db:/internal/effects/for2d/builtin-spine`
+  - `db:/internal/default_materials/missing-material`
+  - `db:/internal/default_materials/ui-sprite-gray-alpha-sep-material`
+  - `db:/internal/default_materials/ui-base-material`
+  - `db:/internal/default_materials/ui-sprite-gray-material`
+  - `db:/internal/default_materials/ui-graphics-material`
+- 场景路径：
+  - 无
+
+### start-scene
+- 治理标签：`start-scene`
+- 类型：`root-bundle`
+- 目录：`assets/start-scene`
+- 配置：`assets/start-scene/config.start-scene.json`
+- 依赖：无
+- 资产路径数：3
+- 场景路径数：1
+- UUID 记录数：19
+- 编译产物文件：import 1 / native 3
+- UUID 风格编译文件：4
+- 命名噪声高频片段：
+  - 无
+- 命名噪声样例路径：
+  - 无
+- 主要路径前缀：
+  - `db:`：3
+- 主要语义路径：
+  - `db:/internal`：2
+  - `db:/assets`：1
+- 样例路径：
+  - `db:/assets/scene/LoadScene`
+  - `db:/internal/physics/default-physics-material`
+  - `db:/internal/default_renderpipeline/builtin-forward`
+- 场景路径：
+  - `db://assets/scene/LoadScene.scene`
+
+### DuckBundle
+- 治理标签：`duck-game`
+- 类型：`subpackage-bundle`
+- 目录：`subpackages/DuckBundle`
+- 配置：`subpackages/DuckBundle/config.duck-bundle.json`
+- 依赖：`main`、`resources`
+- 资产路径数：1227
+- 场景路径数：0
+- UUID 记录数：1251
+- 编译产物文件：import 708 / native 335
+- UUID 风格编译文件：1043
+- 命名噪声高频片段：
+  - `a`：147
+  - `b`：147
+  - `c`：147
+  - `d`：147
+  - `e`：147
+  - `f`：129
+  - `bg`：33
+  - `%2`：3
+  - `a1`：3
+  - `a10`：3
+  - `a11`：3
+  - `a12`：3
+- 命名噪声样例路径：
+  - `tex/nail/sfa`
+  - `tex/wood/e/e26`
+  - `tex/wood/b/b34`
+  - `tex/wood/d/d16`
+  - `tex/wood/a/a5`
+  - `tex/wood/e/e31`
+  - `tex/wood/e/e18`
+  - `tex/wood/f/f15`
+  - `tex/wood/a/a2`
+  - `tex/wood/e/e25`
+  - `tex/wood/d/d29`
+  - `tex/wood/c/c37`
+  - `tex/wood/c/c32`
+  - `tex/wood/f/f20`
+  - `tex/wood/b/b30`
+  - `tex/wood/e/e17`
+- 主要路径前缀：
+  - `tex`：1173
+  - `prefab`：54
+- 主要语义路径：
+  - `tex/wood`：774
+  - `tex/nail`：99
+  - `tex/fragment`：90
+  - `tex/newBg`：60
+  - `prefab/wood`：43
+  - `tex/newNail`：39
+  - `tex/bg`：33
+  - `tex/难度飙升`：18
+  - `tex/bubble`：18
+  - `tex/circle`：6
+  - `tex/star`：6
+  - `tex/%2`：3
+- 样例路径：
+  - `tex/nail/sfa`
+  - `tex/wood/e/e26`
+  - `tex/wood/b/b34`
+  - `tex/wood/d/d16`
+  - `tex/wood/a/a5`
+  - `tex/wood/e/e31`
+  - `tex/难度飙升/上层阴影`
+  - `tex/wood/e/e18`
+  - `tex/wood/f/f15`
+  - `tex/wood/a/a2`
+  - `tex/wood/e/e25`
+  - `tex/wood/d/d29`
+  - `tex/wood/c/c37`
+  - `tex/wood/c/c32`
+  - `tex/wood/f/f20`
+  - `tex/nail/fenn`
+- 场景路径：
+  - 无
+
+### Game2Bundle
+- 治理标签：`fruit-game`
+- 类型：`subpackage-bundle`
+- 目录：`subpackages/Game2Bundle`
+- 配置：`subpackages/Game2Bundle/config.game2-bundle.json`
+- 依赖：`main`
+- 资产路径数：161
+- 场景路径数：0
+- UUID 记录数：175
+- 编译产物文件：import 67 / native 15
+- UUID 风格编译文件：82
+- 命名噪声高频片段：
+  - 无
+- 命名噪声样例路径：
+  - 无
+- 主要路径前缀：
+  - `tex`：125
+  - `prefab`：36
+- 主要语义路径：
+  - `tex/fruit`：36
+  - `tex/fruitShadow`：34
+  - `tex/背景`：15
+  - `tex/道具`：12
+  - `tex/fruitHole`：9
+  - `tex/解锁进度`：7
+  - `tex/解锁进度2`：6
+  - `tex/scene`：6
+  - `prefab/fruit`：1
+  - `prefab/fruit1`：1
+  - `prefab/fruit10`：1
+  - `prefab/fruit11`：1
+- 样例路径：
+  - `tex/道具/移除槽位中的水果`
+  - `tex/道具/打乱水果位置`
+  - `tex/背景/game2_bg2`
+  - `tex/解锁进度2/game3_front`
+  - `tex/道具/消除2组水果`
+  - `tex/背景/game2_bg3`
+  - `tex/道具/剩余`
+  - `tex/背景/game2_bg1`
+  - `tex/背景/game2_bg5`
+  - `tex/背景/game2_bg4`
+  - `tex/解锁进度2/game3_s1`
+  - `tex/fruit/fruit17/spriteFrame`
+  - `tex/fruitShadow/fruitShadow23/spriteFrame`
+  - `tex/fruit/fruit21/spriteFrame`
+  - `prefab/fruit14`
+  - `tex/scene/洞`
+- 场景路径：
+  - 无
+
+### HomeBundle
+- 治理标签：`home-hall`
+- 类型：`subpackage-bundle`
+- 目录：`subpackages/HomeBundle`
+- 配置：`subpackages/HomeBundle/config.home-bundle.json`
+- 依赖：`main`
+- 资产路径数：231
+- 场景路径数：0
+- UUID 记录数：239
+- 编译产物文件：import 149 / native 74
+- UUID 风格编译文件：223
+- 命名噪声高频片段：
+  - `b1`：18
+  - `b2`：18
+  - `l1`：18
+  - `m1`：18
+  - `f1`：16
+  - `f2`：16
+  - `f3`：16
+  - `f4`：16
+  - `f5`：16
+  - `m2`：16
+  - `p1`：3
+  - `p2`：3
+- 命名噪声样例路径：
+  - `tex/BgThings2/front/f5`
+  - `tex/BgThings3/front/f3`
+  - `tex/BgThings1/middle/m2`
+  - `tex/BgThings1/front/f4`
+  - `tex/BgThings3/front/f1`
+  - `tex/BgThings3/middle/m1`
+  - `tex/BgThings4/front/f5`
+  - `tex/BgThings5/front/f1`
+  - `tex/BgThings2/back/b2`
+  - `tex/BgThings0/middle/m1`
+  - `tex/BgThings0/last/l1`
+  - `tex/BgThings3/back/b1`
+  - `tex/BgThings5/middle/m2`
+  - `tex/BgThings2/front/f4`
+  - `tex/BgThings5/front/f4`
+  - `tex/BgThings5/last/l1`
+- 主要路径前缀：
+  - `tex`：228
+  - `prefab`：3
+- 主要语义路径：
+  - `tex/BgThings1`：36
+  - `tex/BgThings2`：36
+  - `tex/BgThings3`：36
+  - `tex/BgThings4`：36
+  - `tex/BgThings5`：36
+  - `tex/BgThings0`：27
+  - `tex/BgParticle`：12
+  - `tex/光`：3
+  - `tex/获得100只鹅解锁`：3
+  - `tex/获得100只鸭子解锁`：3
+  - `prefab/bgThing`：1
+  - `prefab/gooseTip`：1
+- 样例路径：
+  - `tex/BgThings2/front/f5`
+  - `tex/获得100只鸭子解锁`
+  - `tex/BgThings3/front/f3`
+  - `tex/BgThings2/bottom2`
+  - `tex/BgThings1/middle/m2`
+  - `tex/BgThings1/front/f4`
+  - `tex/BgThings3/front/f1`
+  - `tex/BgThings3/middle/m1`
+  - `tex/BgThings4/front/f5`
+  - `tex/BgThings5/front/f1`
+  - `tex/BgThings2/back/b2`
+  - `tex/BgThings0/middle/m1`
+  - `tex/BgThings0/last/l1`
+  - `tex/BgThings3/back/b1`
+  - `tex/获得100只鹅解锁`
+  - `tex/BgThings5/middle/m2`
+- 场景路径：
+  - 无
+
+### aniBundle
+- 治理标签：`animation-assets`
+- 类型：`subpackage-bundle`
+- 目录：`subpackages/aniBundle`
+- 配置：`subpackages/aniBundle/config.animation-bundle.json`
+- 依赖：`main`、`start-scene`
+- 资产路径数：156
+- 场景路径数：0
+- UUID 记录数：159
+- 编译产物文件：import 86 / native 42
+- UUID 风格编译文件：128
+- 命名噪声高频片段：
+  - `skeleton2`：9
+  - `skeleton3`：6
+  - `skeleton4`：6
+  - `skeleton5`：6
+  - `ZYQ`：5
+  - `skeleton6`：3
+- 命名噪声样例路径：
+  - `小三视频/skeleton2`
+  - `小三视频/skeleton5`
+  - `小三视频/skeleton3`
+  - `圈动画/ZYQ`
+  - `小三视频/skeleton4`
+  - `破门动画/skeleton2`
+  - `小三视频/skeleton2/texture`
+  - `小三视频/skeleton2/spriteFrame`
+  - `骨骼动画/鸭子动画/skeleton4`
+  - `骨骼动画/鸭子动画/skeleton4/texture`
+  - `骨骼动画/鸭子动画/skeleton4/spriteFrame`
+  - `小三视频/skeleton5/texture`
+  - `小三视频/skeleton5/spriteFrame`
+  - `小三视频/skeleton3/texture`
+  - `小三视频/skeleton3/spriteFrame`
+  - `骨骼动画/鸭子动画/skeleton6`
+- 主要路径前缀：
+  - `神兽动画合集`：30
+  - `骨骼动画`：25
+  - `小三视频`：17
+  - `破门动画`：8
+  - `比比拉布`：5
+  - `标题动画1`：5
+  - `吃饱动画`：5
+  - `戴夫`：5
+  - `鸽子动画`：5
+  - `救救水果鸭`：5
+  - `开始动画`：5
+  - `每日`：5
+- 主要语义路径：
+  - `骨骼动画/鸭子动画`：20
+  - `比比拉布/skeleton`：5
+  - `吃饱动画/Done for eat`：5
+  - `戴夫/skeleton`：5
+  - `鸽子动画/new_dove`：5
+  - `骨骼动画/门动画`：5
+  - `救救水果鸭/skeleton`：5
+  - `开始动画/skeleton`：5
+  - `每日/skeleton`：5
+  - `破门动画/skeleton`：5
+  - `圈动画/ZYQ`：5
+  - `杀手动画/skeleton`：5
+- 样例路径：
+  - `神兽动画合集/百鹅朝麟/skeleton`
+  - `陀螺仪/skeleton`
+  - `神兽动画合集/百鹅朝凤/skeleton`
+  - `小三视频/skeleton`
+  - `神兽动画合集/百鸭朝龙/skeleton`
+  - `神兽动画合集/百鹅朝鹏/skeleton`
+  - `破门动画/skeleton`
+  - `开始动画/skeleton`
+  - `小三视频/skeleton2`
+  - `神兽动画合集/百鹅朝麟/skeleton`
+  - `神兽动画合集/百鹅朝鹏/skeleton`
+  - `神兽动画合集/百鸭朝雀/skeleton`
+  - `杀手动画/skeleton`
+  - `小三视频/skeleton5`
+  - `神兽动画合集/百鸭朝鲲/skeleton`
+  - `戴夫/skeleton`
+- 场景路径：
+  - 无
+
+### audioBundle
+- 治理标签：`audio-assets`
+- 类型：`subpackage-bundle`
+- 目录：`subpackages/audioBundle`
+- 配置：`subpackages/audioBundle/config.audio-bundle.json`
+- 依赖：无
+- 资产路径数：65
+- 场景路径数：0
+- UUID 记录数：65
+- 编译产物文件：import 65 / native 65
+- UUID 风格编译文件：130
+- 命名噪声高频片段：
+  - `adz`：1
+  - `bdz`：1
+  - `eat`：1
+  - `fly`：1
+  - `gz`：1
+  - `ls`：1
+  - `lz`：1
+  - `p1`：1
+  - `p2`：1
+  - `pop`：1
+  - `qt`：1
+  - `win`：1
+- 命名噪声样例路径：
+  - `p2`
+  - `win`
+  - `adz`
+  - `fly`
+  - `bdz`
+  - `fruitGame/eat`
+  - `ls`
+  - `lz`
+  - `pop`
+  - `gz`
+  - `p1`
+  - `qt`
+- 主要路径前缀：
+  - `fruitGame`：13
+  - `comboMusic`：10
+  - `woodDrop`：3
+  - `adz`：1
+  - `bdz`：1
+  - `bgm`：1
+  - `breakDoor`：1
+  - `clap`：1
+  - `click`：1
+  - `colide`：1
+  - `colliderStone`：1
+  - `colorBgm`：1
+- 主要语义路径：
+  - `adz`：1
+  - `bdz`：1
+  - `bgm`：1
+  - `breakDoor`：1
+  - `clap`：1
+  - `click`：1
+  - `colide`：1
+  - `colliderStone`：1
+  - `colorBgm`：1
+  - `comboMusic/combo_1`：1
+  - `comboMusic/combo_10`：1
+  - `comboMusic/combo_2`：1
+- 样例路径：
+  - `comboMusic/combo_3`
+  - `fruitGame/eliminate3`
+  - `fruitGame/eliminate8`
+  - `p2`
+  - `comboMusic/combo_4`
+  - `warning`
+  - `win`
+  - `clap`
+  - `getDuck`
+  - `adz`
+  - `fruitGame/FruitWin`
+  - `colliderStone`
+  - `fruitGame/eliminate1`
+  - `colorBgm`
+  - `fruitGame/eliminate6`
+  - `comboMusic/combo_5`
+- 场景路径：
+  - 无
+
+### main
+- 治理标签：`main-scenes`
+- 类型：`subpackage-bundle`
+- 目录：`subpackages/main`
+- 配置：`subpackages/main/config.main.json`
+- 依赖：`start-scene`
+- 资产路径数：5
+- 场景路径数：5
+- UUID 记录数：523
+- 编译产物文件：import 122 / native 99
+- UUID 风格编译文件：221
+- 命名噪声高频片段：
+  - 无
+- 命名噪声样例路径：
+  - 无
+- 主要路径前缀：
+  - `db:`：5
+- 主要语义路径：
+  - `db:/assets`：5
+- 样例路径：
+  - `db:/assets/scene/DuckScene`
+  - `db:/assets/scene/FruitScene`
+  - `db:/assets/scene/PigeonScene`
+  - `db:/assets/scene/Game2Scene`
+  - `db:/assets/scene/HomeScene`
+- 场景路径：
+  - `db://assets/scene/DuckScene.scene`
+  - `db://assets/scene/FruitScene.scene`
+  - `db://assets/scene/Game2Scene.scene`
+  - `db://assets/scene/HomeScene.scene`
+  - `db://assets/scene/PigeonScene.scene`
+
+### resources
+- 治理标签：`shared-effects`
+- 类型：`subpackage-bundle`
+- 目录：`subpackages/resources`
+- 配置：`subpackages/resources/config.resources.json`
+- 依赖：无
+- 资产路径数：27
+- 场景路径数：0
+- UUID 记录数：39
+- 编译产物文件：import 11 / native 3
+- UUID 风格编译文件：14
+- 命名噪声高频片段：
+  - `lz`：15
+  - `cd1`：1
+  - `cd2`：1
+  - `cd3`：1
+  - `cd4`：1
+  - `cd5`：1
+  - `cd6`：1
+  - `cd7`：1
+  - `xg1`：1
+  - `xg10`：1
+  - `xg11`：1
+  - `xg12`：1
+- 命名噪声样例路径：
+  - `lz/xg2/spriteFrame`
+  - `粒子/lz`
+  - `彩带/cd5/spriteFrame`
+  - `lz/xg3/spriteFrame`
+  - `lz/xg9/spriteFrame`
+  - `lz/xg12/spriteFrame`
+  - `彩带/cd4/spriteFrame`
+  - `lz/xg8/spriteFrame`
+  - `lz/xg6/spriteFrame`
+  - `彩带/cd7/spriteFrame`
+  - `彩带/cd6/spriteFrame`
+  - `lz/xg7/spriteFrame`
+  - `彩带/cd1/spriteFrame`
+  - `lz/xg5/spriteFrame`
+  - `lz/xg1/spriteFrame`
+  - `lz/xg10/spriteFrame`
+- 主要路径前缀：
+  - `lz`：14
+  - `彩带`：7
+  - `粒子`：3
+  - `multTextures`：2
+  - `DuckJson`：1
+- 主要语义路径：
+  - `彩带/cd1`：1
+  - `彩带/cd2`：1
+  - `彩带/cd3`：1
+  - `彩带/cd4`：1
+  - `彩带/cd5`：1
+  - `彩带/cd6`：1
+  - `彩带/cd7`：1
+  - `粒子/circle`：1
+  - `粒子/fragment`：1
+  - `粒子/lz`：1
+  - `DuckJson`：1
+  - `lz/xg1`：1
+- 样例路径：
+  - `lz/xg2/spriteFrame`
+  - `粒子/lz`
+  - `彩带/cd5/spriteFrame`
+  - `粒子/fragment`
+  - `lz/xg3/spriteFrame`
+  - `lz/xg9/spriteFrame`
+  - `multTextures/Mult-material`
+  - `lz/xg12/spriteFrame`
+  - `彩带/cd4/spriteFrame`
+  - `DuckJson`
+  - `lz/xg8/spriteFrame`
+  - `lz/xg6/spriteFrame`
+  - `彩带/cd7/spriteFrame`
+  - `彩带/cd6/spriteFrame`
+  - `lz/xg7/spriteFrame`
+  - `multTextures/Mult-effect`
+- 场景路径：
+  - 无
+
+### uiBundle
+- 治理标签：`ui-assets`
+- 类型：`subpackage-bundle`
+- 目录：`subpackages/uiBundle`
+- 配置：`subpackages/uiBundle/config.ui-bundle.json`
+- 依赖：`main`
+- 资产路径数：400
+- 场景路径数：0
+- UUID 记录数：538
+- 编译产物文件：import 89 / native 24
+- UUID 风格编译文件：113
+- 命名噪声高频片段：
+  - `new`：3
+  - `%`：2
+  - `NO`：1
+  - `p1`：1
+  - `p10`：1
+  - `p2`：1
+  - `p3`：1
+  - `p4`：1
+  - `p5`：1
+  - `p6`：1
+  - `p7`：1
+  - `p8`：1
+- 命名噪声样例路径：
+  - `tex/book/duck/y30/spriteFrame`
+  - `tex/book/duck/y51/spriteFrame`
+  - `tex/book/duck/y75/spriteFrame`
+  - `tex/book/鸽鸽图鉴/皮肤图鉴/p8/spriteFrame`
+  - `tex/book/duck/y17/spriteFrame`
+  - `tex/book/duck/y10/spriteFrame`
+  - `tex/book/duck/y34/spriteFrame`
+  - `tex/book/duck/y38/spriteFrame`
+  - `tex/book/duck/y40/spriteFrame`
+  - `tex/book/鸽鸽图鉴/皮肤图鉴/p10/spriteFrame`
+  - `tex/book/duck/y77/spriteFrame`
+  - `tex/book/duck/y11/spriteFrame`
+  - `tex/book/duck/y12/spriteFrame`
+  - `tex/book/duck/y39/spriteFrame`
+  - `tex/book/duck/y55/spriteFrame`
+  - `tex/book/duck/y21/spriteFrame`
+- 主要路径前缀：
+  - `tex`：372
+  - `prefab`：28
+- 主要语义路径：
+  - `tex/book`：151
+  - `tex/主页素材`：48
+  - `tex/过关页面`：27
+  - `tex/道具`：21
+  - `tex/设置`：17
+  - `tex/失败页面`：15
+  - `tex/复活`：14
+  - `tex/更多玩法`：9
+  - `tex/投诉页面`：8
+  - `tex/体力获取`：7
+  - `tex/喊人页面`：6
+  - `tex/设置二级`：6
+- 样例路径：
+  - `tex/过关页面/还差/spriteFrame`
+  - `tex/book/duck/y30/spriteFrame`
+  - `tex/过关页面/成功进度/只鸭解锁百鸭朝雀/spriteFrame`
+  - `tex/设置/放弃挑战/spriteFrame`
+  - `tex/更多玩法/图标算数/spriteFrame`
+  - `tex/book/tex/全部/spriteFrame`
+  - `tex/主页素材/排行榜/名次底2/spriteFrame`
+  - `tex/失败页面/继续挑战/spriteFrame`
+  - `tex/book/duck/y51/spriteFrame`
+  - `tex/book/duck/y75/spriteFrame`
+  - `tex/book/分享鸭/张飞鸭/spriteFrame`
+  - `tex/book/鸽鸽图鉴/皮肤图鉴/p8/spriteFrame`
+  - `tex/设置/音效图标/spriteFrame`
+  - `prefab/ShareUI`
+  - `tex/book/tex/100/spriteFrame`
+  - `tex/book/duck/y17/spriteFrame`
+- 场景路径：
+  - 无
+

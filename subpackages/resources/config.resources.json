@@ -1,0 +1,271 @@
+{
+  "importBase": "import",
+  "nativeBase": "native",
+  "name": "resources",
+  "deps": [],
+  "uuids": [
+    "0aSGsvlchH86LPmLR35B2B@f9941",
+    "18Y8q+OYRHjIHJ0XtdXnWF",
+    "18a2f272f",
+    "1ff002d21",
+    "29wRRkK0BAXKJjR5k+3kFj@f9941",
+    "2dIW6RIyBPOLj4ZRiSCoOv",
+    "401yvzuCtPHbiLeGmykrx2@f9941",
+    "44I8v8aSRATrbEUF+1fiXn",
+    "47fdDc4BZNFqTtit9sK7YS@f9941",
+    "49DbbCTdRAUJjswcYsyq4W",
+    "4eLFpeVOVPAIbWWzUVSw70@f9941",
+    "4ftN/Z8hVCoK5L2B/TDWG9@f9941",
+    "57u8kpOQJHZKgYowwJQnW3",
+    "61+n+gWSdO8ZnoPckSB8So@f9941",
+    "7cCuDwR4hC0YI1Luh1po/d@f9941",
+    "94vpXj89BEWK/2GnbKq2VA@f9941",
+    "a3Bf3z9V5NZajFnDP/aaNY@f9941",
+    "a6go+tJm9JF76RmOSueh7u@f9941",
+    "ad2fyqhHVFIZF7feMHuBxN",
+    "b4KxWjyxxFrYsVOL1f+SQP@f9941",
+    "b5e41SH7lMaoSlIZUPurxX@f9941",
+    "b6Yw6YpDVFoJDtSf1qgud2",
+    "c7cWsj50RJG4rho6RVWqVl@f9941",
+    "ccrrNrVHtAnpR63jF39Zzw@f9941",
+    "d5XX0Yy11CApqrneYSGy65@f9941",
+    "ddmyGPGglERJn70QdNcJBm@f9941",
+    "e2odXwNMlLk6WKAUtKkBOl@f9941",
+    "e307l2h3JPjaa+0z1IkUiH@f9941",
+    "e9P1U5e8tINIxeO4yKtX7H@f9941",
+    "f3Ib2z6ylG2q0IwPnB1xZr@f9941",
+    "03ccd410a",
+    "0895e4eee",
+    "08a2f272f",
+    "09efe5537",
+    "0ff002d21",
+    "18a2f272f@6c48a",
+    "1ff002d21@6c48a",
+    "44I8v8aSRATrbEUF+1fiXn@6c48a",
+    "44I8v8aSRATrbEUF+1fiXn@f9941"
+  ],
+  "paths": {
+    "0": [
+      "lz/xg2/spriteFrame",
+      2,
+      1
+    ],
+    "1": [
+      "粒子/lz",
+      4,
+      1
+    ],
+    "4": [
+      "彩带/cd5/spriteFrame",
+      2,
+      1
+    ],
+    "5": [
+      "粒子/fragment",
+      4,
+      1
+    ],
+    "6": [
+      "lz/xg3/spriteFrame",
+      2,
+      1
+    ],
+    "8": [
+      "lz/xg9/spriteFrame",
+      2,
+      1
+    ],
+    "9": [
+      "multTextures/Mult-material",
+      3,
+      1
+    ],
+    "10": [
+      "lz/xg12/spriteFrame",
+      2,
+      1
+    ],
+    "11": [
+      "彩带/cd4/spriteFrame",
+      2,
+      1
+    ],
+    "12": [
+      "DuckJson",
+      1,
+      1
+    ],
+    "13": [
+      "lz/xg8/spriteFrame",
+      2,
+      1
+    ],
+    "14": [
+      "lz/xg6/spriteFrame",
+      2,
+      1
+    ],
+    "15": [
+      "彩带/cd7/spriteFrame",
+      2,
+      1
+    ],
+    "16": [
+      "彩带/cd6/spriteFrame",
+      2,
+      1
+    ],
+    "17": [
+      "lz/xg7/spriteFrame",
+      2,
+      1
+    ],
+    "18": [
+      "multTextures/Mult-effect",
+      0,
+      1
+    ],
+    "19": [
+      "彩带/cd1/spriteFrame",
+      2,
+      1
+    ],
+    "20": [
+      "lz/xg5/spriteFrame",
+      2,
+      1
+    ],
+    "21": [
+      "粒子/circle",
+      4,
+      1
+    ],
+    "22": [
+      "lz/xg1/spriteFrame",
+      2,
+      1
+    ],
+    "23": [
+      "lz/xg10/spriteFrame",
+      2,
+      1
+    ],
+    "24": [
+      "lz/xg13/spriteFrame",
+      2,
+      1
+    ],
+    "25": [
+      "彩带/cd3/spriteFrame",
+      2,
+      1
+    ],
+    "26": [
+      "lz/xg4/spriteFrame",
+      2,
+      1
+    ],
+    "27": [
+      "lz/xg14/spriteFrame",
+      2,
+      1
+    ],
+    "28": [
+      "lz/xg11/spriteFrame",
+      2,
+      1
+    ],
+    "29": [
+      "彩带/cd2/spriteFrame",
+      2,
+      1
+    ]
+  },
+  "scenes": {},
+  "packs": {
+    "03ccd410a": [
+      9,
+      18
+    ],
+    "0895e4eee": [
+      36,
+      35,
+      37
+    ],
+    "08a2f272f": [
+      4,
+      11,
+      15,
+      16,
+      19,
+      25,
+      29
+    ],
+    "09efe5537": [
+      38,
+      21
+    ],
+    "0ff002d21": [
+      0,
+      6,
+      8,
+      10,
+      13,
+      14,
+      17,
+      20,
+      22,
+      23,
+      24,
+      26,
+      27,
+      28
+    ]
+  },
+  "versions": {
+    "import": [
+      30,
+      "a3f7a",
+      31,
+      "ba01e",
+      32,
+      "11063",
+      33,
+      "f73e5",
+      34,
+      "804a9",
+      1,
+      "374d4",
+      2,
+      "a69ef",
+      3,
+      "bb82a",
+      5,
+      "04064",
+      7,
+      "a2533",
+      12,
+      "6d82b"
+    ],
+    "native": [
+      2,
+      "53b29",
+      3,
+      "02b34",
+      7,
+      "84bd9"
+    ]
+  },
+  "redirect": [],
+  "debug": false,
+  "extensionMap": {},
+  "hasPreloadScript": true,
+  "dependencyRelationships": {},
+  "types": [
+    "cc.EffectAsset",
+    "cc.JsonAsset",
+    "cc.SpriteFrame",
+    "cc.Material",
+    "cc.Prefab"
+  ]
+}
