@@ -1,0 +1,309 @@
+{
+  "moduleId": "chunks:///_virtual/Nail.ts",
+  "runtimeClassName": "Nail",
+  "restoredFile": "restored/start-scene/Nail.ts.restored.js",
+  "aliasMap": {
+    "t": "applyDecoratedDescriptor",
+    "n": "inheritsLoose",
+    "i": "initializerDefineProperty",
+    "o": "assertThisInitialized",
+    "r": "cclegacy",
+    "a": "_decorator",
+    "s": "Node",
+    "l": "Sprite",
+    "c": "UITransform",
+    "u": "instantiate",
+    "d": "UIOpacity",
+    "p": "find",
+    "f": "quat",
+    "g": "tween",
+    "m": "RigidBody2D",
+    "v": "CircleCollider2D",
+    "y": "ERigidBody2DType",
+    "_": "Label",
+    "b": "Contact2DType",
+    "S": "Component",
+    "C": "ResManager",
+    "w": "GameModel",
+    "N": "GameCtrl",
+    "k": "COLLIDER_TAG",
+    "T": "PHY_GROUP",
+    "B": "Util",
+    "A": "DuckController",
+    "P": "AudioManager",
+    "M": "GameData"
+  },
+  "methodInventory": {
+    "prototypeMethodCount": 25,
+    "descriptorKeyCount": 0,
+    "prototypeMethods": [
+      "breakLock",
+      "changeLayer",
+      "closeCollider",
+      "closeColliderListener",
+      "closeRestitution",
+      "closeRigid",
+      "initIceNail",
+      "initLockNail",
+      "initNail",
+      "initNailAngle",
+      "initNailCollider",
+      "isGridDeleteHasChildren",
+      "isNailNodeHasChildren",
+      "JudgeCombo",
+      "JudgeDeleteGridCanDelete",
+      "onBeginContact",
+      "onDisable",
+      "onEnable",
+      "openCollider",
+      "openColliderListener",
+      "openRigid",
+      "recoveryLayer",
+      "start",
+      "update",
+      "updateIceNum"
+    ],
+    "descriptorKeys": []
+  },
+  "signals": {
+    "thisFields": [
+      "ColliderNail",
+      "dropFlag",
+      "iceNum",
+      "inGridFlag",
+      "isIceLock",
+      "isJudgeComboFlag",
+      "isNailLock",
+      "isPlayColliderMusic",
+      "JudgeDeleteFlag",
+      "lastJudgeFlag",
+      "RigidNail",
+      "type"
+    ],
+    "storageKeys": [],
+    "bundleLoads": [
+      {
+        "bundle": "DuckBundle",
+        "path": "prefab/highLight"
+      },
+      {
+        "bundle": "DuckBundle",
+        "path": "prefab/iceNode"
+      },
+      {
+        "bundle": "DuckBundle",
+        "path": "prefab/lockSprite"
+      },
+      {
+        "bundle": "DuckBundle",
+        "path": "prefab/nailShadow"
+      },
+      {
+        "bundle": "DuckBundle",
+        "path": "tex/nail/dingZi/spriteFrame"
+      }
+    ],
+    "dynamicBundleLoads": [
+      {
+        "bundle": "DuckBundle",
+        "pathExpr": "o"
+      },
+      {
+        "bundle": "DuckBundle",
+        "pathExpr": "r"
+      }
+    ],
+    "pathLiterals": [
+      "prefab/highLight",
+      "prefab/iceNode",
+      "prefab/lockSprite",
+      "prefab/nailShadow",
+      "tex/nail/dingZi/spriteFrame",
+      "tex/newNail/ls",
+      "tex/newNail/lw"
+    ],
+    "legacyPaths": {
+      "legacyHomePaths": [],
+      "legacyUiPigeonSkinPaths": [],
+      "legacyUiPigeonSkinDynamicPrefixes": []
+    }
+  },
+  "renameHints": {
+    "aliasHints": [
+      {
+        "from": "_",
+        "to": "Label",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "a",
+        "to": "_decorator",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "A",
+        "to": "DuckController",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "b",
+        "to": "Contact2DType",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "B",
+        "to": "Util",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "c",
+        "to": "UITransform",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "C",
+        "to": "ResManager",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "d",
+        "to": "UIOpacity",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "f",
+        "to": "quat",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "g",
+        "to": "tween",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "i",
+        "to": "initializerDefineProperty",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "k",
+        "to": "COLLIDER_TAG",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "l",
+        "to": "Sprite",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "m",
+        "to": "RigidBody2D",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "M",
+        "to": "GameData",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "n",
+        "to": "inheritsLoose",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "N",
+        "to": "GameCtrl",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "o",
+        "to": "assertThisInitialized",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "p",
+        "to": "find",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "P",
+        "to": "AudioManager",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "r",
+        "to": "cclegacy",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "s",
+        "to": "Node",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "S",
+        "to": "Component",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "t",
+        "to": "applyDecoratedDescriptor",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "T",
+        "to": "PHY_GROUP",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "u",
+        "to": "instantiate",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "v",
+        "to": "CircleCollider2D",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "w",
+        "to": "GameModel",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "y",
+        "to": "ERigidBody2DType",
+        "confidence": "high",
+        "source": "setters import alias"
+      }
+    ]
+  }
+}

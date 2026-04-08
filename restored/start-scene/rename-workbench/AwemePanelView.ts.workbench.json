@@ -1,0 +1,238 @@
+{
+  "moduleId": "chunks:///_virtual/AwemePanelView.ts",
+  "runtimeClassName": "AwemePanelView",
+  "restoredFile": "restored/start-scene/AwemePanelView.ts.restored.js",
+  "aliasMap": {
+    "t": "applyDecoratedDescriptor",
+    "n": "inheritsLoose",
+    "o": "initializerDefineProperty",
+    "r": "assertThisInitialized",
+    "a": "asyncToGenerator",
+    "s": "cclegacy",
+    "l": "_decorator",
+    "c": "Node",
+    "u": "Button",
+    "d": "SpriteFrame",
+    "h": "tween",
+    "p": "UIOpacity",
+    "g": "assetManager",
+    "m": "Prefab",
+    "v": "Sprite",
+    "y": "Component",
+    "_": "find",
+    "b": "instantiate",
+    "S": "AudioManager",
+    "C": "GameModel",
+    "w": "ResManager",
+    "N": "GameCtrl",
+    "k": "releaseType",
+    "T": "ReceivePanelView",
+    "B": "UIConfigTable",
+    "A": "TooYueManager",
+    "P": "AdManager_ZJ"
+  },
+  "methodInventory": {
+    "prototypeMethodCount": 12,
+    "descriptorKeyCount": 0,
+    "prototypeMethods": [
+      "addFailBack",
+      "addFinishBack",
+      "initPanel",
+      "onClose",
+      "onDisable",
+      "onEnable",
+      "onLoad",
+      "onReceive",
+      "registerEvents",
+      "setPanel",
+      "start",
+      "unregisterEvents"
+    ],
+    "descriptorKeys": []
+  },
+  "signals": {
+    "thisFields": [
+      "model"
+    ],
+    "storageKeys": [],
+    "bundleLoads": [],
+    "dynamicBundleLoads": [
+      {
+        "bundle": "uiBundle",
+        "pathExpr": "B"
+      }
+    ],
+    "pathLiterals": [],
+    "legacyPaths": {
+      "legacyHomePaths": [],
+      "legacyUiPigeonSkinPaths": [],
+      "legacyUiPigeonSkinDynamicPrefixes": []
+    }
+  },
+  "renameHints": {
+    "aliasHints": [
+      {
+        "from": "_",
+        "to": "find",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "a",
+        "to": "asyncToGenerator",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "A",
+        "to": "TooYueManager",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "b",
+        "to": "instantiate",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "B",
+        "to": "UIConfigTable",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "c",
+        "to": "Node",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "C",
+        "to": "GameModel",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "d",
+        "to": "SpriteFrame",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "g",
+        "to": "assetManager",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "h",
+        "to": "tween",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "k",
+        "to": "releaseType",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "l",
+        "to": "_decorator",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "m",
+        "to": "Prefab",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "n",
+        "to": "inheritsLoose",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "N",
+        "to": "GameCtrl",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "o",
+        "to": "initializerDefineProperty",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "p",
+        "to": "UIOpacity",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "P",
+        "to": "AdManager_ZJ",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "r",
+        "to": "assertThisInitialized",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "s",
+        "to": "cclegacy",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "S",
+        "to": "AudioManager",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "t",
+        "to": "applyDecoratedDescriptor",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "T",
+        "to": "ReceivePanelView",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "u",
+        "to": "Button",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "v",
+        "to": "Sprite",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "w",
+        "to": "ResManager",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "y",
+        "to": "Component",
+        "confidence": "high",
+        "source": "setters import alias"
+      }
+    ]
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "moduleId": "chunks:///_virtual/PoolManager.ts",
+  "runtimeClassName": "PoolManager",
+  "restoredFile": "restored/start-scene/PoolManager.ts.restored.js",
+  "aliasMap": {
+    "t": "cclegacy",
+    "n": "_decorator",
+    "i": "NodePool",
+    "o": "instantiate",
+    "r": "Tween",
+    "a": "ResManager"
+  },
+  "methodInventory": {
+    "prototypeMethodCount": 0,
+    "descriptorKeyCount": 0,
+    "prototypeMethods": [],
+    "descriptorKeys": []
+  },
+  "signals": {
+    "thisFields": [],
+    "storageKeys": [],
+    "bundleLoads": [],
+    "dynamicBundleLoads": [],
+    "pathLiterals": [],
+    "legacyPaths": {
+      "legacyHomePaths": [],
+      "legacyUiPigeonSkinPaths": [],
+      "legacyUiPigeonSkinDynamicPrefixes": []
+    }
+  },
+  "renameHints": {
+    "aliasHints": [
+      {
+        "from": "a",
+        "to": "ResManager",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "i",
+        "to": "NodePool",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "n",
+        "to": "_decorator",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "o",
+        "to": "instantiate",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "r",
+        "to": "Tween",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "t",
+        "to": "cclegacy",
+        "confidence": "high",
+        "source": "setters import alias"
+      }
+    ]
+  }
+}

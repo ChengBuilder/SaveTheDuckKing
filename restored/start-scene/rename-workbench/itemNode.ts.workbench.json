@@ -1,0 +1,156 @@
+{
+  "moduleId": "chunks:///_virtual/itemNode.ts",
+  "runtimeClassName": "itemNode",
+  "restoredFile": "restored/start-scene/itemNode.ts.restored.js",
+  "aliasMap": {
+    "t": "applyDecoratedDescriptor",
+    "n": "inheritsLoose",
+    "i": "initializerDefineProperty",
+    "o": "assertThisInitialized",
+    "r": "cclegacy",
+    "a": "_decorator",
+    "s": "Node",
+    "l": "SpriteFrame",
+    "c": "Label",
+    "u": "Sprite",
+    "d": "Color",
+    "h": "Vec3",
+    "p": "Component",
+    "f": "GameModel",
+    "g": "ResManager",
+    "m": "Util"
+  },
+  "methodInventory": {
+    "prototypeMethodCount": 3,
+    "descriptorKeyCount": 0,
+    "prototypeMethods": [
+      "hide",
+      "initItem",
+      "start"
+    ],
+    "descriptorKeys": []
+  },
+  "signals": {
+    "thisFields": [],
+    "storageKeys": [],
+    "bundleLoads": [],
+    "dynamicBundleLoads": [
+      {
+        "bundle": "uiBundle",
+        "pathExpr": "o"
+      },
+      {
+        "bundle": "uiBundle",
+        "pathExpr": "s"
+      }
+    ],
+    "pathLiterals": [
+      "tex/book/duck/y"
+    ],
+    "legacyPaths": {
+      "legacyHomePaths": [],
+      "legacyUiPigeonSkinPaths": [],
+      "legacyUiPigeonSkinDynamicPrefixes": []
+    }
+  },
+  "renameHints": {
+    "aliasHints": [
+      {
+        "from": "a",
+        "to": "_decorator",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "c",
+        "to": "Label",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "d",
+        "to": "Color",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "f",
+        "to": "GameModel",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "g",
+        "to": "ResManager",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "h",
+        "to": "Vec3",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "i",
+        "to": "initializerDefineProperty",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "l",
+        "to": "SpriteFrame",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "m",
+        "to": "Util",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "n",
+        "to": "inheritsLoose",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "o",
+        "to": "assertThisInitialized",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "p",
+        "to": "Component",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "r",
+        "to": "cclegacy",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "s",
+        "to": "Node",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "t",
+        "to": "applyDecoratedDescriptor",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "u",
+        "to": "Sprite",
+        "confidence": "high",
+        "source": "setters import alias"
+      }
+    ]
+  }
+}

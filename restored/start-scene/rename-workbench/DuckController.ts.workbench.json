@@ -1,0 +1,637 @@
+{
+  "moduleId": "chunks:///_virtual/DuckController.ts",
+  "runtimeClassName": "DuckController",
+  "restoredFile": "restored/start-scene/DuckController.ts.restored.js",
+  "aliasMap": {
+    "t": "applyDecoratedDescriptor",
+    "n": "inheritsLoose",
+    "o": "initializerDefineProperty",
+    "r": "assertThisInitialized",
+    "a": "asyncToGenerator",
+    "s": "cclegacy",
+    "l": "_decorator",
+    "c": "SpriteFrame",
+    "u": "Material",
+    "h": "find",
+    "p": "Label",
+    "f": "tween",
+    "g": "Sprite",
+    "m": "Color",
+    "v": "PhysicsSystem2D",
+    "y": "Button",
+    "_": "BoxCollider2D",
+    "b": "instantiate",
+    "S": "UIOpacity",
+    "C": "UITransform",
+    "N": "ProgressBar",
+    "k": "view",
+    "T": "Tween",
+    "A": "Intersection2D",
+    "P": "HingeJoint2D",
+    "M": "director",
+    "I": "Node",
+    "F": "Camera",
+    "R": "Vec3",
+    "L": "Component",
+    "x": "RigidBody2D",
+    "D": "easing",
+    "G": "PolygonCollider2D",
+    "E": "GameModel",
+    "O": "ResManager",
+    "H": "Util",
+    "V": "GameCtrl",
+    "U": "AudioManager",
+    "z": "EVENT_KEYS",
+    "W": "releaseType",
+    "j": "COLLIDER_TAG",
+    "J": "PHY_GROUP",
+    "Y": "PROP_TYPE",
+    "q": "default",
+    "K": "AdManager",
+    "X": "UIConfigTable",
+    "Q": "PropPanelView",
+    "Z": "RevivePanelView",
+    "ee": "Nail",
+    "te": "GameData",
+    "ne": "TooYueManager",
+    "ie": "AdManager_ZJ",
+    "oe": "TT_EVENT_KEYS",
+    "re": "ReceivePanelView",
+    "ae": "AutoManager"
+  },
+  "methodInventory": {
+    "prototypeMethodCount": 117,
+    "descriptorKeyCount": 0,
+    "prototypeMethods": [
+      "adGridBack",
+      "adGridShakeMove",
+      "AutoTouch",
+      "BubbleShow",
+      "changeBgStyle",
+      "changeWoodNodeAngle",
+      "checkCanTouch",
+      "checkOver",
+      "closeSubBack",
+      "closeSubEmit",
+      "createNailArr",
+      "createPoint",
+      "createReviveWood",
+      "createSetBtn",
+      "createWood",
+      "CreateWoodInformation",
+      "diffForGroupIndex",
+      "DuckConversationStart",
+      "duckLzCreate",
+      "findSameTypeNail",
+      "finishVideoToAdGrid",
+      "gameEnd",
+      "gameSuccess",
+      "getGridNodeType",
+      "getLevelInformation",
+      "getRandTidyType",
+      "getRandWoodType",
+      "getSingleWoodTypeCount",
+      "getTidyLevelCount",
+      "getTopDeleteGridArr",
+      "getTouchNail",
+      "GetTypeNumber",
+      "getWoodHoleNum",
+      "gmLabelUpdate",
+      "GuideMaskMove",
+      "gyroscopeTimer",
+      "hidePropBtn",
+      "hideTsUI",
+      "initAdGrid",
+      "initAniBg",
+      "initAutoGrid",
+      "initDuckAndCageAni",
+      "initDuckSkin",
+      "initFirstLevel",
+      "initGame",
+      "initNailTypeArr",
+      "initNode",
+      "initProgressBar",
+      "initReviveNail",
+      "initShowADGridCd",
+      "isGridDeleteHasChildren",
+      "isNailNodeHasDropChildren",
+      "isShowSpecialBg",
+      "isSingleWoodTypeLevel",
+      "isTidyLevel",
+      "judgeNullLose",
+      "lockAdGirdProp",
+      "LongTimeNoTouchEffect",
+      "nailPop",
+      "nextLevel",
+      "onDestroy",
+      "onDisable",
+      "onEnable",
+      "onLoad",
+      "onPropClick",
+      "onTouchEnd",
+      "onTouchMove",
+      "onTouchStart",
+      "openRigid",
+      "openSubBack",
+      "OverEffect",
+      "pop",
+      "PopComboRecord",
+      "popDeleteNail",
+      "PopMusicSelect",
+      "popOneNail",
+      "progressMove",
+      "prop1",
+      "prop2",
+      "prop3",
+      "prop4",
+      "prop5",
+      "propDeleteBack",
+      "reduceIceCount",
+      "registerEvents",
+      "replay",
+      "reportBtnClick",
+      "revive",
+      "ReviveNailMove",
+      "setLevel",
+      "setNailColor",
+      "setTidyMode",
+      "setUI",
+      "ShakeBtnBack",
+      "shakeCamera",
+      "shakeShakeBtn",
+      "showAdGridCal",
+      "showADGridTips",
+      "showIceNumShow",
+      "showPropBtn",
+      "showReceivePanel",
+      "showShareLose",
+      "showSideBar",
+      "snagNodeShow",
+      "sortGridSibling",
+      "start",
+      "startGame",
+      "sub6Move",
+      "SubListener",
+      "successEffect",
+      "touchNail",
+      "unregisterEvents",
+      "update",
+      "updateAdGridTip",
+      "WaterMove",
+      "woodAddForce",
+      "woodAddLinerVelocity"
+    ],
+    "descriptorKeys": []
+  },
+  "signals": {
+    "thisFields": [
+      "adShakeLock",
+      "AdShakeMoveFlag",
+      "autoFindCd",
+      "autoTimer",
+      "CageAni",
+      "checkCanTouTimer",
+      "checkOverCd",
+      "checkOverNum",
+      "checkOverTimer",
+      "DuckAni",
+      "DuckLzCd",
+      "duckLzTime",
+      "duckPos",
+      "DuckShadow",
+      "firstTouch",
+      "gameNode",
+      "GuideMask",
+      "GyroscopeTimer",
+      "hammer",
+      "hand",
+      "iceLayerArr",
+      "iceNailArr",
+      "isSetBtnShow",
+      "isShowADGridUI",
+      "isTalking",
+      "levelLabel",
+      "maxLenGridNum",
+      "maxNailType",
+      "maxWoodType",
+      "NailNode",
+      "nailNum",
+      "NoTouchITime",
+      "NoTouchNailNum",
+      "oneLayerNum",
+      "OpenRigidGroupArr",
+      "popNum",
+      "PopRecord",
+      "PopSuccessTime",
+      "prop1Num",
+      "prop2Num",
+      "prop3Num",
+      "prop4Num",
+      "propBg",
+      "propBlack",
+      "reportBtn",
+      "ReviveNode",
+      "reviveNum",
+      "SetAniBg",
+      "showAdGridFlag",
+      "showAdGridITime",
+      "snagNode",
+      "TalkFlag",
+      "tscd",
+      "TurnFlag1",
+      "TurnFlag2",
+      "TurnFlag3",
+      "uiNode",
+      "wallNode",
+      "woodForceFlag",
+      "woodNode",
+      "woodNodeTemp",
+      "woodUpDiff",
+      "ydIndex"
+    ],
+    "storageKeys": [],
+    "bundleLoads": [
+      {
+        "bundle": "aniBundle",
+        "path": "prefab/SubBg"
+      },
+      {
+        "bundle": "DuckBundle",
+        "path": "prefab/FullNode"
+      },
+      {
+        "bundle": "DuckBundle",
+        "path": "prefab/GyroscopeTip"
+      },
+      {
+        "bundle": "DuckBundle",
+        "path": "prefab/WarningUI"
+      },
+      {
+        "bundle": "uiBundle",
+        "path": "prefab/share_lose"
+      }
+    ],
+    "dynamicBundleLoads": [
+      {
+        "bundle": "DuckBundle",
+        "pathExpr": "r"
+      },
+      {
+        "bundle": "DuckBundle",
+        "pathExpr": "s"
+      },
+      {
+        "bundle": "uiBundle",
+        "pathExpr": "X"
+      }
+    ],
+    "pathLiterals": [
+      "prefab/FullNode",
+      "prefab/GyroscopeTip",
+      "prefab/share_lose",
+      "prefab/SubBg",
+      "prefab/WarningUI",
+      "prefab/wood/wood"
+    ],
+    "legacyPaths": {
+      "legacyHomePaths": [],
+      "legacyUiPigeonSkinPaths": [],
+      "legacyUiPigeonSkinDynamicPrefixes": []
+    }
+  },
+  "renameHints": {
+    "aliasHints": [
+      {
+        "from": "_",
+        "to": "BoxCollider2D",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "a",
+        "to": "asyncToGenerator",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "A",
+        "to": "Intersection2D",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "ae",
+        "to": "AutoManager",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "b",
+        "to": "instantiate",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "c",
+        "to": "SpriteFrame",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "C",
+        "to": "UITransform",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "D",
+        "to": "easing",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "E",
+        "to": "GameModel",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "ee",
+        "to": "Nail",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "f",
+        "to": "tween",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "F",
+        "to": "Camera",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "g",
+        "to": "Sprite",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "G",
+        "to": "PolygonCollider2D",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "h",
+        "to": "find",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "H",
+        "to": "Util",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "I",
+        "to": "Node",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "ie",
+        "to": "AdManager_ZJ",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "j",
+        "to": "COLLIDER_TAG",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "J",
+        "to": "PHY_GROUP",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "k",
+        "to": "view",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "K",
+        "to": "AdManager",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "l",
+        "to": "_decorator",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "L",
+        "to": "Component",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "m",
+        "to": "Color",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "M",
+        "to": "director",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "n",
+        "to": "inheritsLoose",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "N",
+        "to": "ProgressBar",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "ne",
+        "to": "TooYueManager",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "o",
+        "to": "initializerDefineProperty",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "O",
+        "to": "ResManager",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "oe",
+        "to": "TT_EVENT_KEYS",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "p",
+        "to": "Label",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "P",
+        "to": "HingeJoint2D",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "q",
+        "to": "default",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "Q",
+        "to": "PropPanelView",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "r",
+        "to": "assertThisInitialized",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "R",
+        "to": "Vec3",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "re",
+        "to": "ReceivePanelView",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "s",
+        "to": "cclegacy",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "S",
+        "to": "UIOpacity",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "t",
+        "to": "applyDecoratedDescriptor",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "T",
+        "to": "Tween",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "te",
+        "to": "GameData",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "u",
+        "to": "Material",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "U",
+        "to": "AudioManager",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "v",
+        "to": "PhysicsSystem2D",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "V",
+        "to": "GameCtrl",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "W",
+        "to": "releaseType",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "x",
+        "to": "RigidBody2D",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "X",
+        "to": "UIConfigTable",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "y",
+        "to": "Button",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "Y",
+        "to": "PROP_TYPE",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "z",
+        "to": "EVENT_KEYS",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "Z",
+        "to": "RevivePanelView",
+        "confidence": "high",
+        "source": "setters import alias"
+      }
+    ]
+  }
+}

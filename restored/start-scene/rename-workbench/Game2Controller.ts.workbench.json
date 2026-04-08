@@ -1,0 +1,462 @@
+{
+  "moduleId": "chunks:///_virtual/Game2Controller.ts",
+  "runtimeClassName": "Game2Controller",
+  "restoredFile": "restored/start-scene/Game2Controller.ts.restored.js",
+  "aliasMap": {
+    "t": "applyDecoratedDescriptor",
+    "n": "inheritsLoose",
+    "o": "initializerDefineProperty",
+    "r": "assertThisInitialized",
+    "a": "asyncToGenerator",
+    "s": "cclegacy",
+    "l": "_decorator",
+    "c": "Node",
+    "u": "Material",
+    "d": "find",
+    "h": "Label",
+    "p": "Button",
+    "f": "BoxCollider2D",
+    "g": "Sprite",
+    "v": "tween",
+    "_": "instantiate",
+    "b": "UIOpacity",
+    "S": "PhysicsSystem2D",
+    "C": "director",
+    "w": "Color",
+    "N": "Tween",
+    "k": "Vec3",
+    "T": "Component",
+    "B": "view",
+    "A": "UITransform",
+    "P": "FruitManager",
+    "M": "releaseType",
+    "I": "COLLIDER_TAG",
+    "F": "GAME2_EVENT_KEYS",
+    "R": "PROP_TYPE",
+    "L": "default",
+    "x": "GameCtrl",
+    "D": "Util",
+    "G": "Fruit",
+    "E": "AudioManager",
+    "O": "GameModel",
+    "H": "ResManager",
+    "V": "TooYueManager",
+    "U": "UIConfigTable",
+    "z": "RevivePanelView",
+    "W": "AdManager",
+    "j": "PropPanelView",
+    "J": "PoolManager",
+    "Y": "GameData2"
+  },
+  "methodInventory": {
+    "prototypeMethodCount": 70,
+    "descriptorKeyCount": 0,
+    "prototypeMethods": [
+      "adGridBack",
+      "adGridShakeMove",
+      "allFruitShuffle",
+      "createPoint",
+      "createSetBtn",
+      "findSameTypeFruit",
+      "finishVideoToAdGrid",
+      "fruitPop",
+      "gameEnd",
+      "gameSuccess",
+      "getArrBottomPos",
+      "getBottomFruit",
+      "getSafePos",
+      "getSameFruitInDeleteGridArr",
+      "getTopDeleteGridArr",
+      "getTopFruit",
+      "getTopFruitInDeleteGridArr",
+      "gmLabelUpdate",
+      "gyroscopeTimer",
+      "HideBottomWall",
+      "hidePropBtn",
+      "hideTsUI",
+      "initAdGrid",
+      "initAni",
+      "initBg",
+      "initDuckSkin",
+      "initGame",
+      "initNode",
+      "initProp",
+      "initUI",
+      "initWarning",
+      "isFruitNodeHasDropChildren",
+      "isGridDeleteHasChildren",
+      "judgeNullLose",
+      "lockAdGirdProp",
+      "moveFruitByGyroscope",
+      "NextLevel",
+      "onDisable",
+      "onEnable",
+      "onLoad",
+      "onPropClick",
+      "OverEffect",
+      "pop",
+      "PopComboRecord",
+      "popDeleteFruit",
+      "PopMusicSelect",
+      "prop1",
+      "prop2",
+      "prop3",
+      "prop4",
+      "prop5",
+      "propDeleteBack",
+      "replay",
+      "reportBtnClick",
+      "revive",
+      "ShakeBtnBack",
+      "shakeShakeBtn",
+      "showADGridTips",
+      "showPropBtn",
+      "showShareLose",
+      "SnagShow",
+      "sortGridSibling",
+      "start",
+      "successEffect",
+      "tryFruitMove",
+      "updataFruitNum",
+      "update",
+      "updateAdGridTip",
+      "updateLevelLabel",
+      "WaterMove"
+    ],
+    "descriptorKeys": []
+  },
+  "signals": {
+    "thisFields": [
+      "adShakeLock",
+      "AdShakeMoveFlag",
+      "DeleteGridArr",
+      "duckAni",
+      "fruitNode",
+      "fruitNum",
+      "fruitNumLabel",
+      "GyroscopeTimer",
+      "isSetBtnShow",
+      "isShowADGridUI",
+      "levelLabel",
+      "maxLenGridNum",
+      "NoTouchFruitNum",
+      "pigeonAni",
+      "popNum",
+      "PopRecord",
+      "PopSuccessTime",
+      "prop1Num",
+      "prop2Num",
+      "propBg",
+      "reportBtn",
+      "reviveNum",
+      "showAdGridITime",
+      "snagNode",
+      "tscd",
+      "uiNode"
+    ],
+    "storageKeys": [],
+    "bundleLoads": [
+      {
+        "bundle": "DuckBundle",
+        "path": "prefab/FullNode"
+      },
+      {
+        "bundle": "DuckBundle",
+        "path": "prefab/GyroscopeTip"
+      },
+      {
+        "bundle": "DuckBundle",
+        "path": "prefab/WarningUI"
+      },
+      {
+        "bundle": "uiBundle",
+        "path": "prefab/share_lose"
+      }
+    ],
+    "dynamicBundleLoads": [
+      {
+        "bundle": "uiBundle",
+        "pathExpr": "U"
+      }
+    ],
+    "pathLiterals": [
+      "prefab/FullNode",
+      "prefab/GyroscopeTip",
+      "prefab/share_lose",
+      "prefab/WarningUI"
+    ],
+    "legacyPaths": {
+      "legacyHomePaths": [],
+      "legacyUiPigeonSkinPaths": [],
+      "legacyUiPigeonSkinDynamicPrefixes": []
+    }
+  },
+  "renameHints": {
+    "aliasHints": [
+      {
+        "from": "_",
+        "to": "instantiate",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "a",
+        "to": "asyncToGenerator",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "A",
+        "to": "UITransform",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "b",
+        "to": "UIOpacity",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "B",
+        "to": "view",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "c",
+        "to": "Node",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "C",
+        "to": "director",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "d",
+        "to": "find",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "D",
+        "to": "Util",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "E",
+        "to": "AudioManager",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "f",
+        "to": "BoxCollider2D",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "F",
+        "to": "GAME2_EVENT_KEYS",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "g",
+        "to": "Sprite",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "G",
+        "to": "Fruit",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "h",
+        "to": "Label",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "H",
+        "to": "ResManager",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "I",
+        "to": "COLLIDER_TAG",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "j",
+        "to": "PropPanelView",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "J",
+        "to": "PoolManager",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "k",
+        "to": "Vec3",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "l",
+        "to": "_decorator",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "L",
+        "to": "default",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "M",
+        "to": "releaseType",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "n",
+        "to": "inheritsLoose",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "N",
+        "to": "Tween",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "o",
+        "to": "initializerDefineProperty",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "O",
+        "to": "GameModel",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "p",
+        "to": "Button",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "P",
+        "to": "FruitManager",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "r",
+        "to": "assertThisInitialized",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "R",
+        "to": "PROP_TYPE",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "s",
+        "to": "cclegacy",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "S",
+        "to": "PhysicsSystem2D",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "t",
+        "to": "applyDecoratedDescriptor",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "T",
+        "to": "Component",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "u",
+        "to": "Material",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "U",
+        "to": "UIConfigTable",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "v",
+        "to": "tween",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "V",
+        "to": "TooYueManager",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "w",
+        "to": "Color",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "W",
+        "to": "AdManager",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "x",
+        "to": "GameCtrl",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "Y",
+        "to": "GameData2",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "z",
+        "to": "RevivePanelView",
+        "confidence": "high",
+        "source": "setters import alias"
+      }
+    ]
+  }
+}

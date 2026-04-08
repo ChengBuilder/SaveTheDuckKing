@@ -1,0 +1,57 @@
+{
+  "moduleId": "chunks:///_virtual/RopeGenerator.ts",
+  "runtimeClassName": "RopeGenerator",
+  "restoredFile": "restored/start-scene/RopeGenerator.ts.restored.js",
+  "aliasMap": {
+    "t": "createForOfIteratorHelperLoose",
+    "n": "cclegacy",
+    "i": "Vec2",
+    "o": "CollisionUtil"
+  },
+  "methodInventory": {
+    "prototypeMethodCount": 0,
+    "descriptorKeyCount": 0,
+    "prototypeMethods": [],
+    "descriptorKeys": []
+  },
+  "signals": {
+    "thisFields": [],
+    "storageKeys": [],
+    "bundleLoads": [],
+    "dynamicBundleLoads": [],
+    "pathLiterals": [],
+    "legacyPaths": {
+      "legacyHomePaths": [],
+      "legacyUiPigeonSkinPaths": [],
+      "legacyUiPigeonSkinDynamicPrefixes": []
+    }
+  },
+  "renameHints": {
+    "aliasHints": [
+      {
+        "from": "i",
+        "to": "Vec2",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "n",
+        "to": "cclegacy",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "o",
+        "to": "CollisionUtil",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "t",
+        "to": "createForOfIteratorHelperLoose",
+        "confidence": "high",
+        "source": "setters import alias"
+      }
+    ]
+  }
+}

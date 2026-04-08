@@ -1,0 +1,57 @@
+{
+  "moduleId": "chunks:///_virtual/JumpTween.ts",
+  "runtimeClassName": "JumpTween",
+  "restoredFile": "restored/start-scene/JumpTween.ts.restored.js",
+  "aliasMap": {
+    "t": "cclegacy",
+    "n": "Vec3",
+    "i": "tween",
+    "o": "easing"
+  },
+  "methodInventory": {
+    "prototypeMethodCount": 0,
+    "descriptorKeyCount": 0,
+    "prototypeMethods": [],
+    "descriptorKeys": []
+  },
+  "signals": {
+    "thisFields": [],
+    "storageKeys": [],
+    "bundleLoads": [],
+    "dynamicBundleLoads": [],
+    "pathLiterals": [],
+    "legacyPaths": {
+      "legacyHomePaths": [],
+      "legacyUiPigeonSkinPaths": [],
+      "legacyUiPigeonSkinDynamicPrefixes": []
+    }
+  },
+  "renameHints": {
+    "aliasHints": [
+      {
+        "from": "i",
+        "to": "tween",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "n",
+        "to": "Vec3",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "o",
+        "to": "easing",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "t",
+        "to": "cclegacy",
+        "confidence": "high",
+        "source": "setters import alias"
+      }
+    ]
+  }
+}

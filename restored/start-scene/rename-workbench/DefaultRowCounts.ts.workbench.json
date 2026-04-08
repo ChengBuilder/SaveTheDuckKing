@@ -1,0 +1,50 @@
+{
+  "moduleId": "chunks:///_virtual/DefaultRowCounts.ts",
+  "runtimeClassName": "DefaultRowCounts",
+  "restoredFile": "restored/start-scene/DefaultRowCounts.ts.restored.js",
+  "aliasMap": {
+    "t": "cclegacy",
+    "n": "maxFruitsPerRowFullScreenMessy",
+    "i": "maxFruitsPerRowWithSlotGap"
+  },
+  "methodInventory": {
+    "prototypeMethodCount": 0,
+    "descriptorKeyCount": 0,
+    "prototypeMethods": [],
+    "descriptorKeys": []
+  },
+  "signals": {
+    "thisFields": [],
+    "storageKeys": [],
+    "bundleLoads": [],
+    "dynamicBundleLoads": [],
+    "pathLiterals": [],
+    "legacyPaths": {
+      "legacyHomePaths": [],
+      "legacyUiPigeonSkinPaths": [],
+      "legacyUiPigeonSkinDynamicPrefixes": []
+    }
+  },
+  "renameHints": {
+    "aliasHints": [
+      {
+        "from": "i",
+        "to": "maxFruitsPerRowWithSlotGap",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "n",
+        "to": "maxFruitsPerRowFullScreenMessy",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "t",
+        "to": "cclegacy",
+        "confidence": "high",
+        "source": "setters import alias"
+      }
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "moduleId": "chunks:///_virtual/Grid.ts",
+  "runtimeClassName": "Grid",
+  "restoredFile": "restored/start-scene/Grid.ts.restored.js",
+  "aliasMap": {
+    "t": "cclegacy"
+  },
+  "methodInventory": {
+    "prototypeMethodCount": 8,
+    "descriptorKeyCount": 0,
+    "prototypeMethods": [
+      "clear",
+      "isEmpty",
+      "peek",
+      "pop",
+      "push",
+      "remove",
+      "size",
+      "toString"
+    ],
+    "descriptorKeys": []
+  },
+  "signals": {
+    "thisFields": [
+      "bg",
+      "col",
+      "count",
+      "have",
+      "items",
+      "position",
+      "row",
+      "stack",
+      "type"
+    ],
+    "storageKeys": [],
+    "bundleLoads": [],
+    "dynamicBundleLoads": [],
+    "pathLiterals": [],
+    "legacyPaths": {
+      "legacyHomePaths": [],
+      "legacyUiPigeonSkinPaths": [],
+      "legacyUiPigeonSkinDynamicPrefixes": []
+    }
+  },
+  "renameHints": {
+    "aliasHints": [
+      {
+        "from": "t",
+        "to": "cclegacy",
+        "confidence": "high",
+        "source": "setters import alias"
+      }
+    ]
+  }
+}

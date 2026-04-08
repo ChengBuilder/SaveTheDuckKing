@@ -33,17 +33,23 @@ const DEFAULT_MODULES = [
  * Parse CLI arguments.
  * --all: export all modules from start-scene bundle.
  * --modules=a,b,c: export only listed module ids.
+ * --clean: remove existing `*.restored.js` before writing current selection.
  * If no flags are passed, use DEFAULT_MODULES.
- * @returns {{exportAll:boolean, explicitModules:string[]}}
+ * @returns {{exportAll:boolean, explicitModules:string[], clean:boolean}}
  */
 function parseArgs() {
   const rawArgs = process.argv.slice(2);
   let exportAll = false;
   let explicitModules = [];
+  let clean = false;
 
   for (const arg of rawArgs) {
     if (arg === "--all") {
       exportAll = true;
+      continue;
+    }
+    if (arg === "--clean") {
+      clean = true;
       continue;
     }
     if (arg.startsWith("--modules=")) {
@@ -57,7 +63,7 @@ function parseArgs() {
     }
   }
 
-  return { exportAll, explicitModules };
+  return { exportAll, explicitModules, clean };
 }
 
 /**
@@ -348,12 +354,143 @@ function formatSnippetForReadability(code) {
     }
   }
 
-  return result
+  const normalized = result
     .replace(/\n{3,}/g, "\n\n")
     .split("\n")
     .map((line) => line.trimEnd())
     .join("\n")
     .trim();
+
+  return applyIndentation(normalized);
+}
+
+/**
+ * Count leading `}` characters (ignoring leading spaces).
+ * @param {string} line
+ * @returns {number}
+ */
+function countLeadingClosers(line) {
+  let index = 0;
+  while (index < line.length && /\s/.test(line[index])) {
+    index += 1;
+  }
+
+  let closeCount = 0;
+  while (index < line.length && line[index] === "}") {
+    closeCount += 1;
+    index += 1;
+  }
+  return closeCount;
+}
+
+/**
+ * Apply brace-based indentation while skipping strings/comments.
+ * @param {string} code
+ * @returns {string}
+ */
+function applyIndentation(code) {
+  const lines = code.split("\n");
+  const output = [];
+  let indentLevel = 0;
+  let mode = "normal";
+  let escaped = false;
+
+  for (const rawLine of lines) {
+    const line = rawLine.trim();
+    if (line.length === 0) {
+      output.push("");
+      continue;
+    }
+
+    const leadingClosers = countLeadingClosers(line);
+    indentLevel = Math.max(0, indentLevel - leadingClosers);
+    output.push(`${"  ".repeat(indentLevel)}${line}`);
+
+    let opens = 0;
+    let closes = 0;
+    for (let i = 0; i < line.length; i += 1) {
+      const ch = line[i];
+      const next = i + 1 < line.length ? line[i + 1] : "";
+
+      if (mode === "line-comment") {
+        break;
+      }
+      if (mode === "block-comment") {
+        if (ch === "*" && next === "/") {
+          mode = "normal";
+          i += 1;
+        }
+        continue;
+      }
+      if (mode === "single-quote") {
+        if (escaped) {
+          escaped = false;
+        } else if (ch === "\\") {
+          escaped = true;
+        } else if (ch === "'") {
+          mode = "normal";
+        }
+        continue;
+      }
+      if (mode === "double-quote") {
+        if (escaped) {
+          escaped = false;
+        } else if (ch === "\\") {
+          escaped = true;
+        } else if (ch === '"') {
+          mode = "normal";
+        }
+        continue;
+      }
+      if (mode === "template") {
+        if (escaped) {
+          escaped = false;
+        } else if (ch === "\\") {
+          escaped = true;
+        } else if (ch === "`") {
+          mode = "normal";
+        }
+        continue;
+      }
+
+      if (ch === "/" && next === "/") {
+        mode = "line-comment";
+        i += 1;
+        continue;
+      }
+      if (ch === "/" && next === "*") {
+        mode = "block-comment";
+        i += 1;
+        continue;
+      }
+      if (ch === "'") {
+        mode = "single-quote";
+        continue;
+      }
+      if (ch === '"') {
+        mode = "double-quote";
+        continue;
+      }
+      if (ch === "`") {
+        mode = "template";
+        continue;
+      }
+
+      if (ch === "{") {
+        opens += 1;
+      } else if (ch === "}") {
+        closes += 1;
+      }
+    }
+
+    if (mode === "line-comment") {
+      mode = "normal";
+    }
+
+    indentLevel = Math.max(0, indentLevel + opens - closes + leadingClosers);
+  }
+
+  return output.join("\n");
 }
 
 /**
@@ -364,8 +501,47 @@ function ensureDir(dirPath) {
   fs.mkdirSync(dirPath, { recursive: true });
 }
 
+/**
+ * Write file only when content changed.
+ * @param {string} filePath
+ * @param {string} content
+ * @returns {boolean}
+ */
+function writeFileIfChanged(filePath, content) {
+  if (fs.existsSync(filePath)) {
+    const current = fs.readFileSync(filePath, "utf8");
+    if (current === content) {
+      return false;
+    }
+  }
+
+  fs.writeFileSync(filePath, content, "utf8");
+  return true;
+}
+
+/**
+ * Remove existing restored module outputs.
+ * @returns {number}
+ */
+function cleanRestoredOutput() {
+  if (!fs.existsSync(OUTPUT_ROOT)) {
+    return 0;
+  }
+
+  const existingRestoredFiles = fs
+    .readdirSync(OUTPUT_ROOT, { withFileTypes: true })
+    .filter((entry) => entry.isFile() && entry.name.endsWith(".restored.js"))
+    .map((entry) => path.join(OUTPUT_ROOT, entry.name));
+
+  for (const filePath of existingRestoredFiles) {
+    fs.unlinkSync(filePath);
+  }
+
+  return existingRestoredFiles.length;
+}
+
 function main() {
-  const { exportAll, explicitModules } = parseArgs();
+  const { exportAll, explicitModules, clean } = parseArgs();
   const packedGameContent = fs.readFileSync(PACKED_GAME_PATH, "utf8");
   const allModules = extractStartSceneModules(packedGameContent);
 
@@ -383,16 +559,10 @@ function main() {
   );
 
   ensureDir(OUTPUT_ROOT);
-
-  const existingRestoredFiles = fs
-    .readdirSync(OUTPUT_ROOT, { withFileTypes: true })
-    .filter((entry) => entry.isFile() && entry.name.endsWith(".restored.js"))
-    .map((entry) => path.join(OUTPUT_ROOT, entry.name));
-  for (const filePath of existingRestoredFiles) {
-    fs.unlinkSync(filePath);
-  }
+  const cleanedFileCount = clean ? cleanRestoredOutput() : 0;
 
   const indexRecords = [];
+  let changedRestoredFiles = 0;
   for (const item of allModules) {
     const selected = targetModuleSet.has(item.moduleId);
     const outputFilename = toOutputFilename(item.moduleId);
@@ -402,7 +572,9 @@ function main() {
       const header = buildHeader(item.moduleId, item.aliasMap);
       const formattedSnippet = formatSnippetForReadability(item.snippet);
       const content = `${header}${formattedSnippet}\n`;
-      fs.writeFileSync(outputPath, content, "utf8");
+      if (writeFileIfChanged(outputPath, content)) {
+        changedRestoredFiles += 1;
+      }
     }
 
     indexRecords.push({
@@ -416,17 +588,22 @@ function main() {
   const indexPath = path.join(OUTPUT_ROOT, "module-index.json");
   const aliasPath = path.join(OUTPUT_ROOT, "module-alias-map.json");
 
-  fs.writeFileSync(indexPath, `${JSON.stringify(indexRecords, null, 2)}\n`, "utf8");
+  const indexChanged = writeFileIfChanged(indexPath, `${JSON.stringify(indexRecords, null, 2)}\n`);
 
   const aliasReport = selectedModules.map((item) => ({
     moduleId: item.moduleId,
     aliasMap: item.aliasMap,
   }));
-  fs.writeFileSync(aliasPath, `${JSON.stringify(aliasReport, null, 2)}\n`, "utf8");
+  const aliasChanged = writeFileIfChanged(aliasPath, `${JSON.stringify(aliasReport, null, 2)}\n`);
 
   const summary = {
     totalModules: allModules.length,
     selectedModules: selectedModules.length,
+    changedRestoredFiles,
+    cleanedFileCount,
+    indexChanged,
+    aliasChanged,
+    cleanMode: clean,
     outputRoot: path.relative(PROJECT_ROOT, OUTPUT_ROOT),
     missingModules,
   };

@@ -1,0 +1,163 @@
+{
+  "moduleId": "chunks:///_virtual/PowerBox.ts",
+  "runtimeClassName": "PowerBox",
+  "restoredFile": "restored/start-scene/PowerBox.ts.restored.js",
+  "aliasMap": {
+    "t": "inheritsLoose",
+    "n": "cclegacy",
+    "i": "_decorator",
+    "o": "Node",
+    "r": "assetManager",
+    "a": "Prefab",
+    "s": "Label",
+    "l": "Button",
+    "c": "instantiate",
+    "u": "find",
+    "d": "Component",
+    "h": "UIConfigTable",
+    "p": "GameModel",
+    "f": "GameCtrl",
+    "g": "AudioManager",
+    "m": "ResManager"
+  },
+  "methodInventory": {
+    "prototypeMethodCount": 10,
+    "descriptorKeyCount": 0,
+    "prototypeMethods": [
+      "addPower",
+      "checkAddPower",
+      "initNode",
+      "initPowerBox",
+      "onDisable",
+      "onEnable",
+      "onLoad",
+      "start",
+      "subPower",
+      "update"
+    ],
+    "descriptorKeys": []
+  },
+  "signals": {
+    "thisFields": [
+      "addPowerBtn",
+      "powerLabel",
+      "spr",
+      "time",
+      "timeLabel"
+    ],
+    "storageKeys": [],
+    "bundleLoads": [],
+    "dynamicBundleLoads": [
+      {
+        "bundle": "uiBundle",
+        "pathExpr": "h"
+      }
+    ],
+    "pathLiterals": [],
+    "legacyPaths": {
+      "legacyHomePaths": [],
+      "legacyUiPigeonSkinPaths": [],
+      "legacyUiPigeonSkinDynamicPrefixes": []
+    }
+  },
+  "renameHints": {
+    "aliasHints": [
+      {
+        "from": "a",
+        "to": "Prefab",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "c",
+        "to": "instantiate",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "d",
+        "to": "Component",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "f",
+        "to": "GameCtrl",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "g",
+        "to": "AudioManager",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "h",
+        "to": "UIConfigTable",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "i",
+        "to": "_decorator",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "l",
+        "to": "Button",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "m",
+        "to": "ResManager",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "n",
+        "to": "cclegacy",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "o",
+        "to": "Node",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "p",
+        "to": "GameModel",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "r",
+        "to": "assetManager",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "s",
+        "to": "Label",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "t",
+        "to": "inheritsLoose",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "u",
+        "to": "find",
+        "confidence": "high",
+        "source": "setters import alias"
+      }
+    ]
+  }
+}

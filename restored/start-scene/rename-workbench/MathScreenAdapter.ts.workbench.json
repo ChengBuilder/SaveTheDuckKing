@@ -1,0 +1,166 @@
+{
+  "moduleId": "chunks:///_virtual/MathScreenAdapter.ts",
+  "runtimeClassName": "MathScreenAdapter",
+  "restoredFile": "restored/start-scene/MathScreenAdapter.ts.restored.js",
+  "aliasMap": {
+    "t": "inheritsLoose",
+    "n": "cclegacy",
+    "i": "_decorator",
+    "o": "view",
+    "r": "find",
+    "a": "Label",
+    "s": "instantiate",
+    "l": "UIOpacity",
+    "c": "tween",
+    "d": "ResolutionPolicy",
+    "h": "sys",
+    "p": "Component",
+    "f": "TooYueManager",
+    "g": "releaseType",
+    "m": "UIConfigTable",
+    "v": "ResManager",
+    "y": "GameModel",
+    "_": "GameCtrl"
+  },
+  "methodInventory": {
+    "prototypeMethodCount": 5,
+    "descriptorKeyCount": 0,
+    "prototypeMethods": [
+      "adjustResolutionPolicy",
+      "checkPlatform",
+      "createSetBtn",
+      "gmLabelUpdate",
+      "onLoad"
+    ],
+    "descriptorKeys": []
+  },
+  "signals": {
+    "thisFields": [],
+    "storageKeys": [],
+    "bundleLoads": [],
+    "dynamicBundleLoads": [
+      {
+        "bundle": "uiBundle",
+        "pathExpr": "m"
+      }
+    ],
+    "pathLiterals": [],
+    "legacyPaths": {
+      "legacyHomePaths": [],
+      "legacyUiPigeonSkinPaths": [],
+      "legacyUiPigeonSkinDynamicPrefixes": []
+    }
+  },
+  "renameHints": {
+    "aliasHints": [
+      {
+        "from": "_",
+        "to": "GameCtrl",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "a",
+        "to": "Label",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "c",
+        "to": "tween",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "d",
+        "to": "ResolutionPolicy",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "f",
+        "to": "TooYueManager",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "g",
+        "to": "releaseType",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "h",
+        "to": "sys",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "i",
+        "to": "_decorator",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "l",
+        "to": "UIOpacity",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "m",
+        "to": "UIConfigTable",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "n",
+        "to": "cclegacy",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "o",
+        "to": "view",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "p",
+        "to": "Component",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "r",
+        "to": "find",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "s",
+        "to": "instantiate",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "t",
+        "to": "inheritsLoose",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "v",
+        "to": "ResManager",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "y",
+        "to": "GameModel",
+        "confidence": "high",
+        "source": "setters import alias"
+      }
+    ]
+  }
+}

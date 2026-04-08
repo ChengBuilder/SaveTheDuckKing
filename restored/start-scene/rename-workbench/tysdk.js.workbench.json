@@ -1,0 +1,27 @@
+{
+  "moduleId": "chunks:///_virtual/tysdk.js",
+  "runtimeClassName": null,
+  "restoredFile": "restored/start-scene/tysdk.js.restored.js",
+  "aliasMap": {},
+  "methodInventory": {
+    "prototypeMethodCount": 0,
+    "descriptorKeyCount": 0,
+    "prototypeMethods": [],
+    "descriptorKeys": []
+  },
+  "signals": {
+    "thisFields": [],
+    "storageKeys": [],
+    "bundleLoads": [],
+    "dynamicBundleLoads": [],
+    "pathLiterals": [],
+    "legacyPaths": {
+      "legacyHomePaths": [],
+      "legacyUiPigeonSkinPaths": [],
+      "legacyUiPigeonSkinDynamicPrefixes": []
+    }
+  },
+  "renameHints": {
+    "aliasHints": []
+  }
+}

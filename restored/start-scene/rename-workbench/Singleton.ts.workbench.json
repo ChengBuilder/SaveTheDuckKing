@@ -1,0 +1,38 @@
+{
+  "moduleId": "chunks:///_virtual/Singleton.ts",
+  "runtimeClassName": "Singleton",
+  "restoredFile": "restored/start-scene/Singleton.ts.restored.js",
+  "aliasMap": {
+    "t": "cclegacy"
+  },
+  "methodInventory": {
+    "prototypeMethodCount": 0,
+    "descriptorKeyCount": 0,
+    "prototypeMethods": [],
+    "descriptorKeys": []
+  },
+  "signals": {
+    "thisFields": [
+      "_instance"
+    ],
+    "storageKeys": [],
+    "bundleLoads": [],
+    "dynamicBundleLoads": [],
+    "pathLiterals": [],
+    "legacyPaths": {
+      "legacyHomePaths": [],
+      "legacyUiPigeonSkinPaths": [],
+      "legacyUiPigeonSkinDynamicPrefixes": []
+    }
+  },
+  "renameHints": {
+    "aliasHints": [
+      {
+        "from": "t",
+        "to": "cclegacy",
+        "confidence": "high",
+        "source": "setters import alias"
+      }
+    ]
+  }
+}

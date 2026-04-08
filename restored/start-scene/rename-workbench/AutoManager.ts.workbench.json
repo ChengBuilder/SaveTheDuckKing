@@ -1,0 +1,119 @@
+{
+  "moduleId": "chunks:///_virtual/AutoManager.ts",
+  "runtimeClassName": "AutoManager",
+  "restoredFile": "restored/start-scene/AutoManager.ts.restored.js",
+  "aliasMap": {
+    "t": "inheritsLoose",
+    "n": "createClass",
+    "i": "cclegacy",
+    "o": "_decorator",
+    "r": "find",
+    "a": "Component",
+    "s": "DuckController",
+    "l": "Nail",
+    "c": "Wood",
+    "u": "GameCtrl",
+    "d": "Util"
+  },
+  "methodInventory": {
+    "prototypeMethodCount": 7,
+    "descriptorKeyCount": 1,
+    "prototypeMethods": [
+      "AutoGetNail",
+      "CheckSameColorNail",
+      "GetAllNail",
+      "GetOneCanTouchNail",
+      "GetSameColorNail",
+      "start",
+      "update"
+    ],
+    "descriptorKeys": [
+      "_ins"
+    ]
+  },
+  "signals": {
+    "thisFields": [
+      "MainGameTS",
+      "propTime"
+    ],
+    "storageKeys": [],
+    "bundleLoads": [],
+    "dynamicBundleLoads": [],
+    "pathLiterals": [],
+    "legacyPaths": {
+      "legacyHomePaths": [],
+      "legacyUiPigeonSkinPaths": [],
+      "legacyUiPigeonSkinDynamicPrefixes": []
+    }
+  },
+  "renameHints": {
+    "aliasHints": [
+      {
+        "from": "a",
+        "to": "Component",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "c",
+        "to": "Wood",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "d",
+        "to": "Util",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "i",
+        "to": "cclegacy",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "l",
+        "to": "Nail",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "n",
+        "to": "createClass",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "o",
+        "to": "_decorator",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "r",
+        "to": "find",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "s",
+        "to": "DuckController",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "t",
+        "to": "inheritsLoose",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "u",
+        "to": "GameCtrl",
+        "confidence": "high",
+        "source": "setters import alias"
+      }
+    ]
+  }
+}

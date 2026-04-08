@@ -1,0 +1,93 @@
+{
+  "moduleId": "chunks:///_virtual/GameData.ts",
+  "runtimeClassName": "GameData",
+  "restoredFile": "restored/start-scene/GameData.ts.restored.js",
+  "aliasMap": {
+    "t": "inheritsLoose",
+    "n": "createClass",
+    "i": "cclegacy",
+    "o": "_decorator",
+    "r": "default",
+    "a": "GameModel"
+  },
+  "methodInventory": {
+    "prototypeMethodCount": 11,
+    "descriptorKeyCount": 9,
+    "prototypeMethods": [
+      "getLevelModeData",
+      "isShowCombinationMode",
+      "isShowFreezeMode",
+      "isShowLockMode",
+      "isShowRotateMode",
+      "isShowSingleWoodColorMode",
+      "isShowSingleWoodTypeMode",
+      "isShowSnagMode",
+      "isShowTidyMode",
+      "onload",
+      "setLevelModeData"
+    ],
+    "descriptorKeys": [
+      "_ins",
+      "combinationFlag",
+      "iceNailFlag",
+      "lockNailFlag",
+      "rotateFlag",
+      "singleWoodColorFlag",
+      "singleWoodTypeFlag",
+      "snagFlag",
+      "tidyFlag"
+    ]
+  },
+  "signals": {
+    "thisFields": [],
+    "storageKeys": [],
+    "bundleLoads": [],
+    "dynamicBundleLoads": [],
+    "pathLiterals": [],
+    "legacyPaths": {
+      "legacyHomePaths": [],
+      "legacyUiPigeonSkinPaths": [],
+      "legacyUiPigeonSkinDynamicPrefixes": []
+    }
+  },
+  "renameHints": {
+    "aliasHints": [
+      {
+        "from": "a",
+        "to": "GameModel",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "i",
+        "to": "cclegacy",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "n",
+        "to": "createClass",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "o",
+        "to": "_decorator",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "r",
+        "to": "default",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "t",
+        "to": "inheritsLoose",
+        "confidence": "high",
+        "source": "setters import alias"
+      }
+    ]
+  }
+}

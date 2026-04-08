@@ -1,0 +1,259 @@
+{
+  "moduleId": "chunks:///_virtual/ShareFriendPanelView.ts",
+  "runtimeClassName": "ShareFriendPanelView",
+  "restoredFile": "restored/start-scene/ShareFriendPanelView.ts.restored.js",
+  "aliasMap": {
+    "t": "applyDecoratedDescriptor",
+    "n": "inheritsLoose",
+    "i": "initializerDefineProperty",
+    "o": "assertThisInitialized",
+    "r": "cclegacy",
+    "a": "_decorator",
+    "s": "Node",
+    "l": "Button",
+    "u": "tween",
+    "d": "UIOpacity",
+    "h": "assetManager",
+    "p": "Prefab",
+    "f": "Sprite",
+    "g": "Label",
+    "m": "ProgressBar",
+    "v": "instantiate",
+    "y": "find",
+    "_": "Component",
+    "b": "AudioManager",
+    "S": "GameModel",
+    "C": "ResManager",
+    "w": "GameCtrl",
+    "N": "UIConfigTable",
+    "k": "TooYueManager",
+    "T": "default",
+    "B": "ReceivePanelView"
+  },
+  "methodInventory": {
+    "prototypeMethodCount": 23,
+    "descriptorKeyCount": 0,
+    "prototypeMethods": [
+      "cacheRewardLayoutState",
+      "cacheShareButtonState",
+      "grantShareStageReward",
+      "initDuckNode",
+      "initPanel",
+      "initProgressBar",
+      "initShareLabel",
+      "loadClaimButtonAssets",
+      "onClaimReward",
+      "onClose",
+      "onDisable",
+      "onEnable",
+      "onInviteShare",
+      "onLoad",
+      "onShare",
+      "refreshPanelState",
+      "registerEvents",
+      "shareErrBack",
+      "shareFinishBack",
+      "showShareFriendRewardPanel",
+      "start",
+      "unregisterEvents",
+      "updateShareButtonState"
+    ],
+    "descriptorKeys": []
+  },
+  "signals": {
+    "thisFields": [
+      "canClaimCurrentStage",
+      "currentNum",
+      "inviteBtnSpriteFrame",
+      "propRewardDefaultPosition",
+      "propRewardNode",
+      "shareStageProgress"
+    ],
+    "storageKeys": [],
+    "bundleLoads": [
+      {
+        "bundle": "uiBundle",
+        "path": "tex/领取按钮/spriteFrame"
+      }
+    ],
+    "dynamicBundleLoads": [
+      {
+        "bundle": "uiBundle",
+        "pathExpr": "N"
+      },
+      {
+        "bundle": "uiBundle",
+        "pathExpr": "s"
+      }
+    ],
+    "pathLiterals": [
+      "tex/book/分享鸭/",
+      "tex/领取按钮/spriteFrame"
+    ],
+    "legacyPaths": {
+      "legacyHomePaths": [],
+      "legacyUiPigeonSkinPaths": [],
+      "legacyUiPigeonSkinDynamicPrefixes": []
+    }
+  },
+  "renameHints": {
+    "aliasHints": [
+      {
+        "from": "_",
+        "to": "Component",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "a",
+        "to": "_decorator",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "b",
+        "to": "AudioManager",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "B",
+        "to": "ReceivePanelView",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "C",
+        "to": "ResManager",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "d",
+        "to": "UIOpacity",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "f",
+        "to": "Sprite",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "g",
+        "to": "Label",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "h",
+        "to": "assetManager",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "i",
+        "to": "initializerDefineProperty",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "k",
+        "to": "TooYueManager",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "l",
+        "to": "Button",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "m",
+        "to": "ProgressBar",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "n",
+        "to": "inheritsLoose",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "N",
+        "to": "UIConfigTable",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "o",
+        "to": "assertThisInitialized",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "p",
+        "to": "Prefab",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "r",
+        "to": "cclegacy",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "s",
+        "to": "Node",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "S",
+        "to": "GameModel",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "t",
+        "to": "applyDecoratedDescriptor",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "T",
+        "to": "default",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "u",
+        "to": "tween",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "v",
+        "to": "instantiate",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "w",
+        "to": "GameCtrl",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "y",
+        "to": "find",
+        "confidence": "high",
+        "source": "setters import alias"
+      }
+    ]
+  }
+}

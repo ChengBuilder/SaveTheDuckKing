@@ -1,0 +1,62 @@
+{
+  "moduleId": "chunks:///_virtual/ConfigTable.ts",
+  "runtimeClassName": "ConfigTable",
+  "restoredFile": "restored/start-scene/ConfigTable.ts.restored.js",
+  "aliasMap": {
+    "t": "cclegacy"
+  },
+  "methodInventory": {
+    "prototypeMethodCount": 0,
+    "descriptorKeyCount": 0,
+    "prototypeMethods": [],
+    "descriptorKeys": []
+  },
+  "signals": {
+    "thisFields": [],
+    "storageKeys": [],
+    "bundleLoads": [],
+    "dynamicBundleLoads": [],
+    "pathLiterals": [
+      "prefab/AddPowerPanel",
+      "prefab/AddProgramPanel",
+      "prefab/AddTableUI",
+      "prefab/AwemeUI",
+      "prefab/BookPigeonUI",
+      "prefab/BookUI",
+      "prefab/MapPanel",
+      "prefab/MoreGameUI",
+      "prefab/OverPigeonUI",
+      "prefab/OverUI",
+      "prefab/powerBox",
+      "prefab/PropUI",
+      "prefab/RankUI",
+      "prefab/ReceiveUI",
+      "prefab/ReportUI",
+      "prefab/ReviveUI",
+      "prefab/Set2UI",
+      "prefab/setBtn",
+      "prefab/SetUI",
+      "prefab/ShareFriendUI",
+      "prefab/ShareUI",
+      "prefab/SideBarUI",
+      "prefab/SubscribeUI",
+      "prefab/SuccessPigeonUI",
+      "prefab/SuccessUI"
+    ],
+    "legacyPaths": {
+      "legacyHomePaths": [],
+      "legacyUiPigeonSkinPaths": [],
+      "legacyUiPigeonSkinDynamicPrefixes": []
+    }
+  },
+  "renameHints": {
+    "aliasHints": [
+      {
+        "from": "t",
+        "to": "cclegacy",
+        "confidence": "high",
+        "source": "setters import alias"
+      }
+    ]
+  }
+}

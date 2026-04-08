@@ -5,9 +5,9 @@
  * Alias hints: (none detected)
  */
 System.register("chunks:///_virtual/tysdk.mjs_cjs=&original=.js",[],(function(){
-return{
-execute:function(){
-}
-}
+  return{
+    execute:function(){
+    }
+  }
 }
 ))

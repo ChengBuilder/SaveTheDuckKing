@@ -30,16 +30,22 @@ const DEFAULT_MODULES = [
  * Parse CLI args.
  * --all: generate semantic view for all available modules.
  * --modules=a,b,c: generate semantic view for selected modules.
- * @returns {{exportAll:boolean, explicitModules:string[]}}
+ * --clean: remove existing `*.semantic.js` before writing current selection.
+ * @returns {{exportAll:boolean, explicitModules:string[], clean:boolean}}
  */
 function parseArgs() {
   const args = process.argv.slice(2);
   let exportAll = false;
   let explicitModules = [];
+  let clean = false;
 
   for (const arg of args) {
     if (arg === "--all") {
       exportAll = true;
+      continue;
+    }
+    if (arg === "--clean") {
+      clean = true;
       continue;
     }
     if (arg.startsWith("--modules=")) {
@@ -53,7 +59,7 @@ function parseArgs() {
     }
   }
 
-  return { exportAll, explicitModules };
+  return { exportAll, explicitModules, clean };
 }
 
 /**
@@ -90,6 +96,24 @@ function toSemanticFilename(moduleId) {
  */
 function ensureDir(dirPath) {
   fs.mkdirSync(dirPath, { recursive: true });
+}
+
+/**
+ * Write file only when content changed.
+ * @param {string} filePath
+ * @param {string} content
+ * @returns {boolean}
+ */
+function writeFileIfChanged(filePath, content) {
+  if (fs.existsSync(filePath)) {
+    const current = fs.readFileSync(filePath, "utf8");
+    if (current === content) {
+      return false;
+    }
+  }
+
+  fs.writeFileSync(filePath, content, "utf8");
+  return true;
 }
 
 /**
@@ -265,6 +289,7 @@ function buildSemanticView(moduleId, source, aliasMap) {
 
 /**
  * Remove existing semantic files before regeneration.
+ * @returns {number}
  */
 function cleanSemanticOutput() {
   ensureDir(OUTPUT_ROOT);
@@ -275,6 +300,8 @@ function cleanSemanticOutput() {
   for (const filePath of existing) {
     fs.unlinkSync(filePath);
   }
+
+  return existing.length;
 }
 
 function main() {
@@ -284,7 +311,7 @@ function main() {
     );
   }
 
-  const { exportAll, explicitModules } = parseArgs();
+  const { exportAll, explicitModules, clean } = parseArgs();
   const aliasRows = JSON.parse(fs.readFileSync(ALIAS_MAP_PATH, "utf8"));
 
   const allModuleIds = aliasRows.map((row) => row.moduleId);
@@ -296,10 +323,12 @@ function main() {
       : DEFAULT_MODULES
   );
 
-  cleanSemanticOutput();
+  ensureDir(OUTPUT_ROOT);
+  const cleanedFileCount = clean ? cleanSemanticOutput() : 0;
 
   const summaryRows = [];
   const missingModules = [];
+  let changedSemanticFiles = 0;
 
   for (const moduleId of targetModuleSet) {
     const aliasRow = aliasRows.find((row) => row.moduleId === moduleId);
@@ -324,7 +353,9 @@ function main() {
 
     const semanticFilename = toSemanticFilename(moduleId);
     const semanticPath = path.join(OUTPUT_ROOT, semanticFilename);
-    fs.writeFileSync(semanticPath, `${content}\n`, "utf8");
+    if (writeFileIfChanged(semanticPath, `${content}\n`)) {
+      changedSemanticFiles += 1;
+    }
 
     summaryRows.push({
       moduleId,
@@ -336,11 +367,15 @@ function main() {
   }
 
   const summaryPath = path.join(OUTPUT_ROOT, "semantic-index.json");
-  fs.writeFileSync(summaryPath, `${JSON.stringify(summaryRows, null, 2)}\n`, "utf8");
+  const indexChanged = writeFileIfChanged(summaryPath, `${JSON.stringify(summaryRows, null, 2)}\n`);
 
   const summary = {
     selectedModules: targetModuleSet.size,
     generatedModules: summaryRows.length,
+    changedSemanticFiles,
+    cleanedFileCount,
+    indexChanged,
+    cleanMode: clean,
     outputRoot: path.relative(PROJECT_ROOT, OUTPUT_ROOT),
     missingModules,
   };

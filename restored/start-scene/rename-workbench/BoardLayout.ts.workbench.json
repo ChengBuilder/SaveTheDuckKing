@@ -1,0 +1,50 @@
+{
+  "moduleId": "chunks:///_virtual/BoardLayout.ts",
+  "runtimeClassName": "BoardLayout",
+  "restoredFile": "restored/start-scene/BoardLayout.ts.restored.js",
+  "aliasMap": {
+    "t": "createForOfIteratorHelperLoose",
+    "n": "cclegacy",
+    "i": "shuffleInPlace"
+  },
+  "methodInventory": {
+    "prototypeMethodCount": 0,
+    "descriptorKeyCount": 0,
+    "prototypeMethods": [],
+    "descriptorKeys": []
+  },
+  "signals": {
+    "thisFields": [],
+    "storageKeys": [],
+    "bundleLoads": [],
+    "dynamicBundleLoads": [],
+    "pathLiterals": [],
+    "legacyPaths": {
+      "legacyHomePaths": [],
+      "legacyUiPigeonSkinPaths": [],
+      "legacyUiPigeonSkinDynamicPrefixes": []
+    }
+  },
+  "renameHints": {
+    "aliasHints": [
+      {
+        "from": "i",
+        "to": "shuffleInPlace",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "n",
+        "to": "cclegacy",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "t",
+        "to": "createForOfIteratorHelperLoose",
+        "confidence": "high",
+        "source": "setters import alias"
+      }
+    ]
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "moduleId": "chunks:///_virtual/GameModel.ts",
+  "runtimeClassName": "GameModel",
+  "restoredFile": "restored/start-scene/GameModel.ts.restored.js",
+  "aliasMap": {
+    "t": "extends",
+    "n": "createForOfIteratorHelperLoose",
+    "i": "cclegacy",
+    "o": "validateRowCountsWithinSlots",
+    "r": "buildRowSlotColsFromRowCounts",
+    "a": "validateRowCountsFullScreenMessy",
+    "s": "computeDefaultRowCounts",
+    "l": "isShapeMechanism",
+    "c": "LevelMechanismManager",
+    "u": "validateRowCountsParity",
+    "d": "DEFAULT_FRUIT_HOLE_RESERVE",
+    "h": "default",
+    "p": "EVENT_KEYS"
+  },
+  "methodInventory": {
+    "prototypeMethodCount": 43,
+    "descriptorKeyCount": 0,
+    "prototypeMethods": [
+      "_buildBoard",
+      "_buildRowFruitHoleIds",
+      "_computeRowHolePlacementIndices",
+      "_getEffectiveMechanism",
+      "_globalCellIndexToRowCol",
+      "_printBoard",
+      "_resolveLayout",
+      "_shuffle",
+      "_validateRowCounts",
+      "ensureRowsUpTo",
+      "getBlindBoxAt",
+      "getFruitIdList",
+      "getFruitSlotLocalPosRow",
+      "getGridHorizontalSpacing",
+      "getGridVerticalSpacing",
+      "getHoleIdsLeft",
+      "getHoleIdsRight",
+      "getHoleReserveTotal",
+      "getLevelConfig",
+      "getLevelTotalFruits",
+      "getRopeMaxCount",
+      "getRowHoleCell",
+      "getRowHoleCount",
+      "getRowHoleQueueRemainingCount",
+      "getRowHoleQueueRemainingTotal",
+      "getRowSlotCols",
+      "getRowSlotLocalXs",
+      "getTotalRowCount",
+      "hasRowFruitHoleData",
+      "hasRowHoleQueue",
+      "isFixedShapeNoLayerDrop",
+      "isFullScreenMessyLayout",
+      "isRowHoleBoardId",
+      "reset",
+      "restoreRowHoleFrontDisplayId",
+      "rowHoleIndexFromBoardId",
+      "setGameState",
+      "setLevel",
+      "setLevelMechanism",
+      "setPendingBoardShapeResolved",
+      "syncBoardRow",
+      "takeRowHoleNextDisplayId",
+      "toNextLevel"
+    ],
+    "descriptorKeys": []
+  },
+  "signals": {
+    "thisFields": [
+      "_blindBoxBoard",
+      "_blindBoxMask",
+      "_fruitSlotLocalPos",
+      "_fullScreenLayoutMode",
+      "_gridHorizontalSpacing",
+      "_holeIdsL",
+      "_holeIdsR",
+      "_holeReserveTotal",
+      "_ids",
+      "_levelMechanism",
+      "_pendingBoardShapeResolved",
+      "_rowCounts",
+      "_rowHoleCells",
+      "_rowHoleQueues",
+      "_rowSlotCols",
+      "_rowSlotLocalXs",
+      "_totalFruitsHudEffective",
+      "board",
+      "currentLevel",
+      "failThreshold",
+      "gameState",
+      "lastLoseKind",
+      "visibleLayers"
+    ],
+    "storageKeys": [],
+    "bundleLoads": [],
+    "dynamicBundleLoads": [],
+    "pathLiterals": [],
+    "legacyPaths": {
+      "legacyHomePaths": [],
+      "legacyUiPigeonSkinPaths": [],
+      "legacyUiPigeonSkinDynamicPrefixes": []
+    }
+  },
+  "renameHints": {
+    "aliasHints": [
+      {
+        "from": "a",
+        "to": "validateRowCountsFullScreenMessy",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "c",
+        "to": "LevelMechanismManager",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "d",
+        "to": "DEFAULT_FRUIT_HOLE_RESERVE",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "h",
+        "to": "default",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "i",
+        "to": "cclegacy",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "l",
+        "to": "isShapeMechanism",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "n",
+        "to": "createForOfIteratorHelperLoose",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "o",
+        "to": "validateRowCountsWithinSlots",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "p",
+        "to": "EVENT_KEYS",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "r",
+        "to": "buildRowSlotColsFromRowCounts",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "s",
+        "to": "computeDefaultRowCounts",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "t",
+        "to": "extends",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "u",
+        "to": "validateRowCountsParity",
+        "confidence": "high",
+        "source": "setters import alias"
+      }
+    ]
+  }
+}

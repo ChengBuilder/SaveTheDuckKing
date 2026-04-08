@@ -1,0 +1,409 @@
+{
+  "moduleId": "chunks:///_virtual/HomeScene.ts",
+  "runtimeClassName": "HomeScene",
+  "restoredFile": "restored/start-scene/HomeScene.ts.restored.js",
+  "aliasMap": {
+    "t": "inheritsLoose",
+    "n": "asyncToGenerator",
+    "o": "cclegacy",
+    "r": "_decorator",
+    "a": "instantiate",
+    "s": "UIOpacity",
+    "l": "tween",
+    "d": "UITransform",
+    "h": "Sprite",
+    "p": "Tween",
+    "f": "view",
+    "g": "Vec3",
+    "m": "find",
+    "v": "Button",
+    "y": "EditBox",
+    "_": "Label",
+    "b": "Color",
+    "S": "easing",
+    "C": "director",
+    "w": "Component",
+    "N": "GameModel",
+    "k": "GameCtrl",
+    "T": "AudioManager",
+    "B": "ResManager",
+    "A": "releaseType",
+    "P": "EVENT_KEYS",
+    "M": "UIConfigTable",
+    "I": "AddTablePanelView",
+    "F": "AdManager",
+    "R": "ReceivePanelView",
+    "L": "Util",
+    "x": "AddPowerPanelView",
+    "D": "default",
+    "G": "AdManager_ZJ",
+    "E": "TooYueManager"
+  },
+  "methodInventory": {
+    "prototypeMethodCount": 49,
+    "descriptorKeyCount": 0,
+    "prototypeMethods": [
+      "addProgramBtnClick",
+      "addTableBtnClick",
+      "autoPlayBtn1Click",
+      "AwemeBtnClick",
+      "bookBtnClick",
+      "bookPigeonBtnClick",
+      "cockStartBtnClick",
+      "createPowerBox",
+      "createSetBtn",
+      "dropInHole",
+      "flashMove",
+      "floorMove",
+      "frogMove",
+      "game2BtnClick",
+      "game3BtnClick",
+      "getDuckSkinName",
+      "GetTypeNumber",
+      "GmChangeBtn",
+      "gooseBtnClick",
+      "goSideBarBtnClick",
+      "HomeParticleCal",
+      "HomeParticleCreate",
+      "initBg",
+      "initColorBg",
+      "initDuckSkin",
+      "initLight",
+      "initNode",
+      "initPigeonSkin",
+      "InitThing",
+      "initUI",
+      "isShowSpecialBg",
+      "joinGroupBtnClick",
+      "onDisable",
+      "onEnable",
+      "onLoad",
+      "pigeonStartBtnClick",
+      "rankBtnClick",
+      "register",
+      "shareBtnClick",
+      "showReceivePanel",
+      "showShareLose",
+      "showSideBar",
+      "start",
+      "stopThingMove",
+      "SubscribeBtnClick",
+      "thingsInBgMove",
+      "uiAnimation",
+      "unregister",
+      "update"
+    ],
+    "descriptorKeys": []
+  },
+  "signals": {
+    "thisFields": [
+      "addProgramBtn",
+      "addTableBtn",
+      "ani",
+      "autoPlayBtn1",
+      "AwemeBtn",
+      "bgType",
+      "bookBtn",
+      "bookPigeonBtn",
+      "circle",
+      "cloudNode",
+      "cockStartBtn",
+      "colorBg",
+      "exitBox",
+      "game2Btn",
+      "game3Btn",
+      "gmBtnType",
+      "gooseBtn",
+      "goSideBarBtn",
+      "hole",
+      "ITime1",
+      "ITime2",
+      "ITime3",
+      "ITime4",
+      "ITime5",
+      "joinGroupBtn",
+      "light",
+      "particleCd",
+      "particleTime",
+      "pigeonAni",
+      "pigeonStartBtn",
+      "pTime1",
+      "pTime2",
+      "pTime3",
+      "pTime4",
+      "pTime5",
+      "rankBtn",
+      "shareBtn",
+      "subscribeBtn",
+      "title"
+    ],
+    "storageKeys": [],
+    "bundleLoads": [
+      {
+        "bundle": "HomeBundle",
+        "path": "prefab/bgThing"
+      },
+      {
+        "bundle": "HomeBundle",
+        "path": "prefab/gooseTip"
+      },
+      {
+        "bundle": "HomeBundle",
+        "path": "prefab/home_particle"
+      },
+      {
+        "bundle": "HomeBundle",
+        "path": "tex/BgParticle/p"
+      },
+      {
+        "bundle": "uiBundle",
+        "path": "prefab/share_lose"
+      }
+    ],
+    "dynamicBundleLoads": [
+      {
+        "bundle": "HomeBundle",
+        "pathExpr": "k"
+      },
+      {
+        "bundle": "HomeBundle",
+        "pathExpr": "n"
+      },
+      {
+        "bundle": "HomeBundle",
+        "pathExpr": "t"
+      },
+      {
+        "bundle": "uiBundle",
+        "pathExpr": "M"
+      }
+    ],
+    "pathLiterals": [
+      "prefab/bgThing",
+      "prefab/gooseTip",
+      "prefab/home_particle",
+      "prefab/share_lose",
+      "tex/BgParticle/p",
+      "tex/BgThings"
+    ],
+    "legacyPaths": {
+      "legacyHomePaths": [],
+      "legacyUiPigeonSkinPaths": [],
+      "legacyUiPigeonSkinDynamicPrefixes": []
+    }
+  },
+  "renameHints": {
+    "aliasHints": [
+      {
+        "from": "_",
+        "to": "Label",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "a",
+        "to": "instantiate",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "A",
+        "to": "releaseType",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "b",
+        "to": "Color",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "B",
+        "to": "ResManager",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "C",
+        "to": "director",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "d",
+        "to": "UITransform",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "D",
+        "to": "default",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "E",
+        "to": "TooYueManager",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "f",
+        "to": "view",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "F",
+        "to": "AdManager",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "g",
+        "to": "Vec3",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "G",
+        "to": "AdManager_ZJ",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "h",
+        "to": "Sprite",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "I",
+        "to": "AddTablePanelView",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "k",
+        "to": "GameCtrl",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "l",
+        "to": "tween",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "L",
+        "to": "Util",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "m",
+        "to": "find",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "M",
+        "to": "UIConfigTable",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "n",
+        "to": "asyncToGenerator",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "N",
+        "to": "GameModel",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "o",
+        "to": "cclegacy",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "p",
+        "to": "Tween",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "P",
+        "to": "EVENT_KEYS",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "r",
+        "to": "_decorator",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "R",
+        "to": "ReceivePanelView",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "s",
+        "to": "UIOpacity",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "S",
+        "to": "easing",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "t",
+        "to": "inheritsLoose",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "T",
+        "to": "AudioManager",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "v",
+        "to": "Button",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "w",
+        "to": "Component",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "x",
+        "to": "AddPowerPanelView",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "y",
+        "to": "EditBox",
+        "confidence": "high",
+        "source": "setters import alias"
+      }
+    ]
+  }
+}

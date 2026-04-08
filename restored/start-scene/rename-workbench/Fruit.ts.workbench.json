@@ -1,0 +1,302 @@
+{
+  "moduleId": "chunks:///_virtual/Fruit.ts",
+  "runtimeClassName": "Fruit",
+  "restoredFile": "restored/start-scene/Fruit.ts.restored.js",
+  "aliasMap": {
+    "t": "applyDecoratedDescriptor",
+    "n": "inheritsLoose",
+    "i": "initializerDefineProperty",
+    "o": "assertThisInitialized",
+    "r": "cclegacy",
+    "a": "_decorator",
+    "s": "Node",
+    "u": "RigidBody2D",
+    "d": "PolygonCollider2D",
+    "h": "Tween",
+    "p": "Vec3",
+    "f": "CircleCollider2D",
+    "g": "UITransform",
+    "m": "ERigidBody2DType",
+    "v": "tween",
+    "y": "find",
+    "_": "Contact2DType",
+    "b": "Sprite",
+    "S": "Color",
+    "C": "Component",
+    "w": "GameCtrl",
+    "N": "AudioManager",
+    "k": "default",
+    "T": "GAME2_EVENT_KEYS",
+    "B": "COLLIDER_TAG",
+    "A": "Util",
+    "P": "Game2Controller",
+    "M": "AdManager",
+    "I": "GameData2",
+    "F": "GameModel",
+    "R": "FruitHole"
+  },
+  "methodInventory": {
+    "prototypeMethodCount": 32,
+    "descriptorKeyCount": 0,
+    "prototypeMethods": [
+      "closeCollider",
+      "closeColliderListener",
+      "closeLockNode",
+      "closeRestitution",
+      "fruitMove",
+      "init",
+      "initAnimation",
+      "initHoleFlag",
+      "initLockFlag",
+      "initLockNode",
+      "isFruitNodeHasChildren",
+      "JudgeCombo",
+      "JudgeDeleteGridCanDelete",
+      "moveComplete",
+      "moveTipAnim",
+      "moveTo",
+      "onBeginContact",
+      "onDisable",
+      "onEnable",
+      "onLoad",
+      "onTouchBack",
+      "openColliderListener",
+      "popFruit",
+      "pushLinearVelocity",
+      "removeFromHole",
+      "reset",
+      "setLinearVelocity",
+      "setMoveSpeed",
+      "setSprColor",
+      "start",
+      "update",
+      "wakeUpRb"
+    ],
+    "descriptorKeys": []
+  },
+  "signals": {
+    "thisFields": [
+      "_isMoveTipAnim",
+      "belongToHole",
+      "canGyroscope",
+      "canMove",
+      "canPop",
+      "dropFlag",
+      "inGridFlag",
+      "isJudgeComboFlag",
+      "isMoveAnim",
+      "isPlayColliderMusic",
+      "JudgeDeleteFlag",
+      "lastJudgeFlag",
+      "lockFlag",
+      "lockNode",
+      "originalPos",
+      "polygonCollider",
+      "radius",
+      "rb",
+      "scale",
+      "spr",
+      "sprShadow",
+      "type"
+    ],
+    "storageKeys": [],
+    "bundleLoads": [],
+    "dynamicBundleLoads": [],
+    "pathLiterals": [],
+    "legacyPaths": {
+      "legacyHomePaths": [],
+      "legacyUiPigeonSkinPaths": [],
+      "legacyUiPigeonSkinDynamicPrefixes": []
+    }
+  },
+  "renameHints": {
+    "aliasHints": [
+      {
+        "from": "_",
+        "to": "Contact2DType",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "a",
+        "to": "_decorator",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "A",
+        "to": "Util",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "b",
+        "to": "Sprite",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "B",
+        "to": "COLLIDER_TAG",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "C",
+        "to": "Component",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "d",
+        "to": "PolygonCollider2D",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "f",
+        "to": "CircleCollider2D",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "F",
+        "to": "GameModel",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "g",
+        "to": "UITransform",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "h",
+        "to": "Tween",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "i",
+        "to": "initializerDefineProperty",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "I",
+        "to": "GameData2",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "k",
+        "to": "default",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "m",
+        "to": "ERigidBody2DType",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "M",
+        "to": "AdManager",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "n",
+        "to": "inheritsLoose",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "N",
+        "to": "AudioManager",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "o",
+        "to": "assertThisInitialized",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "p",
+        "to": "Vec3",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "P",
+        "to": "Game2Controller",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "r",
+        "to": "cclegacy",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "R",
+        "to": "FruitHole",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "s",
+        "to": "Node",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "S",
+        "to": "Color",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "t",
+        "to": "applyDecoratedDescriptor",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "T",
+        "to": "GAME2_EVENT_KEYS",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "u",
+        "to": "RigidBody2D",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "v",
+        "to": "tween",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "w",
+        "to": "GameCtrl",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "y",
+        "to": "find",
+        "confidence": "high",
+        "source": "setters import alias"
+      }
+    ]
+  }
+}

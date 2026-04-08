@@ -1,0 +1,43 @@
+{
+  "moduleId": "chunks:///_virtual/MathLevelGenerator.ts",
+  "runtimeClassName": "MathLevelGenerator",
+  "restoredFile": "restored/start-scene/MathLevelGenerator.ts.restored.js",
+  "aliasMap": {
+    "t": "createForOfIteratorHelperLoose",
+    "n": "cclegacy"
+  },
+  "methodInventory": {
+    "prototypeMethodCount": 0,
+    "descriptorKeyCount": 0,
+    "prototypeMethods": [],
+    "descriptorKeys": []
+  },
+  "signals": {
+    "thisFields": [],
+    "storageKeys": [],
+    "bundleLoads": [],
+    "dynamicBundleLoads": [],
+    "pathLiterals": [],
+    "legacyPaths": {
+      "legacyHomePaths": [],
+      "legacyUiPigeonSkinPaths": [],
+      "legacyUiPigeonSkinDynamicPrefixes": []
+    }
+  },
+  "renameHints": {
+    "aliasHints": [
+      {
+        "from": "n",
+        "to": "cclegacy",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "t",
+        "to": "createForOfIteratorHelperLoose",
+        "confidence": "high",
+        "source": "setters import alias"
+      }
+    ]
+  }
+}

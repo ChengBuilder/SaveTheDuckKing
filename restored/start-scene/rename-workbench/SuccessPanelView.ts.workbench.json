@@ -1,0 +1,377 @@
+{
+  "moduleId": "chunks:///_virtual/SuccessPanelView.ts",
+  "runtimeClassName": "SuccessPanelView",
+  "restoredFile": "restored/start-scene/SuccessPanelView.ts.restored.js",
+  "aliasMap": {
+    "t": "applyDecoratedDescriptor",
+    "n": "inheritsLoose",
+    "o": "initializerDefineProperty",
+    "r": "assertThisInitialized",
+    "a": "asyncToGenerator",
+    "s": "cclegacy",
+    "l": "_decorator",
+    "c": "Node",
+    "u": "Button",
+    "d": "SpriteFrame",
+    "h": "director",
+    "p": "find",
+    "m": "tween",
+    "y": "Label",
+    "_": "instantiate",
+    "b": "UIOpacity",
+    "S": "Sprite",
+    "C": "UITransform",
+    "w": "ProgressBar",
+    "N": "Tween",
+    "k": "assetManager",
+    "T": "Prefab",
+    "B": "Component",
+    "A": "Vec3",
+    "P": "GameModel",
+    "M": "AudioManager",
+    "I": "AdManager",
+    "F": "releaseType",
+    "R": "EVENT_KEYS",
+    "L": "GAME2_EVENT_KEYS",
+    "x": "default",
+    "D": "GameCtrl",
+    "G": "UIConfigTable",
+    "E": "Util",
+    "O": "default",
+    "H": "ResManager",
+    "V": "TooYueManager",
+    "U": "AdManager_ZJ",
+    "z": "AddTablePanelView",
+    "W": "AutoManager"
+  },
+  "methodInventory": {
+    "prototypeMethodCount": 33,
+    "descriptorKeyCount": 0,
+    "prototypeMethods": [
+      "bookBtnClick",
+      "closeShareTips",
+      "closeTips",
+      "createStar",
+      "duckLzCreate",
+      "getPromoteIndex",
+      "GetTypeNumber",
+      "gooseProgressMoveToBookBtn",
+      "goSideBarBack",
+      "hideBasicAni",
+      "initDuckSkin",
+      "initGame1Last",
+      "initGame2Last",
+      "initGame3Last",
+      "initGooseProgress",
+      "initUi",
+      "judgeDWWDuck",
+      "judgeSpecialDuck",
+      "judgeSpecialFruitDuck",
+      "newDuckSpriteMoveToBookBtn",
+      "onDisable",
+      "onEnable",
+      "onLoad",
+      "onNextLevel",
+      "registerEvents",
+      "setLevelNum",
+      "share",
+      "shareVideo",
+      "start",
+      "subscribeBack",
+      "uiAnimation",
+      "unregisterEvents",
+      "update"
+    ],
+    "descriptorKeys": []
+  },
+  "signals": {
+    "thisFields": [
+      "createStarTime",
+      "DuckLzCd",
+      "duckLzTime",
+      "isShowSpecial",
+      "levelNum"
+    ],
+    "storageKeys": [],
+    "bundleLoads": [
+      {
+        "bundle": "aniBundle",
+        "path": "骨骼动画/鸭子动画/duck"
+      },
+      {
+        "bundle": "DuckBundle",
+        "path": "prefab/successStar"
+      }
+    ],
+    "dynamicBundleLoads": [
+      {
+        "bundle": "aniBundle",
+        "pathExpr": "r"
+      },
+      {
+        "bundle": "uiBundle",
+        "pathExpr": "G"
+      },
+      {
+        "bundle": "uiBundle",
+        "pathExpr": "i"
+      }
+    ],
+    "pathLiterals": [
+      "prefab/successStar",
+      "tex/book/duck/y",
+      "tex/book/大胃王鸭/",
+      "tex/book/水果鸭/",
+      "tex/book/特殊图鉴/"
+    ],
+    "legacyPaths": {
+      "legacyHomePaths": [],
+      "legacyUiPigeonSkinPaths": [],
+      "legacyUiPigeonSkinDynamicPrefixes": []
+    }
+  },
+  "renameHints": {
+    "aliasHints": [
+      {
+        "from": "_",
+        "to": "instantiate",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "a",
+        "to": "asyncToGenerator",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "A",
+        "to": "Vec3",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "b",
+        "to": "UIOpacity",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "B",
+        "to": "Component",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "c",
+        "to": "Node",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "C",
+        "to": "UITransform",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "d",
+        "to": "SpriteFrame",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "D",
+        "to": "GameCtrl",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "E",
+        "to": "Util",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "F",
+        "to": "releaseType",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "G",
+        "to": "UIConfigTable",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "h",
+        "to": "director",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "H",
+        "to": "ResManager",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "I",
+        "to": "AdManager",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "k",
+        "to": "assetManager",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "l",
+        "to": "_decorator",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "L",
+        "to": "GAME2_EVENT_KEYS",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "m",
+        "to": "tween",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "M",
+        "to": "AudioManager",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "n",
+        "to": "inheritsLoose",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "N",
+        "to": "Tween",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "o",
+        "to": "initializerDefineProperty",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "O",
+        "to": "default",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "p",
+        "to": "find",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "P",
+        "to": "GameModel",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "r",
+        "to": "assertThisInitialized",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "R",
+        "to": "EVENT_KEYS",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "s",
+        "to": "cclegacy",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "S",
+        "to": "Sprite",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "t",
+        "to": "applyDecoratedDescriptor",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "T",
+        "to": "Prefab",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "u",
+        "to": "Button",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "U",
+        "to": "AdManager_ZJ",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "V",
+        "to": "TooYueManager",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "w",
+        "to": "ProgressBar",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "W",
+        "to": "AutoManager",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "x",
+        "to": "default",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "y",
+        "to": "Label",
+        "confidence": "high",
+        "source": "setters import alias"
+      },
+      {
+        "from": "z",
+        "to": "AddTablePanelView",
+        "confidence": "high",
+        "source": "setters import alias"
+      }
+    ]
+  }
+}
