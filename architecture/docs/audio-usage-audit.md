@@ -3,7 +3,7 @@
 > 本文件由 `architecture/tools/generate-audio-usage-audit.js` 生成。
 
 ## 总览
-- 生成时间：2026-04-08T07:56:14.946Z
+- 生成时间：2026-04-08T09:53:36.920Z
 - Bundle：`audioBundle`
 - 音频 canonical 路径数：65
 - 直接引用条目数：27

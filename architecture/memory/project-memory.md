@@ -135,6 +135,68 @@
 3. `run-guardrails.js` 已接入该工具的语法检查，确保后续扩展审计规则时不会把迭代流水线带坏。
 4. 当前报告已确认下一批优先对象可以聚焦三组：`DuckBundle` 的 `tex/wood/a..f/*` 木板缩写群、`HomeBundle` 的 `BgParticle/p1..p4` 与 `BgThings*/f1/m1/b1`、`audioBundle` 剩余 `gz/ls/lz` 三个低可读根层音频。
 
+## 最新沉淀（2026-04-08 第二十二轮）
+1. `DuckBundle` 木板配色族已完成第一批真实语义化 rename：`tex/wood/a..f/*` 统一收敛为 `grayWood`、`lightWood`、`redWood`、`brownWood`、`goldWood`、`yellowWood` 六组可读目录。
+2. 本轮新增 `tools/semanticize-duckbundle-wood-assets.js`，可一次性同步 canonical 配置、微信开发者工具兼容配置副本、三套 `import` 元数据副本，以及 `game.js` 中的 `woodColorArr` / `singleColorArr`。
+3. 当前木板族运行时命名已与 canonical 路径直接对齐，不再保留 `a/a1` 这类缩写路径；后续继续治理 `DuckBundle` 时，应优先沿用“颜色族目录 + 同名前缀叶子”的结构。
+4. `run-guardrails.js` 已接入该迁移工具的语法检查，后续如果继续扩展木板或其它 bundle 的批量语义化脚本，护栏会先挡住语法层面的错误。
+
+## 最新沉淀（2026-04-08 第二十三轮）
+1. `HomeBundle` 的 `BgParticle/p1..p4` 已完成第一批真实语义化 rename，统一收敛到 `tex/backgroundParticles/` 目录。
+2. 当前四个大厅背景粒子已分别定名为 `whiteGlowParticle`、`orangeGlowParticle`、`greenLeafParticle`、`orangeLeafParticle`，并同步更新 canonical 配置、开发者工具兼容配置副本与三套 `import` 元数据名。
+3. 本轮暂不深改 `BgThings0..5` 主题目录，只先把已经能从原图稳定判断语义的粒子资产独立收口，避免在还没判清整套主题分层前把大厅背景结构改乱。
+4. 下一批 `HomeBundle` 治理应优先围绕 `BgThings0..5` 的主题名和 `front/back/middle/last/bottom` 分层语义继续推进，保持“先定主题，再定层级叶子”的节奏。
+
+## 最新沉淀（2026-04-08 第二十四轮）
+1. `HomeBundle` 背景主题目录已完成第一批结构语义化：`tex/BgThings0..5/*` 统一收敛为 `tex/homeTheme0..5/*`。
+2. 背景分层目录已从 `front/middle/back/last` 统一收敛为 `foreground/midground/background/distant`，当前配置层级已能直接表达景深语义。
+3. 新增 `tools/semanticize-homebundle-assets.js`，用于统一执行 `HomeBundle` 背景目录与背景粒子的语义化迁移，避免后续继续手工替换。
+4. `run-guardrails.js` 已接入该工具的语法检查，后续扩展 `HomeBundle` 叶子名语义化（如 `f1/m1/b1/l1`）时可以复用同一脚本继续迭代。
+
+## 最新沉淀（2026-04-08 第二十五轮）
+1. `HomeBundle` 背景主题叶子已完成第二批语义化：`f1..f5`、`m1..m2`、`b1..b2`、`l1` 分别收敛为 `foregroundLayer*`、`midgroundLayer*`、`backgroundLayer*`、`distantLayer1`。
+2. `homeBg0..5` 与 `bottom0..5` 已分别收敛为 `themeBackground` 与 `bottomOverlay`；`雾` 已收敛为 `fogOverlay`。
+3. `tools/semanticize-homebundle-assets.js` 已升级为“配置路径 + SpriteFrame 名称”双向迁移脚本，并内建旧命名残留校验，防止半迁移状态。
+4. 本轮自动迁移结果：三套配置各改写 `207` 条路径，三套 `import` 各更新 `68` 个文件、改写 `72` 处 `SpriteFrame` 名称，且旧 token 扫描已清零。
+5. `HomeBundle` 当前已完成“主题目录语义化 + 分层目录语义化 + 叶子命名语义化”三步闭环，后续可把治理重心平滑切换到 `uiBundle` 中文目录与短 token 清理。
+
+## 最新沉淀（2026-04-08 第二十六轮）
+1. `uiBundle` 已完成图鉴皮肤页第一批语义化：`tex/book/鸽鸽图鉴/皮肤图鉴/p1..p10` 收敛为 `tex/book/pigeonGallery/skinCollection/skinPage1..10`。
+2. 对应 `SpriteFrame.name` 已同步从 `p1..p10` 收敛为 `skinPage1..skinPage10`，并在三套 import 元数据副本保持一致。
+3. 新增 `tools/semanticize-uibundle-book-skin-assets.js`，用于专门治理 `uiBundle` 图鉴皮肤页编号命名；脚本内带旧 token 残留校验。
+4. `run-guardrails.js` 已接入该脚本语法检查，后续继续扩展 `uiBundle` 语义化批次时可沿用同一治理模式。
+5. 本轮自动迁移结果：三套配置各改写 `10` 条路径，三套 import 各更新 `4` 个文件、改写 `10` 处名称，旧路径与旧名称扫描均为 0。
+
+## 最新沉淀（2026-04-08 第二十七轮）
+1. 已确认并修复 `HomeBundle` 运行时兼容缺口：业务代码仍在请求旧路径 `tex/BgThings*/...`，而配置已语义化为 `tex/homeTheme*/...`，导致 DevTools 持续报 `Bundle HomeBundle doesn't contain ...`。
+2. `boot/asset-path-normalizer.js` 新增 `applyHomeBundleLegacyPathPatch(engineModule)`，优先代理 `assetManager.loadAny/preloadAny` 做兜底路径归一化；若运行时存在 `Bundle.prototype`，再额外代理 `load/preload/loadDir/preloadDir/get`。
+3. 归一化规则已覆盖 `front/f*`、`middle/m*`、`back/b*`、`last/l*`、`homeBg*`、`bottom*`、`雾`，统一映射到 `foregroundLayer*`、`midgroundLayer*`、`backgroundLayer*`、`distantLayer*`、`themeBackground`、`bottomOverlay`、`fogOverlay`。
+4. `app-lifecycle.js` 已在 `application.init()` 前接入该补丁，和 root bundle 归一化、扁平目录补丁同阶段启用，确保兼容链路稳定。
+5. 本轮本地校验已通过：`node -c game.js`、`node architecture/tools/run-guardrails.js`、`node architecture/tools/run-iteration-cycle.js`。
+
+## 最新沉淀（2026-04-08 第二十八轮）
+1. 运行时报错已从 `HomeBundle` 收敛到 `uiBundle` 历史路径：`tex/book/鸽鸽图鉴/皮肤图鉴/p1..p10/spriteFrame`。
+2. `boot/asset-path-normalizer.js` 的旧路径兼容已扩展到 `uiBundle`，新增 `p1..p10 -> skinPage1..skinPage10` 路径归一化：`tex/book/pigeonGallery/skinCollection/skinPage*`。
+3. `assetManager.loadAny/preloadAny` 的入参归一化升级为深度递归扫描（含数组与嵌套对象），并加入循环引用保护，避免不同调用形态漏网。
+4. 旧路径检测同时支持 URI 解码场景，兼容 devtools 可能输出的编码路径。
+5. 本轮本地校验已通过：`node -c architecture/boot/asset-path-normalizer.js`、`node -c game.js`、`node architecture/tools/run-guardrails.js`。
+
+## 最新沉淀（2026-04-08 第二十九轮）
+1. 本次故障教训已固化：语义化 rename 完成后，不能只看配置层“无旧路径”，还必须校验 `game.js` 运行时字符串是否仍引用旧路径。
+2. 新增 `architecture/tools/check-legacy-runtime-compat.js`，统一执行三类防回归检查：
+   - canonical 配置是否残留旧路径；
+   - `game.js` 是否仍含旧路径调用；
+   - 若运行时仍有旧路径，`asset-path-normalizer.js` 是否具备对应归一化逻辑与启动接入。
+3. `run-guardrails.js` 已接入该检查（含语法检查 + 执行检查），后续每轮迭代会自动阻断“改名成功但运行时缺兼容”的回归。
+4. 后续语义化迭代的固定流程更新为：`改配置/元数据 -> 扫描 runtime 旧路径 -> 补齐启动层归一化 -> DevTools 回归`，四步缺一不可。
+
+## 最新沉淀（2026-04-08 第三十轮）
+1. `uiBundle` 设置模块已完成首批语义化：`tex/设置/*`、`tex/设置二级/*` 收敛为 `tex/settings/*`、`tex/settingsDialog/*`，并同步更新三套配置副本。
+2. 新增 `architecture/tools/semanticize-uibundle-settings-assets.js`，用于批量迁移设置路径与对应 `SpriteFrame` 名称，并内置旧路径残留校验。
+3. `architecture/boot/asset-path-normalizer.js` 已新增设置模块旧路径兼容映射，运行时若仍请求 `tex/设置*` 将自动归一化到语义化目录，保持重构与稳定性并存。
+4. `architecture/tools/check-legacy-runtime-compat.js` 已新增“`uiBundle` 设置模块旧路径”规则，且规则升级为 `enforceNormalizerAlways`，避免后续误删兼容逻辑。
+5. 本轮新增教训：`SpriteFrame` 名称迁移不能只靠全局 token 替换，需避免跨模块同名误伤（已收紧高风险 token 替换范围）。
+
 ## 关键风险与约束
 1. `game.js` 内大量压缩代码不可控，深改风险极高。
 2. 允许改动 `game.js` 的范围：仅限启动桥接与必要接入点。
@@ -158,6 +220,6 @@ node architecture/tools/run-guardrails.js
 
 ## 下阶段迭代路线
 1. 继续按 `asset-readability-audit.md` 的高优先级候选逐批清理缩写资产，优先从 `DuckBundle` 木板资源群开始，保持每次只处理一组可闭环 rename。
-2. 对 `HomeBundle` / `uiBundle` 中“语义明确但命名语言不统一”的目录做分层规划，先统一目录骨架，再决定是否逐批改英文语义名。
+2. 继续处理 `HomeBundle` / `uiBundle` 中“语义明确但命名语言不统一”的目录，优先从 `homeTheme0..5` 下的叶子名（`f1/m1/b1/l1`）和 `uiBundle` 的高优先级中文目录开始。
 3. 在 `architecture/boot` 中继续拆分更细粒度策略模块（首屏加载资源策略、异常恢复策略）。
 4. 对高频改动逻辑优先做“可维护层替换”。

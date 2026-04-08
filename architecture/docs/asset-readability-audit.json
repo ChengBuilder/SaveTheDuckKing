@@ -1,136 +1,100 @@
 {
-  "generatedAt": "2026-04-08T07:56:14.871Z",
+  "generatedAt": "2026-04-08T10:17:02.331Z",
   "bundleCount": 10,
   "totalAssetPaths": 2293,
-  "candidateCount": 1822,
-  "highSeverityCount": 930,
-  "mediumSeverityCount": 666,
-  "lowSeverityCount": 226,
+  "candidateCount": 739,
+  "highSeverityCount": 97,
+  "mediumSeverityCount": 420,
+  "lowSeverityCount": 222,
   "topCandidates": [
     {
-      "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a1",
-      "score": 7,
+      "bundleId": "audioBundle",
+      "path": "gz",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "gz",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a1",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
-      "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a1/spriteFrame",
-      "score": 7,
+      "bundleId": "audioBundle",
+      "path": "ls",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "ls",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a1",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
-      "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a1/texture",
-      "score": 7,
+      "bundleId": "audioBundle",
+      "path": "lz",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "lz",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a1",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a10",
-      "score": 7,
+      "path": "tex/%2",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
-          "type": "short-opaque-token",
+          "segment": "%2",
+          "type": "encoded-symbol",
           "score": 4,
-          "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a10",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
+          "reason": "片段包含 `%` 编码或符号残留，通常是高优先级清理对象"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a10/spriteFrame",
-      "score": 7,
+      "path": "tex/%2/spriteFrame",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
-          "type": "short-opaque-token",
+          "segment": "%2",
+          "type": "encoded-symbol",
           "score": 4,
-          "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a10",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
+          "reason": "片段包含 `%` 编码或符号残留，通常是高优先级清理对象"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a10/texture",
-      "score": 7,
+      "path": "tex/%2/texture",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
-          "type": "short-opaque-token",
+          "segment": "%2",
+          "type": "encoded-symbol",
           "score": 4,
-          "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a10",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
+          "reason": "片段包含 `%` 编码或符号残留，通常是高优先级清理对象"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a11",
-      "score": 7,
+      "path": "tex/fragment/a/1",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
@@ -138,19 +102,13 @@
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a11",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a11/spriteFrame",
-      "score": 7,
+      "path": "tex/fragment/a/1/spriteFrame",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
@@ -158,19 +116,13 @@
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a11",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a11/texture",
-      "score": 7,
+      "path": "tex/fragment/a/1/texture",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
@@ -178,19 +130,13 @@
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a11",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a12",
-      "score": 7,
+      "path": "tex/fragment/a/2",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
@@ -198,19 +144,13 @@
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a12",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a12/spriteFrame",
-      "score": 7,
+      "path": "tex/fragment/a/2/spriteFrame",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
@@ -218,19 +158,13 @@
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a12",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a12/texture",
-      "score": 7,
+      "path": "tex/fragment/a/2/texture",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
@@ -238,19 +172,13 @@
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a12",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a13",
-      "score": 7,
+      "path": "tex/fragment/a/3",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
@@ -258,19 +186,13 @@
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a13",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a13/spriteFrame",
-      "score": 7,
+      "path": "tex/fragment/a/3/spriteFrame",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
@@ -278,19 +200,13 @@
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a13",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a13/texture",
-      "score": 7,
+      "path": "tex/fragment/a/3/texture",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
@@ -298,19 +214,13 @@
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a13",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a14",
-      "score": 7,
+      "path": "tex/fragment/a/4",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
@@ -318,19 +228,13 @@
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a14",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a14/spriteFrame",
-      "score": 7,
+      "path": "tex/fragment/a/4/spriteFrame",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
@@ -338,19 +242,13 @@
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a14",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a14/texture",
-      "score": 7,
+      "path": "tex/fragment/a/4/texture",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
@@ -358,19 +256,13 @@
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a14",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a15",
-      "score": 7,
+      "path": "tex/fragment/a/5",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
@@ -378,19 +270,13 @@
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a15",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a15/spriteFrame",
-      "score": 7,
+      "path": "tex/fragment/a/5/spriteFrame",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
@@ -398,19 +284,13 @@
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a15",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a15/texture",
-      "score": 7,
+      "path": "tex/fragment/a/5/texture",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
@@ -418,19 +298,13 @@
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a15",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a16",
-      "score": 7,
+      "path": "tex/fragment/a/6",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
@@ -438,19 +312,13 @@
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a16",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a16/spriteFrame",
-      "score": 7,
+      "path": "tex/fragment/a/6/spriteFrame",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
@@ -458,19 +326,13 @@
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a16",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a16/texture",
-      "score": 7,
+      "path": "tex/fragment/a/6/texture",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
@@ -478,1438 +340,803 @@
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a16",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a17",
-      "score": 7,
+      "path": "tex/fragment/b/1",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "b",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a17",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a17/spriteFrame",
-      "score": 7,
+      "path": "tex/fragment/b/1/spriteFrame",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "b",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a17",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a17/texture",
-      "score": 7,
+      "path": "tex/fragment/b/1/texture",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "b",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a17",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a18",
-      "score": 7,
+      "path": "tex/fragment/b/2",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "b",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a18",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a18/spriteFrame",
-      "score": 7,
+      "path": "tex/fragment/b/2/spriteFrame",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "b",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a18",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a18/texture",
-      "score": 7,
+      "path": "tex/fragment/b/2/texture",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "b",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a18",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a19",
-      "score": 7,
+      "path": "tex/fragment/b/3",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "b",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a19",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a19/spriteFrame",
-      "score": 7,
+      "path": "tex/fragment/b/3/spriteFrame",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "b",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a19",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a19/texture",
-      "score": 7,
+      "path": "tex/fragment/b/3/texture",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "b",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a19",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a2",
-      "score": 7,
+      "path": "tex/fragment/b/4",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "b",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a2",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a2/spriteFrame",
-      "score": 7,
+      "path": "tex/fragment/b/4/spriteFrame",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "b",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a2",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a2/texture",
-      "score": 7,
+      "path": "tex/fragment/b/4/texture",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "b",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a2",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a20",
-      "score": 7,
+      "path": "tex/fragment/b/5",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "b",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a20",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a20/spriteFrame",
-      "score": 7,
+      "path": "tex/fragment/b/5/spriteFrame",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "b",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a20",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a20/texture",
-      "score": 7,
+      "path": "tex/fragment/b/5/texture",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "b",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a20",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a21",
-      "score": 7,
+      "path": "tex/fragment/b/6",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "b",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a21",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a21/spriteFrame",
-      "score": 7,
+      "path": "tex/fragment/b/6/spriteFrame",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "b",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a21",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a21/texture",
-      "score": 7,
+      "path": "tex/fragment/b/6/texture",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "b",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a21",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a22",
-      "score": 7,
+      "path": "tex/fragment/c/1",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "c",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a22",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a22/spriteFrame",
-      "score": 7,
+      "path": "tex/fragment/c/1/spriteFrame",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "c",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a22",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a22/texture",
-      "score": 7,
+      "path": "tex/fragment/c/1/texture",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "c",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a22",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a23",
-      "score": 7,
+      "path": "tex/fragment/c/2",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "c",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a23",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a23/spriteFrame",
-      "score": 7,
+      "path": "tex/fragment/c/2/spriteFrame",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "c",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a23",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a23/texture",
-      "score": 7,
+      "path": "tex/fragment/c/2/texture",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "c",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a23",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a24",
-      "score": 7,
+      "path": "tex/fragment/c/3",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "c",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a24",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a24/spriteFrame",
-      "score": 7,
+      "path": "tex/fragment/c/3/spriteFrame",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "c",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a24",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a24/texture",
-      "score": 7,
+      "path": "tex/fragment/c/3/texture",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "c",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a24",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a25",
-      "score": 7,
+      "path": "tex/fragment/c/4",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "c",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a25",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a25/spriteFrame",
-      "score": 7,
+      "path": "tex/fragment/c/4/spriteFrame",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "c",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a25",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a25/texture",
-      "score": 7,
+      "path": "tex/fragment/c/4/texture",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "c",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a25",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a26",
-      "score": 7,
+      "path": "tex/fragment/c/5",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "c",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a26",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a26/spriteFrame",
-      "score": 7,
+      "path": "tex/fragment/c/5/spriteFrame",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "c",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a26",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a26/texture",
-      "score": 7,
+      "path": "tex/fragment/c/5/texture",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "c",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a26",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a27",
-      "score": 7,
+      "path": "tex/fragment/c/6",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "c",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a27",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a27/spriteFrame",
-      "score": 7,
+      "path": "tex/fragment/c/6/spriteFrame",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "c",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a27",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a27/texture",
-      "score": 7,
+      "path": "tex/fragment/c/6/texture",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "c",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a27",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a28",
-      "score": 7,
+      "path": "tex/fragment/d/1",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "d",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a28",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a28/spriteFrame",
-      "score": 7,
+      "path": "tex/fragment/d/1/spriteFrame",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "d",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a28",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a28/texture",
-      "score": 7,
+      "path": "tex/fragment/d/1/texture",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "d",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a28",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a29",
-      "score": 7,
+      "path": "tex/fragment/d/2",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "d",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a29",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a29/spriteFrame",
-      "score": 7,
+      "path": "tex/fragment/d/2/spriteFrame",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "d",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a29",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a29/texture",
-      "score": 7,
+      "path": "tex/fragment/d/2/texture",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "d",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a29",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a3",
-      "score": 7,
+      "path": "tex/fragment/d/3",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "d",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a3",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a3/spriteFrame",
-      "score": 7,
+      "path": "tex/fragment/d/3/spriteFrame",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "d",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a3",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a3/texture",
-      "score": 7,
+      "path": "tex/fragment/d/3/texture",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "d",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a3",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a30",
-      "score": 7,
+      "path": "tex/fragment/d/4",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "d",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a30",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a30/spriteFrame",
-      "score": 7,
+      "path": "tex/fragment/d/4/spriteFrame",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "d",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a30",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a30/texture",
-      "score": 7,
+      "path": "tex/fragment/d/4/texture",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "d",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a30",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a31",
-      "score": 7,
+      "path": "tex/fragment/d/5",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "d",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a31",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a31/spriteFrame",
-      "score": 7,
+      "path": "tex/fragment/d/5/spriteFrame",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "d",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a31",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a31/texture",
-      "score": 7,
+      "path": "tex/fragment/d/5/texture",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "d",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a31",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a32",
-      "score": 7,
+      "path": "tex/fragment/d/6",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "d",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a32",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a32/spriteFrame",
-      "score": 7,
+      "path": "tex/fragment/d/6/spriteFrame",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "d",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a32",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a32/texture",
-      "score": 7,
+      "path": "tex/fragment/d/6/texture",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "d",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a32",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a33",
-      "score": 7,
+      "path": "tex/fragment/e/1",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "e",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a33",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     },
     {
       "bundleId": "DuckBundle",
-      "path": "tex/wood/a/a33/spriteFrame",
-      "score": 7,
+      "path": "tex/fragment/e/1/spriteFrame",
+      "score": 4,
       "severity": "high",
       "issues": [
         {
-          "segment": "a",
+          "segment": "e",
           "type": "short-opaque-token",
           "score": 4,
           "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-        },
-        {
-          "segment": "a33",
-          "type": "short-indexed-token",
-          "score": 3,
-          "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
         }
       ]
     }
   ],
   "bundles": [
     {
-      "bundleId": "DuckBundle",
-      "configPath": "subpackages/DuckBundle/config.duck-bundle.json",
-      "assetCount": 1227,
-      "candidateCount": 1059,
-      "highSeverityCount": 915,
-      "mediumSeverityCount": 108,
-      "lowSeverityCount": 36,
-      "noisySegments": [
-        {
-          "segment": "a",
-          "count": 147
-        },
-        {
-          "segment": "b",
-          "count": 147
-        },
-        {
-          "segment": "c",
-          "count": 147
-        },
-        {
-          "segment": "d",
-          "count": 147
-        },
-        {
-          "segment": "e",
-          "count": 147
-        },
-        {
-          "segment": "f",
-          "count": 129
-        },
-        {
-          "segment": "bg",
-          "count": 33
-        },
-        {
-          "segment": "难度飙升",
-          "count": 18
-        },
-        {
-          "segment": "春",
-          "count": 12
-        },
-        {
-          "segment": "冬",
-          "count": 12
-        }
-      ],
-      "sampleCandidates": [
-        {
-          "bundleId": "DuckBundle",
-          "path": "tex/wood/a/a1",
-          "score": 7,
-          "severity": "high",
-          "issues": [
-            {
-              "segment": "a",
-              "type": "short-opaque-token",
-              "score": 4,
-              "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-            },
-            {
-              "segment": "a1",
-              "type": "short-indexed-token",
-              "score": 3,
-              "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
-            }
-          ]
-        },
-        {
-          "bundleId": "DuckBundle",
-          "path": "tex/wood/a/a1/spriteFrame",
-          "score": 7,
-          "severity": "high",
-          "issues": [
-            {
-              "segment": "a",
-              "type": "short-opaque-token",
-              "score": 4,
-              "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-            },
-            {
-              "segment": "a1",
-              "type": "short-indexed-token",
-              "score": 3,
-              "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
-            }
-          ]
-        },
-        {
-          "bundleId": "DuckBundle",
-          "path": "tex/wood/a/a1/texture",
-          "score": 7,
-          "severity": "high",
-          "issues": [
-            {
-              "segment": "a",
-              "type": "short-opaque-token",
-              "score": 4,
-              "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-            },
-            {
-              "segment": "a1",
-              "type": "short-indexed-token",
-              "score": 3,
-              "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
-            }
-          ]
-        },
-        {
-          "bundleId": "DuckBundle",
-          "path": "tex/wood/a/a10",
-          "score": 7,
-          "severity": "high",
-          "issues": [
-            {
-              "segment": "a",
-              "type": "short-opaque-token",
-              "score": 4,
-              "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-            },
-            {
-              "segment": "a10",
-              "type": "short-indexed-token",
-              "score": 3,
-              "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
-            }
-          ]
-        },
-        {
-          "bundleId": "DuckBundle",
-          "path": "tex/wood/a/a10/spriteFrame",
-          "score": 7,
-          "severity": "high",
-          "issues": [
-            {
-              "segment": "a",
-              "type": "short-opaque-token",
-              "score": 4,
-              "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-            },
-            {
-              "segment": "a10",
-              "type": "short-indexed-token",
-              "score": 3,
-              "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
-            }
-          ]
-        },
-        {
-          "bundleId": "DuckBundle",
-          "path": "tex/wood/a/a10/texture",
-          "score": 7,
-          "severity": "high",
-          "issues": [
-            {
-              "segment": "a",
-              "type": "short-opaque-token",
-              "score": 4,
-              "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-            },
-            {
-              "segment": "a10",
-              "type": "short-indexed-token",
-              "score": 3,
-              "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
-            }
-          ]
-        },
-        {
-          "bundleId": "DuckBundle",
-          "path": "tex/wood/a/a11",
-          "score": 7,
-          "severity": "high",
-          "issues": [
-            {
-              "segment": "a",
-              "type": "short-opaque-token",
-              "score": 4,
-              "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-            },
-            {
-              "segment": "a11",
-              "type": "short-indexed-token",
-              "score": 3,
-              "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
-            }
-          ]
-        },
-        {
-          "bundleId": "DuckBundle",
-          "path": "tex/wood/a/a11/spriteFrame",
-          "score": 7,
-          "severity": "high",
-          "issues": [
-            {
-              "segment": "a",
-              "type": "short-opaque-token",
-              "score": 4,
-              "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-            },
-            {
-              "segment": "a11",
-              "type": "short-indexed-token",
-              "score": 3,
-              "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
-            }
-          ]
-        },
-        {
-          "bundleId": "DuckBundle",
-          "path": "tex/wood/a/a11/texture",
-          "score": 7,
-          "severity": "high",
-          "issues": [
-            {
-              "segment": "a",
-              "type": "short-opaque-token",
-              "score": 4,
-              "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-            },
-            {
-              "segment": "a11",
-              "type": "short-indexed-token",
-              "score": 3,
-              "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
-            }
-          ]
-        },
-        {
-          "bundleId": "DuckBundle",
-          "path": "tex/wood/a/a12",
-          "score": 7,
-          "severity": "high",
-          "issues": [
-            {
-              "segment": "a",
-              "type": "short-opaque-token",
-              "score": 4,
-              "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-            },
-            {
-              "segment": "a12",
-              "type": "short-indexed-token",
-              "score": 3,
-              "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
-            }
-          ]
-        },
-        {
-          "bundleId": "DuckBundle",
-          "path": "tex/wood/a/a12/spriteFrame",
-          "score": 7,
-          "severity": "high",
-          "issues": [
-            {
-              "segment": "a",
-              "type": "short-opaque-token",
-              "score": 4,
-              "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-            },
-            {
-              "segment": "a12",
-              "type": "short-indexed-token",
-              "score": 3,
-              "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
-            }
-          ]
-        },
-        {
-          "bundleId": "DuckBundle",
-          "path": "tex/wood/a/a12/texture",
-          "score": 7,
-          "severity": "high",
-          "issues": [
-            {
-              "segment": "a",
-              "type": "short-opaque-token",
-              "score": 4,
-              "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-            },
-            {
-              "segment": "a12",
-              "type": "short-indexed-token",
-              "score": 3,
-              "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "bundleId": "uiBundle",
       "configPath": "subpackages/uiBundle/config.ui-bundle.json",
       "assetCount": 400,
-      "candidateCount": 365,
-      "highSeverityCount": 12,
-      "mediumSeverityCount": 306,
-      "lowSeverityCount": 47,
+      "candidateCount": 332,
+      "highSeverityCount": 1,
+      "mediumSeverityCount": 285,
+      "lowSeverityCount": 46,
       "noisySegments": [
         {
           "segment": "主页素材",
@@ -1928,14 +1155,6 @@
           "count": 21
         },
         {
-          "segment": "鸽鸽图鉴",
-          "count": 18
-        },
-        {
-          "segment": "设置",
-          "count": 18
-        },
-        {
           "segment": "复活",
           "count": 15
         },
@@ -1950,289 +1169,17 @@
         {
           "segment": "分享有奖",
           "count": 12
+        },
+        {
+          "segment": "排行榜",
+          "count": 12
+        },
+        {
+          "segment": "更多玩法",
+          "count": 10
         }
       ],
       "sampleCandidates": [
-        {
-          "bundleId": "uiBundle",
-          "path": "tex/book/鸽鸽图鉴/皮肤图鉴/p1/spriteFrame",
-          "score": 5,
-          "severity": "high",
-          "issues": [
-            {
-              "segment": "鸽鸽图鉴",
-              "type": "non-ascii",
-              "score": 1,
-              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
-            },
-            {
-              "segment": "皮肤图鉴",
-              "type": "non-ascii",
-              "score": 1,
-              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
-            },
-            {
-              "segment": "p1",
-              "type": "short-indexed-token",
-              "score": 3,
-              "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
-            }
-          ]
-        },
-        {
-          "bundleId": "uiBundle",
-          "path": "tex/book/鸽鸽图鉴/皮肤图鉴/p10/spriteFrame",
-          "score": 5,
-          "severity": "high",
-          "issues": [
-            {
-              "segment": "鸽鸽图鉴",
-              "type": "non-ascii",
-              "score": 1,
-              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
-            },
-            {
-              "segment": "皮肤图鉴",
-              "type": "non-ascii",
-              "score": 1,
-              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
-            },
-            {
-              "segment": "p10",
-              "type": "short-indexed-token",
-              "score": 3,
-              "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
-            }
-          ]
-        },
-        {
-          "bundleId": "uiBundle",
-          "path": "tex/book/鸽鸽图鉴/皮肤图鉴/p2/spriteFrame",
-          "score": 5,
-          "severity": "high",
-          "issues": [
-            {
-              "segment": "鸽鸽图鉴",
-              "type": "non-ascii",
-              "score": 1,
-              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
-            },
-            {
-              "segment": "皮肤图鉴",
-              "type": "non-ascii",
-              "score": 1,
-              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
-            },
-            {
-              "segment": "p2",
-              "type": "short-indexed-token",
-              "score": 3,
-              "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
-            }
-          ]
-        },
-        {
-          "bundleId": "uiBundle",
-          "path": "tex/book/鸽鸽图鉴/皮肤图鉴/p3/spriteFrame",
-          "score": 5,
-          "severity": "high",
-          "issues": [
-            {
-              "segment": "鸽鸽图鉴",
-              "type": "non-ascii",
-              "score": 1,
-              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
-            },
-            {
-              "segment": "皮肤图鉴",
-              "type": "non-ascii",
-              "score": 1,
-              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
-            },
-            {
-              "segment": "p3",
-              "type": "short-indexed-token",
-              "score": 3,
-              "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
-            }
-          ]
-        },
-        {
-          "bundleId": "uiBundle",
-          "path": "tex/book/鸽鸽图鉴/皮肤图鉴/p4/spriteFrame",
-          "score": 5,
-          "severity": "high",
-          "issues": [
-            {
-              "segment": "鸽鸽图鉴",
-              "type": "non-ascii",
-              "score": 1,
-              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
-            },
-            {
-              "segment": "皮肤图鉴",
-              "type": "non-ascii",
-              "score": 1,
-              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
-            },
-            {
-              "segment": "p4",
-              "type": "short-indexed-token",
-              "score": 3,
-              "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
-            }
-          ]
-        },
-        {
-          "bundleId": "uiBundle",
-          "path": "tex/book/鸽鸽图鉴/皮肤图鉴/p5/spriteFrame",
-          "score": 5,
-          "severity": "high",
-          "issues": [
-            {
-              "segment": "鸽鸽图鉴",
-              "type": "non-ascii",
-              "score": 1,
-              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
-            },
-            {
-              "segment": "皮肤图鉴",
-              "type": "non-ascii",
-              "score": 1,
-              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
-            },
-            {
-              "segment": "p5",
-              "type": "short-indexed-token",
-              "score": 3,
-              "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
-            }
-          ]
-        },
-        {
-          "bundleId": "uiBundle",
-          "path": "tex/book/鸽鸽图鉴/皮肤图鉴/p6/spriteFrame",
-          "score": 5,
-          "severity": "high",
-          "issues": [
-            {
-              "segment": "鸽鸽图鉴",
-              "type": "non-ascii",
-              "score": 1,
-              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
-            },
-            {
-              "segment": "皮肤图鉴",
-              "type": "non-ascii",
-              "score": 1,
-              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
-            },
-            {
-              "segment": "p6",
-              "type": "short-indexed-token",
-              "score": 3,
-              "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
-            }
-          ]
-        },
-        {
-          "bundleId": "uiBundle",
-          "path": "tex/book/鸽鸽图鉴/皮肤图鉴/p7/spriteFrame",
-          "score": 5,
-          "severity": "high",
-          "issues": [
-            {
-              "segment": "鸽鸽图鉴",
-              "type": "non-ascii",
-              "score": 1,
-              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
-            },
-            {
-              "segment": "皮肤图鉴",
-              "type": "non-ascii",
-              "score": 1,
-              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
-            },
-            {
-              "segment": "p7",
-              "type": "short-indexed-token",
-              "score": 3,
-              "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
-            }
-          ]
-        },
-        {
-          "bundleId": "uiBundle",
-          "path": "tex/book/鸽鸽图鉴/皮肤图鉴/p8/spriteFrame",
-          "score": 5,
-          "severity": "high",
-          "issues": [
-            {
-              "segment": "鸽鸽图鉴",
-              "type": "non-ascii",
-              "score": 1,
-              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
-            },
-            {
-              "segment": "皮肤图鉴",
-              "type": "non-ascii",
-              "score": 1,
-              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
-            },
-            {
-              "segment": "p8",
-              "type": "short-indexed-token",
-              "score": 3,
-              "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
-            }
-          ]
-        },
-        {
-          "bundleId": "uiBundle",
-          "path": "tex/book/鸽鸽图鉴/皮肤图鉴/p9/spriteFrame",
-          "score": 5,
-          "severity": "high",
-          "issues": [
-            {
-              "segment": "鸽鸽图鉴",
-              "type": "non-ascii",
-              "score": 1,
-              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
-            },
-            {
-              "segment": "皮肤图鉴",
-              "type": "non-ascii",
-              "score": 1,
-              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
-            },
-            {
-              "segment": "p9",
-              "type": "short-indexed-token",
-              "score": 3,
-              "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
-            }
-          ]
-        },
-        {
-          "bundleId": "uiBundle",
-          "path": "tex/设置/x/spriteFrame",
-          "score": 5,
-          "severity": "high",
-          "issues": [
-            {
-              "segment": "设置",
-              "type": "non-ascii",
-              "score": 1,
-              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
-            },
-            {
-              "segment": "x",
-              "type": "short-opaque-token",
-              "score": 4,
-              "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-            }
-          ]
-        },
         {
           "bundleId": "uiBundle",
           "path": "tex/book/tex/NO/spriteFrame",
@@ -2246,225 +1193,511 @@
               "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
             }
           ]
+        },
+        {
+          "bundleId": "uiBundle",
+          "path": "tex/过关页面/成功进度/百鹅朝凤/spriteFrame",
+          "score": 3,
+          "severity": "medium",
+          "issues": [
+            {
+              "segment": "过关页面",
+              "type": "non-ascii",
+              "score": 1,
+              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
+            },
+            {
+              "segment": "成功进度",
+              "type": "non-ascii",
+              "score": 1,
+              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
+            },
+            {
+              "segment": "百鹅朝凤",
+              "type": "non-ascii",
+              "score": 1,
+              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
+            }
+          ]
+        },
+        {
+          "bundleId": "uiBundle",
+          "path": "tex/过关页面/成功进度/百鹅朝麟/spriteFrame",
+          "score": 3,
+          "severity": "medium",
+          "issues": [
+            {
+              "segment": "过关页面",
+              "type": "non-ascii",
+              "score": 1,
+              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
+            },
+            {
+              "segment": "成功进度",
+              "type": "non-ascii",
+              "score": 1,
+              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
+            },
+            {
+              "segment": "百鹅朝麟",
+              "type": "non-ascii",
+              "score": 1,
+              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
+            }
+          ]
+        },
+        {
+          "bundleId": "uiBundle",
+          "path": "tex/过关页面/成功进度/百鸭朝鲲/spriteFrame",
+          "score": 3,
+          "severity": "medium",
+          "issues": [
+            {
+              "segment": "过关页面",
+              "type": "non-ascii",
+              "score": 1,
+              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
+            },
+            {
+              "segment": "成功进度",
+              "type": "non-ascii",
+              "score": 1,
+              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
+            },
+            {
+              "segment": "百鸭朝鲲",
+              "type": "non-ascii",
+              "score": 1,
+              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
+            }
+          ]
+        },
+        {
+          "bundleId": "uiBundle",
+          "path": "tex/过关页面/成功进度/百鸭朝龙/spriteFrame",
+          "score": 3,
+          "severity": "medium",
+          "issues": [
+            {
+              "segment": "过关页面",
+              "type": "non-ascii",
+              "score": 1,
+              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
+            },
+            {
+              "segment": "成功进度",
+              "type": "non-ascii",
+              "score": 1,
+              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
+            },
+            {
+              "segment": "百鸭朝龙",
+              "type": "non-ascii",
+              "score": 1,
+              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
+            }
+          ]
+        },
+        {
+          "bundleId": "uiBundle",
+          "path": "tex/过关页面/成功进度/百鸭朝鹏/spriteFrame",
+          "score": 3,
+          "severity": "medium",
+          "issues": [
+            {
+              "segment": "过关页面",
+              "type": "non-ascii",
+              "score": 1,
+              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
+            },
+            {
+              "segment": "成功进度",
+              "type": "non-ascii",
+              "score": 1,
+              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
+            },
+            {
+              "segment": "百鸭朝鹏",
+              "type": "non-ascii",
+              "score": 1,
+              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
+            }
+          ]
+        },
+        {
+          "bundleId": "uiBundle",
+          "path": "tex/过关页面/成功进度/百鸭朝雀/spriteFrame",
+          "score": 3,
+          "severity": "medium",
+          "issues": [
+            {
+              "segment": "过关页面",
+              "type": "non-ascii",
+              "score": 1,
+              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
+            },
+            {
+              "segment": "成功进度",
+              "type": "non-ascii",
+              "score": 1,
+              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
+            },
+            {
+              "segment": "百鸭朝雀",
+              "type": "non-ascii",
+              "score": 1,
+              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
+            }
+          ]
+        },
+        {
+          "bundleId": "uiBundle",
+          "path": "tex/过关页面/成功进度/光圈",
+          "score": 3,
+          "severity": "medium",
+          "issues": [
+            {
+              "segment": "过关页面",
+              "type": "non-ascii",
+              "score": 1,
+              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
+            },
+            {
+              "segment": "成功进度",
+              "type": "non-ascii",
+              "score": 1,
+              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
+            },
+            {
+              "segment": "光圈",
+              "type": "non-ascii",
+              "score": 1,
+              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
+            }
+          ]
+        },
+        {
+          "bundleId": "uiBundle",
+          "path": "tex/过关页面/成功进度/光圈/spriteFrame",
+          "score": 3,
+          "severity": "medium",
+          "issues": [
+            {
+              "segment": "过关页面",
+              "type": "non-ascii",
+              "score": 1,
+              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
+            },
+            {
+              "segment": "成功进度",
+              "type": "non-ascii",
+              "score": 1,
+              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
+            },
+            {
+              "segment": "光圈",
+              "type": "non-ascii",
+              "score": 1,
+              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
+            }
+          ]
+        },
+        {
+          "bundleId": "uiBundle",
+          "path": "tex/过关页面/成功进度/光圈/texture",
+          "score": 3,
+          "severity": "medium",
+          "issues": [
+            {
+              "segment": "过关页面",
+              "type": "non-ascii",
+              "score": 1,
+              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
+            },
+            {
+              "segment": "成功进度",
+              "type": "non-ascii",
+              "score": 1,
+              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
+            },
+            {
+              "segment": "光圈",
+              "type": "non-ascii",
+              "score": 1,
+              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
+            }
+          ]
+        },
+        {
+          "bundleId": "uiBundle",
+          "path": "tex/过关页面/成功进度/剪影/spriteFrame",
+          "score": 3,
+          "severity": "medium",
+          "issues": [
+            {
+              "segment": "过关页面",
+              "type": "non-ascii",
+              "score": 1,
+              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
+            },
+            {
+              "segment": "成功进度",
+              "type": "non-ascii",
+              "score": 1,
+              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
+            },
+            {
+              "segment": "剪影",
+              "type": "non-ascii",
+              "score": 1,
+              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
+            }
+          ]
+        },
+        {
+          "bundleId": "uiBundle",
+          "path": "tex/过关页面/成功进度/条1/spriteFrame",
+          "score": 3,
+          "severity": "medium",
+          "issues": [
+            {
+              "segment": "过关页面",
+              "type": "non-ascii",
+              "score": 1,
+              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
+            },
+            {
+              "segment": "成功进度",
+              "type": "non-ascii",
+              "score": 1,
+              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
+            },
+            {
+              "segment": "条1",
+              "type": "non-ascii",
+              "score": 1,
+              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
+            }
+          ]
         }
       ]
     },
     {
-      "bundleId": "HomeBundle",
-      "configPath": "subpackages/HomeBundle/config.home-bundle.json",
-      "assetCount": 231,
+      "bundleId": "DuckBundle",
+      "configPath": "subpackages/DuckBundle/config.duck-bundle.json",
+      "assetCount": 1227,
       "candidateCount": 192,
-      "highSeverityCount": 0,
-      "mediumSeverityCount": 180,
-      "lowSeverityCount": 12,
+      "highSeverityCount": 93,
+      "mediumSeverityCount": 63,
+      "lowSeverityCount": 36,
       "noisySegments": [
         {
-          "segment": "b1",
+          "segment": "难度飙升",
           "count": 18
         },
         {
-          "segment": "b2",
+          "segment": "a",
           "count": 18
         },
         {
-          "segment": "l1",
+          "segment": "b",
           "count": 18
         },
         {
-          "segment": "m1",
+          "segment": "c",
           "count": 18
         },
         {
-          "segment": "f1",
-          "count": 16
+          "segment": "d",
+          "count": 18
         },
         {
-          "segment": "f2",
-          "count": 16
+          "segment": "e",
+          "count": 18
         },
         {
-          "segment": "f3",
-          "count": 16
+          "segment": "%2",
+          "count": 3
         },
         {
-          "segment": "f4",
-          "count": 16
+          "segment": "背景",
+          "count": 3
         },
         {
-          "segment": "f5",
-          "count": 16
+          "segment": "飙升",
+          "count": 3
         },
         {
-          "segment": "m2",
-          "count": 16
+          "segment": "飙升2",
+          "count": 3
         }
       ],
       "sampleCandidates": [
         {
-          "bundleId": "HomeBundle",
-          "path": "tex/BgParticle/p1",
-          "score": 3,
-          "severity": "medium",
+          "bundleId": "DuckBundle",
+          "path": "tex/%2",
+          "score": 4,
+          "severity": "high",
           "issues": [
             {
-              "segment": "p1",
-              "type": "short-indexed-token",
-              "score": 3,
-              "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
+              "segment": "%2",
+              "type": "encoded-symbol",
+              "score": 4,
+              "reason": "片段包含 `%` 编码或符号残留，通常是高优先级清理对象"
             }
           ]
         },
         {
-          "bundleId": "HomeBundle",
-          "path": "tex/BgParticle/p1/spriteFrame",
-          "score": 3,
-          "severity": "medium",
+          "bundleId": "DuckBundle",
+          "path": "tex/%2/spriteFrame",
+          "score": 4,
+          "severity": "high",
           "issues": [
             {
-              "segment": "p1",
-              "type": "short-indexed-token",
-              "score": 3,
-              "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
+              "segment": "%2",
+              "type": "encoded-symbol",
+              "score": 4,
+              "reason": "片段包含 `%` 编码或符号残留，通常是高优先级清理对象"
             }
           ]
         },
         {
-          "bundleId": "HomeBundle",
-          "path": "tex/BgParticle/p1/texture",
-          "score": 3,
-          "severity": "medium",
+          "bundleId": "DuckBundle",
+          "path": "tex/%2/texture",
+          "score": 4,
+          "severity": "high",
           "issues": [
             {
-              "segment": "p1",
-              "type": "short-indexed-token",
-              "score": 3,
-              "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
+              "segment": "%2",
+              "type": "encoded-symbol",
+              "score": 4,
+              "reason": "片段包含 `%` 编码或符号残留，通常是高优先级清理对象"
             }
           ]
         },
         {
-          "bundleId": "HomeBundle",
-          "path": "tex/BgParticle/p2",
-          "score": 3,
-          "severity": "medium",
+          "bundleId": "DuckBundle",
+          "path": "tex/fragment/a/1",
+          "score": 4,
+          "severity": "high",
           "issues": [
             {
-              "segment": "p2",
-              "type": "short-indexed-token",
-              "score": 3,
-              "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
+              "segment": "a",
+              "type": "short-opaque-token",
+              "score": 4,
+              "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
             }
           ]
         },
         {
-          "bundleId": "HomeBundle",
-          "path": "tex/BgParticle/p2/spriteFrame",
-          "score": 3,
-          "severity": "medium",
+          "bundleId": "DuckBundle",
+          "path": "tex/fragment/a/1/spriteFrame",
+          "score": 4,
+          "severity": "high",
           "issues": [
             {
-              "segment": "p2",
-              "type": "short-indexed-token",
-              "score": 3,
-              "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
+              "segment": "a",
+              "type": "short-opaque-token",
+              "score": 4,
+              "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
             }
           ]
         },
         {
-          "bundleId": "HomeBundle",
-          "path": "tex/BgParticle/p2/texture",
-          "score": 3,
-          "severity": "medium",
+          "bundleId": "DuckBundle",
+          "path": "tex/fragment/a/1/texture",
+          "score": 4,
+          "severity": "high",
           "issues": [
             {
-              "segment": "p2",
-              "type": "short-indexed-token",
-              "score": 3,
-              "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
+              "segment": "a",
+              "type": "short-opaque-token",
+              "score": 4,
+              "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
             }
           ]
         },
         {
-          "bundleId": "HomeBundle",
-          "path": "tex/BgParticle/p3",
-          "score": 3,
-          "severity": "medium",
+          "bundleId": "DuckBundle",
+          "path": "tex/fragment/a/2",
+          "score": 4,
+          "severity": "high",
           "issues": [
             {
-              "segment": "p3",
-              "type": "short-indexed-token",
-              "score": 3,
-              "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
+              "segment": "a",
+              "type": "short-opaque-token",
+              "score": 4,
+              "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
             }
           ]
         },
         {
-          "bundleId": "HomeBundle",
-          "path": "tex/BgParticle/p3/spriteFrame",
-          "score": 3,
-          "severity": "medium",
+          "bundleId": "DuckBundle",
+          "path": "tex/fragment/a/2/spriteFrame",
+          "score": 4,
+          "severity": "high",
           "issues": [
             {
-              "segment": "p3",
-              "type": "short-indexed-token",
-              "score": 3,
-              "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
+              "segment": "a",
+              "type": "short-opaque-token",
+              "score": 4,
+              "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
             }
           ]
         },
         {
-          "bundleId": "HomeBundle",
-          "path": "tex/BgParticle/p3/texture",
-          "score": 3,
-          "severity": "medium",
+          "bundleId": "DuckBundle",
+          "path": "tex/fragment/a/2/texture",
+          "score": 4,
+          "severity": "high",
           "issues": [
             {
-              "segment": "p3",
-              "type": "short-indexed-token",
-              "score": 3,
-              "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
+              "segment": "a",
+              "type": "short-opaque-token",
+              "score": 4,
+              "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
             }
           ]
         },
         {
-          "bundleId": "HomeBundle",
-          "path": "tex/BgParticle/p4",
-          "score": 3,
-          "severity": "medium",
+          "bundleId": "DuckBundle",
+          "path": "tex/fragment/a/3",
+          "score": 4,
+          "severity": "high",
           "issues": [
             {
-              "segment": "p4",
-              "type": "short-indexed-token",
-              "score": 3,
-              "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
+              "segment": "a",
+              "type": "short-opaque-token",
+              "score": 4,
+              "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
             }
           ]
         },
         {
-          "bundleId": "HomeBundle",
-          "path": "tex/BgParticle/p4/spriteFrame",
-          "score": 3,
-          "severity": "medium",
+          "bundleId": "DuckBundle",
+          "path": "tex/fragment/a/3/spriteFrame",
+          "score": 4,
+          "severity": "high",
           "issues": [
             {
-              "segment": "p4",
-              "type": "short-indexed-token",
-              "score": 3,
-              "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
+              "segment": "a",
+              "type": "short-opaque-token",
+              "score": 4,
+              "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
             }
           ]
         },
         {
-          "bundleId": "HomeBundle",
-          "path": "tex/BgParticle/p4/texture",
-          "score": 3,
-          "severity": "medium",
+          "bundleId": "DuckBundle",
+          "path": "tex/fragment/a/3/texture",
+          "score": 4,
+          "severity": "high",
           "issues": [
             {
-              "segment": "p4",
-              "type": "short-indexed-token",
-              "score": 3,
-              "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
+              "segment": "a",
+              "type": "short-opaque-token",
+              "score": 4,
+              "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
             }
           ]
         }
@@ -3084,6 +2317,157 @@
             },
             {
               "segment": "移除槽位中的水果",
+              "type": "non-ascii",
+              "score": 1,
+              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bundleId": "HomeBundle",
+      "configPath": "subpackages/HomeBundle/config.home-bundle.json",
+      "assetCount": 231,
+      "candidateCount": 9,
+      "highSeverityCount": 0,
+      "mediumSeverityCount": 0,
+      "lowSeverityCount": 9,
+      "noisySegments": [
+        {
+          "segment": "光",
+          "count": 3
+        },
+        {
+          "segment": "获得100只鹅解锁",
+          "count": 3
+        },
+        {
+          "segment": "获得100只鸭子解锁",
+          "count": 3
+        }
+      ],
+      "sampleCandidates": [
+        {
+          "bundleId": "HomeBundle",
+          "path": "tex/光",
+          "score": 1,
+          "severity": "low",
+          "issues": [
+            {
+              "segment": "光",
+              "type": "non-ascii",
+              "score": 1,
+              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
+            }
+          ]
+        },
+        {
+          "bundleId": "HomeBundle",
+          "path": "tex/光/spriteFrame",
+          "score": 1,
+          "severity": "low",
+          "issues": [
+            {
+              "segment": "光",
+              "type": "non-ascii",
+              "score": 1,
+              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
+            }
+          ]
+        },
+        {
+          "bundleId": "HomeBundle",
+          "path": "tex/光/texture",
+          "score": 1,
+          "severity": "low",
+          "issues": [
+            {
+              "segment": "光",
+              "type": "non-ascii",
+              "score": 1,
+              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
+            }
+          ]
+        },
+        {
+          "bundleId": "HomeBundle",
+          "path": "tex/获得100只鹅解锁",
+          "score": 1,
+          "severity": "low",
+          "issues": [
+            {
+              "segment": "获得100只鹅解锁",
+              "type": "non-ascii",
+              "score": 1,
+              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
+            }
+          ]
+        },
+        {
+          "bundleId": "HomeBundle",
+          "path": "tex/获得100只鹅解锁/spriteFrame",
+          "score": 1,
+          "severity": "low",
+          "issues": [
+            {
+              "segment": "获得100只鹅解锁",
+              "type": "non-ascii",
+              "score": 1,
+              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
+            }
+          ]
+        },
+        {
+          "bundleId": "HomeBundle",
+          "path": "tex/获得100只鹅解锁/texture",
+          "score": 1,
+          "severity": "low",
+          "issues": [
+            {
+              "segment": "获得100只鹅解锁",
+              "type": "non-ascii",
+              "score": 1,
+              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
+            }
+          ]
+        },
+        {
+          "bundleId": "HomeBundle",
+          "path": "tex/获得100只鸭子解锁",
+          "score": 1,
+          "severity": "low",
+          "issues": [
+            {
+              "segment": "获得100只鸭子解锁",
+              "type": "non-ascii",
+              "score": 1,
+              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
+            }
+          ]
+        },
+        {
+          "bundleId": "HomeBundle",
+          "path": "tex/获得100只鸭子解锁/spriteFrame",
+          "score": 1,
+          "severity": "low",
+          "issues": [
+            {
+              "segment": "获得100只鸭子解锁",
+              "type": "non-ascii",
+              "score": 1,
+              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
+            }
+          ]
+        },
+        {
+          "bundleId": "HomeBundle",
+          "path": "tex/获得100只鸭子解锁/texture",
+          "score": 1,
+          "severity": "low",
+          "issues": [
+            {
+              "segment": "获得100只鸭子解锁",
               "type": "non-ascii",
               "score": 1,
               "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"

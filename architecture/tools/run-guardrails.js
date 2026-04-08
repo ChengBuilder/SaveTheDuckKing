@@ -68,10 +68,18 @@ function buildGuardrailSteps(layout) {
     createSyntaxCheckStep(layout, 'Bundle 资产目录工具语法检查', 'architecture/tools/generate-bundle-asset-catalog.js'),
     createSyntaxCheckStep(layout, '素材可读性审计工具语法检查', 'architecture/tools/generate-asset-readability-audit.js'),
     createSyntaxCheckStep(layout, '音频使用审计工具语法检查', 'architecture/tools/generate-audio-usage-audit.js'),
+    createSyntaxCheckStep(layout, 'DuckBundle 木板语义化工具语法检查', 'architecture/tools/semanticize-duckbundle-wood-assets.js'),
+    createSyntaxCheckStep(layout, 'DuckBundle 背景语义化工具语法检查', 'architecture/tools/semanticize-duckbundle-background-assets.js'),
+    createSyntaxCheckStep(layout, 'DuckBundle 季节背景语义化工具语法检查', 'architecture/tools/semanticize-duckbundle-seasonal-background-assets.js'),
+    createSyntaxCheckStep(layout, 'HomeBundle 素材语义化工具语法检查', 'architecture/tools/semanticize-homebundle-assets.js'),
+    createSyntaxCheckStep(layout, 'uiBundle 图鉴皮肤页语义化工具语法检查', 'architecture/tools/semanticize-uibundle-book-skin-assets.js'),
+    createSyntaxCheckStep(layout, 'uiBundle 设置模块语义化工具语法检查', 'architecture/tools/semanticize-uibundle-settings-assets.js'),
+    createSyntaxCheckStep(layout, '旧路径兼容校验工具语法检查', 'architecture/tools/check-legacy-runtime-compat.js'),
     createSyntaxCheckStep(layout, '迭代报告生成器语法检查', 'architecture/tools/generate-iteration-report.js'),
     createSyntaxCheckStep(layout, '迭代流水线语法检查', 'architecture/tools/run-iteration-cycle.js'),
     createScriptStep(layout, '架构风格检查', 'architecture/tools/check-architecture-style.js'),
     createScriptStep(layout, '素材分层检查', 'architecture/tools/check-asset-code-separation.js'),
+    createScriptStep(layout, '旧路径运行时兼容检查', 'architecture/tools/check-legacy-runtime-compat.js'),
     createScriptStep(layout, '运行安全校验', 'architecture/tools/verify-runtime-safety.js')
   ];
 }

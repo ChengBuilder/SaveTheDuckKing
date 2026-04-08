@@ -3,7 +3,7 @@
 > 本文件由 `architecture/tools/generate-bundle-asset-catalog.js` 生成。
 
 ## 总览
-- 生成时间：2026-04-08T07:56:14.794Z
+- 生成时间：2026-04-08T09:53:36.770Z
 - Bundle 总数：10
 - Root bundle 数：2
 - Subpackage bundle 数：8
@@ -11,7 +11,7 @@
 - 场景路径数：6
 - 编译产物文件数：import 1299 / native 660
 - UUID 风格编译文件数：1959
-- 存在低可读命名候选的 bundle 数：5
+- 存在低可读命名候选的 bundle 数：4
 
 ## Bundle 一览
 | Bundle ID | 治理标签 | 类型 | 依赖 | 资产数 | 场景数 | 主要路径前缀 |
@@ -107,35 +107,35 @@
 - 编译产物文件：import 708 / native 335
 - UUID 风格编译文件：1043
 - 命名噪声高频片段：
-  - `a`：147
-  - `b`：147
-  - `c`：147
-  - `d`：147
-  - `e`：147
-  - `f`：129
   - `bg`：33
+  - `a`：18
+  - `b`：18
+  - `c`：18
+  - `d`：18
+  - `e`：18
   - `%2`：3
-  - `a1`：3
-  - `a10`：3
-  - `a11`：3
-  - `a12`：3
+  - `bg1`：3
+  - `bg2`：3
+  - `bg3`：3
+  - `bg4`：3
+  - `bg5`：3
 - 命名噪声样例路径：
   - `tex/nail/sfa`
-  - `tex/wood/e/e26`
-  - `tex/wood/b/b34`
-  - `tex/wood/d/d16`
-  - `tex/wood/a/a5`
-  - `tex/wood/e/e31`
-  - `tex/wood/e/e18`
-  - `tex/wood/f/f15`
-  - `tex/wood/a/a2`
-  - `tex/wood/e/e25`
-  - `tex/wood/d/d29`
-  - `tex/wood/c/c37`
-  - `tex/wood/c/c32`
-  - `tex/wood/f/f20`
-  - `tex/wood/b/b30`
-  - `tex/wood/e/e17`
+  - `tex/fragment/a/5`
+  - `tex/fragment/c/1`
+  - `tex/fragment/d/1`
+  - `tex/fragment/c/2`
+  - `tex/fragment/e/2`
+  - `tex/nail/zin`
+  - `tex/nail/tln`
+  - `tex/nail/sla`
+  - `tex/fragment/d/3`
+  - `tex/fragment/d/2`
+  - `tex/fragment/d/4`
+  - `tex/fragment/e/5`
+  - `tex/fragment/d/6`
+  - `tex/fragment/a/2`
+  - `tex/fragment/a/3`
 - 主要路径前缀：
   - `tex`：1173
   - `prefab`：54
@@ -154,20 +154,20 @@
   - `tex/%2`：3
 - 样例路径：
   - `tex/nail/sfa`
-  - `tex/wood/e/e26`
-  - `tex/wood/b/b34`
-  - `tex/wood/d/d16`
-  - `tex/wood/a/a5`
-  - `tex/wood/e/e31`
+  - `tex/wood/goldWood/goldWood26`
+  - `tex/wood/lightWood/lightWood34`
+  - `tex/wood/brownWood/brownWood16`
+  - `tex/wood/grayWood/grayWood5`
+  - `tex/wood/goldWood/goldWood31`
   - `tex/难度飙升/上层阴影`
-  - `tex/wood/e/e18`
-  - `tex/wood/f/f15`
-  - `tex/wood/a/a2`
-  - `tex/wood/e/e25`
-  - `tex/wood/d/d29`
-  - `tex/wood/c/c37`
-  - `tex/wood/c/c32`
-  - `tex/wood/f/f20`
+  - `tex/wood/goldWood/goldWood18`
+  - `tex/wood/yellowWood/yellowWood15`
+  - `tex/wood/grayWood/grayWood2`
+  - `tex/wood/goldWood/goldWood25`
+  - `tex/wood/brownWood/brownWood29`
+  - `tex/wood/redWood/redWood37`
+  - `tex/wood/redWood/redWood32`
+  - `tex/wood/yellowWood/yellowWood20`
   - `tex/nail/fenn`
 - 场景路径：
   - 无
@@ -235,68 +235,42 @@
 - 编译产物文件：import 149 / native 74
 - UUID 风格编译文件：223
 - 命名噪声高频片段：
-  - `b1`：18
-  - `b2`：18
-  - `l1`：18
-  - `m1`：18
-  - `f1`：16
-  - `f2`：16
-  - `f3`：16
-  - `f4`：16
-  - `f5`：16
-  - `m2`：16
-  - `p1`：3
-  - `p2`：3
+  - 无
 - 命名噪声样例路径：
-  - `tex/BgThings2/front/f5`
-  - `tex/BgThings3/front/f3`
-  - `tex/BgThings1/middle/m2`
-  - `tex/BgThings1/front/f4`
-  - `tex/BgThings3/front/f1`
-  - `tex/BgThings3/middle/m1`
-  - `tex/BgThings4/front/f5`
-  - `tex/BgThings5/front/f1`
-  - `tex/BgThings2/back/b2`
-  - `tex/BgThings0/middle/m1`
-  - `tex/BgThings0/last/l1`
-  - `tex/BgThings3/back/b1`
-  - `tex/BgThings5/middle/m2`
-  - `tex/BgThings2/front/f4`
-  - `tex/BgThings5/front/f4`
-  - `tex/BgThings5/last/l1`
+  - 无
 - 主要路径前缀：
   - `tex`：228
   - `prefab`：3
 - 主要语义路径：
-  - `tex/BgThings1`：36
-  - `tex/BgThings2`：36
-  - `tex/BgThings3`：36
-  - `tex/BgThings4`：36
-  - `tex/BgThings5`：36
-  - `tex/BgThings0`：27
-  - `tex/BgParticle`：12
+  - `tex/homeTheme1`：36
+  - `tex/homeTheme2`：36
+  - `tex/homeTheme3`：36
+  - `tex/homeTheme4`：36
+  - `tex/homeTheme5`：36
+  - `tex/homeTheme0`：27
+  - `tex/backgroundParticles`：12
   - `tex/光`：3
   - `tex/获得100只鹅解锁`：3
   - `tex/获得100只鸭子解锁`：3
   - `prefab/bgThing`：1
   - `prefab/gooseTip`：1
 - 样例路径：
-  - `tex/BgThings2/front/f5`
+  - `tex/homeTheme2/foreground/foregroundLayer5`
   - `tex/获得100只鸭子解锁`
-  - `tex/BgThings3/front/f3`
-  - `tex/BgThings2/bottom2`
-  - `tex/BgThings1/middle/m2`
-  - `tex/BgThings1/front/f4`
-  - `tex/BgThings3/front/f1`
-  - `tex/BgThings3/middle/m1`
-  - `tex/BgThings4/front/f5`
-  - `tex/BgThings5/front/f1`
-  - `tex/BgThings2/back/b2`
-  - `tex/BgThings0/middle/m1`
-  - `tex/BgThings0/last/l1`
-  - `tex/BgThings3/back/b1`
+  - `tex/homeTheme3/foreground/foregroundLayer3`
+  - `tex/homeTheme2/bottomOverlay`
+  - `tex/homeTheme1/midground/midgroundLayer2`
+  - `tex/homeTheme1/foreground/foregroundLayer4`
+  - `tex/homeTheme3/foreground/foregroundLayer1`
+  - `tex/homeTheme3/midground/midgroundLayer1`
+  - `tex/homeTheme4/foreground/foregroundLayer5`
+  - `tex/homeTheme5/foreground/foregroundLayer1`
+  - `tex/homeTheme2/background/backgroundLayer2`
+  - `tex/homeTheme0/midground/midgroundLayer1`
+  - `tex/homeTheme0/distant/distantLayer1`
+  - `tex/homeTheme3/background/backgroundLayer1`
   - `tex/获得100只鹅解锁`
-  - `tex/BgThings5/middle/m2`
+  - `tex/homeTheme5/midground/midgroundLayer2`
 - 场景路径：
   - 无
 
@@ -556,34 +530,34 @@
 - UUID 风格编译文件：113
 - 命名噪声高频片段：
   - `new`：3
-  - `%`：2
+  - `%`：1
   - `NO`：1
-  - `p1`：1
-  - `p10`：1
-  - `p2`：1
-  - `p3`：1
-  - `p4`：1
-  - `p5`：1
-  - `p6`：1
-  - `p7`：1
-  - `p8`：1
+  - `y1`：1
+  - `y10`：1
+  - `y100`：1
+  - `y11`：1
+  - `y12`：1
+  - `y13`：1
+  - `y14`：1
+  - `y15`：1
+  - `y16`：1
 - 命名噪声样例路径：
   - `tex/book/duck/y30/spriteFrame`
   - `tex/book/duck/y51/spriteFrame`
   - `tex/book/duck/y75/spriteFrame`
-  - `tex/book/鸽鸽图鉴/皮肤图鉴/p8/spriteFrame`
   - `tex/book/duck/y17/spriteFrame`
   - `tex/book/duck/y10/spriteFrame`
   - `tex/book/duck/y34/spriteFrame`
   - `tex/book/duck/y38/spriteFrame`
   - `tex/book/duck/y40/spriteFrame`
-  - `tex/book/鸽鸽图鉴/皮肤图鉴/p10/spriteFrame`
   - `tex/book/duck/y77/spriteFrame`
   - `tex/book/duck/y11/spriteFrame`
   - `tex/book/duck/y12/spriteFrame`
   - `tex/book/duck/y39/spriteFrame`
   - `tex/book/duck/y55/spriteFrame`
   - `tex/book/duck/y21/spriteFrame`
+  - `tex/book/duck/y76/spriteFrame`
+  - `tex/book/duck/y5/spriteFrame`
 - 主要路径前缀：
   - `tex`：372
   - `prefab`：28
@@ -592,19 +566,19 @@
   - `tex/主页素材`：48
   - `tex/过关页面`：27
   - `tex/道具`：21
-  - `tex/设置`：17
+  - `tex/settings`：17
   - `tex/失败页面`：15
   - `tex/复活`：14
   - `tex/更多玩法`：9
   - `tex/投诉页面`：8
   - `tex/体力获取`：7
   - `tex/喊人页面`：6
-  - `tex/设置二级`：6
+  - `tex/自动ui`：6
 - 样例路径：
   - `tex/过关页面/还差/spriteFrame`
   - `tex/book/duck/y30/spriteFrame`
   - `tex/过关页面/成功进度/只鸭解锁百鸭朝雀/spriteFrame`
-  - `tex/设置/放弃挑战/spriteFrame`
+  - `tex/settings/giveUpChallengeText/spriteFrame`
   - `tex/更多玩法/图标算数/spriteFrame`
   - `tex/book/tex/全部/spriteFrame`
   - `tex/主页素材/排行榜/名次底2/spriteFrame`
@@ -612,8 +586,8 @@
   - `tex/book/duck/y51/spriteFrame`
   - `tex/book/duck/y75/spriteFrame`
   - `tex/book/分享鸭/张飞鸭/spriteFrame`
-  - `tex/book/鸽鸽图鉴/皮肤图鉴/p8/spriteFrame`
-  - `tex/设置/音效图标/spriteFrame`
+  - `tex/book/pigeonGallery/skinCollection/skinPage8/spriteFrame`
+  - `tex/settings/soundEffectIcon/spriteFrame`
   - `prefab/ShareUI`
   - `tex/book/tex/100/spriteFrame`
   - `tex/book/duck/y17/spriteFrame`

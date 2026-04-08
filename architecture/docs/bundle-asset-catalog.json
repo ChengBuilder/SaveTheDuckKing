@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-08T07:56:14.794Z",
+  "generatedAt": "2026-04-08T09:53:36.770Z",
   "summary": {
     "totalBundles": 10,
     "rootBundles": 2,
@@ -9,7 +9,7 @@
     "totalImportFiles": 1299,
     "totalNativeFiles": 660,
     "totalUuidLikeCompiledFiles": 1959,
-    "bundlesWithNamingNoise": 5
+    "bundlesWithNamingNoise": 4
   },
   "bundles": [
     {
@@ -174,87 +174,87 @@
       ],
       "samplePaths": [
         "tex/nail/sfa",
-        "tex/wood/e/e26",
-        "tex/wood/b/b34",
-        "tex/wood/d/d16",
-        "tex/wood/a/a5",
-        "tex/wood/e/e31",
+        "tex/wood/goldWood/goldWood26",
+        "tex/wood/lightWood/lightWood34",
+        "tex/wood/brownWood/brownWood16",
+        "tex/wood/grayWood/grayWood5",
+        "tex/wood/goldWood/goldWood31",
         "tex/难度飙升/上层阴影",
-        "tex/wood/e/e18",
-        "tex/wood/f/f15",
-        "tex/wood/a/a2",
-        "tex/wood/e/e25",
-        "tex/wood/d/d29",
-        "tex/wood/c/c37",
-        "tex/wood/c/c32",
-        "tex/wood/f/f20",
+        "tex/wood/goldWood/goldWood18",
+        "tex/wood/yellowWood/yellowWood15",
+        "tex/wood/grayWood/grayWood2",
+        "tex/wood/goldWood/goldWood25",
+        "tex/wood/brownWood/brownWood29",
+        "tex/wood/redWood/redWood37",
+        "tex/wood/redWood/redWood32",
+        "tex/wood/yellowWood/yellowWood20",
         "tex/nail/fenn"
       ],
       "namingNoisePaths": [
         "tex/nail/sfa",
-        "tex/wood/e/e26",
-        "tex/wood/b/b34",
-        "tex/wood/d/d16",
-        "tex/wood/a/a5",
-        "tex/wood/e/e31",
-        "tex/wood/e/e18",
-        "tex/wood/f/f15",
-        "tex/wood/a/a2",
-        "tex/wood/e/e25",
-        "tex/wood/d/d29",
-        "tex/wood/c/c37",
-        "tex/wood/c/c32",
-        "tex/wood/f/f20",
-        "tex/wood/b/b30",
-        "tex/wood/e/e17"
+        "tex/fragment/a/5",
+        "tex/fragment/c/1",
+        "tex/fragment/d/1",
+        "tex/fragment/c/2",
+        "tex/fragment/e/2",
+        "tex/nail/zin",
+        "tex/nail/tln",
+        "tex/nail/sla",
+        "tex/fragment/d/3",
+        "tex/fragment/d/2",
+        "tex/fragment/d/4",
+        "tex/fragment/e/5",
+        "tex/fragment/d/6",
+        "tex/fragment/a/2",
+        "tex/fragment/a/3"
       ],
       "namingNoiseTokens": [
         {
+          "name": "bg",
+          "count": 33
+        },
+        {
           "name": "a",
-          "count": 147
+          "count": 18
         },
         {
           "name": "b",
-          "count": 147
+          "count": 18
         },
         {
           "name": "c",
-          "count": 147
+          "count": 18
         },
         {
           "name": "d",
-          "count": 147
+          "count": 18
         },
         {
           "name": "e",
-          "count": 147
-        },
-        {
-          "name": "f",
-          "count": 129
-        },
-        {
-          "name": "bg",
-          "count": 33
+          "count": 18
         },
         {
           "name": "%2",
           "count": 3
         },
         {
-          "name": "a1",
+          "name": "bg1",
           "count": 3
         },
         {
-          "name": "a10",
+          "name": "bg2",
           "count": 3
         },
         {
-          "name": "a11",
+          "name": "bg3",
           "count": 3
         },
         {
-          "name": "a12",
+          "name": "bg4",
+          "count": 3
+        },
+        {
+          "name": "bg5",
           "count": 3
         }
       ],
@@ -384,31 +384,31 @@
       ],
       "topSemanticPaths": [
         {
-          "name": "tex/BgThings1",
+          "name": "tex/homeTheme1",
           "count": 36
         },
         {
-          "name": "tex/BgThings2",
+          "name": "tex/homeTheme2",
           "count": 36
         },
         {
-          "name": "tex/BgThings3",
+          "name": "tex/homeTheme3",
           "count": 36
         },
         {
-          "name": "tex/BgThings4",
+          "name": "tex/homeTheme4",
           "count": 36
         },
         {
-          "name": "tex/BgThings5",
+          "name": "tex/homeTheme5",
           "count": 36
         },
         {
-          "name": "tex/BgThings0",
+          "name": "tex/homeTheme0",
           "count": 27
         },
         {
-          "name": "tex/BgParticle",
+          "name": "tex/backgroundParticles",
           "count": 12
         },
         {
@@ -433,91 +433,25 @@
         }
       ],
       "samplePaths": [
-        "tex/BgThings2/front/f5",
+        "tex/homeTheme2/foreground/foregroundLayer5",
         "tex/获得100只鸭子解锁",
-        "tex/BgThings3/front/f3",
-        "tex/BgThings2/bottom2",
-        "tex/BgThings1/middle/m2",
-        "tex/BgThings1/front/f4",
-        "tex/BgThings3/front/f1",
-        "tex/BgThings3/middle/m1",
-        "tex/BgThings4/front/f5",
-        "tex/BgThings5/front/f1",
-        "tex/BgThings2/back/b2",
-        "tex/BgThings0/middle/m1",
-        "tex/BgThings0/last/l1",
-        "tex/BgThings3/back/b1",
+        "tex/homeTheme3/foreground/foregroundLayer3",
+        "tex/homeTheme2/bottomOverlay",
+        "tex/homeTheme1/midground/midgroundLayer2",
+        "tex/homeTheme1/foreground/foregroundLayer4",
+        "tex/homeTheme3/foreground/foregroundLayer1",
+        "tex/homeTheme3/midground/midgroundLayer1",
+        "tex/homeTheme4/foreground/foregroundLayer5",
+        "tex/homeTheme5/foreground/foregroundLayer1",
+        "tex/homeTheme2/background/backgroundLayer2",
+        "tex/homeTheme0/midground/midgroundLayer1",
+        "tex/homeTheme0/distant/distantLayer1",
+        "tex/homeTheme3/background/backgroundLayer1",
         "tex/获得100只鹅解锁",
-        "tex/BgThings5/middle/m2"
+        "tex/homeTheme5/midground/midgroundLayer2"
       ],
-      "namingNoisePaths": [
-        "tex/BgThings2/front/f5",
-        "tex/BgThings3/front/f3",
-        "tex/BgThings1/middle/m2",
-        "tex/BgThings1/front/f4",
-        "tex/BgThings3/front/f1",
-        "tex/BgThings3/middle/m1",
-        "tex/BgThings4/front/f5",
-        "tex/BgThings5/front/f1",
-        "tex/BgThings2/back/b2",
-        "tex/BgThings0/middle/m1",
-        "tex/BgThings0/last/l1",
-        "tex/BgThings3/back/b1",
-        "tex/BgThings5/middle/m2",
-        "tex/BgThings2/front/f4",
-        "tex/BgThings5/front/f4",
-        "tex/BgThings5/last/l1"
-      ],
-      "namingNoiseTokens": [
-        {
-          "name": "b1",
-          "count": 18
-        },
-        {
-          "name": "b2",
-          "count": 18
-        },
-        {
-          "name": "l1",
-          "count": 18
-        },
-        {
-          "name": "m1",
-          "count": 18
-        },
-        {
-          "name": "f1",
-          "count": 16
-        },
-        {
-          "name": "f2",
-          "count": 16
-        },
-        {
-          "name": "f3",
-          "count": 16
-        },
-        {
-          "name": "f4",
-          "count": 16
-        },
-        {
-          "name": "f5",
-          "count": 16
-        },
-        {
-          "name": "m2",
-          "count": 16
-        },
-        {
-          "name": "p1",
-          "count": 3
-        },
-        {
-          "name": "p2",
-          "count": 3
-        }
-      ],
+      "namingNoisePaths": [],
+      "namingNoiseTokens": [],
       "uuidCount": 239,
       "compiledImportFileCount": 149,
       "compiledNativeFileCount": 74,
@@ -1072,7 +1006,7 @@
           "count": 21
         },
         {
-          "name": "tex/设置",
+          "name": "tex/settings",
           "count": 17
         },
         {
@@ -1100,7 +1034,7 @@
           "count": 6
         },
         {
-          "name": "tex/设置二级",
+          "name": "tex/自动ui",
           "count": 6
         }
       ],
@@ -1108,7 +1042,7 @@
         "tex/过关页面/还差/spriteFrame",
         "tex/book/duck/y30/spriteFrame",
         "tex/过关页面/成功进度/只鸭解锁百鸭朝雀/spriteFrame",
-        "tex/设置/放弃挑战/spriteFrame",
+        "tex/settings/giveUpChallengeText/spriteFrame",
         "tex/更多玩法/图标算数/spriteFrame",
         "tex/book/tex/全部/spriteFrame",
         "tex/主页素材/排行榜/名次底2/spriteFrame",
@@ -1116,8 +1050,8 @@
         "tex/book/duck/y51/spriteFrame",
         "tex/book/duck/y75/spriteFrame",
         "tex/book/分享鸭/张飞鸭/spriteFrame",
-        "tex/book/鸽鸽图鉴/皮肤图鉴/p8/spriteFrame",
-        "tex/设置/音效图标/spriteFrame",
+        "tex/book/pigeonGallery/skinCollection/skinPage8/spriteFrame",
+        "tex/settings/soundEffectIcon/spriteFrame",
         "prefab/ShareUI",
         "tex/book/tex/100/spriteFrame",
         "tex/book/duck/y17/spriteFrame"
@@ -1126,19 +1060,19 @@
         "tex/book/duck/y30/spriteFrame",
         "tex/book/duck/y51/spriteFrame",
         "tex/book/duck/y75/spriteFrame",
-        "tex/book/鸽鸽图鉴/皮肤图鉴/p8/spriteFrame",
         "tex/book/duck/y17/spriteFrame",
         "tex/book/duck/y10/spriteFrame",
         "tex/book/duck/y34/spriteFrame",
         "tex/book/duck/y38/spriteFrame",
         "tex/book/duck/y40/spriteFrame",
-        "tex/book/鸽鸽图鉴/皮肤图鉴/p10/spriteFrame",
         "tex/book/duck/y77/spriteFrame",
         "tex/book/duck/y11/spriteFrame",
         "tex/book/duck/y12/spriteFrame",
         "tex/book/duck/y39/spriteFrame",
         "tex/book/duck/y55/spriteFrame",
-        "tex/book/duck/y21/spriteFrame"
+        "tex/book/duck/y21/spriteFrame",
+        "tex/book/duck/y76/spriteFrame",
+        "tex/book/duck/y5/spriteFrame"
       ],
       "namingNoiseTokens": [
         {
@@ -1147,46 +1081,46 @@
         },
         {
           "name": "%",
-          "count": 2
+          "count": 1
         },
         {
           "name": "NO",
           "count": 1
         },
         {
-          "name": "p1",
+          "name": "y1",
           "count": 1
         },
         {
-          "name": "p10",
+          "name": "y10",
           "count": 1
         },
         {
-          "name": "p2",
+          "name": "y100",
           "count": 1
         },
         {
-          "name": "p3",
+          "name": "y11",
           "count": 1
         },
         {
-          "name": "p4",
+          "name": "y12",
           "count": 1
         },
         {
-          "name": "p5",
+          "name": "y13",
           "count": 1
         },
         {
-          "name": "p6",
+          "name": "y14",
           "count": 1
         },
         {
-          "name": "p7",
+          "name": "y15",
           "count": 1
         },
         {
-          "name": "p8",
+          "name": "y16",
           "count": 1
         }
       ],

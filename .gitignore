@@ -4,3 +4,5 @@
 # macOS 系统文件
 .DS_Store
 
+# 装配报告（非运行时必需）
+ASSEMBLY_REPORT.json

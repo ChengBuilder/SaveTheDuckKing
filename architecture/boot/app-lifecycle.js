@@ -2,7 +2,8 @@
 
 const {
   applyFlatAssetPathPatch,
-  applyRootBundleRequestPatch
+  applyRootBundleRequestPatch,
+  applyHomeBundleLegacyPathPatch
 } = require('./asset-path-normalizer');
 const { logInfo, logWarn, logDebug } = require('./boot-logger');
 
@@ -80,6 +81,7 @@ function startApplicationLifecycle(requireFn, loadingView, bootConfig, lifecycle
           requireFn('./engine-adapter');
           applyRootBundleRequestPatch(engineModule);
           applyFlatAssetPathPatch(engineModule);
+          applyHomeBundleLegacyPathPatch(engineModule);
           return callApplicationMethodAsPromise(
             applicationInstance,
             'init',
