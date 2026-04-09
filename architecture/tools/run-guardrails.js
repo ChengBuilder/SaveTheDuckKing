@@ -66,6 +66,7 @@ function buildGuardrailSteps(layout) {
     createSyntaxCheckStep(layout, '应用生命周期语法检查', 'architecture/boot/app-lifecycle.js'),
     createSyntaxCheckStep(layout, '资源路径规范化语法检查', 'architecture/boot/asset-path-normalizer.js'),
     createSyntaxCheckStep(layout, '项目路径策略语法检查', 'architecture/tools/project-paths.js'),
+    createSyntaxCheckStep(layout, '语义化共享工具语法检查', 'architecture/tools/semanticize-shared.js'),
     createSyntaxCheckStep(layout, '关键 JSON 格式化工具语法检查', 'architecture/tools/format-project-json.js'),
     createSyntaxCheckStep(layout, 'Bundle 资产目录工具语法检查', 'architecture/tools/generate-bundle-asset-catalog.js'),
     createSyntaxCheckStep(layout, 'UUID 资产审计工具语法检查', 'architecture/tools/generate-uuid-asset-report.js'),

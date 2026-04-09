@@ -1,12 +1,17 @@
 'use strict';
 
-const fs = require('fs');
-const path = require('path');
 const {
   resolveProjectLayout,
   resolveProjectFilePath,
   formatProjectPathFromWorkspace
 } = require('./project-paths');
+const {
+  updateConfigPathEntries,
+  updateImportSpriteFrameNames,
+  collectLegacyConfigPaths,
+  collectLegacySpriteFrameFiles,
+  escapeRegExp
+} = require('./semanticize-shared');
 
 const CONFIG_TARGETS = [
   'subpackages/uiBundle/config.ui-bundle.json',
@@ -127,32 +132,13 @@ function semanticizeUiBundleSettingsAssets() {
  * @returns {{label: string, replacementCount: number}}
  */
 function updateUiBundleConfig(filePath, displayLabel) {
-  const originalContent = fs.readFileSync(filePath, 'utf8');
-  const parsedJson = JSON.parse(originalContent);
-  let replacementCount = 0;
-
-  for (const pathEntry of Object.values(parsedJson.paths || {})) {
-    if (!Array.isArray(pathEntry) || typeof pathEntry[0] !== 'string') {
-      continue;
-    }
-
-    const semanticPath = normalizeUiBundleSettingsPath(pathEntry[0]);
-    if (semanticPath !== pathEntry[0]) {
-      pathEntry[0] = semanticPath;
-      replacementCount += 1;
-    }
-  }
-
-  verifyNoLegacyUiBundleSettingsPaths(parsedJson, displayLabel);
-
-  const formattedContent = JSON.stringify(parsedJson, null, 2) + '\n';
-  if (formattedContent !== originalContent) {
-    fs.writeFileSync(filePath, formattedContent);
-  }
+  const result = updateConfigPathEntries(filePath, normalizeUiBundleSettingsPath, (parsedJson) => {
+    verifyNoLegacyUiBundleSettingsPaths(parsedJson, displayLabel);
+  });
 
   return {
     label: displayLabel,
-    replacementCount: replacementCount
+    replacementCount: result.replacementCount
   };
 }
 
@@ -163,46 +149,16 @@ function updateUiBundleConfig(filePath, displayLabel) {
  * @returns {{label: string, updatedFileCount: number, replacementCount: number}}
  */
 function updateUiBundleImportNames(directoryPath, displayLabel) {
-  const fileNames = fs.readdirSync(directoryPath).sort();
-  let updatedFileCount = 0;
-  let replacementCount = 0;
-
-  for (const fileName of fileNames) {
-    if (!fileName.endsWith('.json')) {
-      continue;
-    }
-
-    const filePath = path.join(directoryPath, fileName);
-    const originalContent = fs.readFileSync(filePath, 'utf8');
-
-    if (!originalContent.includes('"cc.SpriteFrame"')) {
-      continue;
-    }
-
-    let fileReplacementCount = 0;
-    const nextContent = originalContent.replace(LEGACY_NAME_PATTERN, (match, token) => {
-      const semanticName = SPRITE_FRAME_NAME_MAP[token];
-      if (!semanticName) {
-        return match;
-      }
-
-      fileReplacementCount += 1;
-      return '"name":"' + semanticName + '"';
-    });
-
-    if (fileReplacementCount > 0) {
-      fs.writeFileSync(filePath, nextContent);
-      updatedFileCount += 1;
-      replacementCount += fileReplacementCount;
-    }
-  }
+  const result = updateImportSpriteFrameNames(directoryPath, LEGACY_NAME_PATTERN, (token) => {
+    return SPRITE_FRAME_NAME_MAP[token];
+  });
 
   verifyNoLegacyUiBundleSettingsNames(directoryPath, displayLabel);
 
   return {
     label: displayLabel,
-    updatedFileCount: updatedFileCount,
-    replacementCount: replacementCount
+    updatedFileCount: result.updatedFileCount,
+    replacementCount: result.replacementCount
   };
 }
 
@@ -232,18 +188,9 @@ function normalizeUiBundleSettingsPath(assetPath) {
  * @param {string} displayLabel 展示标签
  */
 function verifyNoLegacyUiBundleSettingsPaths(parsedJson, displayLabel) {
-  const legacyPathList = [];
-
-  for (const pathEntry of Object.values(parsedJson.paths || {})) {
-    if (!Array.isArray(pathEntry) || typeof pathEntry[0] !== 'string') {
-      continue;
-    }
-
-    const pathValue = pathEntry[0];
-    if (LEGACY_PATH_PATTERN.test(pathValue)) {
-      legacyPathList.push(pathValue);
-    }
-  }
+  const legacyPathList = collectLegacyConfigPaths(parsedJson, (pathValue) => {
+    return LEGACY_PATH_PATTERN.test(pathValue);
+  });
 
   if (legacyPathList.length > 0) {
     throw new Error(
@@ -261,24 +208,7 @@ function verifyNoLegacyUiBundleSettingsPaths(parsedJson, displayLabel) {
  * @param {string} displayLabel 展示标签
  */
 function verifyNoLegacyUiBundleSettingsNames(directoryPath, displayLabel) {
-  const legacyFileList = [];
-
-  for (const fileName of fs.readdirSync(directoryPath)) {
-    if (!fileName.endsWith('.json')) {
-      continue;
-    }
-
-    const filePath = path.join(directoryPath, fileName);
-    const fileContent = fs.readFileSync(filePath, 'utf8');
-    if (!fileContent.includes('"cc.SpriteFrame"')) {
-      continue;
-    }
-
-    LEGACY_NAME_PATTERN.lastIndex = 0;
-    if (LEGACY_NAME_PATTERN.test(fileContent)) {
-      legacyFileList.push(fileName);
-    }
-  }
+  const legacyFileList = collectLegacySpriteFrameFiles(directoryPath, LEGACY_NAME_PATTERN);
 
   if (legacyFileList.length > 0) {
     throw new Error(
@@ -288,15 +218,6 @@ function verifyNoLegacyUiBundleSettingsNames(directoryPath, displayLabel) {
       legacyFileList.slice(0, 5).join(', ')
     );
   }
-}
-
-/**
- * 正则元字符转义。
- * @param {string} rawToken 原始文本
- * @returns {string}
- */
-function escapeRegExp(rawToken) {
-  return String(rawToken).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
 semanticizeUiBundleSettingsAssets();
