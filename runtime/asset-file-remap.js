@@ -5,16 +5,7 @@ const INSTALL_FLAG = "__subpackageAssetFileRemapInstalled";
 const WRAPPED_FLAG = "__subpackageAssetFileRemapWrapped";
 const PATCHED_TARGETS = new WeakSet();
 const PROXY_BY_TARGET = new WeakMap();
-const SUBPACKAGE_COMPATIBILITY_ALIAS_SPECS = Object.freeze([
-  { canonicalPrefix: "subpackages/DuckBundle/", legacyNames: ["duckbundle", "DuckBundlebundle"] },
-  { canonicalPrefix: "subpackages/Game2Bundle/", legacyNames: ["game2bundle", "Game2Bundlebundle"] },
-  { canonicalPrefix: "subpackages/HomeBundle/", legacyNames: ["homebundle", "HomeBundlebundle"] },
-  { canonicalPrefix: "subpackages/aniBundle/", legacyNames: ["anibundle", "aniBundlebundle"] },
-  { canonicalPrefix: "subpackages/audioBundle/", legacyNames: ["audiobundle", "audioBundlebundle"] },
-  { canonicalPrefix: "subpackages/main/", legacyNames: ["mainbundle"] },
-  { canonicalPrefix: "subpackages/resources/", legacyNames: ["resourcesbundle"] },
-  { canonicalPrefix: "subpackages/uiBundle/", legacyNames: ["uibundle", "uiBundlebundle"] },
-]);
+const SUBPACKAGE_COMPATIBILITY_ALIAS_SPECS = Object.freeze([]);
 const ROOT_COMPATIBILITY_ALIAS_SPECS = Object.freeze([
   { canonicalPrefix: "assets/internal/", legacyNames: ["internalbundle"] },
   { canonicalPrefix: "assets/start-scene/", legacyNames: ["start-scenebundle"] },

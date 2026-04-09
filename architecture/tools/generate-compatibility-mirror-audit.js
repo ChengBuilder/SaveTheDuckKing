@@ -181,7 +181,7 @@ function buildAuditReport(layout, mirrorAudits) {
       canPruneCompatibilityMirrorAssetDirectories: mirrorAudits.every(function everyMirrorAudit(mirrorAudit) {
         return mirrorAudit.importAudit.unresolvedCount === 0 && mirrorAudit.nativeAudit.unresolvedCount === 0;
       }),
-      note: '兼容镜像目录中的 import/native 文件若全部可重定向到 canonical 目录，则可保留 config.json 与 index.js，删除大体积资源镜像。'
+      note: '当前仅审计 root 兼容镜像目录。若 import/native 文件全部可重定向到 canonical 目录，可继续收缩到只保留 config/index 的薄壳。'
     },
     mirrors: mirrorAudits
   };
@@ -202,8 +202,8 @@ function buildAuditMarkdownLines(report) {
   lines.push('');
   lines.push('## 结论');
   lines.push('');
-  lines.push('- `assets/*bundle` / `assets/*Bundlebundle` 当前主要承担微信开发者工具兼容入口角色。');
-  lines.push('- 若 `import/native` 文件都能通过运行时重定向落到 canonical 目录，则这些镜像目录可以收缩为“只保留 config/index 的薄壳目录”。');
+  lines.push('- 当前仅保留 root 兼容镜像目录：`assets/internalbundle`、`assets/start-scenebundle`。');
+  lines.push('- 若 `import/native` 文件都能通过运行时重定向落到 canonical 目录，则镜像目录可以继续收缩为“只保留 config/index 的薄壳目录”。');
   lines.push('- 本次检查结果：`unresolved files = ' + report.summary.totalUnresolvedFiles + '`。');
   lines.push('');
   lines.push('## 汇总');

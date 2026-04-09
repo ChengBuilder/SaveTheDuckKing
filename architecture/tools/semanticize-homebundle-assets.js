@@ -14,15 +14,11 @@ const {
 } = require('./semanticize-shared');
 
 const CONFIG_TARGETS = [
-  'subpackages/HomeBundle/config.home-bundle.json',
-  'assets/homebundle/config.json',
-  'assets/HomeBundlebundle/config.json'
+  'subpackages/HomeBundle/config.home-bundle.json'
 ];
 
 const IMPORT_DIRECTORY_TARGETS = [
-  'subpackages/HomeBundle/import',
-  'assets/homebundle/import',
-  'assets/HomeBundlebundle/import'
+  'subpackages/HomeBundle/import'
 ];
 
 const PARTICLE_PATH_MAP = {

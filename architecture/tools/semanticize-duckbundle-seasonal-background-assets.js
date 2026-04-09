@@ -9,15 +9,11 @@ const {
 } = require('./project-paths');
 
 const CONFIG_TARGETS = [
-  'subpackages/DuckBundle/config.duck-bundle.json',
-  'assets/duckbundle/config.json',
-  'assets/DuckBundlebundle/config.json'
+  'subpackages/DuckBundle/config.duck-bundle.json'
 ];
 
 const IMPORT_DIRECTORY_TARGETS = [
-  'subpackages/DuckBundle/import',
-  'assets/duckbundle/import',
-  'assets/DuckBundlebundle/import'
+  'subpackages/DuckBundle/import'
 ];
 
 const GAME_JS_RELATIVE_PATH = 'game.js';

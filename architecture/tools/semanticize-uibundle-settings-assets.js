@@ -14,15 +14,11 @@ const {
 } = require('./semanticize-shared');
 
 const CONFIG_TARGETS = [
-  'subpackages/uiBundle/config.ui-bundle.json',
-  'assets/uibundle/config.json',
-  'assets/uiBundlebundle/config.json'
+  'subpackages/uiBundle/config.ui-bundle.json'
 ];
 
 const IMPORT_DIRECTORY_TARGETS = [
-  'subpackages/uiBundle/import',
-  'assets/uibundle/import',
-  'assets/uiBundlebundle/import'
+  'subpackages/uiBundle/import'
 ];
 
 const SETTINGS_PATH_MAP = {
