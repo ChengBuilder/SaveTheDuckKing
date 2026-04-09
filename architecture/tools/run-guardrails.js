@@ -66,6 +66,11 @@ function buildGuardrailSteps(layout) {
     createSyntaxCheckStep(layout, '应用生命周期语法检查', 'architecture/boot/app-lifecycle.js'),
     createSyntaxCheckStep(layout, '资源路径规范化语法检查', 'architecture/boot/asset-path-normalizer.js'),
     createSyntaxCheckStep(layout, '项目路径策略语法检查', 'architecture/tools/project-paths.js'),
+    createSyntaxCheckStep(layout, '微信代码包体检查语法检查', 'architecture/tools/check-wechat-code-package-limits.js'),
+    createSyntaxCheckStep(layout, 'MiniGameTest 共享工具语法检查', 'architecture/tools/wechat-minigame-test-common.js'),
+    createSyntaxCheckStep(layout, 'MiniGameTest doctor 语法检查', 'architecture/tools/run-minigame-test-doctor.js'),
+    createSyntaxCheckStep(layout, 'MiniGameTest runner 语法检查', 'architecture/tools/run-minigame-test.js'),
+    createSyntaxCheckStep(layout, '旧运行时路径护栏语法检查', 'architecture/tools/check-legacy-runtime-compat.js'),
     createSyntaxCheckStep(layout, '语义化共享工具语法检查', 'architecture/tools/semanticize-shared.js'),
     createSyntaxCheckStep(layout, '关键 JSON 格式化工具语法检查', 'architecture/tools/format-project-json.js'),
     createSyntaxCheckStep(layout, 'Bundle 资产目录工具语法检查', 'architecture/tools/generate-bundle-asset-catalog.js'),
@@ -80,6 +85,7 @@ function buildGuardrailSteps(layout) {
     createSyntaxCheckStep(layout, 'DuckBundle 季节背景语义化工具语法检查', 'architecture/tools/semanticize-duckbundle-seasonal-background-assets.js'),
     createSyntaxCheckStep(layout, 'HomeBundle 素材语义化工具语法检查', 'architecture/tools/semanticize-homebundle-assets.js'),
     createSyntaxCheckStep(layout, 'uiBundle 图鉴皮肤页语义化工具语法检查', 'architecture/tools/semanticize-uibundle-book-skin-assets.js'),
+    createSyntaxCheckStep(layout, 'uiBundle 图鉴展示资源语义化工具语法检查', 'architecture/tools/semanticize-uibundle-book-display-assets.js'),
     createSyntaxCheckStep(layout, 'uiBundle 设置模块语义化工具语法检查', 'architecture/tools/semanticize-uibundle-settings-assets.js'),
     createSyntaxCheckStep(layout, 'URL 编码路径校验工具语法检查', 'architecture/tools/check-no-url-encoded-paths.js'),
     createSyntaxCheckStep(layout, '迭代报告生成器语法检查', 'architecture/tools/generate-iteration-report.js'),
@@ -88,6 +94,8 @@ function buildGuardrailSteps(layout) {
     createScriptStep(layout, '素材分层检查', 'architecture/tools/check-asset-code-separation.js'),
     createScriptStep(layout, 'URL 编码路径校验', 'architecture/tools/check-no-url-encoded-paths.js'),
     createScriptStep(layout, '微信小游戏结构校验', 'architecture/tools/verify-wechat-minigame-structure.js'),
+    createScriptStep(layout, '微信代码包体检查', 'architecture/tools/check-wechat-code-package-limits.js'),
+    createScriptStep(layout, '旧运行时路径护栏', 'architecture/tools/check-legacy-runtime-compat.js'),
     createScriptStep(layout, '运行安全校验', 'architecture/tools/verify-runtime-safety.js')
   ];
 }

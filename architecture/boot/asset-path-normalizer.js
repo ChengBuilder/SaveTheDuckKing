@@ -43,7 +43,7 @@ function applyFlatAssetPathPatch(engineModule) {
 }
 
 /**
- * 为 root bundle 请求追加名称归一化兼容。
+ * 为 root bundle 请求追加名称归一化。
  * 微信开发者工具在部分链路下会请求 `internalbundle` / `start-scenebundle`，
  * 这里统一归一化到当前目录命名，避免依赖历史目录结构。
  * @param {Record<string, any>} engineModule 引擎模块
@@ -55,7 +55,7 @@ function applyRootBundleRequestPatch(engineModule) {
   const originalBundleDownloader = bundleDownloaders && bundleDownloaders.bundle;
 
   if (!downloader || !bundleDownloaders || typeof originalBundleDownloader !== 'function') {
-    logWarn('root bundle 请求兼容补丁未生效，未找到 bundle 下载器。');
+    logWarn('root bundle 请求归一化补丁未生效，未找到 bundle 下载器。');
     return;
   }
 

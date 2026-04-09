@@ -6,6 +6,7 @@ const childProcess = require("child_process");
 
 const PROJECT_ROOT = process.cwd();
 const DEFAULT_PORT = 14101;
+const DEFAULT_AUTO_PORT = 14102;
 const DEFAULT_CLI_CANDIDATES = [
   process.env.WECHAT_DEVTOOLS_CLI,
   "/Applications/wechatwebdevtools.app/Contents/MacOS/cli",
@@ -17,7 +18,10 @@ function main() {
   const shouldFix = args.includes("--fix");
   const skipCli = args.includes("--skip-cli");
   const skipGuardrails = args.includes("--skip-guardrails");
+  const withMiniGameTestDoctor = args.includes("--with-minigame-test-doctor");
+  const allowMissingTestSdk = args.includes("--allow-missing-test-sdk");
   const port = readNumericFlag(args, "--port", DEFAULT_PORT);
+  const autoPort = readNumericFlag(args, "--auto-port", DEFAULT_AUTO_PORT);
 
   logSection("微信官方规范检查");
   console.log("projectRoot:", PROJECT_ROOT);
@@ -31,9 +35,18 @@ function main() {
 
   const summary = validateProjectShape();
 
+  logSection("执行代码包体检查");
+  runNodeScript("architecture/tools/check-wechat-code-package-limits.js");
+
   if (!skipGuardrails) {
     logSection("执行仓库护栏");
     runNodeScript("architecture/tools/run-guardrails.js");
+  }
+
+  if (withMiniGameTestDoctor) {
+    logSection("执行 MiniGameTest doctor");
+    const doctorArgs = allowMissingTestSdk ? ["--allow-missing-sdk"] : [];
+    runNodeScript("architecture/tools/run-minigame-test-doctor.js", doctorArgs);
   }
 
   if (!skipCli) {
@@ -44,9 +57,20 @@ function main() {
         "未找到微信开发者工具 CLI。请安装开发者工具，或通过 WECHAT_DEVTOOLS_CLI 指定 cli 路径。"
       );
     }
+    if (port === autoPort) {
+      throw new Error("CLI 服务端口与自动化端口不能相同。请分别设置 --port 与 --auto-port。");
+    }
     console.log("cliPath:", cliPath);
     runCommand(cliPath, ["islogin", "--port", String(port)]);
-    runCommand(cliPath, ["auto", "--project", PROJECT_ROOT, "--port", String(port)]);
+    runCommand(cliPath, [
+      "auto",
+      "--project",
+      PROJECT_ROOT,
+      "--port",
+      String(port),
+      "--auto-port",
+      String(autoPort),
+    ]);
   }
 
   logSection("检查结果");
@@ -132,14 +156,31 @@ function validateProjectShape() {
 function verifyRuntimeGovernanceBridge() {
   const bootstrapPath = path.join(PROJECT_ROOT, "architecture/boot/game-bootstrap.js");
   const bootstrapContent = fs.readFileSync(bootstrapPath, "utf8");
-  const requiredSnippets = [
+  const bootstrapRequiredSnippets = [
     "require('./runtime-governance')",
     "installRuntimeGovernance(",
   ];
 
-  for (const snippet of requiredSnippets) {
+  for (const snippet of bootstrapRequiredSnippets) {
     if (!bootstrapContent.includes(snippet)) {
       throw new Error("game-bootstrap.js 缺少运行时治理桥接片段: " + snippet);
+    }
+  }
+
+  const governancePath = path.join(PROJECT_ROOT, "architecture/boot/runtime-governance.js");
+  const governanceContent = fs.readFileSync(governancePath, "utf8");
+  const governanceRequiredSnippets = [
+    "wx.getUpdateManager()",
+    "onCheckForUpdate",
+    "applyUpdate",
+    "wx.onShow",
+    "wx.onHide",
+    "wx.onMemoryWarning",
+  ];
+
+  for (const snippet of governanceRequiredSnippets) {
+    if (!governanceContent.includes(snippet)) {
+      throw new Error("runtime-governance.js 缺少官方运行治理片段: " + snippet);
     }
   }
 }
@@ -168,8 +209,9 @@ function resolveDevtoolsCliPath() {
   return null;
 }
 
-function runNodeScript(relativePath) {
-  runCommand(process.execPath, [path.join(PROJECT_ROOT, relativePath)]);
+function runNodeScript(relativePath, extraArgs) {
+  const args = [path.join(PROJECT_ROOT, relativePath)].concat(extraArgs || []);
+  runCommand(process.execPath, args);
 }
 
 function runCommand(command, args) {

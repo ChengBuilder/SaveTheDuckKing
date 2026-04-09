@@ -388,3 +388,57 @@
 本轮经验补丁：
 - 已收紧高风险同名 token 替换（避免跨模块误伤 `返回主页`、`%` 这类通用名称）。
 - 后续若继续做 `SpriteFrame` 批量改名，优先采用“路径域 + token”双重约束，不做纯全局 token 替换。
+
+## 2026-04-09 停止新增运行时兼容，切换到源头重构
+
+本轮策略切换：
+- 不再新增任何玩法层、Home/ui 层运行时兼容补丁。
+- 已经证明“语义化后再靠 boot/runtime 兜底”会让工程持续背着历史债，和正规项目目标相冲突。
+- 后续所有旧路径报错，统一回到 `game.js`、bundle config、import 元数据源头修复。
+
+本轮已固化的新规则：
+- `architecture/memory/project-memory.md` 明确禁止新增运行时兼容补丁、镜像兜底、legacy alias。
+- `architecture/docs/project-structure.md` 与 `architecture/docs/wechat-official-project-guide.md` 已同步改成“旧路径源头消除”策略。
+- `architecture/tools/check-legacy-runtime-compat.js` 继续作为反回退护栏，后续会优先拦截旧路径字符串重新进入 `game.js` 或 bundle config。
+
+本轮已直接改到源头的 canonical 路径：
+- `tex/book/分享鸭/* -> tex/book/shareCollection/*`
+- `tex/book/大胃王鸭/* -> tex/book/bigEaterCollection/*`
+- `tex/book/水果鸭/* -> tex/book/fruitCollection/*`
+- `tex/book/特殊图鉴/* -> tex/book/specialCollection/*`
+- `tex/领取按钮/spriteFrame -> tex/rewardActions/claimButton/spriteFrame`
+- `tex/已领取按钮/spriteFrame -> tex/rewardActions/claimedButton/spriteFrame`
+
+本轮对历史策略的处理原则：
+- 历史日志保留事实，不篡改过去。
+- 但从本条开始，旧条目中涉及的“运行时兼容”只作为阶段性过渡记录，不再作为当前推荐做法。
+
+## 2026-04-09 继续源头收敛书册展示资源命名
+
+本轮继续直接修 bundle 配置与 import 元数据，不再给图鉴展示资源补运行时别名。
+
+本轮新增 canonical 命名：
+- `tex/book/tex/全部/spriteFrame -> tex/book/ui/filterAll/spriteFrame`
+- `tex/book/tex/100/spriteFrame -> tex/book/ui/completion100Label/spriteFrame`
+- `tex/book/tex/标签/spriteFrame -> tex/book/ui/itemBadge/spriteFrame`
+- `tex/book/tex/底/spriteFrame -> tex/book/ui/panelBackground/spriteFrame`
+- `tex/book/tex/框2/spriteFrame -> tex/book/ui/itemCardInactiveFrame/spriteFrame`
+- `tex/book/tex/特殊/spriteFrame -> tex/book/ui/filterSpecial/spriteFrame`
+- `tex/book/tex/图鉴/spriteFrame -> tex/book/ui/collectionTitle/spriteFrame`
+- `tex/book/tex/框1/spriteFrame -> tex/book/ui/itemCardActiveFrame/spriteFrame`
+- `tex/book/tex/使用中/spriteFrame -> tex/book/ui/equippedBadge/spriteFrame`
+- `tex/book/tex/旋转光/spriteFrame -> tex/book/ui/rotatingGlow/spriteFrame`
+- `tex/book/tex/NO/spriteFrame -> tex/book/ui/numberPrefix/spriteFrame`
+- `tex/book/tex/稀有/spriteFrame -> tex/book/ui/filterRare/spriteFrame`
+- `tex/book/tex/已收集/spriteFrame -> tex/book/ui/collectedLabel/spriteFrame`
+- `tex/book/tex/条2/spriteFrame -> tex/book/ui/progressTrack/spriteFrame`
+- `tex/book/tex/条1/spriteFrame -> tex/book/ui/progressFill/spriteFrame`
+- `tex/book/鸽鸽图鉴/视频/* -> tex/book/ui/videoBadge/*`
+- `tex/book/鸽鸽图鉴/底2/spriteFrame -> tex/book/ui/pillBase/spriteFrame`
+- `tex/book/鸽鸽图鉴/框/spriteFrame -> tex/book/ui/selectionHalo/spriteFrame`
+- `tex/book/鸽鸽图鉴/底/spriteFrame -> tex/book/ui/infoBarBase/spriteFrame`
+- `tex/book/鸽鸽图鉴/鸽鸽图鉴/spriteFrame -> tex/book/pigeonGallery/titleBanner/spriteFrame`
+
+本轮沉淀的治理手段：
+- 新增 `architecture/tools/semanticize-uibundle-book-display-assets.js`，把书册通用 UI 与鸽子图鉴展示资源改名固化成可重复执行脚本。
+- `architecture/tools/check-legacy-runtime-compat.js` 新增书册展示旧路径与 pack 名称护栏，防止 `tex/book/tex/*`、`tex/book/鸽鸽图鉴/*` 再次回流。

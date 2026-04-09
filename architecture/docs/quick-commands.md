@@ -101,3 +101,18 @@ sed -n '1,260p' architecture/docs/module-index.md
 ```js
 globalThis.__DUCK_BOOT_INFO
 ```
+
+## 21) 检查微信小游戏代码包体
+```bash
+npm run wechat:code-package:check
+```
+
+## 22) 检查 MiniGameTest 本地环境
+```bash
+npm run wechat:test:doctor
+```
+
+## 23) 运行 MiniGameTest 官方样例
+```bash
+npm run wechat:test:run
+```

@@ -38,6 +38,21 @@ const REQUIRED_ROOT_BUNDLES = Object.freeze([
   'assets/internalbundle',
   'assets/start-scenebundle'
 ]);
+const REQUIRED_CANONICAL_ROOT_BUNDLES = Object.freeze([
+  'assets/internal',
+  'assets/start-scene'
+]);
+const REQUIRED_ROOT_BUNDLE_SHELLS = Object.freeze([
+  'assets/internalbundle',
+  'assets/start-scenebundle'
+]);
+const ALLOWED_ASSETS_ROOT_DIRECTORIES = Object.freeze(
+  REQUIRED_CANONICAL_ROOT_BUNDLES.concat(REQUIRED_ROOT_BUNDLE_SHELLS)
+);
+const THIN_SHELL_ALLOWED_FILES = Object.freeze([
+  'config.json',
+  'index.js'
+]);
 
 /**
  * 校验当前仓库是否仍符合微信小游戏可运行项目结构。
@@ -100,6 +115,8 @@ function assertRootEntries(layout, errors) {
       assertFileExists(layout, relativePath + '/config.json', errors, '兼容 root bundle 缺少 config.json');
     }
   }
+
+  verifyAssetsRootLayout(layout, errors);
 }
 
 /**
@@ -251,6 +268,86 @@ function verifySubpackageDirectory(layout, subpackageRoot, subpackageName, error
 
   if (configFileNames.length === 0) {
     errors.push('分包缺少语义化配置文件: ' + subpackageName + ' -> ' + formatProjectPathFromWorkspace(layout, normalizedRoot));
+  }
+}
+
+/**
+ * 校验 assets 根目录是否仍符合“canonical 根 bundle + 最小历史命名薄壳”的约束。
+ * @param {{projectRoot: string, projectPathFromWorkspace: string}} layout 项目布局
+ * @param {string[]} errors 错误收集器
+ */
+function verifyAssetsRootLayout(layout, errors) {
+  const assetsRootPath = resolveProjectFilePath(layout, 'assets');
+  if (!fs.existsSync(assetsRootPath)) {
+    return;
+  }
+
+  const rootEntries = fs.readdirSync(assetsRootPath, { withFileTypes: true });
+  const unexpectedDirectories = rootEntries
+    .filter(function filterDirectory(entry) {
+      return entry.isDirectory() &&
+        !entry.name.startsWith('.') &&
+        ALLOWED_ASSETS_ROOT_DIRECTORIES.indexOf('assets/' + entry.name) === -1;
+    })
+    .map(function mapDirectory(entry) {
+      return 'assets/' + entry.name;
+    })
+    .sort(function sortPath(left, right) {
+      return left.localeCompare(right);
+    });
+
+  if (unexpectedDirectories.length > 0) {
+    errors.push(
+      'assets 根目录存在未批准的 bundle 或兼容目录: ' +
+      unexpectedDirectories.map(function formatPath(relativePath) {
+        return formatProjectPathFromWorkspace(layout, relativePath);
+      }).join(', ')
+    );
+  }
+
+  for (const relativePath of REQUIRED_ROOT_BUNDLE_SHELLS) {
+    verifyThinShellRootBundle(layout, relativePath, errors);
+  }
+}
+
+/**
+ * 校验 root 历史命名 bundle 是否仍保持“只含 config/index 的薄壳”。
+ * @param {{projectRoot: string, projectPathFromWorkspace: string}} layout 项目布局
+ * @param {string} relativePath 相对目录路径
+ * @param {string[]} errors 错误收集器
+ */
+function verifyThinShellRootBundle(layout, relativePath, errors) {
+  const absolutePath = resolveProjectFilePath(layout, relativePath);
+  if (!fs.existsSync(absolutePath) || !fs.statSync(absolutePath).isDirectory()) {
+    return;
+  }
+
+  const unexpectedEntries = fs.readdirSync(absolutePath, { withFileTypes: true })
+    .filter(function filterEntry(entry) {
+      if (entry.name.startsWith('.')) {
+        return false;
+      }
+
+      if (entry.isDirectory()) {
+        return true;
+      }
+
+      return !entry.isFile() || THIN_SHELL_ALLOWED_FILES.indexOf(entry.name) === -1;
+    })
+    .map(function mapEntry(entry) {
+      return normalizePath(path.join(relativePath, entry.name));
+    })
+    .sort(function sortPath(left, right) {
+      return left.localeCompare(right);
+    });
+
+  if (unexpectedEntries.length > 0) {
+    errors.push(
+      '兼容 root bundle 必须保持薄壳目录（仅允许 config.json / index.js）: ' +
+      unexpectedEntries.map(function formatPath(relativeEntryPath) {
+        return formatProjectPathFromWorkspace(layout, relativeEntryPath);
+      }).join(', ')
+    );
   }
 }
 

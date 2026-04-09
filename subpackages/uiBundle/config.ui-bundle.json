@@ -572,7 +572,7 @@
       1
     ],
     "5": [
-      "tex/book/tex/全部/spriteFrame",
+      "tex/book/ui/filterAll/spriteFrame",
       3,
       1
     ],
@@ -597,7 +597,7 @@
       1
     ],
     "10": [
-      "tex/book/分享鸭/张飞鸭/spriteFrame",
+      "tex/book/shareCollection/张飞鸭/spriteFrame",
       3,
       1
     ],
@@ -617,7 +617,7 @@
       1
     ],
     "14": [
-      "tex/book/tex/100/spriteFrame",
+      "tex/book/ui/completion100Label/spriteFrame",
       3,
       1
     ],
@@ -692,7 +692,7 @@
       1
     ],
     "32": [
-      "tex/book/分享鸭/关羽鸭/spriteFrame",
+      "tex/book/shareCollection/关羽鸭/spriteFrame",
       3,
       1
     ],
@@ -722,7 +722,7 @@
       1
     ],
     "40": [
-      "tex/book/水果鸭/西瓜鸭/spriteFrame",
+      "tex/book/fruitCollection/西瓜鸭/spriteFrame",
       3,
       1
     ],
@@ -742,7 +742,7 @@
       1
     ],
     "46": [
-      "tex/book/tex/标签/spriteFrame",
+      "tex/book/ui/itemBadge/spriteFrame",
       3,
       1
     ],
@@ -767,7 +767,7 @@
       1
     ],
     "55": [
-      "tex/book/特殊图鉴/百鸭朝鲲/spriteFrame",
+      "tex/book/specialCollection/百鸭朝鲲/spriteFrame",
       3,
       1
     ],
@@ -782,17 +782,17 @@
       1
     ],
     "67": [
-      "tex/book/鸽鸽图鉴/视频",
+      "tex/book/ui/videoBadge",
       1,
       1
     ],
     "68": [
-      "tex/book/鸽鸽图鉴/视频/texture",
+      "tex/book/ui/videoBadge/texture",
       2,
       1
     ],
     "69": [
-      "tex/book/鸽鸽图鉴/视频/spriteFrame",
+      "tex/book/ui/videoBadge/spriteFrame",
       3,
       1
     ],
@@ -862,12 +862,12 @@
       1
     ],
     "83": [
-      "tex/book/tex/底/spriteFrame",
+      "tex/book/ui/panelBackground/spriteFrame",
       3,
       1
     ],
     "84": [
-      "tex/book/鸽鸽图鉴/底2/spriteFrame",
+      "tex/book/ui/pillBase/spriteFrame",
       3,
       1
     ],
@@ -897,7 +897,7 @@
       1
     ],
     "91": [
-      "tex/book/tex/框2/spriteFrame",
+      "tex/book/ui/itemCardInactiveFrame/spriteFrame",
       3,
       1
     ],
@@ -942,12 +942,12 @@
       1
     ],
     "100": [
-      "tex/book/特殊图鉴/百鸭朝雀/spriteFrame",
+      "tex/book/specialCollection/百鸭朝雀/spriteFrame",
       3,
       1
     ],
     "101": [
-      "tex/book/水果鸭/火龙果鸭/spriteFrame",
+      "tex/book/fruitCollection/火龙果鸭/spriteFrame",
       3,
       1
     ],
@@ -1017,7 +1017,7 @@
       1
     ],
     "115": [
-      "tex/已领取按钮/spriteFrame",
+      "tex/rewardActions/claimedButton/spriteFrame",
       3,
       1
     ],
@@ -1082,7 +1082,7 @@
       1
     ],
     "128": [
-      "tex/book/特殊图鉴/百鹅朝鹏/spriteFrame",
+      "tex/book/specialCollection/百鹅朝鹏/spriteFrame",
       3,
       1
     ],
@@ -1157,12 +1157,12 @@
       1
     ],
     "143": [
-      "tex/book/大胃王鸭/大胃袋鸭/spriteFrame",
+      "tex/book/bigEaterCollection/大胃袋鸭/spriteFrame",
       3,
       1
     ],
     "144": [
-      "tex/book/分享鸭/甄嬛鸭/spriteFrame",
+      "tex/book/shareCollection/甄嬛鸭/spriteFrame",
       3,
       1
     ],
@@ -1192,7 +1192,7 @@
       1
     ],
     "150": [
-      "tex/book/水果鸭/哈密瓜鸭/spriteFrame",
+      "tex/book/fruitCollection/哈密瓜鸭/spriteFrame",
       3,
       1
     ],
@@ -1222,7 +1222,7 @@
       1
     ],
     "157": [
-      "tex/book/tex/特殊/spriteFrame",
+      "tex/book/ui/filterSpecial/spriteFrame",
       3,
       1
     ],
@@ -1247,7 +1247,7 @@
       1
     ],
     "162": [
-      "tex/book/tex/图鉴/spriteFrame",
+      "tex/book/ui/collectionTitle/spriteFrame",
       3,
       1
     ],
@@ -1352,7 +1352,7 @@
       1
     ],
     "183": [
-      "tex/book/tex/框1/spriteFrame",
+      "tex/book/ui/itemCardActiveFrame/spriteFrame",
       3,
       1
     ],
@@ -1367,12 +1367,12 @@
       1
     ],
     "186": [
-      "tex/book/鸽鸽图鉴/鸽鸽图鉴/spriteFrame",
+      "tex/book/pigeonGallery/titleBanner/spriteFrame",
       3,
       1
     ],
     "187": [
-      "tex/book/特殊图鉴/百鸭朝龙/spriteFrame",
+      "tex/book/specialCollection/百鸭朝龙/spriteFrame",
       3,
       1
     ],
@@ -1382,7 +1382,7 @@
       1
     ],
     "189": [
-      "tex/book/水果鸭/葡萄鸭/spriteFrame",
+      "tex/book/fruitCollection/葡萄鸭/spriteFrame",
       3,
       1
     ],
@@ -1412,7 +1412,7 @@
       1
     ],
     "195": [
-      "tex/book/tex/使用中/spriteFrame",
+      "tex/book/ui/equippedBadge/spriteFrame",
       3,
       1
     ],
@@ -1507,7 +1507,7 @@
       1
     ],
     "214": [
-      "tex/book/特殊图鉴/百鹅朝凤/spriteFrame",
+      "tex/book/specialCollection/百鹅朝凤/spriteFrame",
       3,
       1
     ],
@@ -1712,7 +1712,7 @@
       1
     ],
     "256": [
-      "tex/book/tex/旋转光/spriteFrame",
+      "tex/book/ui/rotatingGlow/spriteFrame",
       3,
       1
     ],
@@ -1737,7 +1737,7 @@
       1
     ],
     "261": [
-      "tex/book/tex/NO/spriteFrame",
+      "tex/book/ui/numberPrefix/spriteFrame",
       3,
       1
     ],
@@ -1852,7 +1852,7 @@
       1
     ],
     "285": [
-      "tex/book/鸽鸽图鉴/框/spriteFrame",
+      "tex/book/ui/selectionHalo/spriteFrame",
       3,
       1
     ],
@@ -1882,7 +1882,7 @@
       1
     ],
     "291": [
-      "tex/book/水果鸭/蓝莓鸭/spriteFrame",
+      "tex/book/fruitCollection/蓝莓鸭/spriteFrame",
       3,
       1
     ],
@@ -2012,7 +2012,7 @@
       1
     ],
     "317": [
-      "tex/book/特殊图鉴/百鹅朝麟/spriteFrame",
+      "tex/book/specialCollection/百鹅朝麟/spriteFrame",
       3,
       1
     ],
@@ -2102,7 +2102,7 @@
       1
     ],
     "335": [
-      "tex/book/水果鸭/苹果鸭/spriteFrame",
+      "tex/book/fruitCollection/苹果鸭/spriteFrame",
       3,
       1
     ],
@@ -2237,7 +2237,7 @@
       1
     ],
     "362": [
-      "tex/book/tex/稀有/spriteFrame",
+      "tex/book/ui/filterRare/spriteFrame",
       3,
       1
     ],
@@ -2277,7 +2277,7 @@
       1
     ],
     "370": [
-      "tex/领取按钮/spriteFrame",
+      "tex/rewardActions/claimButton/spriteFrame",
       3,
       1
     ],
@@ -2312,7 +2312,7 @@
       1
     ],
     "377": [
-      "tex/book/分享鸭/刘备鸭/spriteFrame",
+      "tex/book/shareCollection/刘备鸭/spriteFrame",
       3,
       1
     ],
@@ -2332,7 +2332,7 @@
       1
     ],
     "381": [
-      "tex/book/tex/已收集/spriteFrame",
+      "tex/book/ui/collectedLabel/spriteFrame",
       3,
       1
     ],
@@ -2382,7 +2382,7 @@
       1
     ],
     "391": [
-      "tex/book/tex/条2/spriteFrame",
+      "tex/book/ui/progressTrack/spriteFrame",
       3,
       1
     ],
@@ -2467,12 +2467,12 @@
       1
     ],
     "408": [
-      "tex/book/鸽鸽图鉴/底/spriteFrame",
+      "tex/book/ui/infoBarBase/spriteFrame",
       3,
       1
     ],
     "409": [
-      "tex/book/分享鸭/安陵容鸭/spriteFrame",
+      "tex/book/shareCollection/安陵容鸭/spriteFrame",
       3,
       1
     ],
@@ -2517,7 +2517,7 @@
       1
     ],
     "418": [
-      "tex/book/tex/条1/spriteFrame",
+      "tex/book/ui/progressFill/spriteFrame",
       3,
       1
     ],
@@ -2532,7 +2532,7 @@
       1
     ],
     "421": [
-      "tex/book/分享鸭/华妃鸭/spriteFrame",
+      "tex/book/shareCollection/华妃鸭/spriteFrame",
       3,
       1
     ],

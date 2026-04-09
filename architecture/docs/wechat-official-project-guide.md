@@ -177,23 +177,25 @@
 - `assets/internal/`、`assets/start-scene/`
   - 属于根 bundle 的实际运行时目录。
 - `assets/*bundle/`、`assets/*Bundlebundle/`
-  - 属于兼容微信开发者工具和旧 bundle 路径的薄壳目录。
+  - 属于 root bundle 历史命名薄壳目录。
   - 这些目录现在原则上只保留 `config.json` 与 `index.js`。
 
 后续规则：
 
-- 不再往兼容壳层里回填大体积 `import/` 和 `native/` 副本。
+- 不再往 root 薄壳层里回填大体积 `import/` 和 `native/` 副本。
 - 真实资源始终以 canonical 目录为准。
 
 ### `runtime/`
 
-这里是官方运行契约之上的“兼容补丁层”，只能做以下事情：
+这里是官方运行契约之上的“基础运行治理层”，只能做以下事情：
 
-- 路径归一化
-- 资源重映射
+- root bundle 请求名归一化
+- 扁平目录资源 URL 修正
+- 真实文件名重映射
 - 运行安全补丁
 
 不能在这里塞复杂业务逻辑。
+也不能继续给旧玩法路径、旧图鉴路径、旧 UI 路径追加运行时兼容。
 
 ### 解包还原目录策略
 
@@ -214,11 +216,13 @@
 - 处理启动链路时，考虑冷启动、热启动、后台恢复和内存告警。
 - 处理音频时，复用音频实例，及时销毁不用的实例。
 - Boot 层统一监听更新检查、`onShow`/`onHide`、`onMemoryWarning`，并把状态写入运行时观测。
+- 语义化 rename 后若出现 `Bundle doesn't contain ...`，优先回查 `game.js` 与 bundle config，直接改源调用。
 
 ### 不允许做
 
 - 把开发者工具兼容目录重新做成完整资源副本。
 - 在代码里写死依赖开发者工具专属路径或端口行为。
+- 给旧业务路径继续追加 boot/runtime 归一化兜底。
 - 用 `./`、`../` 形式访问代码包文件。
 - 把根入口文件随意挪出当前结构。
 - 只在开发者工具验证，不做客户端/体验版验证。
@@ -243,9 +247,11 @@ npm run wechat:official:check
 
 1. 校验 `game.js` / `game.json` / `project.config.json`
 2. 校验 `game.json` 分包配置
-3. 跑仓库护栏
-4. 调用官方 CLI 的 `islogin`
-5. 调用官方 CLI 的 `auto --project ...`
+3. 校验运行时治理桥接是否保留 `wx.getUpdateManager()` / `onShow` / `onHide` / `onMemoryWarning`
+4. 执行官方代码包体检查
+5. 跑仓库护栏
+6. 调用官方 CLI 的 `islogin`
+7. 调用官方 CLI 的 `auto --project ... --auto-port ...`
 
 如果只想先做安全修复再检查：
 
@@ -260,7 +266,44 @@ npm run wechat:official:fix
   - 审计文档重生成
 - 它不会自动修复业务逻辑 bug，也不会擅自重写运行时资源。
 
-## 2. `miniprogram-ci` 编译/预览/上传
+## 2. 代码包体检查
+
+官方当前在小游戏分包文档中明确写了：
+
+- 整个小游戏所有主包 + 分包大小不超过 `30M`
+- 主包不超过 `4M`
+- 单个普通分包不限制大小
+- 单个独立分包不超过 `4M`
+
+仓库已新增脚本：
+
+```bash
+npm run wechat:code-package:check
+```
+
+它会：
+
+1. 按当前运行入口统计主包体积
+2. 按 `game.json` 统计各分包体积
+3. 若配置了 `workers.isSubpackage`，同步统计 workers 分包
+4. 生成可追溯报告：
+   - `architecture/docs/wechat-code-package-report.json`
+   - `architecture/docs/wechat-code-package-report.md`
+
+当前主包统计口径固定为这些运行时入口：
+
+- `game.js`
+- `game.json`
+- `app-config.json`
+- `assets/`
+- `cocos-js/`
+- `runtime/`
+- `src/`
+- `architecture/boot/`
+
+如果后续启用了非分包模式的 `workers`，也会自动并入主包统计。
+
+## 3. `miniprogram-ci` 编译/预览/上传
 
 官方文档明确说明 `miniprogram-ci` 支持小游戏，`Project.type` 可设为 `miniGame`。
 
@@ -304,7 +347,7 @@ npm run wechat:ci:preview
 - 它能自动编译、预览、上传。
 - 它不能自动修复业务 bug，只能帮我们尽早发现工程不完整、配置不合法、打包失败等问题。
 
-## 3. 小游戏官方自动化测试
+## 4. 小游戏官方自动化测试
 
 小游戏不是走“小程序云测”的那套。
 
@@ -322,6 +365,42 @@ npm run wechat:ci:preview
   - CLI 执行 `auto --project ... --auto-port {port}`
   - 安装官方 `MiniGameTest` JS/Python 包
   - 使用 `node test.js -t ide -p {port}` 或 Python 方式运行 Case
+  - 其中测试端口 `{port}` 不能与开发者工具服务端口相同
+
+仓库已新增本地落地目录：
+
+- `wechat-test/minigametest/`
+
+仓库已新增脚本：
+
+```bash
+npm run wechat:test:doctor
+npm run wechat:test:run
+```
+
+对应关系如下：
+
+- `wechat:test:doctor`
+  - 校验 CLI 是否存在
+  - 校验 Node.js 版本
+  - 校验服务端口与自动化端口是否冲突
+  - 校验官方 JS SDK 是否已安装或是否已放好 `mini_game_test-*.tgz`
+  - 校验样例 Case 是否存在
+- `wechat:test:run`
+  - 自动打开开发者工具并启用 `cli auto --project ... --auto-port ...`
+  - 必要时自动安装本地 `vendor/` 中的官方 SDK tgz
+  - 执行 `wechat-test/minigametest/sample/test.js`
+
+默认环境变量约定：
+
+- `WECHAT_DEVTOOLS_SERVICE_PORT`
+  - 开发者工具服务端口，默认 `9420`
+- `WECHAT_MINIGAME_TEST_PORT`
+  - MiniGameTest 自动化端口，默认 `9421`
+- `WECHAT_MINIGAME_TEST_SDK_TGZ`
+  - 官方 `mini_game_test-*.tgz` 路径，可选
+- `WECHAT_MINIGAME_TEST_NODE_PATH`
+  - 通过 Game Inspector 复制出的节点 Path，样例 Case 运行必填
 
 ### 结论
 
@@ -332,11 +411,13 @@ npm run wechat:ci:preview
 
 每次改完后按下面顺序执行：
 
-1. `npm run wechat:official:check`
-2. 如果有上传密钥，再跑 `npm run wechat:ci:doctor`
-3. 条件满足时跑 `npm run wechat:ci:preview`
-4. 后续补齐 `MiniGameTest` 用例后，再接本地自动化 Case
-5. 发布前走小游戏体验版/云测试
+1. `npm run wechat:code-package:check`
+2. `npm run wechat:official:check`
+3. 如果需要跑本地自动化，先执行 `npm run wechat:test:doctor`
+4. 若官方 SDK 和节点 Path 已准备好，再执行 `npm run wechat:test:run`
+5. 如果有上传密钥，再跑 `npm run wechat:ci:doctor`
+6. 条件满足时跑 `npm run wechat:ci:preview`
+7. 发布前走小游戏体验版/云测试
 
 ## 自动修复边界
 

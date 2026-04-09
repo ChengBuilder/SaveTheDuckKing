@@ -14,3 +14,6 @@ npm-debug.log*
 # 微信 CI / 预览输出
 wechat-ci-output/
 .secrets/
+
+# MiniGameTest 官方 SDK 安装包
+wechat-test/minigametest/vendor/*.tgz
