@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-08T09:53:36.770Z",
+  "generatedAt": "2026-04-08T15:18:23.716Z",
   "summary": {
     "totalBundles": 10,
     "rootBundles": 2,
@@ -136,7 +136,7 @@
           "count": 90
         },
         {
-          "name": "tex/newBg",
+          "name": "tex/seasonalBackground",
           "count": 60
         },
         {
@@ -148,7 +148,7 @@
           "count": 39
         },
         {
-          "name": "tex/bg",
+          "name": "tex/background",
           "count": 33
         },
         {
@@ -210,10 +210,6 @@
       ],
       "namingNoiseTokens": [
         {
-          "name": "bg",
-          "count": 33
-        },
-        {
           "name": "a",
           "count": 18
         },
@@ -238,23 +234,27 @@
           "count": 3
         },
         {
-          "name": "bg1",
+          "name": "cla",
           "count": 3
         },
         {
-          "name": "bg2",
+          "name": "cln",
           "count": 3
         },
         {
-          "name": "bg3",
+          "name": "ls10",
           "count": 3
         },
         {
-          "name": "bg4",
+          "name": "lva",
           "count": 3
         },
         {
-          "name": "bg5",
+          "name": "lvn",
+          "count": 3
+        },
+        {
+          "name": "mla",
           "count": 3
         }
       ],

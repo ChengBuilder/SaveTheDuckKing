@@ -31,6 +31,32 @@ const UI_BUNDLE_SETTINGS_LEGACY_PATH_MAP = Object.freeze({
   'tex/设置二级/鸭子set': 'tex/settingsDialog/duckSetText'
 });
 const UI_BUNDLE_SETTINGS_LEGACY_PATH_ENTRIES = Object.entries(UI_BUNDLE_SETTINGS_LEGACY_PATH_MAP);
+const HOME_BUNDLE_PARTICLE_LEGACY_PATH_MAP = Object.freeze({
+  'tex/BgParticle/p1': 'tex/backgroundParticles/whiteGlowParticle',
+  'tex/BgParticle/p2': 'tex/backgroundParticles/orangeGlowParticle',
+  'tex/BgParticle/p3': 'tex/backgroundParticles/greenLeafParticle',
+  'tex/BgParticle/p4': 'tex/backgroundParticles/orangeLeafParticle'
+});
+const HOME_BUNDLE_PARTICLE_LEGACY_PATH_ENTRIES = Object.entries(HOME_BUNDLE_PARTICLE_LEGACY_PATH_MAP);
+const HOME_BUNDLE_LEGACY_PATH_PATTERN = /^tex\/BgThings\d+\/.+/;
+const HOME_BUNDLE_LEGACY_NORMALIZE_PATTERN = /^tex\/BgThings(\d+)\/(.+)$/;
+const HOME_BUNDLE_LEGACY_FAST_PATH_TOKENS = Object.freeze([
+  'BgThings',
+  'BgParticle'
+]);
+const UI_BUNDLE_BOOK_SKIN_LEGACY_PATTERN = /^tex\/book\/鸽鸽图鉴\/皮肤图鉴\/p(10|[1-9])(\/.*)?$/;
+const UI_BUNDLE_BOOK_SKIN_FAST_PATH_TOKENS = Object.freeze([
+  'tex/book/鸽鸽图鉴/皮肤图鉴/p',
+  'tex/book/%E9%B8%BD%E9%B8%BD%E5%9B%BE%E9%89%B4/%E7%9A%AE%E8%82%A4%E5%9B%BE%E9%89%B4/p'
+]);
+const UI_BUNDLE_SETTINGS_FAST_PATH_TOKENS = Object.freeze([
+  'tex/设置/',
+  'tex/设置二级/',
+  'tex/%E8%AE%BE%E7%BD%AE'
+]);
+const UI_BUNDLE_LEGACY_FAST_PATH_TOKENS = Object.freeze(
+  UI_BUNDLE_BOOK_SKIN_FAST_PATH_TOKENS.concat(UI_BUNDLE_SETTINGS_FAST_PATH_TOKENS)
+);
 
 /**
  * 为 Cocos 资源加载管线追加扁平目录路径修正。
@@ -489,8 +515,10 @@ function isUiBundleValue(bundleValue) {
 function hasLegacyHomeBundlePath(requestInput, visitedObjects) {
   const visited = visitedObjects || new Set();
   if (typeof requestInput === 'string') {
-    const normalizedPath = trimLeadingDotSlash(requestInput);
-    return /^tex\/BgThings\d+\/.+/.test(normalizedPath);
+    if (!mightContainHomeBundleLegacyPath(requestInput)) {
+      return false;
+    }
+    return normalizeHomeBundleLegacyPath(requestInput) !== requestInput;
   }
 
   if (Array.isArray(requestInput)) {
@@ -528,6 +556,9 @@ function hasLegacyHomeBundlePath(requestInput, visitedObjects) {
 function hasLegacyUiBundlePath(requestInput, visitedObjects) {
   const visited = visitedObjects || new Set();
   if (typeof requestInput === 'string') {
+    if (!mightContainUiBundleLegacyPath(requestInput)) {
+      return false;
+    }
     return normalizeUiBundleLegacyPath(requestInput) !== requestInput;
   }
 
@@ -636,7 +667,10 @@ function normalizeLegacyPathString(pathValue) {
 }
 
 /**
- * 将 HomeBundle 历史路径 `tex/BgThings{N}/...` 归一化到语义化目录。
+ * 将 HomeBundle 历史路径归一化到语义化目录。
+ * 当前兼容两类旧路径：
+ * 1. `tex/BgThings{N}/...` -> `tex/homeTheme{N}/...`
+ * 2. `tex/BgParticle/p{1-4}` -> `tex/backgroundParticles/*`
  * @param {string} requestPath 资源请求路径
  * @returns {string}
  */
@@ -647,17 +681,54 @@ function normalizeHomeBundleLegacyPath(requestPath) {
 
   const hasLeadingDotSlash = requestPath.startsWith('./');
   const normalizedPath = trimLeadingDotSlash(requestPath);
-  const legacyMatch = normalizedPath.match(/^tex\/BgThings(\d+)\/(.+)$/);
-  if (!legacyMatch) {
+  if (!mightContainHomeBundleLegacyPath(normalizedPath)) {
     return requestPath;
   }
 
+  const decodedPath = decodeUriPathSafely(normalizedPath);
+  const normalizedParticlePath = normalizeLegacyHomeParticlePath(decodedPath);
+  if (normalizedParticlePath !== decodedPath) {
+    return hasLeadingDotSlash ? './' + normalizedParticlePath : normalizedParticlePath;
+  }
+
+  if (!HOME_BUNDLE_LEGACY_PATH_PATTERN.test(decodedPath)) {
+    return requestPath;
+  }
+
+  const legacyMatch = decodedPath.match(HOME_BUNDLE_LEGACY_NORMALIZE_PATTERN);
+  if (!legacyMatch) {
+    return requestPath;
+  }
   const themeIndex = legacyMatch[1];
   const legacySubPath = legacyMatch[2];
   const semanticSubPath = normalizeLegacyHomeThemeSubPath(legacySubPath);
   const nextPath = 'tex/homeTheme' + themeIndex + '/' + semanticSubPath;
 
   return hasLeadingDotSlash ? './' + nextPath : nextPath;
+}
+
+/**
+ * 归一化旧版 BgParticle 粒子路径。
+ * 兼容裸路径、`/spriteFrame`、`/texture` 以及未来可能追加的后缀。
+ * @param {string} decodedPath 已解码的请求路径
+ * @returns {string}
+ */
+function normalizeLegacyHomeParticlePath(decodedPath) {
+  for (let index = 0; index < HOME_BUNDLE_PARTICLE_LEGACY_PATH_ENTRIES.length; index += 1) {
+    const entry = HOME_BUNDLE_PARTICLE_LEGACY_PATH_ENTRIES[index];
+    const legacyBasePath = entry[0];
+    const semanticBasePath = entry[1];
+
+    if (decodedPath === legacyBasePath) {
+      return semanticBasePath;
+    }
+    if (decodedPath.startsWith(legacyBasePath + '/')) {
+      const pathSuffix = decodedPath.slice(legacyBasePath.length);
+      return semanticBasePath + pathSuffix;
+    }
+  }
+
+  return decodedPath;
 }
 
 /**
@@ -726,8 +797,12 @@ function normalizeUiBundleBookSkinLegacyPath(requestPath) {
 
   const hasLeadingDotSlash = requestPath.startsWith('./');
   const normalizedPath = trimLeadingDotSlash(requestPath);
+  if (!mightContainUiBundleBookSkinLegacyPath(normalizedPath)) {
+    return requestPath;
+  }
+
   const decodedPath = decodeUriPathSafely(normalizedPath);
-  const legacyMatch = decodedPath.match(/^tex\/book\/鸽鸽图鉴\/皮肤图鉴\/p(10|[1-9])(\/.*)?$/);
+  const legacyMatch = decodedPath.match(UI_BUNDLE_BOOK_SKIN_LEGACY_PATTERN);
   if (!legacyMatch) {
     return requestPath;
   }
@@ -750,6 +825,10 @@ function normalizeUiBundleSettingsLegacyPath(requestPath) {
 
   const hasLeadingDotSlash = requestPath.startsWith('./');
   const normalizedPath = trimLeadingDotSlash(requestPath);
+  if (!mightContainUiBundleSettingsLegacyPath(normalizedPath)) {
+    return requestPath;
+  }
+
   const decodedPath = decodeUriPathSafely(normalizedPath);
 
   for (let index = 0; index < UI_BUNDLE_SETTINGS_LEGACY_PATH_ENTRIES.length; index += 1) {
@@ -780,11 +859,75 @@ function decodeUriPathSafely(pathValue) {
     return pathValue;
   }
 
+  if (pathValue.indexOf('%') === -1) {
+    return pathValue;
+  }
+
   try {
     return decodeURIComponent(pathValue);
   } catch (error) {
     return pathValue;
   }
+}
+
+/**
+ * 判断路径是否可能命中任一候选 token。
+ * @param {string} requestPath 路径字符串
+ * @param {string[]} tokenList token 列表
+ * @returns {boolean}
+ */
+function containsAnyPathToken(requestPath, tokenList) {
+  if (typeof requestPath !== 'string' || requestPath.length === 0) {
+    return false;
+  }
+  if (!Array.isArray(tokenList) || tokenList.length === 0) {
+    return false;
+  }
+
+  for (let index = 0; index < tokenList.length; index += 1) {
+    const token = tokenList[index];
+    if (typeof token === 'string' && token.length > 0 && requestPath.indexOf(token) !== -1) {
+      return true;
+    }
+  }
+
+  return false;
+}
+
+/**
+ * 判断路径是否可能属于 HomeBundle 历史路径。
+ * @param {string} requestPath 路径字符串
+ * @returns {boolean}
+ */
+function mightContainHomeBundleLegacyPath(requestPath) {
+  return containsAnyPathToken(requestPath, HOME_BUNDLE_LEGACY_FAST_PATH_TOKENS);
+}
+
+/**
+ * 判断路径是否可能属于 uiBundle 历史路径。
+ * @param {string} requestPath 路径字符串
+ * @returns {boolean}
+ */
+function mightContainUiBundleLegacyPath(requestPath) {
+  return containsAnyPathToken(requestPath, UI_BUNDLE_LEGACY_FAST_PATH_TOKENS);
+}
+
+/**
+ * 判断路径是否可能属于 uiBundle 图鉴皮肤页历史路径。
+ * @param {string} requestPath 路径字符串
+ * @returns {boolean}
+ */
+function mightContainUiBundleBookSkinLegacyPath(requestPath) {
+  return containsAnyPathToken(requestPath, UI_BUNDLE_BOOK_SKIN_FAST_PATH_TOKENS);
+}
+
+/**
+ * 判断路径是否可能属于 uiBundle 设置模块历史路径。
+ * @param {string} requestPath 路径字符串
+ * @returns {boolean}
+ */
+function mightContainUiBundleSettingsLegacyPath(requestPath) {
+  return containsAnyPathToken(requestPath, UI_BUNDLE_SETTINGS_FAST_PATH_TOKENS);
 }
 
 /**

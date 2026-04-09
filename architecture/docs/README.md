@@ -17,13 +17,17 @@
 
 ## 推荐先读
 1. `architecture/docs/naming-conventions.md`
-2. `architecture/docs/asset-code-boundaries.md`
+2. `architecture/docs/project-structure.md`
 3. `architecture/docs/onboarding.md`
 4. `architecture/docs/guardrail-report.md`
 5. `architecture/docs/iterations/README.md`
 6. `architecture/docs/iteration-workflow.md`
 7. `architecture/docs/debug-output.md`
 8. `architecture/docs/performance-playbook.md`
+9. `architecture/docs/uuid-asset-report.md`
+10. `architecture/docs/duck-fragment-usage-audit.md`
+11. `architecture/docs/rename-priority-notes.md`
+12. `architecture/docs/duck-fragment-analysis.md`
 
 ## 设计原则
 1. 单一职责：一个模块只负责一种能力。

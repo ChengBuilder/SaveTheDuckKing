@@ -3,7 +3,7 @@
 > 本文件由 `architecture/tools/generate-asset-readability-audit.js` 生成。
 
 ## 总览
-- 生成时间：2026-04-08T10:17:02.331Z
+- 生成时间：2026-04-08T15:18:23.831Z
 - Bundle 数：10
 - 扫描 canonical 路径数：2293
 - 命中候选数：739

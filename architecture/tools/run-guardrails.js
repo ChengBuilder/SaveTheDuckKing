@@ -63,11 +63,16 @@ function buildGuardrailSteps(layout) {
     createSyntaxCheckStep(layout, '渲染策略语法检查', 'architecture/boot/render-policies.js'),
     createSyntaxCheckStep(layout, '运行桥接语法检查', 'architecture/boot/runtime-bridge.js'),
     createSyntaxCheckStep(layout, '应用生命周期语法检查', 'architecture/boot/app-lifecycle.js'),
+    createSyntaxCheckStep(layout, '资源路径规范化语法检查', 'architecture/boot/asset-path-normalizer.js'),
     createSyntaxCheckStep(layout, '项目路径策略语法检查', 'architecture/tools/project-paths.js'),
     createSyntaxCheckStep(layout, '关键 JSON 格式化工具语法检查', 'architecture/tools/format-project-json.js'),
     createSyntaxCheckStep(layout, 'Bundle 资产目录工具语法检查', 'architecture/tools/generate-bundle-asset-catalog.js'),
+    createSyntaxCheckStep(layout, 'UUID 资产审计工具语法检查', 'architecture/tools/generate-uuid-asset-report.js'),
+    createSyntaxCheckStep(layout, 'Duck 碎片使用审计工具语法检查', 'architecture/tools/generate-duck-fragment-usage-audit.js'),
     createSyntaxCheckStep(layout, '素材可读性审计工具语法检查', 'architecture/tools/generate-asset-readability-audit.js'),
     createSyntaxCheckStep(layout, '音频使用审计工具语法检查', 'architecture/tools/generate-audio-usage-audit.js'),
+    createSyntaxCheckStep(layout, '微信小游戏结构校验语法检查', 'architecture/tools/verify-wechat-minigame-structure.js'),
+    createSyntaxCheckStep(layout, '手工还原层语法校验工具语法检查', 'architecture/tools/verify-refined-module-syntax.js'),
     createSyntaxCheckStep(layout, 'DuckBundle 木板语义化工具语法检查', 'architecture/tools/semanticize-duckbundle-wood-assets.js'),
     createSyntaxCheckStep(layout, 'DuckBundle 背景语义化工具语法检查', 'architecture/tools/semanticize-duckbundle-background-assets.js'),
     createSyntaxCheckStep(layout, 'DuckBundle 季节背景语义化工具语法检查', 'architecture/tools/semanticize-duckbundle-seasonal-background-assets.js'),
@@ -80,6 +85,8 @@ function buildGuardrailSteps(layout) {
     createScriptStep(layout, '架构风格检查', 'architecture/tools/check-architecture-style.js'),
     createScriptStep(layout, '素材分层检查', 'architecture/tools/check-asset-code-separation.js'),
     createScriptStep(layout, '旧路径运行时兼容检查', 'architecture/tools/check-legacy-runtime-compat.js'),
+    createScriptStep(layout, '微信小游戏结构校验', 'architecture/tools/verify-wechat-minigame-structure.js'),
+    createScriptStep(layout, '手工还原层语法校验', 'architecture/tools/verify-refined-module-syntax.js'),
     createScriptStep(layout, '运行安全校验', 'architecture/tools/verify-runtime-safety.js')
   ];
 }

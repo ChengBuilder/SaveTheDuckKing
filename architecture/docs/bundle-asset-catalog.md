@@ -3,7 +3,7 @@
 > 本文件由 `architecture/tools/generate-bundle-asset-catalog.js` 生成。
 
 ## 总览
-- 生成时间：2026-04-08T09:53:36.770Z
+- 生成时间：2026-04-08T15:18:23.716Z
 - Bundle 总数：10
 - Root bundle 数：2
 - Subpackage bundle 数：8
@@ -107,18 +107,18 @@
 - 编译产物文件：import 708 / native 335
 - UUID 风格编译文件：1043
 - 命名噪声高频片段：
-  - `bg`：33
   - `a`：18
   - `b`：18
   - `c`：18
   - `d`：18
   - `e`：18
   - `%2`：3
-  - `bg1`：3
-  - `bg2`：3
-  - `bg3`：3
-  - `bg4`：3
-  - `bg5`：3
+  - `cla`：3
+  - `cln`：3
+  - `ls10`：3
+  - `lva`：3
+  - `lvn`：3
+  - `mla`：3
 - 命名噪声样例路径：
   - `tex/nail/sfa`
   - `tex/fragment/a/5`
@@ -143,10 +143,10 @@
   - `tex/wood`：774
   - `tex/nail`：99
   - `tex/fragment`：90
-  - `tex/newBg`：60
+  - `tex/seasonalBackground`：60
   - `prefab/wood`：43
   - `tex/newNail`：39
-  - `tex/bg`：33
+  - `tex/background`：33
   - `tex/难度飙升`：18
   - `tex/bubble`：18
   - `tex/circle`：6

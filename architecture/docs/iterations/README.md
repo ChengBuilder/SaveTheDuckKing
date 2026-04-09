@@ -3,6 +3,13 @@
 > 本文件由 `architecture/tools/generate-iteration-report.js` 生成。
 
 ## 报告列表（新到旧）
+- [iteration-2026-04-08-231824.md](./iteration-2026-04-08-231824.md)
+- [iteration-2026-04-08-231532.md](./iteration-2026-04-08-231532.md)
+- [iteration-2026-04-08-215507.md](./iteration-2026-04-08-215507.md)
+- [iteration-2026-04-08-213016.md](./iteration-2026-04-08-213016.md)
+- [iteration-2026-04-08-211820.md](./iteration-2026-04-08-211820.md)
+- [iteration-2026-04-08-203416.md](./iteration-2026-04-08-203416.md)
+- [iteration-2026-04-08-203247.md](./iteration-2026-04-08-203247.md)
 - [iteration-2026-04-08-175338.md](./iteration-2026-04-08-175338.md)
 - [iteration-2026-04-08-174223.md](./iteration-2026-04-08-174223.md)
 - [iteration-2026-04-08-170213.md](./iteration-2026-04-08-170213.md)

@@ -10,6 +10,7 @@
 1. 不直接深改打包压缩业务代码（`game.js` 大段产物）。
 2. 通过 `architecture/` 承载可维护逻辑与文档。
 3. 每次迭代后必须运行“运行安全校验”。
+4. 禁止“拆东墙补西墙”式修补；任何兼容或 bug 修复都必须优先沉淀为架构模块、护栏工具或可验证规则，不能靠一次性补丁混过去。
 
 ## 最新沉淀（2026-04-07）
 1. 启动层拆分为 6 个模块：`config`、`system-info`、`render-policies`、`runtime-bridge`、`app-lifecycle`、`game-bootstrap`。
@@ -197,6 +198,48 @@
 4. `architecture/tools/check-legacy-runtime-compat.js` 已新增“`uiBundle` 设置模块旧路径”规则，且规则升级为 `enforceNormalizerAlways`，避免后续误删兼容逻辑。
 5. 本轮新增教训：`SpriteFrame` 名称迁移不能只靠全局 token 替换，需避免跨模块同名误伤（已收紧高风险 token 替换范围）。
 
+## 最新沉淀（2026-04-08 第三十一轮）
+1. `architecture/boot/asset-path-normalizer.js` 已为 Home/ui 旧路径检测增加快速命中分支：先做轻量 token 判断，再进入深度递归与正则匹配，减少 `loadAny/preloadAny` 高频场景下的无效扫描。
+2. URI 路径解码已增加 `%` 快速短路：无编码输入时不再执行 `decodeURIComponent`，降低兼容扫描中的字符串处理成本。
+3. `uiBundle` 图鉴与设置路径归一化新增快速入口判断，非目标路径会直接返回，避免每次请求都进入完整 legacy 规则链。
+4. `architecture/tools/run-guardrails.js` 已新增 `architecture/boot/asset-path-normalizer.js` 语法检查，补齐核心兼容补丁文件的护栏覆盖。
+5. 本轮优化目标为“行为不变的性能瘦身”，未改动任何 Home/ui 旧路径映射规则与对外接口。
+6. 本轮本地校验已通过：`node architecture/tools/run-guardrails.js`、`node architecture/tools/run-iteration-cycle.js`。
+
+## 最新沉淀（2026-04-08 第三十二轮）
+1. 新增 UUID 资产审计链路：`tools/generate-uuid-asset-report.js` 会把长 UUID `import/native` 文件映射回 bundle、canonical 路径、资产类型与 pack 关系，避免把运行时编译产物误判为“无用乱码文件”。
+2. 新增小游戏结构约定文档：`docs/project-structure.md`，明确区分运行时入口层、启动治理层、canonical 资源层、兼容镜像层、编译产物层与还原分析层。
+3. `tools/verify-wechat-minigame-structure.js` 已对齐当前解包工程真实形态：`application-main.js`、`engine-adapter.js`、`first-screen.js`、`subpackages-bootstrap.js`、`web-adapter.js` 作为 `game.js` 的内嵌虚拟模块校验，不再误判为缺失根文件。
+4. 新增 `tools/verify-refined-module-syntax.js`，并接入 `run-guardrails.js`；后续 `restored/start-scene/refined/*.refined.js` 不再只是“人工可读层”，而是进入自动语法护栏。
+5. `restored/start-scene/refined/AudioManager.ts.refined.js` 与 `GameData.ts.refined.js` 已作为手工语义还原样板，持续把无语义变量和索引模式收敛成可维护表达。
+
+## 最新沉淀（2026-04-08 第三十三轮）
+1. 新增 `restored/start-scene/refined/ResManager.ts.refined.js`，把 bundle 加载、资源缓存、typed asset 获取三类职责从解包代码里拆成可读表达，后续阅读 `LoadScene`、`HomeScene`、`DuckController` 时可直接复用这层语义。
+2. `restored/start-scene/refined/README.md` 已补充 `ResManager.ts.refined.js`，当前 refined 样板已覆盖启动配置、音频、资源与关卡模式四类基础能力。
+3. 新增 `docs/rename-priority-notes.md`，明确区分：
+   - UUID `import/native` 文件默认不 rename；
+   - `audioBundle` 的 `gz/ls/lz` 目前虽低可读，但仍缺少运行时语义证据，先不 rename；
+   - `DuckBundle` 的 `tex/fragment/a..e/*` 已确认是高价值治理对象，但必须先还原 `Util/Wood/DuckController` 中的分组语义，再进入 canonical rename。
+
+## 最新沉淀（2026-04-08 第三十四轮）
+1. 新增 `restored/start-scene/refined/Wood.ts.refined.js`，把木板节点的颜色目录解析、冰钉初始化、刚体开关、复活过渡等行为整理成可读结构，并补出 `WOOD_TEXTURE_DIRECTORY_BY_COLOR_INDEX` 常量。
+2. `Wood.ts.refined.js` 已额外沉淀 `INFERRED_FRAGMENT_GROUP_BY_WOOD_DIRECTORY`，作为后续 `tex/fragment/a..e/*` rename 的中间语义桥，不直接参与运行时。
+3. 新增 `docs/duck-fragment-analysis.md`，把 `Util.fragmentEffect()` 的动态路径规则、`GameModel.woodColorArr` 的木板颜色目录，以及五组碎片图的平均色统计合并成一份证据说明。
+4. 当前对 `DuckBundle` 碎片组的高置信推断已固定为：
+   - `a -> redWoodFragments`
+   - `b -> grayWoodFragments`
+   - `c -> brownWoodFragments`
+   - `d -> lightWoodFragments`
+   - `e -> goldWoodFragments`
+5. 但在定位 `fragment groupKey` 的真实生成点前，仍不直接做 canonical rename；下一步应继续还原 `DuckController` 的木板破碎调用链，确认运行时是直接传 `a..e` 还是由 `woodColor` 转换得到。
+
+## 最新沉淀（2026-04-08 第三十五轮）
+1. 新增 `tools/generate-duck-fragment-usage-audit.js`，把 `fragmentEffect` 定义、静态调用点、`tex/fragment/*` 资源组、`tex/wood/*` 目录和木板直接销毁线索统一输出到 `docs/duck-fragment-usage-audit.md` / `.json`。
+2. 当前静态审计结果已明确收敛为“有定义、无调用”：扫描 `game.js`、`Util.ts.restored.js`、`Wood.ts.restored.js`、`DuckController.ts.restored.js`、`GameModel2.ts.restored.js` 时，只找到 `fragmentEffect` 定义，未找到任何静态调用点。
+3. `Wood.ts` 的下落更新分支会在木板越界后直接移除节点，因此 `fragmentEffect` 当前更像历史残留工具函数，而不是现行玩法主链。
+4. 新增 `restored/start-scene/refined/Util.ts.refined.js`，把随机、几何、节点坐标转换、粒子、彩带、刮痕、碎片等高频工具整理成可读结构，并保留旧方法名别名，方便与 `*.restored.js` 对照。
+5. 结论进一步收紧：`tex/fragment/a..e/*` 仍属于高价值语义资产，但在重新找到真实运行时入口前，只做审计和 refined 还原，不直接进入 canonical rename。
+
 ## 关键风险与约束
 1. `game.js` 内大量压缩代码不可控，深改风险极高。
 2. 允许改动 `game.js` 的范围：仅限启动桥接与必要接入点。
@@ -210,8 +253,11 @@ node -c architecture/boot/global-context.js
 node -c architecture/boot/boot-logger.js
 node -c architecture/boot/recovery-strategy.js
 node -c architecture/boot/render-policies.js
+node -c architecture/boot/asset-path-normalizer.js
 node architecture/tools/check-architecture-style.js
 node architecture/tools/check-asset-code-separation.js
+node architecture/tools/verify-wechat-minigame-structure.js
+node architecture/tools/verify-refined-module-syntax.js
 node architecture/tools/verify-runtime-safety.js
 node architecture/tools/generate-iteration-report.js
 node architecture/tools/run-iteration-cycle.js

@@ -10,8 +10,13 @@
 
 ## 当前模块
 
+- `AudioManager.ts.refined.js`
 - `GameCtrl.ts.refined.js`
+- `GameData.ts.refined.js`
 - `GameData2.ts.refined.js`
+- `ResManager.ts.refined.js`
+- `Util.ts.refined.js`
+- `Wood.ts.refined.js`
 - `itemPigeonNode.ts.refined.js`
 
 ## 推荐工作流

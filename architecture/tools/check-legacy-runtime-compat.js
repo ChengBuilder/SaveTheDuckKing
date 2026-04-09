@@ -25,6 +25,20 @@ const LEGACY_COMPAT_RULES = [
     enforceNormalizerAlways: true
   },
   {
+    ruleName: 'HomeBundle BgParticle 旧路径',
+    configPath: 'subpackages/HomeBundle/config.home-bundle.json',
+    configLegacyPattern: /^tex\/BgParticle\/p[1-4](?:\/|$)/,
+    runtimeLegacyPattern: /tex\/BgParticle\/p[1-4](?:\/(?:spriteFrame|texture))?/g,
+    requiredNormalizerSnippets: [
+      'HOME_BUNDLE_PARTICLE_LEGACY_PATH_MAP',
+      'function normalizeLegacyHomeParticlePath',
+      'function mightContainHomeBundleLegacyPath',
+      'hasLegacyHomeBundlePath(requestInput)',
+      'normalizeLegacyBundleRequestInput'
+    ],
+    enforceNormalizerAlways: true
+  },
+  {
     ruleName: 'uiBundle 图鉴皮肤页旧路径',
     configPath: 'subpackages/uiBundle/config.ui-bundle.json',
     configLegacyPattern: /^tex\/book\/鸽鸽图鉴\/皮肤图鉴\/p(10|[1-9])(?:\/|$)/,

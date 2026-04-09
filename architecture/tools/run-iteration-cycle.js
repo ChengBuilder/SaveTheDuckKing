@@ -19,6 +19,8 @@ function runIterationCycle() {
     createScriptStep(layout, '格式化关键 JSON 清单', 'architecture/tools/format-project-json.js'),
     createScriptStep(layout, '生成素材分层报告', 'architecture/tools/generate-asset-code-report.js'),
     createScriptStep(layout, '生成 Bundle 资产目录', 'architecture/tools/generate-bundle-asset-catalog.js'),
+    createScriptStep(layout, '生成 UUID 资产审计', 'architecture/tools/generate-uuid-asset-report.js'),
+    createScriptStep(layout, '生成 Duck 碎片使用审计', 'architecture/tools/generate-duck-fragment-usage-audit.js'),
     createScriptStep(layout, '生成素材可读性审计', 'architecture/tools/generate-asset-readability-audit.js'),
     createScriptStep(layout, '生成音频使用审计', 'architecture/tools/generate-audio-usage-audit.js'),
     createScriptStep(layout, '执行护栏检查', 'architecture/tools/run-guardrails.js'),
