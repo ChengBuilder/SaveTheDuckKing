@@ -1,5 +1,5 @@
 {
-  "description": "Assembled runnable WeChat mini game project from exported wxapkg artifacts.",
+  "description": "WeChat mini game project.",
   "packOptions": {
     "ignore": [],
     "include": []
@@ -33,8 +33,8 @@
   },
   "compileType": "game",
   "libVersion": "3.15.1",
-  "appid": "wxf5df710b4d8b61af",
-  "projectname": "duck_game_wxf5df710b4d8b61af",
+  "appid": "wx22d5e8134148a4f7",
+  "projectname": "duck_game",
   "simulatorType": "game",
   "condition": {},
   "isGameTourist": false,

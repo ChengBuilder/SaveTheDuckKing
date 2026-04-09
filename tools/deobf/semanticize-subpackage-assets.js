@@ -14,9 +14,14 @@ const RUNTIME_REMAP_MANIFEST_PATH = path.join(
   "generated",
   "subpackage-asset-remap-manifest.js"
 );
+const SEMANTIC_ALIAS_MANIFEST_DIR = path.join(
+  PROJECT_ROOT,
+  "architecture",
+  "generated",
+  "subpackage-semantic-aliases"
+);
 
 const SEMANTIC_DIRNAME = "__semantic__";
-const MANIFEST_FILENAME = "semantic-asset-aliases.json";
 const UUID_TEMPLATE = [
   "", "", "", "", "", "", "", "", "-", "", "", "", "", "-", "", "", "", "", "-", "", "", "", "", "-",
   "", "", "", "", "", "", "", "", "", "", "", ""
@@ -594,7 +599,7 @@ function generateBundleManifest(bundleState, existingBundleManifest) {
 }
 
 function loadExistingBundleManifest(bundleDir) {
-  const manifestPath = path.join(bundleDir, MANIFEST_FILENAME);
+  const manifestPath = resolveBundleManifestPath(bundleDir);
   if (!fs.existsSync(manifestPath)) {
     return null;
   }
@@ -672,7 +677,8 @@ function writeBundleSemanticAliases(bundleState, bundleManifest, options) {
     }
   }
 
-  const manifestPath = path.join(bundleState.bundleDir, MANIFEST_FILENAME);
+  ensureDirectory(SEMANTIC_ALIAS_MANIFEST_DIR);
+  const manifestPath = resolveBundleManifestPath(bundleState.bundleName);
   fs.writeFileSync(manifestPath, JSON.stringify(bundleManifest, null, 2) + "\n", "utf8");
 }
 
@@ -1453,6 +1459,11 @@ function decodeMaybeUrlEncodedSegment(segment) {
 
 function normalizePathForPosix(inputPath) {
   return String(inputPath || "").replace(/\\/g, "/");
+}
+
+function resolveBundleManifestPath(bundleDirOrName) {
+  const bundleName = path.basename(String(bundleDirOrName || ""));
+  return path.join(SEMANTIC_ALIAS_MANIFEST_DIR, `${bundleName}.json`);
 }
 
 function pruneUrlEncodedCompatibilityLinks(bundleDir) {

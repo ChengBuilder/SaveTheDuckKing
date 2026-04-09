@@ -59,6 +59,7 @@ function buildGuardrailSteps(layout) {
     createSyntaxCheckStep(layout, '启动日志语法检查', 'architecture/boot/boot-logger.js'),
     createSyntaxCheckStep(layout, '平台策略语法检查', 'architecture/boot/platform-strategy.js'),
     createSyntaxCheckStep(layout, '性能策略语法检查', 'architecture/boot/performance-strategy.js'),
+    createSyntaxCheckStep(layout, '运行时治理语法检查', 'architecture/boot/runtime-governance.js'),
     createSyntaxCheckStep(layout, '系统信息语法检查', 'architecture/boot/system-info.js'),
     createSyntaxCheckStep(layout, '渲染策略语法检查', 'architecture/boot/render-policies.js'),
     createSyntaxCheckStep(layout, '运行桥接语法检查', 'architecture/boot/runtime-bridge.js'),
@@ -68,11 +69,11 @@ function buildGuardrailSteps(layout) {
     createSyntaxCheckStep(layout, '关键 JSON 格式化工具语法检查', 'architecture/tools/format-project-json.js'),
     createSyntaxCheckStep(layout, 'Bundle 资产目录工具语法检查', 'architecture/tools/generate-bundle-asset-catalog.js'),
     createSyntaxCheckStep(layout, 'UUID 资产审计工具语法检查', 'architecture/tools/generate-uuid-asset-report.js'),
-    createSyntaxCheckStep(layout, 'Duck 碎片使用审计工具语法检查', 'architecture/tools/generate-duck-fragment-usage-audit.js'),
     createSyntaxCheckStep(layout, '素材可读性审计工具语法检查', 'architecture/tools/generate-asset-readability-audit.js'),
     createSyntaxCheckStep(layout, '音频使用审计工具语法检查', 'architecture/tools/generate-audio-usage-audit.js'),
+    createSyntaxCheckStep(layout, '子包结构审计工具语法检查', 'architecture/tools/generate-subpackage-structure-audit.js'),
+    createSyntaxCheckStep(layout, '兼容镜像审计工具语法检查', 'architecture/tools/generate-compatibility-mirror-audit.js'),
     createSyntaxCheckStep(layout, '微信小游戏结构校验语法检查', 'architecture/tools/verify-wechat-minigame-structure.js'),
-    createSyntaxCheckStep(layout, '手工还原层语法校验工具语法检查', 'architecture/tools/verify-refined-module-syntax.js'),
     createSyntaxCheckStep(layout, 'DuckBundle 木板语义化工具语法检查', 'architecture/tools/semanticize-duckbundle-wood-assets.js'),
     createSyntaxCheckStep(layout, 'DuckBundle 背景语义化工具语法检查', 'architecture/tools/semanticize-duckbundle-background-assets.js'),
     createSyntaxCheckStep(layout, 'DuckBundle 季节背景语义化工具语法检查', 'architecture/tools/semanticize-duckbundle-seasonal-background-assets.js'),
@@ -86,7 +87,6 @@ function buildGuardrailSteps(layout) {
     createScriptStep(layout, '素材分层检查', 'architecture/tools/check-asset-code-separation.js'),
     createScriptStep(layout, '旧路径运行时兼容检查', 'architecture/tools/check-legacy-runtime-compat.js'),
     createScriptStep(layout, '微信小游戏结构校验', 'architecture/tools/verify-wechat-minigame-structure.js'),
-    createScriptStep(layout, '手工还原层语法校验', 'architecture/tools/verify-refined-module-syntax.js'),
     createScriptStep(layout, '运行安全校验', 'architecture/tools/verify-runtime-safety.js')
   ];
 }

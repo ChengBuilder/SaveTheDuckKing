@@ -6,3 +6,11 @@
 
 # 装配报告（非运行时必需）
 ASSEMBLY_REPORT.json
+
+# Node.js 工具依赖
+node_modules/
+npm-debug.log*
+
+# 微信 CI / 预览输出
+wechat-ci-output/
+.secrets/

@@ -25,9 +25,9 @@
 7. `architecture/docs/debug-output.md`
 8. `architecture/docs/performance-playbook.md`
 9. `architecture/docs/uuid-asset-report.md`
-10. `architecture/docs/duck-fragment-usage-audit.md`
-11. `architecture/docs/rename-priority-notes.md`
-12. `architecture/docs/duck-fragment-analysis.md`
+10. `architecture/docs/subpackage-structure-audit.md`
+11. `architecture/docs/compatibility-mirror-audit.md`
+12. `architecture/docs/wechat-official-project-guide.md`
 
 ## 设计原则
 1. 单一职责：一个模块只负责一种能力。

@@ -1,0 +1,2662 @@
+{
+  "generatedAt": "2026-04-09T08:53:51.328Z",
+  "projectPath": "./",
+  "reportMode": {
+    "includeFullRecords": false,
+    "includeDependencySamples": false
+  },
+  "professionalAssessment": {
+    "conformsToRuntimeLayering": true,
+    "conformsToHumanMaintainability": false,
+    "reason": "subpackages 下的 import/native 仍然属于 Cocos 运行时编译层；运行时可用性已建立，但需要依赖治理索引与审计报告提升可读性。"
+  },
+  "cleanupDecision": {
+    "canDeleteUnusedRuntimeFilesDirectly": true,
+    "deletedRuntimeFileCount": 0,
+    "note": "本次未发现 subpackages 运行时孤儿 import/native 文件，不建议继续手动删除。"
+  },
+  "summary": {
+    "totalBundles": 8,
+    "totalRootBootstrapPlaceholderBundles": 8,
+    "totalImportJson": 1296,
+    "totalDirectImportJson": 1213,
+    "totalPackImportJson": 83,
+    "totalConfigPackEntries": 86,
+    "totalConfigPathEntries": 2272,
+    "totalConfigUuidEntries": 2989,
+    "totalEmptyDirectories": 0,
+    "totalUrlEncodedPaths": 0,
+    "totalNativeFiles": 657,
+    "totalUnusedImportJson": 0,
+    "totalUnusedNativeFiles": 0
+  },
+  "bundles": [
+    {
+      "bundleName": "aniBundle",
+      "configPath": "subpackages/aniBundle/config.animation-bundle.json",
+      "gameEntryPath": "subpackages/aniBundle/game.js",
+      "gameEntryMode": "root-bootstrap-placeholder",
+      "semanticAliasManifestPath": "architecture/generated/subpackage-semantic-aliases/aniBundle.json",
+      "semanticAliasImportCount": 86,
+      "semanticAliasNativeCount": 42,
+      "dependencyBundles": [
+        "main",
+        "start-scene"
+      ],
+      "sceneEntries": [],
+      "configPackEntryCount": 2,
+      "configPathEntryCount": 156,
+      "configUuidCount": 159,
+      "configVersionKinds": [
+        "import",
+        "native"
+      ],
+      "topLevelBundleFiles": [
+        "config.animation-bundle.json",
+        "game.js"
+      ],
+      "importJsonCount": 86,
+      "directImportJsonCount": 84,
+      "packImportJsonCount": 2,
+      "emptyDirectoryCount": 0,
+      "urlEncodedPathCount": 0,
+      "unusedImportJsonCount": 0,
+      "nativeFileCount": 42,
+      "unusedNativeFileCount": 0,
+      "emptyDirectorySamples": [],
+      "urlEncodedPathSamples": [],
+      "importTopLevelNamespaces": [
+        {
+          "name": "mythicBeastAnimations",
+          "count": 24
+        },
+        {
+          "name": "xiaoSanVideo",
+          "count": 11
+        },
+        {
+          "name": "skeletalAnimations",
+          "count": 9
+        },
+        {
+          "name": "breakDoorAnimation",
+          "count": 5
+        },
+        {
+          "name": "fullAnimation",
+          "count": 4
+        },
+        {
+          "name": "gyroscope",
+          "count": 4
+        }
+      ],
+      "nativeTopLevelNamespaces": [
+        {
+          "name": "mythicBeastAnimations",
+          "count": 12
+        },
+        {
+          "name": "xiaoSanVideo",
+          "count": 6
+        },
+        {
+          "name": "breakDoorAnimation",
+          "count": 3
+        },
+        {
+          "name": "fullAnimation",
+          "count": 2
+        },
+        {
+          "name": "gooseTrapAnimation",
+          "count": 2
+        },
+        {
+          "name": "gyroscope",
+          "count": 2
+        }
+      ],
+      "directImportSamples": [
+        {
+          "bundleName": "aniBundle",
+          "relativePath": "subpackages/aniBundle/import/bibiLabu/skeleton.json",
+          "bundleRelativePath": "import/bibiLabu/skeleton.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "比比拉布/skeleton",
+          "strategy": "direct-canonical-path",
+          "classNames": [
+            "cc.Asset"
+          ],
+          "dependencyCount": 0,
+          "dependencySamples": [],
+          "nameSamples": []
+        },
+        {
+          "bundleName": "aniBundle",
+          "relativePath": "subpackages/aniBundle/import/bibiLabu/skeleton/spriteFrame.json",
+          "bundleRelativePath": "import/bibiLabu/skeleton/spriteFrame.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "比比拉布/skeleton/spriteFrame",
+          "strategy": "direct-canonical-path",
+          "classNames": [
+            "cc.SpriteFrame"
+          ],
+          "dependencyCount": 1,
+          "dependencySamples": [],
+          "nameSamples": [
+            "skeleton"
+          ]
+        },
+        {
+          "bundleName": "aniBundle",
+          "relativePath": "subpackages/aniBundle/import/breakDoorAnimation/skeleton.json",
+          "bundleRelativePath": "import/breakDoorAnimation/skeleton.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "破门动画/skeleton",
+          "strategy": "direct-canonical-path",
+          "classNames": [
+            "cc.Asset"
+          ],
+          "dependencyCount": 0,
+          "dependencySamples": [],
+          "nameSamples": []
+        },
+        {
+          "bundleName": "aniBundle",
+          "relativePath": "subpackages/aniBundle/import/breakDoorAnimation/skeleton/spriteFrame__2.json",
+          "bundleRelativePath": "import/breakDoorAnimation/skeleton/spriteFrame__2.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "破门动画/skeleton/spriteFrame",
+          "strategy": "direct-canonical-path",
+          "classNames": [
+            "cc.SpriteFrame"
+          ],
+          "dependencyCount": 1,
+          "dependencySamples": [],
+          "nameSamples": [
+            "skeleton"
+          ]
+        },
+        {
+          "bundleName": "aniBundle",
+          "relativePath": "subpackages/aniBundle/import/breakDoorAnimation/skeleton/spriteFrame.json",
+          "bundleRelativePath": "import/breakDoorAnimation/skeleton/spriteFrame.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "破门动画/skeleton/spriteFrame",
+          "strategy": "direct-canonical-path",
+          "classNames": [
+            "cc.ImageAsset"
+          ],
+          "dependencyCount": 0,
+          "dependencySamples": [],
+          "nameSamples": []
+        },
+        {
+          "bundleName": "aniBundle",
+          "relativePath": "subpackages/aniBundle/import/breakDoorAnimation/skeleton2/spriteFrame__2.json",
+          "bundleRelativePath": "import/breakDoorAnimation/skeleton2/spriteFrame__2.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "破门动画/skeleton2/spriteFrame",
+          "strategy": "direct-canonical-path",
+          "classNames": [
+            "cc.SpriteFrame"
+          ],
+          "dependencyCount": 1,
+          "dependencySamples": [],
+          "nameSamples": [
+            "skeleton2"
+          ]
+        }
+      ],
+      "packImportSamples": [
+        {
+          "bundleName": "aniBundle",
+          "relativePath": "subpackages/aniBundle/import/_packs/pack/goose__pack_179.json",
+          "bundleRelativePath": "import/_packs/pack/goose__pack_179.json",
+          "role": "pack-container-json",
+          "runtimeMapped": true,
+          "canonicalPath": "",
+          "strategy": "import-pack",
+          "classNames": [
+            "cc.Node",
+            "cc.Widget",
+            "cc.UITransform",
+            "cc.Sprite",
+            "sp.Skeleton",
+            "cc.Prefab"
+          ],
+          "dependencyCount": 16,
+          "dependencySamples": [],
+          "nameSamples": [
+            "default"
+          ]
+        },
+        {
+          "bundleName": "aniBundle",
+          "relativePath": "subpackages/aniBundle/import/_packs/pack/skeleton__pack_17.json",
+          "bundleRelativePath": "import/_packs/pack/skeleton__pack_17.json",
+          "role": "pack-container-json",
+          "runtimeMapped": true,
+          "canonicalPath": "",
+          "strategy": "import-pack",
+          "classNames": [],
+          "dependencyCount": 0,
+          "dependencySamples": [],
+          "nameSamples": []
+        }
+      ],
+      "nativeSamples": [
+        {
+          "bundleName": "aniBundle",
+          "relativePath": "subpackages/aniBundle/native/bibiLabu/skeleton.atlas",
+          "bundleRelativePath": "native/bibiLabu/skeleton.atlas",
+          "role": "native-file",
+          "runtimeMapped": true,
+          "canonicalPath": "比比拉布/skeleton",
+          "strategy": "direct-canonical-path",
+          "extension": ".atlas"
+        },
+        {
+          "bundleName": "aniBundle",
+          "relativePath": "subpackages/aniBundle/native/breakDoorAnimation/skeleton.atlas",
+          "bundleRelativePath": "native/breakDoorAnimation/skeleton.atlas",
+          "role": "native-file",
+          "runtimeMapped": true,
+          "canonicalPath": "破门动画/skeleton",
+          "strategy": "direct-canonical-path",
+          "extension": ".atlas"
+        },
+        {
+          "bundleName": "aniBundle",
+          "relativePath": "subpackages/aniBundle/native/breakDoorAnimation/skeleton/spriteFrame.png",
+          "bundleRelativePath": "native/breakDoorAnimation/skeleton/spriteFrame.png",
+          "role": "native-file",
+          "runtimeMapped": true,
+          "canonicalPath": "破门动画/skeleton/spriteFrame",
+          "strategy": "direct-canonical-path",
+          "extension": ".png"
+        },
+        {
+          "bundleName": "aniBundle",
+          "relativePath": "subpackages/aniBundle/native/breakDoorAnimation/skeleton2/spriteFrame.png",
+          "bundleRelativePath": "native/breakDoorAnimation/skeleton2/spriteFrame.png",
+          "role": "native-file",
+          "runtimeMapped": true,
+          "canonicalPath": "破门动画/skeleton2/spriteFrame",
+          "strategy": "direct-canonical-path",
+          "extension": ".png"
+        },
+        {
+          "bundleName": "aniBundle",
+          "relativePath": "subpackages/aniBundle/native/daily/skeleton.atlas",
+          "bundleRelativePath": "native/daily/skeleton.atlas",
+          "role": "native-file",
+          "runtimeMapped": true,
+          "canonicalPath": "每日/skeleton",
+          "strategy": "direct-canonical-path",
+          "extension": ".atlas"
+        },
+        {
+          "bundleName": "aniBundle",
+          "relativePath": "subpackages/aniBundle/native/dave/skeleton.atlas",
+          "bundleRelativePath": "native/dave/skeleton.atlas",
+          "role": "native-file",
+          "runtimeMapped": true,
+          "canonicalPath": "戴夫/skeleton",
+          "strategy": "direct-canonical-path",
+          "extension": ".atlas"
+        }
+      ]
+    },
+    {
+      "bundleName": "audioBundle",
+      "configPath": "subpackages/audioBundle/config.audio-bundle.json",
+      "gameEntryPath": "subpackages/audioBundle/game.js",
+      "gameEntryMode": "root-bootstrap-placeholder",
+      "semanticAliasManifestPath": "architecture/generated/subpackage-semantic-aliases/audioBundle.json",
+      "semanticAliasImportCount": 77,
+      "semanticAliasNativeCount": 77,
+      "dependencyBundles": [],
+      "sceneEntries": [],
+      "configPackEntryCount": 0,
+      "configPathEntryCount": 65,
+      "configUuidCount": 65,
+      "configVersionKinds": [
+        "import",
+        "native"
+      ],
+      "topLevelBundleFiles": [
+        "config.audio-bundle.json",
+        "game.js"
+      ],
+      "importJsonCount": 65,
+      "directImportJsonCount": 65,
+      "packImportJsonCount": 0,
+      "emptyDirectoryCount": 0,
+      "urlEncodedPathCount": 0,
+      "unusedImportJsonCount": 0,
+      "nativeFileCount": 65,
+      "unusedNativeFileCount": 0,
+      "emptyDirectorySamples": [],
+      "urlEncodedPathSamples": [],
+      "importTopLevelNamespaces": [
+        {
+          "name": "fruitGame",
+          "count": 16
+        },
+        {
+          "name": "legacy",
+          "count": 12
+        },
+        {
+          "name": "comboMusic",
+          "count": 10
+        },
+        {
+          "name": "ui",
+          "count": 10
+        },
+        {
+          "name": "duckGame",
+          "count": 9
+        },
+        {
+          "name": "sceneTransition",
+          "count": 3
+        }
+      ],
+      "nativeTopLevelNamespaces": [
+        {
+          "name": "fruitGame",
+          "count": 16
+        },
+        {
+          "name": "legacy",
+          "count": 12
+        },
+        {
+          "name": "comboMusic",
+          "count": 10
+        },
+        {
+          "name": "ui",
+          "count": 10
+        },
+        {
+          "name": "duckGame",
+          "count": 9
+        },
+        {
+          "name": "sceneTransition",
+          "count": 3
+        }
+      ],
+      "directImportSamples": [
+        {
+          "bundleName": "audioBundle",
+          "relativePath": "subpackages/audioBundle/import/bgm/defaultGameplay.json",
+          "bundleRelativePath": "import/bgm/defaultGameplay.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "bgm/defaultGameplay",
+          "strategy": "direct-canonical-path",
+          "classNames": [
+            "cc.AudioClip"
+          ],
+          "dependencyCount": 0,
+          "dependencySamples": [],
+          "nameSamples": []
+        },
+        {
+          "bundleName": "audioBundle",
+          "relativePath": "subpackages/audioBundle/import/bgm/pureColor.json",
+          "bundleRelativePath": "import/bgm/pureColor.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "bgm/pureColor",
+          "strategy": "direct-canonical-path",
+          "classNames": [
+            "cc.AudioClip"
+          ],
+          "dependencyCount": 0,
+          "dependencySamples": [],
+          "nameSamples": []
+        },
+        {
+          "bundleName": "audioBundle",
+          "relativePath": "subpackages/audioBundle/import/comboMusic/combo_1.json",
+          "bundleRelativePath": "import/comboMusic/combo_1.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "comboMusic/combo_1",
+          "strategy": "direct-canonical-path",
+          "classNames": [
+            "cc.AudioClip"
+          ],
+          "dependencyCount": 0,
+          "dependencySamples": [],
+          "nameSamples": []
+        },
+        {
+          "bundleName": "audioBundle",
+          "relativePath": "subpackages/audioBundle/import/comboMusic/combo_10.json",
+          "bundleRelativePath": "import/comboMusic/combo_10.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "comboMusic/combo_10",
+          "strategy": "direct-canonical-path",
+          "classNames": [
+            "cc.AudioClip"
+          ],
+          "dependencyCount": 0,
+          "dependencySamples": [],
+          "nameSamples": []
+        },
+        {
+          "bundleName": "audioBundle",
+          "relativePath": "subpackages/audioBundle/import/comboMusic/combo_2.json",
+          "bundleRelativePath": "import/comboMusic/combo_2.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "comboMusic/combo_2",
+          "strategy": "direct-canonical-path",
+          "classNames": [
+            "cc.AudioClip"
+          ],
+          "dependencyCount": 0,
+          "dependencySamples": [],
+          "nameSamples": []
+        },
+        {
+          "bundleName": "audioBundle",
+          "relativePath": "subpackages/audioBundle/import/comboMusic/combo_3.json",
+          "bundleRelativePath": "import/comboMusic/combo_3.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "comboMusic/combo_3",
+          "strategy": "direct-canonical-path",
+          "classNames": [
+            "cc.AudioClip"
+          ],
+          "dependencyCount": 0,
+          "dependencySamples": [],
+          "nameSamples": []
+        }
+      ],
+      "packImportSamples": [],
+      "nativeSamples": [
+        {
+          "bundleName": "audioBundle",
+          "relativePath": "subpackages/audioBundle/native/bgm/defaultGameplay.mp3",
+          "bundleRelativePath": "native/bgm/defaultGameplay.mp3",
+          "role": "native-file",
+          "runtimeMapped": true,
+          "canonicalPath": "bgm/defaultGameplay",
+          "strategy": "direct-canonical-path",
+          "extension": ".mp3"
+        },
+        {
+          "bundleName": "audioBundle",
+          "relativePath": "subpackages/audioBundle/native/bgm/pureColor.mp3",
+          "bundleRelativePath": "native/bgm/pureColor.mp3",
+          "role": "native-file",
+          "runtimeMapped": true,
+          "canonicalPath": "bgm/pureColor",
+          "strategy": "direct-canonical-path",
+          "extension": ".mp3"
+        },
+        {
+          "bundleName": "audioBundle",
+          "relativePath": "subpackages/audioBundle/native/comboMusic/combo_1.mp3",
+          "bundleRelativePath": "native/comboMusic/combo_1.mp3",
+          "role": "native-file",
+          "runtimeMapped": true,
+          "canonicalPath": "comboMusic/combo_1",
+          "strategy": "direct-canonical-path",
+          "extension": ".mp3"
+        },
+        {
+          "bundleName": "audioBundle",
+          "relativePath": "subpackages/audioBundle/native/comboMusic/combo_10.mp3",
+          "bundleRelativePath": "native/comboMusic/combo_10.mp3",
+          "role": "native-file",
+          "runtimeMapped": true,
+          "canonicalPath": "comboMusic/combo_10",
+          "strategy": "direct-canonical-path",
+          "extension": ".mp3"
+        },
+        {
+          "bundleName": "audioBundle",
+          "relativePath": "subpackages/audioBundle/native/comboMusic/combo_2.mp3",
+          "bundleRelativePath": "native/comboMusic/combo_2.mp3",
+          "role": "native-file",
+          "runtimeMapped": true,
+          "canonicalPath": "comboMusic/combo_2",
+          "strategy": "direct-canonical-path",
+          "extension": ".mp3"
+        },
+        {
+          "bundleName": "audioBundle",
+          "relativePath": "subpackages/audioBundle/native/comboMusic/combo_3.mp3",
+          "bundleRelativePath": "native/comboMusic/combo_3.mp3",
+          "role": "native-file",
+          "runtimeMapped": true,
+          "canonicalPath": "comboMusic/combo_3",
+          "strategy": "direct-canonical-path",
+          "extension": ".mp3"
+        }
+      ]
+    },
+    {
+      "bundleName": "DuckBundle",
+      "configPath": "subpackages/DuckBundle/config.duck-bundle.json",
+      "gameEntryPath": "subpackages/DuckBundle/game.js",
+      "gameEntryMode": "root-bootstrap-placeholder",
+      "semanticAliasManifestPath": "architecture/generated/subpackage-semantic-aliases/DuckBundle.json",
+      "semanticAliasImportCount": 708,
+      "semanticAliasNativeCount": 335,
+      "dependencyBundles": [
+        "main",
+        "resources"
+      ],
+      "sceneEntries": [],
+      "configPackEntryCount": 12,
+      "configPathEntryCount": 1227,
+      "configUuidCount": 1251,
+      "configVersionKinds": [
+        "import",
+        "native"
+      ],
+      "topLevelBundleFiles": [
+        "config.duck-bundle.json",
+        "game.js"
+      ],
+      "importJsonCount": 708,
+      "directImportJsonCount": 696,
+      "packImportJsonCount": 12,
+      "emptyDirectoryCount": 0,
+      "urlEncodedPathCount": 0,
+      "unusedImportJsonCount": 0,
+      "nativeFileCount": 335,
+      "unusedNativeFileCount": 0,
+      "emptyDirectorySamples": [],
+      "urlEncodedPathSamples": [],
+      "importTopLevelNamespaces": [
+        {
+          "name": "tex",
+          "count": 650
+        },
+        {
+          "name": "prefab",
+          "count": 44
+        },
+        {
+          "name": "_packs",
+          "count": 12
+        },
+        {
+          "name": "gyroscope",
+          "count": 1
+        },
+        {
+          "name": "restoredNames",
+          "count": 1
+        }
+      ],
+      "nativeTopLevelNamespaces": [
+        {
+          "name": "tex",
+          "count": 333
+        },
+        {
+          "name": "gyroscope",
+          "count": 1
+        },
+        {
+          "name": "restoredNames",
+          "count": 1
+        }
+      ],
+      "directImportSamples": [
+        {
+          "bundleName": "DuckBundle",
+          "relativePath": "subpackages/DuckBundle/import/gyroscope/skeleton.json",
+          "bundleRelativePath": "import/gyroscope/skeleton.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "陀螺仪/skeleton",
+          "strategy": "direct-canonical-path",
+          "classNames": [
+            "cc.ImageAsset"
+          ],
+          "dependencyCount": 0,
+          "dependencySamples": [],
+          "nameSamples": []
+        },
+        {
+          "bundleName": "DuckBundle",
+          "relativePath": "subpackages/DuckBundle/import/prefab/adGrid1.json",
+          "bundleRelativePath": "import/prefab/adGrid1.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "prefab/adGrid1",
+          "strategy": "direct-canonical-path",
+          "classNames": [
+            "cc.Node",
+            "cc.Sprite",
+            "cc.Prefab",
+            "cc.UITransform",
+            "cc.CompPrefabInfo",
+            "cc.PrefabInfo"
+          ],
+          "dependencyCount": 2,
+          "dependencySamples": [],
+          "nameSamples": []
+        },
+        {
+          "bundleName": "DuckBundle",
+          "relativePath": "subpackages/DuckBundle/import/prefab/highLight.json",
+          "bundleRelativePath": "import/prefab/highLight.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "prefab/highLight",
+          "strategy": "direct-canonical-path",
+          "classNames": [
+            "cc.Prefab",
+            "cc.Node",
+            "cc.UITransform",
+            "cc.CompPrefabInfo",
+            "cc.Sprite",
+            "cc.UIOpacity"
+          ],
+          "dependencyCount": 1,
+          "dependencySamples": [],
+          "nameSamples": []
+        },
+        {
+          "bundleName": "DuckBundle",
+          "relativePath": "subpackages/DuckBundle/import/prefab/lockSprite.json",
+          "bundleRelativePath": "import/prefab/lockSprite.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "prefab/lockSprite",
+          "strategy": "direct-canonical-path",
+          "classNames": [
+            "cc.Node",
+            "cc.Prefab",
+            "cc.UITransform",
+            "cc.CompPrefabInfo",
+            "cc.Sprite",
+            "cc.PrefabInfo"
+          ],
+          "dependencyCount": 2,
+          "dependencySamples": [],
+          "nameSamples": []
+        },
+        {
+          "bundleName": "DuckBundle",
+          "relativePath": "subpackages/DuckBundle/import/prefab/nailShadow.json",
+          "bundleRelativePath": "import/prefab/nailShadow.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "prefab/nailShadow",
+          "strategy": "direct-canonical-path",
+          "classNames": [
+            "cc.Prefab",
+            "cc.Node",
+            "cc.UITransform",
+            "cc.CompPrefabInfo",
+            "cc.Sprite",
+            "cc.UIOpacity"
+          ],
+          "dependencyCount": 1,
+          "dependencySamples": [],
+          "nameSamples": []
+        },
+        {
+          "bundleName": "DuckBundle",
+          "relativePath": "subpackages/DuckBundle/import/prefab/wood/wood1.json",
+          "bundleRelativePath": "import/prefab/wood/wood1.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "prefab/wood/wood1",
+          "strategy": "direct-canonical-path",
+          "classNames": [
+            "cc.Node",
+            "cc.Prefab",
+            "cc.UITransform",
+            "cc.CompPrefabInfo",
+            "cc.Sprite",
+            "cc.PrefabInfo"
+          ],
+          "dependencyCount": 1,
+          "dependencySamples": [],
+          "nameSamples": []
+        }
+      ],
+      "packImportSamples": [
+        {
+          "bundleName": "DuckBundle",
+          "relativePath": "subpackages/DuckBundle/import/_packs/pack/bottom__pack_13.json",
+          "bundleRelativePath": "import/_packs/pack/bottom__pack_13.json",
+          "role": "pack-container-json",
+          "runtimeMapped": true,
+          "canonicalPath": "",
+          "strategy": "import-pack",
+          "classNames": [
+            "cc.SpriteFrame",
+            "cc.Node",
+            "cc.Sprite",
+            "cc.UITransform",
+            "cc.Widget",
+            "cc.UIOpacity"
+          ],
+          "dependencyCount": 13,
+          "dependencySamples": [],
+          "nameSamples": [
+            "上层阴影",
+            "飙升2",
+            "飙升",
+            "通关数量",
+            "底",
+            "滑动条"
+          ]
+        },
+        {
+          "bundleName": "DuckBundle",
+          "relativePath": "subpackages/DuckBundle/import/_packs/pack/grayWood22__pack_3.json",
+          "bundleRelativePath": "import/_packs/pack/grayWood22__pack_3.json",
+          "role": "pack-container-json",
+          "runtimeMapped": true,
+          "canonicalPath": "",
+          "strategy": "import-pack",
+          "classNames": [
+            "cc.SpriteFrame",
+            "cc.Prefab",
+            "cc.Node",
+            "cc.UITransform",
+            "cc.CompPrefabInfo",
+            "cc.Sprite"
+          ],
+          "dependencyCount": 2,
+          "dependencySamples": [],
+          "nameSamples": [
+            "grayWood22"
+          ]
+        },
+        {
+          "bundleName": "DuckBundle",
+          "relativePath": "subpackages/DuckBundle/import/_packs/pack/nailHalo__pack_10.json",
+          "bundleRelativePath": "import/_packs/pack/nailHalo__pack_10.json",
+          "role": "pack-container-json",
+          "runtimeMapped": true,
+          "canonicalPath": "",
+          "strategy": "import-pack",
+          "classNames": [
+            "cc.Node",
+            "cc.SpriteFrame",
+            "cc.Sprite",
+            "cc.Prefab",
+            "cc.UITransform",
+            "cc.CompPrefabInfo"
+          ],
+          "dependencyCount": 9,
+          "dependencySamples": [],
+          "nameSamples": [
+            "dingZi",
+            "baia",
+            "钉子光圈",
+            "bain"
+          ]
+        },
+        {
+          "bundleName": "DuckBundle",
+          "relativePath": "subpackages/DuckBundle/import/_packs/pack/slotFull__pack_5.json",
+          "bundleRelativePath": "import/_packs/pack/slotFull__pack_5.json",
+          "role": "pack-container-json",
+          "runtimeMapped": true,
+          "canonicalPath": "",
+          "strategy": "import-pack",
+          "classNames": [
+            "cc.SpriteFrame",
+            "cc.Node",
+            "cc.Sprite",
+            "cc.Prefab",
+            "cc.UITransform",
+            "cc.CompPrefabInfo"
+          ],
+          "dependencyCount": 4,
+          "dependencySamples": [],
+          "nameSamples": [
+            "无法消除",
+            "槽位已满"
+          ]
+        },
+        {
+          "bundleName": "DuckBundle",
+          "relativePath": "subpackages/DuckBundle/import/_packs/pack/star__pack_3.json",
+          "bundleRelativePath": "import/_packs/pack/star__pack_3.json",
+          "role": "pack-container-json",
+          "runtimeMapped": true,
+          "canonicalPath": "",
+          "strategy": "import-pack",
+          "classNames": [
+            "cc.SpriteFrame",
+            "cc.Prefab",
+            "cc.Node",
+            "cc.UITransform",
+            "cc.CompPrefabInfo",
+            "cc.Sprite"
+          ],
+          "dependencyCount": 2,
+          "dependencySamples": [],
+          "nameSamples": [
+            "星星"
+          ]
+        },
+        {
+          "bundleName": "DuckBundle",
+          "relativePath": "subpackages/DuckBundle/import/_packs/pack/wood20__pack_3.json",
+          "bundleRelativePath": "import/_packs/pack/wood20__pack_3.json",
+          "role": "pack-container-json",
+          "runtimeMapped": true,
+          "canonicalPath": "",
+          "strategy": "import-pack",
+          "classNames": [
+            "cc.Node",
+            "cc.Sprite",
+            "cc.SpriteFrame",
+            "cc.Prefab",
+            "cc.UITransform",
+            "cc.CompPrefabInfo"
+          ],
+          "dependencyCount": 3,
+          "dependencySamples": [],
+          "nameSamples": [
+            "grayWood20"
+          ]
+        }
+      ],
+      "nativeSamples": [
+        {
+          "bundleName": "DuckBundle",
+          "relativePath": "subpackages/DuckBundle/native/gyroscope/skeleton.png",
+          "bundleRelativePath": "native/gyroscope/skeleton.png",
+          "role": "native-file",
+          "runtimeMapped": true,
+          "canonicalPath": "陀螺仪/skeleton",
+          "strategy": "direct-canonical-path",
+          "extension": ".png"
+        },
+        {
+          "bundleName": "DuckBundle",
+          "relativePath": "subpackages/DuckBundle/native/restoredNames/cyanShadowNumberStrip.png",
+          "bundleRelativePath": "native/restoredNames/cyanShadowNumberStrip.png",
+          "role": "native-file",
+          "runtimeMapped": true,
+          "canonicalPath": "恢复命名/青色阴影数字条",
+          "strategy": "direct-canonical-path",
+          "extension": ".png"
+        },
+        {
+          "bundleName": "DuckBundle",
+          "relativePath": "subpackages/DuckBundle/native/tex/background/spriteFrame.jpg",
+          "bundleRelativePath": "native/tex/background/spriteFrame.jpg",
+          "role": "native-file",
+          "runtimeMapped": true,
+          "canonicalPath": "tex/背景/spriteFrame",
+          "strategy": "direct-canonical-path",
+          "extension": ".jpg"
+        },
+        {
+          "bundleName": "DuckBundle",
+          "relativePath": "subpackages/DuckBundle/native/tex/cannotClear/spriteFrame.png",
+          "bundleRelativePath": "native/tex/cannotClear/spriteFrame.png",
+          "role": "native-file",
+          "runtimeMapped": true,
+          "canonicalPath": "tex/无法消除/spriteFrame",
+          "strategy": "direct-canonical-path",
+          "extension": ".png"
+        },
+        {
+          "bundleName": "DuckBundle",
+          "relativePath": "subpackages/DuckBundle/native/tex/difficultySpike/bottom/spriteFrame.png",
+          "bundleRelativePath": "native/tex/difficultySpike/bottom/spriteFrame.png",
+          "role": "native-file",
+          "runtimeMapped": true,
+          "canonicalPath": "tex/难度飙升/底/spriteFrame",
+          "strategy": "direct-canonical-path",
+          "extension": ".png"
+        },
+        {
+          "bundleName": "DuckBundle",
+          "relativePath": "subpackages/DuckBundle/native/tex/difficultySpike/completedLevelCount/spriteFrame.png",
+          "bundleRelativePath": "native/tex/difficultySpike/completedLevelCount/spriteFrame.png",
+          "role": "native-file",
+          "runtimeMapped": true,
+          "canonicalPath": "tex/难度飙升/通关数量/spriteFrame",
+          "strategy": "direct-canonical-path",
+          "extension": ".png"
+        }
+      ]
+    },
+    {
+      "bundleName": "Game2Bundle",
+      "configPath": "subpackages/Game2Bundle/config.game2-bundle.json",
+      "gameEntryPath": "subpackages/Game2Bundle/game.js",
+      "gameEntryMode": "root-bootstrap-placeholder",
+      "semanticAliasManifestPath": "architecture/generated/subpackage-semantic-aliases/Game2Bundle.json",
+      "semanticAliasImportCount": 67,
+      "semanticAliasNativeCount": 15,
+      "dependencyBundles": [
+        "main"
+      ],
+      "sceneEntries": [],
+      "configPackEntryCount": 5,
+      "configPathEntryCount": 161,
+      "configUuidCount": 175,
+      "configVersionKinds": [
+        "import",
+        "native"
+      ],
+      "topLevelBundleFiles": [
+        "config.game2-bundle.json",
+        "game.js"
+      ],
+      "importJsonCount": 67,
+      "directImportJsonCount": 62,
+      "packImportJsonCount": 5,
+      "emptyDirectoryCount": 0,
+      "urlEncodedPathCount": 0,
+      "unusedImportJsonCount": 0,
+      "nativeFileCount": 15,
+      "unusedNativeFileCount": 0,
+      "emptyDirectorySamples": [],
+      "urlEncodedPathSamples": [],
+      "importTopLevelNamespaces": [
+        {
+          "name": "prefab",
+          "count": 36
+        },
+        {
+          "name": "tex",
+          "count": 26
+        },
+        {
+          "name": "_packs",
+          "count": 5
+        }
+      ],
+      "nativeTopLevelNamespaces": [
+        {
+          "name": "tex",
+          "count": 15
+        }
+      ],
+      "directImportSamples": [
+        {
+          "bundleName": "Game2Bundle",
+          "relativePath": "subpackages/Game2Bundle/import/prefab/fruit.json",
+          "bundleRelativePath": "import/prefab/fruit.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "prefab/fruit",
+          "strategy": "direct-canonical-path",
+          "classNames": [
+            "cc.Prefab",
+            "cc.Node",
+            "cc.UITransform",
+            "cc.CompPrefabInfo",
+            "cc.Sprite",
+            "bf6c10fc7lIiqjgyUCFDIFM"
+          ],
+          "dependencyCount": 1,
+          "dependencySamples": [],
+          "nameSamples": []
+        },
+        {
+          "bundleName": "Game2Bundle",
+          "relativePath": "subpackages/Game2Bundle/import/prefab/fruit1.json",
+          "bundleRelativePath": "import/prefab/fruit1.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "prefab/fruit1",
+          "strategy": "direct-canonical-path",
+          "classNames": [
+            "cc.Node",
+            "cc.Sprite",
+            "cc.Prefab",
+            "cc.UITransform",
+            "cc.CompPrefabInfo",
+            "cc.PrefabInfo"
+          ],
+          "dependencyCount": 2,
+          "dependencySamples": [],
+          "nameSamples": []
+        },
+        {
+          "bundleName": "Game2Bundle",
+          "relativePath": "subpackages/Game2Bundle/import/prefab/fruit10.json",
+          "bundleRelativePath": "import/prefab/fruit10.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "prefab/fruit10",
+          "strategy": "direct-canonical-path",
+          "classNames": [
+            "cc.Node",
+            "cc.Sprite",
+            "cc.Prefab",
+            "cc.UITransform",
+            "cc.CompPrefabInfo",
+            "cc.PrefabInfo"
+          ],
+          "dependencyCount": 2,
+          "dependencySamples": [],
+          "nameSamples": []
+        },
+        {
+          "bundleName": "Game2Bundle",
+          "relativePath": "subpackages/Game2Bundle/import/prefab/fruit11.json",
+          "bundleRelativePath": "import/prefab/fruit11.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "prefab/fruit11",
+          "strategy": "direct-canonical-path",
+          "classNames": [
+            "cc.Node",
+            "cc.Sprite",
+            "cc.Prefab",
+            "cc.UITransform",
+            "cc.CompPrefabInfo",
+            "cc.PrefabInfo"
+          ],
+          "dependencyCount": 2,
+          "dependencySamples": [],
+          "nameSamples": []
+        },
+        {
+          "bundleName": "Game2Bundle",
+          "relativePath": "subpackages/Game2Bundle/import/prefab/fruit12.json",
+          "bundleRelativePath": "import/prefab/fruit12.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "prefab/fruit12",
+          "strategy": "direct-canonical-path",
+          "classNames": [
+            "cc.Node",
+            "cc.Sprite",
+            "cc.Prefab",
+            "cc.UITransform",
+            "cc.CompPrefabInfo",
+            "cc.PrefabInfo"
+          ],
+          "dependencyCount": 2,
+          "dependencySamples": [],
+          "nameSamples": []
+        },
+        {
+          "bundleName": "Game2Bundle",
+          "relativePath": "subpackages/Game2Bundle/import/prefab/fruit13.json",
+          "bundleRelativePath": "import/prefab/fruit13.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "prefab/fruit13",
+          "strategy": "direct-canonical-path",
+          "classNames": [
+            "cc.Node",
+            "cc.Sprite",
+            "cc.Prefab",
+            "cc.UITransform",
+            "cc.CompPrefabInfo",
+            "cc.PrefabInfo"
+          ],
+          "dependencyCount": 2,
+          "dependencySamples": [],
+          "nameSamples": []
+        }
+      ],
+      "packImportSamples": [
+        {
+          "bundleName": "Game2Bundle",
+          "relativePath": "subpackages/Game2Bundle/import/_packs/tex/fruit/randomFruit__pack_72.json",
+          "bundleRelativePath": "import/_packs/tex/fruit/randomFruit__pack_72.json",
+          "role": "pack-container-json",
+          "runtimeMapped": true,
+          "canonicalPath": "",
+          "strategy": "import-pack",
+          "classNames": [
+            "cc.SpriteFrame"
+          ],
+          "dependencyCount": 1,
+          "dependencySamples": [],
+          "nameSamples": [
+            "fruit17",
+            "fruit21",
+            "fruit25",
+            "fruit10",
+            "随机问号",
+            "fruit32"
+          ]
+        },
+        {
+          "bundleName": "Game2Bundle",
+          "relativePath": "subpackages/Game2Bundle/import/_packs/tex/fruitShadow/fruitShadow1__pack_64.json",
+          "bundleRelativePath": "import/_packs/tex/fruitShadow/fruitShadow1__pack_64.json",
+          "role": "pack-container-json",
+          "runtimeMapped": true,
+          "canonicalPath": "",
+          "strategy": "import-pack",
+          "classNames": [
+            "cc.SpriteFrame"
+          ],
+          "dependencyCount": 1,
+          "dependencySamples": [],
+          "nameSamples": [
+            "fruitShadow23",
+            "fruitShadow2",
+            "fruitShadow15",
+            "fruitShadow31",
+            "fruitShadow24",
+            "fruitShadow4"
+          ]
+        },
+        {
+          "bundleName": "Game2Bundle",
+          "relativePath": "subpackages/Game2Bundle/import/_packs/tex/fruitShadow/fruitShadow16__pack_4.json",
+          "bundleRelativePath": "import/_packs/tex/fruitShadow/fruitShadow16__pack_4.json",
+          "role": "pack-container-json",
+          "runtimeMapped": true,
+          "canonicalPath": "",
+          "strategy": "import-pack",
+          "classNames": [
+            "cc.SpriteFrame"
+          ],
+          "dependencyCount": 1,
+          "dependencySamples": [],
+          "nameSamples": [
+            "fruitShadow16",
+            "fruitShadow20"
+          ]
+        },
+        {
+          "bundleName": "Game2Bundle",
+          "relativePath": "subpackages/Game2Bundle/import/_packs/tex/remaining__pack_11.json",
+          "bundleRelativePath": "import/_packs/tex/remaining__pack_11.json",
+          "role": "pack-container-json",
+          "runtimeMapped": true,
+          "canonicalPath": "",
+          "strategy": "import-pack",
+          "classNames": [],
+          "dependencyCount": 0,
+          "dependencySamples": [],
+          "nameSamples": []
+        },
+        {
+          "bundleName": "Game2Bundle",
+          "relativePath": "subpackages/Game2Bundle/import/_packs/tex/unlockProgress/game2_s1__pack_14.json",
+          "bundleRelativePath": "import/_packs/tex/unlockProgress/game2_s1__pack_14.json",
+          "role": "pack-container-json",
+          "runtimeMapped": true,
+          "canonicalPath": "",
+          "strategy": "import-pack",
+          "classNames": [
+            "cc.SpriteFrame"
+          ],
+          "dependencyCount": 1,
+          "dependencySamples": [],
+          "nameSamples": [
+            "game2_s1",
+            "game2_s7",
+            "game2_s4",
+            "game2_s3",
+            "game2_s6",
+            "game2_s2"
+          ]
+        }
+      ],
+      "nativeSamples": [
+        {
+          "bundleName": "Game2Bundle",
+          "relativePath": "subpackages/Game2Bundle/native/tex/background/game2_bg1/spriteFrame.jpg",
+          "bundleRelativePath": "native/tex/background/game2_bg1/spriteFrame.jpg",
+          "role": "native-file",
+          "runtimeMapped": true,
+          "canonicalPath": "tex/背景/game2_bg1/spriteFrame",
+          "strategy": "direct-canonical-path",
+          "extension": ".jpg"
+        },
+        {
+          "bundleName": "Game2Bundle",
+          "relativePath": "subpackages/Game2Bundle/native/tex/background/game2_bg2/spriteFrame.jpg",
+          "bundleRelativePath": "native/tex/background/game2_bg2/spriteFrame.jpg",
+          "role": "native-file",
+          "runtimeMapped": true,
+          "canonicalPath": "tex/背景/game2_bg2/spriteFrame",
+          "strategy": "direct-canonical-path",
+          "extension": ".jpg"
+        },
+        {
+          "bundleName": "Game2Bundle",
+          "relativePath": "subpackages/Game2Bundle/native/tex/background/game2_bg3/spriteFrame.jpg",
+          "bundleRelativePath": "native/tex/background/game2_bg3/spriteFrame.jpg",
+          "role": "native-file",
+          "runtimeMapped": true,
+          "canonicalPath": "tex/背景/game2_bg3/spriteFrame",
+          "strategy": "direct-canonical-path",
+          "extension": ".jpg"
+        },
+        {
+          "bundleName": "Game2Bundle",
+          "relativePath": "subpackages/Game2Bundle/native/tex/background/game2_bg4/spriteFrame.jpg",
+          "bundleRelativePath": "native/tex/background/game2_bg4/spriteFrame.jpg",
+          "role": "native-file",
+          "runtimeMapped": true,
+          "canonicalPath": "tex/背景/game2_bg4/spriteFrame",
+          "strategy": "direct-canonical-path",
+          "extension": ".jpg"
+        },
+        {
+          "bundleName": "Game2Bundle",
+          "relativePath": "subpackages/Game2Bundle/native/tex/background/game2_bg5/spriteFrame.jpg",
+          "bundleRelativePath": "native/tex/background/game2_bg5/spriteFrame.jpg",
+          "role": "native-file",
+          "runtimeMapped": true,
+          "canonicalPath": "tex/背景/game2_bg5/spriteFrame",
+          "strategy": "direct-canonical-path",
+          "extension": ".jpg"
+        },
+        {
+          "bundleName": "Game2Bundle",
+          "relativePath": "subpackages/Game2Bundle/native/tex/fruit/randomFruit__texture_72.png",
+          "bundleRelativePath": "native/tex/fruit/randomFruit__texture_72.png",
+          "role": "native-file",
+          "runtimeMapped": true,
+          "canonicalPath": "",
+          "strategy": "texture-source-from-pack",
+          "extension": ".png"
+        }
+      ]
+    },
+    {
+      "bundleName": "HomeBundle",
+      "configPath": "subpackages/HomeBundle/config.home-bundle.json",
+      "gameEntryPath": "subpackages/HomeBundle/game.js",
+      "gameEntryMode": "root-bootstrap-placeholder",
+      "semanticAliasManifestPath": "architecture/generated/subpackage-semantic-aliases/HomeBundle.json",
+      "semanticAliasImportCount": 149,
+      "semanticAliasNativeCount": 74,
+      "dependencyBundles": [
+        "main"
+      ],
+      "sceneEntries": [],
+      "configPackEntryCount": 4,
+      "configPathEntryCount": 231,
+      "configUuidCount": 239,
+      "configVersionKinds": [
+        "import",
+        "native"
+      ],
+      "topLevelBundleFiles": [
+        "config.home-bundle.json",
+        "game.js"
+      ],
+      "importJsonCount": 149,
+      "directImportJsonCount": 145,
+      "packImportJsonCount": 4,
+      "emptyDirectoryCount": 0,
+      "urlEncodedPathCount": 0,
+      "unusedImportJsonCount": 0,
+      "nativeFileCount": 74,
+      "unusedNativeFileCount": 0,
+      "emptyDirectorySamples": [],
+      "urlEncodedPathSamples": [],
+      "importTopLevelNamespaces": [
+        {
+          "name": "tex",
+          "count": 143
+        },
+        {
+          "name": "_packs",
+          "count": 4
+        },
+        {
+          "name": "midgroundLayer2",
+          "count": 1
+        },
+        {
+          "name": "prefab",
+          "count": 1
+        }
+      ],
+      "nativeTopLevelNamespaces": [
+        {
+          "name": "tex",
+          "count": 73
+        },
+        {
+          "name": "midgroundLayer2",
+          "count": 1
+        }
+      ],
+      "directImportSamples": [
+        {
+          "bundleName": "HomeBundle",
+          "relativePath": "subpackages/HomeBundle/import/midgroundLayer2/midgroundLayer2__texture_1.json",
+          "bundleRelativePath": "import/midgroundLayer2/midgroundLayer2__texture_1.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "",
+          "strategy": "texture-source-import",
+          "classNames": [
+            "cc.ImageAsset"
+          ],
+          "dependencyCount": 0,
+          "dependencySamples": [],
+          "nameSamples": []
+        },
+        {
+          "bundleName": "HomeBundle",
+          "relativePath": "subpackages/HomeBundle/import/prefab/bgThing.json",
+          "bundleRelativePath": "import/prefab/bgThing.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "prefab/bgThing",
+          "strategy": "direct-canonical-path",
+          "classNames": [
+            "cc.Prefab",
+            "cc.Node",
+            "cc.UITransform",
+            "cc.CompPrefabInfo",
+            "cc.Sprite",
+            "cc.PrefabInfo"
+          ],
+          "dependencyCount": 0,
+          "dependencySamples": [],
+          "nameSamples": []
+        },
+        {
+          "bundleName": "HomeBundle",
+          "relativePath": "subpackages/HomeBundle/import/tex/backgroundParticles/greenLeafParticle/spriteFrame.json",
+          "bundleRelativePath": "import/tex/backgroundParticles/greenLeafParticle/spriteFrame.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "tex/backgroundParticles/greenLeafParticle/spriteFrame",
+          "strategy": "direct-canonical-path",
+          "classNames": [
+            "cc.ImageAsset"
+          ],
+          "dependencyCount": 0,
+          "dependencySamples": [],
+          "nameSamples": []
+        },
+        {
+          "bundleName": "HomeBundle",
+          "relativePath": "subpackages/HomeBundle/import/tex/backgroundParticles/orangeGlowParticle/spriteFrame__2.json",
+          "bundleRelativePath": "import/tex/backgroundParticles/orangeGlowParticle/spriteFrame__2.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "tex/backgroundParticles/orangeGlowParticle/spriteFrame",
+          "strategy": "direct-canonical-path",
+          "classNames": [
+            "cc.SpriteFrame"
+          ],
+          "dependencyCount": 1,
+          "dependencySamples": [],
+          "nameSamples": [
+            "orangeGlowParticle"
+          ]
+        },
+        {
+          "bundleName": "HomeBundle",
+          "relativePath": "subpackages/HomeBundle/import/tex/backgroundParticles/orangeGlowParticle/spriteFrame.json",
+          "bundleRelativePath": "import/tex/backgroundParticles/orangeGlowParticle/spriteFrame.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "tex/backgroundParticles/orangeGlowParticle/spriteFrame",
+          "strategy": "direct-canonical-path",
+          "classNames": [
+            "cc.ImageAsset"
+          ],
+          "dependencyCount": 0,
+          "dependencySamples": [],
+          "nameSamples": []
+        },
+        {
+          "bundleName": "HomeBundle",
+          "relativePath": "subpackages/HomeBundle/import/tex/backgroundParticles/orangeLeafParticle/spriteFrame__2.json",
+          "bundleRelativePath": "import/tex/backgroundParticles/orangeLeafParticle/spriteFrame__2.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "tex/backgroundParticles/orangeLeafParticle/spriteFrame",
+          "strategy": "direct-canonical-path",
+          "classNames": [
+            "cc.SpriteFrame"
+          ],
+          "dependencyCount": 1,
+          "dependencySamples": [],
+          "nameSamples": [
+            "orangeLeafParticle"
+          ]
+        }
+      ],
+      "packImportSamples": [
+        {
+          "bundleName": "HomeBundle",
+          "relativePath": "subpackages/HomeBundle/import/_packs/pack/gooseTip__pack_5.json",
+          "bundleRelativePath": "import/_packs/pack/gooseTip__pack_5.json",
+          "role": "pack-container-json",
+          "runtimeMapped": true,
+          "canonicalPath": "",
+          "strategy": "import-pack",
+          "classNames": [
+            "cc.SpriteFrame",
+            "cc.Node",
+            "cc.Sprite",
+            "cc.Prefab",
+            "cc.UITransform",
+            "cc.CompPrefabInfo"
+          ],
+          "dependencyCount": 4,
+          "dependencySamples": [],
+          "nameSamples": [
+            "获得100只鸭子解锁",
+            "获得100只鹅解锁"
+          ]
+        },
+        {
+          "bundleName": "HomeBundle",
+          "relativePath": "subpackages/HomeBundle/import/_packs/pack/home_particle__pack_3.json",
+          "bundleRelativePath": "import/_packs/pack/home_particle__pack_3.json",
+          "role": "pack-container-json",
+          "runtimeMapped": true,
+          "canonicalPath": "",
+          "strategy": "import-pack",
+          "classNames": [
+            "cc.SpriteFrame",
+            "cc.Prefab",
+            "cc.Node",
+            "cc.UITransform",
+            "cc.CompPrefabInfo",
+            "cc.Sprite"
+          ],
+          "dependencyCount": 2,
+          "dependencySamples": [],
+          "nameSamples": [
+            "greenLeafParticle"
+          ]
+        },
+        {
+          "bundleName": "HomeBundle",
+          "relativePath": "subpackages/HomeBundle/import/_packs/tex/homeTheme0/foreground/foregroundLayer1__pack_10.json",
+          "bundleRelativePath": "import/_packs/tex/homeTheme0/foreground/foregroundLayer1__pack_10.json",
+          "role": "pack-container-json",
+          "runtimeMapped": true,
+          "canonicalPath": "",
+          "strategy": "import-pack",
+          "classNames": [
+            "cc.SpriteFrame"
+          ],
+          "dependencyCount": 1,
+          "dependencySamples": [],
+          "nameSamples": [
+            "foregroundLayer2",
+            "foregroundLayer1",
+            "foregroundLayer4",
+            "foregroundLayer5",
+            "foregroundLayer3"
+          ]
+        },
+        {
+          "bundleName": "HomeBundle",
+          "relativePath": "subpackages/HomeBundle/import/_packs/tex/unlockAt100Geese__pack_72.json",
+          "bundleRelativePath": "import/_packs/tex/unlockAt100Geese__pack_72.json",
+          "role": "pack-container-json",
+          "runtimeMapped": true,
+          "canonicalPath": "",
+          "strategy": "import-pack",
+          "classNames": [],
+          "dependencyCount": 0,
+          "dependencySamples": [],
+          "nameSamples": []
+        }
+      ],
+      "nativeSamples": [
+        {
+          "bundleName": "HomeBundle",
+          "relativePath": "subpackages/HomeBundle/native/midgroundLayer2/midgroundLayer2__texture_1.png",
+          "bundleRelativePath": "native/midgroundLayer2/midgroundLayer2__texture_1.png",
+          "role": "native-file",
+          "runtimeMapped": true,
+          "canonicalPath": "",
+          "strategy": "texture-source-from-pack",
+          "extension": ".png"
+        },
+        {
+          "bundleName": "HomeBundle",
+          "relativePath": "subpackages/HomeBundle/native/tex/backgroundParticles/greenLeafParticle/spriteFrame.png",
+          "bundleRelativePath": "native/tex/backgroundParticles/greenLeafParticle/spriteFrame.png",
+          "role": "native-file",
+          "runtimeMapped": true,
+          "canonicalPath": "tex/backgroundParticles/greenLeafParticle/spriteFrame",
+          "strategy": "direct-canonical-path",
+          "extension": ".png"
+        },
+        {
+          "bundleName": "HomeBundle",
+          "relativePath": "subpackages/HomeBundle/native/tex/backgroundParticles/orangeGlowParticle/spriteFrame.png",
+          "bundleRelativePath": "native/tex/backgroundParticles/orangeGlowParticle/spriteFrame.png",
+          "role": "native-file",
+          "runtimeMapped": true,
+          "canonicalPath": "tex/backgroundParticles/orangeGlowParticle/spriteFrame",
+          "strategy": "direct-canonical-path",
+          "extension": ".png"
+        },
+        {
+          "bundleName": "HomeBundle",
+          "relativePath": "subpackages/HomeBundle/native/tex/backgroundParticles/orangeLeafParticle/spriteFrame.png",
+          "bundleRelativePath": "native/tex/backgroundParticles/orangeLeafParticle/spriteFrame.png",
+          "role": "native-file",
+          "runtimeMapped": true,
+          "canonicalPath": "tex/backgroundParticles/orangeLeafParticle/spriteFrame",
+          "strategy": "direct-canonical-path",
+          "extension": ".png"
+        },
+        {
+          "bundleName": "HomeBundle",
+          "relativePath": "subpackages/HomeBundle/native/tex/backgroundParticles/whiteGlowParticle/spriteFrame.png",
+          "bundleRelativePath": "native/tex/backgroundParticles/whiteGlowParticle/spriteFrame.png",
+          "role": "native-file",
+          "runtimeMapped": true,
+          "canonicalPath": "tex/backgroundParticles/whiteGlowParticle/spriteFrame",
+          "strategy": "direct-canonical-path",
+          "extension": ".png"
+        },
+        {
+          "bundleName": "HomeBundle",
+          "relativePath": "subpackages/HomeBundle/native/tex/homeTheme0/background/backgroundLayer1/spriteFrame.png",
+          "bundleRelativePath": "native/tex/homeTheme0/background/backgroundLayer1/spriteFrame.png",
+          "role": "native-file",
+          "runtimeMapped": true,
+          "canonicalPath": "tex/homeTheme0/background/backgroundLayer1/spriteFrame",
+          "strategy": "direct-canonical-path",
+          "extension": ".png"
+        }
+      ]
+    },
+    {
+      "bundleName": "main",
+      "configPath": "subpackages/main/config.main.json",
+      "gameEntryPath": "subpackages/main/game.js",
+      "gameEntryMode": "root-bootstrap-placeholder",
+      "semanticAliasManifestPath": "architecture/generated/subpackage-semantic-aliases/main.json",
+      "semanticAliasImportCount": 122,
+      "semanticAliasNativeCount": 99,
+      "dependencyBundles": [
+        "start-scene"
+      ],
+      "sceneEntries": [
+        {
+          "path": "db://assets/scene/DuckScene.scene",
+          "index": 0
+        },
+        {
+          "path": "db://assets/scene/FruitScene.scene",
+          "index": 1
+        },
+        {
+          "path": "db://assets/scene/Game2Scene.scene",
+          "index": 3
+        },
+        {
+          "path": "db://assets/scene/HomeScene.scene",
+          "index": 4
+        },
+        {
+          "path": "db://assets/scene/PigeonScene.scene",
+          "index": 2
+        }
+      ],
+      "configPackEntryCount": 21,
+      "configPathEntryCount": 5,
+      "configUuidCount": 523,
+      "configVersionKinds": [
+        "import",
+        "native"
+      ],
+      "topLevelBundleFiles": [
+        "config.main.json",
+        "game.js"
+      ],
+      "importJsonCount": 122,
+      "directImportJsonCount": 102,
+      "packImportJsonCount": 20,
+      "emptyDirectoryCount": 0,
+      "urlEncodedPathCount": 0,
+      "unusedImportJsonCount": 0,
+      "nativeFileCount": 99,
+      "unusedNativeFileCount": 0,
+      "emptyDirectorySamples": [],
+      "urlEncodedPathSamples": [],
+      "importTopLevelNamespaces": [
+        {
+          "name": "tex",
+          "count": 42
+        },
+        {
+          "name": "_packs",
+          "count": 20
+        },
+        {
+          "name": "texture",
+          "count": 16
+        },
+        {
+          "name": "skeletalAnimations",
+          "count": 7
+        },
+        {
+          "name": "utility",
+          "count": 6
+        },
+        {
+          "name": "ui",
+          "count": 5
+        }
+      ],
+      "nativeTopLevelNamespaces": [
+        {
+          "name": "tex",
+          "count": 40
+        },
+        {
+          "name": "texture",
+          "count": 15
+        },
+        {
+          "name": "skeletalAnimations",
+          "count": 7
+        },
+        {
+          "name": "utility",
+          "count": 6
+        },
+        {
+          "name": "ui",
+          "count": 5
+        },
+        {
+          "name": "scene",
+          "count": 4
+        }
+      ],
+      "directImportSamples": [
+        {
+          "bundleName": "main",
+          "relativePath": "subpackages/main/import/background/cloud.json",
+          "bundleRelativePath": "import/background/cloud.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "background/cloud",
+          "strategy": "direct-canonical-path",
+          "classNames": [
+            "cc.ImageAsset"
+          ],
+          "dependencyCount": 0,
+          "dependencySamples": [],
+          "nameSamples": []
+        },
+        {
+          "bundleName": "main",
+          "relativePath": "subpackages/main/import/background/lightGradient.json",
+          "bundleRelativePath": "import/background/lightGradient.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "background/lightGradient",
+          "strategy": "direct-canonical-path",
+          "classNames": [
+            "cc.ImageAsset"
+          ],
+          "dependencyCount": 0,
+          "dependencySamples": [],
+          "nameSamples": []
+        },
+        {
+          "bundleName": "main",
+          "relativePath": "subpackages/main/import/background/skyGradient.json",
+          "bundleRelativePath": "import/background/skyGradient.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "background/skyGradient",
+          "strategy": "direct-canonical-path",
+          "classNames": [
+            "cc.ImageAsset"
+          ],
+          "dependencyCount": 0,
+          "dependencySamples": [],
+          "nameSamples": []
+        },
+        {
+          "bundleName": "main",
+          "relativePath": "subpackages/main/import/bibiLabu/skeleton.json",
+          "bundleRelativePath": "import/bibiLabu/skeleton.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "比比拉布/skeleton",
+          "strategy": "direct-canonical-path",
+          "classNames": [
+            "cc.ImageAsset"
+          ],
+          "dependencyCount": 0,
+          "dependencySamples": [],
+          "nameSamples": []
+        },
+        {
+          "bundleName": "main",
+          "relativePath": "subpackages/main/import/daily/skeleton.json",
+          "bundleRelativePath": "import/daily/skeleton.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "每日/skeleton",
+          "strategy": "direct-canonical-path",
+          "classNames": [
+            "cc.ImageAsset"
+          ],
+          "dependencyCount": 0,
+          "dependencySamples": [],
+          "nameSamples": []
+        },
+        {
+          "bundleName": "main",
+          "relativePath": "subpackages/main/import/dave/skeleton.json",
+          "bundleRelativePath": "import/dave/skeleton.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "戴夫/skeleton",
+          "strategy": "direct-canonical-path",
+          "classNames": [
+            "cc.ImageAsset"
+          ],
+          "dependencyCount": 0,
+          "dependencySamples": [],
+          "nameSamples": []
+        }
+      ],
+      "packImportSamples": [
+        {
+          "bundleName": "main",
+          "relativePath": "subpackages/main/import/_packs/db/assets/scene/DuckScene/2__pack_1674.json",
+          "bundleRelativePath": "import/_packs/db/assets/scene/DuckScene/2__pack_1674.json",
+          "role": "pack-container-json",
+          "runtimeMapped": true,
+          "canonicalPath": "",
+          "strategy": "import-pack",
+          "classNames": [
+            "cc.SpriteFrame",
+            "cc.Node",
+            "cc.Widget",
+            "cc.Sprite",
+            "cc.Label",
+            "cc.Button"
+          ],
+          "dependencyCount": 113,
+          "dependencySamples": [],
+          "nameSamples": [
+            "木桩",
+            "背景"
+          ]
+        },
+        {
+          "bundleName": "main",
+          "relativePath": "subpackages/main/import/_packs/db/assets/scene/FruitScene/randomQuestionMark__pack_88.json",
+          "bundleRelativePath": "import/_packs/db/assets/scene/FruitScene/randomQuestionMark__pack_88.json",
+          "role": "pack-container-json",
+          "runtimeMapped": true,
+          "canonicalPath": "",
+          "strategy": "import-pack",
+          "classNames": [
+            "cc.SpriteFrame",
+            "cc.Node",
+            "cc.Widget",
+            "cc.Label",
+            "cc.Sprite",
+            "cc.UITransform"
+          ],
+          "dependencyCount": 35,
+          "dependencySamples": [],
+          "nameSamples": []
+        },
+        {
+          "bundleName": "main",
+          "relativePath": "subpackages/main/import/_packs/db/assets/scene/Game2Scene/hole__pack_5.json",
+          "bundleRelativePath": "import/_packs/db/assets/scene/Game2Scene/hole__pack_5.json",
+          "role": "pack-container-json",
+          "runtimeMapped": true,
+          "canonicalPath": "",
+          "strategy": "import-pack",
+          "classNames": [
+            "cc.Widget",
+            "cc.Node",
+            "cc.Sprite",
+            "cc.Label",
+            "cc.Button",
+            "cc.RigidBody2D"
+          ],
+          "dependencyCount": 50,
+          "dependencySamples": [],
+          "nameSamples": [
+            "洞",
+            "default_btn_pressed",
+            "default_btn_disabled"
+          ]
+        },
+        {
+          "bundleName": "main",
+          "relativePath": "subpackages/main/import/_packs/db/assets/scene/HomeScene/3__pack_124.json",
+          "bundleRelativePath": "import/_packs/db/assets/scene/HomeScene/3__pack_124.json",
+          "role": "pack-container-json",
+          "runtimeMapped": true,
+          "canonicalPath": "",
+          "strategy": "import-pack",
+          "classNames": [
+            "cc.Node",
+            "cc.Widget",
+            "cc.Sprite",
+            "cc.SpriteFrame",
+            "cc.Label",
+            "cc.Button"
+          ],
+          "dependencyCount": 59,
+          "dependencySamples": [],
+          "nameSamples": [
+            "洞",
+            "default",
+            "底",
+            "火龙果鸭",
+            "柠檬鸭",
+            "西瓜鸭"
+          ]
+        },
+        {
+          "bundleName": "main",
+          "relativePath": "subpackages/main/import/_packs/db/assets/scene/PigeonScene/background__pack_7.json",
+          "bundleRelativePath": "import/_packs/db/assets/scene/PigeonScene/background__pack_7.json",
+          "role": "pack-container-json",
+          "runtimeMapped": true,
+          "canonicalPath": "",
+          "strategy": "import-pack",
+          "classNames": [
+            "cc.Node",
+            "cc.SpriteFrame",
+            "cc.Widget",
+            "cc.UITransform",
+            "cc.Label",
+            "cc.Sprite"
+          ],
+          "dependencyCount": 15,
+          "dependencySamples": [],
+          "nameSamples": [
+            "玉米心"
+          ]
+        },
+        {
+          "bundleName": "main",
+          "relativePath": "subpackages/main/import/_packs/pack/banner__pack_11.json",
+          "bundleRelativePath": "import/_packs/pack/banner__pack_11.json",
+          "role": "pack-container-json",
+          "runtimeMapped": true,
+          "canonicalPath": "",
+          "strategy": "import-pack",
+          "classNames": [
+            "cc.SpriteFrame"
+          ],
+          "dependencyCount": 1,
+          "dependencySamples": [],
+          "nameSamples": [
+            "图标算数",
+            "p10",
+            "百鸭朝雀",
+            "p9",
+            "求助",
+            "鸽鸽图鉴"
+          ]
+        }
+      ],
+      "nativeSamples": [
+        {
+          "bundleName": "main",
+          "relativePath": "subpackages/main/native/background/cloud.png",
+          "bundleRelativePath": "native/background/cloud.png",
+          "role": "native-file",
+          "runtimeMapped": true,
+          "canonicalPath": "background/cloud",
+          "strategy": "direct-canonical-path",
+          "extension": ".png"
+        },
+        {
+          "bundleName": "main",
+          "relativePath": "subpackages/main/native/background/lightGradient.jpg",
+          "bundleRelativePath": "native/background/lightGradient.jpg",
+          "role": "native-file",
+          "runtimeMapped": true,
+          "canonicalPath": "background/lightGradient",
+          "strategy": "direct-canonical-path",
+          "extension": ".jpg"
+        },
+        {
+          "bundleName": "main",
+          "relativePath": "subpackages/main/native/background/skyGradient.jpeg",
+          "bundleRelativePath": "native/background/skyGradient.jpeg",
+          "role": "native-file",
+          "runtimeMapped": true,
+          "canonicalPath": "background/skyGradient",
+          "strategy": "direct-canonical-path",
+          "extension": ".jpeg"
+        },
+        {
+          "bundleName": "main",
+          "relativePath": "subpackages/main/native/bibiLabu/skeleton.png",
+          "bundleRelativePath": "native/bibiLabu/skeleton.png",
+          "role": "native-file",
+          "runtimeMapped": true,
+          "canonicalPath": "比比拉布/skeleton",
+          "strategy": "direct-canonical-path",
+          "extension": ".png"
+        },
+        {
+          "bundleName": "main",
+          "relativePath": "subpackages/main/native/daily/skeleton.png",
+          "bundleRelativePath": "native/daily/skeleton.png",
+          "role": "native-file",
+          "runtimeMapped": true,
+          "canonicalPath": "每日/skeleton",
+          "strategy": "direct-canonical-path",
+          "extension": ".png"
+        },
+        {
+          "bundleName": "main",
+          "relativePath": "subpackages/main/native/dave/skeleton.png",
+          "bundleRelativePath": "native/dave/skeleton.png",
+          "role": "native-file",
+          "runtimeMapped": true,
+          "canonicalPath": "戴夫/skeleton",
+          "strategy": "direct-canonical-path",
+          "extension": ".png"
+        }
+      ]
+    },
+    {
+      "bundleName": "resources",
+      "configPath": "subpackages/resources/config.resources.json",
+      "gameEntryPath": "subpackages/resources/game.js",
+      "gameEntryMode": "root-bootstrap-placeholder",
+      "semanticAliasManifestPath": "architecture/generated/subpackage-semantic-aliases/resources.json",
+      "semanticAliasImportCount": 11,
+      "semanticAliasNativeCount": 3,
+      "dependencyBundles": [],
+      "sceneEntries": [],
+      "configPackEntryCount": 5,
+      "configPathEntryCount": 27,
+      "configUuidCount": 39,
+      "configVersionKinds": [
+        "import",
+        "native"
+      ],
+      "topLevelBundleFiles": [
+        "config.resources.json",
+        "game.js"
+      ],
+      "importJsonCount": 11,
+      "directImportJsonCount": 7,
+      "packImportJsonCount": 4,
+      "emptyDirectoryCount": 0,
+      "urlEncodedPathCount": 0,
+      "unusedImportJsonCount": 0,
+      "nativeFileCount": 3,
+      "unusedNativeFileCount": 0,
+      "emptyDirectorySamples": [],
+      "urlEncodedPathSamples": [],
+      "importTopLevelNamespaces": [
+        {
+          "name": "_packs",
+          "count": 4
+        },
+        {
+          "name": "particleEffects",
+          "count": 3
+        },
+        {
+          "name": "duck",
+          "count": 1
+        },
+        {
+          "name": "multiTexture",
+          "count": 1
+        },
+        {
+          "name": "ribbonBurst",
+          "count": 1
+        },
+        {
+          "name": "tex",
+          "count": 1
+        }
+      ],
+      "nativeTopLevelNamespaces": [
+        {
+          "name": "particleEffects",
+          "count": 1
+        },
+        {
+          "name": "ribbonBurst",
+          "count": 1
+        },
+        {
+          "name": "tex",
+          "count": 1
+        }
+      ],
+      "directImportSamples": [
+        {
+          "bundleName": "resources",
+          "relativePath": "subpackages/resources/import/duck/duckLevelTemplates.json",
+          "bundleRelativePath": "import/duck/duckLevelTemplates.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "duck/duckLevelTemplates",
+          "strategy": "direct-canonical-path",
+          "classNames": [
+            "cc.JsonAsset"
+          ],
+          "dependencyCount": 0,
+          "dependencySamples": [],
+          "nameSamples": []
+        },
+        {
+          "bundleName": "resources",
+          "relativePath": "subpackages/resources/import/multiTexture/sharedTextureCollection.json",
+          "bundleRelativePath": "import/multiTexture/sharedTextureCollection.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "multiTexture/sharedTextureCollection",
+          "strategy": "direct-canonical-path",
+          "classNames": [],
+          "dependencyCount": 0,
+          "dependencySamples": [],
+          "nameSamples": []
+        },
+        {
+          "bundleName": "resources",
+          "relativePath": "subpackages/resources/import/particleEffects/colorMarker1__texture_28.json",
+          "bundleRelativePath": "import/particleEffects/colorMarker1__texture_28.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "",
+          "strategy": "texture-source-import",
+          "classNames": [
+            "cc.ImageAsset"
+          ],
+          "dependencyCount": 0,
+          "dependencySamples": [],
+          "nameSamples": []
+        },
+        {
+          "bundleName": "resources",
+          "relativePath": "subpackages/resources/import/particleEffects/colorMarkerParticle.json",
+          "bundleRelativePath": "import/particleEffects/colorMarkerParticle.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "particleEffects/colorMarkerParticle",
+          "strategy": "direct-canonical-path",
+          "classNames": [
+            "cc.Prefab",
+            "cc.Node",
+            "cc.UITransform",
+            "cc.CompPrefabInfo",
+            "cc.Sprite",
+            "cc.UIOpacity"
+          ],
+          "dependencyCount": 0,
+          "dependencySamples": [],
+          "nameSamples": []
+        },
+        {
+          "bundleName": "resources",
+          "relativePath": "subpackages/resources/import/particleEffects/fragmentShard.json",
+          "bundleRelativePath": "import/particleEffects/fragmentShard.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "particleEffects/fragmentShard",
+          "strategy": "direct-canonical-path",
+          "classNames": [
+            "cc.Prefab",
+            "cc.Node",
+            "cc.UITransform",
+            "cc.CompPrefabInfo",
+            "cc.Sprite",
+            "cc.RigidBody2D"
+          ],
+          "dependencyCount": 0,
+          "dependencySamples": [],
+          "nameSamples": []
+        },
+        {
+          "bundleName": "resources",
+          "relativePath": "subpackages/resources/import/ribbonBurst/ribbon1__texture_14.json",
+          "bundleRelativePath": "import/ribbonBurst/ribbon1__texture_14.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "",
+          "strategy": "texture-source-import",
+          "classNames": [
+            "cc.ImageAsset"
+          ],
+          "dependencyCount": 0,
+          "dependencySamples": [],
+          "nameSamples": []
+        }
+      ],
+      "packImportSamples": [
+        {
+          "bundleName": "resources",
+          "relativePath": "subpackages/resources/import/_packs/multiTexture/a_color__pack_59.json",
+          "bundleRelativePath": "import/_packs/multiTexture/a_color__pack_59.json",
+          "role": "pack-container-json",
+          "runtimeMapped": true,
+          "canonicalPath": "",
+          "strategy": "import-pack",
+          "classNames": [
+            "cc.Material",
+            "cc.EffectAsset"
+          ],
+          "dependencyCount": 1,
+          "dependencySamples": [],
+          "nameSamples": [
+            "../resources/multiTexture/multiTextureEffect|sprite-vs:vert|sprite-fs:frag",
+            "USE_LOCAL",
+            "SAMPLE_FROM_RT",
+            "USE_PIXEL_ALIGNMENT",
+            "CC_USE_EMBEDDED_ALPHA",
+            "USE_ALPHA_TEST"
+          ]
+        },
+        {
+          "bundleName": "resources",
+          "relativePath": "subpackages/resources/import/_packs/particleEffects/colorMarker1__pack_28.json",
+          "bundleRelativePath": "import/_packs/particleEffects/colorMarker1__pack_28.json",
+          "role": "pack-container-json",
+          "runtimeMapped": true,
+          "canonicalPath": "",
+          "strategy": "import-pack",
+          "classNames": [
+            "cc.SpriteFrame"
+          ],
+          "dependencyCount": 1,
+          "dependencySamples": [],
+          "nameSamples": [
+            "colorMarker2",
+            "colorMarker3",
+            "colorMarker9",
+            "colorMarker12",
+            "colorMarker8",
+            "colorMarker6"
+          ]
+        },
+        {
+          "bundleName": "resources",
+          "relativePath": "subpackages/resources/import/_packs/particleEffects/deletePulseCircle/deletePulseCircle__pack_2.json",
+          "bundleRelativePath": "import/_packs/particleEffects/deletePulseCircle/deletePulseCircle__pack_2.json",
+          "role": "pack-container-json",
+          "runtimeMapped": true,
+          "canonicalPath": "",
+          "strategy": "import-pack",
+          "classNames": [
+            "cc.SpriteFrame",
+            "cc.Prefab",
+            "cc.Node",
+            "cc.UITransform",
+            "cc.CompPrefabInfo",
+            "cc.Sprite"
+          ],
+          "dependencyCount": 2,
+          "dependencySamples": [],
+          "nameSamples": [
+            "deletePulseCircle"
+          ]
+        },
+        {
+          "bundleName": "resources",
+          "relativePath": "subpackages/resources/import/_packs/ribbonBurst/ribbon1__pack_14.json",
+          "bundleRelativePath": "import/_packs/ribbonBurst/ribbon1__pack_14.json",
+          "role": "pack-container-json",
+          "runtimeMapped": true,
+          "canonicalPath": "",
+          "strategy": "import-pack",
+          "classNames": [
+            "cc.SpriteFrame"
+          ],
+          "dependencyCount": 1,
+          "dependencySamples": [],
+          "nameSamples": [
+            "ribbon5",
+            "ribbon4",
+            "ribbon7",
+            "ribbon6",
+            "ribbon1",
+            "ribbon3"
+          ]
+        }
+      ],
+      "nativeSamples": [
+        {
+          "bundleName": "resources",
+          "relativePath": "subpackages/resources/native/particleEffects/colorMarker1__texture_28.png",
+          "bundleRelativePath": "native/particleEffects/colorMarker1__texture_28.png",
+          "role": "native-file",
+          "runtimeMapped": true,
+          "canonicalPath": "",
+          "strategy": "texture-source-from-pack",
+          "extension": ".png"
+        },
+        {
+          "bundleName": "resources",
+          "relativePath": "subpackages/resources/native/ribbonBurst/ribbon1__texture_14.png",
+          "bundleRelativePath": "native/ribbonBurst/ribbon1__texture_14.png",
+          "role": "native-file",
+          "runtimeMapped": true,
+          "canonicalPath": "",
+          "strategy": "texture-source-from-pack",
+          "extension": ".png"
+        },
+        {
+          "bundleName": "resources",
+          "relativePath": "subpackages/resources/native/tex/circle/DeleteCircle.png",
+          "bundleRelativePath": "native/tex/circle/DeleteCircle.png",
+          "role": "native-file",
+          "runtimeMapped": true,
+          "canonicalPath": "tex/circle/DeleteCircle",
+          "strategy": "direct-canonical-path",
+          "extension": ".png"
+        }
+      ]
+    },
+    {
+      "bundleName": "uiBundle",
+      "configPath": "subpackages/uiBundle/config.ui-bundle.json",
+      "gameEntryPath": "subpackages/uiBundle/game.js",
+      "gameEntryMode": "root-bootstrap-placeholder",
+      "semanticAliasManifestPath": "architecture/generated/subpackage-semantic-aliases/uiBundle.json",
+      "semanticAliasImportCount": 89,
+      "semanticAliasNativeCount": 24,
+      "dependencyBundles": [
+        "main"
+      ],
+      "sceneEntries": [],
+      "configPackEntryCount": 37,
+      "configPathEntryCount": 400,
+      "configUuidCount": 538,
+      "configVersionKinds": [
+        "import",
+        "native"
+      ],
+      "topLevelBundleFiles": [
+        "config.ui-bundle.json",
+        "game.js"
+      ],
+      "importJsonCount": 88,
+      "directImportJsonCount": 52,
+      "packImportJsonCount": 36,
+      "emptyDirectoryCount": 0,
+      "urlEncodedPathCount": 0,
+      "unusedImportJsonCount": 0,
+      "nativeFileCount": 24,
+      "unusedNativeFileCount": 0,
+      "emptyDirectorySamples": [],
+      "urlEncodedPathSamples": [],
+      "importTopLevelNamespaces": [
+        {
+          "name": "_packs",
+          "count": 36
+        },
+        {
+          "name": "prefab",
+          "count": 26
+        },
+        {
+          "name": "tex",
+          "count": 20
+        },
+        {
+          "name": "restoredNames",
+          "count": 5
+        },
+        {
+          "name": "fullAnimation",
+          "count": 1
+        }
+      ],
+      "nativeTopLevelNamespaces": [
+        {
+          "name": "tex",
+          "count": 19
+        },
+        {
+          "name": "restoredNames",
+          "count": 4
+        },
+        {
+          "name": "fullAnimation",
+          "count": 1
+        }
+      ],
+      "directImportSamples": [
+        {
+          "bundleName": "uiBundle",
+          "relativePath": "subpackages/uiBundle/import/fullAnimation/Done_for_eat.json",
+          "bundleRelativePath": "import/fullAnimation/Done_for_eat.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "吃饱动画/Done for eat",
+          "strategy": "direct-canonical-path",
+          "classNames": [
+            "cc.ImageAsset"
+          ],
+          "dependencyCount": 0,
+          "dependencySamples": [],
+          "nameSamples": []
+        },
+        {
+          "bundleName": "uiBundle",
+          "relativePath": "subpackages/uiBundle/import/prefab/AddPowerPanel.json",
+          "bundleRelativePath": "import/prefab/AddPowerPanel.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "prefab/AddPowerPanel",
+          "strategy": "direct-canonical-path",
+          "classNames": [
+            "cc.Node",
+            "cc.Sprite",
+            "cc.Widget",
+            "cc.Button",
+            "cc.Prefab",
+            "cc.UITransform"
+          ],
+          "dependencyCount": 11,
+          "dependencySamples": [],
+          "nameSamples": []
+        },
+        {
+          "bundleName": "uiBundle",
+          "relativePath": "subpackages/uiBundle/import/prefab/AddProgramPanel.json",
+          "bundleRelativePath": "import/prefab/AddProgramPanel.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "prefab/AddProgramPanel",
+          "strategy": "direct-canonical-path",
+          "classNames": [
+            "cc.Node",
+            "cc.Sprite",
+            "cc.Widget",
+            "cc.Button",
+            "cc.Prefab",
+            "cc.UITransform"
+          ],
+          "dependencyCount": 6,
+          "dependencySamples": [],
+          "nameSamples": []
+        },
+        {
+          "bundleName": "uiBundle",
+          "relativePath": "subpackages/uiBundle/import/prefab/AddTableUI.json",
+          "bundleRelativePath": "import/prefab/AddTableUI.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "prefab/AddTableUI",
+          "strategy": "direct-canonical-path",
+          "classNames": [
+            "cc.Node",
+            "cc.Sprite",
+            "cc.UITransform",
+            "cc.Widget",
+            "cc.Button",
+            "cc.Prefab"
+          ],
+          "dependencyCount": 11,
+          "dependencySamples": [],
+          "nameSamples": []
+        },
+        {
+          "bundleName": "uiBundle",
+          "relativePath": "subpackages/uiBundle/import/prefab/AwemeUI.json",
+          "bundleRelativePath": "import/prefab/AwemeUI.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "prefab/AwemeUI",
+          "strategy": "direct-canonical-path",
+          "classNames": [
+            "cc.Node",
+            "cc.Sprite",
+            "cc.UITransform",
+            "cc.Widget",
+            "cc.Button",
+            "cc.Prefab"
+          ],
+          "dependencyCount": 10,
+          "dependencySamples": [],
+          "nameSamples": []
+        },
+        {
+          "bundleName": "uiBundle",
+          "relativePath": "subpackages/uiBundle/import/prefab/BookPigeonUI.json",
+          "bundleRelativePath": "import/prefab/BookPigeonUI.json",
+          "role": "direct-import-json",
+          "runtimeMapped": true,
+          "canonicalPath": "prefab/BookPigeonUI",
+          "strategy": "direct-canonical-path",
+          "classNames": [
+            "cc.Node",
+            "cc.Sprite",
+            "cc.UITransform",
+            "cc.Widget",
+            "cc.PrefabInfo",
+            "cc.Prefab"
+          ],
+          "dependencyCount": 4,
+          "dependencySamples": [],
+          "nameSamples": []
+        }
+      ],
+      "packImportSamples": [
+        {
+          "bundleName": "uiBundle",
+          "relativePath": "subpackages/uiBundle/import/_packs/gooseSuccessNumber/gooseSuccessNumber__pack_1.json",
+          "bundleRelativePath": "import/_packs/gooseSuccessNumber/gooseSuccessNumber__pack_1.json",
+          "role": "pack-container-json",
+          "runtimeMapped": true,
+          "canonicalPath": "",
+          "strategy": "import-pack",
+          "classNames": [
+            "cc.SpriteFrame",
+            "cc.LabelAtlas"
+          ],
+          "dependencyCount": 2,
+          "dependencySamples": [],
+          "nameSamples": [
+            "成功成鹅数字"
+          ]
+        },
+        {
+          "bundleName": "uiBundle",
+          "relativePath": "subpackages/uiBundle/import/_packs/pack/callFriend__pack_15.json",
+          "bundleRelativePath": "import/_packs/pack/callFriend__pack_15.json",
+          "role": "pack-container-json",
+          "runtimeMapped": true,
+          "canonicalPath": "",
+          "strategy": "import-pack",
+          "classNames": [
+            "cc.SpriteFrame"
+          ],
+          "dependencyCount": 1,
+          "dependencySamples": [],
+          "nameSamples": [
+            "百鸭朝雀",
+            "百鹅朝鹏",
+            "更多玩法",
+            "百鹅朝麟",
+            "鸽鸽图鉴",
+            "添加桌面"
+          ]
+        },
+        {
+          "bundleName": "uiBundle",
+          "relativePath": "subpackages/uiBundle/import/_packs/prefab/OverUI/reviveNumber__pack_2.json",
+          "bundleRelativePath": "import/_packs/prefab/OverUI/reviveNumber__pack_2.json",
+          "role": "pack-container-json",
+          "runtimeMapped": true,
+          "canonicalPath": "",
+          "strategy": "import-pack",
+          "classNames": [
+            "cc.Node",
+            "cc.Sprite",
+            "cc.Widget",
+            "cc.UITransform",
+            "cc.Label",
+            "cc.UIOpacity"
+          ],
+          "dependencyCount": 29,
+          "dependencySamples": [],
+          "nameSamples": [
+            "复活数字"
+          ]
+        },
+        {
+          "bundleName": "uiBundle",
+          "relativePath": "subpackages/uiBundle/import/_packs/prefab/SuccessUI/arm__pack_21.json",
+          "bundleRelativePath": "import/_packs/prefab/SuccessUI/arm__pack_21.json",
+          "role": "pack-container-json",
+          "runtimeMapped": true,
+          "canonicalPath": "",
+          "strategy": "import-pack",
+          "classNames": [
+            "cc.Node",
+            "cc.Sprite",
+            "cc.Widget",
+            "sp.Skeleton",
+            "cc.UITransform",
+            "cc.UIOpacity"
+          ],
+          "dependencyCount": 35,
+          "dependencySamples": [],
+          "nameSamples": [
+            "face1",
+            "default"
+          ]
+        },
+        {
+          "bundleName": "uiBundle",
+          "relativePath": "subpackages/uiBundle/import/_packs/settingsDialogNumber/settingsDialogNumber__pack_1.json",
+          "bundleRelativePath": "import/_packs/settingsDialogNumber/settingsDialogNumber__pack_1.json",
+          "role": "pack-container-json",
+          "runtimeMapped": true,
+          "canonicalPath": "",
+          "strategy": "import-pack",
+          "classNames": [
+            "cc.SpriteFrame",
+            "cc.LabelAtlas"
+          ],
+          "dependencyCount": 2,
+          "dependencySamples": [],
+          "nameSamples": [
+            "设置二级数字"
+          ]
+        },
+        {
+          "bundleName": "uiBundle",
+          "relativePath": "subpackages/uiBundle/import/_packs/staminaCount/staminaCount__pack_1.json",
+          "bundleRelativePath": "import/_packs/staminaCount/staminaCount__pack_1.json",
+          "role": "pack-container-json",
+          "runtimeMapped": true,
+          "canonicalPath": "",
+          "strategy": "import-pack",
+          "classNames": [
+            "cc.SpriteFrame",
+            "cc.LabelAtlas"
+          ],
+          "dependencyCount": 2,
+          "dependencySamples": [],
+          "nameSamples": [
+            "体力数"
+          ]
+        }
+      ],
+      "nativeSamples": [
+        {
+          "bundleName": "uiBundle",
+          "relativePath": "subpackages/uiBundle/native/fullAnimation/Done_for_eat.png",
+          "bundleRelativePath": "native/fullAnimation/Done_for_eat.png",
+          "role": "native-file",
+          "runtimeMapped": true,
+          "canonicalPath": "吃饱动画/Done for eat",
+          "strategy": "direct-canonical-path",
+          "extension": ".png"
+        },
+        {
+          "bundleName": "uiBundle",
+          "relativePath": "subpackages/uiBundle/native/restoredNames/blackOutlineNumberStrip.png",
+          "bundleRelativePath": "native/restoredNames/blackOutlineNumberStrip.png",
+          "role": "native-file",
+          "runtimeMapped": true,
+          "canonicalPath": "恢复命名/黑边数字条",
+          "strategy": "direct-canonical-path",
+          "extension": ".png"
+        },
+        {
+          "bundleName": "uiBundle",
+          "relativePath": "subpackages/uiBundle/native/restoredNames/whiteBlockStrip.png",
+          "bundleRelativePath": "native/restoredNames/whiteBlockStrip.png",
+          "role": "native-file",
+          "runtimeMapped": true,
+          "canonicalPath": "恢复命名/白色块状条",
+          "strategy": "direct-canonical-path",
+          "extension": ".png"
+        },
+        {
+          "bundleName": "uiBundle",
+          "relativePath": "subpackages/uiBundle/native/restoredNames/whiteHorizontalBar.png",
+          "bundleRelativePath": "native/restoredNames/whiteHorizontalBar.png",
+          "role": "native-file",
+          "runtimeMapped": true,
+          "canonicalPath": "恢复命名/白色横线条",
+          "strategy": "direct-canonical-path",
+          "extension": ".png"
+        },
+        {
+          "bundleName": "uiBundle",
+          "relativePath": "subpackages/uiBundle/native/restoredNames/whiteNumberStrip.png",
+          "bundleRelativePath": "native/restoredNames/whiteNumberStrip.png",
+          "role": "native-file",
+          "runtimeMapped": true,
+          "canonicalPath": "恢复命名/白色数字条",
+          "strategy": "direct-canonical-path",
+          "extension": ".png"
+        },
+        {
+          "bundleName": "uiBundle",
+          "relativePath": "subpackages/uiBundle/native/tex/autoUi/frame__texture_12.png",
+          "bundleRelativePath": "native/tex/autoUi/frame__texture_12.png",
+          "role": "native-file",
+          "runtimeMapped": true,
+          "canonicalPath": "",
+          "strategy": "texture-source-from-pack",
+          "extension": ".png"
+        }
+      ]
+    }
+  ]
+}

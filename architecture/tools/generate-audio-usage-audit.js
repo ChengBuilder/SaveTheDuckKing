@@ -9,7 +9,7 @@ const {
 
 const AUDIO_BUNDLE_CONFIG_PATH = 'subpackages/audioBundle/config.audio-bundle.json';
 const AUDIO_BUNDLE_IMPORT_DIR = 'subpackages/audioBundle/import';
-const AUDIO_BUNDLE_SEMANTIC_ALIAS_PATH = 'subpackages/audioBundle/semantic-asset-aliases.json';
+const AUDIO_BUNDLE_SEMANTIC_ALIAS_PATH = 'architecture/generated/subpackage-semantic-aliases/audioBundle.json';
 const AUDIO_USAGE_AUDIT_MARKDOWN_PATH = 'architecture/docs/audio-usage-audit.md';
 const AUDIO_USAGE_AUDIT_JSON_PATH = 'architecture/docs/audio-usage-audit.json';
 const LOW_READABILITY_ALLOWLIST = new Set([

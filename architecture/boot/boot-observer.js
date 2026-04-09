@@ -120,6 +120,7 @@ function resolveBootObservationSnapshot() {
       'runtime-dependencies-loaded',
       'performance-strategies-applied',
       'system-runtime-warmed',
+      'runtime-governance-installed',
       'loading-view-ready',
       'application-lifecycle-started',
       'application-module-loaded',
@@ -133,7 +134,11 @@ function resolveBootObservationSnapshot() {
       'metrics.performance.renderPolicy.targetRenderDpr',
       'metrics.performance.renderPolicy.targetRenderWidth',
       'metrics.performance.frameRatePolicy.targetFps',
-      'platformStrategy.startupMode'
+      'platformStrategy.startupMode',
+      'metrics.runtimeGovernance.capabilities.updateManager',
+      'metrics.runtimeGovernance.lifecycle.showCount',
+      'metrics.runtimeGovernance.memoryWarning.count',
+      'metrics.runtimeGovernance.update.status'
     ],
     trackedTimingKeys: [
       'durationMs',

@@ -13,7 +13,12 @@ const DEFAULT_BOOT_CONFIG = {
   renderPixelRatioCap: 2,
   lowEndBenchmarkLevel: 15,
   lowEndFps: 45,
-  defaultFps: 60
+  defaultFps: 60,
+  enableUpdateManager: true,
+  promptForUpdateOnReady: true,
+  applyUpdateInDevtools: false,
+  enableLifecycleObservers: true,
+  enableMemoryWarningObservers: true
 };
 
 /**
@@ -27,7 +32,12 @@ const HARD_FALLBACK_BOOT_CONFIG = Object.freeze({
   renderPixelRatioCap: 2,
   lowEndBenchmarkLevel: 15,
   lowEndFps: 45,
-  defaultFps: 60
+  defaultFps: 60,
+  enableUpdateManager: true,
+  promptForUpdateOnReady: true,
+  applyUpdateInDevtools: false,
+  enableLifecycleObservers: true,
+  enableMemoryWarningObservers: true
 });
 
 /**
@@ -108,7 +118,15 @@ function normalizeBootConfig(sourceConfig, fallbackConfig) {
     renderPixelRatioCap: pickNumber(safeSource.renderPixelRatioCap, safeFallback.renderPixelRatioCap),
     lowEndBenchmarkLevel: pickNumber(safeSource.lowEndBenchmarkLevel, safeFallback.lowEndBenchmarkLevel),
     lowEndFps: pickNumber(safeSource.lowEndFps, safeFallback.lowEndFps),
-    defaultFps: pickNumber(safeSource.defaultFps, safeFallback.defaultFps)
+    defaultFps: pickNumber(safeSource.defaultFps, safeFallback.defaultFps),
+    enableUpdateManager: pickBoolean(safeSource.enableUpdateManager, safeFallback.enableUpdateManager),
+    promptForUpdateOnReady: pickBoolean(safeSource.promptForUpdateOnReady, safeFallback.promptForUpdateOnReady),
+    applyUpdateInDevtools: pickBoolean(safeSource.applyUpdateInDevtools, safeFallback.applyUpdateInDevtools),
+    enableLifecycleObservers: pickBoolean(safeSource.enableLifecycleObservers, safeFallback.enableLifecycleObservers),
+    enableMemoryWarningObservers: pickBoolean(
+      safeSource.enableMemoryWarningObservers,
+      safeFallback.enableMemoryWarningObservers
+    )
   };
 }
 
@@ -146,6 +164,25 @@ function pickNumber(currentValue, fallbackValue) {
     return Number(fallbackValue);
   }
   return parsedValue;
+}
+
+/**
+ * 选择布尔配置值。
+ * @param {any} currentValue 当前值
+ * @param {boolean} fallbackValue 默认值
+ * @returns {boolean}
+ */
+function pickBoolean(currentValue, fallbackValue) {
+  if (typeof currentValue === 'boolean') {
+    return currentValue;
+  }
+  if (currentValue === 'true' || currentValue === '1') {
+    return true;
+  }
+  if (currentValue === 'false' || currentValue === '0') {
+    return false;
+  }
+  return Boolean(fallbackValue);
 }
 
 const configApi = {

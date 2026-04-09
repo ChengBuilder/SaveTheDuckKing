@@ -8,6 +8,7 @@ const {
   warmupSystemRuntime
 } = require('./runtime-bridge');
 const { startApplicationLifecycle } = require('./app-lifecycle');
+const { installRuntimeGovernance } = require('./runtime-governance');
 const {
   BOOT_STATUS_PENDING,
   BOOT_STATUS_RUNNING,
@@ -78,6 +79,9 @@ function runBootSequence(requireFn, runtimeBootState, systemInfo, platformStartu
 
   warmupSystemRuntime(requireFn);
   markBootPhase(bootObserver, 'system-runtime-warmed');
+
+  installRuntimeGovernance(bootObserver, bootConfig, runtimeSystemInfo);
+  markBootPhase(bootObserver, 'runtime-governance-installed');
 
   const loadingView = requireFn('./first-screen');
   markBootPhase(bootObserver, 'loading-view-ready');

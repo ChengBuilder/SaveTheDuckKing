@@ -13,6 +13,7 @@ function verifyRuntimeSafety() {
   const bootPath = path.join(projectRoot, 'architecture', 'boot', 'game-bootstrap.js');
   const bootSafetyPath = path.join(projectRoot, 'architecture', 'boot', 'boot-safety.js');
   const bootObserverPath = path.join(projectRoot, 'architecture', 'boot', 'boot-observer.js');
+  const runtimeGovernancePath = path.join(projectRoot, 'architecture', 'boot', 'runtime-governance.js');
   const globalContextPath = path.join(projectRoot, 'architecture', 'boot', 'global-context.js');
   const bootLoggerPath = path.join(projectRoot, 'architecture', 'boot', 'boot-logger.js');
   const platformStrategyPath = path.join(projectRoot, 'architecture', 'boot', 'platform-strategy.js');
@@ -24,6 +25,7 @@ function verifyRuntimeSafety() {
   assertFileExists(bootPath, errors, '缺少可维护启动入口 game-bootstrap.js');
   assertFileExists(bootSafetyPath, errors, '缺少启动安全模块 boot-safety.js');
   assertFileExists(bootObserverPath, errors, '缺少启动观测模块 boot-observer.js');
+  assertFileExists(runtimeGovernancePath, errors, '缺少运行时治理模块 runtime-governance.js');
   assertFileExists(globalContextPath, errors, '缺少运行时上下文模块 global-context.js');
   assertFileExists(bootLoggerPath, errors, '缺少启动日志模块 boot-logger.js');
   assertFileExists(platformStrategyPath, errors, '缺少平台策略模块 platform-strategy.js');
@@ -91,6 +93,18 @@ function verifyBootExport(bootPath, errors) {
   const bootModule = require(bootPath);
   if (!bootModule || typeof bootModule.bootGameRuntime !== 'function') {
     errors.push('game-bootstrap.js 未导出 bootGameRuntime 函数');
+  }
+
+  const bootSource = fs.readFileSync(bootPath, 'utf8');
+  const requiredSnippets = [
+    "require('./runtime-governance')",
+    'installRuntimeGovernance('
+  ];
+
+  for (const snippet of requiredSnippets) {
+    if (!bootSource.includes(snippet)) {
+      errors.push('game-bootstrap.js 缺少运行时治理桥接片段: ' + snippet);
+    }
   }
 }
 

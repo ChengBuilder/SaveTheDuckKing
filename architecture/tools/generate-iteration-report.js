@@ -16,10 +16,12 @@ const { resolveBootSafetySnapshot } = require('../boot/boot-safety');
 const { resolvePerformanceStrategySnapshot } = require('../boot/performance-strategy');
 const { resolveBootObservationSnapshot } = require('../boot/boot-observer');
 const { resolveRecoveryStrategySnapshot } = require('../boot/recovery-strategy');
+const { resolveRuntimeGovernanceSnapshot } = require('../boot/runtime-governance');
 
 const GUARDRAIL_REPORT_JSON_PATH = 'architecture/docs/guardrail-report.json';
 const MAX_CHANGED_FILES_FOR_FULL_LIST = 80;
 const MAX_HIGHLIGHT_CHANGED_FILES = 40;
+const MAX_ITERATION_REPORT_KEEP_COUNT = resolveMaxIterationReportKeepCount();
 
 /**
  * 生成“本轮优化迭代报告”并更新索引。
@@ -46,6 +48,7 @@ function generateIterationReport() {
   const performanceStrategySnapshot = resolvePerformanceStrategySnapshot(bootConfigSnapshot);
   const bootObservationSnapshot = resolveBootObservationSnapshot();
   const recoveryStrategySnapshot = resolveRecoveryStrategySnapshot();
+  const runtimeGovernanceSnapshot = resolveRuntimeGovernanceSnapshot();
   const reportLines = buildReportLines({
     layout: layout,
     generatedAtText: formatTimestampForText(currentDate),
@@ -59,7 +62,8 @@ function generateIterationReport() {
     bootSafetySnapshot: bootSafetySnapshot,
     performanceStrategySnapshot: performanceStrategySnapshot,
     bootObservationSnapshot: bootObservationSnapshot,
-    recoveryStrategySnapshot: recoveryStrategySnapshot
+    recoveryStrategySnapshot: recoveryStrategySnapshot,
+    runtimeGovernanceSnapshot: runtimeGovernanceSnapshot
   });
 
   fs.writeFileSync(reportPath, reportLines.join('\n') + '\n');
@@ -84,7 +88,8 @@ function generateIterationReport() {
  *  bootSafetySnapshot: any,
  *  performanceStrategySnapshot: any,
  *  bootObservationSnapshot: any,
- *  recoveryStrategySnapshot: any
+ *  recoveryStrategySnapshot: any,
+ *  runtimeGovernanceSnapshot: any
  * }} input 报告输入
  * @returns {string[]}
  */
@@ -132,6 +137,7 @@ function buildReportLines(input) {
   lines.push('## 性能与运行时观测快照');
   appendPerformanceStrategyLines(lines, input.performanceStrategySnapshot);
   appendBootObservationLines(lines, input.bootObservationSnapshot);
+  appendRuntimeGovernanceLines(lines, input.runtimeGovernanceSnapshot);
   lines.push('');
   lines.push('## 护栏结果');
   appendGuardrailLines(lines, input.layout, input.guardrailReport);
@@ -144,7 +150,6 @@ function buildReportLines(input) {
   lines.push(formatNodeCommand([formatProjectPathFromWorkspace(input.layout, 'architecture/tools/format-project-json.js')]));
   lines.push(formatNodeCommand([formatProjectPathFromWorkspace(input.layout, 'architecture/tools/generate-bundle-asset-catalog.js')]));
   lines.push(formatNodeCommand([formatProjectPathFromWorkspace(input.layout, 'architecture/tools/generate-uuid-asset-report.js')]));
-  lines.push(formatNodeCommand([formatProjectPathFromWorkspace(input.layout, 'architecture/tools/generate-duck-fragment-usage-audit.js')]));
   lines.push(formatNodeCommand([formatProjectPathFromWorkspace(input.layout, 'architecture/tools/generate-audio-usage-audit.js')]));
   lines.push(formatNodeCommand([formatProjectPathFromWorkspace(input.layout, 'architecture/tools/verify-wechat-minigame-structure.js')]));
   lines.push(formatNodeCommand([formatProjectPathFromWorkspace(input.layout, 'architecture/tools/generate-iteration-report.js')]));
@@ -319,6 +324,22 @@ function appendBootObservationLines(lines, bootObservationSnapshot) {
   lines.push('- 关键指标：`' + (bootObservationSnapshot.trackedMetricKeys || []).join(' / ') + '`');
   lines.push('- 耗时字段：`' + (bootObservationSnapshot.trackedTimingKeys || []).join(' / ') + '`');
   lines.push('- 耗时说明：总耗时看 `durationMs`，阶段累计耗时看 `phases[].sinceBootMs`，相邻阶段间隔看 `phases[].sincePreviousPhaseMs`。');
+}
+
+/**
+ * 追加运行时治理快照内容。
+ * @param {string[]} lines 输出行
+ * @param {{runtimeStateKey?: string, memoryHandlerKey?: string, trackedMetricKeys?: string[]}} runtimeGovernanceSnapshot 运行时治理快照
+ */
+function appendRuntimeGovernanceLines(lines, runtimeGovernanceSnapshot) {
+  if (!runtimeGovernanceSnapshot || typeof runtimeGovernanceSnapshot !== 'object') {
+    lines.push('- 无法读取运行时治理快照');
+    return;
+  }
+
+  lines.push('- 运行时治理状态：`globalThis.' + String(runtimeGovernanceSnapshot.runtimeStateKey || '__DUCK_RUNTIME_GOVERNANCE') + '`');
+  lines.push('- 内存告警处理器注册表：`globalThis.' + String(runtimeGovernanceSnapshot.memoryHandlerKey || '__DUCK_MEMORY_WARNING_HANDLERS') + '`');
+  lines.push('- 关键治理指标：`' + (runtimeGovernanceSnapshot.trackedMetricKeys || []).join(' / ') + '`');
 }
 
 /**
@@ -497,18 +518,25 @@ function appendHighlightedGroup(highlightedFiles, fileGroup, limit) {
  * @param {string} indexPath 索引文件路径
  */
 function updateIterationIndex(reportDirectoryPath, indexPath) {
-  const reportFileNames = fs
+  const allReportFileNames = fs
     .readdirSync(reportDirectoryPath)
     .filter(function filterReportFile(fileName) {
       return fileName.startsWith('iteration-') && fileName.endsWith('.md');
     })
     .sort()
     .reverse();
+  const reportFileNames = allReportFileNames.slice(0, MAX_ITERATION_REPORT_KEEP_COUNT);
+  const prunedFileNames = allReportFileNames.slice(MAX_ITERATION_REPORT_KEEP_COUNT);
+
+  for (const prunedFileName of prunedFileNames) {
+    fs.unlinkSync(path.join(reportDirectoryPath, prunedFileName));
+  }
 
   const lines = [];
   lines.push('# 迭代报告索引（自动生成）');
   lines.push('');
   lines.push('> 本文件由 `architecture/tools/generate-iteration-report.js` 生成。');
+  lines.push('> 已自动保留最近 `' + MAX_ITERATION_REPORT_KEEP_COUNT + '` 份报告。');
   lines.push('');
   lines.push('## 报告列表（新到旧）');
   if (reportFileNames.length === 0) {
@@ -521,6 +549,18 @@ function updateIterationIndex(reportDirectoryPath, indexPath) {
   lines.push('');
 
   fs.writeFileSync(indexPath, lines.join('\n') + '\n');
+}
+
+/**
+ * 解析迭代报告保留数量。
+ * @returns {number}
+ */
+function resolveMaxIterationReportKeepCount() {
+  const rawValue = Number(process.env.DUCK_ITERATION_REPORT_KEEP || 12);
+  if (!Number.isFinite(rawValue)) {
+    return 12;
+  }
+  return Math.max(1, Math.floor(rawValue));
 }
 
 /**

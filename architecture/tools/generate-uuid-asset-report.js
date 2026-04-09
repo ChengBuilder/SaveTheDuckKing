@@ -18,6 +18,9 @@ const UUID_TEMPLATE = [
 const BASE64_KEY_CHARS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
 const HEX_CHARS = '0123456789abcdef';
 const BASE64_VALUES = createBase64ValueMap();
+const INCLUDE_FULL_RECORDS =
+  process.argv.includes('--full-records') || process.env.DUCK_UUID_AUDIT_FULL === '1';
+const UNMATCHED_SAMPLE_LIMIT = 40;
 
 /**
  * 生成 UUID 编译资产审计报告。
@@ -112,7 +115,7 @@ function createBundleReport(layout, configFilePath) {
   const unmatchedImportFiles = collectUnmatchedCompiledFiles(importFileIndex, matchedImportFiles);
   const unmatchedNativeFiles = collectUnmatchedCompiledFiles(nativeFileIndex, matchedNativeFiles);
 
-  return {
+  const bundleReport = {
     bundleName: String(configJson.name || path.basename(bundleDirectoryPath)),
     bundleDirectory: normalizePath(path.relative(layout.projectRoot, bundleDirectoryPath)),
     configPath: normalizePath(path.relative(layout.projectRoot, configFilePath)),
@@ -140,10 +143,19 @@ function createBundleReport(layout, configFilePath) {
     typeSummary: typeSummary,
     packRecords: packRecords,
     sampleAssetRecords: assetRecords.slice(0, 20),
-    assetRecords: assetRecords,
-    unmatchedImportFiles: unmatchedImportFiles,
-    unmatchedNativeFiles: unmatchedNativeFiles
+    unmatchedImportFiles: unmatchedImportFiles.slice(0, UNMATCHED_SAMPLE_LIMIT),
+    unmatchedNativeFiles: unmatchedNativeFiles.slice(0, UNMATCHED_SAMPLE_LIMIT),
+    unmatchedImportFilesOmittedCount: Math.max(0, unmatchedImportFiles.length - UNMATCHED_SAMPLE_LIMIT),
+    unmatchedNativeFilesOmittedCount: Math.max(0, unmatchedNativeFiles.length - UNMATCHED_SAMPLE_LIMIT)
   };
+
+  if (INCLUDE_FULL_RECORDS) {
+    bundleReport.assetRecords = assetRecords;
+    bundleReport.unmatchedImportFilesFull = unmatchedImportFiles;
+    bundleReport.unmatchedNativeFilesFull = unmatchedNativeFiles;
+  }
+
+  return bundleReport;
 }
 
 /**
@@ -491,6 +503,9 @@ function buildUuidReportPayload(bundleReports) {
   }
 
   return {
+    reportMode: {
+      includeFullRecords: INCLUDE_FULL_RECORDS
+    },
     summary: summary,
     bundles: bundleReports
   };
@@ -511,6 +526,7 @@ function buildUuidReportMarkdownLines(layout, reportPayload) {
   lines.push('> 本文件由 `architecture/tools/generate-uuid-asset-report.js` 生成。');
   lines.push('');
   lines.push('## 总览');
+  lines.push('- JSON 输出模式：`' + (reportPayload.reportMode.includeFullRecords ? 'full-records' : 'summary') + '`');
   lines.push('- 生成时间：' + summary.generatedAt);
   lines.push('- Bundle 数：' + summary.bundleCount);
   lines.push('- canonical 资产记录数：' + summary.assetRecordCount);
@@ -602,12 +618,18 @@ function buildUuidReportMarkdownLines(layout, reportPayload) {
       lines.push('- 未命中 import 文件样例：' + bundleReport.unmatchedImportFiles.slice(0, 8).map(function mapFile(filePath) {
         return '`' + filePath + '`';
       }).join('，'));
+      if (bundleReport.unmatchedImportFilesOmittedCount > 0) {
+        lines.push('- 其余未命中 import 文件：' + bundleReport.unmatchedImportFilesOmittedCount + ' 项（仅在 full-records 模式写入 JSON）。');
+      }
     }
 
     if (bundleReport.unmatchedNativeFiles.length > 0) {
       lines.push('- 未命中 native 文件样例：' + bundleReport.unmatchedNativeFiles.slice(0, 8).map(function mapFile(filePath) {
         return '`' + filePath + '`';
       }).join('，'));
+      if (bundleReport.unmatchedNativeFilesOmittedCount > 0) {
+        lines.push('- 其余未命中 native 文件：' + bundleReport.unmatchedNativeFilesOmittedCount + ' 项（仅在 full-records 模式写入 JSON）。');
+      }
     }
 
     lines.push('');

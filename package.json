@@ -1,0 +1,17 @@
+{
+  "name": "save-the-duck-king-tooling",
+  "private": true,
+  "description": "Tooling for official WeChat mini game checks and CI workflows.",
+  "scripts": {
+    "guardrails": "node architecture/tools/run-guardrails.js",
+    "wechat:official:check": "node architecture/tools/run-wechat-official-checks.js",
+    "wechat:official:fix": "node architecture/tools/run-wechat-official-checks.js --fix",
+    "wechat:ci:doctor": "node architecture/tools/run-wechat-ci.js doctor",
+    "wechat:ci:preview": "node architecture/tools/run-wechat-ci.js preview",
+    "wechat:ci:upload": "node architecture/tools/run-wechat-ci.js upload",
+    "wechat:ci:pack-npm": "node architecture/tools/run-wechat-ci.js pack-npm"
+  },
+  "devDependencies": {
+    "miniprogram-ci": "2.1.31"
+  }
+}

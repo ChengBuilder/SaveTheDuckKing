@@ -9,12 +9,14 @@ const {
 } = require('./project-paths');
 
 const DIRECTORY_SCAN_TARGETS = [
-  'assets',
-  'subpackages'
+  '.'
 ];
 
 const DIRECT_FILE_TARGETS = [
+  'app-config.json',
   'game.json',
+  'project.config.json',
+  'project.private.config.json',
   'src/runtime-settings.json'
 ];
 
@@ -27,19 +29,38 @@ function formatProjectJsonFiles() {
   const layout = resolveProjectLayout(__dirname);
   const jsonFilePaths = resolveJsonFilePaths(layout);
   const updatedFilePaths = [];
+  const skippedFileReports = [];
 
   for (const jsonFilePath of jsonFilePaths) {
-    if (formatJsonFile(jsonFilePath)) {
+    const formatResult = formatJsonFile(jsonFilePath);
+    if (formatResult.updated) {
       updatedFilePaths.push(jsonFilePath);
+    }
+    if (formatResult.skippedReason) {
+      skippedFileReports.push({
+        filePath: jsonFilePath,
+        reason: formatResult.skippedReason
+      });
     }
   }
 
   console.log('[JSON格式化] 已扫描文件数:', jsonFilePaths.length);
   console.log('[JSON格式化] 已更新文件数:', updatedFilePaths.length);
+  console.log('[JSON格式化] 已跳过文件数:', skippedFileReports.length);
 
   for (const updatedFilePath of updatedFilePaths) {
     const relativePath = path.relative(layout.projectRoot, updatedFilePath);
     console.log('[JSON格式化] 已更新:', formatProjectPathFromWorkspace(layout, relativePath));
+  }
+
+  for (const skippedFileReport of skippedFileReports) {
+    const relativePath = path.relative(layout.projectRoot, skippedFileReport.filePath);
+    console.log(
+      '[JSON格式化] 已跳过:',
+      formatProjectPathFromWorkspace(layout, relativePath),
+      '原因:',
+      skippedFileReport.reason
+    );
   }
 }
 
@@ -71,8 +92,8 @@ function resolveJsonFilePaths(layout) {
 }
 
 /**
- * 递归收集关键 JSON 文件。
- * 仅处理入口配置、bundle 配置与兼容配置，不触碰 import 元数据。
+ * 递归收集项目内 JSON 文件。
+ * 默认跳过 import/native 编译产物与隐藏目录，保留人工维护和治理层 JSON 的可读性。
  * @param {string} directoryPath 当前目录
  * @param {Set<string>} filePathSet 文件集合
  */
@@ -83,7 +104,7 @@ function collectJsonFiles(directoryPath, filePathSet) {
     const targetPath = path.join(directoryPath, directoryEntry.name);
 
     if (directoryEntry.isDirectory()) {
-      if (directoryEntry.name === 'import' || directoryEntry.name === 'native') {
+      if (shouldSkipDirectory(directoryEntry.name)) {
         continue;
       }
       collectJsonFiles(targetPath, filePathSet);
@@ -94,39 +115,64 @@ function collectJsonFiles(directoryPath, filePathSet) {
       continue;
     }
 
-    if (shouldFormatJsonFile(directoryEntry.name)) {
+    if (shouldFormatJsonFile(targetPath)) {
       filePathSet.add(targetPath);
     }
   }
 }
 
 /**
- * 判断当前 JSON 文件是否属于关键清单。
- * @param {string} fileName 文件名
+ * 判断当前目录是否需要跳过扫描。
+ * @param {string} directoryName 目录名
  * @returns {boolean}
  */
-function shouldFormatJsonFile(fileName) {
-  return fileName === 'game.json'
-    || fileName === 'runtime-settings.json'
-    || /^config(?:\.[a-z0-9-]+)?\.json$/i.test(fileName);
+function shouldSkipDirectory(directoryName) {
+  return directoryName === '.git'
+    || directoryName === 'node_modules'
+    || directoryName === 'wechat-ci-output'
+    || directoryName === 'import'
+    || directoryName === 'native';
+}
+
+/**
+ * 判断当前 JSON 文件是否需要格式化。
+ * @param {string} filePath 文件路径
+ * @returns {boolean}
+ */
+function shouldFormatJsonFile(filePath) {
+  return /\.json$/i.test(path.basename(filePath));
 }
 
 /**
  * 格式化单个 JSON 文件。
  * @param {string} filePath 文件路径
- * @returns {boolean}
+ * @returns {{updated: boolean, skippedReason: string}}
  */
 function formatJsonFile(filePath) {
   const originalContent = fs.readFileSync(filePath, 'utf8');
-  const parsedJson = JSON.parse(originalContent);
+  let parsedJson = null;
+  try {
+    parsedJson = JSON.parse(originalContent);
+  } catch (error) {
+    return {
+      updated: false,
+      skippedReason: '非标准 JSON（可能为 JSONC）'
+    };
+  }
   const formattedContent = JSON.stringify(parsedJson, null, 2) + '\n';
 
   if (originalContent === formattedContent) {
-    return false;
+    return {
+      updated: false,
+      skippedReason: ''
+    };
   }
 
   fs.writeFileSync(filePath, formattedContent);
-  return true;
+  return {
+    updated: true,
+    skippedReason: ''
+  };
 }
 
 formatProjectJsonFiles();
