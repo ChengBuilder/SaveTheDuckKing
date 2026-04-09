@@ -86,6 +86,7 @@ function buildGuardrailSteps(layout) {
     createSyntaxCheckStep(layout, 'HomeBundle 素材语义化工具语法检查', 'architecture/tools/semanticize-homebundle-assets.js'),
     createSyntaxCheckStep(layout, 'uiBundle 图鉴皮肤页语义化工具语法检查', 'architecture/tools/semanticize-uibundle-book-skin-assets.js'),
     createSyntaxCheckStep(layout, 'uiBundle 图鉴展示资源语义化工具语法检查', 'architecture/tools/semanticize-uibundle-book-display-assets.js'),
+    createSyntaxCheckStep(layout, '主包书册展示资源语义化工具语法检查', 'architecture/tools/semanticize-main-book-display-assets.js'),
     createSyntaxCheckStep(layout, 'uiBundle 设置模块语义化工具语法检查', 'architecture/tools/semanticize-uibundle-settings-assets.js'),
     createSyntaxCheckStep(layout, 'URL 编码路径校验工具语法检查', 'architecture/tools/check-no-url-encoded-paths.js'),
     createSyntaxCheckStep(layout, '迭代报告生成器语法检查', 'architecture/tools/generate-iteration-report.js'),

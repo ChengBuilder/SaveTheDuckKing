@@ -258,6 +258,37 @@
 - 三套 `import` 共更新文件 `204` 个（每套 `68`）
 - 三套 `import` 共完成名称改写 `216` 次（每套 `72`）
 
+## 2026-04-09 `main` 复用书册展示图集第一批语义化 rename
+
+本轮不再新增任何运行时兼容，而是直接收敛主包里几组仍沿用解包名的复用图集元数据，让 `main` 与 `uiBundle` 使用同一套 canonical 命名。
+
+本轮新增落地的 canonical 名称：
+- `banner__pack_11`：`p10/p9/p6` 收敛为 `skinPage10/skinPage9/skinPage6`
+- `banner__pack_11`：`鸽鸽图鉴` 收敛为 `titleBanner`
+- `banner__pack_11`：`视频2` 收敛为 `videoBadge`
+- `banner__pack_11`：`旋转光` 收敛为 `rotatingGlow`
+- `callFriend__pack_18`：`鸽鸽图鉴` 收敛为 `titleBanner`
+- `callFriend__pack_18`：`图鉴` 收敛为 `collectionTitle`
+- `bottom__pack_15`：`p8/p1` 收敛为 `skinPage8/skinPage1`
+- `bottom__pack_15`：`底2/框/底` 收敛为 `pillBase/selectionHalo/infoBarBase`
+- `bottom__pack_15`：`领取按钮/已领取按钮` 收敛为 `claimButton/claimedButton`
+- `share__pack_11`：`p2/p3/p4/p5` 收敛为 `skinPage2/skinPage3/skinPage4/skinPage5`
+- `bottom__pack_17`：`p7` 收敛为 `skinPage7`
+
+本轮同步调整：
+- 新增 `architecture/tools/semanticize-main-book-display-assets.js`
+- `subpackages/main/import/_packs/pack/banner__pack_11.json`
+- `subpackages/main/import/_packs/pack/callFriend__pack_18.json`
+- `subpackages/main/import/_packs/pack/bottom__pack_15.json`
+- `subpackages/main/import/_packs/pack/share__pack_11.json`
+- `subpackages/main/import/_packs/pack/bottom__pack_17.json`
+- `architecture/tools/check-legacy-runtime-compat.js`
+- `architecture/tools/run-guardrails.js`
+
+本轮选择依据：
+- 这些 pack 与 `uiBundle` 中已治理完成的图集共享同一 `_textureSource`，能够一一对应到既有 canonical 名称。
+- 这批改动仅触及 source-of-truth 元数据，不引入新的 alias、镜像或补丁，更符合当前“删兼容、做正构”的目标。
+
 ## 2026-04-08 `uiBundle` 图鉴皮肤页第一批语义化 rename
 
 本轮先处理 `uiBundle` 中最集中、语义边界最明确的一组短 token：`book/鸽鸽图鉴/皮肤图鉴/p1..p10`。这批资源全部用于图鉴皮肤页，不依赖运行时映射，适合低风险先收口。

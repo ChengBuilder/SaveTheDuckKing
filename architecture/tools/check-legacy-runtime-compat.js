@@ -89,6 +89,51 @@ const CHECK_TARGETS = [
     ]
   },
   {
+    relativePath: 'subpackages/main/import/_packs/pack/banner__pack_11.json',
+    checks: [
+      {
+        label: '主包书册展示横幅复用图集旧名称',
+        pattern: /"name":"(?:p10|p9|鸽鸽图鉴|p6|视频2|旋转光)"/g
+      }
+    ]
+  },
+  {
+    relativePath: 'subpackages/main/import/_packs/pack/callFriend__pack_18.json',
+    checks: [
+      {
+        label: '主包书册标题复用图集旧名称',
+        pattern: /"name":"(?:鸽鸽图鉴|图鉴)"/g
+      }
+    ]
+  },
+  {
+    relativePath: 'subpackages/main/import/_packs/pack/bottom__pack_15.json',
+    checks: [
+      {
+        label: '主包书册底部复用图集旧名称',
+        pattern: /"name":"(?:p8|底2|已领取按钮|框|底|领取按钮|p1)"/g
+      }
+    ]
+  },
+  {
+    relativePath: 'subpackages/main/import/_packs/pack/share__pack_11.json',
+    checks: [
+      {
+        label: '主包书册分享复用图集旧名称',
+        pattern: /"name":"(?:p2|p4|p3|p5)"/g
+      }
+    ]
+  },
+  {
+    relativePath: 'subpackages/main/import/_packs/pack/bottom__pack_17.json',
+    checks: [
+      {
+        label: '主包书册结算复用图集旧名称',
+        pattern: /"name":"p7"/g
+      }
+    ]
+  },
+  {
     relativePath: 'architecture/boot/asset-path-normalizer.js',
     checks: [
       {

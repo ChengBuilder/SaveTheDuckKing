@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-09T15:51:22.702Z",
+  "generatedAt": "2026-04-09T16:10:24.422Z",
   "projectPath": "./",
   "officialSourceUrls": [
     "https://developers.weixin.qq.com/minigame/dev/guide/base-ability/code-package.html",
@@ -372,7 +372,7 @@
         "subpackages/main"
       ],
       "fileCount": 223,
-      "sizeBytes": 10034211,
+      "sizeBytes": 10034313,
       "sizeText": "9.57 MiB",
       "limitBytes": null,
       "limitText": null,
@@ -423,25 +423,25 @@
         {
           "path": "subpackages/main/import/_packs/pack/banner__pack_11.json",
           "displayPath": "subpackages/main/import/_packs/pack/banner__pack_11.json",
-          "sizeBytes": 3001,
+          "sizeBytes": 3027,
           "sizeText": "0.00 MiB"
         },
         {
           "path": "subpackages/main/import/_packs/pack/bottom__pack_15.json",
           "displayPath": "subpackages/main/import/_packs/pack/bottom__pack_15.json",
-          "sizeBytes": 4086,
+          "sizeBytes": 4119,
           "sizeText": "0.00 MiB"
         },
         {
           "path": "subpackages/main/import/_packs/pack/bottom__pack_17.json",
           "displayPath": "subpackages/main/import/_packs/pack/bottom__pack_17.json",
-          "sizeBytes": 4604,
+          "sizeBytes": 4611,
           "sizeText": "0.00 MiB"
         },
         {
           "path": "subpackages/main/import/_packs/pack/callFriend__pack_18.json",
           "displayPath": "subpackages/main/import/_packs/pack/callFriend__pack_18.json",
-          "sizeBytes": 4983,
+          "sizeBytes": 4991,
           "sizeText": "0.00 MiB"
         },
         {
@@ -483,7 +483,7 @@
         {
           "path": "subpackages/main/import/_packs/pack/share__pack_11.json",
           "displayPath": "subpackages/main/import/_packs/pack/share__pack_11.json",
-          "sizeBytes": 3013,
+          "sizeBytes": 3041,
           "sizeText": "0.00 MiB"
         },
         {
@@ -12211,7 +12211,7 @@
   "totals": {
     "packageCount": 9,
     "fileCount": 2005,
-    "sizeBytes": 26594016,
+    "sizeBytes": 26594118,
     "sizeText": "25.36 MiB",
     "limitBytes": 31457280,
     "limitText": "30.00 MiB",
