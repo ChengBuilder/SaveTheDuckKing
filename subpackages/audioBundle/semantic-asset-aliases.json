@@ -1,0 +1,1408 @@
+{
+  "bundleName": "audioBundle",
+  "generatedAt": "2026-04-09T03:56:59.872Z",
+  "importAliases": [
+    {
+      "kind": "import",
+      "originalRelativePath": "import/05f0576d-20ca-45e5-8cac-7bde0505a9ef.7447a.json",
+      "semanticRelativePath": "__semantic__/comboMusic/combo_3.json",
+      "materializedRelativePath": "import/comboMusic/combo_3.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "comboMusic/combo_3"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/099bc925-a0f0-485a-be12-49e4e0b69297.7cc67.json",
+      "semanticRelativePath": "__semantic__/fruitGame/eliminate3.json",
+      "materializedRelativePath": "import/fruitGame/eliminate3.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "fruitGame/eliminate3"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/0b114abf-f089-44f0-9904-c46a707e665d.205d7.json",
+      "semanticRelativePath": "__semantic__/fruitGame/eliminate8.json",
+      "materializedRelativePath": "import/fruitGame/eliminate8.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "fruitGame/eliminate8"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/0d4b6f77-3e37-433d-a761-d2301d183f8d.89c2f.json",
+      "semanticRelativePath": "__semantic__/duckGame/woodAssembleFollow.json",
+      "materializedRelativePath": "import/duckGame/woodAssembleFollow.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "duckGame/woodAssembleFollow"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/12c1b8af-48d2-46ee-a695-c172e4402e83.05ac1.json",
+      "semanticRelativePath": "__semantic__/comboMusic/combo_4.json",
+      "materializedRelativePath": "import/comboMusic/combo_4.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "comboMusic/combo_4"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/198fd24d-fe85-473b-a3c3-e4715b9a8da9.20804.json",
+      "semanticRelativePath": "__semantic__/ui/warningPrompt.json",
+      "materializedRelativePath": "import/ui/warningPrompt.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "ui/warningPrompt"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/22a6dd72-d08b-46c9-9da5-5d2a4fefacc2.a0322.json",
+      "semanticRelativePath": "__semantic__/win.json",
+      "materializedRelativePath": "import/win.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "win"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/22ab7843-385b-4773-ab9b-1adce8b8584a.ca4d9.json",
+      "semanticRelativePath": "__semantic__/ui/applause.json",
+      "materializedRelativePath": "import/ui/applause.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "ui/applause"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/254db0b6-c388-4e1f-877d-0c50cfe81643.f1a89.json",
+      "semanticRelativePath": "__semantic__/ui/duckUnlock.json",
+      "materializedRelativePath": "import/ui/duckUnlock.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "ui/duckUnlock"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/2e5be8e9-e343-4990-acfd-51e7942ab2c4.02dbf.json",
+      "semanticRelativePath": "__semantic__/adz.json",
+      "materializedRelativePath": "import/adz.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "adz"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/317cbbaa-6213-481b-b327-2b666d6e835b.59f2f.json",
+      "semanticRelativePath": "__semantic__/fruitGame/FruitWin.json",
+      "materializedRelativePath": "import/fruitGame/FruitWin.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "fruitGame/FruitWin"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/32a130e2-5a90-4c07-b4b2-42fa07f85ccb.b3f30.json",
+      "semanticRelativePath": "__semantic__/duckGame/stoneCollision.json",
+      "materializedRelativePath": "import/duckGame/stoneCollision.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "duckGame/stoneCollision"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/35cf13de-f938-4b03-b983-0398b824720b.910d6.json",
+      "semanticRelativePath": "__semantic__/fruitGame/eliminate1.json",
+      "materializedRelativePath": "import/fruitGame/eliminate1.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "fruitGame/eliminate1"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/376cbf2b-51ed-4917-b52e-18c34ba34095.f9d83.json",
+      "semanticRelativePath": "__semantic__/bgm/pureColor.json",
+      "materializedRelativePath": "import/bgm/pureColor.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "bgm/pureColor"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/377b04d2-5b96-4b2e-97f3-7032e7ee05cb.4e562.json",
+      "semanticRelativePath": "__semantic__/fruitGame/eliminate6.json",
+      "materializedRelativePath": "import/fruitGame/eliminate6.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "fruitGame/eliminate6"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/379509ce-e715-43be-8f74-634aee694e4a.0c9df.json",
+      "semanticRelativePath": "__semantic__/comboMusic/combo_5.json",
+      "materializedRelativePath": "import/comboMusic/combo_5.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "comboMusic/combo_5"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/3e5523b9-a4ba-4f88-9a47-0b3bb0ab312a.6e27e.json",
+      "semanticRelativePath": "__semantic__/fly.json",
+      "materializedRelativePath": "import/fly.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "fly"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/40601e4b-21b0-419e-9279-5f195824038f.93907.json",
+      "semanticRelativePath": "__semantic__/ui/failurePrompt.json",
+      "materializedRelativePath": "import/ui/failurePrompt.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "ui/failurePrompt"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/486bd684-acd2-4179-86a0-4982c3d2b577.4cc3f.json",
+      "semanticRelativePath": "__semantic__/comboMusic/combo_7.json",
+      "materializedRelativePath": "import/comboMusic/combo_7.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "comboMusic/combo_7"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/4de3fa18-79cb-4894-9a31-ff346ac5703a.61fc5.json",
+      "semanticRelativePath": "__semantic__/bdz.json",
+      "materializedRelativePath": "import/bdz.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "bdz"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/4fa3035e-54ef-4f8c-8ba4-084818724df6.59614.json",
+      "semanticRelativePath": "__semantic__/fruitGame/fruitClick.json",
+      "materializedRelativePath": "import/fruitGame/fruitClick.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "fruitGame/fruitClick"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/506d144d-1977-4bcb-b1ef-e1e0a71cd4de.80481.json",
+      "semanticRelativePath": "__semantic__/fruitGame/plateUnlock.json",
+      "materializedRelativePath": "import/fruitGame/plateUnlock.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "fruitGame/plateUnlock"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/51cd2f28-1a93-404f-a2d8-000081e54700.1a34f.json",
+      "semanticRelativePath": "__semantic__/woodDrop/woodDrop_1.json",
+      "materializedRelativePath": "import/woodDrop/woodDrop_1.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "woodDrop/woodDrop_1"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/5c021283-d720-4ab6-93de-4d94e0739844.95a4c.json",
+      "semanticRelativePath": "__semantic__/duckGame/cageBreak.json",
+      "materializedRelativePath": "import/duckGame/cageBreak.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "duckGame/cageBreak"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/5cc64a68-f024-4020-84ce-aaeaf24ae4c4.28d40.json",
+      "semanticRelativePath": "__semantic__/comboMusic/combo_8.json",
+      "materializedRelativePath": "import/comboMusic/combo_8.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "comboMusic/combo_8"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/659ce985-7270-4aa3-b707-105ca9f47b38.88b3a.json",
+      "semanticRelativePath": "__semantic__/sceneTransition/duckGameReveal.json",
+      "materializedRelativePath": "import/sceneTransition/duckGameReveal.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "sceneTransition/duckGameReveal"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/68d3033b-e0b4-4c52-aaf1-1d2d9d886147.cffbf.json",
+      "semanticRelativePath": "__semantic__/comboMusic/combo_9.json",
+      "materializedRelativePath": "import/comboMusic/combo_9.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "comboMusic/combo_9"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/69c88ad7-1b46-45a1-9ca1-b81107a24474.f6e3e.json",
+      "semanticRelativePath": "__semantic__/duckGame/woodCollision.json",
+      "materializedRelativePath": "import/duckGame/woodCollision.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "duckGame/woodCollision"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/73bdcd8b-ad0f-4c18-8d57-8266a0c7d94f.74da8.json",
+      "semanticRelativePath": "__semantic__/woodDrop/woodDrop_3.json",
+      "materializedRelativePath": "import/woodDrop/woodDrop_3.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "woodDrop/woodDrop_3"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/73e9fa86-93a0-444e-9b5f-cc4e3851727a.c36a6.json",
+      "semanticRelativePath": "__semantic__/comboMusic/combo_10.json",
+      "materializedRelativePath": "import/comboMusic/combo_10.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "comboMusic/combo_10"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/772a3b1d-4e92-4c81-a80e-53b49d207810.91a4f.json",
+      "semanticRelativePath": "__semantic__/fruitGame/eliminate2.json",
+      "materializedRelativePath": "import/fruitGame/eliminate2.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "fruitGame/eliminate2"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/7ae99c44-a677-42d5-ba32-ae5bbe8cce4f.0f60b.json",
+      "semanticRelativePath": "__semantic__/fruitGame/eat.json",
+      "materializedRelativePath": "import/fruitGame/eat.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "fruitGame/eat"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/7e06696e-6616-481e-a048-c5bcbe47a1eb.01d6c.json",
+      "semanticRelativePath": "__semantic__/ui/levelComplete.json",
+      "materializedRelativePath": "import/ui/levelComplete.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "ui/levelComplete"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/836e5fb2-38cc-44cc-8f8d-97a7af0a7c7f.553b0.json",
+      "semanticRelativePath": "__semantic__/ui/failureStinger.json",
+      "materializedRelativePath": "import/ui/failureStinger.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "ui/failureStinger"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/85619ea5-4e54-42f2-8dc3-31a0f101c34f.aad08.json",
+      "semanticRelativePath": "__semantic__/fruitGame/slotFull.json",
+      "materializedRelativePath": "import/fruitGame/slotFull.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "fruitGame/slotFull"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/8bd84c3a-cc67-43fb-94a9-103bd2e9285d.8c6b5.json",
+      "semanticRelativePath": "__semantic__/fruitGame/born.json",
+      "materializedRelativePath": "import/fruitGame/born.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "fruitGame/born"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/8c5a5b89-eadd-48f0-9c20-1a3a76e579b9.30d92.json",
+      "semanticRelativePath": "__semantic__/door.json",
+      "materializedRelativePath": "import/door.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "door"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/91b56c0c-8c52-400c-bfa5-5739e2aed6aa.e383a.json",
+      "semanticRelativePath": "__semantic__/duckGame/duckQuack.json",
+      "materializedRelativePath": "import/duckGame/duckQuack.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "duckGame/duckQuack"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/935818a2-63cc-448f-9077-98d671fa3c03.fcaf7.json",
+      "semanticRelativePath": "__semantic__/ls.json",
+      "materializedRelativePath": "import/ls.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "ls"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/9559d5ce-787a-4586-93d8-d57e6dd8da9d.0c157.json",
+      "semanticRelativePath": "__semantic__/woodDrop/woodDrop_2.json",
+      "materializedRelativePath": "import/woodDrop/woodDrop_2.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "woodDrop/woodDrop_2"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/960d827f-fed0-42ae-b9d0-642738b0c9df.03396.json",
+      "semanticRelativePath": "__semantic__/sceneTransition/fruitGameReveal.json",
+      "materializedRelativePath": "import/sceneTransition/fruitGameReveal.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "sceneTransition/fruitGameReveal"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/967dbad6-d1d0-4878-b808-91d1464476e0.18674.json",
+      "semanticRelativePath": "__semantic__/lz.json",
+      "materializedRelativePath": "import/lz.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "lz"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/99827c42-6a9b-4c41-a6fe-0ebab3500c91.f7abe.json",
+      "semanticRelativePath": "__semantic__/duckGame/nailPop.json",
+      "materializedRelativePath": "import/duckGame/nailPop.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "duckGame/nailPop"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/9b68a644-7462-4dd9-9914-dae17b99dcab.05bcb.json",
+      "semanticRelativePath": "__semantic__/comboMusic/combo_2.json",
+      "materializedRelativePath": "import/comboMusic/combo_2.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "comboMusic/combo_2"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/9b8676c8-1d0b-4681-9116-a1e3268192ae.2b1d2.json",
+      "semanticRelativePath": "__semantic__/duckGame/duckVictory.json",
+      "materializedRelativePath": "import/duckGame/duckVictory.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "duckGame/duckVictory"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/9ce37df9-90d1-4ee3-909a-3dd10334170f.2ef61.json",
+      "semanticRelativePath": "__semantic__/pop.json",
+      "materializedRelativePath": "import/pop.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "pop"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/aa7057e3-443b-4253-af1c-1b8ff476b58c.3c59a.json",
+      "semanticRelativePath": "__semantic__/duckGame/errorPrompt.json",
+      "materializedRelativePath": "import/duckGame/errorPrompt.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "duckGame/errorPrompt"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/acdcd3f0-f5e5-4a02-9bfc-9114b8a30dcf.7c705.json",
+      "semanticRelativePath": "__semantic__/ui/buttonClick.json",
+      "materializedRelativePath": "import/ui/buttonClick.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "ui/buttonClick"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/ad04aeb5-ef02-41c4-890a-aab3b2ab436c.d0b3a.json",
+      "semanticRelativePath": "__semantic__/over.json",
+      "materializedRelativePath": "import/over.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "over"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/afed72bc-2904-420f-9fb9-5920f2950b97.58f89.json",
+      "semanticRelativePath": "__semantic__/fruitGame/born1.json",
+      "materializedRelativePath": "import/fruitGame/born1.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "fruitGame/born1"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/b164889b-5675-4181-a2ca-4bdcfde62f8e.4f9db.json",
+      "semanticRelativePath": "__semantic__/comboMusic/combo_6.json",
+      "materializedRelativePath": "import/comboMusic/combo_6.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "comboMusic/combo_6"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/b2299d5e-6e8b-4baa-bc82-10f295ceea82.cbf52.json",
+      "semanticRelativePath": "__semantic__/fruitGame/eliminate4.json",
+      "materializedRelativePath": "import/fruitGame/eliminate4.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "fruitGame/eliminate4"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/b482f9c1-d4b0-4e85-9131-88bddefe370c.1f752.json",
+      "semanticRelativePath": "__semantic__/gz.json",
+      "materializedRelativePath": "import/gz.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "gz"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/bb1f0a26-daf7-4923-aed3-227fba11434f.1ae21.json",
+      "semanticRelativePath": "__semantic__/ui/victoryStinger.json",
+      "materializedRelativePath": "import/ui/victoryStinger.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "ui/victoryStinger"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/c3b518d8-e7c7-4236-9e57-72c27d3e2223.ce86a.json",
+      "semanticRelativePath": "__semantic__/ui/ribbonBurst.json",
+      "materializedRelativePath": "import/ui/ribbonBurst.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "ui/ribbonBurst"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/c6c09f94-d422-4543-882f-c2c91844fe11.0651a.json",
+      "semanticRelativePath": "__semantic__/duckGame/woodAssembleLead.json",
+      "materializedRelativePath": "import/duckGame/woodAssembleLead.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "duckGame/woodAssembleLead"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/cea88659-80bc-4a20-b206-5484788b9b84.1471e.json",
+      "semanticRelativePath": "__semantic__/levelup.json",
+      "materializedRelativePath": "import/levelup.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "levelup"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/de320c29-81b4-445e-92e8-6ede3208756e.4c68e.json",
+      "semanticRelativePath": "__semantic__/comboMusic/combo_1.json",
+      "materializedRelativePath": "import/comboMusic/combo_1.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "comboMusic/combo_1"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/e02a56cc-0d95-4a05-a231-c08e49acd1e3.4a320.json",
+      "semanticRelativePath": "__semantic__/fruitGame/eliminate5.json",
+      "materializedRelativePath": "import/fruitGame/eliminate5.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "fruitGame/eliminate5"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/e398a682-b269-4b7d-aa0b-b488f209dfa8.d3b21.json",
+      "semanticRelativePath": "__semantic__/sceneTransition/duckDrop.json",
+      "materializedRelativePath": "import/sceneTransition/duckDrop.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "sceneTransition/duckDrop"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/eb6d3dec-4c58-4cfa-baa3-4df6cfea73c2.ece13.json",
+      "semanticRelativePath": "__semantic__/show.json",
+      "materializedRelativePath": "import/show.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "show"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/f402e5a9-7324-4e32-a764-895ca42d91e2.5e65b.json",
+      "semanticRelativePath": "__semantic__/bgm/defaultGameplay.json",
+      "materializedRelativePath": "import/bgm/defaultGameplay.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "bgm/defaultGameplay"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/f6266072-4ed9-4399-b103-c885d7fb2a26.e35ea.json",
+      "semanticRelativePath": "__semantic__/ui/powerConsume.json",
+      "materializedRelativePath": "import/ui/powerConsume.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "ui/powerConsume"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/f75d0f9c-d888-4b93-872f-80944e37e4b1.be810.json",
+      "semanticRelativePath": "__semantic__/fruitGame/fruitBgm.json",
+      "materializedRelativePath": "import/fruitGame/fruitBgm.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "fruitGame/fruitBgm"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/fb89a5d3-096b-44a2-9309-c240abdfab67.5536b.json",
+      "semanticRelativePath": "__semantic__/fruitGame/eliminate7.json",
+      "materializedRelativePath": "import/fruitGame/eliminate7.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "fruitGame/eliminate7"
+      }
+    }
+  ],
+  "nativeAliases": [
+    {
+      "kind": "native",
+      "originalRelativePath": "native/05f0576d-20ca-45e5-8cac-7bde0505a9ef.55bc0.mp3",
+      "semanticRelativePath": "__semantic__/comboMusic/combo_3.mp3",
+      "materializedRelativePath": "native/comboMusic/combo_3.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "comboMusic/combo_3"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/099bc925-a0f0-485a-be12-49e4e0b69297.a30dd.mp3",
+      "semanticRelativePath": "__semantic__/fruitGame/eliminate3.mp3",
+      "materializedRelativePath": "native/fruitGame/eliminate3.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "fruitGame/eliminate3"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/0b114abf-f089-44f0-9904-c46a707e665d.9f029.mp3",
+      "semanticRelativePath": "__semantic__/fruitGame/eliminate8.mp3",
+      "materializedRelativePath": "native/fruitGame/eliminate8.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "fruitGame/eliminate8"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/0d4b6f77-3e37-433d-a761-d2301d183f8d.2db3c.mp3",
+      "semanticRelativePath": "__semantic__/duckGame/woodAssembleFollow.mp3",
+      "materializedRelativePath": "native/duckGame/woodAssembleFollow.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "duckGame/woodAssembleFollow"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/12c1b8af-48d2-46ee-a695-c172e4402e83.aed63.mp3",
+      "semanticRelativePath": "__semantic__/comboMusic/combo_4.mp3",
+      "materializedRelativePath": "native/comboMusic/combo_4.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "comboMusic/combo_4"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/198fd24d-fe85-473b-a3c3-e4715b9a8da9.e3362.mp3",
+      "semanticRelativePath": "__semantic__/ui/warningPrompt.mp3",
+      "materializedRelativePath": "native/ui/warningPrompt.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "ui/warningPrompt"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/22a6dd72-d08b-46c9-9da5-5d2a4fefacc2.79192.mp3",
+      "semanticRelativePath": "__semantic__/win.mp3",
+      "materializedRelativePath": "native/win.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "win"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/22ab7843-385b-4773-ab9b-1adce8b8584a.5d1ca.mp3",
+      "semanticRelativePath": "__semantic__/ui/applause.mp3",
+      "materializedRelativePath": "native/ui/applause.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "ui/applause"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/254db0b6-c388-4e1f-877d-0c50cfe81643.8798b.mp3",
+      "semanticRelativePath": "__semantic__/ui/duckUnlock.mp3",
+      "materializedRelativePath": "native/ui/duckUnlock.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "ui/duckUnlock"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/2e5be8e9-e343-4990-acfd-51e7942ab2c4.c4aa8.mp3",
+      "semanticRelativePath": "__semantic__/adz.mp3",
+      "materializedRelativePath": "native/adz.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "adz"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/317cbbaa-6213-481b-b327-2b666d6e835b.1960e.mp3",
+      "semanticRelativePath": "__semantic__/fruitGame/FruitWin.mp3",
+      "materializedRelativePath": "native/fruitGame/FruitWin.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "fruitGame/FruitWin"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/32a130e2-5a90-4c07-b4b2-42fa07f85ccb.5920f.mp3",
+      "semanticRelativePath": "__semantic__/duckGame/stoneCollision.mp3",
+      "materializedRelativePath": "native/duckGame/stoneCollision.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "duckGame/stoneCollision"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/35cf13de-f938-4b03-b983-0398b824720b.bb8df.mp3",
+      "semanticRelativePath": "__semantic__/fruitGame/eliminate1.mp3",
+      "materializedRelativePath": "native/fruitGame/eliminate1.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "fruitGame/eliminate1"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/376cbf2b-51ed-4917-b52e-18c34ba34095.17363.mp3",
+      "semanticRelativePath": "__semantic__/bgm/pureColor.mp3",
+      "materializedRelativePath": "native/bgm/pureColor.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "bgm/pureColor"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/377b04d2-5b96-4b2e-97f3-7032e7ee05cb.c0154.mp3",
+      "semanticRelativePath": "__semantic__/fruitGame/eliminate6.mp3",
+      "materializedRelativePath": "native/fruitGame/eliminate6.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "fruitGame/eliminate6"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/379509ce-e715-43be-8f74-634aee694e4a.ed675.mp3",
+      "semanticRelativePath": "__semantic__/comboMusic/combo_5.mp3",
+      "materializedRelativePath": "native/comboMusic/combo_5.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "comboMusic/combo_5"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/3e5523b9-a4ba-4f88-9a47-0b3bb0ab312a.be7df.mp3",
+      "semanticRelativePath": "__semantic__/fly.mp3",
+      "materializedRelativePath": "native/fly.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "fly"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/40601e4b-21b0-419e-9279-5f195824038f.aa9c1.mp3",
+      "semanticRelativePath": "__semantic__/ui/failurePrompt.mp3",
+      "materializedRelativePath": "native/ui/failurePrompt.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "ui/failurePrompt"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/486bd684-acd2-4179-86a0-4982c3d2b577.5cf80.mp3",
+      "semanticRelativePath": "__semantic__/comboMusic/combo_7.mp3",
+      "materializedRelativePath": "native/comboMusic/combo_7.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "comboMusic/combo_7"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/4de3fa18-79cb-4894-9a31-ff346ac5703a.60a11.mp3",
+      "semanticRelativePath": "__semantic__/bdz.mp3",
+      "materializedRelativePath": "native/bdz.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "bdz"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/4fa3035e-54ef-4f8c-8ba4-084818724df6.a8b04.mp3",
+      "semanticRelativePath": "__semantic__/fruitGame/fruitClick.mp3",
+      "materializedRelativePath": "native/fruitGame/fruitClick.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "fruitGame/fruitClick"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/506d144d-1977-4bcb-b1ef-e1e0a71cd4de.57513.mp3",
+      "semanticRelativePath": "__semantic__/fruitGame/plateUnlock.mp3",
+      "materializedRelativePath": "native/fruitGame/plateUnlock.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "fruitGame/plateUnlock"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/51cd2f28-1a93-404f-a2d8-000081e54700.11637.mp3",
+      "semanticRelativePath": "__semantic__/woodDrop/woodDrop_1.mp3",
+      "materializedRelativePath": "native/woodDrop/woodDrop_1.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "woodDrop/woodDrop_1"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/5c021283-d720-4ab6-93de-4d94e0739844.5b785.mp3",
+      "semanticRelativePath": "__semantic__/duckGame/cageBreak.mp3",
+      "materializedRelativePath": "native/duckGame/cageBreak.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "duckGame/cageBreak"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/5cc64a68-f024-4020-84ce-aaeaf24ae4c4.4effc.mp3",
+      "semanticRelativePath": "__semantic__/comboMusic/combo_8.mp3",
+      "materializedRelativePath": "native/comboMusic/combo_8.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "comboMusic/combo_8"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/659ce985-7270-4aa3-b707-105ca9f47b38.bf07e.mp3",
+      "semanticRelativePath": "__semantic__/sceneTransition/duckGameReveal.mp3",
+      "materializedRelativePath": "native/sceneTransition/duckGameReveal.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "sceneTransition/duckGameReveal"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/68d3033b-e0b4-4c52-aaf1-1d2d9d886147.9a809.mp3",
+      "semanticRelativePath": "__semantic__/comboMusic/combo_9.mp3",
+      "materializedRelativePath": "native/comboMusic/combo_9.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "comboMusic/combo_9"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/69c88ad7-1b46-45a1-9ca1-b81107a24474.4489d.mp3",
+      "semanticRelativePath": "__semantic__/duckGame/woodCollision.mp3",
+      "materializedRelativePath": "native/duckGame/woodCollision.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "duckGame/woodCollision"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/73bdcd8b-ad0f-4c18-8d57-8266a0c7d94f.cb0de.mp3",
+      "semanticRelativePath": "__semantic__/woodDrop/woodDrop_3.mp3",
+      "materializedRelativePath": "native/woodDrop/woodDrop_3.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "woodDrop/woodDrop_3"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/73e9fa86-93a0-444e-9b5f-cc4e3851727a.aaf79.mp3",
+      "semanticRelativePath": "__semantic__/comboMusic/combo_10.mp3",
+      "materializedRelativePath": "native/comboMusic/combo_10.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "comboMusic/combo_10"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/772a3b1d-4e92-4c81-a80e-53b49d207810.bf6a0.mp3",
+      "semanticRelativePath": "__semantic__/fruitGame/eliminate2.mp3",
+      "materializedRelativePath": "native/fruitGame/eliminate2.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "fruitGame/eliminate2"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/7ae99c44-a677-42d5-ba32-ae5bbe8cce4f.319a3.mp3",
+      "semanticRelativePath": "__semantic__/fruitGame/eat.mp3",
+      "materializedRelativePath": "native/fruitGame/eat.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "fruitGame/eat"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/7e06696e-6616-481e-a048-c5bcbe47a1eb.1fb26.mp3",
+      "semanticRelativePath": "__semantic__/ui/levelComplete.mp3",
+      "materializedRelativePath": "native/ui/levelComplete.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "ui/levelComplete"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/836e5fb2-38cc-44cc-8f8d-97a7af0a7c7f.31952.mp3",
+      "semanticRelativePath": "__semantic__/ui/failureStinger.mp3",
+      "materializedRelativePath": "native/ui/failureStinger.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "ui/failureStinger"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/85619ea5-4e54-42f2-8dc3-31a0f101c34f.ec9f7.mp3",
+      "semanticRelativePath": "__semantic__/fruitGame/slotFull.mp3",
+      "materializedRelativePath": "native/fruitGame/slotFull.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "fruitGame/slotFull"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/8bd84c3a-cc67-43fb-94a9-103bd2e9285d.9938a.mp3",
+      "semanticRelativePath": "__semantic__/fruitGame/born.mp3",
+      "materializedRelativePath": "native/fruitGame/born.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "fruitGame/born"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/8c5a5b89-eadd-48f0-9c20-1a3a76e579b9.18eee.mp3",
+      "semanticRelativePath": "__semantic__/door.mp3",
+      "materializedRelativePath": "native/door.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "door"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/91b56c0c-8c52-400c-bfa5-5739e2aed6aa.ae12a.mp3",
+      "semanticRelativePath": "__semantic__/duckGame/duckQuack.mp3",
+      "materializedRelativePath": "native/duckGame/duckQuack.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "duckGame/duckQuack"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/935818a2-63cc-448f-9077-98d671fa3c03.b1180.mp3",
+      "semanticRelativePath": "__semantic__/ls.mp3",
+      "materializedRelativePath": "native/ls.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "ls"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/9559d5ce-787a-4586-93d8-d57e6dd8da9d.cc4dd.mp3",
+      "semanticRelativePath": "__semantic__/woodDrop/woodDrop_2.mp3",
+      "materializedRelativePath": "native/woodDrop/woodDrop_2.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "woodDrop/woodDrop_2"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/960d827f-fed0-42ae-b9d0-642738b0c9df.b9d4e.mp3",
+      "semanticRelativePath": "__semantic__/sceneTransition/fruitGameReveal.mp3",
+      "materializedRelativePath": "native/sceneTransition/fruitGameReveal.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "sceneTransition/fruitGameReveal"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/967dbad6-d1d0-4878-b808-91d1464476e0.9938a.mp3",
+      "semanticRelativePath": "__semantic__/lz.mp3",
+      "materializedRelativePath": "native/lz.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "lz"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/99827c42-6a9b-4c41-a6fe-0ebab3500c91.36714.mp3",
+      "semanticRelativePath": "__semantic__/duckGame/nailPop.mp3",
+      "materializedRelativePath": "native/duckGame/nailPop.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "duckGame/nailPop"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/9b68a644-7462-4dd9-9914-dae17b99dcab.b4408.mp3",
+      "semanticRelativePath": "__semantic__/comboMusic/combo_2.mp3",
+      "materializedRelativePath": "native/comboMusic/combo_2.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "comboMusic/combo_2"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/9b8676c8-1d0b-4681-9116-a1e3268192ae.f99ef.mp3",
+      "semanticRelativePath": "__semantic__/duckGame/duckVictory.mp3",
+      "materializedRelativePath": "native/duckGame/duckVictory.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "duckGame/duckVictory"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/9ce37df9-90d1-4ee3-909a-3dd10334170f.b7e39.mp3",
+      "semanticRelativePath": "__semantic__/pop.mp3",
+      "materializedRelativePath": "native/pop.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "pop"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/aa7057e3-443b-4253-af1c-1b8ff476b58c.8a84d.mp3",
+      "semanticRelativePath": "__semantic__/duckGame/errorPrompt.mp3",
+      "materializedRelativePath": "native/duckGame/errorPrompt.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "duckGame/errorPrompt"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/acdcd3f0-f5e5-4a02-9bfc-9114b8a30dcf.f76b2.mp3",
+      "semanticRelativePath": "__semantic__/ui/buttonClick.mp3",
+      "materializedRelativePath": "native/ui/buttonClick.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "ui/buttonClick"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/ad04aeb5-ef02-41c4-890a-aab3b2ab436c.9b82a.mp3",
+      "semanticRelativePath": "__semantic__/over.mp3",
+      "materializedRelativePath": "native/over.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "over"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/afed72bc-2904-420f-9fb9-5920f2950b97.adb97.mp3",
+      "semanticRelativePath": "__semantic__/fruitGame/born1.mp3",
+      "materializedRelativePath": "native/fruitGame/born1.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "fruitGame/born1"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/b164889b-5675-4181-a2ca-4bdcfde62f8e.6809e.mp3",
+      "semanticRelativePath": "__semantic__/comboMusic/combo_6.mp3",
+      "materializedRelativePath": "native/comboMusic/combo_6.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "comboMusic/combo_6"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/b2299d5e-6e8b-4baa-bc82-10f295ceea82.14cf0.mp3",
+      "semanticRelativePath": "__semantic__/fruitGame/eliminate4.mp3",
+      "materializedRelativePath": "native/fruitGame/eliminate4.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "fruitGame/eliminate4"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/b482f9c1-d4b0-4e85-9131-88bddefe370c.1fb26.mp3",
+      "semanticRelativePath": "__semantic__/gz.mp3",
+      "materializedRelativePath": "native/gz.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "gz"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/bb1f0a26-daf7-4923-aed3-227fba11434f.05322.mp3",
+      "semanticRelativePath": "__semantic__/ui/victoryStinger.mp3",
+      "materializedRelativePath": "native/ui/victoryStinger.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "ui/victoryStinger"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/c3b518d8-e7c7-4236-9e57-72c27d3e2223.493f6.mp3",
+      "semanticRelativePath": "__semantic__/ui/ribbonBurst.mp3",
+      "materializedRelativePath": "native/ui/ribbonBurst.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "ui/ribbonBurst"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/c6c09f94-d422-4543-882f-c2c91844fe11.abb24.mp3",
+      "semanticRelativePath": "__semantic__/duckGame/woodAssembleLead.mp3",
+      "materializedRelativePath": "native/duckGame/woodAssembleLead.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "duckGame/woodAssembleLead"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/cea88659-80bc-4a20-b206-5484788b9b84.4cca6.mp3",
+      "semanticRelativePath": "__semantic__/levelup.mp3",
+      "materializedRelativePath": "native/levelup.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "levelup"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/de320c29-81b4-445e-92e8-6ede3208756e.742cc.mp3",
+      "semanticRelativePath": "__semantic__/comboMusic/combo_1.mp3",
+      "materializedRelativePath": "native/comboMusic/combo_1.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "comboMusic/combo_1"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/e02a56cc-0d95-4a05-a231-c08e49acd1e3.b2f6b.mp3",
+      "semanticRelativePath": "__semantic__/fruitGame/eliminate5.mp3",
+      "materializedRelativePath": "native/fruitGame/eliminate5.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "fruitGame/eliminate5"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/e398a682-b269-4b7d-aa0b-b488f209dfa8.d8546.mp3",
+      "semanticRelativePath": "__semantic__/sceneTransition/duckDrop.mp3",
+      "materializedRelativePath": "native/sceneTransition/duckDrop.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "sceneTransition/duckDrop"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/eb6d3dec-4c58-4cfa-baa3-4df6cfea73c2.1fb26.mp3",
+      "semanticRelativePath": "__semantic__/show.mp3",
+      "materializedRelativePath": "native/show.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "show"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/f402e5a9-7324-4e32-a764-895ca42d91e2.86f9e.mp3",
+      "semanticRelativePath": "__semantic__/bgm/defaultGameplay.mp3",
+      "materializedRelativePath": "native/bgm/defaultGameplay.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "bgm/defaultGameplay"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/f6266072-4ed9-4399-b103-c885d7fb2a26.a4707.mp3",
+      "semanticRelativePath": "__semantic__/ui/powerConsume.mp3",
+      "materializedRelativePath": "native/ui/powerConsume.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "ui/powerConsume"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/f75d0f9c-d888-4b93-872f-80944e37e4b1.a0add.mp3",
+      "semanticRelativePath": "__semantic__/fruitGame/fruitBgm.mp3",
+      "materializedRelativePath": "native/fruitGame/fruitBgm.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "fruitGame/fruitBgm"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/fb89a5d3-096b-44a2-9309-c240abdfab67.c4173.mp3",
+      "semanticRelativePath": "__semantic__/fruitGame/eliminate7.mp3",
+      "materializedRelativePath": "native/fruitGame/eliminate7.mp3",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "fruitGame/eliminate7"
+      }
+    }
+  ],
+  "unresolvedImports": [
+    {
+      "originalRelativePath": "import/adz.json",
+      "stem": "adz"
+    },
+    {
+      "originalRelativePath": "import/bdz.json",
+      "stem": "bdz"
+    },
+    {
+      "originalRelativePath": "import/door.json",
+      "stem": "door"
+    },
+    {
+      "originalRelativePath": "import/fly.json",
+      "stem": "fly"
+    },
+    {
+      "originalRelativePath": "import/gz.json",
+      "stem": "gz"
+    },
+    {
+      "originalRelativePath": "import/levelup.json",
+      "stem": "levelup"
+    },
+    {
+      "originalRelativePath": "import/ls.json",
+      "stem": "ls"
+    },
+    {
+      "originalRelativePath": "import/lz.json",
+      "stem": "lz"
+    },
+    {
+      "originalRelativePath": "import/over.json",
+      "stem": "over"
+    },
+    {
+      "originalRelativePath": "import/pop.json",
+      "stem": "pop"
+    },
+    {
+      "originalRelativePath": "import/show.json",
+      "stem": "show"
+    },
+    {
+      "originalRelativePath": "import/win.json",
+      "stem": "win"
+    }
+  ],
+  "unresolvedNative": [
+    {
+      "originalRelativePath": "native/adz.mp3",
+      "stem": "adz"
+    },
+    {
+      "originalRelativePath": "native/bdz.mp3",
+      "stem": "bdz"
+    },
+    {
+      "originalRelativePath": "native/door.mp3",
+      "stem": "door"
+    },
+    {
+      "originalRelativePath": "native/fly.mp3",
+      "stem": "fly"
+    },
+    {
+      "originalRelativePath": "native/gz.mp3",
+      "stem": "gz"
+    },
+    {
+      "originalRelativePath": "native/levelup.mp3",
+      "stem": "levelup"
+    },
+    {
+      "originalRelativePath": "native/ls.mp3",
+      "stem": "ls"
+    },
+    {
+      "originalRelativePath": "native/lz.mp3",
+      "stem": "lz"
+    },
+    {
+      "originalRelativePath": "native/over.mp3",
+      "stem": "over"
+    },
+    {
+      "originalRelativePath": "native/pop.mp3",
+      "stem": "pop"
+    },
+    {
+      "originalRelativePath": "native/show.mp3",
+      "stem": "show"
+    },
+    {
+      "originalRelativePath": "native/win.mp3",
+      "stem": "win"
+    }
+  ]
+}

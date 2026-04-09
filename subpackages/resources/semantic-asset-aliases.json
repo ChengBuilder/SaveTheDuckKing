@@ -1,0 +1,194 @@
+{
+  "bundleName": "resources",
+  "generatedAt": "2026-04-09T04:17:18.785Z",
+  "importAliases": [
+    {
+      "kind": "import",
+      "originalRelativePath": "import/03ccd410a.a3f7a.json",
+      "semanticRelativePath": "__semantic__/_packs/multiTexture/a_color__pack_59.json",
+      "materializedRelativePath": "import/_packs/multiTexture/a_color__pack_59.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "multiTexture"
+        ],
+        "primaryLeafName": "a_color",
+        "assetCount": 59,
+        "textureUuidKeys": []
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/08a2f272f.11063.json",
+      "semanticRelativePath": "__semantic__/_packs/ribbonBurst/ribbon1__pack_14.json",
+      "materializedRelativePath": "import/_packs/ribbonBurst/ribbon1__pack_14.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "ribbonBurst"
+        ],
+        "primaryLeafName": "ribbon1",
+        "assetCount": 14,
+        "textureUuidKeys": [
+          "18a2f272f"
+        ]
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/09efe5537.f73e5.json",
+      "semanticRelativePath": "__semantic__/_packs/particleEffects/deletePulseCircle/deletePulseCircle__pack_2.json",
+      "materializedRelativePath": "import/_packs/particleEffects/deletePulseCircle/deletePulseCircle__pack_2.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "particleEffects",
+          "deletePulseCircle"
+        ],
+        "primaryLeafName": "deletePulseCircle",
+        "assetCount": 2,
+        "textureUuidKeys": []
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/0ff002d21.804a9.json",
+      "semanticRelativePath": "__semantic__/_packs/particleEffects/colorMarker1__pack_28.json",
+      "materializedRelativePath": "import/_packs/particleEffects/colorMarker1__pack_28.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "particleEffects"
+        ],
+        "primaryLeafName": "colorMarker1",
+        "assetCount": 28,
+        "textureUuidKeys": [
+          "1ff002d21"
+        ]
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/1863cabe-3984-478c-81c9-d17b5d5e7585.374d4.json",
+      "semanticRelativePath": "__semantic__/particleEffects/colorMarkerParticle.json",
+      "materializedRelativePath": "import/particleEffects/colorMarkerParticle.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "particleEffects/colorMarkerParticle"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/18a2f272f.a69ef.json",
+      "semanticRelativePath": "__semantic__/ribbonBurst/ribbon1__texture_14.json",
+      "materializedRelativePath": "import/ribbonBurst/ribbon1__texture_14.json",
+      "strategy": "texture-source-import",
+      "detail": {
+        "commonPrefixSegments": [
+          "ribbonBurst"
+        ],
+        "primaryLeafName": "ribbon1",
+        "assetCount": 14,
+        "textureUuidKey": "18a2f272f",
+        "packStem": "08a2f272f"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/1ff002d21.bb82a.json",
+      "semanticRelativePath": "__semantic__/particleEffects/colorMarker1__texture_28.json",
+      "materializedRelativePath": "import/particleEffects/colorMarker1__texture_28.json",
+      "strategy": "texture-source-import",
+      "detail": {
+        "commonPrefixSegments": [
+          "particleEffects"
+        ],
+        "primaryLeafName": "colorMarker1",
+        "assetCount": 28,
+        "textureUuidKey": "1ff002d21",
+        "packStem": "0ff002d21"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/2d216e91-2320-4f38-b8f8-6518920a83af.04064.json",
+      "semanticRelativePath": "__semantic__/particleEffects/fragmentShard.json",
+      "materializedRelativePath": "import/particleEffects/fragmentShard.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "particleEffects/fragmentShard"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/4423cbfc-6924-404e-b6c4-505fb57e25e7.a2533.json",
+      "semanticRelativePath": "__semantic__/tex/circle/DeleteCircle.json",
+      "materializedRelativePath": "import/tex/circle/DeleteCircle.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/circle/DeleteCircle"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/57bbc929-3902-4764-a818-a30c094275b7.6d82b.json",
+      "semanticRelativePath": "__semantic__/duck/duckLevelTemplates.json",
+      "materializedRelativePath": "import/duck/duckLevelTemplates.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "duck/duckLevelTemplates"
+      }
+    }
+  ],
+  "nativeAliases": [
+    {
+      "kind": "native",
+      "originalRelativePath": "native/18a2f272f.53b29.png",
+      "semanticRelativePath": "__semantic__/ribbonBurst/ribbon1__texture_14.png",
+      "materializedRelativePath": "native/ribbonBurst/ribbon1__texture_14.png",
+      "strategy": "texture-source-from-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "ribbonBurst"
+        ],
+        "primaryLeafName": "ribbon1",
+        "assetCount": 14,
+        "textureUuidKey": "18a2f272f",
+        "packStem": "08a2f272f"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/1ff002d21.02b34.png",
+      "semanticRelativePath": "__semantic__/particleEffects/colorMarker1__texture_28.png",
+      "materializedRelativePath": "native/particleEffects/colorMarker1__texture_28.png",
+      "strategy": "texture-source-from-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "particleEffects"
+        ],
+        "primaryLeafName": "colorMarker1",
+        "assetCount": 28,
+        "textureUuidKey": "1ff002d21",
+        "packStem": "0ff002d21"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/4423cbfc-6924-404e-b6c4-505fb57e25e7.84bd9.png",
+      "semanticRelativePath": "__semantic__/tex/circle/DeleteCircle.png",
+      "materializedRelativePath": "native/tex/circle/DeleteCircle.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/circle/DeleteCircle"
+      }
+    }
+  ],
+  "unresolvedImports": [
+    {
+      "originalRelativePath": "import/0895e4eee.ba01e.json",
+      "stem": "0895e4eee"
+    }
+  ],
+  "unresolvedNative": []
+}

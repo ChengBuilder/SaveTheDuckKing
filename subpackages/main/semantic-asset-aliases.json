@@ -1,0 +1,1993 @@
+{
+  "bundleName": "main",
+  "generatedAt": "2026-04-09T04:29:45.865Z",
+  "importAliases": [
+    {
+      "kind": "import",
+      "originalRelativePath": "import/00a7ff24-ffbd-42d7-8597-8d1d451f0256.a2533.json",
+      "semanticRelativePath": "__semantic__/tex/stump.json",
+      "materializedRelativePath": "import/tex/stump.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/木桩"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/015216800.ab208.json",
+      "semanticRelativePath": "__semantic__/_packs/pack/share__pack_8.json",
+      "materializedRelativePath": "import/_packs/pack/share__pack_8.json",
+      "strategy": "exact-content-match",
+      "detail": {
+        "matchedFromDeletedRootFile": true
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/01bfaaa23.70d60.json",
+      "semanticRelativePath": "__semantic__/_packs/db/assets/scene/PigeonScene/background__pack_7.json",
+      "materializedRelativePath": "import/_packs/db/assets/scene/PigeonScene/background__pack_7.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "db:",
+          "assets",
+          "scene",
+          "PigeonScene"
+        ],
+        "primaryLeafName": "背景",
+        "assetCount": 7,
+        "textureUuidKeys": []
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/01d37c23d.a271f.json",
+      "semanticRelativePath": "__semantic__/_packs/pack/highlight__pack_37.json",
+      "materializedRelativePath": "import/_packs/pack/highlight__pack_37.json",
+      "strategy": "exact-content-match",
+      "detail": {
+        "matchedFromDeletedRootFile": true
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/02a38064-da00-4ca7-a93b-3e53c6ce5879.c16a8.json",
+      "semanticRelativePath": "__semantic__/tex/background/mainBackground.json",
+      "materializedRelativePath": "import/tex/background/mainBackground.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/background/mainBackground"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/0353ef82c.cc362.json",
+      "semanticRelativePath": "__semantic__/_packs/pack/percent__pack_10.json",
+      "materializedRelativePath": "import/_packs/pack/percent__pack_10.json",
+      "strategy": "exact-content-match",
+      "detail": {
+        "matchedFromDeletedRootFile": true
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/0361f2d0d.36476.json",
+      "semanticRelativePath": "__semantic__/_packs/pack/bottom__pack_15.json",
+      "materializedRelativePath": "import/_packs/pack/bottom__pack_15.json",
+      "strategy": "exact-content-match",
+      "detail": {
+        "matchedFromDeletedRootFile": true
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/039c4b6f8.04133.json",
+      "semanticRelativePath": "__semantic__/_packs/pack/t0__pack_14.json",
+      "materializedRelativePath": "import/_packs/pack/t0__pack_14.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [],
+        "primaryLeafName": "t0",
+        "assetCount": 14,
+        "textureUuidKeys": [
+          "139c4b6f8"
+        ]
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/03a4cca66.76cc9.json",
+      "semanticRelativePath": "__semantic__/_packs/pack/props__pack_12.json",
+      "materializedRelativePath": "import/_packs/pack/props__pack_12.json",
+      "strategy": "exact-content-match",
+      "detail": {
+        "matchedFromDeletedRootFile": true
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/03f2b8907.9b682.json",
+      "semanticRelativePath": "__semantic__/_packs/db/assets/scene/DuckScene/2__pack_1674.json",
+      "materializedRelativePath": "import/_packs/db/assets/scene/DuckScene/2__pack_1674.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "db:",
+          "assets",
+          "scene",
+          "DuckScene"
+        ],
+        "primaryLeafName": "2",
+        "assetCount": 1674,
+        "textureUuidKeys": []
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/04e7c26e4.34704.json",
+      "semanticRelativePath": "__semantic__/_packs/db/assets/scene/Game2Scene/hole__pack_5.json",
+      "materializedRelativePath": "import/_packs/db/assets/scene/Game2Scene/hole__pack_5.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "db:",
+          "assets",
+          "scene",
+          "Game2Scene"
+        ],
+        "primaryLeafName": "洞",
+        "assetCount": 5,
+        "textureUuidKeys": []
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/0599c030-38ec-4e55-8ec6-e400c1f90e7d.a2533.json",
+      "semanticRelativePath": "__semantic__/skeletalAnimations/doorAnimation/skeleton.json",
+      "materializedRelativePath": "import/skeletalAnimations/doorAnimation/skeleton.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "骨骼动画/门动画/skeleton"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/05c250e9e.5a45d.json",
+      "semanticRelativePath": "__semantic__/_packs/pack/reward__pack_6.json",
+      "materializedRelativePath": "import/_packs/pack/reward__pack_6.json",
+      "strategy": "exact-content-match",
+      "detail": {
+        "matchedFromDeletedRootFile": true
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/062b1717-90b0-4678-aec0-84cced2a3125.a2533.json",
+      "semanticRelativePath": "__semantic__/tex/scene/hole.json",
+      "materializedRelativePath": "import/tex/scene/hole.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/scene/洞"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/0642fb2f4.5c3df.json",
+      "semanticRelativePath": "__semantic__/_packs/db/assets/scene/HomeScene/3__pack_124.json",
+      "materializedRelativePath": "import/_packs/db/assets/scene/HomeScene/3__pack_124.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "db:",
+          "assets",
+          "scene",
+          "HomeScene"
+        ],
+        "primaryLeafName": "3",
+        "assetCount": 124,
+        "textureUuidKeys": []
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/0749c9f40.f0bee.json",
+      "semanticRelativePath": "__semantic__/_packs/db/assets/scene/FruitScene/randomQuestionMark__pack_88.json",
+      "materializedRelativePath": "import/_packs/db/assets/scene/FruitScene/randomQuestionMark__pack_88.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "db:",
+          "assets",
+          "scene",
+          "FruitScene"
+        ],
+        "primaryLeafName": "随机问号",
+        "assetCount": 88,
+        "textureUuidKeys": []
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/07f9bf2d5.3a2af.json",
+      "semanticRelativePath": "__semantic__/_packs/pack/callFriend__pack_18.json",
+      "materializedRelativePath": "import/_packs/pack/callFriend__pack_18.json",
+      "strategy": "exact-content-match",
+      "detail": {
+        "matchedFromDeletedRootFile": true
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/08ea43c33.d6e6c.json",
+      "semanticRelativePath": "__semantic__/_packs/pack/slot__pack_4.json",
+      "materializedRelativePath": "import/_packs/pack/slot__pack_4.json",
+      "strategy": "exact-content-match",
+      "detail": {
+        "matchedFromDeletedRootFile": true
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/0972c63c0.8408d.json",
+      "semanticRelativePath": "__semantic__/_packs/pack/banner__pack_11.json",
+      "materializedRelativePath": "import/_packs/pack/banner__pack_11.json",
+      "strategy": "exact-content-match",
+      "detail": {
+        "matchedFromDeletedRootFile": true
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/09c0a018-4991-4b44-8f30-0783f03ffa16@f9941.4983f.json",
+      "semanticRelativePath": "__semantic__/tex/levelCompletePage/successProgress/hundredDucksToKun/spriteFrame.json",
+      "materializedRelativePath": "import/tex/levelCompletePage/successProgress/hundredDucksToKun/spriteFrame.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/过关页面/成功进度/百鸭朝鲲/spriteFrame"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/0a08c225f.d53c2.json",
+      "semanticRelativePath": "__semantic__/_packs/pack/halo__pack_18.json",
+      "materializedRelativePath": "import/_packs/pack/halo__pack_18.json",
+      "strategy": "exact-content-match",
+      "detail": {
+        "matchedFromDeletedRootFile": true
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/0b5ae392-fde5-47c3-be1d-684f495939fb.a2533.json",
+      "semanticRelativePath": "__semantic__/tex/seasonalBackground/cyanTheme/cornerBottomLeft.json",
+      "materializedRelativePath": "import/tex/seasonalBackground/cyanTheme/cornerBottomLeft.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/seasonalBackground/cyanTheme/cornerBottomLeft"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/0c4c5cdf1.80f37.json",
+      "semanticRelativePath": "__semantic__/_packs/pack/shuffle__pack_12.json",
+      "materializedRelativePath": "import/_packs/pack/shuffle__pack_12.json",
+      "strategy": "exact-content-match",
+      "detail": {
+        "matchedFromDeletedRootFile": true
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/0cf9b8bfe.8925c.json",
+      "semanticRelativePath": "__semantic__/_packs/pack/share__pack_11.json",
+      "materializedRelativePath": "import/_packs/pack/share__pack_11.json",
+      "strategy": "exact-content-match",
+      "detail": {
+        "matchedFromDeletedRootFile": true
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/0cfb4391b.d4759.json",
+      "semanticRelativePath": "__semantic__/_packs/pack/close__pack_18.json",
+      "materializedRelativePath": "import/_packs/pack/close__pack_18.json",
+      "strategy": "exact-content-match",
+      "detail": {
+        "matchedFromDeletedRootFile": true
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/0f5276afb.a6c88.json",
+      "semanticRelativePath": "__semantic__/_packs/pack/bottom__pack_17.json",
+      "materializedRelativePath": "import/_packs/pack/bottom__pack_17.json",
+      "strategy": "exact-content-match",
+      "detail": {
+        "matchedFromDeletedRootFile": true
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/115216800.a046e.json",
+      "semanticRelativePath": "__semantic__/texture/share__texture_8.json",
+      "materializedRelativePath": "import/texture/share__texture_8.json",
+      "strategy": "exact-content-match",
+      "detail": {
+        "matchedFromDeletedRootFile": true
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/11d37c23d.ee433.json",
+      "semanticRelativePath": "__semantic__/texture/highlight__texture_37.json",
+      "materializedRelativePath": "import/texture/highlight__texture_37.json",
+      "strategy": "exact-content-match",
+      "detail": {
+        "matchedFromDeletedRootFile": true
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/12cf6843-672b-45d0-9c90-1b2eed503296.a2533.json",
+      "semanticRelativePath": "__semantic__/tex/seasonalBackground/springTheme/cornerBottomLeft.json",
+      "materializedRelativePath": "import/tex/seasonalBackground/springTheme/cornerBottomLeft.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/seasonalBackground/springTheme/cornerBottomLeft"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/1353ef82c.e7f7b.json",
+      "semanticRelativePath": "__semantic__/texture/percent__texture_10.json",
+      "materializedRelativePath": "import/texture/percent__texture_10.json",
+      "strategy": "exact-content-match",
+      "detail": {
+        "matchedFromDeletedRootFile": true
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/135aec12-874e-4bd8-841e-6359ff461316.a2533.json",
+      "semanticRelativePath": "__semantic__/guideAnimation/skeleton.json",
+      "materializedRelativePath": "import/guideAnimation/skeleton.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "引导动画/skeleton"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/1361f2d0d.ccdb6.json",
+      "semanticRelativePath": "__semantic__/texture/bottom__texture_15.json",
+      "materializedRelativePath": "import/texture/bottom__texture_15.json",
+      "strategy": "exact-content-match",
+      "detail": {
+        "matchedFromDeletedRootFile": true
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/139c4b6f8.243d5.json",
+      "semanticRelativePath": "__semantic__/texture/t0__texture_14.json",
+      "materializedRelativePath": "import/texture/t0__texture_14.json",
+      "strategy": "texture-source-import",
+      "detail": {
+        "commonPrefixSegments": [],
+        "primaryLeafName": "t0",
+        "assetCount": 14,
+        "textureUuidKey": "139c4b6f8",
+        "packStem": "039c4b6f8"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/13a4cca66.fb5e6.json",
+      "semanticRelativePath": "__semantic__/texture/props__texture_12.json",
+      "materializedRelativePath": "import/texture/props__texture_12.json",
+      "strategy": "exact-content-match",
+      "detail": {
+        "matchedFromDeletedRootFile": true
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/15c250e9e.b8cdc.json",
+      "semanticRelativePath": "__semantic__/texture/reward__texture_6.json",
+      "materializedRelativePath": "import/texture/reward__texture_6.json",
+      "strategy": "exact-content-match",
+      "detail": {
+        "matchedFromDeletedRootFile": true
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/17c64ddf3.46419.json",
+      "semanticRelativePath": "__semantic__/lowerRight/lowerRight__texture_1.json",
+      "materializedRelativePath": "import/lowerRight/lowerRight__texture_1.json",
+      "strategy": "texture-source-import",
+      "detail": {
+        "commonPrefixSegments": [
+          "右下"
+        ],
+        "primaryLeafName": "右下",
+        "assetCount": 1,
+        "textureUuidKey": "17c64ddf3",
+        "packStem": "7526f3a0-39ee-4712-ad91-67585cde7844@f9941"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/17f9bf2d5.99073.json",
+      "semanticRelativePath": "__semantic__/texture/callFriend__texture_18.json",
+      "materializedRelativePath": "import/texture/callFriend__texture_18.json",
+      "strategy": "exact-content-match",
+      "detail": {
+        "matchedFromDeletedRootFile": true
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/1825d63a-591f-4f12-b526-b788e9ad749e.a2533.json",
+      "semanticRelativePath": "__semantic__/tex/seasonalBackground/summerTheme/cornerBottomLeft.json",
+      "materializedRelativePath": "import/tex/seasonalBackground/summerTheme/cornerBottomLeft.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/seasonalBackground/summerTheme/cornerBottomLeft"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/18ea43c33.2ea0b.json",
+      "semanticRelativePath": "__semantic__/texture/slot__texture_4.json",
+      "materializedRelativePath": "import/texture/slot__texture_4.json",
+      "strategy": "exact-content-match",
+      "detail": {
+        "matchedFromDeletedRootFile": true
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/194504ba2.e32f5.json",
+      "semanticRelativePath": "__semantic__/hundredDucksToKun/hundredDucksToKun__texture_1.json",
+      "materializedRelativePath": "import/hundredDucksToKun/hundredDucksToKun__texture_1.json",
+      "strategy": "texture-source-import",
+      "detail": {
+        "commonPrefixSegments": [
+          "百鸭朝鲲"
+        ],
+        "primaryLeafName": "百鸭朝鲲",
+        "assetCount": 1,
+        "textureUuidKey": "194504ba2",
+        "packStem": "09c0a018-4991-4b44-8f30-0783f03ffa16@f9941"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/1972c63c0.108d0.json",
+      "semanticRelativePath": "__semantic__/texture/banner__texture_11.json",
+      "materializedRelativePath": "import/texture/banner__texture_11.json",
+      "strategy": "exact-content-match",
+      "detail": {
+        "matchedFromDeletedRootFile": true
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/198bdf5a-aefd-4070-972d-7086153040c8.c16a8.json",
+      "semanticRelativePath": "__semantic__/tex/seasonalBackground/springTheme/background.json",
+      "materializedRelativePath": "import/tex/seasonalBackground/springTheme/background.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/seasonalBackground/springTheme/background"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/1a08c225f.d4f69.json",
+      "semanticRelativePath": "__semantic__/texture/halo__texture_18.json",
+      "materializedRelativePath": "import/texture/halo__texture_18.json",
+      "strategy": "exact-content-match",
+      "detail": {
+        "matchedFromDeletedRootFile": true
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/1c4c5cdf1.9ef74.json",
+      "semanticRelativePath": "__semantic__/texture/shuffle__texture_12.json",
+      "materializedRelativePath": "import/texture/shuffle__texture_12.json",
+      "strategy": "exact-content-match",
+      "detail": {
+        "matchedFromDeletedRootFile": true
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/1cf9b8bfe.368b5.json",
+      "semanticRelativePath": "__semantic__/texture/share__texture_11.json",
+      "materializedRelativePath": "import/texture/share__texture_11.json",
+      "strategy": "exact-content-match",
+      "detail": {
+        "matchedFromDeletedRootFile": true
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/1cfb4391b.b302b.json",
+      "semanticRelativePath": "__semantic__/texture/close__texture_18.json",
+      "materializedRelativePath": "import/texture/close__texture_18.json",
+      "strategy": "exact-content-match",
+      "detail": {
+        "matchedFromDeletedRootFile": true
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/1f5276afb.675c8.json",
+      "semanticRelativePath": "__semantic__/texture/bottom__texture_17.json",
+      "materializedRelativePath": "import/texture/bottom__texture_17.json",
+      "strategy": "exact-content-match",
+      "detail": {
+        "matchedFromDeletedRootFile": true
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/211d46dd-b8ca-44f6-a1e6-025242976e4c.a2533.json",
+      "semanticRelativePath": "__semantic__/tex/background/waterLayer2.json",
+      "materializedRelativePath": "import/tex/background/waterLayer2.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/background/waterLayer2"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/2c0c1a1f-1bce-4b98-b093-dd92b680ade9.a2533.json",
+      "semanticRelativePath": "__semantic__/skeletalAnimations/duckAnimations/skeleton.json",
+      "materializedRelativePath": "import/skeletalAnimations/duckAnimations/skeleton.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "骨骼动画/鸭子动画/skeleton"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/2dc62659-6632-403c-9917-a45ea92ff16d.a2533.json",
+      "semanticRelativePath": "__semantic__/tex/background/lavaLayer1.json",
+      "materializedRelativePath": "import/tex/background/lavaLayer1.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/background/lavaLayer1"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/2ee458bc-7b2b-4baf-a74b-a5f0417033b5.a2533.json",
+      "semanticRelativePath": "__semantic__/startAnimation/skeleton.json",
+      "materializedRelativePath": "import/startAnimation/skeleton.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "开始动画/skeleton"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/305e3925-607c-44f6-8a85-221b9b585508.a2533.json",
+      "semanticRelativePath": "__semantic__/skeletalAnimations/duckAnimations/skeleton4.json",
+      "materializedRelativePath": "import/skeletalAnimations/duckAnimations/skeleton4.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "骨骼动画/鸭子动画/skeleton4"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/3bb00148-0e6d-4c1f-9182-d828fcffd9ef.a2533.json",
+      "semanticRelativePath": "__semantic__/tex/seasonalBackground/summerTheme/well.json",
+      "materializedRelativePath": "import/tex/seasonalBackground/summerTheme/well.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/seasonalBackground/summerTheme/well"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/40e1af29-93ac-4701-b9a8-43e18bb9b413.a2533.json",
+      "semanticRelativePath": "__semantic__/tex/seasonalBackground/autumnTheme/cornerBottomRight.json",
+      "materializedRelativePath": "import/tex/seasonalBackground/autumnTheme/cornerBottomRight.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/seasonalBackground/autumnTheme/cornerBottomRight"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/52226b36-3482-4562-98bc-5ab1acd14c89.a2533.json",
+      "semanticRelativePath": "__semantic__/tex/randomProp.json",
+      "materializedRelativePath": "import/tex/randomProp.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/随机道具"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/596c7b55-a3c0-43fe-b745-7d70ed9198b0.a2533.json",
+      "semanticRelativePath": "__semantic__/tex/glow.json",
+      "materializedRelativePath": "import/tex/glow.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/光"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/5bcca69e-4d9c-401a-8aae-d3f138f4f8fa.a2533.json",
+      "semanticRelativePath": "__semantic__/tex/homeTheme0/fogOverlay.json",
+      "materializedRelativePath": "import/tex/homeTheme0/fogOverlay.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/homeTheme0/fogOverlay"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/6017750f-6ae8-45be-881a-106cee6ce3f0.a2533.json",
+      "semanticRelativePath": "__semantic__/dave/skeleton.json",
+      "materializedRelativePath": "import/dave/skeleton.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "戴夫/skeleton"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/62bd1d93-4a4d-4950-9ef8-cb228fcdd93c.a2533.json",
+      "semanticRelativePath": "__semantic__/tex/silhouette3.json",
+      "materializedRelativePath": "import/tex/silhouette3.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/剪影3"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/63e3acde-a83a-4867-a70c-9051c7d5d524.a2533.json",
+      "semanticRelativePath": "__semantic__/tex/seasonalBackground/summerTheme/cornerBottomRight.json",
+      "materializedRelativePath": "import/tex/seasonalBackground/summerTheme/cornerBottomRight.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/seasonalBackground/summerTheme/cornerBottomRight"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/65d81f33-2b0d-4612-812f-95a7cb1e40bf.a2533.json",
+      "semanticRelativePath": "__semantic__/tex/duckShadow.json",
+      "materializedRelativePath": "import/tex/duckShadow.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/鸭子阴影"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/692eb9be-a9bf-4860-a122-996d28bc1dcb.a2533.json",
+      "semanticRelativePath": "__semantic__/skeletalAnimations/duckAnimations/skeleton6.json",
+      "materializedRelativePath": "import/skeletalAnimations/duckAnimations/skeleton6.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "骨骼动画/鸭子动画/skeleton6"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/726a7b0f-977b-4069-81f2-abcd702f6a5b.a2533.json",
+      "semanticRelativePath": "__semantic__/tex/seasonalBackground/winterTheme/well.json",
+      "materializedRelativePath": "import/tex/seasonalBackground/winterTheme/well.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/seasonalBackground/winterTheme/well"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/7526f3a0-39ee-4712-ad91-67585cde7844@f9941.5c05d.json",
+      "semanticRelativePath": "__semantic__/tex/background/cornerBottomRight.json",
+      "materializedRelativePath": "import/tex/background/cornerBottomRight.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/background/cornerBottomRight"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/7e125d6b-f312-4089-b9f7-54cda2a51d49.a2533.json",
+      "semanticRelativePath": "__semantic__/tex/seasonalBackground/springTheme/well.json",
+      "materializedRelativePath": "import/tex/seasonalBackground/springTheme/well.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/seasonalBackground/springTheme/well"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/80a1d2c8-3592-4f41-a0bf-6b86288e27bc.a2533.json",
+      "semanticRelativePath": "__semantic__/tex/seasonalBackground/cyanTheme/well.json",
+      "materializedRelativePath": "import/tex/seasonalBackground/cyanTheme/well.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/seasonalBackground/cyanTheme/well"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/886cf853-b8ce-42ed-b65a-28df62a38786.c16a8.json",
+      "semanticRelativePath": "__semantic__/tex/seasonalBackground/summerTheme/background.json",
+      "materializedRelativePath": "import/tex/seasonalBackground/summerTheme/background.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/seasonalBackground/summerTheme/background"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/8a8dd95f-4462-47ff-819a-65601405a155.a2533.json",
+      "semanticRelativePath": "__semantic__/skeletalAnimations/duckAnimations/skeleton3.json",
+      "materializedRelativePath": "import/skeletalAnimations/duckAnimations/skeleton3.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "骨骼动画/鸭子动画/skeleton3"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/8aed7015-a2b7-49fb-881b-ee2776b64141.a2533.json",
+      "semanticRelativePath": "__semantic__/skeletalAnimations/duckAnimations/skeleton5.json",
+      "materializedRelativePath": "import/skeletalAnimations/duckAnimations/skeleton5.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "骨骼动画/鸭子动画/skeleton5"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/8b0e0ba7-34b1-449a-8b59-bd5c4d4984dd.a2533.json",
+      "semanticRelativePath": "__semantic__/tex/seasonalBackground/cyanTheme/cornerBottomRight.json",
+      "materializedRelativePath": "import/tex/seasonalBackground/cyanTheme/cornerBottomRight.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/seasonalBackground/cyanTheme/cornerBottomRight"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/910864a1-56a9-4acf-bdfb-9fc7670aa5c8.a2533.json",
+      "semanticRelativePath": "__semantic__/tex/background/well.json",
+      "materializedRelativePath": "import/tex/background/well.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/background/well"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/9bccc019-58e1-4173-9841-7544ea22b987.c16a8.json",
+      "semanticRelativePath": "__semantic__/tex/seasonalBackground/cyanTheme/background.json",
+      "materializedRelativePath": "import/tex/seasonalBackground/cyanTheme/background.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/seasonalBackground/cyanTheme/background"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/a32d24b5-2563-44ff-875c-00426046b3fd.a2533.json",
+      "semanticRelativePath": "__semantic__/tex/fruitHole/fruitHole2.json",
+      "materializedRelativePath": "import/tex/fruitHole/fruitHole2.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/fruitHole/fruitHole2"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/a391d6e8-8def-4554-b662-ae24dcae735e.a2533.json",
+      "semanticRelativePath": "__semantic__/saveFruitDuck/skeleton.json",
+      "materializedRelativePath": "import/saveFruitDuck/skeleton.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "救救水果鸭/skeleton"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/a47a71c5-be76-4497-a93a-4ee4987cb742.a2533.json",
+      "semanticRelativePath": "__semantic__/tex/background/waterLayer1.json",
+      "materializedRelativePath": "import/tex/background/waterLayer1.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/background/waterLayer1"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/a6cdd094-a6f3-4641-8c5c-94e65603af76.c16a8.json",
+      "semanticRelativePath": "__semantic__/tex/seasonalBackground/winterTheme/background.json",
+      "materializedRelativePath": "import/tex/seasonalBackground/winterTheme/background.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/seasonalBackground/winterTheme/background"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/a83e43e2-34cc-4ad2-8def-c79023859b07.a2533.json",
+      "semanticRelativePath": "__semantic__/tex/fruitHole/fruitHole3.json",
+      "materializedRelativePath": "import/tex/fruitHole/fruitHole3.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/fruitHole/fruitHole3"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/aba0148f-44df-4aa5-b463-57475c6aab39.a2533.json",
+      "semanticRelativePath": "__semantic__/daily/skeleton.json",
+      "materializedRelativePath": "import/daily/skeleton.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "每日/skeleton"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/ac706892-65d6-479f-a4b9-c351bab6812a.c16a8.json",
+      "semanticRelativePath": "__semantic__/tex/seasonalBackground/autumnTheme/background.json",
+      "materializedRelativePath": "import/tex/seasonalBackground/autumnTheme/background.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/seasonalBackground/autumnTheme/background"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/b31ec86c-eb85-4706-a9b8-71dba070bb08.a2533.json",
+      "semanticRelativePath": "__semantic__/tex/seasonalBackground/winterTheme/cornerBottomRight.json",
+      "materializedRelativePath": "import/tex/seasonalBackground/winterTheme/cornerBottomRight.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/seasonalBackground/winterTheme/cornerBottomRight"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/b3c5eff2-c4f9-4be8-84a5-3e358fa802ae.a2533.json",
+      "semanticRelativePath": "__semantic__/skeletalAnimations/duckAnimations/skeleton2.json",
+      "materializedRelativePath": "import/skeletalAnimations/duckAnimations/skeleton2.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "骨骼动画/鸭子动画/skeleton2"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/b52be39c-ad0f-4624-b983-8f48ff7efa57.a2533.json",
+      "semanticRelativePath": "__semantic__/tex/seasonalBackground/winterTheme/cornerBottomLeft.json",
+      "materializedRelativePath": "import/tex/seasonalBackground/winterTheme/cornerBottomLeft.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/seasonalBackground/winterTheme/cornerBottomLeft"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/b82c701e-16c2-4df1-bd12-527bc9eb2e4f.a2533.json",
+      "semanticRelativePath": "__semantic__/pigeonAnimation/new_dove.json",
+      "materializedRelativePath": "import/pigeonAnimation/new_dove.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "鸽子动画/new_dove"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/b98f5521-a446-4f6b-8a51-5b85b2bc0955.a2533.json",
+      "semanticRelativePath": "__semantic__/tex/key.json",
+      "materializedRelativePath": "import/tex/key.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/钥匙"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/bf6077a1-391b-42eb-9278-a4bd2d34f8fc.a2533.json",
+      "semanticRelativePath": "__semantic__/tex/background/lavaLayer2.json",
+      "materializedRelativePath": "import/tex/background/lavaLayer2.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/background/lavaLayer2"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/d19f4fc4-681f-44af-8e19-41b34fc0f692.a2533.json",
+      "semanticRelativePath": "__semantic__/killerAnimation/skeleton.json",
+      "materializedRelativePath": "import/killerAnimation/skeleton.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "杀手动画/skeleton"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/d1bc7d03-07d4-4cfa-99bc-dfb4da043723.a2533.json",
+      "semanticRelativePath": "__semantic__/tex/seasonalBackground/autumnTheme/cornerBottomLeft.json",
+      "materializedRelativePath": "import/tex/seasonalBackground/autumnTheme/cornerBottomLeft.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/seasonalBackground/autumnTheme/cornerBottomLeft"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/d32eb2a7-8aa5-47e4-a7e8-2ea475a611ec.a2533.json",
+      "semanticRelativePath": "__semantic__/fruitBigEater/Kid-eating.json",
+      "materializedRelativePath": "import/fruitBigEater/Kid-eating.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "水果大胃王/Kid-eating"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/dad4ba1c-e27d-47e2-afe1-370873c6132e.a2533.json",
+      "semanticRelativePath": "__semantic__/tex/scene/mask.json",
+      "materializedRelativePath": "import/tex/scene/mask.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/scene/遮罩"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/ddec110d-b951-4ecb-851e-9c2681186493.a2533.json",
+      "semanticRelativePath": "__semantic__/ringAnimation/ZYQ.json",
+      "materializedRelativePath": "import/ringAnimation/ZYQ.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "圈动画/ZYQ"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/e09f8385-7070-47be-aa45-a90fc61258cd.a2533.json",
+      "semanticRelativePath": "__semantic__/tex/percent2.json",
+      "materializedRelativePath": "import/tex/percent2.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/%2"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/eeb52953-13de-47d8-a19c-0347e1438e1c.a2533.json",
+      "semanticRelativePath": "__semantic__/bibiLabu/skeleton.json",
+      "materializedRelativePath": "import/bibiLabu/skeleton.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "比比拉布/skeleton"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/f6d4e1ed-05f4-4073-a0b1-aa477fce2502.a2533.json",
+      "semanticRelativePath": "__semantic__/tex/seasonalBackground/springTheme/cornerBottomRight.json",
+      "materializedRelativePath": "import/tex/seasonalBackground/springTheme/cornerBottomRight.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/seasonalBackground/springTheme/cornerBottomRight"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/f72f3c4f-a56b-4b31-a42e-599bb93d2024.a2533.json",
+      "semanticRelativePath": "__semantic__/tex/seasonalBackground/autumnTheme/well.json",
+      "materializedRelativePath": "import/tex/seasonalBackground/autumnTheme/well.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/seasonalBackground/autumnTheme/well"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/f76b05a5-82c2-44b8-8d60-1331402ca38a.a2533.json",
+      "semanticRelativePath": "__semantic__/tex/circle.json",
+      "materializedRelativePath": "import/tex/circle.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/circle"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/f7dfb964-a7e1-4326-9ecf-c9ccc5bdb98b.a2533.json",
+      "semanticRelativePath": "__semantic__/tex/fruitHole/fruitHole1.json",
+      "materializedRelativePath": "import/tex/fruitHole/fruitHole1.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/fruitHole/fruitHole1"
+      }
+    }
+  ],
+  "nativeAliases": [
+    {
+      "kind": "native",
+      "originalRelativePath": "native/00a7ff24-ffbd-42d7-8597-8d1d451f0256.aefba.png",
+      "semanticRelativePath": "__semantic__/tex/stump.png",
+      "materializedRelativePath": "native/tex/stump.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/木桩"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/02a38064-da00-4ca7-a93b-3e53c6ce5879.f4890.jpg",
+      "semanticRelativePath": "__semantic__/tex/background/mainBackground.jpg",
+      "materializedRelativePath": "native/tex/background/mainBackground.jpg",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/background/mainBackground"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/0599c030-38ec-4e55-8ec6-e400c1f90e7d.4a56d.png",
+      "semanticRelativePath": "__semantic__/skeletalAnimations/doorAnimation/skeleton.png",
+      "materializedRelativePath": "native/skeletalAnimations/doorAnimation/skeleton.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "骨骼动画/门动画/skeleton"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/062b1717-90b0-4678-aec0-84cced2a3125.d699c.png",
+      "semanticRelativePath": "__semantic__/tex/scene/hole.png",
+      "materializedRelativePath": "native/tex/scene/hole.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/scene/洞"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/0b5ae392-fde5-47c3-be1d-684f495939fb.4f74e.png",
+      "semanticRelativePath": "__semantic__/tex/seasonalBackground/cyanTheme/cornerBottomLeft.png",
+      "materializedRelativePath": "native/tex/seasonalBackground/cyanTheme/cornerBottomLeft.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/seasonalBackground/cyanTheme/cornerBottomLeft"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/115216800.b4036.png",
+      "semanticRelativePath": "__semantic__/texture/share__texture_8.png",
+      "materializedRelativePath": "native/texture/share__texture_8.png",
+      "strategy": "exact-content-match",
+      "detail": {
+        "matchedFromDeletedRootFile": true
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/11d37c23d.04f4b.png",
+      "semanticRelativePath": "__semantic__/texture/highlight__texture_37.png",
+      "materializedRelativePath": "native/texture/highlight__texture_37.png",
+      "strategy": "exact-content-match",
+      "detail": {
+        "matchedFromDeletedRootFile": true
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/12cf6843-672b-45d0-9c90-1b2eed503296.c3672.png",
+      "semanticRelativePath": "__semantic__/tex/seasonalBackground/springTheme/cornerBottomLeft.png",
+      "materializedRelativePath": "native/tex/seasonalBackground/springTheme/cornerBottomLeft.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/seasonalBackground/springTheme/cornerBottomLeft"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/1353ef82c.1713c.png",
+      "semanticRelativePath": "__semantic__/texture/percent__texture_10.png",
+      "materializedRelativePath": "native/texture/percent__texture_10.png",
+      "strategy": "exact-content-match",
+      "detail": {
+        "matchedFromDeletedRootFile": true
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/135aec12-874e-4bd8-841e-6359ff461316.6115b.png",
+      "semanticRelativePath": "__semantic__/guideAnimation/skeleton.png",
+      "materializedRelativePath": "native/guideAnimation/skeleton.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "引导动画/skeleton"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/1361f2d0d.8fdf5.png",
+      "semanticRelativePath": "__semantic__/texture/bottom__texture_15.png",
+      "materializedRelativePath": "native/texture/bottom__texture_15.png",
+      "strategy": "exact-content-match",
+      "detail": {
+        "matchedFromDeletedRootFile": true
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/139c4b6f8.ed2de.png",
+      "semanticRelativePath": "__semantic__/texture/t0__texture_14.png",
+      "materializedRelativePath": "native/texture/t0__texture_14.png",
+      "strategy": "texture-source-from-pack",
+      "detail": {
+        "commonPrefixSegments": [],
+        "primaryLeafName": "t0",
+        "assetCount": 14,
+        "textureUuidKey": "139c4b6f8",
+        "packStem": "039c4b6f8"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/13a4cca66.eb7ee.png",
+      "semanticRelativePath": "__semantic__/texture/props__texture_12.png",
+      "materializedRelativePath": "native/texture/props__texture_12.png",
+      "strategy": "exact-content-match",
+      "detail": {
+        "matchedFromDeletedRootFile": true
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/15c250e9e.9fa26.png",
+      "semanticRelativePath": "__semantic__/texture/reward__texture_6.png",
+      "materializedRelativePath": "native/texture/reward__texture_6.png",
+      "strategy": "exact-content-match",
+      "detail": {
+        "matchedFromDeletedRootFile": true
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/17c64ddf3.2c9f0.png",
+      "semanticRelativePath": "__semantic__/lowerRight/lowerRight__texture_1.png",
+      "materializedRelativePath": "native/lowerRight/lowerRight__texture_1.png",
+      "strategy": "texture-source-from-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "右下"
+        ],
+        "primaryLeafName": "右下",
+        "assetCount": 1,
+        "textureUuidKey": "17c64ddf3",
+        "packStem": "7526f3a0-39ee-4712-ad91-67585cde7844@f9941"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/17f9bf2d5.f3f5d.png",
+      "semanticRelativePath": "__semantic__/texture/callFriend__texture_18.png",
+      "materializedRelativePath": "native/texture/callFriend__texture_18.png",
+      "strategy": "exact-content-match",
+      "detail": {
+        "matchedFromDeletedRootFile": true
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/1825d63a-591f-4f12-b526-b788e9ad749e.5f15e.png",
+      "semanticRelativePath": "__semantic__/tex/seasonalBackground/summerTheme/cornerBottomLeft.png",
+      "materializedRelativePath": "native/tex/seasonalBackground/summerTheme/cornerBottomLeft.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/seasonalBackground/summerTheme/cornerBottomLeft"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/18ea43c33.da71f.png",
+      "semanticRelativePath": "__semantic__/texture/slot__texture_4.png",
+      "materializedRelativePath": "native/texture/slot__texture_4.png",
+      "strategy": "exact-content-match",
+      "detail": {
+        "matchedFromDeletedRootFile": true
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/194504ba2.71be5.png",
+      "semanticRelativePath": "__semantic__/hundredDucksToKun/hundredDucksToKun__texture_1.png",
+      "materializedRelativePath": "native/hundredDucksToKun/hundredDucksToKun__texture_1.png",
+      "strategy": "texture-source-from-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "百鸭朝鲲"
+        ],
+        "primaryLeafName": "百鸭朝鲲",
+        "assetCount": 1,
+        "textureUuidKey": "194504ba2",
+        "packStem": "09c0a018-4991-4b44-8f30-0783f03ffa16@f9941"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/1972c63c0.5b136.png",
+      "semanticRelativePath": "__semantic__/texture/banner__texture_11.png",
+      "materializedRelativePath": "native/texture/banner__texture_11.png",
+      "strategy": "exact-content-match",
+      "detail": {
+        "matchedFromDeletedRootFile": true
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/198bdf5a-aefd-4070-972d-7086153040c8.ffb61.jpg",
+      "semanticRelativePath": "__semantic__/tex/seasonalBackground/springTheme/background.jpg",
+      "materializedRelativePath": "native/tex/seasonalBackground/springTheme/background.jpg",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/seasonalBackground/springTheme/background"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/1a08c225f.71851.png",
+      "semanticRelativePath": "__semantic__/texture/halo__texture_18.png",
+      "materializedRelativePath": "native/texture/halo__texture_18.png",
+      "strategy": "exact-content-match",
+      "detail": {
+        "matchedFromDeletedRootFile": true
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/1c4c5cdf1.91be7.png",
+      "semanticRelativePath": "__semantic__/texture/shuffle__texture_12.png",
+      "materializedRelativePath": "native/texture/shuffle__texture_12.png",
+      "strategy": "exact-content-match",
+      "detail": {
+        "matchedFromDeletedRootFile": true
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/1cf9b8bfe.126cf.png",
+      "semanticRelativePath": "__semantic__/texture/share__texture_11.png",
+      "materializedRelativePath": "native/texture/share__texture_11.png",
+      "strategy": "exact-content-match",
+      "detail": {
+        "matchedFromDeletedRootFile": true
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/1cfb4391b.fa3ef.png",
+      "semanticRelativePath": "__semantic__/texture/close__texture_18.png",
+      "materializedRelativePath": "native/texture/close__texture_18.png",
+      "strategy": "exact-content-match",
+      "detail": {
+        "matchedFromDeletedRootFile": true
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/1f5276afb.9c7e7.png",
+      "semanticRelativePath": "__semantic__/texture/bottom__texture_17.png",
+      "materializedRelativePath": "native/texture/bottom__texture_17.png",
+      "strategy": "exact-content-match",
+      "detail": {
+        "matchedFromDeletedRootFile": true
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/211d46dd-b8ca-44f6-a1e6-025242976e4c.150b1.png",
+      "semanticRelativePath": "__semantic__/tex/background/waterLayer2.png",
+      "materializedRelativePath": "native/tex/background/waterLayer2.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/background/waterLayer2"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/2c0c1a1f-1bce-4b98-b093-dd92b680ade9.7ea43.png",
+      "semanticRelativePath": "__semantic__/skeletalAnimations/duckAnimations/skeleton.png",
+      "materializedRelativePath": "native/skeletalAnimations/duckAnimations/skeleton.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "骨骼动画/鸭子动画/skeleton"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/2dc62659-6632-403c-9917-a45ea92ff16d.f07b0.png",
+      "semanticRelativePath": "__semantic__/tex/background/lavaLayer1.png",
+      "materializedRelativePath": "native/tex/background/lavaLayer1.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/background/lavaLayer1"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/2ee458bc-7b2b-4baf-a74b-a5f0417033b5.c188a.png",
+      "semanticRelativePath": "__semantic__/startAnimation/skeleton.png",
+      "materializedRelativePath": "native/startAnimation/skeleton.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "开始动画/skeleton"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/305e3925-607c-44f6-8a85-221b9b585508.8a4a4.png",
+      "semanticRelativePath": "__semantic__/skeletalAnimations/duckAnimations/skeleton4.png",
+      "materializedRelativePath": "native/skeletalAnimations/duckAnimations/skeleton4.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "骨骼动画/鸭子动画/skeleton4"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/3bb00148-0e6d-4c1f-9182-d828fcffd9ef.99157.png",
+      "semanticRelativePath": "__semantic__/tex/seasonalBackground/summerTheme/well.png",
+      "materializedRelativePath": "native/tex/seasonalBackground/summerTheme/well.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/seasonalBackground/summerTheme/well"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/40e1af29-93ac-4701-b9a8-43e18bb9b413.e8fdc.png",
+      "semanticRelativePath": "__semantic__/tex/seasonalBackground/autumnTheme/cornerBottomRight.png",
+      "materializedRelativePath": "native/tex/seasonalBackground/autumnTheme/cornerBottomRight.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/seasonalBackground/autumnTheme/cornerBottomRight"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/52226b36-3482-4562-98bc-5ab1acd14c89.2fb0f.png",
+      "semanticRelativePath": "__semantic__/tex/randomProp.png",
+      "materializedRelativePath": "native/tex/randomProp.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/随机道具"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/596c7b55-a3c0-43fe-b745-7d70ed9198b0.b0e11.png",
+      "semanticRelativePath": "__semantic__/tex/glow.png",
+      "materializedRelativePath": "native/tex/glow.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/光"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/5bcca69e-4d9c-401a-8aae-d3f138f4f8fa.b89d7.png",
+      "semanticRelativePath": "__semantic__/tex/homeTheme0/fogOverlay.png",
+      "materializedRelativePath": "native/tex/homeTheme0/fogOverlay.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/homeTheme0/fogOverlay"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/6017750f-6ae8-45be-881a-106cee6ce3f0.7abec.png",
+      "semanticRelativePath": "__semantic__/dave/skeleton.png",
+      "materializedRelativePath": "native/dave/skeleton.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "戴夫/skeleton"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/62bd1d93-4a4d-4950-9ef8-cb228fcdd93c.99987.png",
+      "semanticRelativePath": "__semantic__/tex/silhouette3.png",
+      "materializedRelativePath": "native/tex/silhouette3.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/剪影3"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/63e3acde-a83a-4867-a70c-9051c7d5d524.d4042.png",
+      "semanticRelativePath": "__semantic__/tex/seasonalBackground/summerTheme/cornerBottomRight.png",
+      "materializedRelativePath": "native/tex/seasonalBackground/summerTheme/cornerBottomRight.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/seasonalBackground/summerTheme/cornerBottomRight"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/65d81f33-2b0d-4612-812f-95a7cb1e40bf.bd468.png",
+      "semanticRelativePath": "__semantic__/tex/duckShadow.png",
+      "materializedRelativePath": "native/tex/duckShadow.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/鸭子阴影"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/692eb9be-a9bf-4860-a122-996d28bc1dcb.0f565.png",
+      "semanticRelativePath": "__semantic__/skeletalAnimations/duckAnimations/skeleton6.png",
+      "materializedRelativePath": "native/skeletalAnimations/duckAnimations/skeleton6.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "骨骼动画/鸭子动画/skeleton6"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/726a7b0f-977b-4069-81f2-abcd702f6a5b.ffe01.png",
+      "semanticRelativePath": "__semantic__/tex/seasonalBackground/winterTheme/well.png",
+      "materializedRelativePath": "native/tex/seasonalBackground/winterTheme/well.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/seasonalBackground/winterTheme/well"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/7e125d6b-f312-4089-b9f7-54cda2a51d49.82be3.png",
+      "semanticRelativePath": "__semantic__/tex/seasonalBackground/springTheme/well.png",
+      "materializedRelativePath": "native/tex/seasonalBackground/springTheme/well.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/seasonalBackground/springTheme/well"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/80a1d2c8-3592-4f41-a0bf-6b86288e27bc.3bc8c.png",
+      "semanticRelativePath": "__semantic__/tex/seasonalBackground/cyanTheme/well.png",
+      "materializedRelativePath": "native/tex/seasonalBackground/cyanTheme/well.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/seasonalBackground/cyanTheme/well"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/886cf853-b8ce-42ed-b65a-28df62a38786.b0388.jpg",
+      "semanticRelativePath": "__semantic__/tex/seasonalBackground/summerTheme/background.jpg",
+      "materializedRelativePath": "native/tex/seasonalBackground/summerTheme/background.jpg",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/seasonalBackground/summerTheme/background"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/8a8dd95f-4462-47ff-819a-65601405a155.92e1a.png",
+      "semanticRelativePath": "__semantic__/skeletalAnimations/duckAnimations/skeleton3.png",
+      "materializedRelativePath": "native/skeletalAnimations/duckAnimations/skeleton3.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "骨骼动画/鸭子动画/skeleton3"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/8aed7015-a2b7-49fb-881b-ee2776b64141.a8a97.png",
+      "semanticRelativePath": "__semantic__/skeletalAnimations/duckAnimations/skeleton5.png",
+      "materializedRelativePath": "native/skeletalAnimations/duckAnimations/skeleton5.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "骨骼动画/鸭子动画/skeleton5"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/8b0e0ba7-34b1-449a-8b59-bd5c4d4984dd.6f35c.png",
+      "semanticRelativePath": "__semantic__/tex/seasonalBackground/cyanTheme/cornerBottomRight.png",
+      "materializedRelativePath": "native/tex/seasonalBackground/cyanTheme/cornerBottomRight.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/seasonalBackground/cyanTheme/cornerBottomRight"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/910864a1-56a9-4acf-bdfb-9fc7670aa5c8.8ae26.png",
+      "semanticRelativePath": "__semantic__/tex/background/well.png",
+      "materializedRelativePath": "native/tex/background/well.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/background/well"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/9bccc019-58e1-4173-9841-7544ea22b987.b0322.jpg",
+      "semanticRelativePath": "__semantic__/tex/seasonalBackground/cyanTheme/background.jpg",
+      "materializedRelativePath": "native/tex/seasonalBackground/cyanTheme/background.jpg",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/seasonalBackground/cyanTheme/background"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/a32d24b5-2563-44ff-875c-00426046b3fd.4d555.png",
+      "semanticRelativePath": "__semantic__/tex/fruitHole/fruitHole2.png",
+      "materializedRelativePath": "native/tex/fruitHole/fruitHole2.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/fruitHole/fruitHole2"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/a391d6e8-8def-4554-b662-ae24dcae735e.9b386.png",
+      "semanticRelativePath": "__semantic__/saveFruitDuck/skeleton.png",
+      "materializedRelativePath": "native/saveFruitDuck/skeleton.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "救救水果鸭/skeleton"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/a47a71c5-be76-4497-a93a-4ee4987cb742.207fc.png",
+      "semanticRelativePath": "__semantic__/tex/background/waterLayer1.png",
+      "materializedRelativePath": "native/tex/background/waterLayer1.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/background/waterLayer1"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/a6cdd094-a6f3-4641-8c5c-94e65603af76.80cbe.jpg",
+      "semanticRelativePath": "__semantic__/tex/seasonalBackground/winterTheme/background.jpg",
+      "materializedRelativePath": "native/tex/seasonalBackground/winterTheme/background.jpg",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/seasonalBackground/winterTheme/background"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/a83e43e2-34cc-4ad2-8def-c79023859b07.5fdde.png",
+      "semanticRelativePath": "__semantic__/tex/fruitHole/fruitHole3.png",
+      "materializedRelativePath": "native/tex/fruitHole/fruitHole3.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/fruitHole/fruitHole3"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/aba0148f-44df-4aa5-b463-57475c6aab39.c260c.png",
+      "semanticRelativePath": "__semantic__/daily/skeleton.png",
+      "materializedRelativePath": "native/daily/skeleton.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "每日/skeleton"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/ac706892-65d6-479f-a4b9-c351bab6812a.86c92.jpg",
+      "semanticRelativePath": "__semantic__/tex/seasonalBackground/autumnTheme/background.jpg",
+      "materializedRelativePath": "native/tex/seasonalBackground/autumnTheme/background.jpg",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/seasonalBackground/autumnTheme/background"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/b31ec86c-eb85-4706-a9b8-71dba070bb08.f63c7.png",
+      "semanticRelativePath": "__semantic__/tex/seasonalBackground/winterTheme/cornerBottomRight.png",
+      "materializedRelativePath": "native/tex/seasonalBackground/winterTheme/cornerBottomRight.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/seasonalBackground/winterTheme/cornerBottomRight"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/b3c5eff2-c4f9-4be8-84a5-3e358fa802ae.8981f.png",
+      "semanticRelativePath": "__semantic__/skeletalAnimations/duckAnimations/skeleton2.png",
+      "materializedRelativePath": "native/skeletalAnimations/duckAnimations/skeleton2.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "骨骼动画/鸭子动画/skeleton2"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/b52be39c-ad0f-4624-b983-8f48ff7efa57.fd628.png",
+      "semanticRelativePath": "__semantic__/tex/seasonalBackground/winterTheme/cornerBottomLeft.png",
+      "materializedRelativePath": "native/tex/seasonalBackground/winterTheme/cornerBottomLeft.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/seasonalBackground/winterTheme/cornerBottomLeft"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/b82c701e-16c2-4df1-bd12-527bc9eb2e4f.0980c.png",
+      "semanticRelativePath": "__semantic__/pigeonAnimation/new_dove.png",
+      "materializedRelativePath": "native/pigeonAnimation/new_dove.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "鸽子动画/new_dove"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/b98f5521-a446-4f6b-8a51-5b85b2bc0955.272e0.png",
+      "semanticRelativePath": "__semantic__/tex/key.png",
+      "materializedRelativePath": "native/tex/key.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/钥匙"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/bf6077a1-391b-42eb-9278-a4bd2d34f8fc.298d8.png",
+      "semanticRelativePath": "__semantic__/tex/background/lavaLayer2.png",
+      "materializedRelativePath": "native/tex/background/lavaLayer2.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/background/lavaLayer2"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/d19f4fc4-681f-44af-8e19-41b34fc0f692.b991f.png",
+      "semanticRelativePath": "__semantic__/killerAnimation/skeleton.png",
+      "materializedRelativePath": "native/killerAnimation/skeleton.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "杀手动画/skeleton"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/d1bc7d03-07d4-4cfa-99bc-dfb4da043723.be10e.png",
+      "semanticRelativePath": "__semantic__/tex/seasonalBackground/autumnTheme/cornerBottomLeft.png",
+      "materializedRelativePath": "native/tex/seasonalBackground/autumnTheme/cornerBottomLeft.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/seasonalBackground/autumnTheme/cornerBottomLeft"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/d32eb2a7-8aa5-47e4-a7e8-2ea475a611ec.2af27.png",
+      "semanticRelativePath": "__semantic__/fruitBigEater/Kid-eating.png",
+      "materializedRelativePath": "native/fruitBigEater/Kid-eating.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "水果大胃王/Kid-eating"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/dad4ba1c-e27d-47e2-afe1-370873c6132e.193df.png",
+      "semanticRelativePath": "__semantic__/tex/scene/mask.png",
+      "materializedRelativePath": "native/tex/scene/mask.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/scene/遮罩"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/ddec110d-b951-4ecb-851e-9c2681186493.aff74.png",
+      "semanticRelativePath": "__semantic__/ringAnimation/ZYQ.png",
+      "materializedRelativePath": "native/ringAnimation/ZYQ.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "圈动画/ZYQ"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/e09f8385-7070-47be-aa45-a90fc61258cd.7b063.png",
+      "semanticRelativePath": "__semantic__/tex/percent2.png",
+      "materializedRelativePath": "native/tex/percent2.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/%2"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/eeb52953-13de-47d8-a19c-0347e1438e1c.a5167.png",
+      "semanticRelativePath": "__semantic__/bibiLabu/skeleton.png",
+      "materializedRelativePath": "native/bibiLabu/skeleton.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "比比拉布/skeleton"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/f6d4e1ed-05f4-4073-a0b1-aa477fce2502.c7b45.png",
+      "semanticRelativePath": "__semantic__/tex/seasonalBackground/springTheme/cornerBottomRight.png",
+      "materializedRelativePath": "native/tex/seasonalBackground/springTheme/cornerBottomRight.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/seasonalBackground/springTheme/cornerBottomRight"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/f72f3c4f-a56b-4b31-a42e-599bb93d2024.4b148.png",
+      "semanticRelativePath": "__semantic__/tex/seasonalBackground/autumnTheme/well.png",
+      "materializedRelativePath": "native/tex/seasonalBackground/autumnTheme/well.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/seasonalBackground/autumnTheme/well"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/f76b05a5-82c2-44b8-8d60-1331402ca38a.5f769.png",
+      "semanticRelativePath": "__semantic__/tex/circle.png",
+      "materializedRelativePath": "native/tex/circle.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/circle"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/f7dfb964-a7e1-4326-9ecf-c9ccc5bdb98b.50f9f.png",
+      "semanticRelativePath": "__semantic__/tex/fruitHole/fruitHole1.png",
+      "materializedRelativePath": "native/tex/fruitHole/fruitHole1.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/fruitHole/fruitHole1"
+      }
+    }
+  ],
+  "unresolvedImports": [
+    {
+      "originalRelativePath": "import/02c960b2-a56d-4aab-a517-3ba441a0a458.a2533.json",
+      "stem": "02c960b2-a56d-4aab-a517-3ba441a0a458"
+    },
+    {
+      "originalRelativePath": "import/0477c566e.f0408.json",
+      "stem": "0477c566e"
+    },
+    {
+      "originalRelativePath": "import/2056bc90-0221-4223-b58a-07c01e25bdb5.a2533.json",
+      "stem": "2056bc90-0221-4223-b58a-07c01e25bdb5"
+    },
+    {
+      "originalRelativePath": "import/20835ba4-6145-4fbc-a58a-051ce700aa3e.a2533.json",
+      "stem": "20835ba4-6145-4fbc-a58a-051ce700aa3e"
+    },
+    {
+      "originalRelativePath": "import/2507b64b-6f48-4e0b-83b6-b0fba5864c18.a2533.json",
+      "stem": "2507b64b-6f48-4e0b-83b6-b0fba5864c18"
+    },
+    {
+      "originalRelativePath": "import/48cadb61-de88-4c0a-bb4a-3ac2fe428dec.a2533.json",
+      "stem": "48cadb61-de88-4c0a-bb4a-3ac2fe428dec"
+    },
+    {
+      "originalRelativePath": "import/4d96b4ce-0f78-496e-aee3-fb4b213789e3.a2533.json",
+      "stem": "4d96b4ce-0f78-496e-aee3-fb4b213789e3"
+    },
+    {
+      "originalRelativePath": "import/4e318cab-9fdc-49fc-a1b2-7474add66ed2.a2533.json",
+      "stem": "4e318cab-9fdc-49fc-a1b2-7474add66ed2"
+    },
+    {
+      "originalRelativePath": "import/544e49d6-3f05-4fa8-9a9e-091f98fc2ce8.a2533.json",
+      "stem": "544e49d6-3f05-4fa8-9a9e-091f98fc2ce8"
+    },
+    {
+      "originalRelativePath": "import/56a35c4e-18ad-4795-86ad-f11bb3ebaa5a.a2533.json",
+      "stem": "56a35c4e-18ad-4795-86ad-f11bb3ebaa5a"
+    },
+    {
+      "originalRelativePath": "import/59ed86d6-38a8-4bf7-9360-0805b40aa7bc.a2533.json",
+      "stem": "59ed86d6-38a8-4bf7-9360-0805b40aa7bc"
+    },
+    {
+      "originalRelativePath": "import/74c3f488-7a9c-4197-85fc-610d11be15c2.a2533.json",
+      "stem": "74c3f488-7a9c-4197-85fc-610d11be15c2"
+    },
+    {
+      "originalRelativePath": "import/7d8f9b89-4fd1-4c9f-a3ab-38ec7cded7ca.a2533.json",
+      "stem": "7d8f9b89-4fd1-4c9f-a3ab-38ec7cded7ca"
+    },
+    {
+      "originalRelativePath": "import/82d23d6a-e4c1-499e-b540-30d9bb9c9bd9.dbac2.json",
+      "stem": "82d23d6a-e4c1-499e-b540-30d9bb9c9bd9"
+    },
+    {
+      "originalRelativePath": "import/83fee86e-b4cc-4a0f-8e15-9745cbd4db4b.a2533.json",
+      "stem": "83fee86e-b4cc-4a0f-8e15-9745cbd4db4b"
+    },
+    {
+      "originalRelativePath": "import/951249e0-9f16-456d-8b85-a6ca954da16b.a2533.json",
+      "stem": "951249e0-9f16-456d-8b85-a6ca954da16b"
+    },
+    {
+      "originalRelativePath": "import/a137c41d-7918-457c-92bf-c1930b96b8a4.a2533.json",
+      "stem": "a137c41d-7918-457c-92bf-c1930b96b8a4"
+    },
+    {
+      "originalRelativePath": "import/a7be5c56-e258-46ea-b69d-63f0f8595b80.c16a8.json",
+      "stem": "a7be5c56-e258-46ea-b69d-63f0f8595b80"
+    },
+    {
+      "originalRelativePath": "import/aaf71e20-e580-40c7-b52c-2f27715312e7.a2533.json",
+      "stem": "aaf71e20-e580-40c7-b52c-2f27715312e7"
+    },
+    {
+      "originalRelativePath": "import/bd1bcaba-bd7d-4a71-b143-997c882383e4.a2533.json",
+      "stem": "bd1bcaba-bd7d-4a71-b143-997c882383e4"
+    },
+    {
+      "originalRelativePath": "import/c0d128a1-eace-4870-a9c0-91f319b83e8e.a2533.json",
+      "stem": "c0d128a1-eace-4870-a9c0-91f319b83e8e"
+    },
+    {
+      "originalRelativePath": "import/c5f5e811-3a6b-4661-9679-741ad09a6390.a2533.json",
+      "stem": "c5f5e811-3a6b-4661-9679-741ad09a6390"
+    },
+    {
+      "originalRelativePath": "import/ee36791a-5c44-40a8-8872-56aacb3d204f.a2533.json",
+      "stem": "ee36791a-5c44-40a8-8872-56aacb3d204f"
+    },
+    {
+      "originalRelativePath": "import/f12a23c4-b924-4322-a260-3d982428f1e8.a2533.json",
+      "stem": "f12a23c4-b924-4322-a260-3d982428f1e8"
+    },
+    {
+      "originalRelativePath": "import/f808b8f2-223e-433d-a6bd-86e18bef7242.a2533.json",
+      "stem": "f808b8f2-223e-433d-a6bd-86e18bef7242"
+    },
+    {
+      "originalRelativePath": "import/fb56bdf0-d73b-4423-8ba2-e8f18e57b5c9.a2533.json",
+      "stem": "fb56bdf0-d73b-4423-8ba2-e8f18e57b5c9"
+    }
+  ],
+  "unresolvedNative": [
+    {
+      "originalRelativePath": "native/02c960b2-a56d-4aab-a517-3ba441a0a458.5e971.png",
+      "stem": "02c960b2-a56d-4aab-a517-3ba441a0a458"
+    },
+    {
+      "originalRelativePath": "native/2056bc90-0221-4223-b58a-07c01e25bdb5.59ad8.png",
+      "stem": "2056bc90-0221-4223-b58a-07c01e25bdb5"
+    },
+    {
+      "originalRelativePath": "native/20835ba4-6145-4fbc-a58a-051ce700aa3e.90cf4.png",
+      "stem": "20835ba4-6145-4fbc-a58a-051ce700aa3e"
+    },
+    {
+      "originalRelativePath": "native/2507b64b-6f48-4e0b-83b6-b0fba5864c18.64962.png",
+      "stem": "2507b64b-6f48-4e0b-83b6-b0fba5864c18"
+    },
+    {
+      "originalRelativePath": "native/48cadb61-de88-4c0a-bb4a-3ac2fe428dec.7de7e.png",
+      "stem": "48cadb61-de88-4c0a-bb4a-3ac2fe428dec"
+    },
+    {
+      "originalRelativePath": "native/4d96b4ce-0f78-496e-aee3-fb4b213789e3.c6a49.png",
+      "stem": "4d96b4ce-0f78-496e-aee3-fb4b213789e3"
+    },
+    {
+      "originalRelativePath": "native/4e318cab-9fdc-49fc-a1b2-7474add66ed2.7d9f0.png",
+      "stem": "4e318cab-9fdc-49fc-a1b2-7474add66ed2"
+    },
+    {
+      "originalRelativePath": "native/544e49d6-3f05-4fa8-9a9e-091f98fc2ce8.83fcc.png",
+      "stem": "544e49d6-3f05-4fa8-9a9e-091f98fc2ce8"
+    },
+    {
+      "originalRelativePath": "native/56a35c4e-18ad-4795-86ad-f11bb3ebaa5a.71d4d.png",
+      "stem": "56a35c4e-18ad-4795-86ad-f11bb3ebaa5a"
+    },
+    {
+      "originalRelativePath": "native/59ed86d6-38a8-4bf7-9360-0805b40aa7bc.01dfd.png",
+      "stem": "59ed86d6-38a8-4bf7-9360-0805b40aa7bc"
+    },
+    {
+      "originalRelativePath": "native/74c3f488-7a9c-4197-85fc-610d11be15c2.5e086.png",
+      "stem": "74c3f488-7a9c-4197-85fc-610d11be15c2"
+    },
+    {
+      "originalRelativePath": "native/7d8f9b89-4fd1-4c9f-a3ab-38ec7cded7ca.cea68.png",
+      "stem": "7d8f9b89-4fd1-4c9f-a3ab-38ec7cded7ca"
+    },
+    {
+      "originalRelativePath": "native/82d23d6a-e4c1-499e-b540-30d9bb9c9bd9.ffc91.jpeg",
+      "stem": "82d23d6a-e4c1-499e-b540-30d9bb9c9bd9"
+    },
+    {
+      "originalRelativePath": "native/83fee86e-b4cc-4a0f-8e15-9745cbd4db4b.d727e.png",
+      "stem": "83fee86e-b4cc-4a0f-8e15-9745cbd4db4b"
+    },
+    {
+      "originalRelativePath": "native/951249e0-9f16-456d-8b85-a6ca954da16b.c06a9.png",
+      "stem": "951249e0-9f16-456d-8b85-a6ca954da16b"
+    },
+    {
+      "originalRelativePath": "native/a137c41d-7918-457c-92bf-c1930b96b8a4.ecfc8.png",
+      "stem": "a137c41d-7918-457c-92bf-c1930b96b8a4"
+    },
+    {
+      "originalRelativePath": "native/a7be5c56-e258-46ea-b69d-63f0f8595b80.cfc7c.jpg",
+      "stem": "a7be5c56-e258-46ea-b69d-63f0f8595b80"
+    },
+    {
+      "originalRelativePath": "native/aaf71e20-e580-40c7-b52c-2f27715312e7.71cd4.png",
+      "stem": "aaf71e20-e580-40c7-b52c-2f27715312e7"
+    },
+    {
+      "originalRelativePath": "native/bd1bcaba-bd7d-4a71-b143-997c882383e4.17df6.png",
+      "stem": "bd1bcaba-bd7d-4a71-b143-997c882383e4"
+    },
+    {
+      "originalRelativePath": "native/c0d128a1-eace-4870-a9c0-91f319b83e8e.60bfd.png",
+      "stem": "c0d128a1-eace-4870-a9c0-91f319b83e8e"
+    },
+    {
+      "originalRelativePath": "native/c5f5e811-3a6b-4661-9679-741ad09a6390.f3321.png",
+      "stem": "c5f5e811-3a6b-4661-9679-741ad09a6390"
+    },
+    {
+      "originalRelativePath": "native/ee36791a-5c44-40a8-8872-56aacb3d204f.813ce.png",
+      "stem": "ee36791a-5c44-40a8-8872-56aacb3d204f"
+    },
+    {
+      "originalRelativePath": "native/f12a23c4-b924-4322-a260-3d982428f1e8.5f1d9.png",
+      "stem": "f12a23c4-b924-4322-a260-3d982428f1e8"
+    },
+    {
+      "originalRelativePath": "native/f808b8f2-223e-433d-a6bd-86e18bef7242.8cec2.png",
+      "stem": "f808b8f2-223e-433d-a6bd-86e18bef7242"
+    },
+    {
+      "originalRelativePath": "native/fb56bdf0-d73b-4423-8ba2-e8f18e57b5c9.21f41.png",
+      "stem": "fb56bdf0-d73b-4423-8ba2-e8f18e57b5c9"
+    }
+  ]
+}

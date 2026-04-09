@@ -1,0 +1,1708 @@
+{
+  "bundleName": "uiBundle",
+  "generatedAt": "2026-04-09T03:57:00.093Z",
+  "importAliases": [
+    {
+      "kind": "import",
+      "originalRelativePath": "import/010f053dc.147d8.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/settings/gearIcon__pack_34.json",
+      "materializedRelativePath": "import/_packs/tex/settings/gearIcon__pack_34.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "settings"
+        ],
+        "primaryLeafName": "gearIcon",
+        "assetCount": 34,
+        "textureUuidKeys": [
+          "110f053dc"
+        ]
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/01775311c.4f4ad.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/failPage/image2__pack_12.json",
+      "materializedRelativePath": "import/_packs/tex/failPage/image2__pack_12.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "失败页面"
+        ],
+        "primaryLeafName": "图2",
+        "assetCount": 12,
+        "textureUuidKeys": [
+          "11775311c"
+        ]
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/018f90870.fbeef.json",
+      "semanticRelativePath": "__semantic__/_packs/settingsDialogNumber/settingsDialogNumber__pack_1.json",
+      "materializedRelativePath": "import/_packs/settingsDialogNumber/settingsDialogNumber__pack_1.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "设置二级数字"
+        ],
+        "primaryLeafName": "设置二级数字",
+        "assetCount": 1,
+        "textureUuidKeys": []
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/02300d1e9.ec414.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/homeAssets/douyinFollow/follow__pack_6.json",
+      "materializedRelativePath": "import/_packs/tex/homeAssets/douyinFollow/follow__pack_6.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "主页素材",
+          "关注抖音"
+        ],
+        "primaryLeafName": "关注",
+        "assetCount": 6,
+        "textureUuidKeys": [
+          "12300d1e9"
+        ]
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/028d38f65.dfa3c.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/failPage/bottom2__pack_4.json",
+      "materializedRelativePath": "import/_packs/tex/failPage/bottom2__pack_4.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "失败页面"
+        ],
+        "primaryLeafName": "底2",
+        "assetCount": 4,
+        "textureUuidKeys": [
+          "128d38f65"
+        ]
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/02cd0da06.aa8b8.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/bottom__pack_32.json",
+      "materializedRelativePath": "import/_packs/tex/bottom__pack_32.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex"
+        ],
+        "primaryLeafName": "底",
+        "assetCount": 32,
+        "textureUuidKeys": [
+          "1f5276afb"
+        ]
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/0361f2d0d.36476.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/bottom__pack_30.json",
+      "materializedRelativePath": "import/_packs/tex/bottom__pack_30.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex"
+        ],
+        "primaryLeafName": "底",
+        "assetCount": 30,
+        "textureUuidKeys": [
+          "1361f2d0d"
+        ]
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/0397f6716.c20b4.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/homeAssets/subscribe/subscribe__pack_6.json",
+      "materializedRelativePath": "import/_packs/tex/homeAssets/subscribe/subscribe__pack_6.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "主页素材",
+          "订阅"
+        ],
+        "primaryLeafName": "订阅",
+        "assetCount": 6,
+        "textureUuidKeys": [
+          "15c250e9e"
+        ]
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/03a4cca66.76cc9.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/props__pack_24.json",
+      "materializedRelativePath": "import/_packs/tex/props__pack_24.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex"
+        ],
+        "primaryLeafName": "道具",
+        "assetCount": 24,
+        "textureUuidKeys": [
+          "13a4cca66"
+        ]
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/0494ec16-4da2-4b69-b7ec-b42b369e33f7.e8f5b.json",
+      "semanticRelativePath": "__semantic__/prefab/ShareUI.json",
+      "materializedRelativePath": "import/prefab/ShareUI.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/ShareUI"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/04a8798ac.3f7b0.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/props/shuffle__pack_16.json",
+      "materializedRelativePath": "import/_packs/tex/props/shuffle__pack_16.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "道具"
+        ],
+        "primaryLeafName": "打乱",
+        "assetCount": 16,
+        "textureUuidKeys": [
+          "1c4c5cdf1"
+        ]
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/04b387916.33a73.json",
+      "semanticRelativePath": "__semantic__/_packs/prefab/OverUI/reviveNumber__pack_2.json",
+      "materializedRelativePath": "import/_packs/prefab/OverUI/reviveNumber__pack_2.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "prefab",
+          "OverUI"
+        ],
+        "primaryLeafName": "复活数字",
+        "assetCount": 2,
+        "textureUuidKeys": []
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/052454659.70912.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/levelCompletePage/halo__pack_12.json",
+      "materializedRelativePath": "import/_packs/tex/levelCompletePage/halo__pack_12.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "过关页面"
+        ],
+        "primaryLeafName": "光圈",
+        "assetCount": 12,
+        "textureUuidKeys": [
+          "152454659"
+        ]
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/0624fb9f0.edd3e.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/startUnlock/unlock__pack_10.json",
+      "materializedRelativePath": "import/_packs/tex/startUnlock/unlock__pack_10.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "开局解锁"
+        ],
+        "primaryLeafName": "解锁",
+        "assetCount": 10,
+        "textureUuidKeys": [
+          "1624fb9f0"
+        ]
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/0756253c6.7ea42.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/levelCompletePage/successProgress/silhouette__pack_34.json",
+      "materializedRelativePath": "import/_packs/tex/levelCompletePage/successProgress/silhouette__pack_34.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "过关页面",
+          "成功进度"
+        ],
+        "primaryLeafName": "剪影",
+        "assetCount": 34,
+        "textureUuidKeys": [
+          "1a08c225f"
+        ]
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/07fa6a7f4.d2817.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/book/duck/y1__pack_48.json",
+      "materializedRelativePath": "import/_packs/tex/book/duck/y1__pack_48.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "book",
+          "duck"
+        ],
+        "primaryLeafName": "y1",
+        "assetCount": 48,
+        "textureUuidKeys": [
+          "17fa6a7f4"
+        ]
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/08df2582e.7b181.json",
+      "semanticRelativePath": "__semantic__/_packs/pack/callFriend__pack_15.json",
+      "materializedRelativePath": "import/_packs/pack/callFriend__pack_15.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [],
+        "primaryLeafName": "喊人",
+        "assetCount": 15,
+        "textureUuidKeys": [
+          "17f9bf2d5"
+        ]
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/093044ba5.2aa03.json",
+      "semanticRelativePath": "__semantic__/_packs/prefab/SuccessUI/arm__pack_21.json",
+      "materializedRelativePath": "import/_packs/prefab/SuccessUI/arm__pack_21.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "prefab",
+          "SuccessUI"
+        ],
+        "primaryLeafName": "arm",
+        "assetCount": 21,
+        "textureUuidKeys": []
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/093c593ec.2a242.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/settingsDialog/duckSetText__pack_12.json",
+      "materializedRelativePath": "import/_packs/tex/settingsDialog/duckSetText__pack_12.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "settingsDialog"
+        ],
+        "primaryLeafName": "duckSetText",
+        "assetCount": 12,
+        "textureUuidKeys": [
+          "193c593ec"
+        ]
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/09c0a018-4991-4b44-8f30-0783f03ffa16@f9941.4983f.json",
+      "semanticRelativePath": "__semantic__/tex/levelCompletePage/successProgress/hundredDucksToKun/spriteFrame.json",
+      "materializedRelativePath": "import/tex/levelCompletePage/successProgress/hundredDucksToKun/spriteFrame.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/过关页面/成功进度/百鸭朝鲲/spriteFrame"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/09dd2415e.263f3.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/homeAssets/addToDesktop/text__pack_8.json",
+      "materializedRelativePath": "import/_packs/tex/homeAssets/addToDesktop/text__pack_8.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "主页素材",
+          "添加桌面"
+        ],
+        "primaryLeafName": "字",
+        "assetCount": 8,
+        "textureUuidKeys": [
+          "19dd2415e"
+        ]
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/0a10d91be.16d4a.json",
+      "semanticRelativePath": "__semantic__/restoredNames/uiSharedAtlas.json",
+      "materializedRelativePath": "import/restoredNames/uiSharedAtlas.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "恢复命名/UI共享贴图图集"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/0a38894c-9efd-4112-8fc6-1d772ce7cf70.a2533.json",
+      "semanticRelativePath": "__semantic__/restoredNames/whiteNumberStrip.json",
+      "materializedRelativePath": "import/restoredNames/whiteNumberStrip.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "恢复命名/白色数字条"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/0a4a85965.8de44.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/failPage/bottom1__pack_14.json",
+      "materializedRelativePath": "import/_packs/tex/failPage/bottom1__pack_14.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "失败页面"
+        ],
+        "primaryLeafName": "底1",
+        "assetCount": 14,
+        "textureUuidKeys": [
+          "1a4a85965"
+        ]
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/0b11118e2.28a6b.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/homeAssets/leaderboard/rankPrefix__pack_22.json",
+      "materializedRelativePath": "import/_packs/tex/homeAssets/leaderboard/rankPrefix__pack_22.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "主页素材",
+          "排行榜"
+        ],
+        "primaryLeafName": "第",
+        "assetCount": 22,
+        "textureUuidKeys": [
+          "1b11118e2"
+        ]
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/0b2a14f2b.387cc.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/revive/percent__pack_16.json",
+      "materializedRelativePath": "import/_packs/tex/revive/percent__pack_16.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "复活"
+        ],
+        "primaryLeafName": "%",
+        "assetCount": 16,
+        "textureUuidKeys": [
+          "1353ef82c"
+        ]
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/0b966a368.6b48b.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/homeAssets/shareReward/shareBadge__pack_14.json",
+      "materializedRelativePath": "import/_packs/tex/homeAssets/shareReward/shareBadge__pack_14.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "主页素材",
+          "分享有奖"
+        ],
+        "primaryLeafName": "分享标",
+        "assetCount": 14,
+        "textureUuidKeys": [
+          "115216800"
+        ]
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/0ba0f9046.72a19.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/homeAssets/sidebar/entryGift__pack_4.json",
+      "materializedRelativePath": "import/_packs/tex/homeAssets/sidebar/entryGift__pack_4.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "主页素材",
+          "侧边栏"
+        ],
+        "primaryLeafName": "入口有礼",
+        "assetCount": 4,
+        "textureUuidKeys": [
+          "1ba0f9046"
+        ]
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/0c25ecc07.130da.json",
+      "semanticRelativePath": "__semantic__/_packs/staminaCount/staminaCount__pack_1.json",
+      "materializedRelativePath": "import/_packs/staminaCount/staminaCount__pack_1.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "体力数"
+        ],
+        "primaryLeafName": "体力数",
+        "assetCount": 1,
+        "textureUuidKeys": []
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/0cf9b8bfe.8925c.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/share__pack_22.json",
+      "materializedRelativePath": "import/_packs/tex/share__pack_22.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex"
+        ],
+        "primaryLeafName": "分享",
+        "assetCount": 22,
+        "textureUuidKeys": [
+          "1cf9b8bfe"
+        ]
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/0d013c7af.7c079.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/book/duck/y4__pack_44.json",
+      "materializedRelativePath": "import/_packs/tex/book/duck/y4__pack_44.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "book",
+          "duck"
+        ],
+        "primaryLeafName": "y4",
+        "assetCount": 44,
+        "textureUuidKeys": [
+          "1d013c7af"
+        ]
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/0d8faeafa.f5f0a.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/book/tex/bottom__pack_30.json",
+      "materializedRelativePath": "import/_packs/tex/book/tex/bottom__pack_30.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "book",
+          "tex"
+        ],
+        "primaryLeafName": "底",
+        "assetCount": 30,
+        "textureUuidKeys": [
+          "1d8faeafa"
+        ]
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/0e53c456f.e2bcf.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/close__pack_28.json",
+      "materializedRelativePath": "import/_packs/tex/close__pack_28.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex"
+        ],
+        "primaryLeafName": "×",
+        "assetCount": 28,
+        "textureUuidKeys": [
+          "1cfb4391b"
+        ]
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/0e7790d59.eb634.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/banner__pack_20.json",
+      "materializedRelativePath": "import/_packs/tex/banner__pack_20.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex"
+        ],
+        "primaryLeafName": "横幅",
+        "assetCount": 20,
+        "textureUuidKeys": [
+          "1972c63c0"
+        ]
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/0e8aed288.d7fa8.json",
+      "semanticRelativePath": "__semantic__/_packs/gooseSuccessNumber/gooseSuccessNumber__pack_1.json",
+      "materializedRelativePath": "import/_packs/gooseSuccessNumber/gooseSuccessNumber__pack_1.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "成功成鹅数字"
+        ],
+        "primaryLeafName": "成功成鹅数字",
+        "assetCount": 1,
+        "textureUuidKeys": []
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/0ed51bdd7.c4259.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/book/duck/y26__pack_12.json",
+      "materializedRelativePath": "import/_packs/tex/book/duck/y26__pack_12.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "book",
+          "duck"
+        ],
+        "primaryLeafName": "y26",
+        "assetCount": 12,
+        "textureUuidKeys": [
+          "1ed51bdd7"
+        ]
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/0f268f10f.2f7fe.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/homeAssets/claimReward/glow__pack_12.json",
+      "materializedRelativePath": "import/_packs/tex/homeAssets/claimReward/glow__pack_12.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "主页素材",
+          "领取奖励"
+        ],
+        "primaryLeafName": "光",
+        "assetCount": 12,
+        "textureUuidKeys": [
+          "1f268f10f"
+        ]
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/0f39bd2b3.1b964.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/book/duck/y3__pack_48.json",
+      "materializedRelativePath": "import/_packs/tex/book/duck/y3__pack_48.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "book",
+          "duck"
+        ],
+        "primaryLeafName": "y3",
+        "assetCount": 48,
+        "textureUuidKeys": [
+          "1f39bd2b3"
+        ]
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/0f580c668.ea543.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/book/duck/y7__pack_48.json",
+      "materializedRelativePath": "import/_packs/tex/book/duck/y7__pack_48.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "book",
+          "duck"
+        ],
+        "primaryLeafName": "y7",
+        "assetCount": 48,
+        "textureUuidKeys": [
+          "1f580c668"
+        ]
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/0f9308ab4.8c534.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/autoUi/frame__pack_12.json",
+      "materializedRelativePath": "import/_packs/tex/autoUi/frame__pack_12.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "自动ui"
+        ],
+        "primaryLeafName": "框",
+        "assetCount": 12,
+        "textureUuidKeys": [
+          "1f9308ab4"
+        ]
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/110f053dc.7b51a.json",
+      "semanticRelativePath": "__semantic__/tex/settings/gearIcon__texture_34.json",
+      "materializedRelativePath": "import/tex/settings/gearIcon__texture_34.json",
+      "strategy": "texture-source-import",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "settings"
+        ],
+        "primaryLeafName": "gearIcon",
+        "assetCount": 34,
+        "textureUuidKey": "110f053dc",
+        "packStem": "010f053dc"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/11775311c.8eb65.json",
+      "semanticRelativePath": "__semantic__/tex/failPage/image2__texture_12.json",
+      "materializedRelativePath": "import/tex/failPage/image2__texture_12.json",
+      "strategy": "texture-source-import",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "失败页面"
+        ],
+        "primaryLeafName": "图2",
+        "assetCount": 12,
+        "textureUuidKey": "11775311c",
+        "packStem": "01775311c"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/12300d1e9.dd907.json",
+      "semanticRelativePath": "__semantic__/tex/homeAssets/douyinFollow/follow__texture_6.json",
+      "materializedRelativePath": "import/tex/homeAssets/douyinFollow/follow__texture_6.json",
+      "strategy": "texture-source-import",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "主页素材",
+          "关注抖音"
+        ],
+        "primaryLeafName": "关注",
+        "assetCount": 6,
+        "textureUuidKey": "12300d1e9",
+        "packStem": "02300d1e9"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/128d38f65.bee3b.json",
+      "semanticRelativePath": "__semantic__/tex/failPage/bottom2__texture_4.json",
+      "materializedRelativePath": "import/tex/failPage/bottom2__texture_4.json",
+      "strategy": "texture-source-import",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "失败页面"
+        ],
+        "primaryLeafName": "底2",
+        "assetCount": 4,
+        "textureUuidKey": "128d38f65",
+        "packStem": "028d38f65"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/152454659.9265a.json",
+      "semanticRelativePath": "__semantic__/tex/levelCompletePage/halo__texture_12.json",
+      "materializedRelativePath": "import/tex/levelCompletePage/halo__texture_12.json",
+      "strategy": "texture-source-import",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "过关页面"
+        ],
+        "primaryLeafName": "光圈",
+        "assetCount": 12,
+        "textureUuidKey": "152454659",
+        "packStem": "052454659"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/1624fb9f0.4e4e3.json",
+      "semanticRelativePath": "__semantic__/tex/startUnlock/unlock__texture_10.json",
+      "materializedRelativePath": "import/tex/startUnlock/unlock__texture_10.json",
+      "strategy": "texture-source-import",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "开局解锁"
+        ],
+        "primaryLeafName": "解锁",
+        "assetCount": 10,
+        "textureUuidKey": "1624fb9f0",
+        "packStem": "0624fb9f0"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/17fa6a7f4.dc9ac.json",
+      "semanticRelativePath": "__semantic__/tex/book/duck/y1__texture_48.json",
+      "materializedRelativePath": "import/tex/book/duck/y1__texture_48.json",
+      "strategy": "texture-source-import",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "book",
+          "duck"
+        ],
+        "primaryLeafName": "y1",
+        "assetCount": 48,
+        "textureUuidKey": "17fa6a7f4",
+        "packStem": "07fa6a7f4"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/193c593ec.16913.json",
+      "semanticRelativePath": "__semantic__/tex/settingsDialog/duckSetText__texture_12.json",
+      "materializedRelativePath": "import/tex/settingsDialog/duckSetText__texture_12.json",
+      "strategy": "texture-source-import",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "settingsDialog"
+        ],
+        "primaryLeafName": "duckSetText",
+        "assetCount": 12,
+        "textureUuidKey": "193c593ec",
+        "packStem": "093c593ec"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/19dd2415e.01d6e.json",
+      "semanticRelativePath": "__semantic__/tex/homeAssets/addToDesktop/text__texture_8.json",
+      "materializedRelativePath": "import/tex/homeAssets/addToDesktop/text__texture_8.json",
+      "strategy": "texture-source-import",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "主页素材",
+          "添加桌面"
+        ],
+        "primaryLeafName": "字",
+        "assetCount": 8,
+        "textureUuidKey": "19dd2415e",
+        "packStem": "09dd2415e"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/1a4a85965.13302.json",
+      "semanticRelativePath": "__semantic__/tex/failPage/bottom1__texture_14.json",
+      "materializedRelativePath": "import/tex/failPage/bottom1__texture_14.json",
+      "strategy": "texture-source-import",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "失败页面"
+        ],
+        "primaryLeafName": "底1",
+        "assetCount": 14,
+        "textureUuidKey": "1a4a85965",
+        "packStem": "0a4a85965"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/1b11118e2.bc2cc.json",
+      "semanticRelativePath": "__semantic__/tex/homeAssets/leaderboard/rankPrefix__texture_22.json",
+      "materializedRelativePath": "import/tex/homeAssets/leaderboard/rankPrefix__texture_22.json",
+      "strategy": "texture-source-import",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "主页素材",
+          "排行榜"
+        ],
+        "primaryLeafName": "第",
+        "assetCount": 22,
+        "textureUuidKey": "1b11118e2",
+        "packStem": "0b11118e2"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/1ba0f9046.48629.json",
+      "semanticRelativePath": "__semantic__/tex/homeAssets/sidebar/entryGift__texture_4.json",
+      "materializedRelativePath": "import/tex/homeAssets/sidebar/entryGift__texture_4.json",
+      "strategy": "texture-source-import",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "主页素材",
+          "侧边栏"
+        ],
+        "primaryLeafName": "入口有礼",
+        "assetCount": 4,
+        "textureUuidKey": "1ba0f9046",
+        "packStem": "0ba0f9046"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/1d013c7af.6e728.json",
+      "semanticRelativePath": "__semantic__/tex/book/duck/y4__texture_44.json",
+      "materializedRelativePath": "import/tex/book/duck/y4__texture_44.json",
+      "strategy": "texture-source-import",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "book",
+          "duck"
+        ],
+        "primaryLeafName": "y4",
+        "assetCount": 44,
+        "textureUuidKey": "1d013c7af",
+        "packStem": "0d013c7af"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/1d8faeafa.f1c80.json",
+      "semanticRelativePath": "__semantic__/tex/book/tex/bottom__texture_30.json",
+      "materializedRelativePath": "import/tex/book/tex/bottom__texture_30.json",
+      "strategy": "texture-source-import",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "book",
+          "tex"
+        ],
+        "primaryLeafName": "底",
+        "assetCount": 30,
+        "textureUuidKey": "1d8faeafa",
+        "packStem": "0d8faeafa"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/1ed51bdd7.3cf4d.json",
+      "semanticRelativePath": "__semantic__/tex/book/duck/y26__texture_12.json",
+      "materializedRelativePath": "import/tex/book/duck/y26__texture_12.json",
+      "strategy": "texture-source-import",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "book",
+          "duck"
+        ],
+        "primaryLeafName": "y26",
+        "assetCount": 12,
+        "textureUuidKey": "1ed51bdd7",
+        "packStem": "0ed51bdd7"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/1f268f10f.41d17.json",
+      "semanticRelativePath": "__semantic__/tex/homeAssets/claimReward/glow__texture_12.json",
+      "materializedRelativePath": "import/tex/homeAssets/claimReward/glow__texture_12.json",
+      "strategy": "texture-source-import",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "主页素材",
+          "领取奖励"
+        ],
+        "primaryLeafName": "光",
+        "assetCount": 12,
+        "textureUuidKey": "1f268f10f",
+        "packStem": "0f268f10f"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/1f39bd2b3.391fb.json",
+      "semanticRelativePath": "__semantic__/tex/book/duck/y3__texture_48.json",
+      "materializedRelativePath": "import/tex/book/duck/y3__texture_48.json",
+      "strategy": "texture-source-import",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "book",
+          "duck"
+        ],
+        "primaryLeafName": "y3",
+        "assetCount": 48,
+        "textureUuidKey": "1f39bd2b3",
+        "packStem": "0f39bd2b3"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/1f580c668.dc9ac.json",
+      "semanticRelativePath": "__semantic__/tex/book/duck/y7__texture_48.json",
+      "materializedRelativePath": "import/tex/book/duck/y7__texture_48.json",
+      "strategy": "texture-source-import",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "book",
+          "duck"
+        ],
+        "primaryLeafName": "y7",
+        "assetCount": 48,
+        "textureUuidKey": "1f580c668",
+        "packStem": "0f580c668"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/1f9308ab4.5f411.json",
+      "semanticRelativePath": "__semantic__/tex/autoUi/frame__texture_12.json",
+      "materializedRelativePath": "import/tex/autoUi/frame__texture_12.json",
+      "strategy": "texture-source-import",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "自动ui"
+        ],
+        "primaryLeafName": "框",
+        "assetCount": 12,
+        "textureUuidKey": "1f9308ab4",
+        "packStem": "0f9308ab4"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/20dab5d0-b854-4e4f-96de-c6480aeef022.a916e.json",
+      "semanticRelativePath": "__semantic__/prefab/AddTableUI.json",
+      "materializedRelativePath": "import/prefab/AddTableUI.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/AddTableUI"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/2371cd49-e100-478f-ab62-6d283a5cd324.5dee8.json",
+      "semanticRelativePath": "__semantic__/prefab/MoreGameUI.json",
+      "materializedRelativePath": "import/prefab/MoreGameUI.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/MoreGameUI"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/24d408d8-58d9-4894-8c1f-3c7443ca4a53.b391d.json",
+      "semanticRelativePath": "__semantic__/prefab/ReportUI.json",
+      "materializedRelativePath": "import/prefab/ReportUI.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/ReportUI"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/2542624d-150f-4c80-944d-3e39bbfa60ff.ba872.json",
+      "semanticRelativePath": "__semantic__/prefab/SubscribeUI.json",
+      "materializedRelativePath": "import/prefab/SubscribeUI.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/SubscribeUI"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/2b0cdada-4ba4-444c-ad27-3d4b189db4a4.a2533.json",
+      "semanticRelativePath": "__semantic__/restoredNames/whiteHorizontalBar.json",
+      "materializedRelativePath": "import/restoredNames/whiteHorizontalBar.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "恢复命名/白色横线条"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/2ee57789-14b4-428a-a844-87e147a97828.c1c70.json",
+      "semanticRelativePath": "__semantic__/prefab/AwemeUI.json",
+      "materializedRelativePath": "import/prefab/AwemeUI.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/AwemeUI"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/33cd451a-34f3-40ab-964f-016cbb981d33.bcf07.json",
+      "semanticRelativePath": "__semantic__/prefab/BookUI.json",
+      "materializedRelativePath": "import/prefab/BookUI.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/BookUI"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/3622c7ab-dfee-4d69-b860-a79e34d19665.25f40.json",
+      "semanticRelativePath": "__semantic__/prefab/ReceiveUI.json",
+      "materializedRelativePath": "import/prefab/ReceiveUI.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/ReceiveUI"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/36962ee5-4214-4be0-b0be-f541eee57ce7.f1b86.json",
+      "semanticRelativePath": "__semantic__/prefab/ShareFriendUI.json",
+      "materializedRelativePath": "import/prefab/ShareFriendUI.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/ShareFriendUI"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/4c518408-73ae-45c9-a35a-ddd8ac84b03f.7b841.bin",
+      "semanticRelativePath": "__semantic__/animation/light.bin",
+      "materializedRelativePath": "import/animation/light.bin",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "animation/light"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/5326e2c7-44c7-46b9-add9-b9e521329dd3.789b2.json",
+      "semanticRelativePath": "__semantic__/prefab/itemPigeon.json",
+      "materializedRelativePath": "import/prefab/itemPigeon.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/itemPigeon"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/68ced577-3835-4979-b7c9-70486be31eeb.3baf5.json",
+      "semanticRelativePath": "__semantic__/prefab/OverPigeonUI.json",
+      "materializedRelativePath": "import/prefab/OverPigeonUI.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/OverPigeonUI"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/73c92e94-66a1-4008-972e-d482dbc99d23.083b5.json",
+      "semanticRelativePath": "__semantic__/prefab/item.json",
+      "materializedRelativePath": "import/prefab/item.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/item"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/7fdb7ea3-9b1c-4904-903d-ea92a2d23b5c.c84e6.json",
+      "semanticRelativePath": "__semantic__/prefab/BookPigeonUI.json",
+      "materializedRelativePath": "import/prefab/BookPigeonUI.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/BookPigeonUI"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/82435979-ebfe-4d69-b686-718de938f8e0.92e9b.json",
+      "semanticRelativePath": "__semantic__/prefab/SuccessPigeonUI.json",
+      "materializedRelativePath": "import/prefab/SuccessPigeonUI.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/SuccessPigeonUI"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/8add52a5-38a7-4c16-a3a6-ee57ff91fa99.7dc3a.json",
+      "semanticRelativePath": "__semantic__/prefab/setBtn.json",
+      "materializedRelativePath": "import/prefab/setBtn.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/setBtn"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/8df67291-b143-40a9-ad2e-735aa9b0d670.063dc.json",
+      "semanticRelativePath": "__semantic__/prefab/SetUI.json",
+      "materializedRelativePath": "import/prefab/SetUI.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/SetUI"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/9387f15a-a774-489d-bd70-1992fb03dc1e.ee391.json",
+      "semanticRelativePath": "__semantic__/prefab/RankUI.json",
+      "materializedRelativePath": "import/prefab/RankUI.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/RankUI"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/94e5df92-e5e5-4726-81c2-f88e64702ba1.05c2b.json",
+      "semanticRelativePath": "__semantic__/prefab/SideBarUI.json",
+      "materializedRelativePath": "import/prefab/SideBarUI.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/SideBarUI"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/955c4145-c371-4d50-865b-4fd83f923889.a2533.json",
+      "semanticRelativePath": "__semantic__/fullAnimation/Done_for_eat.json",
+      "materializedRelativePath": "import/fullAnimation/Done_for_eat.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "吃饱动画/Done for eat"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/9619e590-23a0-4f73-b149-e25f4b0e79df.cef8a.json",
+      "semanticRelativePath": "__semantic__/prefab/AddPowerPanel.json",
+      "materializedRelativePath": "import/prefab/AddPowerPanel.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/AddPowerPanel"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/9695f9d0-da8e-4faf-9b38-548bc4606012.79fe7.json",
+      "semanticRelativePath": "__semantic__/prefab/ReviveUI.json",
+      "materializedRelativePath": "import/prefab/ReviveUI.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/ReviveUI"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/a4f2ba7a-f568-47af-a126-a27be8bea93e.a2533.json",
+      "semanticRelativePath": "__semantic__/restoredNames/blackOutlineNumberStrip.json",
+      "materializedRelativePath": "import/restoredNames/blackOutlineNumberStrip.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "恢复命名/黑边数字条"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/b02a8f5d-6d33-4b03-9dd8-a36fe3d622f3.5f6bb.json",
+      "semanticRelativePath": "__semantic__/prefab/Set2UI.json",
+      "materializedRelativePath": "import/prefab/Set2UI.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/Set2UI"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/c1ccaf33-4202-4d1e-8d73-ec200ed273c0.13885.json",
+      "semanticRelativePath": "__semantic__/prefab/AddProgramPanel.json",
+      "materializedRelativePath": "import/prefab/AddProgramPanel.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/AddProgramPanel"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/dc15a70b-ec44-4066-8a18-51c43e81d1e8.7ff65.json",
+      "semanticRelativePath": "__semantic__/prefab/PropUI.json",
+      "materializedRelativePath": "import/prefab/PropUI.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/PropUI"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/e0fcc15d-607e-4c7f-86da-692ee4c4efca.27b45.json",
+      "semanticRelativePath": "__semantic__/prefab/itemSpecial.json",
+      "materializedRelativePath": "import/prefab/itemSpecial.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/itemSpecial"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/e5f3648c-03cb-4cb9-a79c-84135ac3c304.26f6e.json",
+      "semanticRelativePath": "__semantic__/prefab/powerBox.json",
+      "materializedRelativePath": "import/prefab/powerBox.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/powerBox"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/fa3128ca-9242-4db1-aa4b-f4d7c1666627.8c766.json",
+      "semanticRelativePath": "__semantic__/prefab/share_lose.json",
+      "materializedRelativePath": "import/prefab/share_lose.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/share_lose"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/fd24bf72-c08b-4699-a822-a92c63bcb42b.a2533.json",
+      "semanticRelativePath": "__semantic__/restoredNames/whiteBlockStrip.json",
+      "materializedRelativePath": "import/restoredNames/whiteBlockStrip.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "恢复命名/白色块状条"
+      }
+    }
+  ],
+  "nativeAliases": [
+    {
+      "kind": "native",
+      "originalRelativePath": "native/0a38894c-9efd-4112-8fc6-1d772ce7cf70.612a0.png",
+      "semanticRelativePath": "__semantic__/restoredNames/whiteNumberStrip.png",
+      "materializedRelativePath": "native/restoredNames/whiteNumberStrip.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "恢复命名/白色数字条"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/110f053dc.60f9d.png",
+      "semanticRelativePath": "__semantic__/tex/settings/gearIcon__texture_34.png",
+      "materializedRelativePath": "native/tex/settings/gearIcon__texture_34.png",
+      "strategy": "texture-source-from-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "settings"
+        ],
+        "primaryLeafName": "gearIcon",
+        "assetCount": 34,
+        "textureUuidKey": "110f053dc",
+        "packStem": "010f053dc"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/11775311c.7f6b6.png",
+      "semanticRelativePath": "__semantic__/tex/failPage/image2__texture_12.png",
+      "materializedRelativePath": "native/tex/failPage/image2__texture_12.png",
+      "strategy": "texture-source-from-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "失败页面"
+        ],
+        "primaryLeafName": "图2",
+        "assetCount": 12,
+        "textureUuidKey": "11775311c",
+        "packStem": "01775311c"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/12300d1e9.f211e.png",
+      "semanticRelativePath": "__semantic__/tex/homeAssets/douyinFollow/follow__texture_6.png",
+      "materializedRelativePath": "native/tex/homeAssets/douyinFollow/follow__texture_6.png",
+      "strategy": "texture-source-from-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "主页素材",
+          "关注抖音"
+        ],
+        "primaryLeafName": "关注",
+        "assetCount": 6,
+        "textureUuidKey": "12300d1e9",
+        "packStem": "02300d1e9"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/128d38f65.97cc6.png",
+      "semanticRelativePath": "__semantic__/tex/failPage/bottom2__texture_4.png",
+      "materializedRelativePath": "native/tex/failPage/bottom2__texture_4.png",
+      "strategy": "texture-source-from-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "失败页面"
+        ],
+        "primaryLeafName": "底2",
+        "assetCount": 4,
+        "textureUuidKey": "128d38f65",
+        "packStem": "028d38f65"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/152454659.56575.png",
+      "semanticRelativePath": "__semantic__/tex/levelCompletePage/halo__texture_12.png",
+      "materializedRelativePath": "native/tex/levelCompletePage/halo__texture_12.png",
+      "strategy": "texture-source-from-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "过关页面"
+        ],
+        "primaryLeafName": "光圈",
+        "assetCount": 12,
+        "textureUuidKey": "152454659",
+        "packStem": "052454659"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/1624fb9f0.ec36f.png",
+      "semanticRelativePath": "__semantic__/tex/startUnlock/unlock__texture_10.png",
+      "materializedRelativePath": "native/tex/startUnlock/unlock__texture_10.png",
+      "strategy": "texture-source-from-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "开局解锁"
+        ],
+        "primaryLeafName": "解锁",
+        "assetCount": 10,
+        "textureUuidKey": "1624fb9f0",
+        "packStem": "0624fb9f0"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/17fa6a7f4.9a077.png",
+      "semanticRelativePath": "__semantic__/tex/book/duck/y1__texture_48.png",
+      "materializedRelativePath": "native/tex/book/duck/y1__texture_48.png",
+      "strategy": "texture-source-from-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "book",
+          "duck"
+        ],
+        "primaryLeafName": "y1",
+        "assetCount": 48,
+        "textureUuidKey": "17fa6a7f4",
+        "packStem": "07fa6a7f4"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/193c593ec.0e409.png",
+      "semanticRelativePath": "__semantic__/tex/settingsDialog/duckSetText__texture_12.png",
+      "materializedRelativePath": "native/tex/settingsDialog/duckSetText__texture_12.png",
+      "strategy": "texture-source-from-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "settingsDialog"
+        ],
+        "primaryLeafName": "duckSetText",
+        "assetCount": 12,
+        "textureUuidKey": "193c593ec",
+        "packStem": "093c593ec"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/19dd2415e.90b60.png",
+      "semanticRelativePath": "__semantic__/tex/homeAssets/addToDesktop/text__texture_8.png",
+      "materializedRelativePath": "native/tex/homeAssets/addToDesktop/text__texture_8.png",
+      "strategy": "texture-source-from-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "主页素材",
+          "添加桌面"
+        ],
+        "primaryLeafName": "字",
+        "assetCount": 8,
+        "textureUuidKey": "19dd2415e",
+        "packStem": "09dd2415e"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/1a4a85965.246ba.png",
+      "semanticRelativePath": "__semantic__/tex/failPage/bottom1__texture_14.png",
+      "materializedRelativePath": "native/tex/failPage/bottom1__texture_14.png",
+      "strategy": "texture-source-from-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "失败页面"
+        ],
+        "primaryLeafName": "底1",
+        "assetCount": 14,
+        "textureUuidKey": "1a4a85965",
+        "packStem": "0a4a85965"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/1b11118e2.f3049.png",
+      "semanticRelativePath": "__semantic__/tex/homeAssets/leaderboard/rankPrefix__texture_22.png",
+      "materializedRelativePath": "native/tex/homeAssets/leaderboard/rankPrefix__texture_22.png",
+      "strategy": "texture-source-from-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "主页素材",
+          "排行榜"
+        ],
+        "primaryLeafName": "第",
+        "assetCount": 22,
+        "textureUuidKey": "1b11118e2",
+        "packStem": "0b11118e2"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/1ba0f9046.e01a7.png",
+      "semanticRelativePath": "__semantic__/tex/homeAssets/sidebar/entryGift__texture_4.png",
+      "materializedRelativePath": "native/tex/homeAssets/sidebar/entryGift__texture_4.png",
+      "strategy": "texture-source-from-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "主页素材",
+          "侧边栏"
+        ],
+        "primaryLeafName": "入口有礼",
+        "assetCount": 4,
+        "textureUuidKey": "1ba0f9046",
+        "packStem": "0ba0f9046"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/1d013c7af.e1b65.png",
+      "semanticRelativePath": "__semantic__/tex/book/duck/y4__texture_44.png",
+      "materializedRelativePath": "native/tex/book/duck/y4__texture_44.png",
+      "strategy": "texture-source-from-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "book",
+          "duck"
+        ],
+        "primaryLeafName": "y4",
+        "assetCount": 44,
+        "textureUuidKey": "1d013c7af",
+        "packStem": "0d013c7af"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/1d8faeafa.4ce55.png",
+      "semanticRelativePath": "__semantic__/tex/book/tex/bottom__texture_30.png",
+      "materializedRelativePath": "native/tex/book/tex/bottom__texture_30.png",
+      "strategy": "texture-source-from-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "book",
+          "tex"
+        ],
+        "primaryLeafName": "底",
+        "assetCount": 30,
+        "textureUuidKey": "1d8faeafa",
+        "packStem": "0d8faeafa"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/1ed51bdd7.3de85.png",
+      "semanticRelativePath": "__semantic__/tex/book/duck/y26__texture_12.png",
+      "materializedRelativePath": "native/tex/book/duck/y26__texture_12.png",
+      "strategy": "texture-source-from-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "book",
+          "duck"
+        ],
+        "primaryLeafName": "y26",
+        "assetCount": 12,
+        "textureUuidKey": "1ed51bdd7",
+        "packStem": "0ed51bdd7"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/1f268f10f.1b510.png",
+      "semanticRelativePath": "__semantic__/tex/homeAssets/claimReward/glow__texture_12.png",
+      "materializedRelativePath": "native/tex/homeAssets/claimReward/glow__texture_12.png",
+      "strategy": "texture-source-from-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "主页素材",
+          "领取奖励"
+        ],
+        "primaryLeafName": "光",
+        "assetCount": 12,
+        "textureUuidKey": "1f268f10f",
+        "packStem": "0f268f10f"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/1f39bd2b3.e8e98.png",
+      "semanticRelativePath": "__semantic__/tex/book/duck/y3__texture_48.png",
+      "materializedRelativePath": "native/tex/book/duck/y3__texture_48.png",
+      "strategy": "texture-source-from-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "book",
+          "duck"
+        ],
+        "primaryLeafName": "y3",
+        "assetCount": 48,
+        "textureUuidKey": "1f39bd2b3",
+        "packStem": "0f39bd2b3"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/1f580c668.d26ed.png",
+      "semanticRelativePath": "__semantic__/tex/book/duck/y7__texture_48.png",
+      "materializedRelativePath": "native/tex/book/duck/y7__texture_48.png",
+      "strategy": "texture-source-from-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "book",
+          "duck"
+        ],
+        "primaryLeafName": "y7",
+        "assetCount": 48,
+        "textureUuidKey": "1f580c668",
+        "packStem": "0f580c668"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/1f9308ab4.67e70.png",
+      "semanticRelativePath": "__semantic__/tex/autoUi/frame__texture_12.png",
+      "materializedRelativePath": "native/tex/autoUi/frame__texture_12.png",
+      "strategy": "texture-source-from-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "自动ui"
+        ],
+        "primaryLeafName": "框",
+        "assetCount": 12,
+        "textureUuidKey": "1f9308ab4",
+        "packStem": "0f9308ab4"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/2b0cdada-4ba4-444c-ad27-3d4b189db4a4.5502a.png",
+      "semanticRelativePath": "__semantic__/restoredNames/whiteHorizontalBar.png",
+      "materializedRelativePath": "native/restoredNames/whiteHorizontalBar.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "恢复命名/白色横线条"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/955c4145-c371-4d50-865b-4fd83f923889.8d3b5.png",
+      "semanticRelativePath": "__semantic__/fullAnimation/Done_for_eat.png",
+      "materializedRelativePath": "native/fullAnimation/Done_for_eat.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "吃饱动画/Done for eat"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/a4f2ba7a-f568-47af-a126-a27be8bea93e.dc356.png",
+      "semanticRelativePath": "__semantic__/restoredNames/blackOutlineNumberStrip.png",
+      "materializedRelativePath": "native/restoredNames/blackOutlineNumberStrip.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "恢复命名/黑边数字条"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/fd24bf72-c08b-4699-a822-a92c63bcb42b.212c8.png",
+      "semanticRelativePath": "__semantic__/restoredNames/whiteBlockStrip.png",
+      "materializedRelativePath": "native/restoredNames/whiteBlockStrip.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "恢复命名/白色块状条"
+      }
+    }
+  ],
+  "unresolvedImports": [],
+  "unresolvedNative": []
+}

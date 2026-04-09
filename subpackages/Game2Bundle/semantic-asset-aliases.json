@@ -1,0 +1,923 @@
+{
+  "bundleName": "Game2Bundle",
+  "generatedAt": "2026-04-09T04:17:18.596Z",
+  "importAliases": [
+    {
+      "kind": "import",
+      "originalRelativePath": "import/018ba27f0.b241d.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/remaining__pack_11.json",
+      "materializedRelativePath": "import/_packs/tex/remaining__pack_11.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex"
+        ],
+        "primaryLeafName": "剩余",
+        "assetCount": 11,
+        "textureUuidKeys": []
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/04347e9f-92dc-4a0d-8650-1a2e1a5676f1.8d917.json",
+      "semanticRelativePath": "__semantic__/prefab/fruit14.json",
+      "materializedRelativePath": "import/prefab/fruit14.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/fruit14"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/064e4764d.af1d3.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/fruit/randomFruit__pack_72.json",
+      "materializedRelativePath": "import/_packs/tex/fruit/randomFruit__pack_72.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "fruit"
+        ],
+        "primaryLeafName": "随机水果",
+        "assetCount": 72,
+        "textureUuidKeys": [
+          "164e4764d"
+        ]
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/094fe2b70.6217c.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/fruitShadow/fruitShadow1__pack_64.json",
+      "materializedRelativePath": "import/_packs/tex/fruitShadow/fruitShadow1__pack_64.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "fruitShadow"
+        ],
+        "primaryLeafName": "fruitShadow1",
+        "assetCount": 64,
+        "textureUuidKeys": [
+          "194fe2b70"
+        ]
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/097fea458.3a271.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/unlockProgress/game2_s1__pack_14.json",
+      "materializedRelativePath": "import/_packs/tex/unlockProgress/game2_s1__pack_14.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "解锁进度"
+        ],
+        "primaryLeafName": "game2_s1",
+        "assetCount": 14,
+        "textureUuidKeys": [
+          "197fea458"
+        ]
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/0ab23018-5863-4aa5-9a81-98767146624b.d7508.json",
+      "semanticRelativePath": "__semantic__/prefab/fruit34.json",
+      "materializedRelativePath": "import/prefab/fruit34.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/fruit34"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/0f648df8a.bc71f.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/fruitShadow/fruitShadow16__pack_4.json",
+      "materializedRelativePath": "import/_packs/tex/fruitShadow/fruitShadow16__pack_4.json",
+      "strategy": "import-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "fruitShadow"
+        ],
+        "primaryLeafName": "fruitShadow16",
+        "assetCount": 4,
+        "textureUuidKeys": [
+          "1f648df8a"
+        ]
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/1024541f-022d-4a4a-819a-e04b2fddb93b.8958a.json",
+      "semanticRelativePath": "__semantic__/prefab/fruit29.json",
+      "materializedRelativePath": "import/prefab/fruit29.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/fruit29"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/13fe0656-aa95-45bb-ac0d-01c749038722.bab33.json",
+      "semanticRelativePath": "__semantic__/prefab/fruit2.json",
+      "materializedRelativePath": "import/prefab/fruit2.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/fruit2"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/164e4764d.890c7.json",
+      "semanticRelativePath": "__semantic__/tex/fruit/randomFruit__texture_72.json",
+      "materializedRelativePath": "import/tex/fruit/randomFruit__texture_72.json",
+      "strategy": "texture-source-import",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "fruit"
+        ],
+        "primaryLeafName": "随机水果",
+        "assetCount": 72,
+        "textureUuidKey": "164e4764d",
+        "packStem": "064e4764d"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/1673fb44-6b76-40f8-a0d4-13b4dc742b6b.3b3b6.json",
+      "semanticRelativePath": "__semantic__/prefab/fruit6.json",
+      "materializedRelativePath": "import/prefab/fruit6.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/fruit6"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/194fe2b70.fe3de.json",
+      "semanticRelativePath": "__semantic__/tex/fruitShadow/fruitShadow1__texture_64.json",
+      "materializedRelativePath": "import/tex/fruitShadow/fruitShadow1__texture_64.json",
+      "strategy": "texture-source-import",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "fruitShadow"
+        ],
+        "primaryLeafName": "fruitShadow1",
+        "assetCount": 64,
+        "textureUuidKey": "194fe2b70",
+        "packStem": "094fe2b70"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/197fea458.55534.json",
+      "semanticRelativePath": "__semantic__/tex/unlockProgress/game2_s1__texture_14.json",
+      "materializedRelativePath": "import/tex/unlockProgress/game2_s1__texture_14.json",
+      "strategy": "texture-source-import",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "解锁进度"
+        ],
+        "primaryLeafName": "game2_s1",
+        "assetCount": 14,
+        "textureUuidKey": "197fea458",
+        "packStem": "097fea458"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/1c169947-9a9e-480e-ae4a-140c6c43d8aa.a2533.json",
+      "semanticRelativePath": "__semantic__/tex/props/removeFruitFromSlot/spriteFrame.json",
+      "materializedRelativePath": "import/tex/props/removeFruitFromSlot/spriteFrame.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/道具/移除槽位中的水果/spriteFrame"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/1c169947-9a9e-480e-ae4a-140c6c43d8aa@f9941.53d91.json",
+      "semanticRelativePath": "__semantic__/tex/props/removeFruitFromSlot/spriteFrame__2.json",
+      "materializedRelativePath": "import/tex/props/removeFruitFromSlot/spriteFrame__2.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/道具/移除槽位中的水果/spriteFrame"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/1de52838-a9e7-4894-a7e5-08709d42acf6.84ba5.json",
+      "semanticRelativePath": "__semantic__/prefab/fruit7.json",
+      "materializedRelativePath": "import/prefab/fruit7.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/fruit7"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/1f648df8a.bb709.json",
+      "semanticRelativePath": "__semantic__/tex/fruitShadow/fruitShadow16__texture_4.json",
+      "materializedRelativePath": "import/tex/fruitShadow/fruitShadow16__texture_4.json",
+      "strategy": "texture-source-import",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "fruitShadow"
+        ],
+        "primaryLeafName": "fruitShadow16",
+        "assetCount": 4,
+        "textureUuidKey": "1f648df8a",
+        "packStem": "0f648df8a"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/23acdc1c-3cfe-402d-9ce0-c8ac381b9aae.0c546.json",
+      "semanticRelativePath": "__semantic__/prefab/fruit22.json",
+      "materializedRelativePath": "import/prefab/fruit22.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/fruit22"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/24619469-c82a-47aa-af86-da1fe67314a9.ca63b.json",
+      "semanticRelativePath": "__semantic__/prefab/fruit1.json",
+      "materializedRelativePath": "import/prefab/fruit1.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/fruit1"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/27e589a4-4bc4-440b-a9fd-ad188eba74f1.a2533.json",
+      "semanticRelativePath": "__semantic__/tex/props/shuffleFruitPositions/spriteFrame.json",
+      "materializedRelativePath": "import/tex/props/shuffleFruitPositions/spriteFrame.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/道具/打乱水果位置/spriteFrame"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/27e589a4-4bc4-440b-a9fd-ad188eba74f1@f9941.4f6f6.json",
+      "semanticRelativePath": "__semantic__/tex/props/shuffleFruitPositions/spriteFrame__2.json",
+      "materializedRelativePath": "import/tex/props/shuffleFruitPositions/spriteFrame__2.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/道具/打乱水果位置/spriteFrame"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/2e1e2f0a-9beb-435d-9ba4-213734640f0e.bb75b.json",
+      "semanticRelativePath": "__semantic__/prefab/fruit28.json",
+      "materializedRelativePath": "import/prefab/fruit28.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/fruit28"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/2e6e94df-891a-4b01-8693-507ae2e8ffb8.c16a8.json",
+      "semanticRelativePath": "__semantic__/tex/background/game2_bg2/spriteFrame.json",
+      "materializedRelativePath": "import/tex/background/game2_bg2/spriteFrame.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/背景/game2_bg2/spriteFrame"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/2e6e94df-891a-4b01-8693-507ae2e8ffb8@f9941.e7d87.json",
+      "semanticRelativePath": "__semantic__/tex/background/game2_bg2/spriteFrame__2.json",
+      "materializedRelativePath": "import/tex/background/game2_bg2/spriteFrame__2.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/背景/game2_bg2/spriteFrame"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/37c6301b-4b77-4042-b1c0-7c260fd57e40.98a01.json",
+      "semanticRelativePath": "__semantic__/prefab/fruit30.json",
+      "materializedRelativePath": "import/prefab/fruit30.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/fruit30"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/43a1c22e-24ba-45e0-86b2-172042f7342f.606a4.json",
+      "semanticRelativePath": "__semantic__/prefab/fruit8.json",
+      "materializedRelativePath": "import/prefab/fruit8.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/fruit8"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/461ede23-9d67-4e1d-b5fa-54a0f67cd3f8.a2533.json",
+      "semanticRelativePath": "__semantic__/tex/unlockProgress2/game3_front/spriteFrame.json",
+      "materializedRelativePath": "import/tex/unlockProgress2/game3_front/spriteFrame.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/解锁进度2/game3_front/spriteFrame"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/461ede23-9d67-4e1d-b5fa-54a0f67cd3f8@f9941.96545.json",
+      "semanticRelativePath": "__semantic__/tex/unlockProgress2/game3_front/spriteFrame__2.json",
+      "materializedRelativePath": "import/tex/unlockProgress2/game3_front/spriteFrame__2.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/解锁进度2/game3_front/spriteFrame"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/4b879138-3aba-4fa7-90b3-d8bc8bd73a0d.a2533.json",
+      "semanticRelativePath": "__semantic__/tex/props/clearTwoFruitGroups/spriteFrame.json",
+      "materializedRelativePath": "import/tex/props/clearTwoFruitGroups/spriteFrame.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/道具/消除2组水果/spriteFrame"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/4b879138-3aba-4fa7-90b3-d8bc8bd73a0d@f9941.d481d.json",
+      "semanticRelativePath": "__semantic__/tex/props/clearTwoFruitGroups/spriteFrame__2.json",
+      "materializedRelativePath": "import/tex/props/clearTwoFruitGroups/spriteFrame__2.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/道具/消除2组水果/spriteFrame"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/57443e27-1074-4cea-b8a5-7bfd5e1db8e6.567ce.json",
+      "semanticRelativePath": "__semantic__/prefab/fruit3.json",
+      "materializedRelativePath": "import/prefab/fruit3.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/fruit3"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/57ea323b-972d-4b9f-a992-a64314549e3d.c16a8.json",
+      "semanticRelativePath": "__semantic__/tex/background/game2_bg3/spriteFrame.json",
+      "materializedRelativePath": "import/tex/background/game2_bg3/spriteFrame.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/背景/game2_bg3/spriteFrame"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/57ea323b-972d-4b9f-a992-a64314549e3d@f9941.79ee4.json",
+      "semanticRelativePath": "__semantic__/tex/background/game2_bg3/spriteFrame__2.json",
+      "materializedRelativePath": "import/tex/background/game2_bg3/spriteFrame__2.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/背景/game2_bg3/spriteFrame"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/62a95d50-bf9b-4e4c-91c3-22feefeba40b.3ef14.json",
+      "semanticRelativePath": "__semantic__/prefab/fruit10.json",
+      "materializedRelativePath": "import/prefab/fruit10.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/fruit10"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/65eb94ce-d146-4f85-a903-e0c1d7c82d9a.a2533.json",
+      "semanticRelativePath": "__semantic__/tex/props/remaining/spriteFrame.json",
+      "materializedRelativePath": "import/tex/props/remaining/spriteFrame.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/道具/剩余/spriteFrame"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/65eb94ce-d146-4f85-a903-e0c1d7c82d9a@f9941.72d84.json",
+      "semanticRelativePath": "__semantic__/tex/props/remaining/spriteFrame__2.json",
+      "materializedRelativePath": "import/tex/props/remaining/spriteFrame__2.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/道具/剩余/spriteFrame"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/6d8f2785-4df6-4529-9f01-9db2fb0c6e7a.c16a8.json",
+      "semanticRelativePath": "__semantic__/tex/background/game2_bg1/spriteFrame.json",
+      "materializedRelativePath": "import/tex/background/game2_bg1/spriteFrame.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/背景/game2_bg1/spriteFrame"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/6d8f2785-4df6-4529-9f01-9db2fb0c6e7a@f9941.6bfb3.json",
+      "semanticRelativePath": "__semantic__/tex/background/game2_bg1/spriteFrame__2.json",
+      "materializedRelativePath": "import/tex/background/game2_bg1/spriteFrame__2.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/背景/game2_bg1/spriteFrame"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/780bee8f-961f-4191-87db-e94da84b8500.0fec0.json",
+      "semanticRelativePath": "__semantic__/prefab/fruit25.json",
+      "materializedRelativePath": "import/prefab/fruit25.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/fruit25"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/7cb2fa78-87be-44ec-b6c4-561f0ea154ea.08a82.json",
+      "semanticRelativePath": "__semantic__/prefab/fruit27.json",
+      "materializedRelativePath": "import/prefab/fruit27.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/fruit27"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/7df16dc8-713b-4f10-b6c9-cffd9588d1d3.c16a8.json",
+      "semanticRelativePath": "__semantic__/tex/background/game2_bg5/spriteFrame.json",
+      "materializedRelativePath": "import/tex/background/game2_bg5/spriteFrame.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/背景/game2_bg5/spriteFrame"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/7df16dc8-713b-4f10-b6c9-cffd9588d1d3@f9941.b300c.json",
+      "semanticRelativePath": "__semantic__/tex/background/game2_bg5/spriteFrame__2.json",
+      "materializedRelativePath": "import/tex/background/game2_bg5/spriteFrame__2.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/背景/game2_bg5/spriteFrame"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/7f5b24e4-9672-4959-8d67-360ba53f959a.b7ccb.json",
+      "semanticRelativePath": "__semantic__/prefab/fruit15.json",
+      "materializedRelativePath": "import/prefab/fruit15.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/fruit15"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/7fb1ee35-1435-49b0-8402-533f7cf284a7.8cd46.json",
+      "semanticRelativePath": "__semantic__/prefab/fruit31.json",
+      "materializedRelativePath": "import/prefab/fruit31.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/fruit31"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/8286460e-60fb-40c2-812b-b06c1409c26f.4ddc3.json",
+      "semanticRelativePath": "__semantic__/prefab/fruit24.json",
+      "materializedRelativePath": "import/prefab/fruit24.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/fruit24"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/84fe3707-9a45-4a32-ac6c-5fb93104b0cf.4cedb.json",
+      "semanticRelativePath": "__semantic__/prefab/fruit20.json",
+      "materializedRelativePath": "import/prefab/fruit20.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/fruit20"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/927461dd-d4b6-4b67-98cf-d176faef6c96.50480.json",
+      "semanticRelativePath": "__semantic__/prefab/fruit5.json",
+      "materializedRelativePath": "import/prefab/fruit5.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/fruit5"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/92a67e7f-c581-40a3-a261-b91ffb28780e.75b57.json",
+      "semanticRelativePath": "__semantic__/prefab/fruit21.json",
+      "materializedRelativePath": "import/prefab/fruit21.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/fruit21"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/9a48e6b5-a47b-416b-8676-fb717c89c27a.2868d.json",
+      "semanticRelativePath": "__semantic__/prefab/fruit13.json",
+      "materializedRelativePath": "import/prefab/fruit13.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/fruit13"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/9ee073b7-77f1-4195-858f-57fd9b453311.c16a8.json",
+      "semanticRelativePath": "__semantic__/tex/background/game2_bg4/spriteFrame.json",
+      "materializedRelativePath": "import/tex/background/game2_bg4/spriteFrame.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/背景/game2_bg4/spriteFrame"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/9ee073b7-77f1-4195-858f-57fd9b453311@f9941.23d30.json",
+      "semanticRelativePath": "__semantic__/tex/background/game2_bg4/spriteFrame__2.json",
+      "materializedRelativePath": "import/tex/background/game2_bg4/spriteFrame__2.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/背景/game2_bg4/spriteFrame"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/a878dfc6-96d1-48a5-91d8-d601150ead87.63145.json",
+      "semanticRelativePath": "__semantic__/prefab/fruit33.json",
+      "materializedRelativePath": "import/prefab/fruit33.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/fruit33"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/abafcb28-5660-4ae1-9c14-5f7182f77570.79cd1.json",
+      "semanticRelativePath": "__semantic__/prefab/fruit17.json",
+      "materializedRelativePath": "import/prefab/fruit17.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/fruit17"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/ad7f34ac-0872-4dc4-b308-ea6210d0d155.924b2.json",
+      "semanticRelativePath": "__semantic__/prefab/fruit19.json",
+      "materializedRelativePath": "import/prefab/fruit19.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/fruit19"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/aea7d889-9a30-49f8-b1f5-aaa6000c1285.7fe1e.json",
+      "semanticRelativePath": "__semantic__/prefab/fruit9.json",
+      "materializedRelativePath": "import/prefab/fruit9.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/fruit9"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/c2552c56-a756-4781-813f-b01d51264b60.0b9de.json",
+      "semanticRelativePath": "__semantic__/prefab/fruit.json",
+      "materializedRelativePath": "import/prefab/fruit.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/fruit"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/cc67b238-98b4-4230-9708-1c8a6bfcbe4f.ffd48.json",
+      "semanticRelativePath": "__semantic__/prefab/fruit23.json",
+      "materializedRelativePath": "import/prefab/fruit23.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/fruit23"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/ce2289e6-85ba-4d3c-ac7d-56acd48a75c8.5c7d6.json",
+      "semanticRelativePath": "__semantic__/prefab/fruit16.json",
+      "materializedRelativePath": "import/prefab/fruit16.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/fruit16"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/d2acc1ed-6ef3-4225-8374-03b43c797624.ecc55.json",
+      "semanticRelativePath": "__semantic__/prefab/fruitHole.json",
+      "materializedRelativePath": "import/prefab/fruitHole.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/fruitHole"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/d431a53a-835d-4024-b2b9-9692ab118a5b.b9f8c.json",
+      "semanticRelativePath": "__semantic__/prefab/fruit4.json",
+      "materializedRelativePath": "import/prefab/fruit4.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/fruit4"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/d7c00a5f-b97b-4af1-bc77-42e03ed2ad8e.f6d5a.json",
+      "semanticRelativePath": "__semantic__/prefab/fruit18.json",
+      "materializedRelativePath": "import/prefab/fruit18.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/fruit18"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/e293d273-1f45-4f34-a5fe-1b16d22b3e37.de659.json",
+      "semanticRelativePath": "__semantic__/prefab/fruit26.json",
+      "materializedRelativePath": "import/prefab/fruit26.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/fruit26"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/e31f7636-38b4-4db1-9c63-c808cc8ed866.7255e.json",
+      "semanticRelativePath": "__semantic__/prefab/fruit12.json",
+      "materializedRelativePath": "import/prefab/fruit12.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/fruit12"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/e6c17672-f134-40d9-bf7c-5169202a5cb4.a2533.json",
+      "semanticRelativePath": "__semantic__/tex/unlockProgress2/game3_s1/spriteFrame.json",
+      "materializedRelativePath": "import/tex/unlockProgress2/game3_s1/spriteFrame.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/解锁进度2/game3_s1/spriteFrame"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/e6c17672-f134-40d9-bf7c-5169202a5cb4@f9941.7d0d7.json",
+      "semanticRelativePath": "__semantic__/tex/unlockProgress2/game3_s1/spriteFrame__2.json",
+      "materializedRelativePath": "import/tex/unlockProgress2/game3_s1/spriteFrame__2.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/解锁进度2/game3_s1/spriteFrame"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/ef091341-8ce5-4982-b0d2-a7ce08574be8.71d01.json",
+      "semanticRelativePath": "__semantic__/prefab/fruit32.json",
+      "materializedRelativePath": "import/prefab/fruit32.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/fruit32"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/f8526120-da72-47d7-a37b-37047d681f36.91df8.json",
+      "semanticRelativePath": "__semantic__/prefab/fruit11.json",
+      "materializedRelativePath": "import/prefab/fruit11.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "prefab/fruit11"
+      }
+    }
+  ],
+  "nativeAliases": [
+    {
+      "kind": "native",
+      "originalRelativePath": "native/164e4764d.8140c.png",
+      "semanticRelativePath": "__semantic__/tex/fruit/randomFruit__texture_72.png",
+      "materializedRelativePath": "native/tex/fruit/randomFruit__texture_72.png",
+      "strategy": "texture-source-from-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "fruit"
+        ],
+        "primaryLeafName": "随机水果",
+        "assetCount": 72,
+        "textureUuidKey": "164e4764d",
+        "packStem": "064e4764d"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/194fe2b70.99882.png",
+      "semanticRelativePath": "__semantic__/tex/fruitShadow/fruitShadow1__texture_64.png",
+      "materializedRelativePath": "native/tex/fruitShadow/fruitShadow1__texture_64.png",
+      "strategy": "texture-source-from-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "fruitShadow"
+        ],
+        "primaryLeafName": "fruitShadow1",
+        "assetCount": 64,
+        "textureUuidKey": "194fe2b70",
+        "packStem": "094fe2b70"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/197fea458.91bf5.png",
+      "semanticRelativePath": "__semantic__/tex/unlockProgress/game2_s1__texture_14.png",
+      "materializedRelativePath": "native/tex/unlockProgress/game2_s1__texture_14.png",
+      "strategy": "texture-source-from-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "解锁进度"
+        ],
+        "primaryLeafName": "game2_s1",
+        "assetCount": 14,
+        "textureUuidKey": "197fea458",
+        "packStem": "097fea458"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/1c169947-9a9e-480e-ae4a-140c6c43d8aa.adf70.png",
+      "semanticRelativePath": "__semantic__/tex/props/removeFruitFromSlot/spriteFrame.png",
+      "materializedRelativePath": "native/tex/props/removeFruitFromSlot/spriteFrame.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/道具/移除槽位中的水果/spriteFrame"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/1f648df8a.8e64d.png",
+      "semanticRelativePath": "__semantic__/tex/fruitShadow/fruitShadow16__texture_4.png",
+      "materializedRelativePath": "native/tex/fruitShadow/fruitShadow16__texture_4.png",
+      "strategy": "texture-source-from-pack",
+      "detail": {
+        "commonPrefixSegments": [
+          "tex",
+          "fruitShadow"
+        ],
+        "primaryLeafName": "fruitShadow16",
+        "assetCount": 4,
+        "textureUuidKey": "1f648df8a",
+        "packStem": "0f648df8a"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/27e589a4-4bc4-440b-a9fd-ad188eba74f1.abf46.png",
+      "semanticRelativePath": "__semantic__/tex/props/shuffleFruitPositions/spriteFrame.png",
+      "materializedRelativePath": "native/tex/props/shuffleFruitPositions/spriteFrame.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/道具/打乱水果位置/spriteFrame"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/2e6e94df-891a-4b01-8693-507ae2e8ffb8.02720.jpg",
+      "semanticRelativePath": "__semantic__/tex/background/game2_bg2/spriteFrame.jpg",
+      "materializedRelativePath": "native/tex/background/game2_bg2/spriteFrame.jpg",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/背景/game2_bg2/spriteFrame"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/461ede23-9d67-4e1d-b5fa-54a0f67cd3f8.8a031.png",
+      "semanticRelativePath": "__semantic__/tex/unlockProgress2/game3_front/spriteFrame.png",
+      "materializedRelativePath": "native/tex/unlockProgress2/game3_front/spriteFrame.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/解锁进度2/game3_front/spriteFrame"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/4b879138-3aba-4fa7-90b3-d8bc8bd73a0d.67c9d.png",
+      "semanticRelativePath": "__semantic__/tex/props/clearTwoFruitGroups/spriteFrame.png",
+      "materializedRelativePath": "native/tex/props/clearTwoFruitGroups/spriteFrame.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/道具/消除2组水果/spriteFrame"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/57ea323b-972d-4b9f-a992-a64314549e3d.0d1ba.jpg",
+      "semanticRelativePath": "__semantic__/tex/background/game2_bg3/spriteFrame.jpg",
+      "materializedRelativePath": "native/tex/background/game2_bg3/spriteFrame.jpg",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/背景/game2_bg3/spriteFrame"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/65eb94ce-d146-4f85-a903-e0c1d7c82d9a.21d9d.png",
+      "semanticRelativePath": "__semantic__/tex/props/remaining/spriteFrame.png",
+      "materializedRelativePath": "native/tex/props/remaining/spriteFrame.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/道具/剩余/spriteFrame"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/6d8f2785-4df6-4529-9f01-9db2fb0c6e7a.14239.jpg",
+      "semanticRelativePath": "__semantic__/tex/background/game2_bg1/spriteFrame.jpg",
+      "materializedRelativePath": "native/tex/background/game2_bg1/spriteFrame.jpg",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/背景/game2_bg1/spriteFrame"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/7df16dc8-713b-4f10-b6c9-cffd9588d1d3.6ca09.jpg",
+      "semanticRelativePath": "__semantic__/tex/background/game2_bg5/spriteFrame.jpg",
+      "materializedRelativePath": "native/tex/background/game2_bg5/spriteFrame.jpg",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/背景/game2_bg5/spriteFrame"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/9ee073b7-77f1-4195-858f-57fd9b453311.ea132.jpg",
+      "semanticRelativePath": "__semantic__/tex/background/game2_bg4/spriteFrame.jpg",
+      "materializedRelativePath": "native/tex/background/game2_bg4/spriteFrame.jpg",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/背景/game2_bg4/spriteFrame"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/e6c17672-f134-40d9-bf7c-5169202a5cb4.6d8fd.png",
+      "semanticRelativePath": "__semantic__/tex/unlockProgress2/game3_s1/spriteFrame.png",
+      "materializedRelativePath": "native/tex/unlockProgress2/game3_s1/spriteFrame.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "tex/解锁进度2/game3_s1/spriteFrame"
+      }
+    }
+  ],
+  "unresolvedImports": [],
+  "unresolvedNative": []
+}
