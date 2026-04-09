@@ -38,6 +38,20 @@ const MANUAL_CANONICAL_PATH_OVERRIDES = {
   DuckBundle: {
     "1f7f18b6-3401-4aba-90ce-9d522bd5d439": "恢复命名/青色阴影数字条",
   },
+  audioBundle: {
+    "win": "legacy/victory",
+    "adz": "legacy/unknownAdz",
+    "fly": "legacy/fly",
+    "bdz": "legacy/unknownBdz",
+    "door": "legacy/door",
+    "ls": "legacy/unknownLs",
+    "lz": "legacy/fruitBornDuplicateLz",
+    "pop": "legacy/pop",
+    "over": "legacy/gameOver",
+    "gz": "legacy/levelCompleteDuplicateGz",
+    "levelup": "legacy/levelUp",
+    "show": "legacy/levelCompleteDuplicateShow",
+  },
   main: {
     "0477c566e": "texture/sharedTextureCollection",
     "02c960b2-a56d-4aab-a517-3ba441a0a458": "effects/flowerGlow",
@@ -723,7 +737,7 @@ function materializeBundleAssetNames(bundleState, bundleManifest, existingBundle
   }
 
   materializeTranslatedCurrentFiles(bundleState.bundleDir);
-  createUrlEncodedCompatibilityLinks(bundleState, aliasEntries);
+  pruneUrlEncodedCompatibilityLinks(bundleState.bundleDir);
 }
 
 function buildPreviousMaterializedPathMap(existingBundleManifest) {
@@ -970,6 +984,7 @@ function listDeletedBundleRootFileNames(bundleDir, kind) {
       .filter(Boolean)
       .map((relativePath) => path.posix.relative(bundleKindRelativeDir, relativePath))
       .filter((relativePath) => relativePath && !relativePath.includes("/"))
+      .filter((relativePath) => !/%[0-9A-Fa-f]{2}/.test(path.posix.basename(relativePath)))
       .sort((left, right) => left.localeCompare(right, "en"));
   } catch (error) {
     return [];
@@ -978,47 +993,6 @@ function listDeletedBundleRootFileNames(bundleDir, kind) {
 
 function inferKindFromOriginalRelativePath(originalRelativePath) {
   return String(originalRelativePath || "").startsWith("native/") ? "native" : "import";
-}
-
-function createUrlEncodedCompatibilityLinks(bundleState, aliasEntries) {
-  for (const entry of aliasEntries) {
-    if (!entry.materializedRelativePath) {
-      continue;
-    }
-
-    const materializedAbsolutePath = path.join(bundleState.bundleDir, entry.materializedRelativePath);
-    if (!fs.existsSync(materializedAbsolutePath)) {
-      continue;
-    }
-
-    createUrlEncodedAliasesForAbsolutePath(materializedAbsolutePath, bundleState.bundleDir);
-  }
-}
-
-function createUrlEncodedAliasesForAbsolutePath(absolutePath, bundleDir) {
-  const relativePath = normalizePathForPosix(path.relative(bundleDir, absolutePath));
-  const pathSegments = relativePath.split("/").filter(Boolean);
-
-  if (pathSegments.length === 0) {
-    return;
-  }
-
-  let currentRealDir = bundleDir;
-  for (let index = 0; index < pathSegments.length; index += 1) {
-    const segment = pathSegments[index];
-    const isLastSegment = index === pathSegments.length - 1;
-    const realAbsolutePath = path.join(currentRealDir, segment);
-
-    if (containsNonAscii(segment)) {
-      const encodedSegment = encodeURIComponent(segment);
-      const encodedAbsolutePath = path.join(currentRealDir, encodedSegment);
-      ensureSiblingSymlink(encodedAbsolutePath, realAbsolutePath);
-    }
-
-    if (!isLastSegment) {
-      currentRealDir = realAbsolutePath;
-    }
-  }
 }
 
 function buildContentMatchedAliasEntry(kind, originalRelativePath, materializedRelativePath) {
@@ -1099,20 +1073,6 @@ function resolveExistingMaterializedRelativePath(bundleDir, materializedRelative
   }
 
   return normalizePathForPosix(path.join(path.dirname(normalizedMaterializedRelativePath), siblingFileNames[0]));
-}
-
-function ensureSiblingSymlink(aliasAbsolutePath, targetAbsolutePath) {
-  if (aliasAbsolutePath === targetAbsolutePath) {
-    return;
-  }
-
-  if (fs.existsSync(aliasAbsolutePath)) {
-    return;
-  }
-
-  ensureDirectory(path.dirname(aliasAbsolutePath));
-  const symlinkTarget = path.relative(path.dirname(aliasAbsolutePath), targetAbsolutePath);
-  fs.symlinkSync(symlinkTarget, aliasAbsolutePath);
 }
 
 function writeRuntimeRemapManifest(bundleManifests) {
@@ -1466,19 +1426,66 @@ function translateSemanticSegment(segment) {
     return normalizedSegment;
   }
 
+  const decodedSegment = decodeMaybeUrlEncodedSegment(normalizedSegment);
+  if (Object.prototype.hasOwnProperty.call(SEMANTIC_NAME_TRANSLATIONS, decodedSegment)) {
+    return SEMANTIC_NAME_TRANSLATIONS[decodedSegment];
+  }
+
   if (Object.prototype.hasOwnProperty.call(SEMANTIC_NAME_TRANSLATIONS, normalizedSegment)) {
     return SEMANTIC_NAME_TRANSLATIONS[normalizedSegment];
   }
 
-  return normalizedSegment;
+  return decodedSegment;
 }
 
-function containsNonAscii(value) {
-  return /[^\x00-\x7F]/.test(String(value || ""));
+function decodeMaybeUrlEncodedSegment(segment) {
+  const normalizedSegment = String(segment || "").trim();
+  if (!/%[0-9A-Fa-f]{2}/.test(normalizedSegment)) {
+    return normalizedSegment;
+  }
+
+  try {
+    return decodeURIComponent(normalizedSegment);
+  } catch (error) {
+    return normalizedSegment;
+  }
 }
 
 function normalizePathForPosix(inputPath) {
   return String(inputPath || "").replace(/\\/g, "/");
+}
+
+function pruneUrlEncodedCompatibilityLinks(bundleDir) {
+  for (const kind of ["import", "native"]) {
+    pruneUrlEncodedCompatibilityLinksInDirectory(path.join(bundleDir, kind));
+  }
+}
+
+function pruneUrlEncodedCompatibilityLinksInDirectory(directoryPath) {
+  if (!fs.existsSync(directoryPath)) {
+    return;
+  }
+
+  for (const childName of fs.readdirSync(directoryPath)) {
+    const childPath = path.join(directoryPath, childName);
+    let childStat;
+    try {
+      childStat = fs.lstatSync(childPath);
+    } catch (error) {
+      continue;
+    }
+
+    if (childStat.isSymbolicLink()) {
+      if (/%[0-9A-Fa-f]{2}/.test(childName)) {
+        fs.rmSync(childPath, { force: true });
+      }
+      continue;
+    }
+
+    if (childStat.isDirectory()) {
+      pruneUrlEncodedCompatibilityLinksInDirectory(childPath);
+    }
+  }
 }
 
 function normalizeUuidKey(value) {

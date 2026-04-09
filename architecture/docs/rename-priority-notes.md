@@ -12,12 +12,19 @@
 - 原因：这些文件大多是 Cocos 编译产物、pack 容器或 native 资源文件名，当前已由 `uuid-asset-report` 证明其具有运行时作用。
 - 入口证据见：`architecture/docs/uuid-asset-report.md`。
 
-### 2. `audioBundle` 根层短名
+### 2. `audioBundle` 根层遗留音频
 
-- 当前脏名：`gz`、`ls`、`lz`
 - 当前状态：`unreferenced`
-- 结论：先不 rename。
-- 原因：虽然命名不可读，但现有运行时引用审计没有给出足够语义证据；贸然改名只会把问题从“名字差”变成“证据链断”。
+- 当前结论：
+  - 已有明确重复证据的项可以继续语义化，但要显式标注为 `legacy` 残留；
+  - 仍缺证据的缩写项不要硬猜业务含义，只收口到 `legacy/unknown*`。
+- 当前已确认的重复关系：
+  - `gz`、`show` 与 `ui/levelComplete` 完全同文件内容；
+  - `lz` 与 `fruitGame/born` 完全同文件内容。
+- 当前处理策略：
+  - `gz/show/lz` 归档到带重复语义的 `legacy/*Duplicate*` 命名；
+  - `win/fly/door/pop/over/levelup` 收口到 `legacy/` 目录下的可读英文叶子；
+  - `adz/bdz/ls` 继续保守标为 `legacy/unknown*`，等后续补更多运行时或音频内容证据。
 
 ### 3. `DuckBundle` 的 `tex/fragment/a..e/*`
 

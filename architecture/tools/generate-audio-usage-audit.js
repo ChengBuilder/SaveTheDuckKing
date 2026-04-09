@@ -8,6 +8,8 @@ const {
 } = require('./project-paths');
 
 const AUDIO_BUNDLE_CONFIG_PATH = 'subpackages/audioBundle/config.audio-bundle.json';
+const AUDIO_BUNDLE_IMPORT_DIR = 'subpackages/audioBundle/import';
+const AUDIO_BUNDLE_SEMANTIC_ALIAS_PATH = 'subpackages/audioBundle/semantic-asset-aliases.json';
 const AUDIO_USAGE_AUDIT_MARKDOWN_PATH = 'architecture/docs/audio-usage-audit.md';
 const AUDIO_USAGE_AUDIT_JSON_PATH = 'architecture/docs/audio-usage-audit.json';
 const LOW_READABILITY_ALLOWLIST = new Set([
@@ -30,7 +32,16 @@ function generateAudioUsageAudit() {
   const audioBundleConfig = JSON.parse(
     fs.readFileSync(resolveProjectFilePath(layout, AUDIO_BUNDLE_CONFIG_PATH), 'utf8')
   );
-  const auditPayload = buildAudioUsageAuditPayload(gameJsText, audioBundleConfig);
+  const audioBundleImportDirPath = resolveProjectFilePath(layout, AUDIO_BUNDLE_IMPORT_DIR);
+  const semanticAliasManifest = readJsonIfExists(
+    resolveProjectFilePath(layout, AUDIO_BUNDLE_SEMANTIC_ALIAS_PATH)
+  );
+  const auditPayload = buildAudioUsageAuditPayload(
+    gameJsText,
+    audioBundleConfig,
+    semanticAliasManifest,
+    audioBundleImportDirPath
+  );
   const markdownLines = buildAudioUsageAuditMarkdownLines(layout, auditPayload);
 
   fs.writeFileSync(
@@ -56,6 +67,8 @@ function generateAudioUsageAudit() {
  * 构建音频使用审计载荷。
  * @param {string} gameJsText 主入口产物文本
  * @param {{paths?: Record<string, any>}} audioBundleConfig 音频 bundle 配置
+ * @param {{importAliases?: {detail?: {canonicalPath?: string}}[]}|null} semanticAliasManifest 当前语义化别名清单
+ * @param {string} audioBundleImportDirPath 当前 audioBundle import 目录绝对路径
  * @returns {{
  *  generatedAt: string,
  *  bundleName: string,
@@ -74,9 +87,18 @@ function generateAudioUsageAudit() {
  *  records: {path: string, usageStatus: string, matchedBy: string[], lowReadability: boolean}[]
  * }}
  */
-function buildAudioUsageAuditPayload(gameJsText, audioBundleConfig) {
+function buildAudioUsageAuditPayload(
+  gameJsText,
+  audioBundleConfig,
+  semanticAliasManifest,
+  audioBundleImportDirPath
+) {
   const collectedReferences = collectAudioReferences(gameJsText);
-  const audioPaths = extractAudioPaths(audioBundleConfig.paths);
+  const audioPaths = extractAudioPaths(
+    audioBundleConfig.paths,
+    semanticAliasManifest,
+    audioBundleImportDirPath
+  );
   const records = audioPaths.map(function mapAudioPath(audioPath) {
     return createAudioUsageRecord(audioPath, collectedReferences);
   });
@@ -138,9 +160,21 @@ function buildAudioUsageAuditPayload(gameJsText, audioBundleConfig) {
 /**
  * 提取 audioBundle 中的所有 canonical 路径。
  * @param {Record<string, any>} rawPaths bundle paths 字段
+ * @param {{importAliases?: {detail?: {canonicalPath?: string}}[]}|null} semanticAliasManifest 当前语义化别名清单
+ * @param {string} audioBundleImportDirPath 当前 audioBundle import 目录绝对路径
  * @returns {string[]}
  */
-function extractAudioPaths(rawPaths) {
+function extractAudioPaths(rawPaths, semanticAliasManifest, audioBundleImportDirPath) {
+  const importDirectoryPaths = extractAudioPathsFromImportDirectory(audioBundleImportDirPath);
+  if (importDirectoryPaths.length > 0) {
+    return importDirectoryPaths;
+  }
+
+  const aliasPaths = extractAudioPathsFromSemanticAliases(semanticAliasManifest);
+  if (aliasPaths.length > 0) {
+    return aliasPaths;
+  }
+
   if (!rawPaths || typeof rawPaths !== 'object') {
     return [];
   }
@@ -154,6 +188,96 @@ function extractAudioPaths(rawPaths) {
       return Array.isArray(pathEntry) ? String(pathEntry[0]) : '';
     })
     .filter(Boolean);
+}
+
+/**
+ * 从当前 import 目录提取真实音频路径。
+ * @param {string} importDirPath 当前 audioBundle import 目录绝对路径
+ * @returns {string[]}
+ */
+function extractAudioPathsFromImportDirectory(importDirPath) {
+  if (!importDirPath || !fs.existsSync(importDirPath)) {
+    return [];
+  }
+
+  const collectedPaths = [];
+  walkDirectory(importDirPath, function visitFile(absolutePath) {
+    if (!absolutePath.endsWith('.json')) {
+      return;
+    }
+
+    const relativePath = absolutePath.slice(importDirPath.length + 1).replace(/\\/g, '/');
+    if (!relativePath || relativePath.startsWith('__semantic__/')) {
+      return;
+    }
+
+    collectedPaths.push(relativePath.slice(0, -'.json'.length));
+  });
+
+  return collectedPaths.sort(function sortPath(left, right) {
+    return left.localeCompare(right);
+  });
+}
+
+/**
+ * 从语义化别名清单提取当前有效 canonical 路径。
+ * @param {{importAliases?: {detail?: {canonicalPath?: string}}[]}|null} semanticAliasManifest 当前语义化别名清单
+ * @returns {string[]}
+ */
+function extractAudioPathsFromSemanticAliases(semanticAliasManifest) {
+  if (!semanticAliasManifest || !Array.isArray(semanticAliasManifest.importAliases)) {
+    return [];
+  }
+
+  const uniqueAudioPaths = new Set();
+
+  for (const aliasEntry of semanticAliasManifest.importAliases) {
+    const canonicalPath = aliasEntry
+      && aliasEntry.detail
+      && typeof aliasEntry.detail.canonicalPath === 'string'
+      ? aliasEntry.detail.canonicalPath
+      : '';
+    if (canonicalPath) {
+      uniqueAudioPaths.add(canonicalPath);
+    }
+  }
+
+  return Array.from(uniqueAudioPaths).sort(function sortPath(left, right) {
+    return left.localeCompare(right);
+  });
+}
+
+/**
+ * 若 JSON 文件存在则读取。
+ * @param {string} filePath 文件绝对路径
+ * @returns {any|null}
+ */
+function readJsonIfExists(filePath) {
+  if (!fs.existsSync(filePath)) {
+    return null;
+  }
+
+  return JSON.parse(fs.readFileSync(filePath, 'utf8'));
+}
+
+/**
+ * 递归遍历目录中的文件。
+ * @param {string} directoryPath 目录绝对路径
+ * @param {(filePath: string) => void} visitor 文件访问器
+ */
+function walkDirectory(directoryPath, visitor) {
+  const childNames = fs.readdirSync(directoryPath);
+
+  for (const childName of childNames) {
+    const childPath = directoryPath + '/' + childName;
+    const childStat = fs.statSync(childPath);
+    if (childStat.isDirectory()) {
+      walkDirectory(childPath, visitor);
+      continue;
+    }
+
+    visitor(childPath);
+  }
 }
 
 /**

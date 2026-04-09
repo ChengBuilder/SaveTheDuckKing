@@ -42,7 +42,7 @@ const LEGACY_COMPAT_RULES = [
     ruleName: 'uiBundle 图鉴皮肤页旧路径',
     configPath: 'subpackages/uiBundle/config.ui-bundle.json',
     configLegacyPattern: /^tex\/book\/鸽鸽图鉴\/皮肤图鉴\/p(10|[1-9])(?:\/|$)/,
-    runtimeLegacyPattern: /tex\/book\/(?:鸽鸽图鉴|%E9%B8%BD%E9%B8%BD%E5%9B%BE%E9%89%B4)\/(?:皮肤图鉴|%E7%9A%AE%E8%82%A4%E5%9B%BE%E9%89%B4)\/p(10|[1-9])(?:\/|$)/gi,
+    runtimeLegacyPattern: /tex\/book\/鸽鸽图鉴\/皮肤图鉴\/p(10|[1-9])(?:\/|$)/g,
     requiredNormalizerSnippets: [
       'function normalizeUiBundleLegacyPath',
       'hasLegacyUiBundlePath(requestInput)',
@@ -54,7 +54,7 @@ const LEGACY_COMPAT_RULES = [
     ruleName: 'uiBundle 设置模块旧路径',
     configPath: 'subpackages/uiBundle/config.ui-bundle.json',
     configLegacyPattern: /^tex\/设置(?:二级)?\/.+(?:\/|$)/,
-    runtimeLegacyPattern: /tex\/(?:设置(?:二级)?|%E8%AE%BE%E7%BD%AE(?:%E4%BA%8C%E7%BA%A7)?)(?:\/|%2F)/gi,
+    runtimeLegacyPattern: /tex\/设置(?:二级)?(?:\/|$)/g,
     requiredNormalizerSnippets: [
       'UI_BUNDLE_SETTINGS_LEGACY_PATH_MAP',
       'function normalizeUiBundleSettingsLegacyPath',

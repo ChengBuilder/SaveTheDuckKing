@@ -46,13 +46,11 @@ const HOME_BUNDLE_LEGACY_FAST_PATH_TOKENS = Object.freeze([
 ]);
 const UI_BUNDLE_BOOK_SKIN_LEGACY_PATTERN = /^tex\/book\/鸽鸽图鉴\/皮肤图鉴\/p(10|[1-9])(\/.*)?$/;
 const UI_BUNDLE_BOOK_SKIN_FAST_PATH_TOKENS = Object.freeze([
-  'tex/book/鸽鸽图鉴/皮肤图鉴/p',
-  'tex/book/%E9%B8%BD%E9%B8%BD%E5%9B%BE%E9%89%B4/%E7%9A%AE%E8%82%A4%E5%9B%BE%E9%89%B4/p'
+  'tex/book/鸽鸽图鉴/皮肤图鉴/p'
 ]);
 const UI_BUNDLE_SETTINGS_FAST_PATH_TOKENS = Object.freeze([
-  'tex/设置/',
-  'tex/设置二级/',
-  'tex/%E8%AE%BE%E7%BD%AE'
+  'tex/设置',
+  'tex/设置二级'
 ]);
 const UI_BUNDLE_LEGACY_FAST_PATH_TOKENS = Object.freeze(
   UI_BUNDLE_BOOK_SKIN_FAST_PATH_TOKENS.concat(UI_BUNDLE_SETTINGS_FAST_PATH_TOKENS)
@@ -884,9 +882,19 @@ function containsAnyPathToken(requestPath, tokenList) {
     return false;
   }
 
+  const decodedPath = decodeUriPathSafely(requestPath);
+
   for (let index = 0; index < tokenList.length; index += 1) {
     const token = tokenList[index];
-    if (typeof token === 'string' && token.length > 0 && requestPath.indexOf(token) !== -1) {
+    if (typeof token !== 'string' || token.length === 0) {
+      continue;
+    }
+
+    if (requestPath.indexOf(token) !== -1) {
+      return true;
+    }
+
+    if (decodedPath !== requestPath && decodedPath.indexOf(token) !== -1) {
       return true;
     }
   }

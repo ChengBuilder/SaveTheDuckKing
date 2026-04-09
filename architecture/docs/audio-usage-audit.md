@@ -3,14 +3,14 @@
 > 本文件由 `architecture/tools/generate-audio-usage-audit.js` 生成。
 
 ## 总览
-- 生成时间：2026-04-08T15:18:23.862Z
+- 生成时间：2026-04-09T05:15:12.232Z
 - Bundle：`audioBundle`
 - 音频 canonical 路径数：65
 - 直接引用条目数：27
 - 动态前缀匹配条目数：15
 - 未引用候选数：23
-- 低可读命名候选数：5
-- 根层路径候选数：12
+- 低可读命名候选数：0
+- 根层路径候选数：0
 
 ## 直接引用
 - `bgm/defaultGameplay`：`playMusic` x 12
@@ -46,50 +46,35 @@
 - `woodDrop/woodDrop_`：`playSound` x 2
 
 ## 根层路径候选
-- `win`：`unreferenced` / `待分层`，命中：无
-- `adz`：`unreferenced` / `低可读`，命中：无
-- `fly`：`unreferenced` / `待分层`，命中：无
-- `bdz`：`unreferenced` / `低可读`，命中：无
-- `door`：`unreferenced` / `待分层`，命中：无
-- `ls`：`unreferenced` / `低可读`，命中：无
-- `lz`：`unreferenced` / `低可读`，命中：无
-- `pop`：`unreferenced` / `待分层`，命中：无
-- `over`：`unreferenced` / `待分层`，命中：无
-- `gz`：`unreferenced` / `低可读`，命中：无
-- `levelup`：`unreferenced` / `待分层`，命中：无
-- `show`：`unreferenced` / `待分层`，命中：无
+- 无
 
 ## 低可读命名候选
-- `adz`：`unreferenced`，命中：无
-- `bdz`：`unreferenced`，命中：无
-- `ls`：`unreferenced`，命中：无
-- `lz`：`unreferenced`，命中：无
-- `gz`：`unreferenced`，命中：无
+- 无
 
 ## 未引用候选
+- `comboMusic/combo_1`
+- `comboMusic/combo_10`
+- `comboMusic/combo_2`
 - `comboMusic/combo_3`
 - `comboMusic/combo_4`
-- `win`
-- `adz`
 - `comboMusic/combo_5`
-- `fly`
-- `comboMusic/combo_7`
-- `bdz`
-- `comboMusic/combo_8`
-- `sceneTransition/duckGameReveal`
-- `comboMusic/combo_9`
-- `comboMusic/combo_10`
-- `door`
-- `ls`
-- `lz`
-- `comboMusic/combo_2`
-- `pop`
-- `over`
 - `comboMusic/combo_6`
-- `gz`
-- `levelup`
-- `comboMusic/combo_1`
-- `show`
+- `comboMusic/combo_7`
+- `comboMusic/combo_8`
+- `comboMusic/combo_9`
+- `legacy/door`
+- `legacy/fly`
+- `legacy/fruitBornDuplicateLz`
+- `legacy/gameOver`
+- `legacy/levelCompleteDuplicateGz`
+- `legacy/levelCompleteDuplicateShow`
+- `legacy/levelUp`
+- `legacy/pop`
+- `legacy/unknownAdz`
+- `legacy/unknownBdz`
+- `legacy/unknownLs`
+- `legacy/victory`
+- `sceneTransition/duckGameReveal`
 
 ## 结果文件
 - Markdown：`architecture/docs/audio-usage-audit.md`

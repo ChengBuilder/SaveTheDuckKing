@@ -238,6 +238,16 @@
 2. 当前静态审计结果已明确收敛为“有定义、无调用”：扫描 `game.js`、`Util.ts.restored.js`、`Wood.ts.restored.js`、`DuckController.ts.restored.js`、`GameModel2.ts.restored.js` 时，只找到 `fragmentEffect` 定义，未找到任何静态调用点。
 3. `Wood.ts` 的下落更新分支会在木板越界后直接移除节点，因此 `fragmentEffect` 当前更像历史残留工具函数，而不是现行玩法主链。
 4. 新增 `restored/start-scene/refined/Util.ts.refined.js`，把随机、几何、节点坐标转换、粒子、彩带、刮痕、碎片等高频工具整理成可读结构，并保留旧方法名别名，方便与 `*.restored.js` 对照。
+
+## 最新沉淀（2026-04-09 第一轮）
+1. `audioBundle` 剩余根层遗留音频已完成一轮保守语义化收口：不再继续留在 bundle 根目录，而是统一归档到 `legacy/` 目录。
+2. 其中 `gz/show` 已通过文件哈希确认与 `ui/levelComplete` 完全重复，`lz` 已确认与 `fruitGame/born` 完全重复，因此命名已明确标注为重复遗留项，而不是继续保留缩写。
+3. 对仍缺业务证据的 `adz/bdz/ls`，本轮没有硬猜玩法语义，只收口为 `legacy/unknown*`，避免把“可读化”误做成“伪造语义”。
+
+## 最新沉淀（2026-04-09 第二轮）
+1. `tools/deobf/semanticize-subpackage-assets.js` 现已在语义翻译前自动解码 `%E6...` 这类 URL 编码段，再进入中文到英文映射，避免 materialize 后继续落出 `%E7/%E9` 目录。
+2. 子包 URL 编码兼容 symlink 已默认停用；materialize 阶段会主动清理历史 `%xx` 兼容链接，不再让仓库里反复长出 ASCII 形式的中文路径壳子。
+3. 本轮已同步清空 `subpackages/*` 下残留的 `%xx` 路径与空目录，并重新验证全部 bundle `unresolvedImport/unresolvedNative` 均为 `0`。
 5. 结论进一步收紧：`tex/fragment/a..e/*` 仍属于高价值语义资产，但在重新找到真实运行时入口前，只做审计和 refined 还原，不直接进入 canonical rename。
 
 ## 关键风险与约束
