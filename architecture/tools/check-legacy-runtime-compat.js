@@ -21,8 +21,7 @@ const LEGACY_COMPAT_RULES = [
       'function normalizeHomeBundleLegacyPath',
       'hasLegacyHomeBundlePath(requestInput)',
       'normalizeLegacyBundleRequestInput'
-    ],
-    enforceNormalizerAlways: true
+    ]
   },
   {
     ruleName: 'HomeBundle BgParticle 旧路径',
@@ -35,8 +34,7 @@ const LEGACY_COMPAT_RULES = [
       'function mightContainHomeBundleLegacyPath',
       'hasLegacyHomeBundlePath(requestInput)',
       'normalizeLegacyBundleRequestInput'
-    ],
-    enforceNormalizerAlways: true
+    ]
   },
   {
     ruleName: 'uiBundle 图鉴皮肤页旧路径',
@@ -47,8 +45,7 @@ const LEGACY_COMPAT_RULES = [
       'function normalizeUiBundleLegacyPath',
       'hasLegacyUiBundlePath(requestInput)',
       'normalizeLegacyBundleRequestInput'
-    ],
-    enforceNormalizerAlways: true
+    ]
   },
   {
     ruleName: 'uiBundle 设置模块旧路径',
@@ -60,8 +57,7 @@ const LEGACY_COMPAT_RULES = [
       'function normalizeUiBundleSettingsLegacyPath',
       'hasLegacyUiBundlePath(requestInput)',
       'normalizeLegacyBundleRequestInput'
-    ],
-    enforceNormalizerAlways: true
+    ]
   }
 ];
 
@@ -178,14 +174,14 @@ function verifyConfigNoLegacyPath(layout, rule, issues) {
 function verifyRuntimeLegacyCompat(rule, gameSource, normalizerSource, issues) {
   rule.runtimeLegacyPattern.lastIndex = 0;
   const runtimeLegacyMatches = gameSource.match(rule.runtimeLegacyPattern) || [];
-  if (runtimeLegacyMatches.length === 0 && !rule.enforceNormalizerAlways) {
+  if (runtimeLegacyMatches.length === 0) {
     return;
   }
 
   const sampleMatches = Array.from(new Set(runtimeLegacyMatches)).slice(0, 3);
   const sampleText = sampleMatches.length > 0
     ? '，样例: ' + sampleMatches.join(', ')
-    : '（当前 game.js 未直接命中旧路径样例，仍要求保留兼容补丁）';
+    : '';
 
   for (const snippet of rule.requiredNormalizerSnippets) {
     if (!normalizerSource.includes(snippet)) {

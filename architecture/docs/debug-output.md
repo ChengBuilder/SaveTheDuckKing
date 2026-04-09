@@ -36,3 +36,15 @@ globalThis.__DUCK_BOOT_INFO
 3. 平台启动策略（platform/startupMode/matchedRuleId/reason）
 4. `phases` 阶段时间线（如 `runtime-dependencies-loaded`、`application-started`）
 5. `metrics.performance` 性能策略快照（render/frameRate）
+
+## 旧路径兼容命中统计
+启动后可查看：
+
+```js
+globalThis.__DUCK_LEGACY_PATH_STATS
+```
+
+用途：
+1. 观察 `home.bgThings` / `home.bgParticle` / `ui.bookSkin` / `ui.settings` 四类旧路径命中次数。
+2. 查看命中样本（`samples`）评估是否还能继续删除兼容逻辑。
+3. 该统计默认静默；仅在调试开关开启时输出少量命中日志。

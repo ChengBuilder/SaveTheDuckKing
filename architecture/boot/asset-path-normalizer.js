@@ -1,10 +1,20 @@
 'use strict';
 
-const { logInfo, logWarn } = require('./boot-logger');
+const { getRuntimeGlobalObject } = require('./global-context');
+const { logInfo, logWarn, logDebug } = require('./boot-logger');
 
 const FLAT_ASSET_PATH_PATCH_FLAG = '__flatAssetPathPatchApplied';
 const ROOT_BUNDLE_REQUEST_PATCH_FLAG = '__rootBundleRequestPatchApplied';
 const LEGACY_HOME_BUNDLE_PATH_PATCH_FLAG = '__legacyHomeBundlePathPatchApplied';
+const LEGACY_PATH_HIT_STATS_KEY = '__DUCK_LEGACY_PATH_STATS';
+const LEGACY_PATH_HIT_SAMPLE_LIMIT = 8;
+const LEGACY_PATH_HIT_DEBUG_LOG_LIMIT = 3;
+const LEGACY_PATH_CATEGORIES = Object.freeze({
+  HOME_BG_THINGS: 'home.bgThings',
+  HOME_BG_PARTICLE: 'home.bgParticle',
+  UI_BOOK_SKIN: 'ui.bookSkin',
+  UI_SETTINGS: 'ui.settings'
+});
 const UI_BUNDLE_SETTINGS_LEGACY_PATH_MAP = Object.freeze({
   'tex/设置/x': 'tex/settings/closeIcon',
   'tex/设置/关': 'tex/settings/toggleOffState',
@@ -686,7 +696,9 @@ function normalizeHomeBundleLegacyPath(requestPath) {
   const decodedPath = decodeUriPathSafely(normalizedPath);
   const normalizedParticlePath = normalizeLegacyHomeParticlePath(decodedPath);
   if (normalizedParticlePath !== decodedPath) {
-    return hasLeadingDotSlash ? './' + normalizedParticlePath : normalizedParticlePath;
+    const nextPath = hasLeadingDotSlash ? './' + normalizedParticlePath : normalizedParticlePath;
+    recordLegacyPathNormalizationHit(LEGACY_PATH_CATEGORIES.HOME_BG_PARTICLE, requestPath, nextPath);
+    return nextPath;
   }
 
   if (!HOME_BUNDLE_LEGACY_PATH_PATTERN.test(decodedPath)) {
@@ -701,8 +713,9 @@ function normalizeHomeBundleLegacyPath(requestPath) {
   const legacySubPath = legacyMatch[2];
   const semanticSubPath = normalizeLegacyHomeThemeSubPath(legacySubPath);
   const nextPath = 'tex/homeTheme' + themeIndex + '/' + semanticSubPath;
-
-  return hasLeadingDotSlash ? './' + nextPath : nextPath;
+  const normalizedLegacyPath = hasLeadingDotSlash ? './' + nextPath : nextPath;
+  recordLegacyPathNormalizationHit(LEGACY_PATH_CATEGORIES.HOME_BG_THINGS, requestPath, normalizedLegacyPath);
+  return normalizedLegacyPath;
 }
 
 /**
@@ -808,7 +821,9 @@ function normalizeUiBundleBookSkinLegacyPath(requestPath) {
   const pageIndex = legacyMatch[1];
   const pathSuffix = legacyMatch[2] || '';
   const nextPath = 'tex/book/pigeonGallery/skinCollection/skinPage' + pageIndex + pathSuffix;
-  return hasLeadingDotSlash ? './' + nextPath : nextPath;
+  const normalizedLegacyPath = hasLeadingDotSlash ? './' + nextPath : nextPath;
+  recordLegacyPathNormalizationHit(LEGACY_PATH_CATEGORIES.UI_BOOK_SKIN, requestPath, normalizedLegacyPath);
+  return normalizedLegacyPath;
 }
 
 /**
@@ -835,12 +850,16 @@ function normalizeUiBundleSettingsLegacyPath(requestPath) {
     const semanticBasePath = entry[1];
 
     if (decodedPath === legacyBasePath) {
-      return hasLeadingDotSlash ? './' + semanticBasePath : semanticBasePath;
+      const normalizedLegacyPath = hasLeadingDotSlash ? './' + semanticBasePath : semanticBasePath;
+      recordLegacyPathNormalizationHit(LEGACY_PATH_CATEGORIES.UI_SETTINGS, requestPath, normalizedLegacyPath);
+      return normalizedLegacyPath;
     }
     if (decodedPath.startsWith(legacyBasePath + '/')) {
       const pathSuffix = decodedPath.slice(legacyBasePath.length);
       const nextPath = semanticBasePath + pathSuffix;
-      return hasLeadingDotSlash ? './' + nextPath : nextPath;
+      const normalizedLegacyPath = hasLeadingDotSlash ? './' + nextPath : nextPath;
+      recordLegacyPathNormalizationHit(LEGACY_PATH_CATEGORIES.UI_SETTINGS, requestPath, normalizedLegacyPath);
+      return normalizedLegacyPath;
     }
   }
 
@@ -967,6 +986,131 @@ function normalizeRootBundleUrl(bundleUrl) {
  */
 function trimLeadingDotSlash(relativePath) {
   return relativePath.startsWith('./') ? relativePath.slice(2) : relativePath;
+}
+
+/**
+ * 记录旧路径归一化命中信息。
+ * 默认仅累计统计，开启 `__DUCK_BOOT_DEBUG` 时输出少量样本日志。
+ * @param {string} categoryKey 归一化类别
+ * @param {string} fromPath 原始路径
+ * @param {string} toPath 归一化后路径
+ */
+function recordLegacyPathNormalizationHit(categoryKey, fromPath, toPath) {
+  if (typeof categoryKey !== 'string' || categoryKey.length === 0) {
+    return;
+  }
+
+  if (typeof fromPath !== 'string' || typeof toPath !== 'string' || fromPath === toPath) {
+    return;
+  }
+
+  const runtimeGlobal = getRuntimeGlobalObject();
+  if (!runtimeGlobal || typeof runtimeGlobal !== 'object') {
+    return;
+  }
+
+  const stats = ensureLegacyPathHitStats(runtimeGlobal);
+  const categoryStats = ensureLegacyPathCategoryStats(stats, categoryKey);
+  const now = new Date().toISOString();
+
+  stats.totalCount += 1;
+  stats.lastHitAt = now;
+  categoryStats.count += 1;
+  categoryStats.lastHitAt = now;
+
+  appendLegacyPathSample(categoryStats, fromPath, toPath, now);
+
+  if (categoryStats.debugLogCount < LEGACY_PATH_HIT_DEBUG_LOG_LIMIT) {
+    categoryStats.debugLogCount += 1;
+    logDebug('旧路径归一化命中。', {
+      category: categoryKey,
+      fromPath: fromPath,
+      toPath: toPath,
+      categoryCount: categoryStats.count,
+      totalCount: stats.totalCount
+    });
+  }
+}
+
+/**
+ * 获取并初始化全局旧路径命中统计容器。
+ * @param {Record<string, any>} runtimeGlobal 运行时全局对象
+ * @returns {{createdAt: string, totalCount: number, lastHitAt: string | null, categories: Record<string, any>}}
+ */
+function ensureLegacyPathHitStats(runtimeGlobal) {
+  const existingStats = runtimeGlobal[LEGACY_PATH_HIT_STATS_KEY];
+  if (existingStats && typeof existingStats === 'object') {
+    return existingStats;
+  }
+
+  const nextStats = {
+    createdAt: new Date().toISOString(),
+    totalCount: 0,
+    lastHitAt: null,
+    categories: {}
+  };
+  runtimeGlobal[LEGACY_PATH_HIT_STATS_KEY] = nextStats;
+  return nextStats;
+}
+
+/**
+ * 获取并初始化分类命中统计对象。
+ * @param {{categories?: Record<string, any>}} stats 全局统计对象
+ * @param {string} categoryKey 分类名
+ * @returns {{count: number, lastHitAt: string | null, samples: Array<{fromPath: string, toPath: string, lastHitAt: string}>, debugLogCount: number}}
+ */
+function ensureLegacyPathCategoryStats(stats, categoryKey) {
+  if (!stats.categories || typeof stats.categories !== 'object') {
+    stats.categories = {};
+  }
+
+  const existingCategoryStats = stats.categories[categoryKey];
+  if (existingCategoryStats && typeof existingCategoryStats === 'object') {
+    return existingCategoryStats;
+  }
+
+  const nextCategoryStats = {
+    count: 0,
+    lastHitAt: null,
+    samples: [],
+    debugLogCount: 0
+  };
+  stats.categories[categoryKey] = nextCategoryStats;
+  return nextCategoryStats;
+}
+
+/**
+ * 追加命中样本（去重且限制数量）。
+ * @param {{samples: Array<{fromPath: string, toPath: string, lastHitAt: string}>}} categoryStats 分类统计对象
+ * @param {string} fromPath 原始路径
+ * @param {string} toPath 归一化路径
+ * @param {string} hitAt 命中时间
+ */
+function appendLegacyPathSample(categoryStats, fromPath, toPath, hitAt) {
+  if (!Array.isArray(categoryStats.samples)) {
+    categoryStats.samples = [];
+  }
+
+  for (let index = 0; index < categoryStats.samples.length; index += 1) {
+    const sample = categoryStats.samples[index];
+    if (!sample || typeof sample !== 'object') {
+      continue;
+    }
+    if (sample.fromPath === fromPath && sample.toPath === toPath) {
+      sample.lastHitAt = hitAt;
+      return;
+    }
+  }
+
+  if (categoryStats.samples.length >= LEGACY_PATH_HIT_SAMPLE_LIMIT) {
+    return;
+  }
+
+  categoryStats.samples.push({
+    fromPath: fromPath,
+    toPath: toPath,
+    lastHitAt: hitAt
+  });
 }
 
 module.exports = {
