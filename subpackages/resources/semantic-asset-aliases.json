@@ -1,6 +1,6 @@
 {
   "bundleName": "resources",
-  "generatedAt": "2026-04-09T04:17:18.785Z",
+  "generatedAt": "2026-04-09T04:50:52.238Z",
   "importAliases": [
     {
       "kind": "import",
@@ -15,6 +15,16 @@
         "primaryLeafName": "a_color",
         "assetCount": 59,
         "textureUuidKeys": []
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/0895e4eee.ba01e.json",
+      "semanticRelativePath": "__semantic__/multiTexture/sharedTextureCollection.json",
+      "materializedRelativePath": "import/multiTexture/sharedTextureCollection.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "multiTexture/sharedTextureCollection"
       }
     },
     {
@@ -184,11 +194,6 @@
       }
     }
   ],
-  "unresolvedImports": [
-    {
-      "originalRelativePath": "import/0895e4eee.ba01e.json",
-      "stem": "0895e4eee"
-    }
-  ],
+  "unresolvedImports": [],
   "unresolvedNative": []
 }

@@ -1,6 +1,6 @@
 {
   "bundleName": "main",
-  "generatedAt": "2026-04-09T04:29:45.865Z",
+  "generatedAt": "2026-04-09T04:50:52.138Z",
   "importAliases": [
     {
       "kind": "import",
@@ -17,9 +17,14 @@
       "originalRelativePath": "import/015216800.ab208.json",
       "semanticRelativePath": "__semantic__/_packs/pack/share__pack_8.json",
       "materializedRelativePath": "import/_packs/pack/share__pack_8.json",
-      "strategy": "exact-content-match",
+      "strategy": "import-pack",
       "detail": {
-        "matchedFromDeletedRootFile": true
+        "commonPrefixSegments": [],
+        "primaryLeafName": "分享",
+        "assetCount": 8,
+        "textureUuidKeys": [
+          "115216800"
+        ]
       }
     },
     {
@@ -45,9 +50,14 @@
       "originalRelativePath": "import/01d37c23d.a271f.json",
       "semanticRelativePath": "__semantic__/_packs/pack/highlight__pack_37.json",
       "materializedRelativePath": "import/_packs/pack/highlight__pack_37.json",
-      "strategy": "exact-content-match",
+      "strategy": "import-pack",
       "detail": {
-        "matchedFromDeletedRootFile": true
+        "commonPrefixSegments": [],
+        "primaryLeafName": "高光",
+        "assetCount": 37,
+        "textureUuidKeys": [
+          "11d37c23d"
+        ]
       }
     },
     {
@@ -62,12 +72,27 @@
     },
     {
       "kind": "import",
+      "originalRelativePath": "import/02c960b2-a56d-4aab-a517-3ba441a0a458.a2533.json",
+      "semanticRelativePath": "__semantic__/effects/flowerGlow.json",
+      "materializedRelativePath": "import/effects/flowerGlow.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "effects/flowerGlow"
+      }
+    },
+    {
+      "kind": "import",
       "originalRelativePath": "import/0353ef82c.cc362.json",
       "semanticRelativePath": "__semantic__/_packs/pack/percent__pack_10.json",
       "materializedRelativePath": "import/_packs/pack/percent__pack_10.json",
-      "strategy": "exact-content-match",
+      "strategy": "import-pack",
       "detail": {
-        "matchedFromDeletedRootFile": true
+        "commonPrefixSegments": [],
+        "primaryLeafName": "%",
+        "assetCount": 10,
+        "textureUuidKeys": [
+          "1353ef82c"
+        ]
       }
     },
     {
@@ -75,9 +100,14 @@
       "originalRelativePath": "import/0361f2d0d.36476.json",
       "semanticRelativePath": "__semantic__/_packs/pack/bottom__pack_15.json",
       "materializedRelativePath": "import/_packs/pack/bottom__pack_15.json",
-      "strategy": "exact-content-match",
+      "strategy": "import-pack",
       "detail": {
-        "matchedFromDeletedRootFile": true
+        "commonPrefixSegments": [],
+        "primaryLeafName": "底",
+        "assetCount": 15,
+        "textureUuidKeys": [
+          "1361f2d0d"
+        ]
       }
     },
     {
@@ -100,9 +130,14 @@
       "originalRelativePath": "import/03a4cca66.76cc9.json",
       "semanticRelativePath": "__semantic__/_packs/pack/props__pack_12.json",
       "materializedRelativePath": "import/_packs/pack/props__pack_12.json",
-      "strategy": "exact-content-match",
+      "strategy": "import-pack",
       "detail": {
-        "matchedFromDeletedRootFile": true
+        "commonPrefixSegments": [],
+        "primaryLeafName": "道具",
+        "assetCount": 12,
+        "textureUuidKeys": [
+          "13a4cca66"
+        ]
       }
     },
     {
@@ -121,6 +156,16 @@
         "primaryLeafName": "2",
         "assetCount": 1674,
         "textureUuidKeys": []
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/0477c566e.f0408.json",
+      "semanticRelativePath": "__semantic__/texture/sharedTextureCollection.json",
+      "materializedRelativePath": "import/texture/sharedTextureCollection.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "texture/sharedTextureCollection"
       }
     },
     {
@@ -156,9 +201,14 @@
       "originalRelativePath": "import/05c250e9e.5a45d.json",
       "semanticRelativePath": "__semantic__/_packs/pack/reward__pack_6.json",
       "materializedRelativePath": "import/_packs/pack/reward__pack_6.json",
-      "strategy": "exact-content-match",
+      "strategy": "import-pack",
       "detail": {
-        "matchedFromDeletedRootFile": true
+        "commonPrefixSegments": [],
+        "primaryLeafName": "奖",
+        "assetCount": 6,
+        "textureUuidKeys": [
+          "15c250e9e"
+        ]
       }
     },
     {
@@ -212,9 +262,14 @@
       "originalRelativePath": "import/07f9bf2d5.3a2af.json",
       "semanticRelativePath": "__semantic__/_packs/pack/callFriend__pack_18.json",
       "materializedRelativePath": "import/_packs/pack/callFriend__pack_18.json",
-      "strategy": "exact-content-match",
+      "strategy": "import-pack",
       "detail": {
-        "matchedFromDeletedRootFile": true
+        "commonPrefixSegments": [],
+        "primaryLeafName": "喊人",
+        "assetCount": 18,
+        "textureUuidKeys": [
+          "17f9bf2d5"
+        ]
       }
     },
     {
@@ -222,9 +277,14 @@
       "originalRelativePath": "import/08ea43c33.d6e6c.json",
       "semanticRelativePath": "__semantic__/_packs/pack/slot__pack_4.json",
       "materializedRelativePath": "import/_packs/pack/slot__pack_4.json",
-      "strategy": "exact-content-match",
+      "strategy": "import-pack",
       "detail": {
-        "matchedFromDeletedRootFile": true
+        "commonPrefixSegments": [],
+        "primaryLeafName": "槽位",
+        "assetCount": 4,
+        "textureUuidKeys": [
+          "18ea43c33"
+        ]
       }
     },
     {
@@ -232,9 +292,14 @@
       "originalRelativePath": "import/0972c63c0.8408d.json",
       "semanticRelativePath": "__semantic__/_packs/pack/banner__pack_11.json",
       "materializedRelativePath": "import/_packs/pack/banner__pack_11.json",
-      "strategy": "exact-content-match",
+      "strategy": "import-pack",
       "detail": {
-        "matchedFromDeletedRootFile": true
+        "commonPrefixSegments": [],
+        "primaryLeafName": "横幅",
+        "assetCount": 11,
+        "textureUuidKeys": [
+          "1972c63c0"
+        ]
       }
     },
     {
@@ -252,9 +317,14 @@
       "originalRelativePath": "import/0a08c225f.d53c2.json",
       "semanticRelativePath": "__semantic__/_packs/pack/halo__pack_18.json",
       "materializedRelativePath": "import/_packs/pack/halo__pack_18.json",
-      "strategy": "exact-content-match",
+      "strategy": "import-pack",
       "detail": {
-        "matchedFromDeletedRootFile": true
+        "commonPrefixSegments": [],
+        "primaryLeafName": "光圈",
+        "assetCount": 18,
+        "textureUuidKeys": [
+          "1a08c225f"
+        ]
       }
     },
     {
@@ -272,9 +342,14 @@
       "originalRelativePath": "import/0c4c5cdf1.80f37.json",
       "semanticRelativePath": "__semantic__/_packs/pack/shuffle__pack_12.json",
       "materializedRelativePath": "import/_packs/pack/shuffle__pack_12.json",
-      "strategy": "exact-content-match",
+      "strategy": "import-pack",
       "detail": {
-        "matchedFromDeletedRootFile": true
+        "commonPrefixSegments": [],
+        "primaryLeafName": "打乱",
+        "assetCount": 12,
+        "textureUuidKeys": [
+          "1c4c5cdf1"
+        ]
       }
     },
     {
@@ -282,9 +357,14 @@
       "originalRelativePath": "import/0cf9b8bfe.8925c.json",
       "semanticRelativePath": "__semantic__/_packs/pack/share__pack_11.json",
       "materializedRelativePath": "import/_packs/pack/share__pack_11.json",
-      "strategy": "exact-content-match",
+      "strategy": "import-pack",
       "detail": {
-        "matchedFromDeletedRootFile": true
+        "commonPrefixSegments": [],
+        "primaryLeafName": "分享",
+        "assetCount": 11,
+        "textureUuidKeys": [
+          "1cf9b8bfe"
+        ]
       }
     },
     {
@@ -292,9 +372,14 @@
       "originalRelativePath": "import/0cfb4391b.d4759.json",
       "semanticRelativePath": "__semantic__/_packs/pack/close__pack_18.json",
       "materializedRelativePath": "import/_packs/pack/close__pack_18.json",
-      "strategy": "exact-content-match",
+      "strategy": "import-pack",
       "detail": {
-        "matchedFromDeletedRootFile": true
+        "commonPrefixSegments": [],
+        "primaryLeafName": "×",
+        "assetCount": 18,
+        "textureUuidKeys": [
+          "1cfb4391b"
+        ]
       }
     },
     {
@@ -302,9 +387,14 @@
       "originalRelativePath": "import/0f5276afb.a6c88.json",
       "semanticRelativePath": "__semantic__/_packs/pack/bottom__pack_17.json",
       "materializedRelativePath": "import/_packs/pack/bottom__pack_17.json",
-      "strategy": "exact-content-match",
+      "strategy": "import-pack",
       "detail": {
-        "matchedFromDeletedRootFile": true
+        "commonPrefixSegments": [],
+        "primaryLeafName": "底",
+        "assetCount": 17,
+        "textureUuidKeys": [
+          "1f5276afb"
+        ]
       }
     },
     {
@@ -312,9 +402,13 @@
       "originalRelativePath": "import/115216800.a046e.json",
       "semanticRelativePath": "__semantic__/texture/share__texture_8.json",
       "materializedRelativePath": "import/texture/share__texture_8.json",
-      "strategy": "exact-content-match",
+      "strategy": "texture-source-import",
       "detail": {
-        "matchedFromDeletedRootFile": true
+        "commonPrefixSegments": [],
+        "primaryLeafName": "分享",
+        "assetCount": 8,
+        "textureUuidKey": "115216800",
+        "packStem": "015216800"
       }
     },
     {
@@ -322,9 +416,13 @@
       "originalRelativePath": "import/11d37c23d.ee433.json",
       "semanticRelativePath": "__semantic__/texture/highlight__texture_37.json",
       "materializedRelativePath": "import/texture/highlight__texture_37.json",
-      "strategy": "exact-content-match",
+      "strategy": "texture-source-import",
       "detail": {
-        "matchedFromDeletedRootFile": true
+        "commonPrefixSegments": [],
+        "primaryLeafName": "高光",
+        "assetCount": 37,
+        "textureUuidKey": "11d37c23d",
+        "packStem": "01d37c23d"
       }
     },
     {
@@ -342,9 +440,13 @@
       "originalRelativePath": "import/1353ef82c.e7f7b.json",
       "semanticRelativePath": "__semantic__/texture/percent__texture_10.json",
       "materializedRelativePath": "import/texture/percent__texture_10.json",
-      "strategy": "exact-content-match",
+      "strategy": "texture-source-import",
       "detail": {
-        "matchedFromDeletedRootFile": true
+        "commonPrefixSegments": [],
+        "primaryLeafName": "%",
+        "assetCount": 10,
+        "textureUuidKey": "1353ef82c",
+        "packStem": "0353ef82c"
       }
     },
     {
@@ -362,9 +464,13 @@
       "originalRelativePath": "import/1361f2d0d.ccdb6.json",
       "semanticRelativePath": "__semantic__/texture/bottom__texture_15.json",
       "materializedRelativePath": "import/texture/bottom__texture_15.json",
-      "strategy": "exact-content-match",
+      "strategy": "texture-source-import",
       "detail": {
-        "matchedFromDeletedRootFile": true
+        "commonPrefixSegments": [],
+        "primaryLeafName": "底",
+        "assetCount": 15,
+        "textureUuidKey": "1361f2d0d",
+        "packStem": "0361f2d0d"
       }
     },
     {
@@ -386,9 +492,13 @@
       "originalRelativePath": "import/13a4cca66.fb5e6.json",
       "semanticRelativePath": "__semantic__/texture/props__texture_12.json",
       "materializedRelativePath": "import/texture/props__texture_12.json",
-      "strategy": "exact-content-match",
+      "strategy": "texture-source-import",
       "detail": {
-        "matchedFromDeletedRootFile": true
+        "commonPrefixSegments": [],
+        "primaryLeafName": "道具",
+        "assetCount": 12,
+        "textureUuidKey": "13a4cca66",
+        "packStem": "03a4cca66"
       }
     },
     {
@@ -396,9 +506,13 @@
       "originalRelativePath": "import/15c250e9e.b8cdc.json",
       "semanticRelativePath": "__semantic__/texture/reward__texture_6.json",
       "materializedRelativePath": "import/texture/reward__texture_6.json",
-      "strategy": "exact-content-match",
+      "strategy": "texture-source-import",
       "detail": {
-        "matchedFromDeletedRootFile": true
+        "commonPrefixSegments": [],
+        "primaryLeafName": "奖",
+        "assetCount": 6,
+        "textureUuidKey": "15c250e9e",
+        "packStem": "05c250e9e"
       }
     },
     {
@@ -422,9 +536,13 @@
       "originalRelativePath": "import/17f9bf2d5.99073.json",
       "semanticRelativePath": "__semantic__/texture/callFriend__texture_18.json",
       "materializedRelativePath": "import/texture/callFriend__texture_18.json",
-      "strategy": "exact-content-match",
+      "strategy": "texture-source-import",
       "detail": {
-        "matchedFromDeletedRootFile": true
+        "commonPrefixSegments": [],
+        "primaryLeafName": "喊人",
+        "assetCount": 18,
+        "textureUuidKey": "17f9bf2d5",
+        "packStem": "07f9bf2d5"
       }
     },
     {
@@ -442,9 +560,13 @@
       "originalRelativePath": "import/18ea43c33.2ea0b.json",
       "semanticRelativePath": "__semantic__/texture/slot__texture_4.json",
       "materializedRelativePath": "import/texture/slot__texture_4.json",
-      "strategy": "exact-content-match",
+      "strategy": "texture-source-import",
       "detail": {
-        "matchedFromDeletedRootFile": true
+        "commonPrefixSegments": [],
+        "primaryLeafName": "槽位",
+        "assetCount": 4,
+        "textureUuidKey": "18ea43c33",
+        "packStem": "08ea43c33"
       }
     },
     {
@@ -468,9 +590,13 @@
       "originalRelativePath": "import/1972c63c0.108d0.json",
       "semanticRelativePath": "__semantic__/texture/banner__texture_11.json",
       "materializedRelativePath": "import/texture/banner__texture_11.json",
-      "strategy": "exact-content-match",
+      "strategy": "texture-source-import",
       "detail": {
-        "matchedFromDeletedRootFile": true
+        "commonPrefixSegments": [],
+        "primaryLeafName": "横幅",
+        "assetCount": 11,
+        "textureUuidKey": "1972c63c0",
+        "packStem": "0972c63c0"
       }
     },
     {
@@ -488,9 +614,13 @@
       "originalRelativePath": "import/1a08c225f.d4f69.json",
       "semanticRelativePath": "__semantic__/texture/halo__texture_18.json",
       "materializedRelativePath": "import/texture/halo__texture_18.json",
-      "strategy": "exact-content-match",
+      "strategy": "texture-source-import",
       "detail": {
-        "matchedFromDeletedRootFile": true
+        "commonPrefixSegments": [],
+        "primaryLeafName": "光圈",
+        "assetCount": 18,
+        "textureUuidKey": "1a08c225f",
+        "packStem": "0a08c225f"
       }
     },
     {
@@ -498,9 +628,13 @@
       "originalRelativePath": "import/1c4c5cdf1.9ef74.json",
       "semanticRelativePath": "__semantic__/texture/shuffle__texture_12.json",
       "materializedRelativePath": "import/texture/shuffle__texture_12.json",
-      "strategy": "exact-content-match",
+      "strategy": "texture-source-import",
       "detail": {
-        "matchedFromDeletedRootFile": true
+        "commonPrefixSegments": [],
+        "primaryLeafName": "打乱",
+        "assetCount": 12,
+        "textureUuidKey": "1c4c5cdf1",
+        "packStem": "0c4c5cdf1"
       }
     },
     {
@@ -508,9 +642,13 @@
       "originalRelativePath": "import/1cf9b8bfe.368b5.json",
       "semanticRelativePath": "__semantic__/texture/share__texture_11.json",
       "materializedRelativePath": "import/texture/share__texture_11.json",
-      "strategy": "exact-content-match",
+      "strategy": "texture-source-import",
       "detail": {
-        "matchedFromDeletedRootFile": true
+        "commonPrefixSegments": [],
+        "primaryLeafName": "分享",
+        "assetCount": 11,
+        "textureUuidKey": "1cf9b8bfe",
+        "packStem": "0cf9b8bfe"
       }
     },
     {
@@ -518,9 +656,13 @@
       "originalRelativePath": "import/1cfb4391b.b302b.json",
       "semanticRelativePath": "__semantic__/texture/close__texture_18.json",
       "materializedRelativePath": "import/texture/close__texture_18.json",
-      "strategy": "exact-content-match",
+      "strategy": "texture-source-import",
       "detail": {
-        "matchedFromDeletedRootFile": true
+        "commonPrefixSegments": [],
+        "primaryLeafName": "×",
+        "assetCount": 18,
+        "textureUuidKey": "1cfb4391b",
+        "packStem": "0cfb4391b"
       }
     },
     {
@@ -528,9 +670,33 @@
       "originalRelativePath": "import/1f5276afb.675c8.json",
       "semanticRelativePath": "__semantic__/texture/bottom__texture_17.json",
       "materializedRelativePath": "import/texture/bottom__texture_17.json",
-      "strategy": "exact-content-match",
+      "strategy": "texture-source-import",
       "detail": {
-        "matchedFromDeletedRootFile": true
+        "commonPrefixSegments": [],
+        "primaryLeafName": "底",
+        "assetCount": 17,
+        "textureUuidKey": "1f5276afb",
+        "packStem": "0f5276afb"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/2056bc90-0221-4223-b58a-07c01e25bdb5.a2533.json",
+      "semanticRelativePath": "__semantic__/props/rainbowBall.json",
+      "materializedRelativePath": "import/props/rainbowBall.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "props/rainbowBall"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/20835ba4-6145-4fbc-a58a-051ce700aa3e.a2533.json",
+      "semanticRelativePath": "__semantic__/utility/lightGraySquare.json",
+      "materializedRelativePath": "import/utility/lightGraySquare.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "utility/lightGraySquare"
       }
     },
     {
@@ -541,6 +707,16 @@
       "strategy": "direct-canonical-path",
       "detail": {
         "canonicalPath": "tex/background/waterLayer2"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/2507b64b-6f48-4e0b-83b6-b0fba5864c18.a2533.json",
+      "semanticRelativePath": "__semantic__/scene/ovalHole.json",
+      "materializedRelativePath": "import/scene/ovalHole.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "scene/ovalHole"
       }
     },
     {
@@ -605,6 +781,36 @@
     },
     {
       "kind": "import",
+      "originalRelativePath": "import/48cadb61-de88-4c0a-bb4a-3ac2fe428dec.a2533.json",
+      "semanticRelativePath": "__semantic__/ui/goldRoundedCap.json",
+      "materializedRelativePath": "import/ui/goldRoundedCap.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "ui/goldRoundedCap"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/4d96b4ce-0f78-496e-aee3-fb4b213789e3.a2533.json",
+      "semanticRelativePath": "__semantic__/ui/brownRoundedCap.json",
+      "materializedRelativePath": "import/ui/brownRoundedCap.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "ui/brownRoundedCap"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/4e318cab-9fdc-49fc-a1b2-7474add66ed2.a2533.json",
+      "semanticRelativePath": "__semantic__/mask/roundedPanelMask.json",
+      "materializedRelativePath": "import/mask/roundedPanelMask.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "mask/roundedPanelMask"
+      }
+    },
+    {
+      "kind": "import",
       "originalRelativePath": "import/52226b36-3482-4562-98bc-5ab1acd14c89.a2533.json",
       "semanticRelativePath": "__semantic__/tex/randomProp.json",
       "materializedRelativePath": "import/tex/randomProp.json",
@@ -615,12 +821,42 @@
     },
     {
       "kind": "import",
+      "originalRelativePath": "import/544e49d6-3f05-4fa8-9a9e-091f98fc2ce8.a2533.json",
+      "semanticRelativePath": "__semantic__/utility/darkGraySquare.json",
+      "materializedRelativePath": "import/utility/darkGraySquare.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "utility/darkGraySquare"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/56a35c4e-18ad-4795-86ad-f11bb3ebaa5a.a2533.json",
+      "semanticRelativePath": "__semantic__/utility/whitePixel2x2.json",
+      "materializedRelativePath": "import/utility/whitePixel2x2.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "utility/whitePixel2x2"
+      }
+    },
+    {
+      "kind": "import",
       "originalRelativePath": "import/596c7b55-a3c0-43fe-b745-7d70ed9198b0.a2533.json",
       "semanticRelativePath": "__semantic__/tex/glow.json",
       "materializedRelativePath": "import/tex/glow.json",
       "strategy": "direct-canonical-path",
       "detail": {
         "canonicalPath": "tex/光"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/59ed86d6-38a8-4bf7-9360-0805b40aa7bc.a2533.json",
+      "semanticRelativePath": "__semantic__/digits/whiteDigitsStrip.json",
+      "materializedRelativePath": "import/digits/whiteDigitsStrip.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "digits/whiteDigitsStrip"
       }
     },
     {
@@ -695,12 +931,32 @@
     },
     {
       "kind": "import",
+      "originalRelativePath": "import/74c3f488-7a9c-4197-85fc-610d11be15c2.a2533.json",
+      "semanticRelativePath": "__semantic__/text/levelText.json",
+      "materializedRelativePath": "import/text/levelText.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "text/levelText"
+      }
+    },
+    {
+      "kind": "import",
       "originalRelativePath": "import/7526f3a0-39ee-4712-ad91-67585cde7844@f9941.5c05d.json",
       "semanticRelativePath": "__semantic__/tex/background/cornerBottomRight.json",
       "materializedRelativePath": "import/tex/background/cornerBottomRight.json",
       "strategy": "direct-canonical-path",
       "detail": {
         "canonicalPath": "tex/background/cornerBottomRight"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/7d8f9b89-4fd1-4c9f-a3ab-38ec7cded7ca.a2533.json",
+      "semanticRelativePath": "__semantic__/utility/whitePixel2x2Alt.json",
+      "materializedRelativePath": "import/utility/whitePixel2x2Alt.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "utility/whitePixel2x2Alt"
       }
     },
     {
@@ -721,6 +977,26 @@
       "strategy": "direct-canonical-path",
       "detail": {
         "canonicalPath": "tex/seasonalBackground/cyanTheme/well"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/82d23d6a-e4c1-499e-b540-30d9bb9c9bd9.dbac2.json",
+      "semanticRelativePath": "__semantic__/background/skyGradient.json",
+      "materializedRelativePath": "import/background/skyGradient.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "background/skyGradient"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/83fee86e-b4cc-4a0f-8e15-9745cbd4db4b.a2533.json",
+      "semanticRelativePath": "__semantic__/digits/whiteDigitsStripWide.json",
+      "materializedRelativePath": "import/digits/whiteDigitsStripWide.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "digits/whiteDigitsStripWide"
       }
     },
     {
@@ -775,12 +1051,32 @@
     },
     {
       "kind": "import",
+      "originalRelativePath": "import/951249e0-9f16-456d-8b85-a6ca954da16b.a2533.json",
+      "semanticRelativePath": "__semantic__/utility/lightGraySquareSoft.json",
+      "materializedRelativePath": "import/utility/lightGraySquareSoft.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "utility/lightGraySquareSoft"
+      }
+    },
+    {
+      "kind": "import",
       "originalRelativePath": "import/9bccc019-58e1-4173-9841-7544ea22b987.c16a8.json",
       "semanticRelativePath": "__semantic__/tex/seasonalBackground/cyanTheme/background.json",
       "materializedRelativePath": "import/tex/seasonalBackground/cyanTheme/background.json",
       "strategy": "direct-canonical-path",
       "detail": {
         "canonicalPath": "tex/seasonalBackground/cyanTheme/background"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/a137c41d-7918-457c-92bf-c1930b96b8a4.a2533.json",
+      "semanticRelativePath": "__semantic__/duck/bodyPartsSheet.json",
+      "materializedRelativePath": "import/duck/bodyPartsSheet.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "duck/bodyPartsSheet"
       }
     },
     {
@@ -825,12 +1121,32 @@
     },
     {
       "kind": "import",
+      "originalRelativePath": "import/a7be5c56-e258-46ea-b69d-63f0f8595b80.c16a8.json",
+      "semanticRelativePath": "__semantic__/background/lightGradient.json",
+      "materializedRelativePath": "import/background/lightGradient.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "background/lightGradient"
+      }
+    },
+    {
+      "kind": "import",
       "originalRelativePath": "import/a83e43e2-34cc-4ad2-8def-c79023859b07.a2533.json",
       "semanticRelativePath": "__semantic__/tex/fruitHole/fruitHole3.json",
       "materializedRelativePath": "import/tex/fruitHole/fruitHole3.json",
       "strategy": "direct-canonical-path",
       "detail": {
         "canonicalPath": "tex/fruitHole/fruitHole3"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/aaf71e20-e580-40c7-b52c-2f27715312e7.a2533.json",
+      "semanticRelativePath": "__semantic__/scene/dirtPitTop.json",
+      "materializedRelativePath": "import/scene/dirtPitTop.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "scene/dirtPitTop"
       }
     },
     {
@@ -905,12 +1221,42 @@
     },
     {
       "kind": "import",
+      "originalRelativePath": "import/bd1bcaba-bd7d-4a71-b143-997c882383e4.a2533.json",
+      "semanticRelativePath": "__semantic__/utility/mediumGraySquare.json",
+      "materializedRelativePath": "import/utility/mediumGraySquare.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "utility/mediumGraySquare"
+      }
+    },
+    {
+      "kind": "import",
       "originalRelativePath": "import/bf6077a1-391b-42eb-9278-a4bd2d34f8fc.a2533.json",
       "semanticRelativePath": "__semantic__/tex/background/lavaLayer2.json",
       "materializedRelativePath": "import/tex/background/lavaLayer2.json",
       "strategy": "direct-canonical-path",
       "detail": {
         "canonicalPath": "tex/background/lavaLayer2"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/c0d128a1-eace-4870-a9c0-91f319b83e8e.a2533.json",
+      "semanticRelativePath": "__semantic__/background/cloud.json",
+      "materializedRelativePath": "import/background/cloud.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "background/cloud"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/c5f5e811-3a6b-4661-9679-741ad09a6390.a2533.json",
+      "semanticRelativePath": "__semantic__/ui/tanPanel.json",
+      "materializedRelativePath": "import/ui/tanPanel.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "ui/tanPanel"
       }
     },
     {
@@ -975,12 +1321,32 @@
     },
     {
       "kind": "import",
+      "originalRelativePath": "import/ee36791a-5c44-40a8-8872-56aacb3d204f.a2533.json",
+      "semanticRelativePath": "__semantic__/ui/questionMark.json",
+      "materializedRelativePath": "import/ui/questionMark.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "ui/questionMark"
+      }
+    },
+    {
+      "kind": "import",
       "originalRelativePath": "import/eeb52953-13de-47d8-a19c-0347e1438e1c.a2533.json",
       "semanticRelativePath": "__semantic__/bibiLabu/skeleton.json",
       "materializedRelativePath": "import/bibiLabu/skeleton.json",
       "strategy": "direct-canonical-path",
       "detail": {
         "canonicalPath": "比比拉布/skeleton"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/f12a23c4-b924-4322-a260-3d982428f1e8.a2533.json",
+      "semanticRelativePath": "__semantic__/ui/whiteCircle.json",
+      "materializedRelativePath": "import/ui/whiteCircle.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "ui/whiteCircle"
       }
     },
     {
@@ -1022,6 +1388,26 @@
       "detail": {
         "canonicalPath": "tex/fruitHole/fruitHole1"
       }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/f808b8f2-223e-433d-a6bd-86e18bef7242.a2533.json",
+      "semanticRelativePath": "__semantic__/scene/dirtWallTop.json",
+      "materializedRelativePath": "import/scene/dirtWallTop.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "scene/dirtWallTop"
+      }
+    },
+    {
+      "kind": "import",
+      "originalRelativePath": "import/fb56bdf0-d73b-4423-8ba2-e8f18e57b5c9.a2533.json",
+      "semanticRelativePath": "__semantic__/scene/dirtMound.json",
+      "materializedRelativePath": "import/scene/dirtMound.json",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "scene/dirtMound"
+      }
     }
   ],
   "nativeAliases": [
@@ -1043,6 +1429,16 @@
       "strategy": "direct-canonical-path",
       "detail": {
         "canonicalPath": "tex/background/mainBackground"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/02c960b2-a56d-4aab-a517-3ba441a0a458.5e971.png",
+      "semanticRelativePath": "__semantic__/effects/flowerGlow.png",
+      "materializedRelativePath": "native/effects/flowerGlow.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "effects/flowerGlow"
       }
     },
     {
@@ -1080,9 +1476,13 @@
       "originalRelativePath": "native/115216800.b4036.png",
       "semanticRelativePath": "__semantic__/texture/share__texture_8.png",
       "materializedRelativePath": "native/texture/share__texture_8.png",
-      "strategy": "exact-content-match",
+      "strategy": "texture-source-from-pack",
       "detail": {
-        "matchedFromDeletedRootFile": true
+        "commonPrefixSegments": [],
+        "primaryLeafName": "分享",
+        "assetCount": 8,
+        "textureUuidKey": "115216800",
+        "packStem": "015216800"
       }
     },
     {
@@ -1090,9 +1490,13 @@
       "originalRelativePath": "native/11d37c23d.04f4b.png",
       "semanticRelativePath": "__semantic__/texture/highlight__texture_37.png",
       "materializedRelativePath": "native/texture/highlight__texture_37.png",
-      "strategy": "exact-content-match",
+      "strategy": "texture-source-from-pack",
       "detail": {
-        "matchedFromDeletedRootFile": true
+        "commonPrefixSegments": [],
+        "primaryLeafName": "高光",
+        "assetCount": 37,
+        "textureUuidKey": "11d37c23d",
+        "packStem": "01d37c23d"
       }
     },
     {
@@ -1110,9 +1514,13 @@
       "originalRelativePath": "native/1353ef82c.1713c.png",
       "semanticRelativePath": "__semantic__/texture/percent__texture_10.png",
       "materializedRelativePath": "native/texture/percent__texture_10.png",
-      "strategy": "exact-content-match",
+      "strategy": "texture-source-from-pack",
       "detail": {
-        "matchedFromDeletedRootFile": true
+        "commonPrefixSegments": [],
+        "primaryLeafName": "%",
+        "assetCount": 10,
+        "textureUuidKey": "1353ef82c",
+        "packStem": "0353ef82c"
       }
     },
     {
@@ -1130,9 +1538,13 @@
       "originalRelativePath": "native/1361f2d0d.8fdf5.png",
       "semanticRelativePath": "__semantic__/texture/bottom__texture_15.png",
       "materializedRelativePath": "native/texture/bottom__texture_15.png",
-      "strategy": "exact-content-match",
+      "strategy": "texture-source-from-pack",
       "detail": {
-        "matchedFromDeletedRootFile": true
+        "commonPrefixSegments": [],
+        "primaryLeafName": "底",
+        "assetCount": 15,
+        "textureUuidKey": "1361f2d0d",
+        "packStem": "0361f2d0d"
       }
     },
     {
@@ -1154,9 +1566,13 @@
       "originalRelativePath": "native/13a4cca66.eb7ee.png",
       "semanticRelativePath": "__semantic__/texture/props__texture_12.png",
       "materializedRelativePath": "native/texture/props__texture_12.png",
-      "strategy": "exact-content-match",
+      "strategy": "texture-source-from-pack",
       "detail": {
-        "matchedFromDeletedRootFile": true
+        "commonPrefixSegments": [],
+        "primaryLeafName": "道具",
+        "assetCount": 12,
+        "textureUuidKey": "13a4cca66",
+        "packStem": "03a4cca66"
       }
     },
     {
@@ -1164,9 +1580,13 @@
       "originalRelativePath": "native/15c250e9e.9fa26.png",
       "semanticRelativePath": "__semantic__/texture/reward__texture_6.png",
       "materializedRelativePath": "native/texture/reward__texture_6.png",
-      "strategy": "exact-content-match",
+      "strategy": "texture-source-from-pack",
       "detail": {
-        "matchedFromDeletedRootFile": true
+        "commonPrefixSegments": [],
+        "primaryLeafName": "奖",
+        "assetCount": 6,
+        "textureUuidKey": "15c250e9e",
+        "packStem": "05c250e9e"
       }
     },
     {
@@ -1190,9 +1610,13 @@
       "originalRelativePath": "native/17f9bf2d5.f3f5d.png",
       "semanticRelativePath": "__semantic__/texture/callFriend__texture_18.png",
       "materializedRelativePath": "native/texture/callFriend__texture_18.png",
-      "strategy": "exact-content-match",
+      "strategy": "texture-source-from-pack",
       "detail": {
-        "matchedFromDeletedRootFile": true
+        "commonPrefixSegments": [],
+        "primaryLeafName": "喊人",
+        "assetCount": 18,
+        "textureUuidKey": "17f9bf2d5",
+        "packStem": "07f9bf2d5"
       }
     },
     {
@@ -1210,9 +1634,13 @@
       "originalRelativePath": "native/18ea43c33.da71f.png",
       "semanticRelativePath": "__semantic__/texture/slot__texture_4.png",
       "materializedRelativePath": "native/texture/slot__texture_4.png",
-      "strategy": "exact-content-match",
+      "strategy": "texture-source-from-pack",
       "detail": {
-        "matchedFromDeletedRootFile": true
+        "commonPrefixSegments": [],
+        "primaryLeafName": "槽位",
+        "assetCount": 4,
+        "textureUuidKey": "18ea43c33",
+        "packStem": "08ea43c33"
       }
     },
     {
@@ -1236,9 +1664,13 @@
       "originalRelativePath": "native/1972c63c0.5b136.png",
       "semanticRelativePath": "__semantic__/texture/banner__texture_11.png",
       "materializedRelativePath": "native/texture/banner__texture_11.png",
-      "strategy": "exact-content-match",
+      "strategy": "texture-source-from-pack",
       "detail": {
-        "matchedFromDeletedRootFile": true
+        "commonPrefixSegments": [],
+        "primaryLeafName": "横幅",
+        "assetCount": 11,
+        "textureUuidKey": "1972c63c0",
+        "packStem": "0972c63c0"
       }
     },
     {
@@ -1256,9 +1688,13 @@
       "originalRelativePath": "native/1a08c225f.71851.png",
       "semanticRelativePath": "__semantic__/texture/halo__texture_18.png",
       "materializedRelativePath": "native/texture/halo__texture_18.png",
-      "strategy": "exact-content-match",
+      "strategy": "texture-source-from-pack",
       "detail": {
-        "matchedFromDeletedRootFile": true
+        "commonPrefixSegments": [],
+        "primaryLeafName": "光圈",
+        "assetCount": 18,
+        "textureUuidKey": "1a08c225f",
+        "packStem": "0a08c225f"
       }
     },
     {
@@ -1266,9 +1702,13 @@
       "originalRelativePath": "native/1c4c5cdf1.91be7.png",
       "semanticRelativePath": "__semantic__/texture/shuffle__texture_12.png",
       "materializedRelativePath": "native/texture/shuffle__texture_12.png",
-      "strategy": "exact-content-match",
+      "strategy": "texture-source-from-pack",
       "detail": {
-        "matchedFromDeletedRootFile": true
+        "commonPrefixSegments": [],
+        "primaryLeafName": "打乱",
+        "assetCount": 12,
+        "textureUuidKey": "1c4c5cdf1",
+        "packStem": "0c4c5cdf1"
       }
     },
     {
@@ -1276,9 +1716,13 @@
       "originalRelativePath": "native/1cf9b8bfe.126cf.png",
       "semanticRelativePath": "__semantic__/texture/share__texture_11.png",
       "materializedRelativePath": "native/texture/share__texture_11.png",
-      "strategy": "exact-content-match",
+      "strategy": "texture-source-from-pack",
       "detail": {
-        "matchedFromDeletedRootFile": true
+        "commonPrefixSegments": [],
+        "primaryLeafName": "分享",
+        "assetCount": 11,
+        "textureUuidKey": "1cf9b8bfe",
+        "packStem": "0cf9b8bfe"
       }
     },
     {
@@ -1286,9 +1730,13 @@
       "originalRelativePath": "native/1cfb4391b.fa3ef.png",
       "semanticRelativePath": "__semantic__/texture/close__texture_18.png",
       "materializedRelativePath": "native/texture/close__texture_18.png",
-      "strategy": "exact-content-match",
+      "strategy": "texture-source-from-pack",
       "detail": {
-        "matchedFromDeletedRootFile": true
+        "commonPrefixSegments": [],
+        "primaryLeafName": "×",
+        "assetCount": 18,
+        "textureUuidKey": "1cfb4391b",
+        "packStem": "0cfb4391b"
       }
     },
     {
@@ -1296,9 +1744,33 @@
       "originalRelativePath": "native/1f5276afb.9c7e7.png",
       "semanticRelativePath": "__semantic__/texture/bottom__texture_17.png",
       "materializedRelativePath": "native/texture/bottom__texture_17.png",
-      "strategy": "exact-content-match",
+      "strategy": "texture-source-from-pack",
       "detail": {
-        "matchedFromDeletedRootFile": true
+        "commonPrefixSegments": [],
+        "primaryLeafName": "底",
+        "assetCount": 17,
+        "textureUuidKey": "1f5276afb",
+        "packStem": "0f5276afb"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/2056bc90-0221-4223-b58a-07c01e25bdb5.59ad8.png",
+      "semanticRelativePath": "__semantic__/props/rainbowBall.png",
+      "materializedRelativePath": "native/props/rainbowBall.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "props/rainbowBall"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/20835ba4-6145-4fbc-a58a-051ce700aa3e.90cf4.png",
+      "semanticRelativePath": "__semantic__/utility/lightGraySquare.png",
+      "materializedRelativePath": "native/utility/lightGraySquare.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "utility/lightGraySquare"
       }
     },
     {
@@ -1309,6 +1781,16 @@
       "strategy": "direct-canonical-path",
       "detail": {
         "canonicalPath": "tex/background/waterLayer2"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/2507b64b-6f48-4e0b-83b6-b0fba5864c18.64962.png",
+      "semanticRelativePath": "__semantic__/scene/ovalHole.png",
+      "materializedRelativePath": "native/scene/ovalHole.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "scene/ovalHole"
       }
     },
     {
@@ -1373,6 +1855,36 @@
     },
     {
       "kind": "native",
+      "originalRelativePath": "native/48cadb61-de88-4c0a-bb4a-3ac2fe428dec.7de7e.png",
+      "semanticRelativePath": "__semantic__/ui/goldRoundedCap.png",
+      "materializedRelativePath": "native/ui/goldRoundedCap.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "ui/goldRoundedCap"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/4d96b4ce-0f78-496e-aee3-fb4b213789e3.c6a49.png",
+      "semanticRelativePath": "__semantic__/ui/brownRoundedCap.png",
+      "materializedRelativePath": "native/ui/brownRoundedCap.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "ui/brownRoundedCap"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/4e318cab-9fdc-49fc-a1b2-7474add66ed2.7d9f0.png",
+      "semanticRelativePath": "__semantic__/mask/roundedPanelMask.png",
+      "materializedRelativePath": "native/mask/roundedPanelMask.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "mask/roundedPanelMask"
+      }
+    },
+    {
+      "kind": "native",
       "originalRelativePath": "native/52226b36-3482-4562-98bc-5ab1acd14c89.2fb0f.png",
       "semanticRelativePath": "__semantic__/tex/randomProp.png",
       "materializedRelativePath": "native/tex/randomProp.png",
@@ -1383,12 +1895,42 @@
     },
     {
       "kind": "native",
+      "originalRelativePath": "native/544e49d6-3f05-4fa8-9a9e-091f98fc2ce8.83fcc.png",
+      "semanticRelativePath": "__semantic__/utility/darkGraySquare.png",
+      "materializedRelativePath": "native/utility/darkGraySquare.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "utility/darkGraySquare"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/56a35c4e-18ad-4795-86ad-f11bb3ebaa5a.71d4d.png",
+      "semanticRelativePath": "__semantic__/utility/whitePixel2x2.png",
+      "materializedRelativePath": "native/utility/whitePixel2x2.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "utility/whitePixel2x2"
+      }
+    },
+    {
+      "kind": "native",
       "originalRelativePath": "native/596c7b55-a3c0-43fe-b745-7d70ed9198b0.b0e11.png",
       "semanticRelativePath": "__semantic__/tex/glow.png",
       "materializedRelativePath": "native/tex/glow.png",
       "strategy": "direct-canonical-path",
       "detail": {
         "canonicalPath": "tex/光"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/59ed86d6-38a8-4bf7-9360-0805b40aa7bc.01dfd.png",
+      "semanticRelativePath": "__semantic__/digits/whiteDigitsStrip.png",
+      "materializedRelativePath": "native/digits/whiteDigitsStrip.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "digits/whiteDigitsStrip"
       }
     },
     {
@@ -1463,6 +2005,26 @@
     },
     {
       "kind": "native",
+      "originalRelativePath": "native/74c3f488-7a9c-4197-85fc-610d11be15c2.5e086.png",
+      "semanticRelativePath": "__semantic__/text/levelText.png",
+      "materializedRelativePath": "native/text/levelText.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "text/levelText"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/7d8f9b89-4fd1-4c9f-a3ab-38ec7cded7ca.cea68.png",
+      "semanticRelativePath": "__semantic__/utility/whitePixel2x2Alt.png",
+      "materializedRelativePath": "native/utility/whitePixel2x2Alt.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "utility/whitePixel2x2Alt"
+      }
+    },
+    {
+      "kind": "native",
       "originalRelativePath": "native/7e125d6b-f312-4089-b9f7-54cda2a51d49.82be3.png",
       "semanticRelativePath": "__semantic__/tex/seasonalBackground/springTheme/well.png",
       "materializedRelativePath": "native/tex/seasonalBackground/springTheme/well.png",
@@ -1479,6 +2041,26 @@
       "strategy": "direct-canonical-path",
       "detail": {
         "canonicalPath": "tex/seasonalBackground/cyanTheme/well"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/82d23d6a-e4c1-499e-b540-30d9bb9c9bd9.ffc91.jpeg",
+      "semanticRelativePath": "__semantic__/background/skyGradient.jpeg",
+      "materializedRelativePath": "native/background/skyGradient.jpeg",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "background/skyGradient"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/83fee86e-b4cc-4a0f-8e15-9745cbd4db4b.d727e.png",
+      "semanticRelativePath": "__semantic__/digits/whiteDigitsStripWide.png",
+      "materializedRelativePath": "native/digits/whiteDigitsStripWide.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "digits/whiteDigitsStripWide"
       }
     },
     {
@@ -1533,12 +2115,32 @@
     },
     {
       "kind": "native",
+      "originalRelativePath": "native/951249e0-9f16-456d-8b85-a6ca954da16b.c06a9.png",
+      "semanticRelativePath": "__semantic__/utility/lightGraySquareSoft.png",
+      "materializedRelativePath": "native/utility/lightGraySquareSoft.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "utility/lightGraySquareSoft"
+      }
+    },
+    {
+      "kind": "native",
       "originalRelativePath": "native/9bccc019-58e1-4173-9841-7544ea22b987.b0322.jpg",
       "semanticRelativePath": "__semantic__/tex/seasonalBackground/cyanTheme/background.jpg",
       "materializedRelativePath": "native/tex/seasonalBackground/cyanTheme/background.jpg",
       "strategy": "direct-canonical-path",
       "detail": {
         "canonicalPath": "tex/seasonalBackground/cyanTheme/background"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/a137c41d-7918-457c-92bf-c1930b96b8a4.ecfc8.png",
+      "semanticRelativePath": "__semantic__/duck/bodyPartsSheet.png",
+      "materializedRelativePath": "native/duck/bodyPartsSheet.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "duck/bodyPartsSheet"
       }
     },
     {
@@ -1583,12 +2185,32 @@
     },
     {
       "kind": "native",
+      "originalRelativePath": "native/a7be5c56-e258-46ea-b69d-63f0f8595b80.cfc7c.jpg",
+      "semanticRelativePath": "__semantic__/background/lightGradient.jpg",
+      "materializedRelativePath": "native/background/lightGradient.jpg",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "background/lightGradient"
+      }
+    },
+    {
+      "kind": "native",
       "originalRelativePath": "native/a83e43e2-34cc-4ad2-8def-c79023859b07.5fdde.png",
       "semanticRelativePath": "__semantic__/tex/fruitHole/fruitHole3.png",
       "materializedRelativePath": "native/tex/fruitHole/fruitHole3.png",
       "strategy": "direct-canonical-path",
       "detail": {
         "canonicalPath": "tex/fruitHole/fruitHole3"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/aaf71e20-e580-40c7-b52c-2f27715312e7.71cd4.png",
+      "semanticRelativePath": "__semantic__/scene/dirtPitTop.png",
+      "materializedRelativePath": "native/scene/dirtPitTop.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "scene/dirtPitTop"
       }
     },
     {
@@ -1663,12 +2285,42 @@
     },
     {
       "kind": "native",
+      "originalRelativePath": "native/bd1bcaba-bd7d-4a71-b143-997c882383e4.17df6.png",
+      "semanticRelativePath": "__semantic__/utility/mediumGraySquare.png",
+      "materializedRelativePath": "native/utility/mediumGraySquare.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "utility/mediumGraySquare"
+      }
+    },
+    {
+      "kind": "native",
       "originalRelativePath": "native/bf6077a1-391b-42eb-9278-a4bd2d34f8fc.298d8.png",
       "semanticRelativePath": "__semantic__/tex/background/lavaLayer2.png",
       "materializedRelativePath": "native/tex/background/lavaLayer2.png",
       "strategy": "direct-canonical-path",
       "detail": {
         "canonicalPath": "tex/background/lavaLayer2"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/c0d128a1-eace-4870-a9c0-91f319b83e8e.60bfd.png",
+      "semanticRelativePath": "__semantic__/background/cloud.png",
+      "materializedRelativePath": "native/background/cloud.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "background/cloud"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/c5f5e811-3a6b-4661-9679-741ad09a6390.f3321.png",
+      "semanticRelativePath": "__semantic__/ui/tanPanel.png",
+      "materializedRelativePath": "native/ui/tanPanel.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "ui/tanPanel"
       }
     },
     {
@@ -1733,12 +2385,32 @@
     },
     {
       "kind": "native",
+      "originalRelativePath": "native/ee36791a-5c44-40a8-8872-56aacb3d204f.813ce.png",
+      "semanticRelativePath": "__semantic__/ui/questionMark.png",
+      "materializedRelativePath": "native/ui/questionMark.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "ui/questionMark"
+      }
+    },
+    {
+      "kind": "native",
       "originalRelativePath": "native/eeb52953-13de-47d8-a19c-0347e1438e1c.a5167.png",
       "semanticRelativePath": "__semantic__/bibiLabu/skeleton.png",
       "materializedRelativePath": "native/bibiLabu/skeleton.png",
       "strategy": "direct-canonical-path",
       "detail": {
         "canonicalPath": "比比拉布/skeleton"
+      }
+    },
+    {
+      "kind": "native",
+      "originalRelativePath": "native/f12a23c4-b924-4322-a260-3d982428f1e8.5f1d9.png",
+      "semanticRelativePath": "__semantic__/ui/whiteCircle.png",
+      "materializedRelativePath": "native/ui/whiteCircle.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "ui/whiteCircle"
       }
     },
     {
@@ -1780,214 +2452,28 @@
       "detail": {
         "canonicalPath": "tex/fruitHole/fruitHole1"
       }
-    }
-  ],
-  "unresolvedImports": [
-    {
-      "originalRelativePath": "import/02c960b2-a56d-4aab-a517-3ba441a0a458.a2533.json",
-      "stem": "02c960b2-a56d-4aab-a517-3ba441a0a458"
     },
     {
-      "originalRelativePath": "import/0477c566e.f0408.json",
-      "stem": "0477c566e"
-    },
-    {
-      "originalRelativePath": "import/2056bc90-0221-4223-b58a-07c01e25bdb5.a2533.json",
-      "stem": "2056bc90-0221-4223-b58a-07c01e25bdb5"
-    },
-    {
-      "originalRelativePath": "import/20835ba4-6145-4fbc-a58a-051ce700aa3e.a2533.json",
-      "stem": "20835ba4-6145-4fbc-a58a-051ce700aa3e"
-    },
-    {
-      "originalRelativePath": "import/2507b64b-6f48-4e0b-83b6-b0fba5864c18.a2533.json",
-      "stem": "2507b64b-6f48-4e0b-83b6-b0fba5864c18"
-    },
-    {
-      "originalRelativePath": "import/48cadb61-de88-4c0a-bb4a-3ac2fe428dec.a2533.json",
-      "stem": "48cadb61-de88-4c0a-bb4a-3ac2fe428dec"
-    },
-    {
-      "originalRelativePath": "import/4d96b4ce-0f78-496e-aee3-fb4b213789e3.a2533.json",
-      "stem": "4d96b4ce-0f78-496e-aee3-fb4b213789e3"
-    },
-    {
-      "originalRelativePath": "import/4e318cab-9fdc-49fc-a1b2-7474add66ed2.a2533.json",
-      "stem": "4e318cab-9fdc-49fc-a1b2-7474add66ed2"
-    },
-    {
-      "originalRelativePath": "import/544e49d6-3f05-4fa8-9a9e-091f98fc2ce8.a2533.json",
-      "stem": "544e49d6-3f05-4fa8-9a9e-091f98fc2ce8"
-    },
-    {
-      "originalRelativePath": "import/56a35c4e-18ad-4795-86ad-f11bb3ebaa5a.a2533.json",
-      "stem": "56a35c4e-18ad-4795-86ad-f11bb3ebaa5a"
-    },
-    {
-      "originalRelativePath": "import/59ed86d6-38a8-4bf7-9360-0805b40aa7bc.a2533.json",
-      "stem": "59ed86d6-38a8-4bf7-9360-0805b40aa7bc"
-    },
-    {
-      "originalRelativePath": "import/74c3f488-7a9c-4197-85fc-610d11be15c2.a2533.json",
-      "stem": "74c3f488-7a9c-4197-85fc-610d11be15c2"
-    },
-    {
-      "originalRelativePath": "import/7d8f9b89-4fd1-4c9f-a3ab-38ec7cded7ca.a2533.json",
-      "stem": "7d8f9b89-4fd1-4c9f-a3ab-38ec7cded7ca"
-    },
-    {
-      "originalRelativePath": "import/82d23d6a-e4c1-499e-b540-30d9bb9c9bd9.dbac2.json",
-      "stem": "82d23d6a-e4c1-499e-b540-30d9bb9c9bd9"
-    },
-    {
-      "originalRelativePath": "import/83fee86e-b4cc-4a0f-8e15-9745cbd4db4b.a2533.json",
-      "stem": "83fee86e-b4cc-4a0f-8e15-9745cbd4db4b"
-    },
-    {
-      "originalRelativePath": "import/951249e0-9f16-456d-8b85-a6ca954da16b.a2533.json",
-      "stem": "951249e0-9f16-456d-8b85-a6ca954da16b"
-    },
-    {
-      "originalRelativePath": "import/a137c41d-7918-457c-92bf-c1930b96b8a4.a2533.json",
-      "stem": "a137c41d-7918-457c-92bf-c1930b96b8a4"
-    },
-    {
-      "originalRelativePath": "import/a7be5c56-e258-46ea-b69d-63f0f8595b80.c16a8.json",
-      "stem": "a7be5c56-e258-46ea-b69d-63f0f8595b80"
-    },
-    {
-      "originalRelativePath": "import/aaf71e20-e580-40c7-b52c-2f27715312e7.a2533.json",
-      "stem": "aaf71e20-e580-40c7-b52c-2f27715312e7"
-    },
-    {
-      "originalRelativePath": "import/bd1bcaba-bd7d-4a71-b143-997c882383e4.a2533.json",
-      "stem": "bd1bcaba-bd7d-4a71-b143-997c882383e4"
-    },
-    {
-      "originalRelativePath": "import/c0d128a1-eace-4870-a9c0-91f319b83e8e.a2533.json",
-      "stem": "c0d128a1-eace-4870-a9c0-91f319b83e8e"
-    },
-    {
-      "originalRelativePath": "import/c5f5e811-3a6b-4661-9679-741ad09a6390.a2533.json",
-      "stem": "c5f5e811-3a6b-4661-9679-741ad09a6390"
-    },
-    {
-      "originalRelativePath": "import/ee36791a-5c44-40a8-8872-56aacb3d204f.a2533.json",
-      "stem": "ee36791a-5c44-40a8-8872-56aacb3d204f"
-    },
-    {
-      "originalRelativePath": "import/f12a23c4-b924-4322-a260-3d982428f1e8.a2533.json",
-      "stem": "f12a23c4-b924-4322-a260-3d982428f1e8"
-    },
-    {
-      "originalRelativePath": "import/f808b8f2-223e-433d-a6bd-86e18bef7242.a2533.json",
-      "stem": "f808b8f2-223e-433d-a6bd-86e18bef7242"
-    },
-    {
-      "originalRelativePath": "import/fb56bdf0-d73b-4423-8ba2-e8f18e57b5c9.a2533.json",
-      "stem": "fb56bdf0-d73b-4423-8ba2-e8f18e57b5c9"
-    }
-  ],
-  "unresolvedNative": [
-    {
-      "originalRelativePath": "native/02c960b2-a56d-4aab-a517-3ba441a0a458.5e971.png",
-      "stem": "02c960b2-a56d-4aab-a517-3ba441a0a458"
-    },
-    {
-      "originalRelativePath": "native/2056bc90-0221-4223-b58a-07c01e25bdb5.59ad8.png",
-      "stem": "2056bc90-0221-4223-b58a-07c01e25bdb5"
-    },
-    {
-      "originalRelativePath": "native/20835ba4-6145-4fbc-a58a-051ce700aa3e.90cf4.png",
-      "stem": "20835ba4-6145-4fbc-a58a-051ce700aa3e"
-    },
-    {
-      "originalRelativePath": "native/2507b64b-6f48-4e0b-83b6-b0fba5864c18.64962.png",
-      "stem": "2507b64b-6f48-4e0b-83b6-b0fba5864c18"
-    },
-    {
-      "originalRelativePath": "native/48cadb61-de88-4c0a-bb4a-3ac2fe428dec.7de7e.png",
-      "stem": "48cadb61-de88-4c0a-bb4a-3ac2fe428dec"
-    },
-    {
-      "originalRelativePath": "native/4d96b4ce-0f78-496e-aee3-fb4b213789e3.c6a49.png",
-      "stem": "4d96b4ce-0f78-496e-aee3-fb4b213789e3"
-    },
-    {
-      "originalRelativePath": "native/4e318cab-9fdc-49fc-a1b2-7474add66ed2.7d9f0.png",
-      "stem": "4e318cab-9fdc-49fc-a1b2-7474add66ed2"
-    },
-    {
-      "originalRelativePath": "native/544e49d6-3f05-4fa8-9a9e-091f98fc2ce8.83fcc.png",
-      "stem": "544e49d6-3f05-4fa8-9a9e-091f98fc2ce8"
-    },
-    {
-      "originalRelativePath": "native/56a35c4e-18ad-4795-86ad-f11bb3ebaa5a.71d4d.png",
-      "stem": "56a35c4e-18ad-4795-86ad-f11bb3ebaa5a"
-    },
-    {
-      "originalRelativePath": "native/59ed86d6-38a8-4bf7-9360-0805b40aa7bc.01dfd.png",
-      "stem": "59ed86d6-38a8-4bf7-9360-0805b40aa7bc"
-    },
-    {
-      "originalRelativePath": "native/74c3f488-7a9c-4197-85fc-610d11be15c2.5e086.png",
-      "stem": "74c3f488-7a9c-4197-85fc-610d11be15c2"
-    },
-    {
-      "originalRelativePath": "native/7d8f9b89-4fd1-4c9f-a3ab-38ec7cded7ca.cea68.png",
-      "stem": "7d8f9b89-4fd1-4c9f-a3ab-38ec7cded7ca"
-    },
-    {
-      "originalRelativePath": "native/82d23d6a-e4c1-499e-b540-30d9bb9c9bd9.ffc91.jpeg",
-      "stem": "82d23d6a-e4c1-499e-b540-30d9bb9c9bd9"
-    },
-    {
-      "originalRelativePath": "native/83fee86e-b4cc-4a0f-8e15-9745cbd4db4b.d727e.png",
-      "stem": "83fee86e-b4cc-4a0f-8e15-9745cbd4db4b"
-    },
-    {
-      "originalRelativePath": "native/951249e0-9f16-456d-8b85-a6ca954da16b.c06a9.png",
-      "stem": "951249e0-9f16-456d-8b85-a6ca954da16b"
-    },
-    {
-      "originalRelativePath": "native/a137c41d-7918-457c-92bf-c1930b96b8a4.ecfc8.png",
-      "stem": "a137c41d-7918-457c-92bf-c1930b96b8a4"
-    },
-    {
-      "originalRelativePath": "native/a7be5c56-e258-46ea-b69d-63f0f8595b80.cfc7c.jpg",
-      "stem": "a7be5c56-e258-46ea-b69d-63f0f8595b80"
-    },
-    {
-      "originalRelativePath": "native/aaf71e20-e580-40c7-b52c-2f27715312e7.71cd4.png",
-      "stem": "aaf71e20-e580-40c7-b52c-2f27715312e7"
-    },
-    {
-      "originalRelativePath": "native/bd1bcaba-bd7d-4a71-b143-997c882383e4.17df6.png",
-      "stem": "bd1bcaba-bd7d-4a71-b143-997c882383e4"
-    },
-    {
-      "originalRelativePath": "native/c0d128a1-eace-4870-a9c0-91f319b83e8e.60bfd.png",
-      "stem": "c0d128a1-eace-4870-a9c0-91f319b83e8e"
-    },
-    {
-      "originalRelativePath": "native/c5f5e811-3a6b-4661-9679-741ad09a6390.f3321.png",
-      "stem": "c5f5e811-3a6b-4661-9679-741ad09a6390"
-    },
-    {
-      "originalRelativePath": "native/ee36791a-5c44-40a8-8872-56aacb3d204f.813ce.png",
-      "stem": "ee36791a-5c44-40a8-8872-56aacb3d204f"
-    },
-    {
-      "originalRelativePath": "native/f12a23c4-b924-4322-a260-3d982428f1e8.5f1d9.png",
-      "stem": "f12a23c4-b924-4322-a260-3d982428f1e8"
-    },
-    {
+      "kind": "native",
       "originalRelativePath": "native/f808b8f2-223e-433d-a6bd-86e18bef7242.8cec2.png",
-      "stem": "f808b8f2-223e-433d-a6bd-86e18bef7242"
+      "semanticRelativePath": "__semantic__/scene/dirtWallTop.png",
+      "materializedRelativePath": "native/scene/dirtWallTop.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "scene/dirtWallTop"
+      }
     },
     {
+      "kind": "native",
       "originalRelativePath": "native/fb56bdf0-d73b-4423-8ba2-e8f18e57b5c9.21f41.png",
-      "stem": "fb56bdf0-d73b-4423-8ba2-e8f18e57b5c9"
+      "semanticRelativePath": "__semantic__/scene/dirtMound.png",
+      "materializedRelativePath": "native/scene/dirtMound.png",
+      "strategy": "direct-canonical-path",
+      "detail": {
+        "canonicalPath": "scene/dirtMound"
+      }
     }
-  ]
+  ],
+  "unresolvedImports": [],
+  "unresolvedNative": []
 }
