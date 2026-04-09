@@ -473,3 +473,57 @@
 本轮沉淀的治理手段：
 - 新增 `architecture/tools/semanticize-uibundle-book-display-assets.js`，把书册通用 UI 与鸽子图鉴展示资源改名固化成可重复执行脚本。
 - `architecture/tools/check-legacy-runtime-compat.js` 新增书册展示旧路径与 pack 名称护栏，防止 `tex/book/tex/*`、`tex/book/鸽鸽图鉴/*` 再次回流。
+
+## 2026-04-10 `uiBundle` / `main` 共享展示图集继续源头收敛
+
+本轮继续沿用“改 canonical 源头，不加运行时兜底”的策略，把已经开始语义化、但仍处于新旧命名混杂状态的一组共享展示资源整域收口。
+
+本轮新增 canonical 路径：
+- `tex/喊人页面/横幅/spriteFrame -> tex/sharePage/banner/spriteFrame`
+- `tex/喊人页面/旋转光/spriteFrame -> tex/sharePage/rotatingGlow/spriteFrame`
+- `tex/视频2/* -> tex/sharePage/videoBadge/*`
+- `tex/视频/* -> tex/sharePage/videoIcon/*`
+- `tex/视频(分享)/spriteFrame -> tex/sharePage/videoShareBadge/spriteFrame`
+- `tex/喊人页面/邀请好友/spriteFrame -> tex/sharePage/inviteFriendsButton/spriteFrame`
+- `tex/喊人页面/进度条2/spriteFrame -> tex/sharePage/progressBarBackground/spriteFrame`
+- `tex/喊人页面/进度条/spriteFrame -> tex/sharePage/progressBarForeground/spriteFrame`
+- `tex/投诉页面/提交/spriteFrame -> tex/reportDialog/submitButton/spriteFrame`
+- `tex/投诉页面/已提交/spriteFrame -> tex/reportDialog/submittedBanner/spriteFrame`
+- `tex/投诉页面/×/spriteFrame -> tex/reportDialog/close/spriteFrame`
+- `tex/投诉页面/底2/spriteFrame -> tex/reportDialog/panelBackground/spriteFrame`
+- `tex/投诉页面/圆2/spriteFrame -> tex/reportDialog/highlightHalo/spriteFrame`
+- `tex/投诉页面/底/spriteFrame -> tex/reportDialog/pillBase/spriteFrame`
+- `tex/投诉页面/圆1/spriteFrame -> tex/reportDialog/progressDot/spriteFrame`
+- `tex/投诉页面/线/spriteFrame -> tex/reportDialog/dividerLine/spriteFrame`
+- `tex/底/spriteFrame -> tex/powerPanel/baseBackground/spriteFrame`
+- `tex/过关页面/成功进度/光圈/* -> tex/levelCompletePage/successProgress/selectionHalo/*`
+- `tex/过关页面/成功进度/条2/spriteFrame -> tex/levelCompletePage/successProgress/progressBarFill/spriteFrame`
+- `tex/过关页面/成功进度/条1/spriteFrame -> tex/levelCompletePage/successProgress/progressBarTrack/spriteFrame`
+- `tex/过关页面/成功进度/剪影/spriteFrame -> tex/levelCompletePage/successProgress/silhouette/spriteFrame`
+- `tex/过关页面/成功进度/再救/spriteFrame -> tex/levelCompletePage/successProgress/reviveAgainLabel/spriteFrame`
+- `tex/自动ui/框/spriteFrame -> tex/autoUi/frame/spriteFrame`
+
+本轮同步调整：
+- `subpackages/uiBundle/config.ui-bundle.json`
+- `subpackages/uiBundle/import/_packs/tex/banner__pack_20.json`
+- `subpackages/uiBundle/import/_packs/tex/bottom__pack_30.json`
+- `subpackages/uiBundle/import/_packs/tex/bottom__pack_32.json`
+- `subpackages/uiBundle/import/_packs/tex/close__pack_28.json`
+- `subpackages/uiBundle/import/_packs/tex/levelCompletePage/halo__pack_12.json`
+- `subpackages/uiBundle/import/_packs/tex/levelCompletePage/successProgress/silhouette__pack_34.json`
+- `subpackages/uiBundle/import/_packs/tex/autoUi/frame__pack_12.json`
+- `subpackages/main/import/_packs/pack/banner__pack_11.json`
+- `subpackages/main/import/_packs/pack/bottom__pack_17.json`
+- `subpackages/main/import/_packs/pack/close__pack_18.json`
+- `subpackages/main/import/_packs/pack/halo__pack_18.json`
+- `subpackages/main/import/_packs/pack/percent__pack_10.json`
+
+本轮新增治理基础设施：
+- `architecture/tools/semanticize-uibundle-book-display-assets.js` 已从“只覆盖图鉴展示”扩展为“图鉴 + 分享页 + 投诉弹窗 + 过关进度 + 自动 UI”的可重复治理脚本。
+- `architecture/tools/semanticize-main-book-display-assets.js` 已补齐主包共享横幅与复活/结算相关 atlas 的语义化规则。
+- `architecture/tools/check-legacy-runtime-compat.js` 已新增这批旧路径与旧 `SpriteFrame.name` 的反回退护栏。
+
+本轮验证结果：
+- 相关 pack/config JSON 已逐个解析通过。
+- `npm run guardrails` 已通过。
+- 微信官方检查链路已纳入本轮回归。

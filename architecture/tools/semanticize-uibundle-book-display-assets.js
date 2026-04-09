@@ -36,7 +36,36 @@ const CONFIG_PATH_MAP = new Map([
   ['tex/book/鸽鸽图鉴/底2/spriteFrame', 'tex/book/ui/pillBase/spriteFrame'],
   ['tex/book/鸽鸽图鉴/鸽鸽图鉴/spriteFrame', 'tex/book/pigeonGallery/titleBanner/spriteFrame'],
   ['tex/book/鸽鸽图鉴/框/spriteFrame', 'tex/book/ui/selectionHalo/spriteFrame'],
-  ['tex/book/鸽鸽图鉴/底/spriteFrame', 'tex/book/ui/infoBarBase/spriteFrame']
+  ['tex/book/鸽鸽图鉴/底/spriteFrame', 'tex/book/ui/infoBarBase/spriteFrame'],
+  ['tex/喊人页面/横幅/spriteFrame', 'tex/sharePage/banner/spriteFrame'],
+  ['tex/喊人页面/旋转光/spriteFrame', 'tex/sharePage/rotatingGlow/spriteFrame'],
+  ['tex/视频2', 'tex/sharePage/videoBadge'],
+  ['tex/视频2/texture', 'tex/sharePage/videoBadge/texture'],
+  ['tex/视频2/spriteFrame', 'tex/sharePage/videoBadge/spriteFrame'],
+  ['tex/视频', 'tex/sharePage/videoIcon'],
+  ['tex/视频/texture', 'tex/sharePage/videoIcon/texture'],
+  ['tex/视频/spriteFrame', 'tex/sharePage/videoIcon/spriteFrame'],
+  ['tex/视频(分享)/spriteFrame', 'tex/sharePage/videoShareBadge/spriteFrame'],
+  ['tex/喊人页面/邀请好友/spriteFrame', 'tex/sharePage/inviteFriendsButton/spriteFrame'],
+  ['tex/喊人页面/进度条2/spriteFrame', 'tex/sharePage/progressBarBackground/spriteFrame'],
+  ['tex/喊人页面/进度条/spriteFrame', 'tex/sharePage/progressBarForeground/spriteFrame'],
+  ['tex/投诉页面/提交/spriteFrame', 'tex/reportDialog/submitButton/spriteFrame'],
+  ['tex/投诉页面/已提交/spriteFrame', 'tex/reportDialog/submittedBanner/spriteFrame'],
+  ['tex/投诉页面/×/spriteFrame', 'tex/reportDialog/close/spriteFrame'],
+  ['tex/投诉页面/底2/spriteFrame', 'tex/reportDialog/panelBackground/spriteFrame'],
+  ['tex/投诉页面/圆2/spriteFrame', 'tex/reportDialog/highlightHalo/spriteFrame'],
+  ['tex/投诉页面/底/spriteFrame', 'tex/reportDialog/pillBase/spriteFrame'],
+  ['tex/投诉页面/圆1/spriteFrame', 'tex/reportDialog/progressDot/spriteFrame'],
+  ['tex/投诉页面/线/spriteFrame', 'tex/reportDialog/dividerLine/spriteFrame'],
+  ['tex/底/spriteFrame', 'tex/powerPanel/baseBackground/spriteFrame'],
+  ['tex/过关页面/成功进度/光圈', 'tex/levelCompletePage/successProgress/selectionHalo'],
+  ['tex/过关页面/成功进度/光圈/texture', 'tex/levelCompletePage/successProgress/selectionHalo/texture'],
+  ['tex/过关页面/成功进度/光圈/spriteFrame', 'tex/levelCompletePage/successProgress/selectionHalo/spriteFrame'],
+  ['tex/过关页面/成功进度/条2/spriteFrame', 'tex/levelCompletePage/successProgress/progressBarFill/spriteFrame'],
+  ['tex/过关页面/成功进度/条1/spriteFrame', 'tex/levelCompletePage/successProgress/progressBarTrack/spriteFrame'],
+  ['tex/过关页面/成功进度/剪影/spriteFrame', 'tex/levelCompletePage/successProgress/silhouette/spriteFrame'],
+  ['tex/过关页面/成功进度/再救/spriteFrame', 'tex/levelCompletePage/successProgress/reviveAgainLabel/spriteFrame'],
+  ['tex/自动ui/框/spriteFrame', 'tex/autoUi/frame/spriteFrame']
 ]);
 
 const IMPORT_FILE_MAPPINGS = [
@@ -67,14 +96,17 @@ const IMPORT_FILE_MAPPINGS = [
     nameMap: {
       '底2': 'pillBase',
       '框': 'selectionHalo',
-      '底': 'infoBarBase'
+      '底': 'infoBarBase',
+      '邀请好友': 'inviteFriendsButton'
     }
   },
   {
     relativePath: 'subpackages/uiBundle/import/_packs/tex/banner__pack_20.json',
     label: 'uiBundle 鸽子图鉴标题图集',
     nameMap: {
-      '鸽鸽图鉴': 'titleBanner'
+      '鸽鸽图鉴': 'titleBanner',
+      '横幅': 'banner',
+      '旋转光': 'rotatingGlow'
     }
   },
   {
@@ -83,16 +115,90 @@ const IMPORT_FILE_MAPPINGS = [
     nameMap: {
       '鸽鸽图鉴': 'titleBanner'
     }
+  },
+  {
+    relativePath: 'subpackages/uiBundle/import/_packs/tex/close__pack_28.json',
+    label: 'uiBundle 分享页与投诉弹窗复用图集',
+    nameMap: {
+      '视频(分享)': 'videoShareBadge',
+      '体力回复': 'energyRecoveryTitle',
+      '视频': 'videoIcon',
+      '体力': 'energyIllustration',
+      '已提交': 'submittedBanner',
+      '×': 'close',
+      '叹号': 'exclamationMark',
+      '底2': 'panelBackground',
+      '锁': 'lockIcon',
+      new: 'newBadge',
+      '圆2': 'highlightHalo',
+      '按钮': 'buttonBackground',
+      '加体力': 'addEnergyIcon',
+      '标题底': 'titleBackground',
+      '底': 'pillBase'
+    }
+  },
+  {
+    relativePath: 'subpackages/uiBundle/import/_packs/tex/bottom__pack_32.json',
+    label: 'uiBundle 分享页与投诉弹窗底部图集',
+    nameMap: {
+      '已领取': 'claimedButton',
+      '领取': 'claimButton',
+      '进度条2': 'progressBarBackground',
+      '提交': 'submitButton',
+      '按键底灰': 'disabledButtonBackground',
+      '底': 'baseBackground',
+      '免费获得体力': 'freeEnergyTitle',
+      '体力图标': 'energyIcon',
+      '圆1': 'progressDot',
+      '进度条': 'progressBarForeground',
+      '获得': 'rewardLabel',
+      '按键底绿': 'primaryButtonBackground',
+      '线': 'dividerLine'
+    }
+  },
+  {
+    relativePath: 'subpackages/uiBundle/import/_packs/tex/levelCompletePage/halo__pack_12.json',
+    label: 'uiBundle 过关页光环图集',
+    nameMap: {
+      '光圈': 'selectionHalo'
+    }
+  },
+  {
+    relativePath: 'subpackages/uiBundle/import/_packs/tex/levelCompletePage/successProgress/silhouette__pack_34.json',
+    label: 'uiBundle 过关页成功进度图集',
+    nameMap: {
+      '剪影': 'silhouette',
+      '条2': 'progressBarFill',
+      '条1': 'progressBarTrack',
+      '再救': 'reviveAgainLabel'
+    }
+  },
+  {
+    relativePath: 'subpackages/uiBundle/import/_packs/tex/autoUi/frame__pack_12.json',
+    label: 'uiBundle 自动 UI 提示图集',
+    nameMap: {
+      '框': 'frame'
+    }
   }
 ];
 
-const LEGACY_CONFIG_PATH_PATTERN = /^tex\/book\/(?:tex|鸽鸽图鉴)\//;
+const LEGACY_CONFIG_PATH_PATTERNS = [
+  /^tex\/book\/(?:tex|鸽鸽图鉴)\//,
+  /^tex\/喊人页面\/(?:横幅|旋转光|邀请好友|进度条2?|进度条)\/spriteFrame$/,
+  /^tex\/投诉页面\/(?:提交|已提交|×|底2?|圆[12]|线)\/spriteFrame$/,
+  /^tex\/自动ui\/框\/spriteFrame$/,
+  /^tex\/视频2(?:\/(?:texture|spriteFrame))?$/,
+  /^tex\/视频(?:\/(?:texture|spriteFrame))?$/,
+  /^tex\/视频\(分享\)\/spriteFrame$/,
+  /^tex\/底\/spriteFrame$/,
+  /^tex\/过关页面\/成功进度\/(?:光圈(?:\/(?:texture|spriteFrame))?|条[12]\/spriteFrame|剪影\/spriteFrame|再救\/spriteFrame)$/
+];
 
 function semanticizeUiBundleBookDisplayAssets() {
   const layout = resolveProjectLayout(__dirname);
   const configAbsolutePath = resolveProjectFilePath(layout, CONFIG_TARGET);
   const configLabel = formatProjectPathFromWorkspace(layout, CONFIG_TARGET);
-  const configResult = updateBookConfig(configAbsolutePath, configLabel);
+  const configResult = updateDisplayConfig(configAbsolutePath, configLabel);
   const importResults = IMPORT_FILE_MAPPINGS.map((target) => {
     const absolutePath = resolveProjectFilePath(layout, target.relativePath);
     return updateImportNames(absolutePath, target.label, target.nameMap);
@@ -115,9 +221,9 @@ function semanticizeUiBundleBookDisplayAssets() {
   }
 }
 
-function updateBookConfig(filePath, displayLabel) {
-  const result = updateConfigPathEntries(filePath, normalizeBookPath, (parsedJson) => {
-    verifyNoLegacyBookPaths(parsedJson, displayLabel);
+function updateDisplayConfig(filePath, displayLabel) {
+  const result = updateConfigPathEntries(filePath, normalizeDisplayPath, (parsedJson) => {
+    verifyNoLegacyDisplayPaths(parsedJson, displayLabel);
   });
 
   return {
@@ -126,18 +232,20 @@ function updateBookConfig(filePath, displayLabel) {
   };
 }
 
-function normalizeBookPath(assetPath) {
+function normalizeDisplayPath(assetPath) {
   return CONFIG_PATH_MAP.get(String(assetPath || '')) || String(assetPath || '');
 }
 
-function verifyNoLegacyBookPaths(parsedJson, displayLabel) {
-  const legacyPathList = collectLegacyConfigPaths(parsedJson, (pathValue) => {
-    return LEGACY_CONFIG_PATH_PATTERN.test(pathValue);
+function verifyNoLegacyDisplayPaths(parsedJson, displayLabel) {
+  const legacyPathList = collectLegacyConfigPaths(parsedJson, function collectLegacyDisplayPaths(pathValue) {
+    return LEGACY_CONFIG_PATH_PATTERNS.some(function matchPattern(pattern) {
+      return pattern.test(pathValue);
+    });
   });
 
   if (legacyPathList.length > 0) {
     throw new Error(
-      '[uiBundle语义化] 配置中仍残留书册旧路径：' +
+      '[uiBundle语义化] 配置中仍残留展示模块旧路径：' +
       displayLabel +
       ' -> ' +
       legacyPathList.slice(0, 5).join(', ')

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-09T16:10:24.422Z",
+  "generatedAt": "2026-04-09T17:07:02.223Z",
   "projectPath": "./",
   "officialSourceUrls": [
     "https://developers.weixin.qq.com/minigame/dev/guide/base-ability/code-package.html",
@@ -372,7 +372,7 @@
         "subpackages/main"
       ],
       "fileCount": 223,
-      "sizeBytes": 10034313,
+      "sizeBytes": 10034614,
       "sizeText": "9.57 MiB",
       "limitBytes": null,
       "limitText": null,
@@ -435,7 +435,7 @@
         {
           "path": "subpackages/main/import/_packs/pack/bottom__pack_17.json",
           "displayPath": "subpackages/main/import/_packs/pack/bottom__pack_17.json",
-          "sizeBytes": 4611,
+          "sizeBytes": 4709,
           "sizeText": "0.00 MiB"
         },
         {
@@ -447,13 +447,13 @@
         {
           "path": "subpackages/main/import/_packs/pack/close__pack_18.json",
           "displayPath": "subpackages/main/import/_packs/pack/close__pack_18.json",
-          "sizeBytes": 5114,
+          "sizeBytes": 5209,
           "sizeText": "0.00 MiB"
         },
         {
           "path": "subpackages/main/import/_packs/pack/halo__pack_18.json",
           "displayPath": "subpackages/main/import/_packs/pack/halo__pack_18.json",
-          "sizeBytes": 5015,
+          "sizeBytes": 5059,
           "sizeText": "0.00 MiB"
         },
         {
@@ -465,7 +465,7 @@
         {
           "path": "subpackages/main/import/_packs/pack/percent__pack_10.json",
           "displayPath": "subpackages/main/import/_packs/pack/percent__pack_10.json",
-          "sizeBytes": 2733,
+          "sizeBytes": 2797,
           "sizeText": "0.00 MiB"
         },
         {
@@ -11508,7 +11508,7 @@
         "subpackages/uiBundle"
       ],
       "fileCount": 115,
-      "sizeBytes": 2161522,
+      "sizeBytes": 2162042,
       "sizeText": "2.06 MiB",
       "limitBytes": null,
       "limitText": null,
@@ -11517,7 +11517,7 @@
         {
           "path": "subpackages/uiBundle/config.ui-bundle.json",
           "displayPath": "subpackages/uiBundle/config.ui-bundle.json",
-          "sizeBytes": 60182,
+          "sizeBytes": 60480,
           "sizeText": "0.06 MiB"
         },
         {
@@ -11565,13 +11565,13 @@
         {
           "path": "subpackages/uiBundle/import/_packs/tex/autoUi/frame__pack_12.json",
           "displayPath": "subpackages/uiBundle/import/_packs/tex/autoUi/frame__pack_12.json",
-          "sizeBytes": 1668,
+          "sizeBytes": 1670,
           "sizeText": "0.00 MiB"
         },
         {
           "path": "subpackages/uiBundle/import/_packs/tex/banner__pack_20.json",
           "displayPath": "subpackages/uiBundle/import/_packs/tex/banner__pack_20.json",
-          "sizeBytes": 2756,
+          "sizeBytes": 2759,
           "sizeText": "0.00 MiB"
         },
         {
@@ -11613,19 +11613,19 @@
         {
           "path": "subpackages/uiBundle/import/_packs/tex/bottom__pack_30.json",
           "displayPath": "subpackages/uiBundle/import/_packs/tex/bottom__pack_30.json",
-          "sizeBytes": 4119,
+          "sizeBytes": 4126,
           "sizeText": "0.00 MiB"
         },
         {
           "path": "subpackages/uiBundle/import/_packs/tex/bottom__pack_32.json",
           "displayPath": "subpackages/uiBundle/import/_packs/tex/bottom__pack_32.json",
-          "sizeBytes": 4348,
+          "sizeBytes": 4435,
           "sizeText": "0.00 MiB"
         },
         {
           "path": "subpackages/uiBundle/import/_packs/tex/close__pack_28.json",
           "displayPath": "subpackages/uiBundle/import/_packs/tex/close__pack_28.json",
-          "sizeBytes": 3791,
+          "sizeBytes": 3870,
           "sizeText": "0.00 MiB"
         },
         {
@@ -11691,13 +11691,13 @@
         {
           "path": "subpackages/uiBundle/import/_packs/tex/levelCompletePage/halo__pack_12.json",
           "displayPath": "subpackages/uiBundle/import/_packs/tex/levelCompletePage/halo__pack_12.json",
-          "sizeBytes": 1664,
+          "sizeBytes": 1671,
           "sizeText": "0.00 MiB"
         },
         {
           "path": "subpackages/uiBundle/import/_packs/tex/levelCompletePage/successProgress/silhouette__pack_34.json",
           "displayPath": "subpackages/uiBundle/import/_packs/tex/levelCompletePage/successProgress/silhouette__pack_34.json",
-          "sizeBytes": 4748,
+          "sizeBytes": 4785,
           "sizeText": "0.00 MiB"
         },
         {
@@ -12211,7 +12211,7 @@
   "totals": {
     "packageCount": 9,
     "fileCount": 2005,
-    "sizeBytes": 26594118,
+    "sizeBytes": 26594939,
     "sizeText": "25.36 MiB",
     "limitBytes": 31457280,
     "limitText": "30.00 MiB",

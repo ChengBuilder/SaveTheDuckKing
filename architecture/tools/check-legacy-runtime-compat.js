@@ -49,6 +49,22 @@ const CHECK_TARGETS = [
       {
         label: 'uiBundle 配置旧领取按钮路径',
         pattern: /tex\/(?:已)?领取按钮\/spriteFrame/g
+      },
+      {
+        label: 'uiBundle 配置旧分享页路径',
+        pattern: /tex\/喊人页面\/(?:横幅|旋转光|邀请好友|进度条2?|进度条)\/spriteFrame|tex\/视频2(?:\/(?:texture|spriteFrame))?|tex\/视频(?:\/(?:texture|spriteFrame))?|tex\/视频\(分享\)\/spriteFrame|tex\/底\/spriteFrame/g
+      },
+      {
+        label: 'uiBundle 配置旧投诉弹窗路径',
+        pattern: /tex\/投诉页面\/(?:提交|已提交|×|底2?|圆[12]|线)\/spriteFrame/g
+      },
+      {
+        label: 'uiBundle 配置旧过关页成功进度路径',
+        pattern: /tex\/过关页面\/成功进度\/(?:光圈(?:\/(?:texture|spriteFrame))?|条[12]\/spriteFrame|剪影\/spriteFrame|再救\/spriteFrame)/g
+      },
+      {
+        label: 'uiBundle 配置旧自动 UI 路径',
+        pattern: /tex\/自动ui\/框\/spriteFrame/g
       }
     ]
   },
@@ -74,8 +90,62 @@ const CHECK_TARGETS = [
     relativePath: 'subpackages/uiBundle/import/_packs/tex/banner__pack_20.json',
     checks: [
       {
-        label: 'uiBundle 鸽子图鉴标题旧名称',
-        pattern: /"name":"鸽鸽图鉴"/g
+        label: 'uiBundle 鸽子图鉴与分享页横幅旧名称',
+        pattern: /"name":"(?:鸽鸽图鉴|横幅|旋转光)"/g
+      }
+    ]
+  },
+  {
+    relativePath: 'subpackages/uiBundle/import/_packs/tex/bottom__pack_30.json',
+    checks: [
+      {
+        label: 'uiBundle 分享页邀请按钮旧名称',
+        pattern: /"name":"邀请好友"/g
+      }
+    ]
+  },
+  {
+    relativePath: 'subpackages/uiBundle/import/_packs/tex/bottom__pack_32.json',
+    checks: [
+      {
+        label: 'uiBundle 分享页与投诉弹窗底部旧名称',
+        pattern: /"name":"(?:已领取|领取|进度条2|提交|按键底灰|底|免费获得体力|体力图标|圆1|进度条|获得|按键底绿|线)"/g
+      }
+    ]
+  },
+  {
+    relativePath: 'subpackages/uiBundle/import/_packs/tex/close__pack_28.json',
+    checks: [
+      {
+        label: 'uiBundle 分享页与投诉弹窗复用图集旧名称',
+        pattern: /"name":"(?:视频\(分享\)|体力回复|视频|体力|已提交|×|叹号|底2|锁|new|圆2|按钮|加体力|标题底|底)"/g
+      }
+    ]
+  },
+  {
+    relativePath: 'subpackages/uiBundle/import/_packs/tex/levelCompletePage/halo__pack_12.json',
+    checks: [
+      {
+        label: 'uiBundle 过关页光环图集旧名称',
+        pattern: /"name":"光圈"/g
+      }
+    ]
+  },
+  {
+    relativePath: 'subpackages/uiBundle/import/_packs/tex/levelCompletePage/successProgress/silhouette__pack_34.json',
+    checks: [
+      {
+        label: 'uiBundle 过关页成功进度图集旧名称',
+        pattern: /"name":"(?:剪影|条2|条1|再救)"/g
+      }
+    ]
+  },
+  {
+    relativePath: 'subpackages/uiBundle/import/_packs/tex/autoUi/frame__pack_12.json',
+    checks: [
+      {
+        label: 'uiBundle 自动 UI 旧框资源名称',
+        pattern: /"name":"框"/g
       }
     ]
   },
@@ -93,7 +163,7 @@ const CHECK_TARGETS = [
     checks: [
       {
         label: '主包书册展示横幅复用图集旧名称',
-        pattern: /"name":"(?:p10|p9|鸽鸽图鉴|p6|视频2|旋转光)"/g
+        pattern: /"name":"(?:p10|p9|鸽鸽图鉴|p6|横幅|视频2|旋转光)"/g
       }
     ]
   },
@@ -129,7 +199,34 @@ const CHECK_TARGETS = [
     checks: [
       {
         label: '主包书册结算复用图集旧名称',
-        pattern: /"name":"p7"/g
+        pattern: /"name":"(?:p7|已领取|领取|进度条2|提交|redSpr|按键底灰|底|免费获得体力|体力图标|圆1|进度条|获得|按键底绿|线)"/g
+      }
+    ]
+  },
+  {
+    relativePath: 'subpackages/main/import/_packs/pack/close__pack_18.json',
+    checks: [
+      {
+        label: '主包书册分享弹窗复用图集旧名称',
+        pattern: /"name":"(?:视频\(分享\)|体力回复|视频|体力|已提交|×|叹号|底2|锁|new|圆2|按钮|加体力|叹号更多玩法|标题底|底)"/g
+      }
+    ]
+  },
+  {
+    relativePath: 'subpackages/main/import/_packs/pack/halo__pack_18.json',
+    checks: [
+      {
+        label: '主包书册成功进度复用图集旧名称',
+        pattern: /"name":"(?:光圈|剪影|条2|条1|再救)"/g
+      }
+    ]
+  },
+  {
+    relativePath: 'subpackages/main/import/_packs/pack/percent__pack_10.json',
+    checks: [
+      {
+        label: '主包书册复活进度复用图集旧名称',
+        pattern: /"name":"(?:底2|心1|关卡已完成|底1|移除槽位中的钉子|转发复活按钮|复活|图标|%|是否复活)"/g
       }
     ]
   },

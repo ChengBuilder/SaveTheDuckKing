@@ -682,7 +682,7 @@
       1
     ],
     "28": [
-      "tex/视频(分享)/spriteFrame",
+      "tex/sharePage/videoShareBadge/spriteFrame",
       3,
       1
     ],
@@ -972,7 +972,7 @@
       1
     ],
     "106": [
-      "tex/喊人页面/进度条2/spriteFrame",
+      "tex/sharePage/progressBarBackground/spriteFrame",
       3,
       1
     ],
@@ -987,7 +987,7 @@
       1
     ],
     "109": [
-      "tex/投诉页面/提交/spriteFrame",
+      "tex/reportDialog/submitButton/spriteFrame",
       3,
       1
     ],
@@ -1087,17 +1087,17 @@
       1
     ],
     "129": [
-      "tex/过关页面/成功进度/光圈",
+      "tex/levelCompletePage/successProgress/selectionHalo",
       1,
       1
     ],
     "130": [
-      "tex/过关页面/成功进度/光圈/texture",
+      "tex/levelCompletePage/successProgress/selectionHalo/texture",
       2,
       1
     ],
     "131": [
-      "tex/过关页面/成功进度/光圈/spriteFrame",
+      "tex/levelCompletePage/successProgress/selectionHalo/spriteFrame",
       3,
       1
     ],
@@ -1182,7 +1182,7 @@
       1
     ],
     "148": [
-      "tex/投诉页面/已提交/spriteFrame",
+      "tex/reportDialog/submittedBanner/spriteFrame",
       3,
       1
     ],
@@ -1257,7 +1257,7 @@
       1
     ],
     "164": [
-      "tex/投诉页面/×/spriteFrame",
+      "tex/reportDialog/close/spriteFrame",
       3,
       1
     ],
@@ -1312,7 +1312,7 @@
       1
     ],
     "175": [
-      "tex/投诉页面/底2/spriteFrame",
+      "tex/reportDialog/panelBackground/spriteFrame",
       3,
       1
     ],
@@ -1407,7 +1407,7 @@
       1
     ],
     "194": [
-      "tex/自动ui/框/spriteFrame",
+      "tex/autoUi/frame/spriteFrame",
       3,
       1
     ],
@@ -1447,7 +1447,7 @@
       1
     ],
     "202": [
-      "tex/过关页面/成功进度/剪影/spriteFrame",
+      "tex/levelCompletePage/successProgress/silhouette/spriteFrame",
       3,
       1
     ],
@@ -1542,7 +1542,7 @@
       1
     ],
     "221": [
-      "tex/底/spriteFrame",
+      "tex/powerPanel/baseBackground/spriteFrame",
       3,
       1
     ],
@@ -1762,7 +1762,7 @@
       1
     ],
     "266": [
-      "tex/喊人页面/横幅/spriteFrame",
+      "tex/sharePage/banner/spriteFrame",
       3,
       1
     ],
@@ -1837,7 +1837,7 @@
       1
     ],
     "282": [
-      "tex/过关页面/成功进度/条2/spriteFrame",
+      "tex/levelCompletePage/successProgress/progressBarFill/spriteFrame",
       3,
       1
     ],
@@ -1952,7 +1952,7 @@
       1
     ],
     "305": [
-      "tex/喊人页面/邀请好友/spriteFrame",
+      "tex/sharePage/inviteFriendsButton/spriteFrame",
       3,
       1
     ],
@@ -1977,7 +1977,7 @@
       1
     ],
     "310": [
-      "tex/投诉页面/圆2/spriteFrame",
+      "tex/reportDialog/highlightHalo/spriteFrame",
       3,
       1
     ],
@@ -1997,7 +1997,7 @@
       1
     ],
     "314": [
-      "tex/投诉页面/底/spriteFrame",
+      "tex/reportDialog/pillBase/spriteFrame",
       3,
       1
     ],
@@ -2007,7 +2007,7 @@
       1
     ],
     "316": [
-      "tex/投诉页面/圆1/spriteFrame",
+      "tex/reportDialog/progressDot/spriteFrame",
       3,
       1
     ],
@@ -2017,17 +2017,17 @@
       1
     ],
     "318": [
-      "tex/视频2",
+      "tex/sharePage/videoBadge",
       1,
       1
     ],
     "319": [
-      "tex/视频2/texture",
+      "tex/sharePage/videoBadge/texture",
       2,
       1
     ],
     "320": [
-      "tex/视频2/spriteFrame",
+      "tex/sharePage/videoBadge/spriteFrame",
       3,
       1
     ],
@@ -2132,7 +2132,7 @@
       1
     ],
     "341": [
-      "tex/喊人页面/进度条/spriteFrame",
+      "tex/sharePage/progressBarForeground/spriteFrame",
       3,
       1
     ],
@@ -2147,7 +2147,7 @@
       1
     ],
     "344": [
-      "tex/喊人页面/旋转光/spriteFrame",
+      "tex/sharePage/rotatingGlow/spriteFrame",
       3,
       1
     ],
@@ -2262,17 +2262,17 @@
       1
     ],
     "367": [
-      "tex/视频",
+      "tex/sharePage/videoIcon",
       1,
       1
     ],
     "368": [
-      "tex/视频/texture",
+      "tex/sharePage/videoIcon/texture",
       2,
       1
     ],
     "369": [
-      "tex/视频/spriteFrame",
+      "tex/sharePage/videoIcon/spriteFrame",
       3,
       1
     ],
@@ -2352,12 +2352,12 @@
       1
     ],
     "385": [
-      "tex/投诉页面/线/spriteFrame",
+      "tex/reportDialog/dividerLine/spriteFrame",
       3,
       1
     ],
     "386": [
-      "tex/过关页面/成功进度/条1/spriteFrame",
+      "tex/levelCompletePage/successProgress/progressBarTrack/spriteFrame",
       3,
       1
     ],
@@ -2437,7 +2437,7 @@
       1
     ],
     "402": [
-      "tex/过关页面/成功进度/再救/spriteFrame",
+      "tex/levelCompletePage/successProgress/reviveAgainLabel/spriteFrame",
       3,
       1
     ],

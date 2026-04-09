@@ -3,7 +3,7 @@
 > 本文件由 `architecture/tools/check-wechat-code-package-limits.js` 生成。
 
 ## 总览
-- 生成时间：2026-04-09T16:10:24.422Z
+- 生成时间：2026-04-09T17:07:02.223Z
 - 项目目录：`./`
 - 主包：`3.35 MiB / 4.00 MiB`
 - 总包：`25.36 MiB / 30.00 MiB`

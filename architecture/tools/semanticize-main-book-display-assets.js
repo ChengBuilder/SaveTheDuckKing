@@ -19,6 +19,7 @@ const IMPORT_FILE_MAPPINGS = [
       p9: 'skinPage9',
       '鸽鸽图鉴': 'titleBanner',
       p6: 'skinPage6',
+      '横幅': 'banner',
       '视频2': 'videoBadge',
       '旋转光': 'rotatingGlow'
     }
@@ -58,7 +59,70 @@ const IMPORT_FILE_MAPPINGS = [
     relativePath: 'subpackages/main/import/_packs/pack/bottom__pack_17.json',
     label: '主包书册结算复用图集',
     nameMap: {
-      p7: 'skinPage7'
+      p7: 'skinPage7',
+      '已领取': 'claimedButton',
+      '领取': 'claimButton',
+      '进度条2': 'progressBarBackground',
+      '提交': 'submitButton',
+      redSpr: 'notificationBadge',
+      '按键底灰': 'disabledButtonBackground',
+      '底': 'baseBackground',
+      '免费获得体力': 'freeEnergyTitle',
+      '体力图标': 'energyIcon',
+      '圆1': 'progressDot',
+      '进度条': 'progressBarForeground',
+      '获得': 'rewardLabel',
+      '按键底绿': 'primaryButtonBackground',
+      '线': 'dividerLine'
+    }
+  },
+  {
+    relativePath: 'subpackages/main/import/_packs/pack/close__pack_18.json',
+    label: '主包书册分享弹窗复用图集',
+    nameMap: {
+      '视频(分享)': 'videoShareBadge',
+      '体力回复': 'energyRecoveryTitle',
+      '视频': 'videoIcon',
+      '体力': 'energyIllustration',
+      '已提交': 'submittedBanner',
+      '×': 'close',
+      '叹号': 'exclamationMark',
+      '底2': 'panelBackground',
+      '锁': 'lockIcon',
+      new: 'newBadge',
+      '圆2': 'highlightHalo',
+      '按钮': 'buttonBackground',
+      '加体力': 'addEnergyIcon',
+      '叹号更多玩法': 'moreGamesAlert',
+      '标题底': 'titleBackground',
+      '底': 'pillBase'
+    }
+  },
+  {
+    relativePath: 'subpackages/main/import/_packs/pack/halo__pack_18.json',
+    label: '主包书册成功进度复用图集',
+    nameMap: {
+      '光圈': 'selectionHalo',
+      '剪影': 'silhouette',
+      '条2': 'progressBarFill',
+      '条1': 'progressBarTrack',
+      '再救': 'reviveAgainLabel'
+    }
+  },
+  {
+    relativePath: 'subpackages/main/import/_packs/pack/percent__pack_10.json',
+    label: '主包书册复活进度复用图集',
+    nameMap: {
+      '底2': 'progressBarFill',
+      '心1': 'heartIcon',
+      '关卡已完成': 'levelCompleteTitle',
+      '底1': 'progressBarTrack',
+      '移除槽位中的钉子': 'removeNailFromSlotLabel',
+      '转发复活按钮': 'shareReviveButton',
+      '复活': 'reviveButton',
+      '图标': 'reviveIllustration',
+      '%': 'percentSymbol',
+      '是否复活': 'revivePromptTitle'
     }
   }
 ];
