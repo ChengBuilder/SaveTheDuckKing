@@ -385,11 +385,7 @@ function resolveAssetManagerOptionsArg(methodArgs) {
  * @returns {boolean}
  */
 function isHomeBundleContextByOptions(options) {
-  if (!options || typeof options !== 'object') {
-    return false;
-  }
-
-  return isHomeBundleValue(options.bundle);
+  return isBundleContextByOptions(options, isHomeBundleValue);
 }
 
 /**
@@ -398,30 +394,7 @@ function isHomeBundleContextByOptions(options) {
  * @returns {boolean}
  */
 function isHomeBundleContextByRequest(requestInput) {
-  if (!requestInput) {
-    return false;
-  }
-
-  if (Array.isArray(requestInput)) {
-    for (let index = 0; index < requestInput.length; index += 1) {
-      if (isHomeBundleContextByRequest(requestInput[index])) {
-        return true;
-      }
-    }
-    return false;
-  }
-
-  if (typeof requestInput === 'object') {
-    if (isHomeBundleValue(requestInput.bundle)) {
-      return true;
-    }
-
-    if (requestInput.options && isHomeBundleValue(requestInput.options.bundle)) {
-      return true;
-    }
-  }
-
-  return false;
+  return isBundleContextByRequest(requestInput, isHomeBundleValue);
 }
 
 /**
@@ -430,11 +403,7 @@ function isHomeBundleContextByRequest(requestInput) {
  * @returns {boolean}
  */
 function isUiBundleContextByOptions(options) {
-  if (!options || typeof options !== 'object') {
-    return false;
-  }
-
-  return isUiBundleValue(options.bundle);
+  return isBundleContextByOptions(options, isUiBundleValue);
 }
 
 /**
@@ -443,13 +412,38 @@ function isUiBundleContextByOptions(options) {
  * @returns {boolean}
  */
 function isUiBundleContextByRequest(requestInput) {
-  if (!requestInput) {
+  return isBundleContextByRequest(requestInput, isUiBundleValue);
+}
+
+/**
+ * 基于 options 判断是否属于目标 bundle 请求。
+ * @param {Record<string, any> | null} options 请求选项
+ * @param {(bundleValue: any) => boolean} bundleMatcher bundle 匹配函数
+ * @returns {boolean}
+ */
+function isBundleContextByOptions(options, bundleMatcher) {
+  if (!options || typeof options !== 'object') {
+    return false;
+  }
+
+  return typeof bundleMatcher === 'function' && bundleMatcher(options.bundle);
+}
+
+/**
+ * 基于 request 判断是否属于目标 bundle 请求。
+ * 仅检查常见入参结构（数组项、对象的 `bundle` / `options.bundle`）。
+ * @param {any} requestInput 请求对象
+ * @param {(bundleValue: any) => boolean} bundleMatcher bundle 匹配函数
+ * @returns {boolean}
+ */
+function isBundleContextByRequest(requestInput, bundleMatcher) {
+  if (typeof bundleMatcher !== 'function' || !requestInput) {
     return false;
   }
 
   if (Array.isArray(requestInput)) {
     for (let index = 0; index < requestInput.length; index += 1) {
-      if (isUiBundleContextByRequest(requestInput[index])) {
+      if (isBundleContextByRequest(requestInput[index], bundleMatcher)) {
         return true;
       }
     }
@@ -457,11 +451,11 @@ function isUiBundleContextByRequest(requestInput) {
   }
 
   if (typeof requestInput === 'object') {
-    if (isUiBundleValue(requestInput.bundle)) {
+    if (bundleMatcher(requestInput.bundle)) {
       return true;
     }
 
-    if (requestInput.options && isUiBundleValue(requestInput.options.bundle)) {
+    if (requestInput.options && bundleMatcher(requestInput.options.bundle)) {
       return true;
     }
   }
@@ -521,39 +515,12 @@ function isUiBundleValue(bundleValue) {
  * @returns {boolean}
  */
 function hasLegacyHomeBundlePath(requestInput, visitedObjects) {
-  const visited = visitedObjects || new Set();
-  if (typeof requestInput === 'string') {
-    if (!mightContainHomeBundleLegacyPath(requestInput)) {
-      return false;
-    }
-    return normalizeHomeBundleLegacyPath(requestInput) !== requestInput;
-  }
-
-  if (Array.isArray(requestInput)) {
-    for (let index = 0; index < requestInput.length; index += 1) {
-      if (hasLegacyHomeBundlePath(requestInput[index], visited)) {
-        return true;
-      }
-    }
-    return false;
-  }
-
-  if (requestInput && typeof requestInput === 'object') {
-    if (visited.has(requestInput)) {
-      return false;
-    }
-    visited.add(requestInput);
-
-    const keys = Object.keys(requestInput);
-    for (let index = 0; index < keys.length; index += 1) {
-      const key = keys[index];
-      if (hasLegacyHomeBundlePath(requestInput[key], visited)) {
-        return true;
-      }
-    }
-  }
-
-  return false;
+  return hasLegacyBundlePath(
+    requestInput,
+    mightContainHomeBundleLegacyPath,
+    normalizeHomeBundleLegacyPath,
+    visitedObjects
+  );
 }
 
 /**
@@ -562,17 +529,39 @@ function hasLegacyHomeBundlePath(requestInput, visitedObjects) {
  * @returns {boolean}
  */
 function hasLegacyUiBundlePath(requestInput, visitedObjects) {
+  return hasLegacyBundlePath(
+    requestInput,
+    mightContainUiBundleLegacyPath,
+    normalizeUiBundleLegacyPath,
+    visitedObjects
+  );
+}
+
+/**
+ * 判断请求参数中是否包含指定类型的 legacy 路径。
+ * @param {any} requestInput 请求参数
+ * @param {(pathValue: string) => boolean} mightContainLegacyPath 旧路径快速命中判断
+ * @param {(pathValue: string) => string} normalizeLegacyPath 旧路径归一化函数
+ * @param {Set<object>} visitedObjects 已访问对象集合
+ * @returns {boolean}
+ */
+function hasLegacyBundlePath(requestInput, mightContainLegacyPath, normalizeLegacyPath, visitedObjects) {
   const visited = visitedObjects || new Set();
+
   if (typeof requestInput === 'string') {
-    if (!mightContainUiBundleLegacyPath(requestInput)) {
+    if (
+      typeof mightContainLegacyPath !== 'function' ||
+      typeof normalizeLegacyPath !== 'function' ||
+      !mightContainLegacyPath(requestInput)
+    ) {
       return false;
     }
-    return normalizeUiBundleLegacyPath(requestInput) !== requestInput;
+    return normalizeLegacyPath(requestInput) !== requestInput;
   }
 
   if (Array.isArray(requestInput)) {
     for (let index = 0; index < requestInput.length; index += 1) {
-      if (hasLegacyUiBundlePath(requestInput[index], visited)) {
+      if (hasLegacyBundlePath(requestInput[index], mightContainLegacyPath, normalizeLegacyPath, visited)) {
         return true;
       }
     }
@@ -588,7 +577,7 @@ function hasLegacyUiBundlePath(requestInput, visitedObjects) {
     const keys = Object.keys(requestInput);
     for (let index = 0; index < keys.length; index += 1) {
       const key = keys[index];
-      if (hasLegacyUiBundlePath(requestInput[key], visited)) {
+      if (hasLegacyBundlePath(requestInput[key], mightContainLegacyPath, normalizeLegacyPath, visited)) {
         return true;
       }
     }
@@ -607,8 +596,7 @@ function isHomeBundle(bundleInstance) {
     return false;
   }
 
-  const bundleName = bundleInstance.name;
-  return bundleName === 'HomeBundle' || bundleName === 'home-bundle' || bundleName === 'homebundle';
+  return isHomeBundleValue(bundleInstance.name);
 }
 
 /**
@@ -621,8 +609,7 @@ function isUiBundle(bundleInstance) {
     return false;
   }
 
-  const bundleName = bundleInstance.name;
-  return bundleName === 'uiBundle' || bundleName === 'ui-bundle' || bundleName === 'uibundle';
+  return isUiBundleValue(bundleInstance.name);
 }
 
 /**
@@ -632,14 +619,27 @@ function isUiBundle(bundleInstance) {
  * @returns {any}
  */
 function normalizeLegacyBundleRequestInput(requestInput, visitedObjects) {
+  return mapRequestInputPathStrings(requestInput, normalizeLegacyPathString, visitedObjects);
+}
+
+/**
+ * 递归遍历请求参数并归一化其中所有字符串路径。
+ * 支持字符串、数组和对象；并对对象循环引用做安全保护。
+ * @param {any} requestInput 原始请求参数
+ * @param {(pathValue: string) => string} pathMapper 路径映射函数
+ * @param {Set<object>} visitedObjects 已访问对象集合
+ * @returns {any}
+ */
+function mapRequestInputPathStrings(requestInput, pathMapper, visitedObjects) {
   const visited = visitedObjects || new Set();
+
   if (typeof requestInput === 'string') {
-    return normalizeLegacyPathString(requestInput);
+    return typeof pathMapper === 'function' ? pathMapper(requestInput) : requestInput;
   }
 
   if (Array.isArray(requestInput)) {
     for (let index = 0; index < requestInput.length; index += 1) {
-      requestInput[index] = normalizeLegacyBundleRequestInput(requestInput[index], visited);
+      requestInput[index] = mapRequestInputPathStrings(requestInput[index], pathMapper, visited);
     }
     return requestInput;
   }
@@ -655,9 +655,9 @@ function normalizeLegacyBundleRequestInput(requestInput, visitedObjects) {
       const key = keys[index];
       const value = requestInput[key];
       if (typeof value === 'string') {
-        requestInput[key] = normalizeLegacyPathString(value);
+        requestInput[key] = typeof pathMapper === 'function' ? pathMapper(value) : value;
       } else if (value && typeof value === 'object') {
-        requestInput[key] = normalizeLegacyBundleRequestInput(value, visited);
+        requestInput[key] = mapRequestInputPathStrings(value, pathMapper, visited);
       }
     }
   }
