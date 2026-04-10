@@ -19,7 +19,6 @@ const GUARDRAIL_REPORT_MARKDOWN_PATH = 'architecture/docs/guardrail-report.md';
 function runGuardrails() {
   const layout = resolveProjectLayout(__dirname);
   const steps = buildGuardrailSteps(layout);
-  const startedAt = new Date();
   const results = [];
 
   for (const step of steps) {
@@ -30,7 +29,7 @@ function runGuardrails() {
     }
   }
 
-  const report = buildGuardrailReport(layout, startedAt, results);
+  const report = buildGuardrailReport(layout, results);
   writeGuardrailReportFiles(layout, report);
 
   if (report.failedSteps > 0) {
@@ -179,12 +178,10 @@ function runGuardrailStep(layout, step) {
 /**
  * 组装护栏检查报告。
  * @param {{projectPathFromWorkspace: string}} layout 项目布局
- * @param {Date} startedAt 流程开始时间
  * @param {{status: string}[]} results 步骤结果
- * @returns {{generatedAt: string, startedAt: string, finishedAt: string, projectPath: string, totalSteps: number, passedSteps: number, failedSteps: number, results: any[]}}
+ * @returns {{projectPath: string, totalSteps: number, passedSteps: number, failedSteps: number, results: any[]}}
  */
-function buildGuardrailReport(layout, startedAt, results) {
-  const finishedAt = new Date();
+function buildGuardrailReport(layout, results) {
   const passedSteps = results.filter(function filterPassed(stepResult) {
     return stepResult.status === 'passed';
   }).length;
@@ -193,21 +190,25 @@ function buildGuardrailReport(layout, startedAt, results) {
   }).length;
 
   return {
-    generatedAt: finishedAt.toISOString(),
-    startedAt: startedAt.toISOString(),
-    finishedAt: finishedAt.toISOString(),
     projectPath: formatProjectPathFromWorkspace(layout, ''),
     totalSteps: results.length,
     passedSteps: passedSteps,
     failedSteps: failedSteps,
-    results: results
+    results: results.map(function mapStableStepResult(stepResult) {
+      return {
+        label: stepResult.label,
+        commandText: stepResult.commandText,
+        status: stepResult.status,
+        errorMessage: stepResult.errorMessage
+      };
+    })
   };
 }
 
 /**
  * 输出护栏检查报告文件。
  * @param {{projectRoot: string}} layout 项目布局
- * @param {{generatedAt: string, projectPath: string, totalSteps: number, passedSteps: number, failedSteps: number, results: any[]}} report 报告数据
+ * @param {{projectPath: string, totalSteps: number, passedSteps: number, failedSteps: number, results: any[]}} report 报告数据
  */
 function writeGuardrailReportFiles(layout, report) {
   const jsonPath = resolveProjectFilePath(layout, GUARDRAIL_REPORT_JSON_PATH);
@@ -220,7 +221,7 @@ function writeGuardrailReportFiles(layout, report) {
 
 /**
  * 构建护栏 Markdown 报告。
- * @param {{generatedAt: string, projectPath: string, totalSteps: number, passedSteps: number, failedSteps: number, results: any[]}} report 报告数据
+ * @param {{projectPath: string, totalSteps: number, passedSteps: number, failedSteps: number, results: any[]}} report 报告数据
  * @returns {string[]}
  */
 function buildGuardrailMarkdownLines(report) {
@@ -230,21 +231,18 @@ function buildGuardrailMarkdownLines(report) {
   lines.push('> 本文件由 `architecture/tools/run-guardrails.js` 生成。');
   lines.push('');
   lines.push('## 总览');
-  lines.push('- 最近执行时间：' + report.generatedAt);
   lines.push('- 项目目录：`' + report.projectPath + '`');
   lines.push('- 已执行步骤：' + report.totalSteps);
   lines.push('- 通过步骤：' + report.passedSteps);
   lines.push('- 失败步骤：' + report.failedSteps);
   lines.push('');
   lines.push('## 步骤明细');
-  lines.push('| 步骤 | 状态 | 耗时（ms） | 命令 |');
-  lines.push('| --- | --- | ---: | --- |');
+  lines.push('| 步骤 | 状态 | 命令 |');
+  lines.push('| --- | --- | --- |');
 
   for (const result of report.results) {
     const statusText = result.status === 'passed' ? '通过' : '失败';
-    lines.push(
-      '| ' + result.label + ' | ' + statusText + ' | ' + result.durationMs + ' | `' + result.commandText + '` |'
-    );
+    lines.push('| ' + result.label + ' | ' + statusText + ' | `' + result.commandText + '` |');
   }
 
   lines.push('');
