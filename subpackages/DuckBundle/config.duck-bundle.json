@@ -1406,17 +1406,17 @@
       1
     ],
     "29": [
-      "tex/fragment/a/5",
+      "tex/fragment/variantA/shape5",
       1,
       1
     ],
     "30": [
-      "tex/fragment/c/1",
+      "tex/fragment/variantC/shape1",
       1,
       1
     ],
     "31": [
-      "tex/fragment/d/1",
+      "tex/fragment/variantD/shape1",
       1,
       1
     ],
@@ -1426,7 +1426,7 @@
       1
     ],
     "33": [
-      "tex/fragment/c/2",
+      "tex/fragment/variantC/shape2",
       1,
       1
     ],
@@ -1476,7 +1476,7 @@
       1
     ],
     "43": [
-      "tex/fragment/e/2",
+      "tex/fragment/variantE/shape2",
       1,
       1
     ],
@@ -1766,12 +1766,12 @@
       1
     ],
     "101": [
-      "tex/fragment/d/3",
+      "tex/fragment/variantD/shape3",
       1,
       1
     ],
     "102": [
-      "tex/fragment/d/2",
+      "tex/fragment/variantD/shape2",
       1,
       1
     ],
@@ -1881,7 +1881,7 @@
       1
     ],
     "124": [
-      "tex/fragment/d/4",
+      "tex/fragment/variantD/shape4",
       1,
       1
     ],
@@ -1896,7 +1896,7 @@
       1
     ],
     "127": [
-      "tex/fragment/e/5",
+      "tex/fragment/variantE/shape5",
       1,
       1
     ],
@@ -1906,7 +1906,7 @@
       1
     ],
     "129": [
-      "tex/fragment/d/6",
+      "tex/fragment/variantD/shape6",
       1,
       1
     ],
@@ -1946,7 +1946,7 @@
       1
     ],
     "137": [
-      "tex/fragment/a/2",
+      "tex/fragment/variantA/shape2",
       1,
       1
     ],
@@ -1976,7 +1976,7 @@
       1
     ],
     "143": [
-      "tex/fragment/a/3",
+      "tex/fragment/variantA/shape3",
       1,
       1
     ],
@@ -2001,7 +2001,7 @@
       1
     ],
     "148": [
-      "tex/fragment/c/3",
+      "tex/fragment/variantC/shape3",
       1,
       1
     ],
@@ -2031,7 +2031,7 @@
       1
     ],
     "154": [
-      "tex/fragment/d/5",
+      "tex/fragment/variantD/shape5",
       1,
       1
     ],
@@ -2251,7 +2251,7 @@
       1
     ],
     "198": [
-      "tex/fragment/e/1",
+      "tex/fragment/variantE/shape1",
       1,
       1
     ],
@@ -2381,7 +2381,7 @@
       1
     ],
     "224": [
-      "tex/fragment/b/3",
+      "tex/fragment/variantB/shape3",
       1,
       1
     ],
@@ -2426,7 +2426,7 @@
       1
     ],
     "233": [
-      "tex/fragment/c/5",
+      "tex/fragment/variantC/shape5",
       1,
       1
     ],
@@ -2576,7 +2576,7 @@
       1
     ],
     "263": [
-      "tex/fragment/e/4",
+      "tex/fragment/variantE/shape4",
       1,
       1
     ],
@@ -2586,7 +2586,7 @@
       1
     ],
     "265": [
-      "tex/fragment/e/3",
+      "tex/fragment/variantE/shape3",
       1,
       1
     ],
@@ -2596,7 +2596,7 @@
       1
     ],
     "267": [
-      "tex/fragment/b/4",
+      "tex/fragment/variantB/shape4",
       1,
       1
     ],
@@ -2666,7 +2666,7 @@
       1
     ],
     "281": [
-      "tex/fragment/e/6",
+      "tex/fragment/variantE/shape6",
       1,
       1
     ],
@@ -2691,7 +2691,7 @@
       1
     ],
     "286": [
-      "tex/fragment/b/5",
+      "tex/fragment/variantB/shape5",
       1,
       1
     ],
@@ -2706,7 +2706,7 @@
       1
     ],
     "289": [
-      "tex/fragment/b/2",
+      "tex/fragment/variantB/shape2",
       1,
       1
     ],
@@ -2791,7 +2791,7 @@
       1
     ],
     "306": [
-      "tex/fragment/a/1",
+      "tex/fragment/variantA/shape1",
       1,
       1
     ],
@@ -2801,7 +2801,7 @@
       1
     ],
     "308": [
-      "tex/fragment/b/1",
+      "tex/fragment/variantB/shape1",
       1,
       1
     ],
@@ -2826,7 +2826,7 @@
       1
     ],
     "313": [
-      "tex/fragment/a/6",
+      "tex/fragment/variantA/shape6",
       1,
       1
     ],
@@ -2846,7 +2846,7 @@
       1
     ],
     "317": [
-      "tex/fragment/c/4",
+      "tex/fragment/variantC/shape4",
       1,
       1
     ],
@@ -2871,7 +2871,7 @@
       1
     ],
     "322": [
-      "tex/fragment/a/4",
+      "tex/fragment/variantA/shape4",
       1,
       1
     ],
@@ -2896,7 +2896,7 @@
       1
     ],
     "327": [
-      "tex/fragment/c/6",
+      "tex/fragment/variantC/shape6",
       1,
       1
     ],
@@ -2916,7 +2916,7 @@
       1
     ],
     "331": [
-      "tex/fragment/b/6",
+      "tex/fragment/variantB/shape6",
       1,
       1
     ],
@@ -3371,12 +3371,12 @@
       1
     ],
     "422": [
-      "tex/fragment/a/5/texture",
+      "tex/fragment/variantA/shape5/texture",
       2,
       1
     ],
     "423": [
-      "tex/fragment/a/5/spriteFrame",
+      "tex/fragment/variantA/shape5/spriteFrame",
       3,
       1
     ],
@@ -3401,12 +3401,12 @@
       1
     ],
     "428": [
-      "tex/fragment/c/1/texture",
+      "tex/fragment/variantC/shape1/texture",
       2,
       1
     ],
     "429": [
-      "tex/fragment/c/1/spriteFrame",
+      "tex/fragment/variantC/shape1/spriteFrame",
       3,
       1
     ],
@@ -3416,12 +3416,12 @@
       1
     ],
     "431": [
-      "tex/fragment/d/1/texture",
+      "tex/fragment/variantD/shape1/texture",
       2,
       1
     ],
     "432": [
-      "tex/fragment/d/1/spriteFrame",
+      "tex/fragment/variantD/shape1/spriteFrame",
       3,
       1
     ],
@@ -3436,12 +3436,12 @@
       1
     ],
     "435": [
-      "tex/fragment/c/2/texture",
+      "tex/fragment/variantC/shape2/texture",
       2,
       1
     ],
     "436": [
-      "tex/fragment/c/2/spriteFrame",
+      "tex/fragment/variantC/shape2/spriteFrame",
       3,
       1
     ],
@@ -3581,12 +3581,12 @@
       1
     ],
     "465": [
-      "tex/fragment/e/2/texture",
+      "tex/fragment/variantE/shape2/texture",
       2,
       1
     ],
     "466": [
-      "tex/fragment/e/2/spriteFrame",
+      "tex/fragment/variantE/shape2/spriteFrame",
       3,
       1
     ],
@@ -4336,12 +4336,12 @@
       1
     ],
     "616": [
-      "tex/fragment/d/3/texture",
+      "tex/fragment/variantD/shape3/texture",
       2,
       1
     ],
     "617": [
-      "tex/fragment/d/3/spriteFrame",
+      "tex/fragment/variantD/shape3/spriteFrame",
       3,
       1
     ],
@@ -4361,12 +4361,12 @@
       1
     ],
     "621": [
-      "tex/fragment/d/2/texture",
+      "tex/fragment/variantD/shape2/texture",
       2,
       1
     ],
     "622": [
-      "tex/fragment/d/2/spriteFrame",
+      "tex/fragment/variantD/shape2/spriteFrame",
       3,
       1
     ],
@@ -4641,12 +4641,12 @@
       1
     ],
     "677": [
-      "tex/fragment/d/4/texture",
+      "tex/fragment/variantD/shape4/texture",
       2,
       1
     ],
     "678": [
-      "tex/fragment/d/4/spriteFrame",
+      "tex/fragment/variantD/shape4/spriteFrame",
       3,
       1
     ],
@@ -4671,12 +4671,12 @@
       1
     ],
     "683": [
-      "tex/fragment/e/5/texture",
+      "tex/fragment/variantE/shape5/texture",
       2,
       1
     ],
     "684": [
-      "tex/fragment/e/5/spriteFrame",
+      "tex/fragment/variantE/shape5/spriteFrame",
       3,
       1
     ],
@@ -4691,12 +4691,12 @@
       1
     ],
     "687": [
-      "tex/fragment/d/6/texture",
+      "tex/fragment/variantD/shape6/texture",
       2,
       1
     ],
     "688": [
-      "tex/fragment/d/6/spriteFrame",
+      "tex/fragment/variantD/shape6/spriteFrame",
       3,
       1
     ],
@@ -4786,12 +4786,12 @@
       1
     ],
     "706": [
-      "tex/fragment/a/2/texture",
+      "tex/fragment/variantA/shape2/texture",
       2,
       1
     ],
     "707": [
-      "tex/fragment/a/2/spriteFrame",
+      "tex/fragment/variantA/shape2/spriteFrame",
       3,
       1
     ],
@@ -4866,12 +4866,12 @@
       1
     ],
     "722": [
-      "tex/fragment/a/3/texture",
+      "tex/fragment/variantA/shape3/texture",
       2,
       1
     ],
     "723": [
-      "tex/fragment/a/3/spriteFrame",
+      "tex/fragment/variantA/shape3/spriteFrame",
       3,
       1
     ],
@@ -4936,12 +4936,12 @@
       1
     ],
     "736": [
-      "tex/fragment/c/3/texture",
+      "tex/fragment/variantC/shape3/texture",
       2,
       1
     ],
     "737": [
-      "tex/fragment/c/3/spriteFrame",
+      "tex/fragment/variantC/shape3/spriteFrame",
       3,
       1
     ],
@@ -5021,12 +5021,12 @@
       1
     ],
     "753": [
-      "tex/fragment/d/5/texture",
+      "tex/fragment/variantD/shape5/texture",
       2,
       1
     ],
     "754": [
-      "tex/fragment/d/5/spriteFrame",
+      "tex/fragment/variantD/shape5/spriteFrame",
       3,
       1
     ],
@@ -5636,12 +5636,12 @@
       1
     ],
     "876": [
-      "tex/fragment/e/1/texture",
+      "tex/fragment/variantE/shape1/texture",
       2,
       1
     ],
     "877": [
-      "tex/fragment/e/1/spriteFrame",
+      "tex/fragment/variantE/shape1/spriteFrame",
       3,
       1
     ],
@@ -6001,12 +6001,12 @@
       1
     ],
     "949": [
-      "tex/fragment/b/3/texture",
+      "tex/fragment/variantB/shape3/texture",
       2,
       1
     ],
     "950": [
-      "tex/fragment/b/3/spriteFrame",
+      "tex/fragment/variantB/shape3/spriteFrame",
       3,
       1
     ],
@@ -6136,12 +6136,12 @@
       1
     ],
     "976": [
-      "tex/fragment/c/5/texture",
+      "tex/fragment/variantC/shape5/texture",
       2,
       1
     ],
     "977": [
-      "tex/fragment/c/5/spriteFrame",
+      "tex/fragment/variantC/shape5/spriteFrame",
       3,
       1
     ],
@@ -6491,12 +6491,12 @@
       1
     ],
     "1047": [
-      "tex/fragment/e/4/texture",
+      "tex/fragment/variantE/shape4/texture",
       2,
       1
     ],
     "1048": [
-      "tex/fragment/e/4/spriteFrame",
+      "tex/fragment/variantE/shape4/spriteFrame",
       3,
       1
     ],
@@ -6526,12 +6526,12 @@
       1
     ],
     "1054": [
-      "tex/fragment/e/3/texture",
+      "tex/fragment/variantE/shape3/texture",
       2,
       1
     ],
     "1055": [
-      "tex/fragment/e/3/spriteFrame",
+      "tex/fragment/variantE/shape3/spriteFrame",
       3,
       1
     ],
@@ -6556,12 +6556,12 @@
       1
     ],
     "1060": [
-      "tex/fragment/b/4/texture",
+      "tex/fragment/variantB/shape4/texture",
       2,
       1
     ],
     "1061": [
-      "tex/fragment/b/4/spriteFrame",
+      "tex/fragment/variantB/shape4/spriteFrame",
       3,
       1
     ],
@@ -6711,12 +6711,12 @@
       1
     ],
     "1092": [
-      "tex/fragment/e/6/texture",
+      "tex/fragment/variantE/shape6/texture",
       2,
       1
     ],
     "1093": [
-      "tex/fragment/e/6/spriteFrame",
+      "tex/fragment/variantE/shape6/spriteFrame",
       3,
       1
     ],
@@ -6761,12 +6761,12 @@
       1
     ],
     "1102": [
-      "tex/fragment/b/5/texture",
+      "tex/fragment/variantB/shape5/texture",
       2,
       1
     ],
     "1103": [
-      "tex/fragment/b/5/spriteFrame",
+      "tex/fragment/variantB/shape5/spriteFrame",
       3,
       1
     ],
@@ -6781,17 +6781,17 @@
       1
     ],
     "1106": [
-      "tex/%2",
+      "tex/percent2",
       1,
       1
     ],
     "1107": [
-      "tex/%2/texture",
+      "tex/percent2/texture",
       2,
       1
     ],
     "1108": [
-      "tex/%2/spriteFrame",
+      "tex/percent2/spriteFrame",
       3,
       1
     ],
@@ -6811,12 +6811,12 @@
       1
     ],
     "1112": [
-      "tex/fragment/b/2/texture",
+      "tex/fragment/variantB/shape2/texture",
       2,
       1
     ],
     "1113": [
-      "tex/fragment/b/2/spriteFrame",
+      "tex/fragment/variantB/shape2/spriteFrame",
       3,
       1
     ],
@@ -7046,12 +7046,12 @@
       1
     ],
     "1159": [
-      "tex/fragment/a/1/texture",
+      "tex/fragment/variantA/shape1/texture",
       2,
       1
     ],
     "1160": [
-      "tex/fragment/a/1/spriteFrame",
+      "tex/fragment/variantA/shape1/spriteFrame",
       3,
       1
     ],
@@ -7066,12 +7066,12 @@
       1
     ],
     "1163": [
-      "tex/fragment/b/1/texture",
+      "tex/fragment/variantB/shape1/texture",
       2,
       1
     ],
     "1164": [
-      "tex/fragment/b/1/spriteFrame",
+      "tex/fragment/variantB/shape1/spriteFrame",
       3,
       1
     ],
@@ -7121,12 +7121,12 @@
       1
     ],
     "1174": [
-      "tex/fragment/a/6/texture",
+      "tex/fragment/variantA/shape6/texture",
       2,
       1
     ],
     "1175": [
-      "tex/fragment/a/6/spriteFrame",
+      "tex/fragment/variantA/shape6/spriteFrame",
       3,
       1
     ],
@@ -7161,12 +7161,12 @@
       1
     ],
     "1182": [
-      "tex/fragment/c/4/texture",
+      "tex/fragment/variantC/shape4/texture",
       2,
       1
     ],
     "1183": [
-      "tex/fragment/c/4/spriteFrame",
+      "tex/fragment/variantC/shape4/spriteFrame",
       3,
       1
     ],
@@ -7281,12 +7281,12 @@
       1
     ],
     "1206": [
-      "tex/fragment/a/4/texture",
+      "tex/fragment/variantA/shape4/texture",
       2,
       1
     ],
     "1207": [
-      "tex/fragment/a/4/spriteFrame",
+      "tex/fragment/variantA/shape4/spriteFrame",
       3,
       1
     ],
@@ -7336,12 +7336,12 @@
       1
     ],
     "1217": [
-      "tex/fragment/c/6/texture",
+      "tex/fragment/variantC/shape6/texture",
       2,
       1
     ],
     "1218": [
-      "tex/fragment/c/6/spriteFrame",
+      "tex/fragment/variantC/shape6/spriteFrame",
       3,
       1
     ],
@@ -7376,12 +7376,12 @@
       1
     ],
     "1225": [
-      "tex/fragment/b/6/texture",
+      "tex/fragment/variantB/shape6/texture",
       2,
       1
     ],
     "1226": [
-      "tex/fragment/b/6/spriteFrame",
+      "tex/fragment/variantB/shape6/spriteFrame",
       3,
       1
     ],

@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 
 const PROJECT_ROOT = process.cwd();
-const FRAGMENT_VARIANT_FAMILY_CODES = ['a', 'b', 'c', 'd', 'e'];
+const FRAGMENT_VARIANT_DIRECTORY_NAMES = ['variantA', 'variantB', 'variantC', 'variantD', 'variantE'];
 const FRAGMENT_VARIANT_SHAPE_SLOTS = [1, 2, 3, 4, 5, 6];
 
 const CHECK_TARGETS = [
@@ -47,6 +47,28 @@ const CHECK_TARGETS = [
       {
         label: 'HomeBundle 配置旧解锁提示路径',
         pattern: /tex\/获得100只鸭子解锁(?:\/(?:texture|spriteFrame))?|tex\/获得100只鹅解锁(?:\/(?:texture|spriteFrame))?|tex\/光(?:\/(?:texture|spriteFrame))?/g
+      }
+    ]
+  },
+  {
+    relativePath: 'subpackages/DuckBundle/config.duck-bundle.json',
+    checks: [
+      {
+        label: 'DuckBundle fragment 旧 canonical 路径',
+        pattern: /tex\/fragment\/[a-e]\/[1-6](?:\/(?:spriteFrame|texture))?/g
+      },
+      {
+        label: 'DuckBundle %2 旧 canonical 路径',
+        pattern: /tex\/%2(?:\/(?:spriteFrame|texture))?/g
+      }
+    ]
+  },
+  {
+    relativePath: 'subpackages/audioBundle/config.audio-bundle.json',
+    checks: [
+      {
+        label: 'audioBundle legacy root token 回流',
+        pattern: /"\s*:\s*\[\s*"(?:win|adz|fly|bdz|door|ls|lz|pop|over|gz|levelup|show)"\s*,\s*0\s*,\s*1\s*\]/g
       }
     ]
   },
@@ -413,12 +435,13 @@ function resolveTargetRelativePaths(target) {
 function buildDuckBundleFragmentSpriteFramePaths() {
   const relativePaths = [];
 
-  for (const familyCode of FRAGMENT_VARIANT_FAMILY_CODES) {
+  for (const familyDirectoryName of FRAGMENT_VARIANT_DIRECTORY_NAMES) {
     for (const shapeSlot of FRAGMENT_VARIANT_SHAPE_SLOTS) {
       relativePaths.push(
         'subpackages/DuckBundle/import/tex/fragment/' +
-          familyCode +
+          familyDirectoryName +
           '/' +
+          'shape' +
           String(shapeSlot) +
           '/spriteFrame__2.json'
       );

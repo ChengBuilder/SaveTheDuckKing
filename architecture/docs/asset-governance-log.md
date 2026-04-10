@@ -1,5 +1,29 @@
 # 素材治理记录
 
+## 2026-04-10 `audioBundle` legacy root token 收敛
+
+本轮针对仍停留在 bundle 根层、但语义又过于模糊的音频 root token，明确收敛到 `legacy/*` 目录结构，整个流程只改 canonical 源头路径与 import 元数据，不再引入新的运行时兼容层。所有变更直接作用于 `subpackages/audioBundle/config.audio-bundle.json` 与 `subpackages/audioBundle/import/legacy/*.json`，确保收敛策略可追踪、可重复执行。
+
+关键 root token -> legacy 映射：
+- `adz` -> `legacy/unknownAdz`
+- `bdz` -> `legacy/unknownBdz`
+- `ls` -> `legacy/unknownLs`
+- `lz` -> `legacy/fruitBornDuplicateLz`
+- `win` -> `legacy/victory`
+- `fly` -> `legacy/fly`
+- `door` -> `legacy/door`
+- `pop` -> `legacy/pop`
+- `over` -> `legacy/gameOver`
+- `gz` -> `legacy/levelCompleteDuplicateGz`
+- `levelup` -> `legacy/levelUp`
+- `show` -> `legacy/levelCompleteDuplicateShow`
+
+护栏新增“root token 禁回流”，在 `run-guardrails` 中先生成一次音频审计，再检查任何 legacy 映射是否有被原始 root token 重置的痕迹，确保专心 canonical 化，禁止再把旧 token 写回 `game.js`/`import` 中。
+
+验证命令：
+- `node architecture/tools/generate-audio-usage-audit.js`
+- `node architecture/tools/run-guardrails.js`（包含 root token 禁回流护栏）
+
 ## 2026-04-08 `audioBundle` 第一批语义化 rename
 
 本轮目标不是“重建 Cocos 编译产物”，而是在保证微信小游戏继续稳定运行的前提下，把最确定的一批平铺音频路径收敛成可读目录结构。
@@ -579,3 +603,45 @@
 - `game.js` 中 `Util.fragmentEffect()` 的动态路径只稳定证明了两条轴：`a..e` 是变体族、`1..6` 是形状槽位。
 - 当前还没有足够运行时证据证明 `a..e` 可以安全收敛为某个现成木板颜色或业务语义，因此本轮不改 `tex/fragment/a..e/*` canonical 路径。
 - 先把 `SpriteFrame.name` 从全局重名的 `1..6` 收敛为唯一且可检索的 `fragmentVariantXShapeY`，能立即降低维护噪音，同时不给未来路径级治理制造错误语义债。
+
+## 2026-04-11 `DuckBundle` fragment canonical 路径收口与 `%2` 清理
+
+本轮目标：
+- 继续沿用“源头改 canonical，不加 runtime 兼容”的策略，清掉 `DuckBundle` 里最后一批高风险噪音路径。
+- 在不猜业务语义的前提下，把 `fragment` 从 `a..e/1..6` 收敛到中性、可读、可检索命名。
+- 清理 `%2` 这组 URL 编码风格路径，并同步补护栏防回流。
+
+本轮新增 canonical 路径：
+- `tex/fragment/a/1 -> tex/fragment/variantA/shape1`（同类覆盖 `a..e`、`1..6` 全量组合）
+- `tex/fragment/a/1/texture -> tex/fragment/variantA/shape1/texture`（同类覆盖全量组合）
+- `tex/fragment/a/1/spriteFrame -> tex/fragment/variantA/shape1/spriteFrame`（同类覆盖全量组合）
+- `tex/%2 -> tex/percent2`
+- `tex/%2/texture -> tex/percent2/texture`
+- `tex/%2/spriteFrame -> tex/percent2/spriteFrame`
+
+本轮同步调整：
+- `subpackages/DuckBundle/config.duck-bundle.json`
+- `subpackages/DuckBundle/import/tex/fragment/*` 目录从 `a..e/1..6` 迁移到 `variantA..E/shape1..6`
+- `subpackages/DuckBundle/native/tex/fragment/*` 同步迁移到 `variantA..E/shape1..6`
+
+本轮新增治理基础设施：
+- 新增 `architecture/tools/semanticize-duckbundle-fragment-path-assets.js`
+  - 先改 config，再迁移 import/native 目录，最后做残留校验
+  - 支持幂等重跑（重复执行改写数为 0）
+- 新增 `architecture/tools/semanticize-duckbundle-percent-assets.js`
+  - 只改 `%2` 三条 canonical 路径
+  - 支持幂等重跑（重复执行改写数为 0）
+- `architecture/tools/check-no-url-encoded-paths.js` 已扩展为扫描 `subpackages/*/config.*.json` 的 `paths[*][0]`，防止 URL 编码 canonical 路径回流
+- `architecture/tools/check-legacy-runtime-compat.js` 已新增：
+  - `DuckBundle fragment` 旧 canonical 路径回流检查
+  - `DuckBundle %2` 旧 canonical 路径回流检查
+- `architecture/tools/run-guardrails.js` 已接入上述两份新语义化脚本语法检查
+
+本轮结果：
+- `asset-readability-audit` 全局高优先级候选从此前批次的 `93` 降到 `0`
+- `DuckBundle` 命中候选从 `192` 降到 `99`，高优先级从 `93` 降到 `0`
+- `node architecture/tools/run-guardrails.js` 全部通过
+
+本轮经验：
+- `variant + shape` 这种中性轴命名可以在“证据不足以映射业务语义”时安全落地，既提升可读性，也不制造错误语义债。
+- 资产治理建议固定为三件套：`语义化脚本 + 护栏 + 幂等验证`，并在迭代报告中持续量化收敛结果。

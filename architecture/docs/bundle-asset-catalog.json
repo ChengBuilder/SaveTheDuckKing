@@ -167,7 +167,7 @@
           "count": 6
         },
         {
-          "name": "tex/%2",
+          "name": "tex/背景",
           "count": 3
         }
       ],
@@ -191,47 +191,23 @@
       ],
       "namingNoisePaths": [
         "tex/nail/sfa",
-        "tex/fragment/a/5",
-        "tex/fragment/c/1",
-        "tex/fragment/d/1",
-        "tex/fragment/c/2",
-        "tex/fragment/e/2",
         "tex/nail/zin",
         "tex/nail/tln",
         "tex/nail/sla",
-        "tex/fragment/d/3",
-        "tex/fragment/d/2",
-        "tex/fragment/d/4",
-        "tex/fragment/e/5",
-        "tex/fragment/d/6",
-        "tex/fragment/a/2",
-        "tex/fragment/a/3"
+        "tex/nail/sln",
+        "tex/nail/tla",
+        "tex/nail/tha",
+        "tex/nail/lvn",
+        "tex/nail/cln",
+        "tex/nail/mla",
+        "tex/nail/zia",
+        "tex/nail/mln",
+        "tex/nail/thn",
+        "tex/nail/lva",
+        "tex/nail/sfn",
+        "tex/nail/cla"
       ],
       "namingNoiseTokens": [
-        {
-          "name": "a",
-          "count": 18
-        },
-        {
-          "name": "b",
-          "count": 18
-        },
-        {
-          "name": "c",
-          "count": 18
-        },
-        {
-          "name": "d",
-          "count": 18
-        },
-        {
-          "name": "e",
-          "count": 18
-        },
-        {
-          "name": "%2",
-          "count": 3
-        },
         {
           "name": "cla",
           "count": 3
@@ -254,6 +230,30 @@
         },
         {
           "name": "mla",
+          "count": 3
+        },
+        {
+          "name": "mln",
+          "count": 3
+        },
+        {
+          "name": "sfa",
+          "count": 3
+        },
+        {
+          "name": "sfn",
+          "count": 3
+        },
+        {
+          "name": "sla",
+          "count": 3
+        },
+        {
+          "name": "sln",
+          "count": 3
+        },
+        {
+          "name": "t0",
           "count": 3
         }
       ],
@@ -648,6 +648,10 @@
           "count": 16
         },
         {
+          "name": "legacy",
+          "count": 12
+        },
+        {
           "name": "comboMusic",
           "count": 10
         },
@@ -670,37 +674,9 @@
         {
           "name": "bgm",
           "count": 2
-        },
-        {
-          "name": "adz",
-          "count": 1
-        },
-        {
-          "name": "bdz",
-          "count": 1
-        },
-        {
-          "name": "door",
-          "count": 1
-        },
-        {
-          "name": "fly",
-          "count": 1
-        },
-        {
-          "name": "gz",
-          "count": 1
         }
       ],
       "topSemanticPaths": [
-        {
-          "name": "adz",
-          "count": 1
-        },
-        {
-          "name": "bdz",
-          "count": 1
-        },
         {
           "name": "bgm/defaultGameplay",
           "count": 1
@@ -740,6 +716,14 @@
         {
           "name": "comboMusic/combo_7",
           "count": 1
+        },
+        {
+          "name": "comboMusic/combo_8",
+          "count": 1
+        },
+        {
+          "name": "comboMusic/combo_9",
+          "count": 1
         }
       ],
       "samplePaths": [
@@ -749,10 +733,10 @@
         "duckGame/woodAssembleFollow",
         "comboMusic/combo_4",
         "ui/warningPrompt",
-        "win",
+        "legacy/victory",
         "ui/applause",
         "ui/duckUnlock",
-        "adz",
+        "legacy/unknownAdz",
         "fruitGame/FruitWin",
         "duckGame/stoneCollision",
         "fruitGame/eliminate1",
@@ -761,25 +745,11 @@
         "comboMusic/combo_5"
       ],
       "namingNoisePaths": [
-        "win",
-        "adz",
-        "fly",
-        "bdz",
+        "legacy/fly",
         "fruitGame/eat",
-        "ls",
-        "lz",
-        "pop",
-        "gz"
+        "legacy/pop"
       ],
       "namingNoiseTokens": [
-        {
-          "name": "adz",
-          "count": 1
-        },
-        {
-          "name": "bdz",
-          "count": 1
-        },
         {
           "name": "eat",
           "count": 1
@@ -789,23 +759,7 @@
           "count": 1
         },
         {
-          "name": "gz",
-          "count": 1
-        },
-        {
-          "name": "ls",
-          "count": 1
-        },
-        {
-          "name": "lz",
-          "count": 1
-        },
-        {
           "name": "pop",
-          "count": 1
-        },
-        {
-          "name": "win",
           "count": 1
         }
       ],

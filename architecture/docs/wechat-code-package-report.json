@@ -2523,7 +2523,7 @@
         "subpackages/audioBundle"
       ],
       "fileCount": 132,
-      "sizeBytes": 1864024,
+      "sizeBytes": 1864290,
       "sizeText": "1.78 MiB",
       "limitBytes": null,
       "limitText": null,
@@ -2532,7 +2532,7 @@
         {
           "path": "subpackages/audioBundle/config.audio-bundle.json",
           "displayPath": "subpackages/audioBundle/config.audio-bundle.json",
-          "sizeBytes": 9569,
+          "sizeBytes": 9744,
           "sizeText": "0.01 MiB"
         },
         {
@@ -2778,25 +2778,25 @@
         {
           "path": "subpackages/audioBundle/import/legacy/fruitBornDuplicateLz.json",
           "displayPath": "subpackages/audioBundle/import/legacy/fruitBornDuplicateLz.json",
-          "sizeBytes": 115,
+          "sizeBytes": 133,
           "sizeText": "0.00 MiB"
         },
         {
           "path": "subpackages/audioBundle/import/legacy/gameOver.json",
           "displayPath": "subpackages/audioBundle/import/legacy/gameOver.json",
-          "sizeBytes": 117,
+          "sizeBytes": 121,
           "sizeText": "0.00 MiB"
         },
         {
           "path": "subpackages/audioBundle/import/legacy/levelCompleteDuplicateGz.json",
           "displayPath": "subpackages/audioBundle/import/legacy/levelCompleteDuplicateGz.json",
-          "sizeBytes": 118,
+          "sizeBytes": 140,
           "sizeText": "0.00 MiB"
         },
         {
           "path": "subpackages/audioBundle/import/legacy/levelCompleteDuplicateShow.json",
           "displayPath": "subpackages/audioBundle/import/legacy/levelCompleteDuplicateShow.json",
-          "sizeBytes": 120,
+          "sizeBytes": 142,
           "sizeText": "0.00 MiB"
         },
         {
@@ -2814,25 +2814,25 @@
         {
           "path": "subpackages/audioBundle/import/legacy/unknownAdz.json",
           "displayPath": "subpackages/audioBundle/import/legacy/unknownAdz.json",
-          "sizeBytes": 119,
+          "sizeBytes": 126,
           "sizeText": "0.00 MiB"
         },
         {
           "path": "subpackages/audioBundle/import/legacy/unknownBdz.json",
           "displayPath": "subpackages/audioBundle/import/legacy/unknownBdz.json",
-          "sizeBytes": 118,
+          "sizeBytes": 125,
           "sizeText": "0.00 MiB"
         },
         {
           "path": "subpackages/audioBundle/import/legacy/unknownLs.json",
           "displayPath": "subpackages/audioBundle/import/legacy/unknownLs.json",
-          "sizeBytes": 118,
+          "sizeBytes": 125,
           "sizeText": "0.00 MiB"
         },
         {
           "path": "subpackages/audioBundle/import/legacy/victory.json",
           "displayPath": "subpackages/audioBundle/import/legacy/victory.json",
-          "sizeBytes": 119,
+          "sizeBytes": 123,
           "sizeText": "0.00 MiB"
         },
         {
@@ -3332,7 +3332,7 @@
         "subpackages/DuckBundle"
       ],
       "fileCount": 1045,
-      "sizeBytes": 2380532,
+      "sizeBytes": 2381630,
       "sizeText": "2.27 MiB",
       "limitBytes": null,
       "limitText": null,
@@ -3341,7 +3341,7 @@
         {
           "path": "subpackages/DuckBundle/config.duck-bundle.json",
           "displayPath": "subpackages/DuckBundle/config.duck-bundle.json",
-          "sizeBytes": 174362,
+          "sizeBytes": 175460,
           "sizeText": "0.17 MiB"
         },
         {
@@ -3753,362 +3753,362 @@
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/a/1/spriteFrame__2.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/a/1/spriteFrame__2.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantA/shape1/spriteFrame__2.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantA/shape1/spriteFrame__2.json",
           "sizeBytes": 566,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/a/1/spriteFrame.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/a/1/spriteFrame.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantA/shape1/spriteFrame.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantA/shape1/spriteFrame.json",
           "sizeBytes": 72,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/a/2/spriteFrame__2.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/a/2/spriteFrame__2.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantA/shape2/spriteFrame__2.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantA/shape2/spriteFrame__2.json",
           "sizeBytes": 566,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/a/2/spriteFrame.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/a/2/spriteFrame.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantA/shape2/spriteFrame.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantA/shape2/spriteFrame.json",
           "sizeBytes": 72,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/a/3/spriteFrame__2.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/a/3/spriteFrame__2.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantA/shape3/spriteFrame__2.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantA/shape3/spriteFrame__2.json",
           "sizeBytes": 554,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/a/3/spriteFrame.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/a/3/spriteFrame.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantA/shape3/spriteFrame.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantA/shape3/spriteFrame.json",
           "sizeBytes": 72,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/a/4/spriteFrame__2.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/a/4/spriteFrame__2.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantA/shape4/spriteFrame__2.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantA/shape4/spriteFrame__2.json",
           "sizeBytes": 578,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/a/4/spriteFrame.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/a/4/spriteFrame.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantA/shape4/spriteFrame.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantA/shape4/spriteFrame.json",
           "sizeBytes": 72,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/a/5/spriteFrame__2.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/a/5/spriteFrame__2.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantA/shape5/spriteFrame__2.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantA/shape5/spriteFrame__2.json",
           "sizeBytes": 554,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/a/5/spriteFrame.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/a/5/spriteFrame.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantA/shape5/spriteFrame.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantA/shape5/spriteFrame.json",
           "sizeBytes": 72,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/a/6/spriteFrame__2.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/a/6/spriteFrame__2.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantA/shape6/spriteFrame__2.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantA/shape6/spriteFrame__2.json",
           "sizeBytes": 566,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/a/6/spriteFrame.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/a/6/spriteFrame.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantA/shape6/spriteFrame.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantA/shape6/spriteFrame.json",
           "sizeBytes": 72,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/b/1/spriteFrame__2.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/b/1/spriteFrame__2.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantB/shape1/spriteFrame__2.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantB/shape1/spriteFrame__2.json",
           "sizeBytes": 566,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/b/1/spriteFrame.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/b/1/spriteFrame.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantB/shape1/spriteFrame.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantB/shape1/spriteFrame.json",
           "sizeBytes": 72,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/b/2/spriteFrame__2.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/b/2/spriteFrame__2.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantB/shape2/spriteFrame__2.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantB/shape2/spriteFrame__2.json",
           "sizeBytes": 566,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/b/2/spriteFrame.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/b/2/spriteFrame.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantB/shape2/spriteFrame.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantB/shape2/spriteFrame.json",
           "sizeBytes": 72,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/b/3/spriteFrame__2.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/b/3/spriteFrame__2.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantB/shape3/spriteFrame__2.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantB/shape3/spriteFrame__2.json",
           "sizeBytes": 554,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/b/3/spriteFrame.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/b/3/spriteFrame.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantB/shape3/spriteFrame.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantB/shape3/spriteFrame.json",
           "sizeBytes": 72,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/b/4/spriteFrame__2.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/b/4/spriteFrame__2.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantB/shape4/spriteFrame__2.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantB/shape4/spriteFrame__2.json",
           "sizeBytes": 578,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/b/4/spriteFrame.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/b/4/spriteFrame.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantB/shape4/spriteFrame.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantB/shape4/spriteFrame.json",
           "sizeBytes": 72,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/b/5/spriteFrame__2.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/b/5/spriteFrame__2.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantB/shape5/spriteFrame__2.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantB/shape5/spriteFrame__2.json",
           "sizeBytes": 554,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/b/5/spriteFrame.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/b/5/spriteFrame.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantB/shape5/spriteFrame.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantB/shape5/spriteFrame.json",
           "sizeBytes": 72,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/b/6/spriteFrame__2.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/b/6/spriteFrame__2.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantB/shape6/spriteFrame__2.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantB/shape6/spriteFrame__2.json",
           "sizeBytes": 566,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/b/6/spriteFrame.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/b/6/spriteFrame.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantB/shape6/spriteFrame.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantB/shape6/spriteFrame.json",
           "sizeBytes": 72,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/c/1/spriteFrame__2.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/c/1/spriteFrame__2.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantC/shape1/spriteFrame__2.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantC/shape1/spriteFrame__2.json",
           "sizeBytes": 566,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/c/1/spriteFrame.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/c/1/spriteFrame.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantC/shape1/spriteFrame.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantC/shape1/spriteFrame.json",
           "sizeBytes": 72,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/c/2/spriteFrame__2.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/c/2/spriteFrame__2.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantC/shape2/spriteFrame__2.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantC/shape2/spriteFrame__2.json",
           "sizeBytes": 566,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/c/2/spriteFrame.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/c/2/spriteFrame.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantC/shape2/spriteFrame.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantC/shape2/spriteFrame.json",
           "sizeBytes": 72,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/c/3/spriteFrame__2.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/c/3/spriteFrame__2.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantC/shape3/spriteFrame__2.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantC/shape3/spriteFrame__2.json",
           "sizeBytes": 554,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/c/3/spriteFrame.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/c/3/spriteFrame.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantC/shape3/spriteFrame.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantC/shape3/spriteFrame.json",
           "sizeBytes": 72,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/c/4/spriteFrame__2.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/c/4/spriteFrame__2.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantC/shape4/spriteFrame__2.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantC/shape4/spriteFrame__2.json",
           "sizeBytes": 578,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/c/4/spriteFrame.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/c/4/spriteFrame.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantC/shape4/spriteFrame.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantC/shape4/spriteFrame.json",
           "sizeBytes": 72,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/c/5/spriteFrame__2.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/c/5/spriteFrame__2.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantC/shape5/spriteFrame__2.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantC/shape5/spriteFrame__2.json",
           "sizeBytes": 554,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/c/5/spriteFrame.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/c/5/spriteFrame.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantC/shape5/spriteFrame.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantC/shape5/spriteFrame.json",
           "sizeBytes": 72,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/c/6/spriteFrame__2.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/c/6/spriteFrame__2.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantC/shape6/spriteFrame__2.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantC/shape6/spriteFrame__2.json",
           "sizeBytes": 566,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/c/6/spriteFrame.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/c/6/spriteFrame.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantC/shape6/spriteFrame.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantC/shape6/spriteFrame.json",
           "sizeBytes": 72,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/d/1/spriteFrame__2.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/d/1/spriteFrame__2.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantD/shape1/spriteFrame__2.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantD/shape1/spriteFrame__2.json",
           "sizeBytes": 566,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/d/1/spriteFrame.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/d/1/spriteFrame.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantD/shape1/spriteFrame.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantD/shape1/spriteFrame.json",
           "sizeBytes": 72,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/d/2/spriteFrame__2.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/d/2/spriteFrame__2.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantD/shape2/spriteFrame__2.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantD/shape2/spriteFrame__2.json",
           "sizeBytes": 566,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/d/2/spriteFrame.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/d/2/spriteFrame.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantD/shape2/spriteFrame.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantD/shape2/spriteFrame.json",
           "sizeBytes": 72,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/d/3/spriteFrame__2.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/d/3/spriteFrame__2.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantD/shape3/spriteFrame__2.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantD/shape3/spriteFrame__2.json",
           "sizeBytes": 554,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/d/3/spriteFrame.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/d/3/spriteFrame.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantD/shape3/spriteFrame.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantD/shape3/spriteFrame.json",
           "sizeBytes": 72,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/d/4/spriteFrame__2.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/d/4/spriteFrame__2.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantD/shape4/spriteFrame__2.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantD/shape4/spriteFrame__2.json",
           "sizeBytes": 578,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/d/4/spriteFrame.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/d/4/spriteFrame.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantD/shape4/spriteFrame.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantD/shape4/spriteFrame.json",
           "sizeBytes": 72,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/d/5/spriteFrame__2.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/d/5/spriteFrame__2.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantD/shape5/spriteFrame__2.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantD/shape5/spriteFrame__2.json",
           "sizeBytes": 554,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/d/5/spriteFrame.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/d/5/spriteFrame.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantD/shape5/spriteFrame.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantD/shape5/spriteFrame.json",
           "sizeBytes": 72,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/d/6/spriteFrame__2.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/d/6/spriteFrame__2.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantD/shape6/spriteFrame__2.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantD/shape6/spriteFrame__2.json",
           "sizeBytes": 566,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/d/6/spriteFrame.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/d/6/spriteFrame.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantD/shape6/spriteFrame.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantD/shape6/spriteFrame.json",
           "sizeBytes": 72,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/e/1/spriteFrame__2.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/e/1/spriteFrame__2.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantE/shape1/spriteFrame__2.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantE/shape1/spriteFrame__2.json",
           "sizeBytes": 566,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/e/1/spriteFrame.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/e/1/spriteFrame.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantE/shape1/spriteFrame.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantE/shape1/spriteFrame.json",
           "sizeBytes": 72,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/e/2/spriteFrame__2.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/e/2/spriteFrame__2.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantE/shape2/spriteFrame__2.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantE/shape2/spriteFrame__2.json",
           "sizeBytes": 566,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/e/2/spriteFrame.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/e/2/spriteFrame.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantE/shape2/spriteFrame.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantE/shape2/spriteFrame.json",
           "sizeBytes": 72,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/e/3/spriteFrame__2.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/e/3/spriteFrame__2.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantE/shape3/spriteFrame__2.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantE/shape3/spriteFrame__2.json",
           "sizeBytes": 554,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/e/3/spriteFrame.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/e/3/spriteFrame.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantE/shape3/spriteFrame.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantE/shape3/spriteFrame.json",
           "sizeBytes": 72,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/e/4/spriteFrame__2.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/e/4/spriteFrame__2.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantE/shape4/spriteFrame__2.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantE/shape4/spriteFrame__2.json",
           "sizeBytes": 578,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/e/4/spriteFrame.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/e/4/spriteFrame.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantE/shape4/spriteFrame.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantE/shape4/spriteFrame.json",
           "sizeBytes": 72,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/e/5/spriteFrame__2.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/e/5/spriteFrame__2.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantE/shape5/spriteFrame__2.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantE/shape5/spriteFrame__2.json",
           "sizeBytes": 554,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/e/5/spriteFrame.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/e/5/spriteFrame.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantE/shape5/spriteFrame.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantE/shape5/spriteFrame.json",
           "sizeBytes": 72,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/e/6/spriteFrame__2.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/e/6/spriteFrame__2.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantE/shape6/spriteFrame__2.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantE/shape6/spriteFrame__2.json",
           "sizeBytes": 566,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/import/tex/fragment/e/6/spriteFrame.json",
-          "displayPath": "subpackages/DuckBundle/import/tex/fragment/e/6/spriteFrame.json",
+          "path": "subpackages/DuckBundle/import/tex/fragment/variantE/shape6/spriteFrame.json",
+          "displayPath": "subpackages/DuckBundle/import/tex/fragment/variantE/shape6/spriteFrame.json",
           "sizeBytes": 72,
           "sizeText": "0.00 MiB"
         },
@@ -7659,182 +7659,182 @@
           "sizeText": "0.01 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/native/tex/fragment/a/1/spriteFrame.png",
-          "displayPath": "subpackages/DuckBundle/native/tex/fragment/a/1/spriteFrame.png",
+          "path": "subpackages/DuckBundle/native/tex/fragment/variantA/shape1/spriteFrame.png",
+          "displayPath": "subpackages/DuckBundle/native/tex/fragment/variantA/shape1/spriteFrame.png",
           "sizeBytes": 4207,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/native/tex/fragment/a/2/spriteFrame.png",
-          "displayPath": "subpackages/DuckBundle/native/tex/fragment/a/2/spriteFrame.png",
+          "path": "subpackages/DuckBundle/native/tex/fragment/variantA/shape2/spriteFrame.png",
+          "displayPath": "subpackages/DuckBundle/native/tex/fragment/variantA/shape2/spriteFrame.png",
           "sizeBytes": 2167,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/native/tex/fragment/a/3/spriteFrame.png",
-          "displayPath": "subpackages/DuckBundle/native/tex/fragment/a/3/spriteFrame.png",
+          "path": "subpackages/DuckBundle/native/tex/fragment/variantA/shape3/spriteFrame.png",
+          "displayPath": "subpackages/DuckBundle/native/tex/fragment/variantA/shape3/spriteFrame.png",
           "sizeBytes": 3408,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/native/tex/fragment/a/4/spriteFrame.png",
-          "displayPath": "subpackages/DuckBundle/native/tex/fragment/a/4/spriteFrame.png",
+          "path": "subpackages/DuckBundle/native/tex/fragment/variantA/shape4/spriteFrame.png",
+          "displayPath": "subpackages/DuckBundle/native/tex/fragment/variantA/shape4/spriteFrame.png",
           "sizeBytes": 1725,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/native/tex/fragment/a/5/spriteFrame.png",
-          "displayPath": "subpackages/DuckBundle/native/tex/fragment/a/5/spriteFrame.png",
+          "path": "subpackages/DuckBundle/native/tex/fragment/variantA/shape5/spriteFrame.png",
+          "displayPath": "subpackages/DuckBundle/native/tex/fragment/variantA/shape5/spriteFrame.png",
           "sizeBytes": 1547,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/native/tex/fragment/a/6/spriteFrame.png",
-          "displayPath": "subpackages/DuckBundle/native/tex/fragment/a/6/spriteFrame.png",
+          "path": "subpackages/DuckBundle/native/tex/fragment/variantA/shape6/spriteFrame.png",
+          "displayPath": "subpackages/DuckBundle/native/tex/fragment/variantA/shape6/spriteFrame.png",
           "sizeBytes": 1007,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/native/tex/fragment/b/1/spriteFrame.png",
-          "displayPath": "subpackages/DuckBundle/native/tex/fragment/b/1/spriteFrame.png",
+          "path": "subpackages/DuckBundle/native/tex/fragment/variantB/shape1/spriteFrame.png",
+          "displayPath": "subpackages/DuckBundle/native/tex/fragment/variantB/shape1/spriteFrame.png",
           "sizeBytes": 3981,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/native/tex/fragment/b/2/spriteFrame.png",
-          "displayPath": "subpackages/DuckBundle/native/tex/fragment/b/2/spriteFrame.png",
+          "path": "subpackages/DuckBundle/native/tex/fragment/variantB/shape2/spriteFrame.png",
+          "displayPath": "subpackages/DuckBundle/native/tex/fragment/variantB/shape2/spriteFrame.png",
           "sizeBytes": 2087,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/native/tex/fragment/b/3/spriteFrame.png",
-          "displayPath": "subpackages/DuckBundle/native/tex/fragment/b/3/spriteFrame.png",
+          "path": "subpackages/DuckBundle/native/tex/fragment/variantB/shape3/spriteFrame.png",
+          "displayPath": "subpackages/DuckBundle/native/tex/fragment/variantB/shape3/spriteFrame.png",
           "sizeBytes": 3550,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/native/tex/fragment/b/4/spriteFrame.png",
-          "displayPath": "subpackages/DuckBundle/native/tex/fragment/b/4/spriteFrame.png",
+          "path": "subpackages/DuckBundle/native/tex/fragment/variantB/shape4/spriteFrame.png",
+          "displayPath": "subpackages/DuckBundle/native/tex/fragment/variantB/shape4/spriteFrame.png",
           "sizeBytes": 1752,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/native/tex/fragment/b/5/spriteFrame.png",
-          "displayPath": "subpackages/DuckBundle/native/tex/fragment/b/5/spriteFrame.png",
+          "path": "subpackages/DuckBundle/native/tex/fragment/variantB/shape5/spriteFrame.png",
+          "displayPath": "subpackages/DuckBundle/native/tex/fragment/variantB/shape5/spriteFrame.png",
           "sizeBytes": 1562,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/native/tex/fragment/b/6/spriteFrame.png",
-          "displayPath": "subpackages/DuckBundle/native/tex/fragment/b/6/spriteFrame.png",
+          "path": "subpackages/DuckBundle/native/tex/fragment/variantB/shape6/spriteFrame.png",
+          "displayPath": "subpackages/DuckBundle/native/tex/fragment/variantB/shape6/spriteFrame.png",
           "sizeBytes": 979,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/native/tex/fragment/c/1/spriteFrame.png",
-          "displayPath": "subpackages/DuckBundle/native/tex/fragment/c/1/spriteFrame.png",
+          "path": "subpackages/DuckBundle/native/tex/fragment/variantC/shape1/spriteFrame.png",
+          "displayPath": "subpackages/DuckBundle/native/tex/fragment/variantC/shape1/spriteFrame.png",
           "sizeBytes": 3515,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/native/tex/fragment/c/2/spriteFrame.png",
-          "displayPath": "subpackages/DuckBundle/native/tex/fragment/c/2/spriteFrame.png",
+          "path": "subpackages/DuckBundle/native/tex/fragment/variantC/shape2/spriteFrame.png",
+          "displayPath": "subpackages/DuckBundle/native/tex/fragment/variantC/shape2/spriteFrame.png",
           "sizeBytes": 1840,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/native/tex/fragment/c/3/spriteFrame.png",
-          "displayPath": "subpackages/DuckBundle/native/tex/fragment/c/3/spriteFrame.png",
+          "path": "subpackages/DuckBundle/native/tex/fragment/variantC/shape3/spriteFrame.png",
+          "displayPath": "subpackages/DuckBundle/native/tex/fragment/variantC/shape3/spriteFrame.png",
           "sizeBytes": 3217,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/native/tex/fragment/c/4/spriteFrame.png",
-          "displayPath": "subpackages/DuckBundle/native/tex/fragment/c/4/spriteFrame.png",
+          "path": "subpackages/DuckBundle/native/tex/fragment/variantC/shape4/spriteFrame.png",
+          "displayPath": "subpackages/DuckBundle/native/tex/fragment/variantC/shape4/spriteFrame.png",
           "sizeBytes": 1505,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/native/tex/fragment/c/5/spriteFrame.png",
-          "displayPath": "subpackages/DuckBundle/native/tex/fragment/c/5/spriteFrame.png",
+          "path": "subpackages/DuckBundle/native/tex/fragment/variantC/shape5/spriteFrame.png",
+          "displayPath": "subpackages/DuckBundle/native/tex/fragment/variantC/shape5/spriteFrame.png",
           "sizeBytes": 1361,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/native/tex/fragment/c/6/spriteFrame.png",
-          "displayPath": "subpackages/DuckBundle/native/tex/fragment/c/6/spriteFrame.png",
+          "path": "subpackages/DuckBundle/native/tex/fragment/variantC/shape6/spriteFrame.png",
+          "displayPath": "subpackages/DuckBundle/native/tex/fragment/variantC/shape6/spriteFrame.png",
           "sizeBytes": 888,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/native/tex/fragment/d/1/spriteFrame.png",
-          "displayPath": "subpackages/DuckBundle/native/tex/fragment/d/1/spriteFrame.png",
+          "path": "subpackages/DuckBundle/native/tex/fragment/variantD/shape1/spriteFrame.png",
+          "displayPath": "subpackages/DuckBundle/native/tex/fragment/variantD/shape1/spriteFrame.png",
           "sizeBytes": 4176,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/native/tex/fragment/d/2/spriteFrame.png",
-          "displayPath": "subpackages/DuckBundle/native/tex/fragment/d/2/spriteFrame.png",
+          "path": "subpackages/DuckBundle/native/tex/fragment/variantD/shape2/spriteFrame.png",
+          "displayPath": "subpackages/DuckBundle/native/tex/fragment/variantD/shape2/spriteFrame.png",
           "sizeBytes": 2185,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/native/tex/fragment/d/3/spriteFrame.png",
-          "displayPath": "subpackages/DuckBundle/native/tex/fragment/d/3/spriteFrame.png",
+          "path": "subpackages/DuckBundle/native/tex/fragment/variantD/shape3/spriteFrame.png",
+          "displayPath": "subpackages/DuckBundle/native/tex/fragment/variantD/shape3/spriteFrame.png",
           "sizeBytes": 3718,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/native/tex/fragment/d/4/spriteFrame.png",
-          "displayPath": "subpackages/DuckBundle/native/tex/fragment/d/4/spriteFrame.png",
+          "path": "subpackages/DuckBundle/native/tex/fragment/variantD/shape4/spriteFrame.png",
+          "displayPath": "subpackages/DuckBundle/native/tex/fragment/variantD/shape4/spriteFrame.png",
           "sizeBytes": 1821,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/native/tex/fragment/d/5/spriteFrame.png",
-          "displayPath": "subpackages/DuckBundle/native/tex/fragment/d/5/spriteFrame.png",
+          "path": "subpackages/DuckBundle/native/tex/fragment/variantD/shape5/spriteFrame.png",
+          "displayPath": "subpackages/DuckBundle/native/tex/fragment/variantD/shape5/spriteFrame.png",
           "sizeBytes": 1659,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/native/tex/fragment/d/6/spriteFrame.png",
-          "displayPath": "subpackages/DuckBundle/native/tex/fragment/d/6/spriteFrame.png",
+          "path": "subpackages/DuckBundle/native/tex/fragment/variantD/shape6/spriteFrame.png",
+          "displayPath": "subpackages/DuckBundle/native/tex/fragment/variantD/shape6/spriteFrame.png",
           "sizeBytes": 984,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/native/tex/fragment/e/1/spriteFrame.png",
-          "displayPath": "subpackages/DuckBundle/native/tex/fragment/e/1/spriteFrame.png",
+          "path": "subpackages/DuckBundle/native/tex/fragment/variantE/shape1/spriteFrame.png",
+          "displayPath": "subpackages/DuckBundle/native/tex/fragment/variantE/shape1/spriteFrame.png",
           "sizeBytes": 3896,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/native/tex/fragment/e/2/spriteFrame.png",
-          "displayPath": "subpackages/DuckBundle/native/tex/fragment/e/2/spriteFrame.png",
+          "path": "subpackages/DuckBundle/native/tex/fragment/variantE/shape2/spriteFrame.png",
+          "displayPath": "subpackages/DuckBundle/native/tex/fragment/variantE/shape2/spriteFrame.png",
           "sizeBytes": 1997,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/native/tex/fragment/e/3/spriteFrame.png",
-          "displayPath": "subpackages/DuckBundle/native/tex/fragment/e/3/spriteFrame.png",
+          "path": "subpackages/DuckBundle/native/tex/fragment/variantE/shape3/spriteFrame.png",
+          "displayPath": "subpackages/DuckBundle/native/tex/fragment/variantE/shape3/spriteFrame.png",
           "sizeBytes": 3426,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/native/tex/fragment/e/4/spriteFrame.png",
-          "displayPath": "subpackages/DuckBundle/native/tex/fragment/e/4/spriteFrame.png",
+          "path": "subpackages/DuckBundle/native/tex/fragment/variantE/shape4/spriteFrame.png",
+          "displayPath": "subpackages/DuckBundle/native/tex/fragment/variantE/shape4/spriteFrame.png",
           "sizeBytes": 1643,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/native/tex/fragment/e/5/spriteFrame.png",
-          "displayPath": "subpackages/DuckBundle/native/tex/fragment/e/5/spriteFrame.png",
+          "path": "subpackages/DuckBundle/native/tex/fragment/variantE/shape5/spriteFrame.png",
+          "displayPath": "subpackages/DuckBundle/native/tex/fragment/variantE/shape5/spriteFrame.png",
           "sizeBytes": 1556,
           "sizeText": "0.00 MiB"
         },
         {
-          "path": "subpackages/DuckBundle/native/tex/fragment/e/6/spriteFrame.png",
-          "displayPath": "subpackages/DuckBundle/native/tex/fragment/e/6/spriteFrame.png",
+          "path": "subpackages/DuckBundle/native/tex/fragment/variantE/shape6/spriteFrame.png",
+          "displayPath": "subpackages/DuckBundle/native/tex/fragment/variantE/shape6/spriteFrame.png",
           "sizeBytes": 930,
           "sizeText": "0.00 MiB"
         },
@@ -12210,7 +12210,7 @@
   "totals": {
     "packageCount": 9,
     "fileCount": 2005,
-    "sizeBytes": 26752114,
+    "sizeBytes": 26753478,
     "sizeText": "25.51 MiB",
     "limitBytes": 31457280,
     "limitText": "30.00 MiB",

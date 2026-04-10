@@ -39,3 +39,18 @@ node architecture/tools/run-iteration-cycle.js
 4. 查看 `architecture/docs/guardrail-report.md`，确认失败项已清零
 5. 查看最新迭代报告，确认“启动配置快照 / 平台与安全策略快照”符合预期
 6. 更新 `project-memory.md` 的“已落地决策 / 下阶段路线 / 已完成命名清理”
+
+## 音频 legacy 收敛切片
+1. 定位：先在 `architecture/docs/audio-usage-audit.md` 与 `architecture/memory/project-memory.md` 的“legacy root token”条目中确认仍挂在根层的 tokens，并直接记录本轮要收敛的 canonical target，确保与项目内已有决策一致（禁止新增 runtime 兼容层）。
+2. 改 config：在 `subpackages/audioBundle/config.audio-bundle.json` 里把 root token 直接重命名成 `legacy/*` 路径；必要时同步 `subpackages/audioBundle/import/legacy/*.json` 的 `cc.AudioClip._name`，不改 runtime/boot 兼容层。
+3. 跑护栏：先运行 `node architecture/tools/generate-audio-usage-audit.js`，再 `node architecture/tools/run-guardrails.js`（包含 root token 禁回流护栏），确认没有回退到老 token，并把 `architecture/docs/guardrail-report.md` 推到绿色。
+4. 更新日志：在 `architecture/docs/asset-governance-log.md` 记录 2026-04-10 音频收敛，说明只做 canonical 源头路径收敛、列出关键映射、确认 root token 禁回流护栏已上线，使后续 AI 能复用同一个“切片”流程。
+
+## DuckBundle fragment/%2 收敛切片
+1. 定位：先看 `architecture/docs/asset-readability-audit.md`，确认 `DuckBundle` 是否仍有 `tex/fragment/a..e/1..6` 与 `tex/%2` 这类高风险 token。
+2. 并行执行：
+   - 路径迁移：`node architecture/tools/semanticize-duckbundle-fragment-path-assets.js`
+   - `%2` 清理：`node architecture/tools/semanticize-duckbundle-percent-assets.js`
+3. 幂等验证：两条脚本各再跑一次，期望“改写数为 0”。
+4. 护栏验证：依次执行 `node architecture/tools/check-no-url-encoded-paths.js`、`node architecture/tools/check-legacy-runtime-compat.js`、`node architecture/tools/run-guardrails.js`。
+5. 收口文档：更新 `architecture/docs/asset-governance-log.md` 记录 mapping、护栏与结果，并跑 `node architecture/tools/run-iteration-cycle.js` 产出最新量化数据。

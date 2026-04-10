@@ -4,8 +4,8 @@
 
 ## 总览
 - 项目目录：`./`
-- 已执行步骤：52
-- 通过步骤：52
+- 已执行步骤：55
+- 通过步骤：55
 - 失败步骤：0
 
 ## 步骤明细
@@ -34,6 +34,7 @@
 | MiniGameTest runner 语法检查 | 通过 | `node -c architecture/tools/run-minigame-test.js` |
 | 旧运行时路径护栏语法检查 | 通过 | `node -c architecture/tools/check-legacy-runtime-compat.js` |
 | 语义化共享工具语法检查 | 通过 | `node -c architecture/tools/semanticize-shared.js` |
+| audioBundle legacy 语义化工具语法检查 | 通过 | `node -c architecture/tools/semanticize-audiobundle-legacy-assets.js` |
 | 关键 JSON 格式化工具语法检查 | 通过 | `node -c architecture/tools/format-project-json.js` |
 | Bundle 资产目录工具语法检查 | 通过 | `node -c architecture/tools/generate-bundle-asset-catalog.js` |
 | UUID 资产审计工具语法检查 | 通过 | `node -c architecture/tools/generate-uuid-asset-report.js` |
@@ -44,8 +45,10 @@
 | 微信小游戏结构校验语法检查 | 通过 | `node -c architecture/tools/verify-wechat-minigame-structure.js` |
 | DuckBundle 木板语义化工具语法检查 | 通过 | `node -c architecture/tools/semanticize-duckbundle-wood-assets.js` |
 | DuckBundle fragment 语义化工具语法检查 | 通过 | `node -c architecture/tools/semanticize-duckbundle-fragment-assets.js` |
+| DuckBundle fragment 路径语义化工具语法检查 | 通过 | `node -c architecture/tools/semanticize-duckbundle-fragment-path-assets.js` |
 | DuckBundle 背景语义化工具语法检查 | 通过 | `node -c architecture/tools/semanticize-duckbundle-background-assets.js` |
 | DuckBundle 季节背景语义化工具语法检查 | 通过 | `node -c architecture/tools/semanticize-duckbundle-seasonal-background-assets.js` |
+| DuckBundle %2 语义化工具语法检查 | 通过 | `node -c architecture/tools/semanticize-duckbundle-percent-assets.js` |
 | HomeBundle 素材语义化工具语法检查 | 通过 | `node -c architecture/tools/semanticize-homebundle-assets.js` |
 | uiBundle 图鉴皮肤页语义化工具语法检查 | 通过 | `node -c architecture/tools/semanticize-uibundle-book-skin-assets.js` |
 | uiBundle 图鉴展示资源语义化工具语法检查 | 通过 | `node -c architecture/tools/semanticize-uibundle-book-display-assets.js` |

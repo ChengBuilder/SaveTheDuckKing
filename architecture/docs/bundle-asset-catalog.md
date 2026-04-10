@@ -21,7 +21,7 @@
 | `Game2Bundle` | `fruit-game` | subpackage-bundle | `main` | 161 | 0 | tex / prefab |
 | `HomeBundle` | `duck-game` | subpackage-bundle | `main` | 231 | 0 | tex / prefab |
 | `aniBundle` | `animation-assets` | subpackage-bundle | `main`、`start-scene` | 156 | 0 | 神兽动画合集 / 骨骼动画 / 小三视频 |
-| `audioBundle` | `audio-assets` | subpackage-bundle | 无 | 65 | 0 | fruitGame / comboMusic / ui |
+| `audioBundle` | `audio-assets` | subpackage-bundle | 无 | 65 | 0 | fruitGame / legacy / comboMusic |
 | `main` | `main-scenes` | subpackage-bundle | `start-scene` | 5 | 5 | db: |
 | `resources` | `shared-effects` | subpackage-bundle | 无 | 27 | 0 | particleEffects / ribbonBurst / multiTexture |
 | `uiBundle` | `ui-assets` | subpackage-bundle | `main` | 400 | 0 | tex / prefab |
@@ -106,35 +106,35 @@
 - 编译产物文件：import 708 / native 335
 - UUID 风格编译文件：0
 - 命名噪声高频片段：
-  - `a`：18
-  - `b`：18
-  - `c`：18
-  - `d`：18
-  - `e`：18
-  - `%2`：3
   - `cla`：3
   - `cln`：3
   - `ls10`：3
   - `lva`：3
   - `lvn`：3
   - `mla`：3
+  - `mln`：3
+  - `sfa`：3
+  - `sfn`：3
+  - `sla`：3
+  - `sln`：3
+  - `t0`：3
 - 命名噪声样例路径：
   - `tex/nail/sfa`
-  - `tex/fragment/a/5`
-  - `tex/fragment/c/1`
-  - `tex/fragment/d/1`
-  - `tex/fragment/c/2`
-  - `tex/fragment/e/2`
   - `tex/nail/zin`
   - `tex/nail/tln`
   - `tex/nail/sla`
-  - `tex/fragment/d/3`
-  - `tex/fragment/d/2`
-  - `tex/fragment/d/4`
-  - `tex/fragment/e/5`
-  - `tex/fragment/d/6`
-  - `tex/fragment/a/2`
-  - `tex/fragment/a/3`
+  - `tex/nail/sln`
+  - `tex/nail/tla`
+  - `tex/nail/tha`
+  - `tex/nail/lvn`
+  - `tex/nail/cln`
+  - `tex/nail/mla`
+  - `tex/nail/zia`
+  - `tex/nail/mln`
+  - `tex/nail/thn`
+  - `tex/nail/lva`
+  - `tex/nail/sfn`
+  - `tex/nail/cla`
 - 主要路径前缀：
   - `tex`：1173
   - `prefab`：54
@@ -150,7 +150,7 @@
   - `tex/bubble`：18
   - `tex/circle`：6
   - `tex/star`：6
-  - `tex/%2`：3
+  - `tex/背景`：3
 - 样例路径：
   - `tex/nail/sfa`
   - `tex/wood/goldWood/goldWood26`
@@ -365,41 +365,23 @@
 - 编译产物文件：import 65 / native 65
 - UUID 风格编译文件：0
 - 命名噪声高频片段：
-  - `adz`：1
-  - `bdz`：1
   - `eat`：1
   - `fly`：1
-  - `gz`：1
-  - `ls`：1
-  - `lz`：1
   - `pop`：1
-  - `win`：1
 - 命名噪声样例路径：
-  - `win`
-  - `adz`
-  - `fly`
-  - `bdz`
+  - `legacy/fly`
   - `fruitGame/eat`
-  - `ls`
-  - `lz`
-  - `pop`
-  - `gz`
+  - `legacy/pop`
 - 主要路径前缀：
   - `fruitGame`：16
+  - `legacy`：12
   - `comboMusic`：10
   - `ui`：10
   - `duckGame`：9
   - `sceneTransition`：3
   - `woodDrop`：3
   - `bgm`：2
-  - `adz`：1
-  - `bdz`：1
-  - `door`：1
-  - `fly`：1
-  - `gz`：1
 - 主要语义路径：
-  - `adz`：1
-  - `bdz`：1
   - `bgm/defaultGameplay`：1
   - `bgm/pureColor`：1
   - `comboMusic/combo_1`：1
@@ -410,6 +392,8 @@
   - `comboMusic/combo_5`：1
   - `comboMusic/combo_6`：1
   - `comboMusic/combo_7`：1
+  - `comboMusic/combo_8`：1
+  - `comboMusic/combo_9`：1
 - 样例路径：
   - `comboMusic/combo_3`
   - `fruitGame/eliminate3`
@@ -417,10 +401,10 @@
   - `duckGame/woodAssembleFollow`
   - `comboMusic/combo_4`
   - `ui/warningPrompt`
-  - `win`
+  - `legacy/victory`
   - `ui/applause`
   - `ui/duckUnlock`
-  - `adz`
+  - `legacy/unknownAdz`
   - `fruitGame/FruitWin`
   - `duckGame/stoneCollision`
   - `fruitGame/eliminate1`

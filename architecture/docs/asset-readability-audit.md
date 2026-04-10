@@ -5,51 +5,22 @@
 ## 总览
 - Bundle 数：10
 - 扫描 canonical 路径数：2293
-- 命中候选数：678
-- 高优先级候选数：96
+- 命中候选数：582
+- 高优先级候选数：0
 - 中优先级候选数：373
 - 低优先级候选数：209
 
 ## 全局高优先级候选
-- `[audioBundle] gz`：gz (short-opaque-token)
-- `[audioBundle] ls`：ls (short-opaque-token)
-- `[audioBundle] lz`：lz (short-opaque-token)
-- `[DuckBundle] tex/%2`：%2 (encoded-symbol)
-- `[DuckBundle] tex/%2/spriteFrame`：%2 (encoded-symbol)
-- `[DuckBundle] tex/%2/texture`：%2 (encoded-symbol)
-- `[DuckBundle] tex/fragment/a/1`：a (short-opaque-token)
-- `[DuckBundle] tex/fragment/a/1/spriteFrame`：a (short-opaque-token)
-- `[DuckBundle] tex/fragment/a/1/texture`：a (short-opaque-token)
-- `[DuckBundle] tex/fragment/a/2`：a (short-opaque-token)
-- `[DuckBundle] tex/fragment/a/2/spriteFrame`：a (short-opaque-token)
-- `[DuckBundle] tex/fragment/a/2/texture`：a (short-opaque-token)
-- `[DuckBundle] tex/fragment/a/3`：a (short-opaque-token)
-- `[DuckBundle] tex/fragment/a/3/spriteFrame`：a (short-opaque-token)
-- `[DuckBundle] tex/fragment/a/3/texture`：a (short-opaque-token)
-- `[DuckBundle] tex/fragment/a/4`：a (short-opaque-token)
-- `[DuckBundle] tex/fragment/a/4/spriteFrame`：a (short-opaque-token)
-- `[DuckBundle] tex/fragment/a/4/texture`：a (short-opaque-token)
-- `[DuckBundle] tex/fragment/a/5`：a (short-opaque-token)
-- `[DuckBundle] tex/fragment/a/5/spriteFrame`：a (short-opaque-token)
-- `[DuckBundle] tex/fragment/a/5/texture`：a (short-opaque-token)
-- `[DuckBundle] tex/fragment/a/6`：a (short-opaque-token)
-- `[DuckBundle] tex/fragment/a/6/spriteFrame`：a (short-opaque-token)
-- `[DuckBundle] tex/fragment/a/6/texture`：a (short-opaque-token)
-- `[DuckBundle] tex/fragment/b/1`：b (short-opaque-token)
-- `[DuckBundle] tex/fragment/b/1/spriteFrame`：b (short-opaque-token)
-- `[DuckBundle] tex/fragment/b/1/texture`：b (short-opaque-token)
-- `[DuckBundle] tex/fragment/b/2`：b (short-opaque-token)
-- `[DuckBundle] tex/fragment/b/2/spriteFrame`：b (short-opaque-token)
-- `[DuckBundle] tex/fragment/b/2/texture`：b (short-opaque-token)
+- 无
 
 ## 分 Bundle 摘要
 | Bundle | 资产数 | 命中数 | 高优先级 | 高频问题片段 |
 | --- | ---: | ---: | ---: | --- |
 | `uiBundle` | 400 | 280 | 0 | `主页素材` x 48，`道具` x 22，`过关页面` x 20，`复活` x 15，`失败页面` x 15，`成功进度` x 14，`订阅` x 13，`分享有奖` x 12，`排行榜` x 12，`更多玩法` x 10 |
-| `DuckBundle` | 1227 | 192 | 93 | `难度飙升` x 18，`a` x 18，`b` x 18，`c` x 18，`d` x 18，`e` x 18，`%2` x 3，`背景` x 3，`飙升` x 3，`飙升2` x 3 |
 | `aniBundle` | 156 | 155 | 0 | `神兽动画合集` x 30，`骨骼动画` x 25，`鸭子动画` x 20，`小三视频` x 17，`破门动画` x 8，`百鹅朝凤` x 6，`百鹅朝麟` x 6，`百鹅朝鹏` x 6，`百鸭朝鲲` x 6，`百鸭朝龙` x 6 |
+| `DuckBundle` | 1227 | 99 | 0 | `难度飙升` x 18，`背景` x 3，`飙升` x 3，`飙升2` x 3，`槽位已满` x 3，`底` x 3，`钉子光圈` x 3，`滑动条` x 3，`剪影3` x 3，`木桩` x 3 |
 | `Game2Bundle` | 161 | 48 | 0 | `背景` x 15，`道具` x 12，`解锁进度` x 7，`解锁进度2` x 6，`打乱水果位置` x 3，`洞` x 3，`剩余` x 3，`消除2组水果` x 3，`移除槽位中的水果` x 3，`遮罩` x 3 |
-| `audioBundle` | 65 | 3 | 3 | `gz` x 1，`ls` x 1，`lz` x 1 |
+| `audioBundle` | 65 | 0 | 0 | 无 |
 | `HomeBundle` | 231 | 0 | 0 | 无 |
 | `internal` | 18 | 0 | 0 | 无 |
 | `main` | 5 | 0 | 0 | 无 |
@@ -78,26 +49,6 @@
   - `tex/过关页面/成功进度/只鸭解锁百鸭朝鹅/spriteFrame`：过关页面 (non-ascii)、成功进度 (non-ascii)、只鸭解锁百鸭朝鹅 (non-ascii)
   - `tex/过关页面/成功进度/只鸭解锁百鸭朝鲲/spriteFrame`：过关页面 (non-ascii)、成功进度 (non-ascii)、只鸭解锁百鸭朝鲲 (non-ascii)
 
-### DuckBundle
-- 配置：`subpackages/DuckBundle/config.duck-bundle.json`
-- 资产路径数：1227
-- 命中候选：192
-- 高/中/低优先级：93 / 63 / 36
-- 高频问题片段：`难度飙升` x 18，`a` x 18，`b` x 18，`c` x 18，`d` x 18，`e` x 18，`%2` x 3，`背景` x 3，`飙升` x 3，`飙升2` x 3
-- 样例候选：
-  - `tex/%2`：%2 (encoded-symbol)
-  - `tex/%2/spriteFrame`：%2 (encoded-symbol)
-  - `tex/%2/texture`：%2 (encoded-symbol)
-  - `tex/fragment/a/1`：a (short-opaque-token)
-  - `tex/fragment/a/1/spriteFrame`：a (short-opaque-token)
-  - `tex/fragment/a/1/texture`：a (short-opaque-token)
-  - `tex/fragment/a/2`：a (short-opaque-token)
-  - `tex/fragment/a/2/spriteFrame`：a (short-opaque-token)
-  - `tex/fragment/a/2/texture`：a (short-opaque-token)
-  - `tex/fragment/a/3`：a (short-opaque-token)
-  - `tex/fragment/a/3/spriteFrame`：a (short-opaque-token)
-  - `tex/fragment/a/3/texture`：a (short-opaque-token)
-
 ### aniBundle
 - 配置：`subpackages/aniBundle/config.animation-bundle.json`
 - 资产路径数：156
@@ -117,6 +68,26 @@
   - `鸽子动画/new_dove/spriteFrame`：鸽子动画 (non-ascii)、new_dove (compact-underscored-token)
   - `鸽子动画/new_dove/texture`：鸽子动画 (non-ascii)、new_dove (compact-underscored-token)
   - `骨骼动画/门动画/skeleton`：骨骼动画 (non-ascii)、门动画 (non-ascii)
+
+### DuckBundle
+- 配置：`subpackages/DuckBundle/config.duck-bundle.json`
+- 资产路径数：1227
+- 命中候选：99
+- 高/中/低优先级：0 / 63 / 36
+- 高频问题片段：`难度飙升` x 18，`背景` x 3，`飙升` x 3，`飙升2` x 3，`槽位已满` x 3，`底` x 3，`钉子光圈` x 3，`滑动条` x 3，`剪影3` x 3，`木桩` x 3
+- 样例候选：
+  - `tex/bubble/t0`：t0 (short-indexed-token)
+  - `tex/bubble/t0/spriteFrame`：t0 (short-indexed-token)
+  - `tex/bubble/t0/texture`：t0 (short-indexed-token)
+  - `tex/bubble/t1/spriteFrame`：t1 (short-indexed-token)
+  - `tex/bubble/t10/spriteFrame`：t10 (short-indexed-token)
+  - `tex/bubble/t11/spriteFrame`：t11 (short-indexed-token)
+  - `tex/bubble/t12/spriteFrame`：t12 (short-indexed-token)
+  - `tex/bubble/t2/spriteFrame`：t2 (short-indexed-token)
+  - `tex/bubble/t3/spriteFrame`：t3 (short-indexed-token)
+  - `tex/bubble/t4/spriteFrame`：t4 (short-indexed-token)
+  - `tex/bubble/t5/spriteFrame`：t5 (short-indexed-token)
+  - `tex/bubble/t6/spriteFrame`：t6 (short-indexed-token)
 
 ### Game2Bundle
 - 配置：`subpackages/Game2Bundle/config.game2-bundle.json`
@@ -141,13 +112,11 @@
 ### audioBundle
 - 配置：`subpackages/audioBundle/config.audio-bundle.json`
 - 资产路径数：65
-- 命中候选：3
-- 高/中/低优先级：3 / 0 / 0
-- 高频问题片段：`gz` x 1，`ls` x 1，`lz` x 1
+- 命中候选：0
+- 高/中/低优先级：0 / 0 / 0
+- 高频问题片段：无
 - 样例候选：
-  - `gz`：gz (short-opaque-token)
-  - `ls`：ls (short-opaque-token)
-  - `lz`：lz (short-opaque-token)
+  - 无
 
 ### HomeBundle
 - 配置：`subpackages/HomeBundle/config.home-bundle.json`

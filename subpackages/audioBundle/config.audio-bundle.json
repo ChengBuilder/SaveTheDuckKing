@@ -102,7 +102,7 @@
       1
     ],
     "6": [
-      "win",
+      "legacy/victory",
       0,
       1
     ],
@@ -117,7 +117,7 @@
       1
     ],
     "9": [
-      "adz",
+      "legacy/unknownAdz",
       0,
       1
     ],
@@ -152,7 +152,7 @@
       1
     ],
     "16": [
-      "fly",
+      "legacy/fly",
       0,
       1
     ],
@@ -167,7 +167,7 @@
       1
     ],
     "19": [
-      "bdz",
+      "legacy/unknownBdz",
       0,
       1
     ],
@@ -252,7 +252,7 @@
       1
     ],
     "36": [
-      "door",
+      "legacy/door",
       0,
       1
     ],
@@ -262,7 +262,7 @@
       1
     ],
     "38": [
-      "ls",
+      "legacy/unknownLs",
       0,
       1
     ],
@@ -277,7 +277,7 @@
       1
     ],
     "41": [
-      "lz",
+      "legacy/fruitBornDuplicateLz",
       0,
       1
     ],
@@ -297,7 +297,7 @@
       1
     ],
     "45": [
-      "pop",
+      "legacy/pop",
       0,
       1
     ],
@@ -312,7 +312,7 @@
       1
     ],
     "48": [
-      "over",
+      "legacy/gameOver",
       0,
       1
     ],
@@ -332,7 +332,7 @@
       1
     ],
     "52": [
-      "gz",
+      "legacy/levelCompleteDuplicateGz",
       0,
       1
     ],
@@ -352,7 +352,7 @@
       1
     ],
     "56": [
-      "levelup",
+      "legacy/levelUp",
       0,
       1
     ],
@@ -372,7 +372,7 @@
       1
     ],
     "60": [
-      "show",
+      "legacy/levelCompleteDuplicateShow",
       0,
       1
     ],

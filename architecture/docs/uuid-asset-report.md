@@ -135,7 +135,7 @@
 - 主要资产类型：cc.SpriteFrame x 80，cc.ImageAsset x 74，cc.Texture2D x 74，cc.Prefab x 3
 - 样例资产映射：
   - `tex/homeTheme2/foreground/foregroundLayer5` / cc.ImageAsset / missing-import-json
-  - `tex/获得100只鸭子解锁` / cc.ImageAsset / missing-import-json
+  - `tex/unlockTips/duckUnlockAt100` / cc.ImageAsset / missing-import-json
   - `tex/homeTheme3/foreground/foregroundLayer3` / cc.ImageAsset / missing-import-json
   - `tex/homeTheme2/bottomOverlay` / cc.ImageAsset / missing-import-json
   - `tex/homeTheme1/midground/midgroundLayer2` / cc.ImageAsset / missing-import-json
@@ -188,7 +188,7 @@
   - `duckGame/woodAssembleFollow` / cc.AudioClip / missing-import-json
   - `comboMusic/combo_4` / cc.AudioClip / missing-import-json
   - `ui/warningPrompt` / cc.AudioClip / missing-import-json
-  - `win` / cc.AudioClip / missing-import-json
+  - `legacy/victory` / cc.AudioClip / missing-import-json
   - `ui/applause` / cc.AudioClip / missing-import-json
 - 未命中 import 文件样例：`import/bgm/defaultGameplay.json`，`import/bgm/pureColor.json`，`import/comboMusic/combo_1.json`，`import/comboMusic/combo_10.json`，`import/comboMusic/combo_2.json`，`import/comboMusic/combo_3.json`，`import/comboMusic/combo_4.json`，`import/comboMusic/combo_5.json`
 - 其余未命中 import 文件：25 项（仅在 full-records 模式写入 JSON）。
