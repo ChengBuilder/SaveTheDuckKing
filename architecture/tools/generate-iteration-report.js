@@ -51,7 +51,6 @@ function generateIterationReport() {
   const runtimeGovernanceSnapshot = resolveRuntimeGovernanceSnapshot();
   const reportLines = buildReportLines({
     layout: layout,
-    generatedAtText: formatTimestampForText(currentDate),
     gitBranchName: gitBranchName,
     gitHeadCommit: gitHeadCommit,
     changedFiles: changedFiles,
@@ -77,7 +76,6 @@ function generateIterationReport() {
  * 构建报告正文。
  * @param {{
  *  layout: {projectRoot: string, workspaceRoot: string, projectPathFromWorkspace: string},
- *  generatedAtText: string,
  *  gitBranchName: string,
  *  gitHeadCommit: string,
  *  changedFiles: string[],
@@ -103,7 +101,6 @@ function buildReportLines(input) {
   lines.push('# 优化迭代报告');
   lines.push('');
   lines.push('## 基本信息');
-  lines.push('- 生成时间：' + input.generatedAtText);
   lines.push('- 当前分支：`' + input.gitBranchName + '`');
   lines.push('- 基准提交：`' + input.gitHeadCommit + '`');
   lines.push('');
@@ -705,21 +702,6 @@ function formatTimestampForFileName(currentDate) {
   const minute = padTwoDigits(currentDate.getMinutes());
   const second = padTwoDigits(currentDate.getSeconds());
   return year + '-' + month + '-' + day + '-' + hour + minute + second;
-}
-
-/**
- * 格式化报告可读时间。
- * @param {Date} currentDate 当前时间
- * @returns {string}
- */
-function formatTimestampForText(currentDate) {
-  const year = currentDate.getFullYear();
-  const month = padTwoDigits(currentDate.getMonth() + 1);
-  const day = padTwoDigits(currentDate.getDate());
-  const hour = padTwoDigits(currentDate.getHours());
-  const minute = padTwoDigits(currentDate.getMinutes());
-  const second = padTwoDigits(currentDate.getSeconds());
-  return year + '-' + month + '-' + day + ' ' + hour + ':' + minute + ':' + second;
 }
 
 /**
