@@ -11,7 +11,7 @@ const {
 const FRAGMENT_VARIANT_FAMILY_CODES = ['a', 'b', 'c', 'd', 'e'];
 const FRAGMENT_VARIANT_SHAPE_SLOTS = [1, 2, 3, 4, 5, 6];
 const FRAGMENT_IMPORT_ROOT_RELATIVE_PATH = 'subpackages/DuckBundle/import/tex/fragment';
-const LEGACY_NAME_PATTERN = /"name":"([1-6])"/;
+const LEGACY_NAME_PATTERN = /"name"\s*:\s*"([1-6])"/;
 
 /**
  * 把 DuckBundle fragment 的 SpriteFrame 元数据名从裸数字收敛到稳定可读名。
@@ -48,7 +48,7 @@ function updateFragmentSpriteFrameNames(rootDirectoryPath, displayLabel) {
       const originalContent = fs.readFileSync(filePath, 'utf8');
       const semanticName = buildFragmentSemanticName(familyCode, shapeSlot);
 
-      if (originalContent.includes('"name":"' + semanticName + '"')) {
+      if (buildSemanticNamePattern(semanticName).test(originalContent)) {
         continue;
       }
 
@@ -86,6 +86,10 @@ function updateFragmentSpriteFrameNames(rootDirectoryPath, displayLabel) {
 
 function buildFragmentSemanticName(familyCode, shapeSlot) {
   return 'fragmentVariant' + familyCode.toUpperCase() + 'Shape' + String(shapeSlot);
+}
+
+function buildSemanticNamePattern(semanticName) {
+  return new RegExp('"name"\\s*:\\s*"' + semanticName + '"');
 }
 
 function verifyNoLegacyFragmentNames(rootDirectoryPath) {

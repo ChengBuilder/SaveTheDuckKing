@@ -52,7 +52,7 @@ const LEGACY_NAME_KEYS = Object.keys(SPRITE_FRAME_NAME_MAP).sort((leftToken, rig
   return rightToken.length - leftToken.length;
 });
 const LEGACY_NAME_PATTERN = new RegExp(
-  '"name":"(' + LEGACY_NAME_KEYS.map(escapeRegExp).join('|') + ')"',
+  '"name"\\s*:\\s*"(' + LEGACY_NAME_KEYS.map(escapeRegExp).join('|') + ')"',
   'g'
 );
 

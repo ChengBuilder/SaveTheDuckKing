@@ -79,7 +79,7 @@ const CHECK_TARGETS = [
     checks: [
       {
         label: 'uiBundle 书册通用图集旧名称',
-        pattern: /"name":"(?:全部|100|标签|底|框2|特殊|图鉴|框1|使用中|旋转光|NO|稀有|已收集|条2|条1)"/g
+        pattern: createImportJsonNamePattern('(?:全部|100|标签|底|框2|特殊|图鉴|框1|使用中|旋转光|NO|稀有|已收集|条2|条1)')
       }
     ]
   },
@@ -88,7 +88,7 @@ const CHECK_TARGETS = [
     checks: [
       {
         label: 'uiBundle 图鉴条目图集旧名称',
-        pattern: /"name":"(?:底2|道具|使用按钮|按键底|框|转发使用按钮|底|邀请好友|体力框)"/g
+        pattern: createImportJsonNamePattern('(?:底2|道具|使用按钮|按键底|框|转发使用按钮|底|邀请好友|体力框)')
       }
     ]
   },
@@ -97,7 +97,7 @@ const CHECK_TARGETS = [
     checks: [
       {
         label: 'uiBundle 鸽子图鉴与分享页横幅旧名称',
-        pattern: /"name":"(?:鸽鸽图鉴|横幅|求助|更多玩法|旋转光)"/g
+        pattern: createImportJsonNamePattern('(?:鸽鸽图鉴|横幅|求助|更多玩法|旋转光)')
       }
     ]
   },
@@ -106,7 +106,7 @@ const CHECK_TARGETS = [
     checks: [
       {
         label: 'uiBundle 分享页与投诉弹窗底部旧名称',
-        pattern: /"name":"(?:已领取|领取|进度条2|提交|按键底灰|底|免费获得体力|体力图标|圆1|进度条|获得|按键底绿|线)"/g
+        pattern: createImportJsonNamePattern('(?:已领取|领取|进度条2|提交|按键底灰|底|免费获得体力|体力图标|圆1|进度条|获得|按键底绿|线)')
       }
     ]
   },
@@ -115,7 +115,7 @@ const CHECK_TARGETS = [
     checks: [
       {
         label: 'uiBundle 分享页与投诉弹窗复用图集旧名称',
-        pattern: /"name":"(?:视频\(分享\)|体力回复|视频|体力|已提交|×|叹号|底2|锁|new|圆2|按钮|加体力|标题底|底)"/g
+        pattern: createImportJsonNamePattern('(?:视频\\(分享\\)|体力回复|视频|体力|已提交|×|叹号|底2|锁|new|圆2|按钮|加体力|标题底|底)')
       }
     ]
   },
@@ -124,7 +124,7 @@ const CHECK_TARGETS = [
     checks: [
       {
         label: 'uiBundle 过关页光环图集旧名称',
-        pattern: /"name":"光圈"/g
+        pattern: createImportJsonNamePattern('光圈')
       }
     ]
   },
@@ -133,7 +133,7 @@ const CHECK_TARGETS = [
     checks: [
       {
         label: 'uiBundle 过关页成功进度图集旧名称',
-        pattern: /"name":"(?:剪影|条2|条1|再救)"/g
+        pattern: createImportJsonNamePattern('(?:剪影|条2|条1|再救)')
       }
     ]
   },
@@ -142,7 +142,7 @@ const CHECK_TARGETS = [
     checks: [
       {
         label: 'uiBundle 自动 UI 旧框资源名称',
-        pattern: /"name":"框"/g
+        pattern: createImportJsonNamePattern('框')
       }
     ]
   },
@@ -151,7 +151,7 @@ const CHECK_TARGETS = [
     checks: [
       {
         label: 'uiBundle 复用标题图集旧名称',
-        pattern: /"name":"(?:鸽鸽图鉴|入口有奖|加入鸭群|喊人|投诉|排行榜|更多玩法|添加桌面)"/g
+        pattern: createImportJsonNamePattern('(?:鸽鸽图鉴|入口有奖|加入鸭群|喊人|投诉|排行榜|更多玩法|添加桌面)')
       }
     ]
   },
@@ -160,7 +160,7 @@ const CHECK_TARGETS = [
     checks: [
       {
         label: 'uiBundle 复用分享图集旧名称',
-        pattern: /"name":"(?:分享|转发录屏)"/g
+        pattern: createImportJsonNamePattern('(?:分享|转发录屏)')
       }
     ]
   },
@@ -169,7 +169,7 @@ const CHECK_TARGETS = [
     checks: [
       {
         label: '主包书册展示横幅复用图集旧名称',
-        pattern: /"name":"(?:p10|p9|鸽鸽图鉴|p6|横幅|求助|更多玩法|视频2|旋转光)"/g
+        pattern: createImportJsonNamePattern('(?:p10|p9|鸽鸽图鉴|p6|横幅|求助|更多玩法|视频2|旋转光)')
       }
     ]
   },
@@ -178,7 +178,7 @@ const CHECK_TARGETS = [
     checks: [
       {
         label: '主包书册标题复用图集旧名称',
-        pattern: /"name":"(?:鸽鸽图鉴|图鉴|入口有奖|加入鸭群|喊人|投诉|排行榜|更多玩法|添加桌面|猜图开始游戏按钮心|猜图开始游戏按钮气泡)"/g
+        pattern: createImportJsonNamePattern('(?:鸽鸽图鉴|图鉴|入口有奖|加入鸭群|喊人|投诉|排行榜|更多玩法|添加桌面|猜图开始游戏按钮心|猜图开始游戏按钮气泡)')
       }
     ]
   },
@@ -187,7 +187,7 @@ const CHECK_TARGETS = [
     checks: [
       {
         label: '主包书册底部复用图集旧名称',
-        pattern: /"name":"(?:p8|底2|道具|已领取按钮|使用按钮|按键底|框|邀请好友|底|体力框|领取按钮|转发使用按钮|p1)"/g
+        pattern: createImportJsonNamePattern('(?:p8|底2|道具|已领取按钮|使用按钮|按键底|框|邀请好友|底|体力框|领取按钮|转发使用按钮|p1)')
       }
     ]
   },
@@ -196,7 +196,7 @@ const CHECK_TARGETS = [
     checks: [
       {
         label: '主包书册分享复用图集旧名称',
-        pattern: /"name":"(?:p2|p4|p3|p5|分享|转发录屏)"/g
+        pattern: createImportJsonNamePattern('(?:p2|p4|p3|p5|分享|转发录屏)')
       }
     ]
   },
@@ -205,7 +205,7 @@ const CHECK_TARGETS = [
     checks: [
       {
         label: '主包书册结算复用图集旧名称',
-        pattern: /"name":"(?:p7|已领取|领取|进度条2|提交|redSpr|按键底灰|底|免费获得体力|体力图标|圆1|进度条|获得|按键底绿|线)"/g
+        pattern: createImportJsonNamePattern('(?:p7|已领取|领取|进度条2|提交|redSpr|按键底灰|底|免费获得体力|体力图标|圆1|进度条|获得|按键底绿|线)')
       }
     ]
   },
@@ -214,7 +214,7 @@ const CHECK_TARGETS = [
     checks: [
       {
         label: '主包书册分享弹窗复用图集旧名称',
-        pattern: /"name":"(?:视频\(分享\)|体力回复|视频|体力|已提交|×|叹号|底2|锁|new|圆2|按钮|加体力|叹号更多玩法|标题底|底)"/g
+        pattern: createImportJsonNamePattern('(?:视频\\(分享\\)|体力回复|视频|体力|已提交|×|叹号|底2|锁|new|圆2|按钮|加体力|叹号更多玩法|标题底|底)')
       }
     ]
   },
@@ -223,7 +223,7 @@ const CHECK_TARGETS = [
     checks: [
       {
         label: '主包书册成功进度复用图集旧名称',
-        pattern: /"name":"(?:光圈|剪影|条2|条1|再救)"/g
+        pattern: createImportJsonNamePattern('(?:光圈|剪影|条2|条1|再救)')
       }
     ]
   },
@@ -232,7 +232,7 @@ const CHECK_TARGETS = [
     checks: [
       {
         label: '主包书册复活进度复用图集旧名称',
-        pattern: /"name":"(?:底2|心1|关卡已完成|底1|移除槽位中的钉子|转发复活按钮|复活|图标|%|是否复活)"/g
+        pattern: createImportJsonNamePattern('(?:底2|心1|关卡已完成|底1|移除槽位中的钉子|转发复活按钮|复活|图标|%|是否复活)')
       }
     ]
   },
@@ -241,7 +241,7 @@ const CHECK_TARGETS = [
     checks: [
       {
         label: 'DuckBundle fragment 元数据旧数字命名',
-        pattern: /"name":"[1-6]"/g
+        pattern: createImportJsonNamePattern('[1-6]')
       }
     ]
   },
@@ -408,6 +408,10 @@ function buildDuckBundleFragmentSpriteFramePaths() {
   }
 
   return relativePaths;
+}
+
+function createImportJsonNamePattern(namePatternSource) {
+  return new RegExp('"name"\\s*:\\s*"' + namePatternSource + '"', 'g');
 }
 
 function collectMatchedValues(fileContent, pattern) {

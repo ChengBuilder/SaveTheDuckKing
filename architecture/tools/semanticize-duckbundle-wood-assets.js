@@ -39,7 +39,7 @@ const GAME_JS_REPLACEMENTS = [
 ];
 
 const LEGACY_WOOD_PATH_PATTERN = /^tex\/wood\/([abcdef])\/\1(\d+)(\/(?:spriteFrame|texture))?$/;
-const LEGACY_WOOD_NAME_PATTERN = /"name":"([abcdef])(\d+)"/g;
+const LEGACY_WOOD_NAME_PATTERN = /"name"\s*:\s*"([abcdef])(\d+)"/g;
 
 /**
  * 把 DuckBundle 里的木板配色族从 a..f 直接收敛到可读语义名。

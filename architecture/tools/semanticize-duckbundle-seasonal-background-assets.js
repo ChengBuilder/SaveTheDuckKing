@@ -34,7 +34,7 @@ const SEASON_ASSET_LEAF_MAP = Object.freeze({
 });
 
 const LEGACY_SEASONAL_PATH_PATTERN = /^tex\/newBg\/(冬|夏|春|秋|青色)\/(bg|井|右下|左下)([1-5])(?:\/(spriteFrame|texture))?$/;
-const LEGACY_SPRITE_NAME_PATTERN = /"name":"(bg|井|右下|左下)([1-5])"/g;
+const LEGACY_SPRITE_NAME_PATTERN = /"name"\s*:\s*"(bg|井|右下|左下)([1-5])"/g;
 
 /**
  * 把 DuckBundle 季节背景目录（newBg）收敛到语义化英文命名。
