@@ -253,7 +253,7 @@
       1
     ],
     "1": [
-      "tex/获得100只鸭子解锁",
+      "tex/unlockTips/duckUnlockAt100",
       1,
       1
     ],
@@ -318,7 +318,7 @@
       1
     ],
     "14": [
-      "tex/获得100只鹅解锁",
+      "tex/unlockTips/gooseUnlockAt100",
       1,
       1
     ],
@@ -618,12 +618,12 @@
       1
     ],
     "74": [
-      "tex/获得100只鸭子解锁/texture",
+      "tex/unlockTips/duckUnlockAt100/texture",
       2,
       1
     ],
     "75": [
-      "tex/获得100只鸭子解锁/spriteFrame",
+      "tex/unlockTips/duckUnlockAt100/spriteFrame",
       3,
       1
     ],
@@ -748,12 +748,12 @@
       1
     ],
     "102": [
-      "tex/获得100只鹅解锁/texture",
+      "tex/unlockTips/gooseUnlockAt100/texture",
       2,
       1
     ],
     "103": [
-      "tex/获得100只鹅解锁/spriteFrame",
+      "tex/unlockTips/gooseUnlockAt100/spriteFrame",
       3,
       1
     ],
@@ -818,17 +818,17 @@
       1
     ],
     "116": [
-      "tex/光",
+      "tex/unlockTips/unlockGlow",
       1,
       1
     ],
     "117": [
-      "tex/光/texture",
+      "tex/unlockTips/unlockGlow/texture",
       2,
       1
     ],
     "118": [
-      "tex/光/spriteFrame",
+      "tex/unlockTips/unlockGlow/spriteFrame",
       3,
       1
     ],

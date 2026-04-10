@@ -10140,7 +10140,7 @@
         "subpackages/HomeBundle"
       ],
       "fileCount": 225,
-      "sizeBytes": 2914098,
+      "sizeBytes": 2920070,
       "sizeText": "2.78 MiB",
       "limitBytes": null,
       "limitText": null,
@@ -10149,7 +10149,7 @@
         {
           "path": "subpackages/HomeBundle/config.home-bundle.json",
           "displayPath": "subpackages/HomeBundle/config.home-bundle.json",
-          "sizeBytes": 36221,
+          "sizeBytes": 36299,
           "sizeText": "0.03 MiB"
         },
         {
@@ -10161,8 +10161,8 @@
         {
           "path": "subpackages/HomeBundle/import/_packs/pack/gooseTip__pack_5.json",
           "displayPath": "subpackages/HomeBundle/import/_packs/pack/gooseTip__pack_5.json",
-          "sizeBytes": 2368,
-          "sizeText": "0.00 MiB"
+          "sizeBytes": 8262,
+          "sizeText": "0.01 MiB"
         },
         {
           "path": "subpackages/HomeBundle/import/_packs/pack/home_particle__pack_3.json",
@@ -12210,7 +12210,7 @@
   "totals": {
     "packageCount": 9,
     "fileCount": 2005,
-    "sizeBytes": 26746142,
+    "sizeBytes": 26752114,
     "sizeText": "25.51 MiB",
     "limitBytes": 31457280,
     "limitText": "30.00 MiB",

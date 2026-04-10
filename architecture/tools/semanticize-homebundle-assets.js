@@ -8,6 +8,7 @@ const {
 const {
   updateConfigPathEntries,
   updateImportSpriteFrameNames,
+  updateImportJsonNameMap,
   collectLegacyConfigPaths,
   collectLegacySpriteFrameFiles,
   escapeRegExp
@@ -21,11 +22,28 @@ const IMPORT_DIRECTORY_TARGETS = [
   'subpackages/HomeBundle/import'
 ];
 
+const IMPORT_FILE_MAPPINGS = [
+  {
+    relativePath: 'subpackages/HomeBundle/import/_packs/pack/gooseTip__pack_5.json',
+    label: 'HomeBundle 解锁提示图集',
+    nameMap: {
+      '获得100只鸭子解锁': 'duckUnlockAt100',
+      '获得100只鹅解锁': 'gooseUnlockAt100'
+    }
+  }
+];
+
 const PARTICLE_PATH_MAP = {
   'tex/BgParticle/p1': 'tex/backgroundParticles/whiteGlowParticle',
   'tex/BgParticle/p2': 'tex/backgroundParticles/orangeGlowParticle',
   'tex/BgParticle/p3': 'tex/backgroundParticles/greenLeafParticle',
   'tex/BgParticle/p4': 'tex/backgroundParticles/orangeLeafParticle'
+};
+
+const HOME_UNLOCK_PATH_MAP = {
+  'tex/获得100只鸭子解锁': 'tex/unlockTips/duckUnlockAt100',
+  'tex/获得100只鹅解锁': 'tex/unlockTips/gooseUnlockAt100',
+  'tex/光': 'tex/unlockTips/unlockGlow'
 };
 
 const PARTICLE_NAME_MAP = {
@@ -96,6 +114,7 @@ const LEGACY_SPRITE_NAME_PATTERN = new RegExp(
 const LEGACY_BG_THINGS_PATTERN = /^tex\/BgThings(\d+)\//;
 const LEGACY_LAYER_SEGMENT_PATTERN = /\/(front|middle|back|last)\//;
 const LEGACY_PARTICLE_PATH_PATTERN = /^tex\/BgParticle\/p[1-4](?:\/(?:spriteFrame|texture))?$/;
+const LEGACY_UNLOCK_PATH_PATTERN = /^tex\/(?:获得100只鸭子解锁|获得100只鹅解锁|光)(?:\/(?:spriteFrame|texture))?$/;
 
 /**
  * 把 HomeBundle 背景素材目录和已确认语义的背景粒子统一收敛到可读路径。
@@ -117,8 +136,12 @@ function semanticizeHomeBundleAssets() {
     const absolutePath = resolveProjectFilePath(layout, relativePath);
     return updateSpriteFrameImportNames(absolutePath, formatProjectPathFromWorkspace(layout, relativePath));
   });
+  const importFileResults = IMPORT_FILE_MAPPINGS.map((target) => {
+    const absolutePath = resolveProjectFilePath(layout, target.relativePath);
+    return updateImportJsonNameMap(absolutePath, target.label, target.nameMap, 'HomeBundle语义化');
+  });
 
-  console.log('[HomeBundle语义化] 已完成背景目录与 SpriteFrame 名称语义化收敛。');
+  console.log('[HomeBundle语义化] 已完成背景目录与解锁提示命名语义化收敛。');
   for (const result of configResults) {
     console.log(
       '[HomeBundle语义化] 配置更新:',
@@ -133,6 +156,14 @@ function semanticizeHomeBundleAssets() {
       result.label,
       '文件更新数:',
       result.updatedFileCount,
+      '名称改写数:',
+      result.replacementCount
+    );
+  }
+  for (const result of importFileResults) {
+    console.log(
+      '[HomeBundle语义化] 元数据更新:',
+      result.label,
       '名称改写数:',
       result.replacementCount
     );
@@ -195,6 +226,17 @@ function normalizeHomeBundlePath(assetPath) {
       return semanticPrefix + '/texture';
     }
   }
+  for (const [legacyPrefix, semanticPrefix] of Object.entries(HOME_UNLOCK_PATH_MAP)) {
+    if (normalizedPath === legacyPrefix) {
+      return semanticPrefix;
+    }
+    if (normalizedPath === legacyPrefix + '/spriteFrame') {
+      return semanticPrefix + '/spriteFrame';
+    }
+    if (normalizedPath === legacyPrefix + '/texture') {
+      return semanticPrefix + '/texture';
+    }
+  }
 
   normalizedPath = normalizedPath.replace(/^tex\/BgThings(\d+)\//, 'tex/homeTheme$1/');
   normalizedPath = normalizedPath
@@ -226,6 +268,7 @@ function verifyNoLegacyHomeBundlePathEntries(parsedJson, displayLabel) {
     return LEGACY_BG_THINGS_PATTERN.test(pathValue) ||
       LEGACY_LAYER_SEGMENT_PATTERN.test(pathValue) ||
       LEGACY_PARTICLE_PATH_PATTERN.test(pathValue) ||
+      LEGACY_UNLOCK_PATH_PATTERN.test(pathValue) ||
       hasLegacyHomeThemeLeafPath;
   });
 
