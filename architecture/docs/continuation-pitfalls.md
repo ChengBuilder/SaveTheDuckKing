@@ -66,6 +66,12 @@
   - 不再需要的子 agent 及时关闭。
   - 发现晚到写回时，先比对 diff，再决定保留或恢复，避免混入不确定改动。
 
+### 7) 报告时间戳防回退护栏
+- 强制规则：
+  - 所有审计生成器禁止重新引入 `generatedAt` / `生成时间`（以及同类 volatile 生成时刻字段）。
+- 护栏兜底：
+  - `architecture/tools/check-no-volatile-report-timestamps.js` 会阻断这类回退；命中后必须先去除时间戳字段再提交。
+
 ## 固化执行清单（每个优化切片都要做）
 1. 先确认变更边界：`git status --short --branch`。
 2. 脚本语法检查：`node --check <script>`。

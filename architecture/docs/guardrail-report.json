@@ -1,7 +1,7 @@
 {
   "projectPath": "./",
-  "totalSteps": 50,
-  "passedSteps": 50,
+  "totalSteps": 52,
+  "passedSteps": 52,
   "failedSteps": 0,
   "results": [
     {
@@ -251,6 +251,12 @@
       "errorMessage": ""
     },
     {
+      "label": "审计时间戳护栏语法检查",
+      "commandText": "node -c architecture/tools/check-no-volatile-report-timestamps.js",
+      "status": "passed",
+      "errorMessage": ""
+    },
+    {
       "label": "迭代报告生成器语法检查",
       "commandText": "node -c architecture/tools/generate-iteration-report.js",
       "status": "passed",
@@ -277,6 +283,12 @@
     {
       "label": "URL 编码路径校验",
       "commandText": "node architecture/tools/check-no-url-encoded-paths.js",
+      "status": "passed",
+      "errorMessage": ""
+    },
+    {
+      "label": "审计时间戳护栏",
+      "commandText": "node architecture/tools/check-no-volatile-report-timestamps.js",
       "status": "passed",
       "errorMessage": ""
     },

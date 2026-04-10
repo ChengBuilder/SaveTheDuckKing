@@ -48,3 +48,4 @@ node architecture/tools/run-wechat-ci.js doctor
   - 分包加载：先 bundle 名归一化，再文件 remap。
   - 语义化/护栏正则：统一使用 `\"name\"\\s*:\\s*\"...\"` 空白容忍。
   - 提交前清理并行残留：确保工作区只含预期改动。
+  - 报告时间戳防回退：审计生成器禁止回填 `generatedAt`/`生成时间`，由 `architecture/tools/check-no-volatile-report-timestamps.js` 护栏兜底。

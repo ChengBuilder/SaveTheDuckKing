@@ -42,6 +42,24 @@ const CHECK_TARGETS = [
     ]
   },
   {
+    relativePath: 'subpackages/HomeBundle/config.home-bundle.json',
+    checks: [
+      {
+        label: 'HomeBundle 配置旧解锁提示路径',
+        pattern: /tex\/获得100只鸭子解锁(?:\/(?:texture|spriteFrame))?|tex\/获得100只鹅解锁(?:\/(?:texture|spriteFrame))?|tex\/光(?:\/(?:texture|spriteFrame))?/g
+      }
+    ]
+  },
+  {
+    relativePath: 'subpackages/HomeBundle/import/_packs/pack/gooseTip__pack_5.json',
+    checks: [
+      {
+        label: 'HomeBundle 解锁提示图集旧名称',
+        pattern: createImportJsonNamePattern('(?:获得100只鸭子解锁|获得100只鹅解锁)')
+      }
+    ]
+  },
+  {
     relativePath: 'subpackages/uiBundle/config.ui-bundle.json',
     checks: [
       {

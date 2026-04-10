@@ -4,8 +4,8 @@
 
 ## 总览
 - 项目目录：`./`
-- 已执行步骤：50
-- 通过步骤：50
+- 已执行步骤：52
+- 通过步骤：52
 - 失败步骤：0
 
 ## 步骤明细
@@ -52,11 +52,13 @@
 | 主包书册展示资源语义化工具语法检查 | 通过 | `node -c architecture/tools/semanticize-main-book-display-assets.js` |
 | uiBundle 设置模块语义化工具语法检查 | 通过 | `node -c architecture/tools/semanticize-uibundle-settings-assets.js` |
 | URL 编码路径校验工具语法检查 | 通过 | `node -c architecture/tools/check-no-url-encoded-paths.js` |
+| 审计时间戳护栏语法检查 | 通过 | `node -c architecture/tools/check-no-volatile-report-timestamps.js` |
 | 迭代报告生成器语法检查 | 通过 | `node -c architecture/tools/generate-iteration-report.js` |
 | 迭代流水线语法检查 | 通过 | `node -c architecture/tools/run-iteration-cycle.js` |
 | 架构风格检查 | 通过 | `node architecture/tools/check-architecture-style.js` |
 | 素材分层检查 | 通过 | `node architecture/tools/check-asset-code-separation.js` |
 | URL 编码路径校验 | 通过 | `node architecture/tools/check-no-url-encoded-paths.js` |
+| 审计时间戳护栏 | 通过 | `node architecture/tools/check-no-volatile-report-timestamps.js` |
 | 微信小游戏结构校验 | 通过 | `node architecture/tools/verify-wechat-minigame-structure.js` |
 | 微信代码包体检查 | 通过 | `node architecture/tools/check-wechat-code-package-limits.js` |
 | 旧运行时路径护栏 | 通过 | `node architecture/tools/check-legacy-runtime-compat.js` |
