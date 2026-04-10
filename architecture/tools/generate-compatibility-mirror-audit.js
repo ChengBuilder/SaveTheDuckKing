@@ -9,7 +9,7 @@ const {
   normalizePath
 } = require('./project-paths');
 const {
-  COMPATIBILITY_MIRROR_ALIAS_ENTRIES,
+  ROOT_COMPATIBILITY_MIRROR_ALIAS_ENTRIES,
   buildRemapState,
   loadGeneratedRemapManifest,
   resolveRemappedAssetPath
@@ -22,7 +22,7 @@ const MAX_SAMPLE_COUNT = 6;
 function generateCompatibilityMirrorAudit() {
   const layout = resolveProjectLayout(__dirname);
   const remapState = buildRemapState(loadGeneratedRemapManifest());
-  const mirrorAudits = COMPATIBILITY_MIRROR_ALIAS_ENTRIES
+  const mirrorAudits = ROOT_COMPATIBILITY_MIRROR_ALIAS_ENTRIES
     .map(function mapAliasEntry(aliasEntry) {
       return createMirrorAudit(layout, aliasEntry, remapState);
     })
@@ -68,7 +68,7 @@ function createMirrorAudit(layout, aliasEntry, remapState) {
   return {
     legacyDirectoryPath: normalizePath(path.relative(layout.projectRoot, mirrorDirectoryPath)),
     canonicalPrefix: aliasEntry.canonicalPrefix,
-    kind: aliasEntry.useSubpackageRemap ? 'subpackage-compat-mirror' : 'root-bundle-compat-mirror',
+    kind: 'root-bundle-compat-mirror',
     topLevelFiles: topLevelFiles,
     importAudit: importAudit,
     nativeAudit: nativeAudit,
@@ -166,7 +166,6 @@ function collectFiles(directoryPath) {
 
 function buildAuditReport(layout, mirrorAudits) {
   return {
-    generatedAt: new Date().toISOString(),
     projectPath: formatProjectPathFromWorkspace(layout, ''),
     summary: {
       totalMirrorDirectories: mirrorAudits.length,

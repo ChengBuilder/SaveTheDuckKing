@@ -52,7 +52,6 @@ function main() {
 }
 
 function buildCodePackageReport(layout, gameConfig) {
-  const generatedAt = new Date().toISOString();
   const subpackages = resolveSubpackages(gameConfig);
   const mainEntryPaths = collectMainPackageEntries(gameConfig);
   const mainPackage = summarizePackage(layout, {
@@ -88,7 +87,6 @@ function buildCodePackageReport(layout, gameConfig) {
   const violations = collectViolations(packageReports, totalBytes);
 
   return {
-    generatedAt: generatedAt,
     projectPath: layout.projectPathFromWorkspace || './',
     officialSourceUrls: OFFICIAL_SOURCE_URLS,
     notes: [
@@ -282,7 +280,6 @@ function buildMarkdownReport(layout, report) {
   lines.push('> 本文件由 `architecture/tools/check-wechat-code-package-limits.js` 生成。');
   lines.push('');
   lines.push('## 总览');
-  lines.push('- 生成时间：' + report.generatedAt);
   lines.push('- 项目目录：`' + report.projectPath + '`');
   lines.push('- 主包：`' + report.mainPackage.sizeText + ' / ' + report.mainPackage.limitText + '`');
   lines.push('- 总包：`' + report.totals.sizeText + ' / ' + report.totals.limitText + '`');
