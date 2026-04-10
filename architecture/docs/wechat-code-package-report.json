@@ -11507,8 +11507,8 @@
         "subpackages/uiBundle"
       ],
       "fileCount": 115,
-      "sizeBytes": 2226069,
-      "sizeText": "2.12 MiB",
+      "sizeBytes": 2233285,
+      "sizeText": "2.13 MiB",
       "limitBytes": null,
       "limitText": null,
       "withinLimit": true,
@@ -11642,7 +11642,7 @@
         {
           "path": "subpackages/uiBundle/import/_packs/tex/failPage/image2__pack_12.json",
           "displayPath": "subpackages/uiBundle/import/_packs/tex/failPage/image2__pack_12.json",
-          "sizeBytes": 1681,
+          "sizeBytes": 4777,
           "sizeText": "0.00 MiB"
         },
         {
@@ -11714,8 +11714,8 @@
         {
           "path": "subpackages/uiBundle/import/_packs/tex/revive/percent__pack_16.json",
           "displayPath": "subpackages/uiBundle/import/_packs/tex/revive/percent__pack_16.json",
-          "sizeBytes": 2213,
-          "sizeText": "0.00 MiB"
+          "sizeBytes": 6333,
+          "sizeText": "0.01 MiB"
         },
         {
           "path": "subpackages/uiBundle/import/_packs/tex/settings/gearIcon__pack_34.json",
@@ -12210,8 +12210,8 @@
   "totals": {
     "packageCount": 9,
     "fileCount": 2005,
-    "sizeBytes": 26738926,
-    "sizeText": "25.50 MiB",
+    "sizeBytes": 26746142,
+    "sizeText": "25.51 MiB",
     "limitBytes": 31457280,
     "limitText": "30.00 MiB",
     "withinLimit": true

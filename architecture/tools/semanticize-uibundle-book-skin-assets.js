@@ -7,40 +7,57 @@ const {
 } = require('./project-paths');
 const {
   updateConfigPathEntries,
-  updateImportSpriteFrameNames,
-  collectLegacyConfigPaths,
-  collectLegacySpriteFrameFiles
+  updateImportJsonNameMap,
+  collectLegacyConfigPaths
 } = require('./semanticize-shared');
 
 const CONFIG_TARGETS = [
   'subpackages/uiBundle/config.ui-bundle.json'
 ];
 
-const IMPORT_DIRECTORY_TARGETS = [
-  'subpackages/uiBundle/import'
+const IMPORT_FILE_MAPPINGS = [
+  {
+    relativePath: 'subpackages/uiBundle/import/_packs/tex/bottom__pack_30.json',
+    label: 'uiBundle 图鉴皮肤页底部图集',
+    nameMap: {
+      p8: 'skinPage8',
+      p1: 'skinPage1'
+    }
+  },
+  {
+    relativePath: 'subpackages/uiBundle/import/_packs/tex/banner__pack_20.json',
+    label: 'uiBundle 图鉴皮肤页标题图集',
+    nameMap: {
+      p10: 'skinPage10',
+      p9: 'skinPage9',
+      p6: 'skinPage6'
+    }
+  },
+  {
+    relativePath: 'subpackages/uiBundle/import/_packs/tex/share__pack_22.json',
+    label: 'uiBundle 图鉴皮肤页分享图集',
+    nameMap: {
+      p2: 'skinPage2',
+      p4: 'skinPage4',
+      p3: 'skinPage3',
+      p5: 'skinPage5'
+    }
+  },
+  {
+    relativePath: 'subpackages/uiBundle/import/_packs/tex/bottom__pack_32.json',
+    label: 'uiBundle 图鉴皮肤页结算图集',
+    nameMap: {
+      p7: 'skinPage7'
+    }
+  }
 ];
 
-const SKIN_PAGE_NAME_MAP = {
-  p1: 'skinPage1',
-  p2: 'skinPage2',
-  p3: 'skinPage3',
-  p4: 'skinPage4',
-  p5: 'skinPage5',
-  p6: 'skinPage6',
-  p7: 'skinPage7',
-  p8: 'skinPage8',
-  p9: 'skinPage9',
-  p10: 'skinPage10'
-};
-
 const LEGACY_SKIN_PATH_PATTERN = /^tex\/book\/鸽鸽图鉴\/皮肤图鉴\/p(10|[1-9])(?:\/(spriteFrame|texture))?$/;
-const LEGACY_SKIN_NAME_PATTERN = /"name":"(p10|p[1-9])"/g;
-
 /**
  * 把 uiBundle 图鉴皮肤页短 token 命名（p1..p10）收敛为可读命名。
  * 当前策略：
  * 1. tex/book/鸽鸽图鉴/皮肤图鉴/pN -> tex/book/pigeonGallery/skinCollection/skinPageN
- * 2. SpriteFrame 名 pN -> skinPageN
+ * 2. 当前仓库内仍承载皮肤页短 token 的 pack 名称按文件级目标收敛到 skinPageN
  */
 function semanticizeUiBundleBookSkinAssets() {
   const layout = resolveProjectLayout(__dirname);
@@ -50,9 +67,9 @@ function semanticizeUiBundleBookSkinAssets() {
     return updateUiBundleConfig(absolutePath, formatProjectPathFromWorkspace(layout, relativePath));
   });
 
-  const importResults = IMPORT_DIRECTORY_TARGETS.map((relativePath) => {
-    const absolutePath = resolveProjectFilePath(layout, relativePath);
-    return updateUiBundleImportNames(absolutePath, formatProjectPathFromWorkspace(layout, relativePath));
+  const importResults = IMPORT_FILE_MAPPINGS.map((target) => {
+    const absolutePath = resolveProjectFilePath(layout, target.relativePath);
+    return updateImportJsonNameMap(absolutePath, target.label, target.nameMap, 'uiBundle语义化');
   });
 
   console.log('[uiBundle语义化] 已完成图鉴皮肤页命名收敛。');
@@ -68,8 +85,6 @@ function semanticizeUiBundleBookSkinAssets() {
     console.log(
       '[uiBundle语义化] 元数据更新:',
       result.label,
-      '文件更新数:',
-      result.updatedFileCount,
       '名称改写数:',
       result.replacementCount
     );
@@ -89,26 +104,6 @@ function updateUiBundleConfig(filePath, displayLabel) {
 
   return {
     label: displayLabel,
-    replacementCount: result.replacementCount
-  };
-}
-
-/**
- * 更新 uiBundle import 目录中的图鉴皮肤页 SpriteFrame 名称。
- * @param {string} directoryPath import 目录
- * @param {string} displayLabel 展示标签
- * @returns {{label: string, updatedFileCount: number, replacementCount: number}}
- */
-function updateUiBundleImportNames(directoryPath, displayLabel) {
-  const result = updateImportSpriteFrameNames(directoryPath, LEGACY_SKIN_NAME_PATTERN, (token) => {
-    return SKIN_PAGE_NAME_MAP[token];
-  });
-
-  verifyNoLegacyUiBundleSkinNames(directoryPath, displayLabel);
-
-  return {
-    label: displayLabel,
-    updatedFileCount: result.updatedFileCount,
     replacementCount: result.replacementCount
   };
 }
@@ -151,24 +146,6 @@ function verifyNoLegacyUiBundleSkinPaths(parsedJson, displayLabel) {
       displayLabel +
       ' -> ' +
       legacyPathList.slice(0, 5).join(', ')
-    );
-  }
-}
-
-/**
- * 校验 import 目录里已不存在 p1..p10 图鉴皮肤页名称。
- * @param {string} directoryPath import 目录
- * @param {string} displayLabel 展示标签
- */
-function verifyNoLegacyUiBundleSkinNames(directoryPath, displayLabel) {
-  const legacyFileList = collectLegacySpriteFrameFiles(directoryPath, LEGACY_SKIN_NAME_PATTERN);
-
-  if (legacyFileList.length > 0) {
-    throw new Error(
-      '[uiBundle语义化] import 元数据仍残留图鉴皮肤页旧名称：' +
-      displayLabel +
-      ' -> ' +
-      legacyFileList.slice(0, 5).join(', ')
     );
   }
 }

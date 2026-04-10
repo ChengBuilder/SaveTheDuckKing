@@ -7,18 +7,29 @@ const {
 } = require('./project-paths');
 const {
   updateConfigPathEntries,
-  updateImportSpriteFrameNames,
-  collectLegacyConfigPaths,
-  collectLegacySpriteFrameFiles,
-  escapeRegExp
+  updateImportJsonNameMap,
+  collectLegacyConfigPaths
 } = require('./semanticize-shared');
 
 const CONFIG_TARGETS = [
   'subpackages/uiBundle/config.ui-bundle.json'
 ];
 
-const IMPORT_DIRECTORY_TARGETS = [
-  'subpackages/uiBundle/import'
+const IMPORT_FILE_MAPPINGS = [
+  {
+    relativePath: 'subpackages/uiBundle/import/_packs/tex/failPage/image2__pack_12.json',
+    label: 'uiBundle 设置页失败弹窗图集',
+    nameMap: {
+      '返回主页': 'backToHomeText'
+    }
+  },
+  {
+    relativePath: 'subpackages/uiBundle/import/_packs/tex/revive/percent__pack_16.json',
+    label: 'uiBundle 设置页二级弹窗数字图集',
+    nameMap: {
+      '%': 'percentSign'
+    }
+  }
 ];
 
 const SETTINGS_PATH_MAP = {
@@ -47,45 +58,13 @@ const SETTINGS_PATH_MAP = {
   'tex/设置二级/鸭子set': 'tex/settingsDialog/duckSetText'
 };
 
-const SPRITE_FRAME_NAME_MAP = {
-  x: 'closeIcon',
-  关: 'toggleOffState',
-  '关(字)': 'toggleOffText',
-  开: 'toggleOnState',
-  '开(字)': 'toggleOnText',
-  开关槽: 'toggleTrackPrimary',
-  开关槽1: 'toggleTrackSecondary',
-  放弃挑战: 'giveUpChallengeText',
-  设置: 'settingsText',
-  震动: 'vibrationText',
-  震动图标: 'vibrationIcon',
-  音乐: 'musicText',
-  音乐图标: 'musicIcon',
-  音效: 'soundEffectText',
-  音效图标: 'soundEffectIcon',
-  齿轮: 'gearIcon',
-  再试试: 'tryAgainText',
-  '当前进度：': 'currentProgressText',
-  确定吗: 'confirmQuestionText',
-  马上要通关了: 'nearCompletionText',
-  鸭子set: 'duckSetText'
-};
-
 const LEGACY_PATH_PATTERN = /^tex\/设置(?:二级)?\/.+$/;
-const LEGACY_NAME_KEYS = Object.keys(SPRITE_FRAME_NAME_MAP).sort((leftToken, rightToken) => {
-  return rightToken.length - leftToken.length;
-});
-const LEGACY_NAME_PATTERN = new RegExp(
-  '"name":"(' + LEGACY_NAME_KEYS.map(escapeRegExp).join('|') + ')"',
-  'g'
-);
-
 /**
  * 把 uiBundle 设置模块历史中文目录名收敛到语义化英文目录。
  * 当前策略：
  * 1. tex/设置/* -> tex/settings/*
  * 2. tex/设置二级/* -> tex/settingsDialog/*
- * 3. 对应 SpriteFrame 名同步改为语义化英文名
+ * 3. 当前仓库内仍残留的设置相关 pack 名称按文件级目标收敛到语义化英文名
  */
 function semanticizeUiBundleSettingsAssets() {
   const layout = resolveProjectLayout(__dirname);
@@ -95,9 +74,9 @@ function semanticizeUiBundleSettingsAssets() {
     return updateUiBundleConfig(absolutePath, formatProjectPathFromWorkspace(layout, relativePath));
   });
 
-  const importResults = IMPORT_DIRECTORY_TARGETS.map((relativePath) => {
-    const absolutePath = resolveProjectFilePath(layout, relativePath);
-    return updateUiBundleImportNames(absolutePath, formatProjectPathFromWorkspace(layout, relativePath));
+  const importResults = IMPORT_FILE_MAPPINGS.map((target) => {
+    const absolutePath = resolveProjectFilePath(layout, target.relativePath);
+    return updateImportJsonNameMap(absolutePath, target.label, target.nameMap, 'uiBundle语义化');
   });
 
   console.log('[uiBundle语义化] 已完成设置模块目录与 SpriteFrame 命名收敛。');
@@ -113,8 +92,6 @@ function semanticizeUiBundleSettingsAssets() {
     console.log(
       '[uiBundle语义化] 元数据更新:',
       result.label,
-      '文件更新数:',
-      result.updatedFileCount,
       '名称改写数:',
       result.replacementCount
     );
@@ -134,26 +111,6 @@ function updateUiBundleConfig(filePath, displayLabel) {
 
   return {
     label: displayLabel,
-    replacementCount: result.replacementCount
-  };
-}
-
-/**
- * 更新 uiBundle import 目录中的设置 SpriteFrame 名称。
- * @param {string} directoryPath import 目录
- * @param {string} displayLabel 展示标签
- * @returns {{label: string, updatedFileCount: number, replacementCount: number}}
- */
-function updateUiBundleImportNames(directoryPath, displayLabel) {
-  const result = updateImportSpriteFrameNames(directoryPath, LEGACY_NAME_PATTERN, (token) => {
-    return SPRITE_FRAME_NAME_MAP[token];
-  });
-
-  verifyNoLegacyUiBundleSettingsNames(directoryPath, displayLabel);
-
-  return {
-    label: displayLabel,
-    updatedFileCount: result.updatedFileCount,
     replacementCount: result.replacementCount
   };
 }
@@ -194,24 +151,6 @@ function verifyNoLegacyUiBundleSettingsPaths(parsedJson, displayLabel) {
       displayLabel +
       ' -> ' +
       legacyPathList.slice(0, 5).join(', ')
-    );
-  }
-}
-
-/**
- * 校验 import 目录里已不存在旧设置 SpriteFrame 名称。
- * @param {string} directoryPath import 目录
- * @param {string} displayLabel 展示标签
- */
-function verifyNoLegacyUiBundleSettingsNames(directoryPath, displayLabel) {
-  const legacyFileList = collectLegacySpriteFrameFiles(directoryPath, LEGACY_NAME_PATTERN);
-
-  if (legacyFileList.length > 0) {
-    throw new Error(
-      '[uiBundle语义化] import 元数据仍残留设置旧名称：' +
-      displayLabel +
-      ' -> ' +
-      legacyFileList.slice(0, 5).join(', ')
     );
   }
 }

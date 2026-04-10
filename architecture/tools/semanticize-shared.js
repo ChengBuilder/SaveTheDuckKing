@@ -185,7 +185,7 @@ function updateImportJsonNameMap(filePath, displayLabel, nameMap, logPrefix) {
   let replacementCount = 0;
 
   for (const [legacyName, semanticName] of Object.entries(nameMap || {})) {
-    const pattern = new RegExp('"name":"' + escapeRegExp(legacyName) + '"', 'g');
+    const pattern = buildNameFieldPattern(legacyName, 'g');
     nextContent = nextContent.replace(pattern, function replaceMatch() {
       replacementCount += 1;
       return '"name":"' + semanticName + '"';
@@ -214,7 +214,7 @@ function updateImportJsonNameMap(filePath, displayLabel, nameMap, logPrefix) {
  */
 function verifyNoLegacyImportNames(fileContent, displayLabel, legacyNames, logPrefix) {
   const remainingNames = legacyNames.filter((legacyName) => {
-    const pattern = new RegExp('"name":"' + escapeRegExp(legacyName) + '"');
+    const pattern = buildNameFieldPattern(legacyName);
     return pattern.test(fileContent);
   });
 
@@ -235,6 +235,16 @@ function verifyNoLegacyImportNames(fileContent, displayLabel, legacyNames, logPr
  */
 function escapeRegExp(rawToken) {
   return String(rawToken).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+/**
+ * 构造兼容空格的 name 字段匹配模式，确保格式化前后都能命中。
+ * @param {string} nameToken 名称 token
+ * @param {string} flags 正则标志
+ * @returns {RegExp}
+ */
+function buildNameFieldPattern(nameToken, flags) {
+  return new RegExp('"name"\\s*:\\s*"' + escapeRegExp(nameToken) + '"', flags);
 }
 
 module.exports = {

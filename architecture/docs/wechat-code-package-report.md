@@ -5,7 +5,7 @@
 ## 总览
 - 项目目录：`./`
 - 主包：`3.37 MiB / 4.00 MiB`
-- 总包：`25.50 MiB / 30.00 MiB`
+- 总包：`25.51 MiB / 30.00 MiB`
 - 违规项：0
 
 ## 官方依据
@@ -24,7 +24,7 @@
 | DuckBundle | subpackage | 1045 | 2.27 MiB | 无 | 通过 |
 | Game2Bundle | subpackage | 84 | 0.46 MiB | 无 | 通过 |
 | HomeBundle | subpackage | 225 | 2.78 MiB | 无 | 通过 |
-| uiBundle | subpackage | 115 | 2.12 MiB | 无 | 通过 |
+| uiBundle | subpackage | 115 | 2.13 MiB | 无 | 通过 |
 
 ## 入口口径
 - 主包入口：`app-config.json`
