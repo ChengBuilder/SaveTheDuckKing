@@ -371,7 +371,7 @@ function resolveFirstPackImportFile(importFileIndex, packIds) {
 function extractImportDisplayName(filePath) {
   try {
     const content = fs.readFileSync(filePath, 'utf8');
-    const match = content.match(/"name":"([^"]+)"/);
+    const match = content.match(/"name"\s*:\s*"([^"]+)"/);
     return match ? match[1] : '';
   } catch (error) {
     return '';
@@ -475,7 +475,6 @@ function summarizeAssetTypes(assetRecords) {
  */
 function buildUuidReportPayload(bundleReports) {
   const summary = {
-    generatedAt: new Date().toISOString(),
     bundleCount: bundleReports.length,
     assetRecordCount: 0,
     uuidCount: 0,
@@ -527,7 +526,6 @@ function buildUuidReportMarkdownLines(layout, reportPayload) {
   lines.push('');
   lines.push('## 总览');
   lines.push('- JSON 输出模式：`' + (reportPayload.reportMode.includeFullRecords ? 'full-records' : 'summary') + '`');
-  lines.push('- 生成时间：' + summary.generatedAt);
   lines.push('- Bundle 数：' + summary.bundleCount);
   lines.push('- canonical 资产记录数：' + summary.assetRecordCount);
   lines.push('- config UUID 记录数：' + summary.uuidCount);

@@ -3,7 +3,6 @@
     "includeFullRecords": false
   },
   "summary": {
-    "generatedAt": "2026-04-09T08:53:51.051Z",
     "bundleCount": 10,
     "assetRecordCount": 2293,
     "uuidCount": 3027,
@@ -3402,7 +3401,7 @@
         },
         {
           "assetIndex": 5,
-          "canonicalPath": "tex/book/tex/全部/spriteFrame",
+          "canonicalPath": "tex/book/ui/filterAll/spriteFrame",
           "assetType": "cc.SpriteFrame",
           "compressedUuid": "02J2Iyc9NO2afbwiwcSHng@f9941",
           "uuid": "02J2Iyc9NO2afbwiwcSHng@f9941",
@@ -3477,7 +3476,7 @@
         },
         {
           "assetIndex": 10,
-          "canonicalPath": "tex/book/分享鸭/张飞鸭/spriteFrame",
+          "canonicalPath": "tex/book/shareCollection/张飞鸭/spriteFrame",
           "assetType": "cc.SpriteFrame",
           "compressedUuid": "03dVPegO9A/5BP81Ij4/Wb@f9941",
           "uuid": "03dVPegO9A/5BP81Ij4/Wb@f9941",
@@ -3535,7 +3534,7 @@
         },
         {
           "assetIndex": 14,
-          "canonicalPath": "tex/book/tex/100/spriteFrame",
+          "canonicalPath": "tex/book/ui/completion100Label/spriteFrame",
           "assetType": "cc.SpriteFrame",
           "compressedUuid": "05kN45g6ZKdZc9tJ+JCMkj@f9941",
           "uuid": "05kN45g6ZKdZc9tJ+JCMkj@f9941",

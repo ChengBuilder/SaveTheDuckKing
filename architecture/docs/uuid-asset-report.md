@@ -4,7 +4,6 @@
 
 ## 总览
 - JSON 输出模式：`summary`
-- 生成时间：2026-04-09T08:53:51.051Z
 - Bundle 数：10
 - canonical 资产记录数：2293
 - config UUID 记录数：3027
@@ -255,7 +254,7 @@
   - `tex/过关页面/成功进度/只鸭解锁百鸭朝雀/spriteFrame` / cc.SpriteFrame / missing-import-json
   - `tex/settings/giveUpChallengeText/spriteFrame` / cc.SpriteFrame / missing-import-json
   - `tex/更多玩法/图标算数/spriteFrame` / cc.SpriteFrame / missing-import-json
-  - `tex/book/tex/全部/spriteFrame` / cc.SpriteFrame / missing-import-json
+  - `tex/book/ui/filterAll/spriteFrame` / cc.SpriteFrame / missing-import-json
   - `tex/主页素材/排行榜/名次底2/spriteFrame` / cc.SpriteFrame / missing-import-json
   - `tex/失败页面/继续挑战/spriteFrame` / cc.SpriteFrame / missing-import-json
 - 未命中 import 文件样例：`import/_packs/gooseSuccessNumber/gooseSuccessNumber__pack_1.json`，`import/_packs/pack/callFriend__pack_15.json`，`import/_packs/prefab/OverUI/reviveNumber__pack_2.json`，`import/_packs/prefab/SuccessUI/arm__pack_21.json`，`import/_packs/settingsDialogNumber/settingsDialogNumber__pack_1.json`，`import/_packs/staminaCount/staminaCount__pack_1.json`，`import/_packs/tex/autoUi/frame__pack_12.json`，`import/_packs/tex/banner__pack_20.json`
