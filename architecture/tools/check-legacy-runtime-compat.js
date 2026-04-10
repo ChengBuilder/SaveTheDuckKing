@@ -88,7 +88,7 @@ const CHECK_TARGETS = [
     checks: [
       {
         label: 'uiBundle 图鉴条目图集旧名称',
-        pattern: /"name":"(?:底2|框|底)"/g
+        pattern: /"name":"(?:底2|道具|使用按钮|按键底|框|转发使用按钮|底|邀请好友|体力框)"/g
       }
     ]
   },
@@ -97,16 +97,7 @@ const CHECK_TARGETS = [
     checks: [
       {
         label: 'uiBundle 鸽子图鉴与分享页横幅旧名称',
-        pattern: /"name":"(?:鸽鸽图鉴|横幅|旋转光)"/g
-      }
-    ]
-  },
-  {
-    relativePath: 'subpackages/uiBundle/import/_packs/tex/bottom__pack_30.json',
-    checks: [
-      {
-        label: 'uiBundle 分享页邀请按钮旧名称',
-        pattern: /"name":"邀请好友"/g
+        pattern: /"name":"(?:鸽鸽图鉴|横幅|求助|更多玩法|旋转光)"/g
       }
     ]
   },
@@ -160,7 +151,16 @@ const CHECK_TARGETS = [
     checks: [
       {
         label: 'uiBundle 复用标题图集旧名称',
-        pattern: /"name":"鸽鸽图鉴"/g
+        pattern: /"name":"(?:鸽鸽图鉴|入口有奖|加入鸭群|喊人|投诉|排行榜|更多玩法|添加桌面)"/g
+      }
+    ]
+  },
+  {
+    relativePath: 'subpackages/uiBundle/import/_packs/tex/share__pack_22.json',
+    checks: [
+      {
+        label: 'uiBundle 复用分享图集旧名称',
+        pattern: /"name":"(?:分享|转发录屏)"/g
       }
     ]
   },
@@ -169,7 +169,7 @@ const CHECK_TARGETS = [
     checks: [
       {
         label: '主包书册展示横幅复用图集旧名称',
-        pattern: /"name":"(?:p10|p9|鸽鸽图鉴|p6|横幅|视频2|旋转光)"/g
+        pattern: /"name":"(?:p10|p9|鸽鸽图鉴|p6|横幅|求助|更多玩法|视频2|旋转光)"/g
       }
     ]
   },
@@ -178,7 +178,7 @@ const CHECK_TARGETS = [
     checks: [
       {
         label: '主包书册标题复用图集旧名称',
-        pattern: /"name":"(?:鸽鸽图鉴|图鉴)"/g
+        pattern: /"name":"(?:鸽鸽图鉴|图鉴|入口有奖|加入鸭群|喊人|投诉|排行榜|更多玩法|添加桌面|猜图开始游戏按钮心|猜图开始游戏按钮气泡)"/g
       }
     ]
   },
@@ -187,7 +187,7 @@ const CHECK_TARGETS = [
     checks: [
       {
         label: '主包书册底部复用图集旧名称',
-        pattern: /"name":"(?:p8|底2|已领取按钮|框|底|领取按钮|p1)"/g
+        pattern: /"name":"(?:p8|底2|道具|已领取按钮|使用按钮|按键底|框|邀请好友|底|体力框|领取按钮|转发使用按钮|p1)"/g
       }
     ]
   },
@@ -196,7 +196,7 @@ const CHECK_TARGETS = [
     checks: [
       {
         label: '主包书册分享复用图集旧名称',
-        pattern: /"name":"(?:p2|p4|p3|p5)"/g
+        pattern: /"name":"(?:p2|p4|p3|p5|分享|转发录屏)"/g
       }
     ]
   },
@@ -317,6 +317,8 @@ function main() {
     }
   }
 
+  appendRuntimeRemapFindings(findings);
+
   if (findings.length > 0) {
     console.error('[legacy-runtime-compat] 失败：检测到旧运行时路径或兼容层残留。');
     for (const finding of findings) {
@@ -329,6 +331,57 @@ function main() {
   }
 
   console.log('[legacy-runtime-compat] 通过');
+}
+
+function appendRuntimeRemapFindings(findings) {
+  const remapModule = require(path.join(PROJECT_ROOT, 'runtime/asset-file-remap.js'));
+  const remapState = remapModule.buildRemapState(remapModule.loadGeneratedRemapManifest());
+  const representativeRequests = [
+    {
+      requestPath: 'assets/internal/import/0c/0ca60d3e4.ea248.json',
+      expectedPath: 'assets/internal/import/0ca60d3e4.ea248.json',
+      label: 'internal 根包 import 分片路径'
+    },
+    {
+      requestPath: 'subpackages/resources/import/03/03ccd410a.a3f7a.json',
+      expectedPath: 'subpackages/resources/import/_packs/multiTexture/a_color__pack_59.json',
+      label: 'resources 分包 import 分片路径'
+    },
+    {
+      requestPath: 'subpackages/main/import/06/062b1717-90b0-4678-aec0-84cced2a3125.a2533.json',
+      expectedPath: 'subpackages/main/import/tex/scene/hole.json',
+      label: 'main 分包 import 分片路径'
+    },
+    {
+      requestPath: 'subpackages/Game2Bundle/import/1c/1c169947-9a9e-480e-ae4a-140c6c43d8aa.a2533.json',
+      expectedPath: 'subpackages/Game2Bundle/import/tex/props/removeFruitFromSlot/spriteFrame.json',
+      label: 'Game2Bundle 分包 import 分片路径'
+    },
+    {
+      requestPath: 'assets/game2bundle/import/1c/1c169947-9a9e-480e-ae4a-140c6c43d8aa.a2533.json',
+      expectedPath: 'subpackages/Game2Bundle/import/tex/props/removeFruitFromSlot/spriteFrame.json',
+      label: '旧 bundle 别名 import 分片路径'
+    }
+  ];
+
+  for (const requestCase of representativeRequests) {
+    const resolvedPath = remapModule.resolveRemappedAssetPath(requestCase.requestPath, remapState);
+    const resolvedAbsolutePath = path.join(PROJECT_ROOT, resolvedPath);
+    if (resolvedPath === requestCase.expectedPath && fs.existsSync(resolvedAbsolutePath)) {
+      continue;
+    }
+
+    findings.push({
+      file: 'runtime/asset-file-remap.js',
+      label: requestCase.label,
+      matches: [
+        'request=' + requestCase.requestPath,
+        'resolved=' + resolvedPath,
+        'expected=' + requestCase.expectedPath,
+        'exists=' + String(fs.existsSync(resolvedAbsolutePath))
+      ]
+    });
+  }
 }
 
 function resolveTargetRelativePaths(target) {
