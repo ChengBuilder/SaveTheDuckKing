@@ -177,7 +177,6 @@ function appendGuardrailLines(lines, layout, guardrailReport) {
     return;
   }
 
-  lines.push('- 最近执行时间：' + String(guardrailReport.generatedAt || 'unknown'));
   lines.push('- 护栏报告：`' + formatProjectPathFromWorkspace(layout, 'architecture/docs/guardrail-report.md') + '`');
   lines.push('- 已执行步骤：' + String(guardrailReport.totalSteps || 0));
   lines.push('- 通过步骤：' + String(guardrailReport.passedSteps || 0));

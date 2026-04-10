@@ -139,10 +139,9 @@ function createScriptStep(layout, label, relativePath) {
  * 执行单个护栏步骤并记录结果。
  * @param {{workspaceRoot: string}} layout 项目布局
  * @param {{label: string, commandText: string, execArgs: string[]}} step 步骤定义
- * @returns {{label: string, commandText: string, status: string, startedAt: string, finishedAt: string, durationMs: number, errorMessage: string}}
+ * @returns {{label: string, commandText: string, status: string, errorMessage: string}}
  */
 function runGuardrailStep(layout, step) {
-  const startedAt = new Date();
   console.log('[护栏检查] 执行命令:', step.commandText);
 
   try {
@@ -151,25 +150,17 @@ function runGuardrailStep(layout, step) {
       stdio: 'inherit'
     });
 
-    const finishedAt = new Date();
     return {
       label: step.label,
       commandText: step.commandText,
       status: 'passed',
-      startedAt: startedAt.toISOString(),
-      finishedAt: finishedAt.toISOString(),
-      durationMs: finishedAt.getTime() - startedAt.getTime(),
       errorMessage: ''
     };
   } catch (error) {
-    const finishedAt = new Date();
     return {
       label: step.label,
       commandText: step.commandText,
       status: 'failed',
-      startedAt: startedAt.toISOString(),
-      finishedAt: finishedAt.toISOString(),
-      durationMs: finishedAt.getTime() - startedAt.getTime(),
       errorMessage: resolveExecErrorMessage(error)
     };
   }
