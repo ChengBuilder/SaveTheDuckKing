@@ -4,6 +4,8 @@ const fs = require('fs');
 const path = require('path');
 
 const PROJECT_ROOT = process.cwd();
+const FRAGMENT_VARIANT_FAMILY_CODES = ['a', 'b', 'c', 'd', 'e'];
+const FRAGMENT_VARIANT_SHAPE_SLOTS = [1, 2, 3, 4, 5, 6];
 
 const CHECK_TARGETS = [
   {
@@ -32,6 +34,10 @@ const CHECK_TARGETS = [
       {
         label: 'uiBundle 旧领取按钮路径',
         pattern: /tex\/(?:已)?领取按钮\/spriteFrame/g
+      },
+      {
+        label: 'DuckBundle fragment 死 helper 残留',
+        pattern: /fragmentEffect=function/g
       }
     ]
   },
@@ -231,6 +237,15 @@ const CHECK_TARGETS = [
     ]
   },
   {
+    relativePaths: buildDuckBundleFragmentSpriteFramePaths(),
+    checks: [
+      {
+        label: 'DuckBundle fragment 元数据旧数字命名',
+        pattern: /"name":"[1-6]"/g
+      }
+    ]
+  },
+  {
     relativePath: 'architecture/boot/asset-path-normalizer.js',
     checks: [
       {
@@ -281,20 +296,24 @@ function main() {
   const findings = [];
 
   for (const target of CHECK_TARGETS) {
-    const absolutePath = path.join(PROJECT_ROOT, target.relativePath);
-    const fileContent = fs.readFileSync(absolutePath, 'utf8');
+    const relativePaths = resolveTargetRelativePaths(target);
 
-    for (const check of target.checks) {
-      const matchedValues = collectMatchedValues(fileContent, check.pattern);
-      if (matchedValues.length === 0) {
-        continue;
+    for (const relativePath of relativePaths) {
+      const absolutePath = path.join(PROJECT_ROOT, relativePath);
+      const fileContent = fs.readFileSync(absolutePath, 'utf8');
+
+      for (const check of target.checks) {
+        const matchedValues = collectMatchedValues(fileContent, check.pattern);
+        if (matchedValues.length === 0) {
+          continue;
+        }
+
+        findings.push({
+          file: relativePath,
+          label: check.label,
+          matches: matchedValues
+        });
       }
-
-      findings.push({
-        file: target.relativePath,
-        label: check.label,
-        matches: matchedValues
-      });
     }
   }
 
@@ -310,6 +329,32 @@ function main() {
   }
 
   console.log('[legacy-runtime-compat] 通过');
+}
+
+function resolveTargetRelativePaths(target) {
+  if (Array.isArray(target.relativePaths) && target.relativePaths.length > 0) {
+    return target.relativePaths.slice();
+  }
+
+  return [target.relativePath];
+}
+
+function buildDuckBundleFragmentSpriteFramePaths() {
+  const relativePaths = [];
+
+  for (const familyCode of FRAGMENT_VARIANT_FAMILY_CODES) {
+    for (const shapeSlot of FRAGMENT_VARIANT_SHAPE_SLOTS) {
+      relativePaths.push(
+        'subpackages/DuckBundle/import/tex/fragment/' +
+          familyCode +
+          '/' +
+          String(shapeSlot) +
+          '/spriteFrame__2.json'
+      );
+    }
+  }
+
+  return relativePaths;
 }
 
 function collectMatchedValues(fileContent, pattern) {

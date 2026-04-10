@@ -81,6 +81,7 @@ function buildGuardrailSteps(layout) {
     createSyntaxCheckStep(layout, '兼容镜像审计工具语法检查', 'architecture/tools/generate-compatibility-mirror-audit.js'),
     createSyntaxCheckStep(layout, '微信小游戏结构校验语法检查', 'architecture/tools/verify-wechat-minigame-structure.js'),
     createSyntaxCheckStep(layout, 'DuckBundle 木板语义化工具语法检查', 'architecture/tools/semanticize-duckbundle-wood-assets.js'),
+    createSyntaxCheckStep(layout, 'DuckBundle fragment 语义化工具语法检查', 'architecture/tools/semanticize-duckbundle-fragment-assets.js'),
     createSyntaxCheckStep(layout, 'DuckBundle 背景语义化工具语法检查', 'architecture/tools/semanticize-duckbundle-background-assets.js'),
     createSyntaxCheckStep(layout, 'DuckBundle 季节背景语义化工具语法检查', 'architecture/tools/semanticize-duckbundle-seasonal-background-assets.js'),
     createSyntaxCheckStep(layout, 'HomeBundle 素材语义化工具语法检查', 'architecture/tools/semanticize-homebundle-assets.js'),

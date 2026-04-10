@@ -527,3 +527,55 @@
 - 相关 pack/config JSON 已逐个解析通过。
 - `npm run guardrails` 已通过。
 - 微信官方检查链路已纳入本轮回归。
+
+## 2026-04-10 `DuckBundle fragment` 元数据命名第一批收敛
+
+本轮继续沿用“只改已证实维度，不硬猜业务含义”的治理原则，先把 `fragment` 这组资源里最影响可读性的裸数字 `SpriteFrame.name` 清掉，不在证据不足时冒进改 canonical 路径。
+
+本轮新增元数据命名：
+- `tex/fragment/a/1/spriteFrame -> fragmentVariantAShape1`
+- `tex/fragment/a/2/spriteFrame -> fragmentVariantAShape2`
+- `tex/fragment/a/3/spriteFrame -> fragmentVariantAShape3`
+- `tex/fragment/a/4/spriteFrame -> fragmentVariantAShape4`
+- `tex/fragment/a/5/spriteFrame -> fragmentVariantAShape5`
+- `tex/fragment/a/6/spriteFrame -> fragmentVariantAShape6`
+- `tex/fragment/b/1/spriteFrame -> fragmentVariantBShape1`
+- `tex/fragment/b/2/spriteFrame -> fragmentVariantBShape2`
+- `tex/fragment/b/3/spriteFrame -> fragmentVariantBShape3`
+- `tex/fragment/b/4/spriteFrame -> fragmentVariantBShape4`
+- `tex/fragment/b/5/spriteFrame -> fragmentVariantBShape5`
+- `tex/fragment/b/6/spriteFrame -> fragmentVariantBShape6`
+- `tex/fragment/c/1/spriteFrame -> fragmentVariantCShape1`
+- `tex/fragment/c/2/spriteFrame -> fragmentVariantCShape2`
+- `tex/fragment/c/3/spriteFrame -> fragmentVariantCShape3`
+- `tex/fragment/c/4/spriteFrame -> fragmentVariantCShape4`
+- `tex/fragment/c/5/spriteFrame -> fragmentVariantCShape5`
+- `tex/fragment/c/6/spriteFrame -> fragmentVariantCShape6`
+- `tex/fragment/d/1/spriteFrame -> fragmentVariantDShape1`
+- `tex/fragment/d/2/spriteFrame -> fragmentVariantDShape2`
+- `tex/fragment/d/3/spriteFrame -> fragmentVariantDShape3`
+- `tex/fragment/d/4/spriteFrame -> fragmentVariantDShape4`
+- `tex/fragment/d/5/spriteFrame -> fragmentVariantDShape5`
+- `tex/fragment/d/6/spriteFrame -> fragmentVariantDShape6`
+- `tex/fragment/e/1/spriteFrame -> fragmentVariantEShape1`
+- `tex/fragment/e/2/spriteFrame -> fragmentVariantEShape2`
+- `tex/fragment/e/3/spriteFrame -> fragmentVariantEShape3`
+- `tex/fragment/e/4/spriteFrame -> fragmentVariantEShape4`
+- `tex/fragment/e/5/spriteFrame -> fragmentVariantEShape5`
+- `tex/fragment/e/6/spriteFrame -> fragmentVariantEShape6`
+
+本轮同步调整：
+- `game.js` 中确认无调用方的 `Util.fragmentEffect()` 死 helper 已删除
+- `subpackages/DuckBundle/import/tex/fragment/*/*/spriteFrame__2.json` 中 30 个 `cc.SpriteFrame` 名
+
+本轮新增治理基础设施：
+- 新增 `architecture/tools/semanticize-duckbundle-fragment-assets.js`，把这组命名收敛固化为可重复执行脚本。
+- `architecture/tools/check-legacy-runtime-compat.js` 已新增 `fragment` 裸数字名称护栏，禁止 `"name":"1".."6"` 再次回流。
+- `architecture/tools/check-legacy-runtime-compat.js` 已新增 `fragmentEffect=function` 护栏，防止无调用死 helper 回流到主入口。
+- `architecture/tools/run-guardrails.js` 已接入该脚本的语法检查。
+
+本轮选择依据：
+- `game.js` 中原有 `Util.fragmentEffect()` 已确认没有任何调用方，属于可直接删除的死逻辑。
+- `game.js` 中 `Util.fragmentEffect()` 的动态路径只稳定证明了两条轴：`a..e` 是变体族、`1..6` 是形状槽位。
+- 当前还没有足够运行时证据证明 `a..e` 可以安全收敛为某个现成木板颜色或业务语义，因此本轮不改 `tex/fragment/a..e/*` canonical 路径。
+- 先把 `SpriteFrame.name` 从全局重名的 `1..6` 收敛为唯一且可检索的 `fragmentVariantXShapeY`，能立即降低维护噪音，同时不给未来路径级治理制造错误语义债。

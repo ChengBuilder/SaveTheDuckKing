@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-09T17:07:02.223Z",
+  "generatedAt": "2026-04-10T00:38:52.671Z",
   "projectPath": "./",
   "officialSourceUrls": [
     "https://developers.weixin.qq.com/minigame/dev/guide/base-ability/code-package.html",
@@ -31,7 +31,7 @@
       "src"
     ],
     "fileCount": 35,
-    "sizeBytes": 3515527,
+    "sizeBytes": 3514751,
     "sizeText": "3.35 MiB",
     "limitBytes": 4194304,
     "limitText": "4.00 MiB",
@@ -220,7 +220,7 @@
       {
         "path": "game.js",
         "displayPath": "game.js",
-        "sizeBytes": 2698438,
+        "sizeBytes": 2697662,
         "sizeText": "2.57 MiB"
       },
       {
@@ -3333,7 +3333,7 @@
         "subpackages/DuckBundle"
       ],
       "fileCount": 1045,
-      "sizeBytes": 2379902,
+      "sizeBytes": 2380532,
       "sizeText": "2.27 MiB",
       "limitBytes": null,
       "limitText": null,
@@ -3756,7 +3756,7 @@
         {
           "path": "subpackages/DuckBundle/import/tex/fragment/a/1/spriteFrame__2.json",
           "displayPath": "subpackages/DuckBundle/import/tex/fragment/a/1/spriteFrame__2.json",
-          "sizeBytes": 545,
+          "sizeBytes": 566,
           "sizeText": "0.00 MiB"
         },
         {
@@ -3768,7 +3768,7 @@
         {
           "path": "subpackages/DuckBundle/import/tex/fragment/a/2/spriteFrame__2.json",
           "displayPath": "subpackages/DuckBundle/import/tex/fragment/a/2/spriteFrame__2.json",
-          "sizeBytes": 545,
+          "sizeBytes": 566,
           "sizeText": "0.00 MiB"
         },
         {
@@ -3780,7 +3780,7 @@
         {
           "path": "subpackages/DuckBundle/import/tex/fragment/a/3/spriteFrame__2.json",
           "displayPath": "subpackages/DuckBundle/import/tex/fragment/a/3/spriteFrame__2.json",
-          "sizeBytes": 533,
+          "sizeBytes": 554,
           "sizeText": "0.00 MiB"
         },
         {
@@ -3792,7 +3792,7 @@
         {
           "path": "subpackages/DuckBundle/import/tex/fragment/a/4/spriteFrame__2.json",
           "displayPath": "subpackages/DuckBundle/import/tex/fragment/a/4/spriteFrame__2.json",
-          "sizeBytes": 557,
+          "sizeBytes": 578,
           "sizeText": "0.00 MiB"
         },
         {
@@ -3804,7 +3804,7 @@
         {
           "path": "subpackages/DuckBundle/import/tex/fragment/a/5/spriteFrame__2.json",
           "displayPath": "subpackages/DuckBundle/import/tex/fragment/a/5/spriteFrame__2.json",
-          "sizeBytes": 533,
+          "sizeBytes": 554,
           "sizeText": "0.00 MiB"
         },
         {
@@ -3816,7 +3816,7 @@
         {
           "path": "subpackages/DuckBundle/import/tex/fragment/a/6/spriteFrame__2.json",
           "displayPath": "subpackages/DuckBundle/import/tex/fragment/a/6/spriteFrame__2.json",
-          "sizeBytes": 545,
+          "sizeBytes": 566,
           "sizeText": "0.00 MiB"
         },
         {
@@ -3828,7 +3828,7 @@
         {
           "path": "subpackages/DuckBundle/import/tex/fragment/b/1/spriteFrame__2.json",
           "displayPath": "subpackages/DuckBundle/import/tex/fragment/b/1/spriteFrame__2.json",
-          "sizeBytes": 545,
+          "sizeBytes": 566,
           "sizeText": "0.00 MiB"
         },
         {
@@ -3840,7 +3840,7 @@
         {
           "path": "subpackages/DuckBundle/import/tex/fragment/b/2/spriteFrame__2.json",
           "displayPath": "subpackages/DuckBundle/import/tex/fragment/b/2/spriteFrame__2.json",
-          "sizeBytes": 545,
+          "sizeBytes": 566,
           "sizeText": "0.00 MiB"
         },
         {
@@ -3852,7 +3852,7 @@
         {
           "path": "subpackages/DuckBundle/import/tex/fragment/b/3/spriteFrame__2.json",
           "displayPath": "subpackages/DuckBundle/import/tex/fragment/b/3/spriteFrame__2.json",
-          "sizeBytes": 533,
+          "sizeBytes": 554,
           "sizeText": "0.00 MiB"
         },
         {
@@ -3864,7 +3864,7 @@
         {
           "path": "subpackages/DuckBundle/import/tex/fragment/b/4/spriteFrame__2.json",
           "displayPath": "subpackages/DuckBundle/import/tex/fragment/b/4/spriteFrame__2.json",
-          "sizeBytes": 557,
+          "sizeBytes": 578,
           "sizeText": "0.00 MiB"
         },
         {
@@ -3876,7 +3876,7 @@
         {
           "path": "subpackages/DuckBundle/import/tex/fragment/b/5/spriteFrame__2.json",
           "displayPath": "subpackages/DuckBundle/import/tex/fragment/b/5/spriteFrame__2.json",
-          "sizeBytes": 533,
+          "sizeBytes": 554,
           "sizeText": "0.00 MiB"
         },
         {
@@ -3888,7 +3888,7 @@
         {
           "path": "subpackages/DuckBundle/import/tex/fragment/b/6/spriteFrame__2.json",
           "displayPath": "subpackages/DuckBundle/import/tex/fragment/b/6/spriteFrame__2.json",
-          "sizeBytes": 545,
+          "sizeBytes": 566,
           "sizeText": "0.00 MiB"
         },
         {
@@ -3900,7 +3900,7 @@
         {
           "path": "subpackages/DuckBundle/import/tex/fragment/c/1/spriteFrame__2.json",
           "displayPath": "subpackages/DuckBundle/import/tex/fragment/c/1/spriteFrame__2.json",
-          "sizeBytes": 545,
+          "sizeBytes": 566,
           "sizeText": "0.00 MiB"
         },
         {
@@ -3912,7 +3912,7 @@
         {
           "path": "subpackages/DuckBundle/import/tex/fragment/c/2/spriteFrame__2.json",
           "displayPath": "subpackages/DuckBundle/import/tex/fragment/c/2/spriteFrame__2.json",
-          "sizeBytes": 545,
+          "sizeBytes": 566,
           "sizeText": "0.00 MiB"
         },
         {
@@ -3924,7 +3924,7 @@
         {
           "path": "subpackages/DuckBundle/import/tex/fragment/c/3/spriteFrame__2.json",
           "displayPath": "subpackages/DuckBundle/import/tex/fragment/c/3/spriteFrame__2.json",
-          "sizeBytes": 533,
+          "sizeBytes": 554,
           "sizeText": "0.00 MiB"
         },
         {
@@ -3936,7 +3936,7 @@
         {
           "path": "subpackages/DuckBundle/import/tex/fragment/c/4/spriteFrame__2.json",
           "displayPath": "subpackages/DuckBundle/import/tex/fragment/c/4/spriteFrame__2.json",
-          "sizeBytes": 557,
+          "sizeBytes": 578,
           "sizeText": "0.00 MiB"
         },
         {
@@ -3948,7 +3948,7 @@
         {
           "path": "subpackages/DuckBundle/import/tex/fragment/c/5/spriteFrame__2.json",
           "displayPath": "subpackages/DuckBundle/import/tex/fragment/c/5/spriteFrame__2.json",
-          "sizeBytes": 533,
+          "sizeBytes": 554,
           "sizeText": "0.00 MiB"
         },
         {
@@ -3960,7 +3960,7 @@
         {
           "path": "subpackages/DuckBundle/import/tex/fragment/c/6/spriteFrame__2.json",
           "displayPath": "subpackages/DuckBundle/import/tex/fragment/c/6/spriteFrame__2.json",
-          "sizeBytes": 545,
+          "sizeBytes": 566,
           "sizeText": "0.00 MiB"
         },
         {
@@ -3972,7 +3972,7 @@
         {
           "path": "subpackages/DuckBundle/import/tex/fragment/d/1/spriteFrame__2.json",
           "displayPath": "subpackages/DuckBundle/import/tex/fragment/d/1/spriteFrame__2.json",
-          "sizeBytes": 545,
+          "sizeBytes": 566,
           "sizeText": "0.00 MiB"
         },
         {
@@ -3984,7 +3984,7 @@
         {
           "path": "subpackages/DuckBundle/import/tex/fragment/d/2/spriteFrame__2.json",
           "displayPath": "subpackages/DuckBundle/import/tex/fragment/d/2/spriteFrame__2.json",
-          "sizeBytes": 545,
+          "sizeBytes": 566,
           "sizeText": "0.00 MiB"
         },
         {
@@ -3996,7 +3996,7 @@
         {
           "path": "subpackages/DuckBundle/import/tex/fragment/d/3/spriteFrame__2.json",
           "displayPath": "subpackages/DuckBundle/import/tex/fragment/d/3/spriteFrame__2.json",
-          "sizeBytes": 533,
+          "sizeBytes": 554,
           "sizeText": "0.00 MiB"
         },
         {
@@ -4008,7 +4008,7 @@
         {
           "path": "subpackages/DuckBundle/import/tex/fragment/d/4/spriteFrame__2.json",
           "displayPath": "subpackages/DuckBundle/import/tex/fragment/d/4/spriteFrame__2.json",
-          "sizeBytes": 557,
+          "sizeBytes": 578,
           "sizeText": "0.00 MiB"
         },
         {
@@ -4020,7 +4020,7 @@
         {
           "path": "subpackages/DuckBundle/import/tex/fragment/d/5/spriteFrame__2.json",
           "displayPath": "subpackages/DuckBundle/import/tex/fragment/d/5/spriteFrame__2.json",
-          "sizeBytes": 533,
+          "sizeBytes": 554,
           "sizeText": "0.00 MiB"
         },
         {
@@ -4032,7 +4032,7 @@
         {
           "path": "subpackages/DuckBundle/import/tex/fragment/d/6/spriteFrame__2.json",
           "displayPath": "subpackages/DuckBundle/import/tex/fragment/d/6/spriteFrame__2.json",
-          "sizeBytes": 545,
+          "sizeBytes": 566,
           "sizeText": "0.00 MiB"
         },
         {
@@ -4044,7 +4044,7 @@
         {
           "path": "subpackages/DuckBundle/import/tex/fragment/e/1/spriteFrame__2.json",
           "displayPath": "subpackages/DuckBundle/import/tex/fragment/e/1/spriteFrame__2.json",
-          "sizeBytes": 545,
+          "sizeBytes": 566,
           "sizeText": "0.00 MiB"
         },
         {
@@ -4056,7 +4056,7 @@
         {
           "path": "subpackages/DuckBundle/import/tex/fragment/e/2/spriteFrame__2.json",
           "displayPath": "subpackages/DuckBundle/import/tex/fragment/e/2/spriteFrame__2.json",
-          "sizeBytes": 545,
+          "sizeBytes": 566,
           "sizeText": "0.00 MiB"
         },
         {
@@ -4068,7 +4068,7 @@
         {
           "path": "subpackages/DuckBundle/import/tex/fragment/e/3/spriteFrame__2.json",
           "displayPath": "subpackages/DuckBundle/import/tex/fragment/e/3/spriteFrame__2.json",
-          "sizeBytes": 533,
+          "sizeBytes": 554,
           "sizeText": "0.00 MiB"
         },
         {
@@ -4080,7 +4080,7 @@
         {
           "path": "subpackages/DuckBundle/import/tex/fragment/e/4/spriteFrame__2.json",
           "displayPath": "subpackages/DuckBundle/import/tex/fragment/e/4/spriteFrame__2.json",
-          "sizeBytes": 557,
+          "sizeBytes": 578,
           "sizeText": "0.00 MiB"
         },
         {
@@ -4092,7 +4092,7 @@
         {
           "path": "subpackages/DuckBundle/import/tex/fragment/e/5/spriteFrame__2.json",
           "displayPath": "subpackages/DuckBundle/import/tex/fragment/e/5/spriteFrame__2.json",
-          "sizeBytes": 533,
+          "sizeBytes": 554,
           "sizeText": "0.00 MiB"
         },
         {
@@ -4104,7 +4104,7 @@
         {
           "path": "subpackages/DuckBundle/import/tex/fragment/e/6/spriteFrame__2.json",
           "displayPath": "subpackages/DuckBundle/import/tex/fragment/e/6/spriteFrame__2.json",
-          "sizeBytes": 545,
+          "sizeBytes": 566,
           "sizeText": "0.00 MiB"
         },
         {
@@ -12211,7 +12211,7 @@
   "totals": {
     "packageCount": 9,
     "fileCount": 2005,
-    "sizeBytes": 26594939,
+    "sizeBytes": 26594793,
     "sizeText": "25.36 MiB",
     "limitBytes": 31457280,
     "limitText": "30.00 MiB",
