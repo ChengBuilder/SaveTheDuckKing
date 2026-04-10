@@ -40,3 +40,11 @@ node architecture/tools/run-wechat-ci.js doctor
 - 子包 `import/*.json` 与 `native/*` 大量 UUID 文件属于 Cocos 编译产物，通常不可直接删除。
 - 2026-04-10 运行时回归结论：`assets/mainbundle`、`assets/Game2Bundlebundle` 这类旧名如果只在 fs/media 层 remap，会出现“分包尚未加载”与 Cocos 4930；必须先在 bundle downloader 层归一化到 `main`、`Game2Bundle` 等 canonical 名。
 - 如果需要完整审计明细，可按需启用 full 模式；默认报告以“可读摘要 + 样例”为主，避免仓库膨胀。
+
+## 跨机续航（2026-04-10）
+- 本轮踩坑与修复清单已沉淀到：
+  - `architecture/docs/continuation-pitfalls.md`
+- 新 AI 接手时先读这份文档，再开始改动，可避免重复踩坑：
+  - 分包加载：先 bundle 名归一化，再文件 remap。
+  - 语义化/护栏正则：统一使用 `\"name\"\\s*:\\s*\"...\"` 空白容忍。
+  - 提交前清理并行残留：确保工作区只含预期改动。
