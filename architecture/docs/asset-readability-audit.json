@@ -1,11 +1,10 @@
 {
-  "generatedAt": "2026-04-08T15:18:23.831Z",
   "bundleCount": 10,
   "totalAssetPaths": 2293,
-  "candidateCount": 739,
-  "highSeverityCount": 97,
-  "mediumSeverityCount": 420,
-  "lowSeverityCount": 222,
+  "candidateCount": 678,
+  "highSeverityCount": 96,
+  "mediumSeverityCount": 373,
+  "lowSeverityCount": 209,
   "topCandidates": [
     {
       "bundleId": "audioBundle",
@@ -1133,26 +1132,22 @@
       "bundleId": "uiBundle",
       "configPath": "subpackages/uiBundle/config.ui-bundle.json",
       "assetCount": 400,
-      "candidateCount": 332,
-      "highSeverityCount": 1,
-      "mediumSeverityCount": 285,
-      "lowSeverityCount": 46,
+      "candidateCount": 280,
+      "highSeverityCount": 0,
+      "mediumSeverityCount": 238,
+      "lowSeverityCount": 42,
       "noisySegments": [
         {
           "segment": "主页素材",
           "count": 48
         },
         {
-          "segment": "过关页面",
-          "count": 27
-        },
-        {
           "segment": "道具",
           "count": 22
         },
         {
-          "segment": "成功进度",
-          "count": 21
+          "segment": "过关页面",
+          "count": 20
         },
         {
           "segment": "复活",
@@ -1161,6 +1156,10 @@
         {
           "segment": "失败页面",
           "count": 15
+        },
+        {
+          "segment": "成功进度",
+          "count": 14
         },
         {
           "segment": "订阅",
@@ -1180,20 +1179,6 @@
         }
       ],
       "sampleCandidates": [
-        {
-          "bundleId": "uiBundle",
-          "path": "tex/book/tex/NO/spriteFrame",
-          "score": 4,
-          "severity": "high",
-          "issues": [
-            {
-              "segment": "NO",
-              "type": "short-opaque-token",
-              "score": 4,
-              "reason": "片段过短且缺少语义，通常属于缩写或临时命名"
-            }
-          ]
-        },
         {
           "bundleId": "uiBundle",
           "path": "tex/过关页面/成功进度/百鹅朝凤/spriteFrame",
@@ -1352,7 +1337,7 @@
         },
         {
           "bundleId": "uiBundle",
-          "path": "tex/过关页面/成功进度/光圈",
+          "path": "tex/过关页面/成功进度/只鹅解锁百鹅朝凤/spriteFrame",
           "score": 3,
           "severity": "medium",
           "issues": [
@@ -1369,7 +1354,7 @@
               "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
             },
             {
-              "segment": "光圈",
+              "segment": "只鹅解锁百鹅朝凤",
               "type": "non-ascii",
               "score": 1,
               "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
@@ -1378,7 +1363,7 @@
         },
         {
           "bundleId": "uiBundle",
-          "path": "tex/过关页面/成功进度/光圈/spriteFrame",
+          "path": "tex/过关页面/成功进度/只鹅解锁百鹅朝麟/spriteFrame",
           "score": 3,
           "severity": "medium",
           "issues": [
@@ -1395,7 +1380,7 @@
               "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
             },
             {
-              "segment": "光圈",
+              "segment": "只鹅解锁百鹅朝麟",
               "type": "non-ascii",
               "score": 1,
               "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
@@ -1404,7 +1389,7 @@
         },
         {
           "bundleId": "uiBundle",
-          "path": "tex/过关页面/成功进度/光圈/texture",
+          "path": "tex/过关页面/成功进度/只鹅解锁百鹅朝鹏/spriteFrame",
           "score": 3,
           "severity": "medium",
           "issues": [
@@ -1421,7 +1406,7 @@
               "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
             },
             {
-              "segment": "光圈",
+              "segment": "只鹅解锁百鹅朝鹏",
               "type": "non-ascii",
               "score": 1,
               "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
@@ -1430,7 +1415,7 @@
         },
         {
           "bundleId": "uiBundle",
-          "path": "tex/过关页面/成功进度/剪影/spriteFrame",
+          "path": "tex/过关页面/成功进度/只鹅解锁百鸭朝雀/spriteFrame",
           "score": 3,
           "severity": "medium",
           "issues": [
@@ -1447,7 +1432,7 @@
               "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
             },
             {
-              "segment": "剪影",
+              "segment": "只鹅解锁百鸭朝雀",
               "type": "non-ascii",
               "score": 1,
               "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
@@ -1456,7 +1441,7 @@
         },
         {
           "bundleId": "uiBundle",
-          "path": "tex/过关页面/成功进度/条1/spriteFrame",
+          "path": "tex/过关页面/成功进度/只鸭解锁百鸭朝鹅/spriteFrame",
           "score": 3,
           "severity": "medium",
           "issues": [
@@ -1473,7 +1458,33 @@
               "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
             },
             {
-              "segment": "条1",
+              "segment": "只鸭解锁百鸭朝鹅",
+              "type": "non-ascii",
+              "score": 1,
+              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
+            }
+          ]
+        },
+        {
+          "bundleId": "uiBundle",
+          "path": "tex/过关页面/成功进度/只鸭解锁百鸭朝鲲/spriteFrame",
+          "score": 3,
+          "severity": "medium",
+          "issues": [
+            {
+              "segment": "过关页面",
+              "type": "non-ascii",
+              "score": 1,
+              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
+            },
+            {
+              "segment": "成功进度",
+              "type": "non-ascii",
+              "score": 1,
+              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
+            },
+            {
+              "segment": "只鸭解锁百鸭朝鲲",
               "type": "non-ascii",
               "score": 1,
               "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
@@ -2326,157 +2337,6 @@
       ]
     },
     {
-      "bundleId": "HomeBundle",
-      "configPath": "subpackages/HomeBundle/config.home-bundle.json",
-      "assetCount": 231,
-      "candidateCount": 9,
-      "highSeverityCount": 0,
-      "mediumSeverityCount": 0,
-      "lowSeverityCount": 9,
-      "noisySegments": [
-        {
-          "segment": "光",
-          "count": 3
-        },
-        {
-          "segment": "获得100只鹅解锁",
-          "count": 3
-        },
-        {
-          "segment": "获得100只鸭子解锁",
-          "count": 3
-        }
-      ],
-      "sampleCandidates": [
-        {
-          "bundleId": "HomeBundle",
-          "path": "tex/光",
-          "score": 1,
-          "severity": "low",
-          "issues": [
-            {
-              "segment": "光",
-              "type": "non-ascii",
-              "score": 1,
-              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
-            }
-          ]
-        },
-        {
-          "bundleId": "HomeBundle",
-          "path": "tex/光/spriteFrame",
-          "score": 1,
-          "severity": "low",
-          "issues": [
-            {
-              "segment": "光",
-              "type": "non-ascii",
-              "score": 1,
-              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
-            }
-          ]
-        },
-        {
-          "bundleId": "HomeBundle",
-          "path": "tex/光/texture",
-          "score": 1,
-          "severity": "low",
-          "issues": [
-            {
-              "segment": "光",
-              "type": "non-ascii",
-              "score": 1,
-              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
-            }
-          ]
-        },
-        {
-          "bundleId": "HomeBundle",
-          "path": "tex/获得100只鹅解锁",
-          "score": 1,
-          "severity": "low",
-          "issues": [
-            {
-              "segment": "获得100只鹅解锁",
-              "type": "non-ascii",
-              "score": 1,
-              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
-            }
-          ]
-        },
-        {
-          "bundleId": "HomeBundle",
-          "path": "tex/获得100只鹅解锁/spriteFrame",
-          "score": 1,
-          "severity": "low",
-          "issues": [
-            {
-              "segment": "获得100只鹅解锁",
-              "type": "non-ascii",
-              "score": 1,
-              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
-            }
-          ]
-        },
-        {
-          "bundleId": "HomeBundle",
-          "path": "tex/获得100只鹅解锁/texture",
-          "score": 1,
-          "severity": "low",
-          "issues": [
-            {
-              "segment": "获得100只鹅解锁",
-              "type": "non-ascii",
-              "score": 1,
-              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
-            }
-          ]
-        },
-        {
-          "bundleId": "HomeBundle",
-          "path": "tex/获得100只鸭子解锁",
-          "score": 1,
-          "severity": "low",
-          "issues": [
-            {
-              "segment": "获得100只鸭子解锁",
-              "type": "non-ascii",
-              "score": 1,
-              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
-            }
-          ]
-        },
-        {
-          "bundleId": "HomeBundle",
-          "path": "tex/获得100只鸭子解锁/spriteFrame",
-          "score": 1,
-          "severity": "low",
-          "issues": [
-            {
-              "segment": "获得100只鸭子解锁",
-              "type": "non-ascii",
-              "score": 1,
-              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
-            }
-          ]
-        },
-        {
-          "bundleId": "HomeBundle",
-          "path": "tex/获得100只鸭子解锁/texture",
-          "score": 1,
-          "severity": "low",
-          "issues": [
-            {
-              "segment": "获得100只鸭子解锁",
-              "type": "non-ascii",
-              "score": 1,
-              "reason": "片段包含非 ASCII 字符，适合后续按规范统一目录语言"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "bundleId": "audioBundle",
       "configPath": "subpackages/audioBundle/config.audio-bundle.json",
       "assetCount": 65,
@@ -2542,6 +2402,17 @@
           ]
         }
       ]
+    },
+    {
+      "bundleId": "HomeBundle",
+      "configPath": "subpackages/HomeBundle/config.home-bundle.json",
+      "assetCount": 231,
+      "candidateCount": 0,
+      "highSeverityCount": 0,
+      "mediumSeverityCount": 0,
+      "lowSeverityCount": 0,
+      "noisySegments": [],
+      "sampleCandidates": []
     },
     {
       "bundleId": "internal",

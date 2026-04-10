@@ -1,5 +1,4 @@
 {
-  "generatedAt": "2026-04-08T15:18:23.716Z",
   "summary": {
     "totalBundles": 10,
     "rootBundles": 2,
@@ -8,7 +7,7 @@
     "totalScenes": 6,
     "totalImportFiles": 1299,
     "totalNativeFiles": 660,
-    "totalUuidLikeCompiledFiles": 1959,
+    "totalUuidLikeCompiledFiles": 5,
     "bundlesWithNamingNoise": 4
   },
   "bundles": [
@@ -261,7 +260,7 @@
       "uuidCount": 1251,
       "compiledImportFileCount": 708,
       "compiledNativeFileCount": 335,
-      "compiledUuidLikeFileCount": 1043
+      "compiledUuidLikeFileCount": 0
     },
     {
       "bundleId": "Game2Bundle",
@@ -358,11 +357,11 @@
       "uuidCount": 175,
       "compiledImportFileCount": 67,
       "compiledNativeFileCount": 15,
-      "compiledUuidLikeFileCount": 82
+      "compiledUuidLikeFileCount": 0
     },
     {
       "bundleId": "HomeBundle",
-      "semanticLabel": "home-hall",
+      "semanticLabel": "duck-game",
       "bundleType": "subpackage-bundle",
       "directoryPath": "subpackages/HomeBundle",
       "configPath": "subpackages/HomeBundle/config.home-bundle.json",
@@ -412,16 +411,8 @@
           "count": 12
         },
         {
-          "name": "tex/光",
-          "count": 3
-        },
-        {
-          "name": "tex/获得100只鹅解锁",
-          "count": 3
-        },
-        {
-          "name": "tex/获得100只鸭子解锁",
-          "count": 3
+          "name": "tex/unlockTips",
+          "count": 9
         },
         {
           "name": "prefab/bgThing",
@@ -430,11 +421,15 @@
         {
           "name": "prefab/gooseTip",
           "count": 1
+        },
+        {
+          "name": "prefab/home_particle",
+          "count": 1
         }
       ],
       "samplePaths": [
         "tex/homeTheme2/foreground/foregroundLayer5",
-        "tex/获得100只鸭子解锁",
+        "tex/unlockTips/duckUnlockAt100",
         "tex/homeTheme3/foreground/foregroundLayer3",
         "tex/homeTheme2/bottomOverlay",
         "tex/homeTheme1/midground/midgroundLayer2",
@@ -447,7 +442,7 @@
         "tex/homeTheme0/midground/midgroundLayer1",
         "tex/homeTheme0/distant/distantLayer1",
         "tex/homeTheme3/background/backgroundLayer1",
-        "tex/获得100只鹅解锁",
+        "tex/unlockTips/gooseUnlockAt100",
         "tex/homeTheme5/midground/midgroundLayer2"
       ],
       "namingNoisePaths": [],
@@ -455,7 +450,7 @@
       "uuidCount": 239,
       "compiledImportFileCount": 149,
       "compiledNativeFileCount": 74,
-      "compiledUuidLikeFileCount": 223
+      "compiledUuidLikeFileCount": 0
     },
     {
       "bundleId": "aniBundle",
@@ -635,7 +630,7 @@
       "uuidCount": 159,
       "compiledImportFileCount": 86,
       "compiledNativeFileCount": 42,
-      "compiledUuidLikeFileCount": 128
+      "compiledUuidLikeFileCount": 0
     },
     {
       "bundleId": "audioBundle",
@@ -817,7 +812,7 @@
       "uuidCount": 65,
       "compiledImportFileCount": 65,
       "compiledNativeFileCount": 65,
-      "compiledUuidLikeFileCount": 130
+      "compiledUuidLikeFileCount": 0
     },
     {
       "bundleId": "main",
@@ -861,7 +856,7 @@
       "uuidCount": 523,
       "compiledImportFileCount": 122,
       "compiledNativeFileCount": 99,
-      "compiledUuidLikeFileCount": 221
+      "compiledUuidLikeFileCount": 0
     },
     {
       "bundleId": "resources",
@@ -964,7 +959,7 @@
       "uuidCount": 39,
       "compiledImportFileCount": 11,
       "compiledNativeFileCount": 3,
-      "compiledUuidLikeFileCount": 14
+      "compiledUuidLikeFileCount": 0
     },
     {
       "bundleId": "uiBundle",
@@ -998,12 +993,12 @@
           "count": 48
         },
         {
-          "name": "tex/过关页面",
-          "count": 27
-        },
-        {
           "name": "tex/道具",
           "count": 21
+        },
+        {
+          "name": "tex/过关页面",
+          "count": 20
         },
         {
           "name": "tex/settings",
@@ -1018,11 +1013,15 @@
           "count": 14
         },
         {
+          "name": "tex/sharePage",
+          "count": 12
+        },
+        {
           "name": "tex/更多玩法",
           "count": 9
         },
         {
-          "name": "tex/投诉页面",
+          "name": "tex/reportDialog",
           "count": 8
         },
         {
@@ -1030,12 +1029,8 @@
           "count": 7
         },
         {
-          "name": "tex/喊人页面",
-          "count": 6
-        },
-        {
-          "name": "tex/自动ui",
-          "count": 6
+          "name": "tex/levelCompletePage",
+          "count": 7
         }
       ],
       "samplePaths": [
@@ -1044,16 +1039,16 @@
         "tex/过关页面/成功进度/只鸭解锁百鸭朝雀/spriteFrame",
         "tex/settings/giveUpChallengeText/spriteFrame",
         "tex/更多玩法/图标算数/spriteFrame",
-        "tex/book/tex/全部/spriteFrame",
+        "tex/book/ui/filterAll/spriteFrame",
         "tex/主页素材/排行榜/名次底2/spriteFrame",
         "tex/失败页面/继续挑战/spriteFrame",
         "tex/book/duck/y51/spriteFrame",
         "tex/book/duck/y75/spriteFrame",
-        "tex/book/分享鸭/张飞鸭/spriteFrame",
+        "tex/book/shareCollection/张飞鸭/spriteFrame",
         "tex/book/pigeonGallery/skinCollection/skinPage8/spriteFrame",
         "tex/settings/soundEffectIcon/spriteFrame",
         "prefab/ShareUI",
-        "tex/book/tex/100/spriteFrame",
+        "tex/book/ui/completion100Label/spriteFrame",
         "tex/book/duck/y17/spriteFrame"
       ],
       "namingNoisePaths": [
@@ -1081,10 +1076,6 @@
         },
         {
           "name": "%",
-          "count": 1
-        },
-        {
-          "name": "NO",
           "count": 1
         },
         {
@@ -1122,12 +1113,16 @@
         {
           "name": "y16",
           "count": 1
+        },
+        {
+          "name": "y17",
+          "count": 1
         }
       ],
       "uuidCount": 538,
       "compiledImportFileCount": 89,
       "compiledNativeFileCount": 24,
-      "compiledUuidLikeFileCount": 113
+      "compiledUuidLikeFileCount": 0
     }
   ]
 }

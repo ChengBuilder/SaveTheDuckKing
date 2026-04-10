@@ -1,5 +1,4 @@
 {
-  "generatedAt": "2026-04-09T10:41:27.024Z",
   "projectPath": "./",
   "reportMode": {
     "includeFullRecords": false,
@@ -1466,8 +1465,8 @@
           "dependencyCount": 4,
           "dependencySamples": [],
           "nameSamples": [
-            "获得100只鸭子解锁",
-            "获得100只鹅解锁"
+            "duckUnlockAt100",
+            "gooseUnlockAt100"
           ]
         },
         {
@@ -1920,11 +1919,11 @@
           "dependencySamples": [],
           "nameSamples": [
             "图标算数",
-            "p10",
+            "skinPage10",
             "百鸭朝雀",
-            "p9",
-            "求助",
-            "鸽鸽图鉴"
+            "skinPage9",
+            "helpLabel",
+            "titleBanner"
           ]
         }
       ],
@@ -2507,10 +2506,10 @@
           "nameSamples": [
             "百鸭朝雀",
             "百鹅朝鹏",
-            "更多玩法",
+            "moreGamesLabel",
             "百鹅朝麟",
-            "鸽鸽图鉴",
-            "添加桌面"
+            "titleBanner",
+            "addToDesktopLabel"
           ]
         },
         {

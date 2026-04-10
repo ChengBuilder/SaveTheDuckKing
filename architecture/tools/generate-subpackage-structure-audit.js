@@ -666,7 +666,6 @@ function buildAuditReport(layout, bundleAudits) {
   };
 
   return {
-    generatedAt: new Date().toISOString(),
     projectPath: formatProjectPathFromWorkspace(layout, ''),
     reportMode: {
       includeFullRecords: INCLUDE_FULL_RECORDS,

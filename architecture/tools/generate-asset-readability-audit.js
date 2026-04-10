@@ -177,7 +177,6 @@ function buildAuditPayload(bundleRecords) {
   const lowSeverityCount = globalCandidates.filter(isLowSeverityCandidate).length;
 
   return {
-    generatedAt: new Date().toISOString(),
     bundleCount: bundleRecords.length,
     totalAssetPaths: totalAssetPaths,
     candidateCount: globalCandidates.length,
@@ -360,7 +359,6 @@ function buildAuditMarkdownLines(auditPayload) {
   lines.push('> 本文件由 `architecture/tools/generate-asset-readability-audit.js` 生成。');
   lines.push('');
   lines.push('## 总览');
-  lines.push('- 生成时间：' + auditPayload.generatedAt);
   lines.push('- Bundle 数：' + auditPayload.bundleCount);
   lines.push('- 扫描 canonical 路径数：' + auditPayload.totalAssetPaths);
   lines.push('- 命中候选数：' + auditPayload.candidateCount);

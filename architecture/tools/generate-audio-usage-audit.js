@@ -70,7 +70,6 @@ function generateAudioUsageAudit() {
  * @param {{importAliases?: {detail?: {canonicalPath?: string}}[]}|null} semanticAliasManifest 当前语义化别名清单
  * @param {string} audioBundleImportDirPath 当前 audioBundle import 目录绝对路径
  * @returns {{
- *  generatedAt: string,
  *  bundleName: string,
  *  totalAudioPaths: number,
  *  directReferenceCount: number,
@@ -127,7 +126,6 @@ function buildAudioUsageAuditPayload(
     });
 
   return {
-    generatedAt: new Date().toISOString(),
     bundleName: String(audioBundleConfig.name || 'audioBundle'),
     totalAudioPaths: records.length,
     directReferenceCount: collectedReferences.exactReferences.length,
@@ -445,7 +443,6 @@ function buildAudioUsageAuditMarkdownLines(layout, auditPayload) {
   lines.push('> 本文件由 `architecture/tools/generate-audio-usage-audit.js` 生成。');
   lines.push('');
   lines.push('## 总览');
-  lines.push('- 生成时间：' + auditPayload.generatedAt);
   lines.push('- Bundle：`' + auditPayload.bundleName + '`');
   lines.push('- 音频 canonical 路径数：' + auditPayload.totalAudioPaths);
   lines.push('- 直接引用条目数：' + auditPayload.directMatchCount);

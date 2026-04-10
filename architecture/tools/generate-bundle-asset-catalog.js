@@ -410,7 +410,6 @@ function toKebabCase(targetText) {
  * 构建目录数据载荷。
  * @param {ReturnType<typeof createBundleRecord>[]} bundleRecords bundle 记录
  * @returns {{
- *  generatedAt: string,
  *  summary: {
  *    totalBundles: number,
  *    rootBundles: number,
@@ -456,7 +455,6 @@ function buildCatalogPayload(bundleRecords) {
   }
 
   return {
-    generatedAt: new Date().toISOString(),
     summary: summary,
     bundles: bundleRecords
   };
@@ -466,7 +464,6 @@ function buildCatalogPayload(bundleRecords) {
  * 构建 Markdown 目录。
  * @param {{projectRoot: string, projectPathFromWorkspace: string}} layout 项目布局
  * @param {{
- *  generatedAt: string,
  *  summary: {
  *    totalBundles: number,
  *    rootBundles: number,
@@ -489,7 +486,6 @@ function buildCatalogMarkdownLines(layout, catalogPayload) {
   lines.push('> 本文件由 `architecture/tools/generate-bundle-asset-catalog.js` 生成。');
   lines.push('');
   lines.push('## 总览');
-  lines.push('- 生成时间：' + catalogPayload.generatedAt);
   lines.push('- Bundle 总数：' + catalogPayload.summary.totalBundles);
   lines.push('- Root bundle 数：' + catalogPayload.summary.rootBundles);
   lines.push('- Subpackage bundle 数：' + catalogPayload.summary.subpackageBundles);

@@ -3,14 +3,13 @@
 > 本文件由 `architecture/tools/generate-bundle-asset-catalog.js` 生成。
 
 ## 总览
-- 生成时间：2026-04-08T15:18:23.716Z
 - Bundle 总数：10
 - Root bundle 数：2
 - Subpackage bundle 数：8
 - 资产路径记录数：2293
 - 场景路径数：6
 - 编译产物文件数：import 1299 / native 660
-- UUID 风格编译文件数：1959
+- UUID 风格编译文件数：5
 - 存在低可读命名候选的 bundle 数：4
 
 ## Bundle 一览
@@ -20,7 +19,7 @@
 | `start-scene` | `start-scene` | root-bundle | 无 | 3 | 1 | db: |
 | `DuckBundle` | `duck-game` | subpackage-bundle | `main`、`resources` | 1227 | 0 | tex / prefab |
 | `Game2Bundle` | `fruit-game` | subpackage-bundle | `main` | 161 | 0 | tex / prefab |
-| `HomeBundle` | `home-hall` | subpackage-bundle | `main` | 231 | 0 | tex / prefab |
+| `HomeBundle` | `duck-game` | subpackage-bundle | `main` | 231 | 0 | tex / prefab |
 | `aniBundle` | `animation-assets` | subpackage-bundle | `main`、`start-scene` | 156 | 0 | 神兽动画合集 / 骨骼动画 / 小三视频 |
 | `audioBundle` | `audio-assets` | subpackage-bundle | 无 | 65 | 0 | fruitGame / comboMusic / ui |
 | `main` | `main-scenes` | subpackage-bundle | `start-scene` | 5 | 5 | db: |
@@ -105,7 +104,7 @@
 - 场景路径数：0
 - UUID 记录数：1251
 - 编译产物文件：import 708 / native 335
-- UUID 风格编译文件：1043
+- UUID 风格编译文件：0
 - 命名噪声高频片段：
   - `a`：18
   - `b`：18
@@ -182,7 +181,7 @@
 - 场景路径数：0
 - UUID 记录数：175
 - 编译产物文件：import 67 / native 15
-- UUID 风格编译文件：82
+- UUID 风格编译文件：0
 - 命名噪声高频片段：
   - 无
 - 命名噪声样例路径：
@@ -224,7 +223,7 @@
   - 无
 
 ### HomeBundle
-- 治理标签：`home-hall`
+- 治理标签：`duck-game`
 - 类型：`subpackage-bundle`
 - 目录：`subpackages/HomeBundle`
 - 配置：`subpackages/HomeBundle/config.home-bundle.json`
@@ -233,7 +232,7 @@
 - 场景路径数：0
 - UUID 记录数：239
 - 编译产物文件：import 149 / native 74
-- UUID 风格编译文件：223
+- UUID 风格编译文件：0
 - 命名噪声高频片段：
   - 无
 - 命名噪声样例路径：
@@ -249,14 +248,13 @@
   - `tex/homeTheme5`：36
   - `tex/homeTheme0`：27
   - `tex/backgroundParticles`：12
-  - `tex/光`：3
-  - `tex/获得100只鹅解锁`：3
-  - `tex/获得100只鸭子解锁`：3
+  - `tex/unlockTips`：9
   - `prefab/bgThing`：1
   - `prefab/gooseTip`：1
+  - `prefab/home_particle`：1
 - 样例路径：
   - `tex/homeTheme2/foreground/foregroundLayer5`
-  - `tex/获得100只鸭子解锁`
+  - `tex/unlockTips/duckUnlockAt100`
   - `tex/homeTheme3/foreground/foregroundLayer3`
   - `tex/homeTheme2/bottomOverlay`
   - `tex/homeTheme1/midground/midgroundLayer2`
@@ -269,7 +267,7 @@
   - `tex/homeTheme0/midground/midgroundLayer1`
   - `tex/homeTheme0/distant/distantLayer1`
   - `tex/homeTheme3/background/backgroundLayer1`
-  - `tex/获得100只鹅解锁`
+  - `tex/unlockTips/gooseUnlockAt100`
   - `tex/homeTheme5/midground/midgroundLayer2`
 - 场景路径：
   - 无
@@ -284,7 +282,7 @@
 - 场景路径数：0
 - UUID 记录数：159
 - 编译产物文件：import 86 / native 42
-- UUID 风格编译文件：128
+- UUID 风格编译文件：0
 - 命名噪声高频片段：
   - `skeleton2`：9
   - `skeleton3`：6
@@ -365,7 +363,7 @@
 - 场景路径数：0
 - UUID 记录数：65
 - 编译产物文件：import 65 / native 65
-- UUID 风格编译文件：130
+- UUID 风格编译文件：0
 - 命名噪声高频片段：
   - `adz`：1
   - `bdz`：1
@@ -442,7 +440,7 @@
 - 场景路径数：5
 - UUID 记录数：523
 - 编译产物文件：import 122 / native 99
-- UUID 风格编译文件：221
+- UUID 风格编译文件：0
 - 命名噪声高频片段：
   - 无
 - 命名噪声样例路径：
@@ -474,7 +472,7 @@
 - 场景路径数：0
 - UUID 记录数：39
 - 编译产物文件：import 11 / native 3
-- UUID 风格编译文件：14
+- UUID 风格编译文件：0
 - 命名噪声高频片段：
   - 无
 - 命名噪声样例路径：
@@ -527,11 +525,10 @@
 - 场景路径数：0
 - UUID 记录数：538
 - 编译产物文件：import 89 / native 24
-- UUID 风格编译文件：113
+- UUID 风格编译文件：0
 - 命名噪声高频片段：
   - `new`：3
   - `%`：1
-  - `NO`：1
   - `y1`：1
   - `y10`：1
   - `y100`：1
@@ -541,6 +538,7 @@
   - `y14`：1
   - `y15`：1
   - `y16`：1
+  - `y17`：1
 - 命名噪声样例路径：
   - `tex/book/duck/y30/spriteFrame`
   - `tex/book/duck/y51/spriteFrame`
@@ -564,32 +562,32 @@
 - 主要语义路径：
   - `tex/book`：151
   - `tex/主页素材`：48
-  - `tex/过关页面`：27
   - `tex/道具`：21
+  - `tex/过关页面`：20
   - `tex/settings`：17
   - `tex/失败页面`：15
   - `tex/复活`：14
+  - `tex/sharePage`：12
   - `tex/更多玩法`：9
-  - `tex/投诉页面`：8
+  - `tex/reportDialog`：8
   - `tex/体力获取`：7
-  - `tex/喊人页面`：6
-  - `tex/自动ui`：6
+  - `tex/levelCompletePage`：7
 - 样例路径：
   - `tex/过关页面/还差/spriteFrame`
   - `tex/book/duck/y30/spriteFrame`
   - `tex/过关页面/成功进度/只鸭解锁百鸭朝雀/spriteFrame`
   - `tex/settings/giveUpChallengeText/spriteFrame`
   - `tex/更多玩法/图标算数/spriteFrame`
-  - `tex/book/tex/全部/spriteFrame`
+  - `tex/book/ui/filterAll/spriteFrame`
   - `tex/主页素材/排行榜/名次底2/spriteFrame`
   - `tex/失败页面/继续挑战/spriteFrame`
   - `tex/book/duck/y51/spriteFrame`
   - `tex/book/duck/y75/spriteFrame`
-  - `tex/book/分享鸭/张飞鸭/spriteFrame`
+  - `tex/book/shareCollection/张飞鸭/spriteFrame`
   - `tex/book/pigeonGallery/skinCollection/skinPage8/spriteFrame`
   - `tex/settings/soundEffectIcon/spriteFrame`
   - `prefab/ShareUI`
-  - `tex/book/tex/100/spriteFrame`
+  - `tex/book/ui/completion100Label/spriteFrame`
   - `tex/book/duck/y17/spriteFrame`
 - 场景路径：
   - 无
