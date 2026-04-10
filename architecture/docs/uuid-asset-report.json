@@ -924,7 +924,7 @@
       "sampleAssetRecords": [
         {
           "assetIndex": 0,
-          "canonicalPath": "tex/道具/移除槽位中的水果",
+          "canonicalPath": "tex/props/removeFruitFromSlot",
           "assetType": "cc.ImageAsset",
           "compressedUuid": "1cFplHmp5IDq5KFAxsQ9iq",
           "uuid": "1c1699479a9e480eae4a140c6c43d8aa",
@@ -937,7 +937,7 @@
         },
         {
           "assetIndex": 1,
-          "canonicalPath": "tex/道具/打乱水果位置",
+          "canonicalPath": "tex/props/shuffleFruitPositions",
           "assetType": "cc.ImageAsset",
           "compressedUuid": "275YmkS8REC6n9rRiOunTx",
           "uuid": "27e589a44bc4440ba9fdad188eba74f1",
@@ -950,7 +950,7 @@
         },
         {
           "assetIndex": 2,
-          "canonicalPath": "tex/背景/game2_bg2",
+          "canonicalPath": "tex/background/game2_bg2",
           "assetType": "cc.ImageAsset",
           "compressedUuid": "2ebpTfiRpLAYaTUHri6P+4",
           "uuid": "2e6e94df891a4b018693507ae2e8ffb8",
@@ -963,7 +963,7 @@
         },
         {
           "assetIndex": 3,
-          "canonicalPath": "tex/解锁进度2/game3_front",
+          "canonicalPath": "tex/unlockProgress2/game3_front",
           "assetType": "cc.ImageAsset",
           "compressedUuid": "46Ht4jnWdOHbX6VKD2fNP4",
           "uuid": "461ede239d674e1db5fa54a0f67cd3f8",
@@ -976,7 +976,7 @@
         },
         {
           "assetIndex": 4,
-          "canonicalPath": "tex/道具/消除2组水果",
+          "canonicalPath": "tex/props/clearTwoFruitGroups",
           "assetType": "cc.ImageAsset",
           "compressedUuid": "4bh5E4OrpPp5Cz2LyL1zoN",
           "uuid": "4b8791383aba4fa790b3d8bc8bd73a0d",
@@ -989,7 +989,7 @@
         },
         {
           "assetIndex": 5,
-          "canonicalPath": "tex/背景/game2_bg3",
+          "canonicalPath": "tex/background/game2_bg3",
           "assetType": "cc.ImageAsset",
           "compressedUuid": "576jI7ly1Ln6mSpkMUVJ49",
           "uuid": "57ea323b972d4b9fa992a64314549e3d",
@@ -1002,7 +1002,7 @@
         },
         {
           "assetIndex": 6,
-          "canonicalPath": "tex/道具/剩余",
+          "canonicalPath": "tex/props/remaining",
           "assetType": "cc.ImageAsset",
           "compressedUuid": "6565TO0UZPhakD4MHXyC2a",
           "uuid": "65eb94ced1464f85a903e0c1d7c82d9a",
@@ -1015,7 +1015,7 @@
         },
         {
           "assetIndex": 7,
-          "canonicalPath": "tex/背景/game2_bg1",
+          "canonicalPath": "tex/background/game2_bg1",
           "assetType": "cc.ImageAsset",
           "compressedUuid": "6djyeFTfZFKZ8BnbL7DG56",
           "uuid": "6d8f27854df645299f019db2fb0c6e7a",
@@ -1028,7 +1028,7 @@
         },
         {
           "assetIndex": 8,
-          "canonicalPath": "tex/背景/game2_bg5",
+          "canonicalPath": "tex/background/game2_bg5",
           "assetType": "cc.ImageAsset",
           "compressedUuid": "7d8W3IcTtPELbJz/2ViNHT",
           "uuid": "7df16dc8713b4f10b6c9cffd9588d1d3",
@@ -1041,7 +1041,7 @@
         },
         {
           "assetIndex": 9,
-          "canonicalPath": "tex/背景/game2_bg4",
+          "canonicalPath": "tex/background/game2_bg4",
           "assetType": "cc.ImageAsset",
           "compressedUuid": "9e4HO3d/FBlYWPV/2bRTMR",
           "uuid": "9ee073b777f14195858f57fd9b453311",
@@ -1054,7 +1054,7 @@
         },
         {
           "assetIndex": 10,
-          "canonicalPath": "tex/解锁进度2/game3_s1",
+          "canonicalPath": "tex/unlockProgress2/game3_s1",
           "assetType": "cc.ImageAsset",
           "compressedUuid": "e6wXZy8TRA2b98UWkgKly0",
           "uuid": "e6c17672f13440d9bf7c5169202a5cb4",
@@ -1125,7 +1125,7 @@
         },
         {
           "assetIndex": 15,
-          "canonicalPath": "tex/scene/洞",
+          "canonicalPath": "tex/scene/hole",
           "assetType": "cc.ImageAsset",
           "compressedUuid": "06KxcXkLBGeK7AhMztKjEl",
           "uuid": "062b171790b04678aec084cced2a3125",
@@ -1138,7 +1138,7 @@
         },
         {
           "assetIndex": 16,
-          "canonicalPath": "tex/scene/洞/texture",
+          "canonicalPath": "tex/scene/hole/texture",
           "assetType": "cc.Texture2D",
           "compressedUuid": "06KxcXkLBGeK7AhMztKjEl@6c48a",
           "uuid": "06KxcXkLBGeK7AhMztKjEl@6c48a",
@@ -1151,7 +1151,7 @@
         },
         {
           "assetIndex": 17,
-          "canonicalPath": "tex/scene/洞/spriteFrame",
+          "canonicalPath": "tex/scene/hole/spriteFrame",
           "assetType": "cc.SpriteFrame",
           "compressedUuid": "06KxcXkLBGeK7AhMztKjEl@f9941",
           "uuid": "06KxcXkLBGeK7AhMztKjEl@f9941",

@@ -1,5 +1,29 @@
 # 素材治理记录
 
+## 2026-04-11 `Game2Bundle` 中文 canonical 路径段收敛
+
+本轮针对 `Game2Bundle` 中仍保留中文目录段的 canonical 路径做集中收敛，目标是先移除“读不懂/不稳定 token”，再通过护栏阻断回流，全程不新增 runtime alias。
+
+本轮新增落地的 canonical 路径规则：
+- `tex/背景/*` 收敛为 `tex/background/*`
+- `tex/道具/*` 收敛为 `tex/props/*`
+- `tex/解锁进度/*` 收敛为 `tex/unlockProgress/*`
+- `tex/解锁进度2/*` 收敛为 `tex/unlockProgress2/*`
+- `tex/scene/洞/*` 收敛为 `tex/scene/hole/*`
+- `tex/scene/遮罩/*` 收敛为 `tex/scene/mask/*`
+- `tex/fruit/随机问号/*` 收敛为 `tex/fruit/randomQuestionMark/*`
+- `tex/fruit/随机水果/*` 收敛为 `tex/fruit/randomFruit/*`
+
+本轮同步调整：
+- 新增 `architecture/tools/semanticize-game2bundle-path-assets.js`
+- `architecture/tools/run-guardrails.js` 接入该脚本语法检查
+- `architecture/tools/check-legacy-runtime-compat.js` 新增 `Game2Bundle` 中文 canonical 残留检测
+
+验证命令：
+- `node architecture/tools/semanticize-game2bundle-path-assets.js`（重复执行一次，验证幂等改写数为 0）
+- `node architecture/tools/check-legacy-runtime-compat.js`
+- `node architecture/tools/run-guardrails.js`
+
 ## 2026-04-10 `audioBundle` legacy root token 收敛
 
 本轮针对仍停留在 bundle 根层、但语义又过于模糊的音频 root token，明确收敛到 `legacy/*` 目录结构，整个流程只改 canonical 源头路径与 import 元数据，不再引入新的运行时兼容层。所有变更直接作用于 `subpackages/audioBundle/config.audio-bundle.json` 与 `subpackages/audioBundle/import/legacy/*.json`，确保收敛策略可追踪、可重复执行。

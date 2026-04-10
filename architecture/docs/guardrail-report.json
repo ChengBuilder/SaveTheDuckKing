@@ -1,7 +1,7 @@
 {
   "projectPath": "./",
-  "totalSteps": 55,
-  "passedSteps": 55,
+  "totalSteps": 56,
+  "passedSteps": 56,
   "failedSteps": 0,
   "results": [
     {
@@ -235,6 +235,12 @@
     {
       "label": "HomeBundle 素材语义化工具语法检查",
       "commandText": "node -c architecture/tools/semanticize-homebundle-assets.js",
+      "status": "passed",
+      "errorMessage": ""
+    },
+    {
+      "label": "Game2Bundle 路径语义化工具语法检查",
+      "commandText": "node -c architecture/tools/semanticize-game2bundle-path-assets.js",
       "status": "passed",
       "errorMessage": ""
     },

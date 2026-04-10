@@ -5,10 +5,10 @@
 ## 总览
 - Bundle 数：10
 - 扫描 canonical 路径数：2293
-- 命中候选数：582
+- 命中候选数：534
 - 高优先级候选数：0
-- 中优先级候选数：373
-- 低优先级候选数：209
+- 中优先级候选数：361
+- 低优先级候选数：173
 
 ## 全局高优先级候选
 - 无
@@ -19,8 +19,8 @@
 | `uiBundle` | 400 | 280 | 0 | `主页素材` x 48，`道具` x 22，`过关页面` x 20，`复活` x 15，`失败页面` x 15，`成功进度` x 14，`订阅` x 13，`分享有奖` x 12，`排行榜` x 12，`更多玩法` x 10 |
 | `aniBundle` | 156 | 155 | 0 | `神兽动画合集` x 30，`骨骼动画` x 25，`鸭子动画` x 20，`小三视频` x 17，`破门动画` x 8，`百鹅朝凤` x 6，`百鹅朝麟` x 6，`百鹅朝鹏` x 6，`百鸭朝鲲` x 6，`百鸭朝龙` x 6 |
 | `DuckBundle` | 1227 | 99 | 0 | `难度飙升` x 18，`背景` x 3，`飙升` x 3，`飙升2` x 3，`槽位已满` x 3，`底` x 3，`钉子光圈` x 3，`滑动条` x 3，`剪影3` x 3，`木桩` x 3 |
-| `Game2Bundle` | 161 | 48 | 0 | `背景` x 15，`道具` x 12，`解锁进度` x 7，`解锁进度2` x 6，`打乱水果位置` x 3，`洞` x 3，`剩余` x 3，`消除2组水果` x 3，`移除槽位中的水果` x 3，`遮罩` x 3 |
 | `audioBundle` | 65 | 0 | 0 | 无 |
+| `Game2Bundle` | 161 | 0 | 0 | 无 |
 | `HomeBundle` | 231 | 0 | 0 | 无 |
 | `internal` | 18 | 0 | 0 | 无 |
 | `main` | 5 | 0 | 0 | 无 |
@@ -89,29 +89,18 @@
   - `tex/bubble/t5/spriteFrame`：t5 (short-indexed-token)
   - `tex/bubble/t6/spriteFrame`：t6 (short-indexed-token)
 
-### Game2Bundle
-- 配置：`subpackages/Game2Bundle/config.game2-bundle.json`
-- 资产路径数：161
-- 命中候选：48
-- 高/中/低优先级：0 / 12 / 36
-- 高频问题片段：`背景` x 15，`道具` x 12，`解锁进度` x 7，`解锁进度2` x 6，`打乱水果位置` x 3，`洞` x 3，`剩余` x 3，`消除2组水果` x 3，`移除槽位中的水果` x 3，`遮罩` x 3
-- 样例候选：
-  - `tex/道具/打乱水果位置`：道具 (non-ascii)、打乱水果位置 (non-ascii)
-  - `tex/道具/打乱水果位置/spriteFrame`：道具 (non-ascii)、打乱水果位置 (non-ascii)
-  - `tex/道具/打乱水果位置/texture`：道具 (non-ascii)、打乱水果位置 (non-ascii)
-  - `tex/道具/剩余`：道具 (non-ascii)、剩余 (non-ascii)
-  - `tex/道具/剩余/spriteFrame`：道具 (non-ascii)、剩余 (non-ascii)
-  - `tex/道具/剩余/texture`：道具 (non-ascii)、剩余 (non-ascii)
-  - `tex/道具/消除2组水果`：道具 (non-ascii)、消除2组水果 (non-ascii)
-  - `tex/道具/消除2组水果/spriteFrame`：道具 (non-ascii)、消除2组水果 (non-ascii)
-  - `tex/道具/消除2组水果/texture`：道具 (non-ascii)、消除2组水果 (non-ascii)
-  - `tex/道具/移除槽位中的水果`：道具 (non-ascii)、移除槽位中的水果 (non-ascii)
-  - `tex/道具/移除槽位中的水果/spriteFrame`：道具 (non-ascii)、移除槽位中的水果 (non-ascii)
-  - `tex/道具/移除槽位中的水果/texture`：道具 (non-ascii)、移除槽位中的水果 (non-ascii)
-
 ### audioBundle
 - 配置：`subpackages/audioBundle/config.audio-bundle.json`
 - 资产路径数：65
+- 命中候选：0
+- 高/中/低优先级：0 / 0 / 0
+- 高频问题片段：无
+- 样例候选：
+  - 无
+
+### Game2Bundle
+- 配置：`subpackages/Game2Bundle/config.game2-bundle.json`
+- 资产路径数：161
 - 命中候选：0
 - 高/中/低优先级：0 / 0 / 0
 - 高频问题片段：无

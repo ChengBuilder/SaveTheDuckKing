@@ -64,6 +64,15 @@ const CHECK_TARGETS = [
     ]
   },
   {
+    relativePath: 'subpackages/Game2Bundle/config.game2-bundle.json',
+    checks: [
+      {
+        label: 'Game2Bundle 配置旧中文 canonical 路径段',
+        pattern: /tex\/(?:背景|道具|解锁进度2?|洞|遮罩|随机问号|随机水果)(?:\/(?:texture|spriteFrame|[^"\r\n]+))?/g
+      }
+    ]
+  },
+  {
     relativePath: 'subpackages/audioBundle/config.audio-bundle.json',
     checks: [
       {

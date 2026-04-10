@@ -4,8 +4,8 @@
 
 ## 总览
 - 项目目录：`./`
-- 已执行步骤：55
-- 通过步骤：55
+- 已执行步骤：56
+- 通过步骤：56
 - 失败步骤：0
 
 ## 步骤明细
@@ -50,6 +50,7 @@
 | DuckBundle 季节背景语义化工具语法检查 | 通过 | `node -c architecture/tools/semanticize-duckbundle-seasonal-background-assets.js` |
 | DuckBundle %2 语义化工具语法检查 | 通过 | `node -c architecture/tools/semanticize-duckbundle-percent-assets.js` |
 | HomeBundle 素材语义化工具语法检查 | 通过 | `node -c architecture/tools/semanticize-homebundle-assets.js` |
+| Game2Bundle 路径语义化工具语法检查 | 通过 | `node -c architecture/tools/semanticize-game2bundle-path-assets.js` |
 | uiBundle 图鉴皮肤页语义化工具语法检查 | 通过 | `node -c architecture/tools/semanticize-uibundle-book-skin-assets.js` |
 | uiBundle 图鉴展示资源语义化工具语法检查 | 通过 | `node -c architecture/tools/semanticize-uibundle-book-display-assets.js` |
 | 主包书册展示资源语义化工具语法检查 | 通过 | `node -c architecture/tools/semanticize-main-book-display-assets.js` |

@@ -192,33 +192,33 @@
 - 主要语义路径：
   - `tex/fruit`：36
   - `tex/fruitShadow`：34
-  - `tex/背景`：15
-  - `tex/道具`：12
+  - `tex/background`：15
+  - `tex/props`：12
   - `tex/fruitHole`：9
-  - `tex/解锁进度`：7
-  - `tex/解锁进度2`：6
+  - `tex/unlockProgress`：7
   - `tex/scene`：6
+  - `tex/unlockProgress2`：6
   - `prefab/fruit`：1
   - `prefab/fruit1`：1
   - `prefab/fruit10`：1
   - `prefab/fruit11`：1
 - 样例路径：
-  - `tex/道具/移除槽位中的水果`
-  - `tex/道具/打乱水果位置`
-  - `tex/背景/game2_bg2`
-  - `tex/解锁进度2/game3_front`
-  - `tex/道具/消除2组水果`
-  - `tex/背景/game2_bg3`
-  - `tex/道具/剩余`
-  - `tex/背景/game2_bg1`
-  - `tex/背景/game2_bg5`
-  - `tex/背景/game2_bg4`
-  - `tex/解锁进度2/game3_s1`
+  - `tex/props/removeFruitFromSlot`
+  - `tex/props/shuffleFruitPositions`
+  - `tex/background/game2_bg2`
+  - `tex/unlockProgress2/game3_front`
+  - `tex/props/clearTwoFruitGroups`
+  - `tex/background/game2_bg3`
+  - `tex/props/remaining`
+  - `tex/background/game2_bg1`
+  - `tex/background/game2_bg5`
+  - `tex/background/game2_bg4`
+  - `tex/unlockProgress2/game3_s1`
   - `tex/fruit/fruit17/spriteFrame`
   - `tex/fruitShadow/fruitShadow23/spriteFrame`
   - `tex/fruit/fruit21/spriteFrame`
   - `prefab/fruit14`
-  - `tex/scene/洞`
+  - `tex/scene/hole`
 - 场景路径：
   - 无
 

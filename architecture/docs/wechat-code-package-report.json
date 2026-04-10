@@ -9619,7 +9619,7 @@
         "subpackages/Game2Bundle"
       ],
       "fileCount": 84,
-      "sizeBytes": 477715,
+      "sizeBytes": 477803,
       "sizeText": "0.46 MiB",
       "limitBytes": null,
       "limitText": null,
@@ -9628,7 +9628,7 @@
         {
           "path": "subpackages/Game2Bundle/config.game2-bundle.json",
           "displayPath": "subpackages/Game2Bundle/config.game2-bundle.json",
-          "sizeBytes": 21701,
+          "sizeBytes": 21789,
           "sizeText": "0.02 MiB"
         },
         {
@@ -12210,7 +12210,7 @@
   "totals": {
     "packageCount": 9,
     "fileCount": 2005,
-    "sizeBytes": 26753478,
+    "sizeBytes": 26753566,
     "sizeText": "25.51 MiB",
     "limitBytes": 31457280,
     "limitText": "30.00 MiB",

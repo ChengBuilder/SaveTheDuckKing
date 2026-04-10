@@ -111,14 +111,14 @@
 - native 命中：0
 - 主要资产类型：cc.SpriteFrame x 93，cc.Prefab x 36，cc.ImageAsset x 16，cc.Texture2D x 16
 - 样例资产映射：
-  - `tex/道具/移除槽位中的水果` / cc.ImageAsset / missing-import-json
-  - `tex/道具/打乱水果位置` / cc.ImageAsset / missing-import-json
-  - `tex/背景/game2_bg2` / cc.ImageAsset / missing-import-json
-  - `tex/解锁进度2/game3_front` / cc.ImageAsset / missing-import-json
-  - `tex/道具/消除2组水果` / cc.ImageAsset / missing-import-json
-  - `tex/背景/game2_bg3` / cc.ImageAsset / missing-import-json
-  - `tex/道具/剩余` / cc.ImageAsset / missing-import-json
-  - `tex/背景/game2_bg1` / cc.ImageAsset / missing-import-json
+  - `tex/props/removeFruitFromSlot` / cc.ImageAsset / missing-import-json
+  - `tex/props/shuffleFruitPositions` / cc.ImageAsset / missing-import-json
+  - `tex/background/game2_bg2` / cc.ImageAsset / missing-import-json
+  - `tex/unlockProgress2/game3_front` / cc.ImageAsset / missing-import-json
+  - `tex/props/clearTwoFruitGroups` / cc.ImageAsset / missing-import-json
+  - `tex/background/game2_bg3` / cc.ImageAsset / missing-import-json
+  - `tex/props/remaining` / cc.ImageAsset / missing-import-json
+  - `tex/background/game2_bg1` / cc.ImageAsset / missing-import-json
 - 未命中 import 文件样例：`import/_packs/tex/fruit/randomFruit__pack_72.json`，`import/_packs/tex/fruitShadow/fruitShadow16__pack_4.json`，`import/_packs/tex/fruitShadow/fruitShadow1__pack_64.json`，`import/_packs/tex/remaining__pack_11.json`，`import/_packs/tex/unlockProgress/game2_s1__pack_14.json`，`import/prefab/fruit.json`，`import/prefab/fruit1.json`，`import/prefab/fruit10.json`
 - 其余未命中 import 文件：27 项（仅在 full-records 模式写入 JSON）。
 - 未命中 native 文件样例：`native/tex/background/game2_bg1/spriteFrame.jpg`，`native/tex/background/game2_bg2/spriteFrame.jpg`，`native/tex/background/game2_bg3/spriteFrame.jpg`，`native/tex/background/game2_bg4/spriteFrame.jpg`，`native/tex/background/game2_bg5/spriteFrame.jpg`，`native/tex/fruit/randomFruit__texture_72.png`，`native/tex/fruitShadow/fruitShadow16__texture_4.png`，`native/tex/fruitShadow/fruitShadow1__texture_64.png`

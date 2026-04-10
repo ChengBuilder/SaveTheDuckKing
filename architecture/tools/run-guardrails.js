@@ -87,6 +87,7 @@ function buildGuardrailSteps(layout) {
     createSyntaxCheckStep(layout, 'DuckBundle 季节背景语义化工具语法检查', 'architecture/tools/semanticize-duckbundle-seasonal-background-assets.js'),
     createSyntaxCheckStep(layout, 'DuckBundle %2 语义化工具语法检查', 'architecture/tools/semanticize-duckbundle-percent-assets.js'),
     createSyntaxCheckStep(layout, 'HomeBundle 素材语义化工具语法检查', 'architecture/tools/semanticize-homebundle-assets.js'),
+    createSyntaxCheckStep(layout, 'Game2Bundle 路径语义化工具语法检查', 'architecture/tools/semanticize-game2bundle-path-assets.js'),
     createSyntaxCheckStep(layout, 'uiBundle 图鉴皮肤页语义化工具语法检查', 'architecture/tools/semanticize-uibundle-book-skin-assets.js'),
     createSyntaxCheckStep(layout, 'uiBundle 图鉴展示资源语义化工具语法检查', 'architecture/tools/semanticize-uibundle-book-display-assets.js'),
     createSyntaxCheckStep(layout, '主包书册展示资源语义化工具语法检查', 'architecture/tools/semanticize-main-book-display-assets.js'),

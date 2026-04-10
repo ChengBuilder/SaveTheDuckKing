@@ -184,57 +184,57 @@
   ],
   "paths": {
     "0": [
-      "tex/道具/移除槽位中的水果",
+      "tex/props/removeFruitFromSlot",
       2,
       1
     ],
     "1": [
-      "tex/道具/打乱水果位置",
+      "tex/props/shuffleFruitPositions",
       2,
       1
     ],
     "2": [
-      "tex/背景/game2_bg2",
+      "tex/background/game2_bg2",
       2,
       1
     ],
     "3": [
-      "tex/解锁进度2/game3_front",
+      "tex/unlockProgress2/game3_front",
       2,
       1
     ],
     "4": [
-      "tex/道具/消除2组水果",
+      "tex/props/clearTwoFruitGroups",
       2,
       1
     ],
     "5": [
-      "tex/背景/game2_bg3",
+      "tex/background/game2_bg3",
       2,
       1
     ],
     "6": [
-      "tex/道具/剩余",
+      "tex/props/remaining",
       2,
       1
     ],
     "7": [
-      "tex/背景/game2_bg1",
+      "tex/background/game2_bg1",
       2,
       1
     ],
     "8": [
-      "tex/背景/game2_bg5",
+      "tex/background/game2_bg5",
       2,
       1
     ],
     "9": [
-      "tex/背景/game2_bg4",
+      "tex/background/game2_bg4",
       2,
       1
     ],
     "10": [
-      "tex/解锁进度2/game3_s1",
+      "tex/unlockProgress2/game3_s1",
       2,
       1
     ],
@@ -259,17 +259,17 @@
       1
     ],
     "15": [
-      "tex/scene/洞",
+      "tex/scene/hole",
       2,
       1
     ],
     "16": [
-      "tex/scene/洞/texture",
+      "tex/scene/hole/texture",
       3,
       1
     ],
     "17": [
-      "tex/scene/洞/spriteFrame",
+      "tex/scene/hole/spriteFrame",
       1,
       1
     ],
@@ -309,7 +309,7 @@
       1
     ],
     "25": [
-      "tex/解锁进度/game2_s1/spriteFrame",
+      "tex/unlockProgress/game2_s1/spriteFrame",
       1,
       1
     ],
@@ -324,7 +324,7 @@
       1
     ],
     "29": [
-      "tex/fruit/随机问号/spriteFrame",
+      "tex/fruit/randomQuestionMark/spriteFrame",
       1,
       1
     ],
@@ -344,12 +344,12 @@
       1
     ],
     "35": [
-      "tex/道具/移除槽位中的水果/texture",
+      "tex/props/removeFruitFromSlot/texture",
       3,
       1
     ],
     "36": [
-      "tex/道具/移除槽位中的水果/spriteFrame",
+      "tex/props/removeFruitFromSlot/spriteFrame",
       1,
       1
     ],
@@ -379,12 +379,12 @@
       1
     ],
     "43": [
-      "tex/道具/打乱水果位置/texture",
+      "tex/props/shuffleFruitPositions/texture",
       3,
       1
     ],
     "44": [
-      "tex/道具/打乱水果位置/spriteFrame",
+      "tex/props/shuffleFruitPositions/spriteFrame",
       1,
       1
     ],
@@ -399,12 +399,12 @@
       1
     ],
     "47": [
-      "tex/背景/game2_bg2/texture",
+      "tex/background/game2_bg2/texture",
       3,
       1
     ],
     "48": [
-      "tex/背景/game2_bg2/spriteFrame",
+      "tex/background/game2_bg2/spriteFrame",
       1,
       1
     ],
@@ -429,12 +429,12 @@
       1
     ],
     "53": [
-      "tex/解锁进度2/game3_front/texture",
+      "tex/unlockProgress2/game3_front/texture",
       3,
       1
     ],
     "54": [
-      "tex/解锁进度2/game3_front/spriteFrame",
+      "tex/unlockProgress2/game3_front/spriteFrame",
       1,
       1
     ],
@@ -444,12 +444,12 @@
       1
     ],
     "56": [
-      "tex/道具/消除2组水果/texture",
+      "tex/props/clearTwoFruitGroups/texture",
       3,
       1
     ],
     "57": [
-      "tex/道具/消除2组水果/spriteFrame",
+      "tex/props/clearTwoFruitGroups/spriteFrame",
       1,
       1
     ],
@@ -484,12 +484,12 @@
       1
     ],
     "64": [
-      "tex/背景/game2_bg3/texture",
+      "tex/background/game2_bg3/texture",
       3,
       1
     ],
     "65": [
-      "tex/背景/game2_bg3/spriteFrame",
+      "tex/background/game2_bg3/spriteFrame",
       1,
       1
     ],
@@ -519,12 +519,12 @@
       1
     ],
     "71": [
-      "tex/道具/剩余/texture",
+      "tex/props/remaining/texture",
       3,
       1
     ],
     "72": [
-      "tex/道具/剩余/spriteFrame",
+      "tex/props/remaining/spriteFrame",
       1,
       1
     ],
@@ -539,12 +539,12 @@
       1
     ],
     "75": [
-      "tex/背景/game2_bg1/texture",
+      "tex/background/game2_bg1/texture",
       3,
       1
     ],
     "76": [
-      "tex/背景/game2_bg1/spriteFrame",
+      "tex/background/game2_bg1/spriteFrame",
       1,
       1
     ],
@@ -554,7 +554,7 @@
       1
     ],
     "78": [
-      "tex/解锁进度/game2_s7/spriteFrame",
+      "tex/unlockProgress/game2_s7/spriteFrame",
       1,
       1
     ],
@@ -584,12 +584,12 @@
       1
     ],
     "84": [
-      "tex/背景/game2_bg5/texture",
+      "tex/background/game2_bg5/texture",
       3,
       1
     ],
     "85": [
-      "tex/背景/game2_bg5/spriteFrame",
+      "tex/background/game2_bg5/spriteFrame",
       1,
       1
     ],
@@ -634,7 +634,7 @@
       1
     ],
     "94": [
-      "tex/fruit/随机水果/spriteFrame",
+      "tex/fruit/randomFruit/spriteFrame",
       1,
       1
     ],
@@ -664,12 +664,12 @@
       1
     ],
     "100": [
-      "tex/背景/game2_bg4/texture",
+      "tex/background/game2_bg4/texture",
       3,
       1
     ],
     "101": [
-      "tex/背景/game2_bg4/spriteFrame",
+      "tex/background/game2_bg4/spriteFrame",
       1,
       1
     ],
@@ -709,7 +709,7 @@
       1
     ],
     "109": [
-      "tex/解锁进度/game2_s4/spriteFrame",
+      "tex/unlockProgress/game2_s4/spriteFrame",
       1,
       1
     ],
@@ -774,7 +774,7 @@
       1
     ],
     "122": [
-      "tex/解锁进度/game2_s3/spriteFrame",
+      "tex/unlockProgress/game2_s3/spriteFrame",
       1,
       1
     ],
@@ -789,7 +789,7 @@
       1
     ],
     "125": [
-      "tex/解锁进度/game2_s6/spriteFrame",
+      "tex/unlockProgress/game2_s6/spriteFrame",
       1,
       1
     ],
@@ -829,12 +829,12 @@
       1
     ],
     "133": [
-      "tex/解锁进度/game2_s2/spriteFrame",
+      "tex/unlockProgress/game2_s2/spriteFrame",
       1,
       1
     ],
     "134": [
-      "tex/解锁进度/game2_s5/spriteFrame",
+      "tex/unlockProgress/game2_s5/spriteFrame",
       1,
       1
     ],
@@ -884,17 +884,17 @@
       1
     ],
     "144": [
-      "tex/scene/遮罩",
+      "tex/scene/mask",
       2,
       1
     ],
     "145": [
-      "tex/scene/遮罩/texture",
+      "tex/scene/mask/texture",
       3,
       1
     ],
     "146": [
-      "tex/scene/遮罩/spriteFrame",
+      "tex/scene/mask/spriteFrame",
       1,
       1
     ],
@@ -929,12 +929,12 @@
       1
     ],
     "153": [
-      "tex/解锁进度2/game3_s1/texture",
+      "tex/unlockProgress2/game3_s1/texture",
       3,
       1
     ],
     "154": [
-      "tex/解锁进度2/game3_s1/spriteFrame",
+      "tex/unlockProgress2/game3_s1/spriteFrame",
       1,
       1
     ],

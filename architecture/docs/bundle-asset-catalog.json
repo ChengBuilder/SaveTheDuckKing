@@ -294,11 +294,11 @@
           "count": 34
         },
         {
-          "name": "tex/背景",
+          "name": "tex/background",
           "count": 15
         },
         {
-          "name": "tex/道具",
+          "name": "tex/props",
           "count": 12
         },
         {
@@ -306,15 +306,15 @@
           "count": 9
         },
         {
-          "name": "tex/解锁进度",
+          "name": "tex/unlockProgress",
           "count": 7
         },
         {
-          "name": "tex/解锁进度2",
+          "name": "tex/scene",
           "count": 6
         },
         {
-          "name": "tex/scene",
+          "name": "tex/unlockProgress2",
           "count": 6
         },
         {
@@ -335,22 +335,22 @@
         }
       ],
       "samplePaths": [
-        "tex/道具/移除槽位中的水果",
-        "tex/道具/打乱水果位置",
-        "tex/背景/game2_bg2",
-        "tex/解锁进度2/game3_front",
-        "tex/道具/消除2组水果",
-        "tex/背景/game2_bg3",
-        "tex/道具/剩余",
-        "tex/背景/game2_bg1",
-        "tex/背景/game2_bg5",
-        "tex/背景/game2_bg4",
-        "tex/解锁进度2/game3_s1",
+        "tex/props/removeFruitFromSlot",
+        "tex/props/shuffleFruitPositions",
+        "tex/background/game2_bg2",
+        "tex/unlockProgress2/game3_front",
+        "tex/props/clearTwoFruitGroups",
+        "tex/background/game2_bg3",
+        "tex/props/remaining",
+        "tex/background/game2_bg1",
+        "tex/background/game2_bg5",
+        "tex/background/game2_bg4",
+        "tex/unlockProgress2/game3_s1",
         "tex/fruit/fruit17/spriteFrame",
         "tex/fruitShadow/fruitShadow23/spriteFrame",
         "tex/fruit/fruit21/spriteFrame",
         "prefab/fruit14",
-        "tex/scene/洞"
+        "tex/scene/hole"
       ],
       "namingNoisePaths": [],
       "namingNoiseTokens": [],
