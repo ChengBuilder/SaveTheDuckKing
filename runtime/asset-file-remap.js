@@ -5,49 +5,91 @@ const INSTALL_FLAG = "__subpackageAssetFileRemapInstalled";
 const WRAPPED_FLAG = "__subpackageAssetFileRemapWrapped";
 const PATCHED_TARGETS = new WeakSet();
 const PROXY_BY_TARGET = new WeakMap();
-const SUBPACKAGE_COMPATIBILITY_ALIAS_SPECS = Object.freeze([]);
-const ROOT_COMPATIBILITY_ALIAS_SPECS = Object.freeze([
-  { canonicalPrefix: "assets/internal/", legacyNames: ["internalbundle"] },
-  { canonicalPrefix: "assets/start-scene/", legacyNames: ["start-scenebundle"] },
+const ROOT_COMPATIBILITY_MIRROR_ALIAS_ENTRIES = Object.freeze([
+  Object.freeze({
+    legacyPrefix: "assets/internalbundle/",
+    canonicalPrefix: "assets/internal/",
+    canonicalConfigPath: "assets/internal/config.internal.json",
+  }),
+  Object.freeze({
+    legacyPrefix: "assets/start-scenebundle/",
+    canonicalPrefix: "assets/start-scene/",
+    canonicalConfigPath: "assets/start-scene/config.start-scene.json",
+  }),
 ]);
-const COMPATIBILITY_MIRROR_ALIAS_ENTRIES = Object.freeze(buildCompatibilityMirrorAliasEntries());
-
-function buildCompatibilityMirrorAliasEntries() {
-  const aliasEntries = [];
-
-  for (const aliasSpec of SUBPACKAGE_COMPATIBILITY_ALIAS_SPECS) {
-    appendCompatibilityAliasEntries(aliasEntries, aliasSpec, true);
-  }
-  for (const aliasSpec of ROOT_COMPATIBILITY_ALIAS_SPECS) {
-    appendCompatibilityAliasEntries(aliasEntries, aliasSpec, false);
-  }
-
-  return aliasEntries;
-}
-
-function appendCompatibilityAliasEntries(aliasEntries, aliasSpec, useSubpackageRemap) {
-  if (!Array.isArray(aliasEntries) || !aliasSpec || typeof aliasSpec !== "object") {
-    return;
-  }
-
-  const canonicalPrefix = typeof aliasSpec.canonicalPrefix === "string" ? aliasSpec.canonicalPrefix : "";
-  if (!canonicalPrefix) {
-    return;
-  }
-
-  for (const legacyName of Array.isArray(aliasSpec.legacyNames) ? aliasSpec.legacyNames : []) {
-    if (typeof legacyName !== "string" || legacyName.length === 0) {
-      continue;
-    }
-    aliasEntries.push(
-      Object.freeze({
-        legacyPrefix: "assets/" + legacyName + "/",
-        canonicalPrefix: canonicalPrefix,
-        useSubpackageRemap: Boolean(useSubpackageRemap),
-      })
-    );
-  }
-}
+const SUBPACKAGE_COMPATIBILITY_MIRROR_ALIAS_ENTRIES = Object.freeze([
+  Object.freeze({
+    legacyPrefix: "assets/resourcesbundle/",
+    canonicalPrefix: "subpackages/resources/",
+    canonicalConfigPath: "subpackages/resources/config.resources.json",
+  }),
+  Object.freeze({
+    legacyPrefix: "assets/mainbundle/",
+    canonicalPrefix: "subpackages/main/",
+    canonicalConfigPath: "subpackages/main/config.main.json",
+  }),
+  Object.freeze({
+    legacyPrefix: "assets/anibundle/",
+    canonicalPrefix: "subpackages/aniBundle/",
+    canonicalConfigPath: "subpackages/aniBundle/config.animation-bundle.json",
+  }),
+  Object.freeze({
+    legacyPrefix: "assets/anibundlebundle/",
+    canonicalPrefix: "subpackages/aniBundle/",
+    canonicalConfigPath: "subpackages/aniBundle/config.animation-bundle.json",
+  }),
+  Object.freeze({
+    legacyPrefix: "assets/audiobundle/",
+    canonicalPrefix: "subpackages/audioBundle/",
+    canonicalConfigPath: "subpackages/audioBundle/config.audio-bundle.json",
+  }),
+  Object.freeze({
+    legacyPrefix: "assets/audiobundlebundle/",
+    canonicalPrefix: "subpackages/audioBundle/",
+    canonicalConfigPath: "subpackages/audioBundle/config.audio-bundle.json",
+  }),
+  Object.freeze({
+    legacyPrefix: "assets/duckbundle/",
+    canonicalPrefix: "subpackages/DuckBundle/",
+    canonicalConfigPath: "subpackages/DuckBundle/config.duck-bundle.json",
+  }),
+  Object.freeze({
+    legacyPrefix: "assets/duckbundlebundle/",
+    canonicalPrefix: "subpackages/DuckBundle/",
+    canonicalConfigPath: "subpackages/DuckBundle/config.duck-bundle.json",
+  }),
+  Object.freeze({
+    legacyPrefix: "assets/game2bundle/",
+    canonicalPrefix: "subpackages/Game2Bundle/",
+    canonicalConfigPath: "subpackages/Game2Bundle/config.game2-bundle.json",
+  }),
+  Object.freeze({
+    legacyPrefix: "assets/game2bundlebundle/",
+    canonicalPrefix: "subpackages/Game2Bundle/",
+    canonicalConfigPath: "subpackages/Game2Bundle/config.game2-bundle.json",
+  }),
+  Object.freeze({
+    legacyPrefix: "assets/homebundle/",
+    canonicalPrefix: "subpackages/HomeBundle/",
+    canonicalConfigPath: "subpackages/HomeBundle/config.home-bundle.json",
+  }),
+  Object.freeze({
+    legacyPrefix: "assets/homebundlebundle/",
+    canonicalPrefix: "subpackages/HomeBundle/",
+    canonicalConfigPath: "subpackages/HomeBundle/config.home-bundle.json",
+  }),
+  Object.freeze({
+    legacyPrefix: "assets/uibundle/",
+    canonicalPrefix: "subpackages/uiBundle/",
+    canonicalConfigPath: "subpackages/uiBundle/config.ui-bundle.json",
+  }),
+  Object.freeze({
+    legacyPrefix: "assets/uibundlebundle/",
+    canonicalPrefix: "subpackages/uiBundle/",
+    canonicalConfigPath: "subpackages/uiBundle/config.ui-bundle.json",
+  }),
+]);
+const CANONICAL_CONFIG_REQUEST_ALIAS_ENTRIES = Object.freeze(buildCanonicalConfigRequestAliasEntries());
 
 function installAssetFileRemap() {
   const runtimeGlobal = resolveRuntimeGlobal();
@@ -77,8 +119,41 @@ function installAssetFileRemap() {
 
   console.info("[AssetFileRemap] 已启用子包真实文件名重映射。", {
     mappings: remapState.mappingCount,
-    compatibilityMirrors: COMPATIBILITY_MIRROR_ALIAS_ENTRIES.length,
+    compatibilityMirrors:
+      ROOT_COMPATIBILITY_MIRROR_ALIAS_ENTRIES.length + SUBPACKAGE_COMPATIBILITY_MIRROR_ALIAS_ENTRIES.length,
   });
+}
+
+function buildCanonicalConfigRequestAliasEntries() {
+  const requestAliasEntries = [];
+  const seenRequestPaths = Object.create(null);
+  const allAliasEntries =
+    ROOT_COMPATIBILITY_MIRROR_ALIAS_ENTRIES.concat(SUBPACKAGE_COMPATIBILITY_MIRROR_ALIAS_ENTRIES);
+
+  for (const aliasEntry of allAliasEntries) {
+    if (
+      !aliasEntry ||
+      typeof aliasEntry.canonicalPrefix !== "string" ||
+      typeof aliasEntry.canonicalConfigPath !== "string"
+    ) {
+      continue;
+    }
+
+    const requestPath = aliasEntry.canonicalPrefix + "config.json";
+    if (seenRequestPaths[requestPath]) {
+      continue;
+    }
+
+    seenRequestPaths[requestPath] = true;
+    requestAliasEntries.push(
+      Object.freeze({
+        requestPath,
+        canonicalConfigPath: aliasEntry.canonicalConfigPath,
+      })
+    );
+  }
+
+  return requestAliasEntries;
 }
 
 function resolveRuntimeGlobal() {
@@ -148,74 +223,162 @@ function resolveRemappedAssetPath(inputPath, remapState) {
   }
 
   const normalizedInputPath = normalizeSlashes(inputPath);
-  const subpackageRemappedPath = resolveSubpackageAssetPath(inputPath, normalizedInputPath, remapState);
-  if (subpackageRemappedPath !== inputPath) {
-    return subpackageRemappedPath;
+  const canonicalConfigRequestPath = resolveCanonicalConfigRequestPath(inputPath, normalizedInputPath, remapState);
+  if (canonicalConfigRequestPath !== inputPath) {
+    return canonicalConfigRequestPath;
+  }
+
+  const canonicalAssetRequestPath = resolveCanonicalAssetRequestPath(inputPath, normalizedInputPath, remapState);
+  if (canonicalAssetRequestPath !== inputPath) {
+    return canonicalAssetRequestPath;
   }
 
   return resolveCompatibilityMirrorAssetPath(inputPath, normalizedInputPath, remapState);
 }
 
-function resolveSubpackageAssetPath(inputPath, normalizedInputPath, remapState) {
-  const subpackageStartIndex = normalizedInputPath.indexOf("subpackages/");
-  if (subpackageStartIndex < 0) {
+function resolveCanonicalAssetRequestPath(inputPath, normalizedInputPath, remapState) {
+  const subpackageRemappedPath = resolveBundleAssetPath(inputPath, normalizedInputPath, "subpackages/", remapState);
+  if (subpackageRemappedPath !== inputPath) {
+    return subpackageRemappedPath;
+  }
+
+  return resolveBundleAssetPath(inputPath, normalizedInputPath, "assets/", remapState);
+}
+
+function resolveCanonicalConfigRequestPath(inputPath, normalizedInputPath, remapState) {
+  for (const requestAliasEntry of CANONICAL_CONFIG_REQUEST_ALIAS_ENTRIES) {
+    const startIndex = normalizedInputPath.indexOf(requestAliasEntry.requestPath);
+    if (startIndex < 0) {
+      continue;
+    }
+
+    const suffixWithQuery = inputPath.slice(startIndex);
+    const bareSuffix = normalizeSlashes(suffixWithQuery.replace(/[?#].*$/, ""));
+    if (bareSuffix !== requestAliasEntry.requestPath) {
+      continue;
+    }
+
+    const trailingMatch = suffixWithQuery.match(/[?#].*$/);
+    const trailingSuffix = trailingMatch ? trailingMatch[0] : "";
+    const canonicalConfigPath = resolveChainedMappingPath(requestAliasEntry.canonicalConfigPath, remapState);
+    return inputPath.slice(0, startIndex) + canonicalConfigPath + trailingSuffix;
+  }
+
+  return inputPath;
+}
+
+function resolveBundleAssetPath(inputPath, normalizedInputPath, bundleRootPrefix, remapState) {
+  const bundleStartIndex = normalizedInputPath.indexOf(bundleRootPrefix);
+  if (bundleStartIndex < 0) {
     return inputPath;
   }
 
-  const suffixWithQuery = inputPath.slice(subpackageStartIndex);
+  const suffixWithQuery = inputPath.slice(bundleStartIndex);
   const bareSuffix = normalizeSlashes(suffixWithQuery.replace(/[?#].*$/, ""));
   const trailingMatch = suffixWithQuery.match(/[?#].*$/);
   const trailingSuffix = trailingMatch ? trailingMatch[0] : "";
-  const remappedSuffix = resolveChainedMappingPath(bareSuffix, remapState);
+  const remappedSuffix = resolveCanonicalAssetSuffix(bareSuffix, remapState);
 
   if (!remappedSuffix || remappedSuffix === bareSuffix) {
     return inputPath;
   }
 
-  return inputPath.slice(0, subpackageStartIndex) + remappedSuffix + trailingSuffix;
+  return inputPath.slice(0, bundleStartIndex) + remappedSuffix + trailingSuffix;
+}
+
+function resolveCanonicalAssetSuffix(assetSuffix, remapState) {
+  const directlyRemappedSuffix = resolveChainedMappingPath(assetSuffix, remapState);
+  if (directlyRemappedSuffix !== assetSuffix) {
+    return directlyRemappedSuffix;
+  }
+
+  const flattenedSuffix = collapseShardedAssetPath(assetSuffix);
+  if (flattenedSuffix === assetSuffix) {
+    return assetSuffix;
+  }
+
+  const remappedFlattenedSuffix = resolveChainedMappingPath(flattenedSuffix, remapState);
+  if (remappedFlattenedSuffix !== flattenedSuffix) {
+    return remappedFlattenedSuffix;
+  }
+
+  if (isCanonicalRootFlatAssetPath(flattenedSuffix)) {
+    return flattenedSuffix;
+  }
+
+  return assetSuffix;
+}
+
+function collapseShardedAssetPath(assetSuffix) {
+  const pathSegments = normalizeSlashes(assetSuffix).split("/");
+  if (pathSegments.length !== 5) {
+    return assetSuffix;
+  }
+
+  const [rootSegment, bundleName, assetType, shardSegment, fileName] = pathSegments;
+  if ((rootSegment !== "assets" && rootSegment !== "subpackages")
+    || !bundleName
+    || (assetType !== "import" && assetType !== "native")
+    || typeof shardSegment !== "string"
+    || shardSegment.length !== 2
+    || typeof fileName !== "string"
+    || !fileName.startsWith(shardSegment)) {
+    return assetSuffix;
+  }
+
+  return [rootSegment, bundleName, assetType, fileName].join("/");
+}
+
+function isCanonicalRootFlatAssetPath(assetSuffix) {
+  return assetSuffix.startsWith("assets/internal/")
+    || assetSuffix.startsWith("assets/start-scene/");
 }
 
 function resolveCompatibilityMirrorAssetPath(inputPath, normalizedInputPath, remapState) {
-  const mirrorMatch = findCompatibilityMirrorMatch(normalizedInputPath);
-  if (!mirrorMatch) {
-    return inputPath;
-  }
+  const normalizedLookupPath = normalizedInputPath.toLowerCase();
+  const compatibilityAliasEntries =
+    ROOT_COMPATIBILITY_MIRROR_ALIAS_ENTRIES.concat(SUBPACKAGE_COMPATIBILITY_MIRROR_ALIAS_ENTRIES);
 
-  const suffixWithQuery = inputPath.slice(mirrorMatch.startIndex);
-  const bareSuffix = normalizeSlashes(suffixWithQuery.replace(/[?#].*$/, ""));
-  const trailingMatch = suffixWithQuery.match(/[?#].*$/);
-  const trailingSuffix = trailingMatch ? trailingMatch[0] : "";
-  const legacyRelativePath = bareSuffix.slice(mirrorMatch.aliasEntry.legacyPrefix.length);
-
-  if (!shouldRemapCompatibilityRelativePath(legacyRelativePath)) {
-    return inputPath;
-  }
-
-  let canonicalSuffix = mirrorMatch.aliasEntry.canonicalPrefix + legacyRelativePath;
-  if (mirrorMatch.aliasEntry.useSubpackageRemap) {
-    canonicalSuffix = resolveChainedMappingPath(canonicalSuffix, remapState);
-  }
-
-  return inputPath.slice(0, mirrorMatch.startIndex) + canonicalSuffix + trailingSuffix;
-}
-
-function findCompatibilityMirrorMatch(normalizedInputPath) {
-  for (const aliasEntry of COMPATIBILITY_MIRROR_ALIAS_ENTRIES) {
-    const startIndex = normalizedInputPath.indexOf(aliasEntry.legacyPrefix);
+  for (const aliasEntry of compatibilityAliasEntries) {
+    const startIndex = normalizedLookupPath.indexOf(aliasEntry.legacyPrefix.toLowerCase());
     if (startIndex >= 0) {
-      return {
-        aliasEntry,
-        startIndex,
-      };
+      const suffixWithQuery = inputPath.slice(startIndex);
+      const bareSuffix = normalizeSlashes(suffixWithQuery.replace(/[?#].*$/, ""));
+      const trailingMatch = suffixWithQuery.match(/[?#].*$/);
+      const trailingSuffix = trailingMatch ? trailingMatch[0] : "";
+      const legacyRelativePath = bareSuffix.slice(aliasEntry.legacyPrefix.length);
+
+      const canonicalSuffix = resolveCompatibilityRelativePath(aliasEntry, legacyRelativePath, remapState);
+      if (!canonicalSuffix) {
+        return inputPath;
+      }
+
+      return inputPath.slice(0, startIndex) + canonicalSuffix + trailingSuffix;
     }
   }
 
-  return null;
+  return inputPath;
 }
 
-function shouldRemapCompatibilityRelativePath(legacyRelativePath) {
-  return typeof legacyRelativePath === "string" &&
-    (legacyRelativePath.startsWith("import/") || legacyRelativePath.startsWith("native/"));
+function resolveCompatibilityRelativePath(aliasEntry, legacyRelativePath, remapState) {
+  if (typeof legacyRelativePath !== "string" || legacyRelativePath.length === 0) {
+    return "";
+  }
+
+  if (legacyRelativePath === "config.json" && typeof aliasEntry.canonicalConfigPath === "string") {
+    return resolveChainedMappingPath(aliasEntry.canonicalConfigPath, remapState);
+  }
+
+  if (
+    legacyRelativePath === "import" ||
+    legacyRelativePath === "native" ||
+    legacyRelativePath.startsWith("import/") ||
+    legacyRelativePath.startsWith("native/")
+  ) {
+    return resolveCanonicalAssetSuffix(aliasEntry.canonicalPrefix + legacyRelativePath, remapState);
+  }
+
+  return "";
 }
 
 function patchFileSystemManager(wxObject, remapState) {
@@ -434,7 +597,8 @@ function patchLoadFont(wxObject, remapState) {
 }
 
 module.exports = {
-  COMPATIBILITY_MIRROR_ALIAS_ENTRIES,
+  ROOT_COMPATIBILITY_MIRROR_ALIAS_ENTRIES,
+  SUBPACKAGE_COMPATIBILITY_MIRROR_ALIAS_ENTRIES,
   buildRemapState,
   installAssetFileRemap,
   loadGeneratedRemapManifest,
