@@ -14,8 +14,9 @@
 ## 已稳定的结构决策
 - `subpackages/*` + `assets/internal` + `assets/start-scene` 是 canonical 运行时资源来源。
 - `assets/*bundle` / `assets/*Bundlebundle` 仅作为 root bundle 历史命名薄壳，禁止回填整包 `import/native` 副本。
-- `runtime/asset-file-remap.js` 只负责运行时真实文件名重映射，不再承担旧业务路径兼容。
-- `architecture/boot/asset-path-normalizer.js` 只负责 root bundle 请求归一化与扁平资源路径修正，禁止再次接入 Home/ui/玩法层旧路径兼容。
+- Cocos 微信适配层会先按 bundle 名判断是否命中 `subPackages` 并触发 `loadSubpackage`；因此旧 bundle 名必须先在 downloader 入口归一化成 canonical bundle 名，不能只做文件路径 remap。
+- `architecture/boot/asset-path-normalizer.js` 负责 bundle 请求归一化与扁平资源路径修正；允许保留“旧 bundle 名 -> canonical bundle 名”的启动级契约补丁，但禁止再次接入 Home/ui/玩法层深度业务路径兼容。
+- `runtime/asset-file-remap.js` 负责真实文件名重映射，以及 canonical/legacy `config.json` 到语义化配置文件名的桥接；文件 remap 不能替代 bundle 身份归一化。
 - `restored/` 已从主流程移除，不再作为运行依赖。
 
 ## 代码改动边界
@@ -37,4 +38,5 @@ node architecture/tools/run-wechat-ci.js doctor
 
 ## 备注
 - 子包 `import/*.json` 与 `native/*` 大量 UUID 文件属于 Cocos 编译产物，通常不可直接删除。
+- 2026-04-10 运行时回归结论：`assets/mainbundle`、`assets/Game2Bundlebundle` 这类旧名如果只在 fs/media 层 remap，会出现“分包尚未加载”与 Cocos 4930；必须先在 bundle downloader 层归一化到 `main`、`Game2Bundle` 等 canonical 名。
 - 如果需要完整审计明细，可按需启用 full 模式；默认报告以“可读摘要 + 样例”为主，避免仓库膨胀。

@@ -58,6 +58,15 @@ function updateConfigPathEntries(filePath, normalizePath, verifyAfterNormalize) 
 }
 
 /**
+ * 将 JSON 文本规范化为双空格缩进，提升 import/config 产物可读性。
+ * @param {string} fileContent 原始 JSON 文本
+ * @returns {string}
+ */
+function formatJsonContent(fileContent) {
+  return JSON.stringify(JSON.parse(fileContent), null, 2) + '\n';
+}
+
+/**
  * 统一更新 import 目录内 SpriteFrame 元数据名称。
  * @param {string} directoryPath import 目录路径
  * @param {RegExp} legacyNamePattern 旧名称匹配正则（需包含 token 捕获组）
@@ -98,7 +107,7 @@ function updateImportSpriteFrameNames(directoryPath, legacyNamePattern, resolveS
     });
 
     if (fileReplacementCount > 0) {
-      fs.writeFileSync(filePath, nextContent);
+      fs.writeFileSync(filePath, formatJsonContent(nextContent));
       updatedFileCount += 1;
       replacementCount += fileReplacementCount;
     }
@@ -163,6 +172,63 @@ function collectLegacySpriteFrameFiles(directoryPath, legacyNamePattern) {
 }
 
 /**
+ * 统一更新单个 import JSON 文件中的 SpriteFrame 名称映射。
+ * @param {string} filePath import JSON 文件路径
+ * @param {string} displayLabel 展示标签
+ * @param {Record<string, string>} nameMap 旧名称到新名称映射
+ * @param {string} logPrefix 错误日志前缀
+ * @returns {{label: string, replacementCount: number}}
+ */
+function updateImportJsonNameMap(filePath, displayLabel, nameMap, logPrefix) {
+  const originalContent = fs.readFileSync(filePath, 'utf8');
+  let nextContent = originalContent;
+  let replacementCount = 0;
+
+  for (const [legacyName, semanticName] of Object.entries(nameMap || {})) {
+    const pattern = new RegExp('"name":"' + escapeRegExp(legacyName) + '"', 'g');
+    nextContent = nextContent.replace(pattern, function replaceMatch() {
+      replacementCount += 1;
+      return '"name":"' + semanticName + '"';
+    });
+  }
+
+  verifyNoLegacyImportNames(nextContent, displayLabel, Object.keys(nameMap || {}), logPrefix);
+  const formattedContent = formatJsonContent(nextContent);
+
+  if (formattedContent !== originalContent) {
+    fs.writeFileSync(filePath, formattedContent);
+  }
+
+  return {
+    label: displayLabel,
+    replacementCount: replacementCount
+  };
+}
+
+/**
+ * 校验 import JSON 内容里已不存在指定 legacy SpriteFrame 名称。
+ * @param {string} fileContent import JSON 文本
+ * @param {string} displayLabel 展示标签
+ * @param {string[]} legacyNames legacy 名称列表
+ * @param {string} logPrefix 错误日志前缀
+ */
+function verifyNoLegacyImportNames(fileContent, displayLabel, legacyNames, logPrefix) {
+  const remainingNames = legacyNames.filter((legacyName) => {
+    const pattern = new RegExp('"name":"' + escapeRegExp(legacyName) + '"');
+    return pattern.test(fileContent);
+  });
+
+  if (remainingNames.length > 0) {
+    throw new Error(
+      '[' + String(logPrefix || '语义化') + '] import 元数据仍残留旧名称：' +
+      displayLabel +
+      ' -> ' +
+      remainingNames.join(', ')
+    );
+  }
+}
+
+/**
  * 正则元字符转义。
  * @param {string} rawToken 原始文本
  * @returns {string}
@@ -174,7 +240,9 @@ function escapeRegExp(rawToken) {
 module.exports = {
   updateConfigPathEntries: updateConfigPathEntries,
   updateImportSpriteFrameNames: updateImportSpriteFrameNames,
+  updateImportJsonNameMap: updateImportJsonNameMap,
   collectLegacyConfigPaths: collectLegacyConfigPaths,
   collectLegacySpriteFrameFiles: collectLegacySpriteFrameFiles,
+  verifyNoLegacyImportNames: verifyNoLegacyImportNames,
   escapeRegExp: escapeRegExp
 };

@@ -1,1 +1,735 @@
-[1,["1d8faeafa@6c48a"],["_textureSource"],["cc.SpriteFrame"],0,[[[{"name":"filterAll","rect":{"x":302,"y":837,"width":115,"height":62},"offset":{"x":0,"y":0},"originalSize":{"width":115,"height":62},"rotated":true,"capInsets":[0,0,0,0],"packable":true,"pixelsToUnit":100,"pivot":{"x":0.5,"y":0.5},"meshType":0}],[0],0,[0],[0],[0]],[[{"name":"completion100Label","rect":{"x":191,"y":693,"width":88,"height":33},"offset":{"x":0,"y":0},"originalSize":{"width":88,"height":33},"rotated":true,"capInsets":[0,0,0,0],"packable":true,"pixelsToUnit":100,"pivot":{"x":0.5,"y":0.5},"meshType":0}],[0],0,[0],[0],[0]],[[{"name":"itemBadge","rect":{"x":257,"y":619,"width":82,"height":51},"offset":{"x":0,"y":0},"originalSize":{"width":82,"height":51},"rotated":false,"capInsets":[0,0,0,0],"packable":true,"pixelsToUnit":100,"pivot":{"x":0.5,"y":0.5},"meshType":0}],[0],0,[0],[0],[0]],[[{"name":"panelBackground","rect":{"x":3,"y":837,"width":293,"height":156},"offset":{"x":0,"y":0},"originalSize":{"width":293,"height":156},"rotated":false,"capInsets":[0,0,0,0],"packable":true,"pixelsToUnit":100,"pivot":{"x":0.5,"y":0.5},"meshType":0}],[0],0,[0],[0],[0]],[[{"name":"itemCardInactiveFrame","rect":{"x":3,"y":3,"width":279,"height":279},"offset":{"x":0,"y":0},"originalSize":{"width":279,"height":279},"rotated":false,"capInsets":[0,0,0,0],"packable":true,"pixelsToUnit":100,"pivot":{"x":0.5,"y":0.5},"meshType":0}],[0],0,[0],[0],[0]],[[{"name":"filterSpecial","rect":{"x":191,"y":573,"width":114,"height":60},"offset":{"x":-0.5,"y":0.5},"originalSize":{"width":115,"height":61},"rotated":true,"capInsets":[0,0,0,0],"packable":true,"pixelsToUnit":100,"pivot":{"x":0.5,"y":0.5},"meshType":0}],[0],0,[0],[0],[0]],[[{"name":"collectionTitle","rect":{"x":288,"y":3,"width":395,"height":126},"offset":{"x":0,"y":0},"originalSize":{"width":395,"height":126},"rotated":true,"capInsets":[0,0,0,0],"packable":true,"pixelsToUnit":100,"pivot":{"x":0.5,"y":0.5},"meshType":0}],[0],0,[0],[0],[0]],[[{"name":"itemCardActiveFrame","rect":{"x":3,"y":288,"width":279,"height":279},"offset":{"x":0,"y":0},"originalSize":{"width":279,"height":279},"rotated":false,"capInsets":[0,0,0,0],"packable":true,"pixelsToUnit":100,"pivot":{"x":0.5,"y":0.5},"meshType":0}],[0],0,[0],[0],[0]],[[{"name":"equippedBadge","rect":{"x":288,"y":404,"width":209,"height":67},"offset":{"x":0,"y":0},"originalSize":{"width":209,"height":67},"rotated":true,"capInsets":[0,0,0,0],"packable":true,"pixelsToUnit":100,"pivot":{"x":0.5,"y":0.5},"meshType":0}],[0],0,[0],[0],[0]],[[{"name":"rotatingGlow","rect":{"x":3,"y":573,"width":185,"height":182},"offset":{"x":0,"y":0},"originalSize":{"width":185,"height":182},"rotated":true,"capInsets":[0,0,0,0],"packable":true,"pixelsToUnit":100,"pivot":{"x":0.5,"y":0.5},"meshType":0}],[0],0,[0],[0],[0]],[[{"name":"numberPrefix","rect":{"x":396,"y":829,"width":32,"height":15},"offset":{"x":0,"y":0},"originalSize":{"width":32,"height":15},"rotated":true,"capInsets":[0,0,0,0],"packable":true,"pixelsToUnit":100,"pivot":{"x":0.5,"y":0.5},"meshType":0}],[0],0,[0],[0],[0]],[[{"name":"filterRare","rect":{"x":302,"y":958,"width":114,"height":61},"offset":{"x":0,"y":0},"originalSize":{"width":114,"height":61},"rotated":false,"capInsets":[0,0,0,0],"packable":true,"pixelsToUnit":100,"pivot":{"x":0.5,"y":0.5},"meshType":0}],[0],0,[0],[0],[0]],[[{"name":"collectedLabel","rect":{"x":257,"y":676,"width":92,"height":34},"offset":{"x":0,"y":0},"originalSize":{"width":92,"height":34},"rotated":false,"capInsets":[0,0,0,0],"packable":true,"pixelsToUnit":100,"pivot":{"x":0.5,"y":0.5},"meshType":0}],[0],0,[0],[0],[0]],[[{"name":"progressTrack","rect":{"x":361,"y":404,"width":427,"height":29},"offset":{"x":0,"y":0},"originalSize":{"width":427,"height":29},"rotated":true,"capInsets":[0,0,0,0],"packable":true,"pixelsToUnit":100,"pivot":{"x":0.5,"y":0.5},"meshType":0}],[0],0,[0],[0],[0]],[[{"name":"progressFill","rect":{"x":396,"y":404,"width":419,"height":21},"offset":{"x":0,"y":0},"originalSize":{"width":419,"height":21},"rotated":true,"capInsets":[8,0,8,0],"packable":true,"pixelsToUnit":100,"pivot":{"x":0.5,"y":0.5},"meshType":0}],[0],0,[0],[0],[0]]]]
+[
+  1,
+  [
+    "1d8faeafa@6c48a"
+  ],
+  [
+    "_textureSource"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "filterAll",
+          "rect": {
+            "x": 302,
+            "y": 837,
+            "width": 115,
+            "height": 62
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "originalSize": {
+            "width": 115,
+            "height": 62
+          },
+          "rotated": true,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "meshType": 0
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "completion100Label",
+          "rect": {
+            "x": 191,
+            "y": 693,
+            "width": 88,
+            "height": 33
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "originalSize": {
+            "width": 88,
+            "height": 33
+          },
+          "rotated": true,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "meshType": 0
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "itemBadge",
+          "rect": {
+            "x": 257,
+            "y": 619,
+            "width": 82,
+            "height": 51
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "originalSize": {
+            "width": 82,
+            "height": 51
+          },
+          "rotated": false,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "meshType": 0
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "panelBackground",
+          "rect": {
+            "x": 3,
+            "y": 837,
+            "width": 293,
+            "height": 156
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "originalSize": {
+            "width": 293,
+            "height": 156
+          },
+          "rotated": false,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "meshType": 0
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "itemCardInactiveFrame",
+          "rect": {
+            "x": 3,
+            "y": 3,
+            "width": 279,
+            "height": 279
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "originalSize": {
+            "width": 279,
+            "height": 279
+          },
+          "rotated": false,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "meshType": 0
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "filterSpecial",
+          "rect": {
+            "x": 191,
+            "y": 573,
+            "width": 114,
+            "height": 60
+          },
+          "offset": {
+            "x": -0.5,
+            "y": 0.5
+          },
+          "originalSize": {
+            "width": 115,
+            "height": 61
+          },
+          "rotated": true,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "meshType": 0
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "collectionTitle",
+          "rect": {
+            "x": 288,
+            "y": 3,
+            "width": 395,
+            "height": 126
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "originalSize": {
+            "width": 395,
+            "height": 126
+          },
+          "rotated": true,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "meshType": 0
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "itemCardActiveFrame",
+          "rect": {
+            "x": 3,
+            "y": 288,
+            "width": 279,
+            "height": 279
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "originalSize": {
+            "width": 279,
+            "height": 279
+          },
+          "rotated": false,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "meshType": 0
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "equippedBadge",
+          "rect": {
+            "x": 288,
+            "y": 404,
+            "width": 209,
+            "height": 67
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "originalSize": {
+            "width": 209,
+            "height": 67
+          },
+          "rotated": true,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "meshType": 0
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "rotatingGlow",
+          "rect": {
+            "x": 3,
+            "y": 573,
+            "width": 185,
+            "height": 182
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "originalSize": {
+            "width": 185,
+            "height": 182
+          },
+          "rotated": true,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "meshType": 0
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "numberPrefix",
+          "rect": {
+            "x": 396,
+            "y": 829,
+            "width": 32,
+            "height": 15
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "originalSize": {
+            "width": 32,
+            "height": 15
+          },
+          "rotated": true,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "meshType": 0
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "filterRare",
+          "rect": {
+            "x": 302,
+            "y": 958,
+            "width": 114,
+            "height": 61
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "originalSize": {
+            "width": 114,
+            "height": 61
+          },
+          "rotated": false,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "meshType": 0
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "collectedLabel",
+          "rect": {
+            "x": 257,
+            "y": 676,
+            "width": 92,
+            "height": 34
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "originalSize": {
+            "width": 92,
+            "height": 34
+          },
+          "rotated": false,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "meshType": 0
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "progressTrack",
+          "rect": {
+            "x": 361,
+            "y": 404,
+            "width": 427,
+            "height": 29
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "originalSize": {
+            "width": 427,
+            "height": 29
+          },
+          "rotated": true,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "meshType": 0
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "progressFill",
+          "rect": {
+            "x": 396,
+            "y": 404,
+            "width": 419,
+            "height": 21
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "originalSize": {
+            "width": 419,
+            "height": 21
+          },
+          "rotated": true,
+          "capInsets": [
+            8,
+            0,
+            8,
+            0
+          ],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "meshType": 0
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ]
+  ]
+]

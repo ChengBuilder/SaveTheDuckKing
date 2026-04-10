@@ -1,6 +1,4 @@
 'use strict';
-
-const fs = require('fs');
 const {
   resolveProjectLayout,
   resolveProjectFilePath,
@@ -9,7 +7,7 @@ const {
 const {
   updateConfigPathEntries,
   collectLegacyConfigPaths,
-  escapeRegExp
+  updateImportJsonNameMap
 } = require('./semanticize-shared');
 
 const CONFIG_TARGET = 'subpackages/uiBundle/config.ui-bundle.json';
@@ -95,9 +93,14 @@ const IMPORT_FILE_MAPPINGS = [
     label: 'uiBundle 图鉴条目通用图集',
     nameMap: {
       '底2': 'pillBase',
+      '道具': 'propIllustration',
+      '使用按钮': 'useButton',
+      '按键底': 'buttonBackground',
       '框': 'selectionHalo',
+      '转发使用按钮': 'shareUseButton',
       '底': 'infoBarBase',
-      '邀请好友': 'inviteFriendsButton'
+      '邀请好友': 'inviteFriendsButton',
+      '体力框': 'energyFrame'
     }
   },
   {
@@ -106,6 +109,8 @@ const IMPORT_FILE_MAPPINGS = [
     nameMap: {
       '鸽鸽图鉴': 'titleBanner',
       '横幅': 'banner',
+      '求助': 'helpLabel',
+      '更多玩法': 'moreGamesLabel',
       '旋转光': 'rotatingGlow'
     }
   },
@@ -113,7 +118,22 @@ const IMPORT_FILE_MAPPINGS = [
     relativePath: 'subpackages/uiBundle/import/_packs/pack/callFriend__pack_15.json',
     label: 'uiBundle 复用标题图集',
     nameMap: {
-      '鸽鸽图鉴': 'titleBanner'
+      '鸽鸽图鉴': 'titleBanner',
+      '入口有奖': 'entryRewardLabel',
+      '加入鸭群': 'joinDuckGroupLabel',
+      '喊人': 'inviteFriendsLabel',
+      '投诉': 'reportLabel',
+      '排行榜': 'leaderboardLabel',
+      '更多玩法': 'moreGamesLabel',
+      '添加桌面': 'addToDesktopLabel'
+    }
+  },
+  {
+    relativePath: 'subpackages/uiBundle/import/_packs/tex/share__pack_22.json',
+    label: 'uiBundle 复用分享图集',
+    nameMap: {
+      '分享': 'shareLabel',
+      '转发录屏': 'shareReplayButton'
     }
   },
   {
@@ -201,7 +221,7 @@ function semanticizeUiBundleBookDisplayAssets() {
   const configResult = updateDisplayConfig(configAbsolutePath, configLabel);
   const importResults = IMPORT_FILE_MAPPINGS.map((target) => {
     const absolutePath = resolveProjectFilePath(layout, target.relativePath);
-    return updateImportNames(absolutePath, target.label, target.nameMap);
+    return updateImportJsonNameMap(absolutePath, target.label, target.nameMap, 'uiBundle语义化');
   });
 
   console.log('[uiBundle语义化] 已完成图鉴展示资源命名收敛。');
@@ -249,47 +269,6 @@ function verifyNoLegacyDisplayPaths(parsedJson, displayLabel) {
       displayLabel +
       ' -> ' +
       legacyPathList.slice(0, 5).join(', ')
-    );
-  }
-}
-
-function updateImportNames(filePath, displayLabel, nameMap) {
-  const originalContent = fs.readFileSync(filePath, 'utf8');
-  let nextContent = originalContent;
-  let replacementCount = 0;
-
-  for (const [legacyName, semanticName] of Object.entries(nameMap)) {
-    const pattern = new RegExp('"name":"' + escapeRegExp(legacyName) + '"', 'g');
-    nextContent = nextContent.replace(pattern, function replaceMatch() {
-      replacementCount += 1;
-      return '"name":"' + semanticName + '"';
-    });
-  }
-
-  verifyNoLegacyImportNames(nextContent, displayLabel, Object.keys(nameMap));
-
-  if (nextContent !== originalContent) {
-    fs.writeFileSync(filePath, nextContent);
-  }
-
-  return {
-    label: displayLabel,
-    replacementCount: replacementCount
-  };
-}
-
-function verifyNoLegacyImportNames(fileContent, displayLabel, legacyNames) {
-  const remainingNames = legacyNames.filter((legacyName) => {
-    const pattern = new RegExp('"name":"' + escapeRegExp(legacyName) + '"');
-    return pattern.test(fileContent);
-  });
-
-  if (remainingNames.length > 0) {
-    throw new Error(
-      '[uiBundle语义化] import 元数据仍残留旧名称：' +
-      displayLabel +
-      ' -> ' +
-      remainingNames.join(', ')
     );
   }
 }

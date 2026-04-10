@@ -1,13 +1,11 @@
 'use strict';
-
-const fs = require('fs');
 const {
   resolveProjectLayout,
   resolveProjectFilePath,
   formatProjectPathFromWorkspace
 } = require('./project-paths');
 const {
-  escapeRegExp
+  updateImportJsonNameMap
 } = require('./semanticize-shared');
 
 const IMPORT_FILE_MAPPINGS = [
@@ -20,6 +18,8 @@ const IMPORT_FILE_MAPPINGS = [
       '鸽鸽图鉴': 'titleBanner',
       p6: 'skinPage6',
       '横幅': 'banner',
+      '求助': 'helpLabel',
+      '更多玩法': 'moreGamesLabel',
       '视频2': 'videoBadge',
       '旋转光': 'rotatingGlow'
     }
@@ -29,7 +29,16 @@ const IMPORT_FILE_MAPPINGS = [
     label: '主包书册标题复用图集',
     nameMap: {
       '鸽鸽图鉴': 'titleBanner',
-      '图鉴': 'collectionTitle'
+      '图鉴': 'collectionTitle',
+      '入口有奖': 'entryRewardLabel',
+      '加入鸭群': 'joinDuckGroupLabel',
+      '喊人': 'inviteFriendsLabel',
+      '投诉': 'reportLabel',
+      '排行榜': 'leaderboardLabel',
+      '更多玩法': 'moreGamesLabel',
+      '添加桌面': 'addToDesktopLabel',
+      '猜图开始游戏按钮心': 'puzzleStartButtonHeart',
+      '猜图开始游戏按钮气泡': 'puzzleStartButtonBubble'
     }
   },
   {
@@ -38,10 +47,16 @@ const IMPORT_FILE_MAPPINGS = [
     nameMap: {
       p8: 'skinPage8',
       '底2': 'pillBase',
+      '道具': 'propIllustration',
       '已领取按钮': 'claimedButton',
+      '使用按钮': 'useButton',
+      '按键底': 'buttonBackground',
       '框': 'selectionHalo',
+      '邀请好友': 'inviteFriendsButton',
       '底': 'infoBarBase',
+      '体力框': 'energyFrame',
       '领取按钮': 'claimButton',
+      '转发使用按钮': 'shareUseButton',
       p1: 'skinPage1'
     }
   },
@@ -52,7 +67,9 @@ const IMPORT_FILE_MAPPINGS = [
       p2: 'skinPage2',
       p4: 'skinPage4',
       p3: 'skinPage3',
-      p5: 'skinPage5'
+      p5: 'skinPage5',
+      '分享': 'shareLabel',
+      '转发录屏': 'shareReplayButton'
     }
   },
   {
@@ -131,7 +148,7 @@ function semanticizeMainBookDisplayAssets() {
   const layout = resolveProjectLayout(__dirname);
   const results = IMPORT_FILE_MAPPINGS.map((target) => {
     const absolutePath = resolveProjectFilePath(layout, target.relativePath);
-    return updateImportNames(absolutePath, target.label, target.nameMap);
+    return updateImportJsonNameMap(absolutePath, target.label, target.nameMap, 'main语义化');
   });
 
   console.log('[main语义化] 已完成主包复用书册展示图集命名收敛。');
@@ -141,47 +158,6 @@ function semanticizeMainBookDisplayAssets() {
       result.label,
       '名称改写数:',
       result.replacementCount
-    );
-  }
-}
-
-function updateImportNames(filePath, displayLabel, nameMap) {
-  const originalContent = fs.readFileSync(filePath, 'utf8');
-  let nextContent = originalContent;
-  let replacementCount = 0;
-
-  for (const [legacyName, semanticName] of Object.entries(nameMap)) {
-    const pattern = new RegExp('"name":"' + escapeRegExp(legacyName) + '"', 'g');
-    nextContent = nextContent.replace(pattern, function replaceMatch() {
-      replacementCount += 1;
-      return '"name":"' + semanticName + '"';
-    });
-  }
-
-  verifyNoLegacyImportNames(nextContent, displayLabel, Object.keys(nameMap));
-
-  if (nextContent !== originalContent) {
-    fs.writeFileSync(filePath, nextContent);
-  }
-
-  return {
-    label: displayLabel,
-    replacementCount: replacementCount
-  };
-}
-
-function verifyNoLegacyImportNames(fileContent, displayLabel, legacyNames) {
-  const remainingNames = legacyNames.filter((legacyName) => {
-    const pattern = new RegExp('"name":"' + escapeRegExp(legacyName) + '"');
-    return pattern.test(fileContent);
-  });
-
-  if (remainingNames.length > 0) {
-    throw new Error(
-      '[main语义化] import 元数据仍残留旧名称：' +
-      displayLabel +
-      ' -> ' +
-      remainingNames.join(', ')
     );
   }
 }

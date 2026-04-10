@@ -1,5 +1,4 @@
 {
-  "generatedAt": "2026-04-10T00:38:52.671Z",
   "projectPath": "./",
   "officialSourceUrls": [
     "https://developers.weixin.qq.com/minigame/dev/guide/base-ability/code-package.html",
@@ -31,8 +30,8 @@
       "src"
     ],
     "fileCount": 35,
-    "sizeBytes": 3514751,
-    "sizeText": "3.35 MiB",
+    "sizeBytes": 3533975,
+    "sizeText": "3.37 MiB",
     "limitBytes": 4194304,
     "limitText": "4.00 MiB",
     "withinLimit": true,
@@ -52,8 +51,8 @@
       {
         "path": "architecture/boot/asset-path-normalizer.js",
         "displayPath": "architecture/boot/asset-path-normalizer.js",
-        "sizeBytes": 6275,
-        "sizeText": "0.01 MiB"
+        "sizeBytes": 19549,
+        "sizeText": "0.02 MiB"
       },
       {
         "path": "architecture/boot/boot-logger.js",
@@ -232,8 +231,8 @@
       {
         "path": "runtime/asset-file-remap.js",
         "displayPath": "runtime/asset-file-remap.js",
-        "sizeBytes": 14675,
-        "sizeText": "0.01 MiB"
+        "sizeBytes": 20625,
+        "sizeText": "0.02 MiB"
       },
       {
         "path": "runtime/generated/subpackage-asset-remap-manifest.js",
@@ -372,8 +371,8 @@
         "subpackages/main"
       ],
       "fileCount": 223,
-      "sizeBytes": 10034614,
-      "sizeText": "9.57 MiB",
+      "sizeBytes": 10095496,
+      "sizeText": "9.63 MiB",
       "limitBytes": null,
       "limitText": null,
       "withinLimit": true,
@@ -423,38 +422,38 @@
         {
           "path": "subpackages/main/import/_packs/pack/banner__pack_11.json",
           "displayPath": "subpackages/main/import/_packs/pack/banner__pack_11.json",
-          "sizeBytes": 3027,
-          "sizeText": "0.00 MiB"
+          "sizeBytes": 8666,
+          "sizeText": "0.01 MiB"
         },
         {
           "path": "subpackages/main/import/_packs/pack/bottom__pack_15.json",
           "displayPath": "subpackages/main/import/_packs/pack/bottom__pack_15.json",
-          "sizeBytes": 4119,
-          "sizeText": "0.00 MiB"
+          "sizeBytes": 11804,
+          "sizeText": "0.01 MiB"
         },
         {
           "path": "subpackages/main/import/_packs/pack/bottom__pack_17.json",
           "displayPath": "subpackages/main/import/_packs/pack/bottom__pack_17.json",
-          "sizeBytes": 4709,
-          "sizeText": "0.00 MiB"
+          "sizeBytes": 13391,
+          "sizeText": "0.01 MiB"
         },
         {
           "path": "subpackages/main/import/_packs/pack/callFriend__pack_18.json",
           "displayPath": "subpackages/main/import/_packs/pack/callFriend__pack_18.json",
-          "sizeBytes": 4991,
-          "sizeText": "0.00 MiB"
+          "sizeBytes": 14210,
+          "sizeText": "0.01 MiB"
         },
         {
           "path": "subpackages/main/import/_packs/pack/close__pack_18.json",
           "displayPath": "subpackages/main/import/_packs/pack/close__pack_18.json",
-          "sizeBytes": 5209,
-          "sizeText": "0.00 MiB"
+          "sizeBytes": 14907,
+          "sizeText": "0.01 MiB"
         },
         {
           "path": "subpackages/main/import/_packs/pack/halo__pack_18.json",
           "displayPath": "subpackages/main/import/_packs/pack/halo__pack_18.json",
-          "sizeBytes": 5059,
-          "sizeText": "0.00 MiB"
+          "sizeBytes": 14249,
+          "sizeText": "0.01 MiB"
         },
         {
           "path": "subpackages/main/import/_packs/pack/highlight__pack_37.json",
@@ -465,8 +464,8 @@
         {
           "path": "subpackages/main/import/_packs/pack/percent__pack_10.json",
           "displayPath": "subpackages/main/import/_packs/pack/percent__pack_10.json",
-          "sizeBytes": 2797,
-          "sizeText": "0.00 MiB"
+          "sizeBytes": 7923,
+          "sizeText": "0.01 MiB"
         },
         {
           "path": "subpackages/main/import/_packs/pack/props__pack_12.json",
@@ -483,8 +482,8 @@
         {
           "path": "subpackages/main/import/_packs/pack/share__pack_11.json",
           "displayPath": "subpackages/main/import/_packs/pack/share__pack_11.json",
-          "sizeBytes": 3041,
-          "sizeText": "0.00 MiB"
+          "sizeBytes": 8684,
+          "sizeText": "0.01 MiB"
         },
         {
           "path": "subpackages/main/import/_packs/pack/share__pack_8.json",
@@ -11508,8 +11507,8 @@
         "subpackages/uiBundle"
       ],
       "fileCount": 115,
-      "sizeBytes": 2162042,
-      "sizeText": "2.06 MiB",
+      "sizeBytes": 2226069,
+      "sizeText": "2.12 MiB",
       "limitBytes": null,
       "limitText": null,
       "withinLimit": true,
@@ -11535,8 +11534,8 @@
         {
           "path": "subpackages/uiBundle/import/_packs/pack/callFriend__pack_15.json",
           "displayPath": "subpackages/uiBundle/import/_packs/pack/callFriend__pack_15.json",
-          "sizeBytes": 4138,
-          "sizeText": "0.00 MiB"
+          "sizeBytes": 11845,
+          "sizeText": "0.01 MiB"
         },
         {
           "path": "subpackages/uiBundle/import/_packs/prefab/OverUI/reviveNumber__pack_2.json",
@@ -11565,14 +11564,14 @@
         {
           "path": "subpackages/uiBundle/import/_packs/tex/autoUi/frame__pack_12.json",
           "displayPath": "subpackages/uiBundle/import/_packs/tex/autoUi/frame__pack_12.json",
-          "sizeBytes": 1670,
+          "sizeBytes": 4764,
           "sizeText": "0.00 MiB"
         },
         {
           "path": "subpackages/uiBundle/import/_packs/tex/banner__pack_20.json",
           "displayPath": "subpackages/uiBundle/import/_packs/tex/banner__pack_20.json",
-          "sizeBytes": 2759,
-          "sizeText": "0.00 MiB"
+          "sizeBytes": 7890,
+          "sizeText": "0.01 MiB"
         },
         {
           "path": "subpackages/uiBundle/import/_packs/tex/book/duck/y1__pack_48.json",
@@ -11607,26 +11606,26 @@
         {
           "path": "subpackages/uiBundle/import/_packs/tex/book/tex/bottom__pack_30.json",
           "displayPath": "subpackages/uiBundle/import/_packs/tex/book/tex/bottom__pack_30.json",
-          "sizeBytes": 4142,
-          "sizeText": "0.00 MiB"
+          "sizeBytes": 11808,
+          "sizeText": "0.01 MiB"
         },
         {
           "path": "subpackages/uiBundle/import/_packs/tex/bottom__pack_30.json",
           "displayPath": "subpackages/uiBundle/import/_packs/tex/bottom__pack_30.json",
-          "sizeBytes": 4126,
-          "sizeText": "0.00 MiB"
+          "sizeBytes": 11804,
+          "sizeText": "0.01 MiB"
         },
         {
           "path": "subpackages/uiBundle/import/_packs/tex/bottom__pack_32.json",
           "displayPath": "subpackages/uiBundle/import/_packs/tex/bottom__pack_32.json",
-          "sizeBytes": 4435,
-          "sizeText": "0.00 MiB"
+          "sizeBytes": 12609,
+          "sizeText": "0.01 MiB"
         },
         {
           "path": "subpackages/uiBundle/import/_packs/tex/close__pack_28.json",
           "displayPath": "subpackages/uiBundle/import/_packs/tex/close__pack_28.json",
-          "sizeBytes": 3870,
-          "sizeText": "0.00 MiB"
+          "sizeBytes": 11028,
+          "sizeText": "0.01 MiB"
         },
         {
           "path": "subpackages/uiBundle/import/_packs/tex/failPage/bottom1__pack_14.json",
@@ -11691,14 +11690,14 @@
         {
           "path": "subpackages/uiBundle/import/_packs/tex/levelCompletePage/halo__pack_12.json",
           "displayPath": "subpackages/uiBundle/import/_packs/tex/levelCompletePage/halo__pack_12.json",
-          "sizeBytes": 1671,
+          "sizeBytes": 4765,
           "sizeText": "0.00 MiB"
         },
         {
           "path": "subpackages/uiBundle/import/_packs/tex/levelCompletePage/successProgress/silhouette__pack_34.json",
           "displayPath": "subpackages/uiBundle/import/_packs/tex/levelCompletePage/successProgress/silhouette__pack_34.json",
-          "sizeBytes": 4785,
-          "sizeText": "0.00 MiB"
+          "sizeBytes": 13467,
+          "sizeText": "0.01 MiB"
         },
         {
           "path": "subpackages/uiBundle/import/_packs/tex/props__pack_24.json",
@@ -11733,8 +11732,8 @@
         {
           "path": "subpackages/uiBundle/import/_packs/tex/share__pack_22.json",
           "displayPath": "subpackages/uiBundle/import/_packs/tex/share__pack_22.json",
-          "sizeBytes": 3041,
-          "sizeText": "0.00 MiB"
+          "sizeBytes": 8684,
+          "sizeText": "0.01 MiB"
         },
         {
           "path": "subpackages/uiBundle/import/_packs/tex/startUnlock/unlock__pack_10.json",
@@ -12211,8 +12210,8 @@
   "totals": {
     "packageCount": 9,
     "fileCount": 2005,
-    "sizeBytes": 26594793,
-    "sizeText": "25.36 MiB",
+    "sizeBytes": 26738926,
+    "sizeText": "25.50 MiB",
     "limitBytes": 31457280,
     "limitText": "30.00 MiB",
     "withinLimit": true
