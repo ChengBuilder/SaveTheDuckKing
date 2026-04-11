@@ -169,272 +169,272 @@
   ],
   "paths": {
     "0": [
-      "神兽动画合集/百鹅朝麟/skeleton",
+      "mythicCollection/hundredGeeseToQilin/skeleton",
       3,
       1
     ],
     "1": [
-      "陀螺仪/skeleton",
+      "gyroscopeAnimation/skeleton",
       1,
       1
     ],
     "2": [
-      "神兽动画合集/百鹅朝凤/skeleton",
+      "mythicCollection/hundredGeeseToPhoenix/skeleton",
       3,
       1
     ],
     "3": [
-      "小三视频/skeleton",
+      "sideStoryVideo/skeleton",
       3,
       1
     ],
     "4": [
-      "神兽动画合集/百鸭朝龙/skeleton",
+      "mythicCollection/hundredDucksToDragon/skeleton",
       1,
       1
     ],
     "5": [
-      "神兽动画合集/百鹅朝鹏/skeleton",
+      "mythicCollection/hundredGeeseToRoc/skeleton",
       1,
       1
     ],
     "6": [
-      "破门动画/skeleton",
+      "doorBreakAnimation/skeleton",
       1,
       1
     ],
     "7": [
-      "开始动画/skeleton",
+      "startAnimation/skeleton",
       1,
       1
     ],
     "8": [
-      "小三视频/skeleton2",
+      "sideStoryVideo/skeleton2",
       3,
       1
     ],
     "9": [
-      "神兽动画合集/百鹅朝麟/skeleton",
+      "mythicCollection/hundredGeeseToQilin/skeleton",
       1,
       1
     ],
     "10": [
-      "神兽动画合集/百鹅朝鹏/skeleton",
+      "mythicCollection/hundredGeeseToRoc/skeleton",
       3,
       1
     ],
     "11": [
-      "神兽动画合集/百鸭朝雀/skeleton",
+      "mythicCollection/hundredDucksToSparrow/skeleton",
       3,
       1
     ],
     "12": [
-      "杀手动画/skeleton",
+      "assassinAnimation/skeleton",
       1,
       1
     ],
     "13": [
-      "小三视频/skeleton5",
+      "sideStoryVideo/skeleton5",
       3,
       1
     ],
     "14": [
-      "神兽动画合集/百鸭朝鲲/skeleton",
+      "mythicCollection/hundredDucksToKun/skeleton",
       1,
       1
     ],
     "15": [
-      "戴夫/skeleton",
+      "daveAnimation/skeleton",
       1,
       1
     ],
     "16": [
-      "水果大胃王/Kid-eating",
+      "fruitBigEaterAnimation/kidEating",
       1,
       1
     ],
     "17": [
-      "直玩动画/skeleton",
+      "instantPlayAnimation/skeleton",
       1,
       1
     ],
     "18": [
-      "套鹅动画/skeleton",
+      "gooseTrapAnimation/skeleton",
       1,
       1
     ],
     "19": [
-      "比比拉布/skeleton",
+      "bibiLabuAnimation/skeleton",
       1,
       1
     ],
     "20": [
-      "神兽动画合集/百鸭朝龙/skeleton",
+      "mythicCollection/hundredDucksToDragon/skeleton",
       3,
       1
     ],
     "21": [
-      "小三视频/skeleton3",
+      "sideStoryVideo/skeleton3",
       3,
       1
     ],
     "22": [
-      "套鹅动画/skeleton",
+      "gooseTrapAnimation/skeleton",
       3,
       1
     ],
     "23": [
-      "鸽子动画/new_dove",
+      "pigeonAnimation/newDove",
       1,
       1
     ],
     "24": [
-      "神兽动画合集/百鹅朝凤/skeleton",
+      "mythicCollection/hundredGeeseToPhoenix/skeleton",
       1,
       1
     ],
     "25": [
-      "骨骼动画/鸭子动画/skeleton",
+      "skeletonAnimations/duckAnimation/skeleton",
       1,
       1
     ],
     "26": [
-      "直玩动画/skeleton",
+      "instantPlayAnimation/skeleton",
       3,
       1
     ],
     "27": [
-      "标题动画1/skeleton",
+      "titleAnimation1/skeleton",
       1,
       1
     ],
     "28": [
-      "吃饱动画/Done for eat",
+      "eatFullAnimation/eatFull",
       3,
       1
     ],
     "29": [
-      "骨骼动画/门动画/skeleton",
+      "skeletonAnimations/doorAnimation/skeleton",
       1,
       1
     ],
     "30": [
-      "每日/skeleton",
+      "dailyAnimation/skeleton",
       1,
       1
     ],
     "31": [
-      "神兽动画合集/百鸭朝鲲/skeleton",
+      "mythicCollection/hundredDucksToKun/skeleton",
       3,
       1
     ],
     "32": [
-      "救救水果鸭/skeleton",
+      "saveFruitDuckAnimation/skeleton",
       1,
       1
     ],
     "33": [
-      "圈动画/ZYQ",
+      "ringAnimation/ringLoop",
       1,
       1
     ],
     "34": [
-      "小三视频/skeleton",
+      "sideStoryVideo/skeleton",
       1,
       1
     ],
     "35": [
-      "小三视频/skeleton4",
+      "sideStoryVideo/skeleton4",
       3,
       1
     ],
     "36": [
-      "引导动画/skeleton",
+      "tutorialAnimation/skeleton",
       1,
       1
     ],
     "37": [
-      "神兽动画合集/百鸭朝雀/skeleton",
+      "mythicCollection/hundredDucksToSparrow/skeleton",
       1,
       1
     ],
     "38": [
-      "陀螺仪/skeleton",
+      "gyroscopeAnimation/skeleton",
       3,
       1
     ],
     "39": [
-      "破门动画/skeleton",
+      "doorBreakAnimation/skeleton",
       3,
       1
     ],
     "40": [
-      "破门动画/skeleton2",
+      "doorBreakAnimation/skeleton2",
       3,
       1
     ],
     "41": [
-      "吃饱动画/Done for eat",
+      "eatFullAnimation/eatFull",
       1,
       1
     ],
     "42": [
-      "神兽动画合集/百鹅朝麟/skeleton/texture",
+      "mythicCollection/hundredGeeseToQilin/skeleton/texture",
       4,
       1
     ],
     "43": [
-      "神兽动画合集/百鹅朝麟/skeleton/spriteFrame",
+      "mythicCollection/hundredGeeseToQilin/skeleton/spriteFrame",
       5,
       1
     ],
     "44": [
-      "骨骼动画/门动画/skeleton",
+      "skeletonAnimations/doorAnimation/skeleton",
       3,
       1
     ],
     "45": [
-      "骨骼动画/门动画/skeleton/texture",
+      "skeletonAnimations/doorAnimation/skeleton/texture",
       4,
       1
     ],
     "46": [
-      "骨骼动画/门动画/skeleton/spriteFrame",
+      "skeletonAnimations/doorAnimation/skeleton/spriteFrame",
       5,
       1
     ],
     "47": [
-      "神兽动画合集/百鹅朝凤/skeleton/texture",
+      "mythicCollection/hundredGeeseToPhoenix/skeleton/texture",
       4,
       1
     ],
     "48": [
-      "神兽动画合集/百鹅朝凤/skeleton/spriteFrame",
+      "mythicCollection/hundredGeeseToPhoenix/skeleton/spriteFrame",
       5,
       1
     ],
     "49": [
-      "小三视频/skeleton/texture",
+      "sideStoryVideo/skeleton/texture",
       4,
       1
     ],
     "50": [
-      "小三视频/skeleton/spriteFrame",
+      "sideStoryVideo/skeleton/spriteFrame",
       5,
       1
     ],
     "51": [
-      "引导动画/skeleton",
+      "tutorialAnimation/skeleton",
       3,
       1
     ],
     "52": [
-      "引导动画/skeleton/texture",
+      "tutorialAnimation/skeleton/texture",
       4,
       1
     ],
     "53": [
-      "引导动画/skeleton/spriteFrame",
+      "tutorialAnimation/skeleton/spriteFrame",
       5,
       1
     ],
@@ -444,507 +444,507 @@
       1
     ],
     "55": [
-      "套鹅动画/skeleton",
+      "gooseTrapAnimation/skeleton",
       2,
       1
     ],
     "56": [
-      "神兽动画合集/百鸭朝龙/百鸭朝龙",
+      "mythicCollection/hundredDucksToDragon/hundredDucksToDragon",
       2,
       1
     ],
     "57": [
-      "骨骼动画/门动画/skeleton",
+      "skeletonAnimations/doorAnimation/skeleton",
       2,
       1
     ],
     "58": [
-      "骨骼动画/鸭子动画/skeleton",
+      "skeletonAnimations/duckAnimation/skeleton",
       3,
       1
     ],
     "59": [
-      "骨骼动画/鸭子动画/skeleton/texture",
+      "skeletonAnimations/duckAnimation/skeleton/texture",
       4,
       1
     ],
     "60": [
-      "骨骼动画/鸭子动画/skeleton/spriteFrame",
+      "skeletonAnimations/duckAnimation/skeleton/spriteFrame",
       5,
       1
     ],
     "61": [
-      "开始动画/skeleton",
+      "startAnimation/skeleton",
       3,
       1
     ],
     "62": [
-      "开始动画/skeleton/texture",
+      "startAnimation/skeleton/texture",
       4,
       1
     ],
     "63": [
-      "开始动画/skeleton/spriteFrame",
+      "startAnimation/skeleton/spriteFrame",
       5,
       1
     ],
     "64": [
-      "小三视频/skeleton2/texture",
+      "sideStoryVideo/skeleton2/texture",
       4,
       1
     ],
     "65": [
-      "小三视频/skeleton2/spriteFrame",
+      "sideStoryVideo/skeleton2/spriteFrame",
       5,
       1
     ],
     "66": [
-      "骨骼动画/鸭子动画/skeleton4",
+      "skeletonAnimations/duckAnimation/skeleton4",
       3,
       1
     ],
     "67": [
-      "骨骼动画/鸭子动画/skeleton4/texture",
+      "skeletonAnimations/duckAnimation/skeleton4/texture",
       4,
       1
     ],
     "68": [
-      "骨骼动画/鸭子动画/skeleton4/spriteFrame",
+      "skeletonAnimations/duckAnimation/skeleton4/spriteFrame",
       5,
       1
     ],
     "69": [
-      "神兽动画合集/百鹅朝鹏/skeleton/texture",
+      "mythicCollection/hundredGeeseToRoc/skeleton/texture",
       4,
       1
     ],
     "70": [
-      "神兽动画合集/百鹅朝鹏/skeleton/spriteFrame",
+      "mythicCollection/hundredGeeseToRoc/skeleton/spriteFrame",
       5,
       1
     ],
     "71": [
-      "神兽动画合集/百鸭朝雀/skeleton/texture",
+      "mythicCollection/hundredDucksToSparrow/skeleton/texture",
       4,
       1
     ],
     "72": [
-      "神兽动画合集/百鸭朝雀/skeleton/spriteFrame",
+      "mythicCollection/hundredDucksToSparrow/skeleton/spriteFrame",
       5,
       1
     ],
     "73": [
-      "小三视频/skeleton5/texture",
+      "sideStoryVideo/skeleton5/texture",
       4,
       1
     ],
     "74": [
-      "小三视频/skeleton5/spriteFrame",
+      "sideStoryVideo/skeleton5/spriteFrame",
       5,
       1
     ],
     "75": [
-      "神兽动画合集/百鹅朝鹏/百鹅朝鹏",
+      "mythicCollection/hundredGeeseToRoc/hundredGeeseToRoc",
       2,
       1
     ],
     "76": [
-      "救救水果鸭/skeleton",
+      "saveFruitDuckAnimation/skeleton",
       2,
       1
     ],
     "77": [
-      "小三视频/skeleton",
+      "sideStoryVideo/skeleton",
       2,
       1
     ],
     "78": [
-      "骨骼动画/鸭子动画/duck",
+      "skeletonAnimations/duckAnimation/duck",
       2,
       1
     ],
     "79": [
-      "比比拉布/skeleton",
+      "bibiLabuAnimation/skeleton",
       2,
       1
     ],
     "80": [
-      "破门动画/skeleton",
+      "doorBreakAnimation/skeleton",
       2,
       1
     ],
     "81": [
-      "戴夫/skeleton",
+      "daveAnimation/skeleton",
       3,
       1
     ],
     "82": [
-      "戴夫/skeleton/texture",
+      "daveAnimation/skeleton/texture",
       4,
       1
     ],
     "83": [
-      "戴夫/skeleton/spriteFrame",
+      "daveAnimation/skeleton/spriteFrame",
       5,
       1
     ],
     "84": [
-      "水果大胃王/Kid-eating",
+      "fruitBigEaterAnimation/kidEating",
       2,
       1
     ],
     "85": [
-      "戴夫/skeleton",
+      "daveAnimation/skeleton",
       2,
       1
     ],
     "86": [
-      "神兽动画合集/百鸭朝龙/skeleton/texture",
+      "mythicCollection/hundredDucksToDragon/skeleton/texture",
       4,
       1
     ],
     "87": [
-      "神兽动画合集/百鸭朝龙/skeleton/spriteFrame",
+      "mythicCollection/hundredDucksToDragon/skeleton/spriteFrame",
       5,
       1
     ],
     "88": [
-      "小三视频/skeleton3/texture",
+      "sideStoryVideo/skeleton3/texture",
       4,
       1
     ],
     "89": [
-      "小三视频/skeleton3/spriteFrame",
+      "sideStoryVideo/skeleton3/spriteFrame",
       5,
       1
     ],
     "90": [
-      "神兽动画合集/百鹅朝麟/百鹅朝麟",
+      "mythicCollection/hundredGeeseToQilin/hundredGeeseToQilin",
       2,
       1
     ],
     "91": [
-      "骨骼动画/鸭子动画/skeleton6",
+      "skeletonAnimations/duckAnimation/skeleton6",
       3,
       1
     ],
     "92": [
-      "骨骼动画/鸭子动画/skeleton6/texture",
+      "skeletonAnimations/duckAnimation/skeleton6/texture",
       4,
       1
     ],
     "93": [
-      "骨骼动画/鸭子动画/skeleton6/spriteFrame",
+      "skeletonAnimations/duckAnimation/skeleton6/spriteFrame",
       5,
       1
     ],
     "94": [
-      "引导动画/skeleton",
+      "tutorialAnimation/skeleton",
       2,
       1
     ],
     "95": [
-      "套鹅动画/skeleton/texture",
+      "gooseTrapAnimation/skeleton/texture",
       4,
       1
     ],
     "96": [
-      "套鹅动画/skeleton/spriteFrame",
+      "gooseTrapAnimation/skeleton/spriteFrame",
       5,
       1
     ],
     "97": [
-      "神兽动画合集/百鸭朝雀/百鸭朝雀",
+      "mythicCollection/hundredDucksToSparrow/hundredDucksToSparrow",
       2,
       1
     ],
     "98": [
-      "直玩动画/skeleton/texture",
+      "instantPlayAnimation/skeleton/texture",
       4,
       1
     ],
     "99": [
-      "直玩动画/skeleton/spriteFrame",
+      "instantPlayAnimation/skeleton/spriteFrame",
       5,
       1
     ],
     "100": [
-      "陀螺仪/skeleton",
+      "gyroscopeAnimation/skeleton",
       2,
       1
     ],
     "101": [
-      "骨骼动画/鸭子动画/skeleton3",
+      "skeletonAnimations/duckAnimation/skeleton3",
       3,
       1
     ],
     "102": [
-      "骨骼动画/鸭子动画/skeleton3/texture",
+      "skeletonAnimations/duckAnimation/skeleton3/texture",
       4,
       1
     ],
     "103": [
-      "骨骼动画/鸭子动画/skeleton3/spriteFrame",
+      "skeletonAnimations/duckAnimation/skeleton3/spriteFrame",
       5,
       1
     ],
     "104": [
-      "骨骼动画/鸭子动画/skeleton5",
+      "skeletonAnimations/duckAnimation/skeleton5",
       3,
       1
     ],
     "105": [
-      "骨骼动画/鸭子动画/skeleton5/texture",
+      "skeletonAnimations/duckAnimation/skeleton5/texture",
       4,
       1
     ],
     "106": [
-      "骨骼动画/鸭子动画/skeleton5/spriteFrame",
+      "skeletonAnimations/duckAnimation/skeleton5/spriteFrame",
       5,
       1
     ],
     "107": [
-      "吃饱动画/Done for eat/texture",
+      "eatFullAnimation/eatFull/texture",
       4,
       1
     ],
     "108": [
-      "吃饱动画/Done for eat/spriteFrame",
+      "eatFullAnimation/eatFull/spriteFrame",
       5,
       1
     ],
     "109": [
-      "神兽动画合集/百鸭朝鲲/skeleton/texture",
+      "mythicCollection/hundredDucksToKun/skeleton/texture",
       4,
       1
     ],
     "110": [
-      "神兽动画合集/百鸭朝鲲/skeleton/spriteFrame",
+      "mythicCollection/hundredDucksToKun/skeleton/spriteFrame",
       5,
       1
     ],
     "111": [
-      "神兽动画合集/百鸭朝鲲/百鸭朝鲲",
+      "mythicCollection/hundredDucksToKun/hundredDucksToKun",
       2,
       1
     ],
     "112": [
-      "杀手动画/skeleton",
+      "assassinAnimation/skeleton",
       2,
       1
     ],
     "113": [
-      "圈动画/ZYQ",
+      "ringAnimation/ringLoop",
       2,
       1
     ],
     "114": [
-      "救救水果鸭/skeleton",
+      "saveFruitDuckAnimation/skeleton",
       3,
       1
     ],
     "115": [
-      "救救水果鸭/skeleton/texture",
+      "saveFruitDuckAnimation/skeleton/texture",
       4,
       1
     ],
     "116": [
-      "救救水果鸭/skeleton/spriteFrame",
+      "saveFruitDuckAnimation/skeleton/spriteFrame",
       5,
       1
     ],
     "117": [
-      "每日/skeleton",
+      "dailyAnimation/skeleton",
       3,
       1
     ],
     "118": [
-      "每日/skeleton/texture",
+      "dailyAnimation/skeleton/texture",
       4,
       1
     ],
     "119": [
-      "每日/skeleton/spriteFrame",
+      "dailyAnimation/skeleton/spriteFrame",
       5,
       1
     ],
     "120": [
-      "骨骼动画/鸭子动画/skeleton2",
+      "skeletonAnimations/duckAnimation/skeleton2",
       3,
       1
     ],
     "121": [
-      "骨骼动画/鸭子动画/skeleton2/texture",
+      "skeletonAnimations/duckAnimation/skeleton2/texture",
       4,
       1
     ],
     "122": [
-      "骨骼动画/鸭子动画/skeleton2/spriteFrame",
+      "skeletonAnimations/duckAnimation/skeleton2/spriteFrame",
       5,
       1
     ],
     "123": [
-      "鸽子动画/new_dove",
+      "pigeonAnimation/newDove",
       3,
       1
     ],
     "124": [
-      "鸽子动画/new_dove/texture",
+      "pigeonAnimation/newDove/texture",
       4,
       1
     ],
     "125": [
-      "鸽子动画/new_dove/spriteFrame",
+      "pigeonAnimation/newDove/spriteFrame",
       5,
       1
     ],
     "126": [
-      "小三视频/skeleton4/texture",
+      "sideStoryVideo/skeleton4/texture",
       4,
       1
     ],
     "127": [
-      "小三视频/skeleton4/spriteFrame",
+      "sideStoryVideo/skeleton4/spriteFrame",
       5,
       1
     ],
     "128": [
-      "吃饱动画/Done for eat",
+      "eatFullAnimation/eatFull",
       2,
       1
     ],
     "129": [
-      "标题动画1/Title",
+      "titleAnimation1/Title",
       2,
       1
     ],
     "130": [
-      "杀手动画/skeleton",
+      "assassinAnimation/skeleton",
       3,
       1
     ],
     "131": [
-      "杀手动画/skeleton/texture",
+      "assassinAnimation/skeleton/texture",
       4,
       1
     ],
     "132": [
-      "杀手动画/skeleton/spriteFrame",
+      "assassinAnimation/skeleton/spriteFrame",
       5,
       1
     ],
     "133": [
-      "水果大胃王/Kid-eating",
+      "fruitBigEaterAnimation/kidEating",
       3,
       1
     ],
     "134": [
-      "水果大胃王/Kid-eating/texture",
+      "fruitBigEaterAnimation/kidEating/texture",
       4,
       1
     ],
     "135": [
-      "水果大胃王/Kid-eating/spriteFrame",
+      "fruitBigEaterAnimation/kidEating/spriteFrame",
       5,
       1
     ],
     "136": [
-      "陀螺仪/skeleton/texture",
+      "gyroscopeAnimation/skeleton/texture",
       4,
       1
     ],
     "137": [
-      "陀螺仪/skeleton/spriteFrame",
+      "gyroscopeAnimation/skeleton/spriteFrame",
       5,
       1
     ],
     "138": [
-      "圈动画/ZYQ",
+      "ringAnimation/ringLoop",
       3,
       1
     ],
     "139": [
-      "圈动画/ZYQ/texture",
+      "ringAnimation/ringLoop/texture",
       4,
       1
     ],
     "140": [
-      "圈动画/ZYQ/spriteFrame",
+      "ringAnimation/ringLoop/spriteFrame",
       5,
       1
     ],
     "141": [
-      "每日/skeleton",
+      "dailyAnimation/skeleton",
       2,
       1
     ],
     "142": [
-      "破门动画/skeleton/texture",
+      "doorBreakAnimation/skeleton/texture",
       4,
       1
     ],
     "143": [
-      "破门动画/skeleton/spriteFrame",
+      "doorBreakAnimation/skeleton/spriteFrame",
       5,
       1
     ],
     "144": [
-      "标题动画1/skeleton",
+      "titleAnimation1/skeleton",
       3,
       1
     ],
     "145": [
-      "标题动画1/skeleton/texture",
+      "titleAnimation1/skeleton/texture",
       4,
       1
     ],
     "146": [
-      "标题动画1/skeleton/spriteFrame",
+      "titleAnimation1/skeleton/spriteFrame",
       5,
       1
     ],
     "147": [
-      "鸽子动画/new_dove",
+      "pigeonAnimation/newDove",
       2,
       1
     ],
     "148": [
-      "比比拉布/skeleton",
+      "bibiLabuAnimation/skeleton",
       3,
       1
     ],
     "149": [
-      "比比拉布/skeleton/texture",
+      "bibiLabuAnimation/skeleton/texture",
       4,
       1
     ],
     "150": [
-      "比比拉布/skeleton/spriteFrame",
+      "bibiLabuAnimation/skeleton/spriteFrame",
       5,
       1
     ],
     "151": [
-      "神兽动画合集/百鹅朝凤/百鹅朝凤",
+      "mythicCollection/hundredGeeseToPhoenix/hundredGeeseToPhoenix",
       2,
       1
     ],
     "152": [
-      "开始动画/skeleton",
+      "startAnimation/skeleton",
       2,
       1
     ],
     "153": [
-      "破门动画/skeleton2/texture",
+      "doorBreakAnimation/skeleton2/texture",
       4,
       1
     ],
     "154": [
-      "破门动画/skeleton2/spriteFrame",
+      "doorBreakAnimation/skeleton2/spriteFrame",
       5,
       1
     ],
     "155": [
-      "直玩动画/skeleton",
+      "instantPlayAnimation/skeleton",
       2,
       1
     ]

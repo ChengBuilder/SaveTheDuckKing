@@ -4,8 +4,8 @@
 
 ## 总览
 - 项目目录：`./`
-- 已执行步骤：57
-- 通过步骤：57
+- 已执行步骤：61
+- 通过步骤：61
 - 失败步骤：0
 
 ## 步骤明细
@@ -35,6 +35,7 @@
 | 旧运行时路径护栏语法检查 | 通过 | `node -c architecture/tools/check-legacy-runtime-compat.js` |
 | 语义化共享工具语法检查 | 通过 | `node -c architecture/tools/semanticize-shared.js` |
 | audioBundle legacy 语义化工具语法检查 | 通过 | `node -c architecture/tools/semanticize-audiobundle-legacy-assets.js` |
+| aniBundle 路径语义化工具语法检查 | 通过 | `node -c architecture/tools/semanticize-anibundle-path-assets.js` |
 | 关键 JSON 格式化工具语法检查 | 通过 | `node -c architecture/tools/format-project-json.js` |
 | Bundle 资产目录工具语法检查 | 通过 | `node -c architecture/tools/generate-bundle-asset-catalog.js` |
 | UUID 资产审计工具语法检查 | 通过 | `node -c architecture/tools/generate-uuid-asset-report.js` |
@@ -53,7 +54,10 @@
 | HomeBundle 素材语义化工具语法检查 | 通过 | `node -c architecture/tools/semanticize-homebundle-assets.js` |
 | Game2Bundle 路径语义化工具语法检查 | 通过 | `node -c architecture/tools/semanticize-game2bundle-path-assets.js` |
 | uiBundle 图鉴皮肤页语义化工具语法检查 | 通过 | `node -c architecture/tools/semanticize-uibundle-book-skin-assets.js` |
+| uiBundle 图鉴鸭子路径语义化工具语法检查 | 通过 | `node -c architecture/tools/semanticize-uibundle-book-duck-assets.js` |
+| uiBundle 图鉴动态集合语义化工具语法检查 | 通过 | `node -c architecture/tools/semanticize-uibundle-book-collection-assets.js` |
 | uiBundle 图鉴展示资源语义化工具语法检查 | 通过 | `node -c architecture/tools/semanticize-uibundle-book-display-assets.js` |
+| uiBundle 主界面路径语义化工具语法检查 | 通过 | `node -c architecture/tools/semanticize-uibundle-home-assets.js` |
 | 主包书册展示资源语义化工具语法检查 | 通过 | `node -c architecture/tools/semanticize-main-book-display-assets.js` |
 | uiBundle 设置模块语义化工具语法检查 | 通过 | `node -c architecture/tools/semanticize-uibundle-settings-assets.js` |
 | URL 编码路径校验工具语法检查 | 通过 | `node -c architecture/tools/check-no-url-encoded-paths.js` |

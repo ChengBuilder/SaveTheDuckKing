@@ -547,12 +547,12 @@
   ],
   "paths": {
     "0": [
-      "tex/过关页面/还差/spriteFrame",
+      "tex/levelCompletePage/remainingNeeded/spriteFrame",
       3,
       1
     ],
     "1": [
-      "tex/book/duck/y30/spriteFrame",
+      "tex/book/duck/duckSkin30/spriteFrame",
       3,
       1
     ],
@@ -567,7 +567,7 @@
       1
     ],
     "4": [
-      "tex/更多玩法/图标算数/spriteFrame",
+      "tex/moreGames/iconMath/spriteFrame",
       3,
       1
     ],
@@ -577,27 +577,27 @@
       1
     ],
     "6": [
-      "tex/主页素材/排行榜/名次底2/spriteFrame",
+      "tex/homeUi/leaderboard/rankIndexBase2/spriteFrame",
       3,
       1
     ],
     "7": [
-      "tex/失败页面/继续挑战/spriteFrame",
+      "tex/failPage/continueChallenge/spriteFrame",
       3,
       1
     ],
     "8": [
-      "tex/book/duck/y51/spriteFrame",
+      "tex/book/duck/duckSkin51/spriteFrame",
       3,
       1
     ],
     "9": [
-      "tex/book/duck/y75/spriteFrame",
+      "tex/book/duck/duckSkin75/spriteFrame",
       3,
       1
     ],
     "10": [
-      "tex/book/shareCollection/张飞鸭/spriteFrame",
+      "tex/book/shareCollection/zhangFeiDuck/spriteFrame",
       3,
       1
     ],
@@ -622,27 +622,27 @@
       1
     ],
     "15": [
-      "tex/book/duck/y17/spriteFrame",
+      "tex/book/duck/duckSkin17/spriteFrame",
       3,
       1
     ],
     "16": [
-      "tex/道具/消除说明/spriteFrame",
+      "tex/props/eliminateHint/spriteFrame",
       3,
       1
     ],
     "17": [
-      "tex/失败页面/图3/spriteFrame",
+      "tex/failPage/image3/spriteFrame",
       3,
       1
     ],
     "18": [
-      "tex/主页素材/侧边栏/侧边栏页面/spriteFrame",
+      "tex/homeUi/sideBar/sideBarPanel/spriteFrame",
       3,
       1
     ],
     "19": [
-      "tex/book/duck/y10/spriteFrame",
+      "tex/book/duck/duckSkin10/spriteFrame",
       3,
       1
     ],
@@ -652,32 +652,32 @@
       1
     ],
     "21": [
-      "tex/主页素材/领取奖励/入口奖励/spriteFrame",
+      "tex/homeUi/claimRewards/entryReward/spriteFrame",
       3,
       1
     ],
     "22": [
-      "tex/book/duck/y34/spriteFrame",
+      "tex/book/duck/duckSkin34/spriteFrame",
       3,
       1
     ],
     "24": [
-      "tex/失败页面/图1/spriteFrame",
+      "tex/failPage/image1/spriteFrame",
       3,
       1
     ],
     "25": [
-      "tex/主页素材/领取奖励/光/spriteFrame",
+      "tex/homeUi/claimRewards/glow/spriteFrame",
       3,
       1
     ],
     "26": [
-      "tex/book/duck/y38/spriteFrame",
+      "tex/book/duck/duckSkin38/spriteFrame",
       3,
       1
     ],
     "27": [
-      "tex/主页素材/订阅/前往订阅/spriteFrame",
+      "tex/homeUi/subscribe/goSubscribe/spriteFrame",
       3,
       1
     ],
@@ -687,17 +687,17 @@
       1
     ],
     "30": [
-      "tex/book/duck/y40/spriteFrame",
+      "tex/book/duck/duckSkin40/spriteFrame",
       3,
       1
     ],
     "32": [
-      "tex/book/shareCollection/关羽鸭/spriteFrame",
+      "tex/book/shareCollection/guanYuDuck/spriteFrame",
       3,
       1
     ],
     "33": [
-      "tex/已领取/spriteFrame",
+      "tex/claimed/spriteFrame",
       3,
       1
     ],
@@ -707,32 +707,32 @@
       1
     ],
     "37": [
-      "tex/主页素材/排行榜/关_/spriteFrame",
+      "tex/homeUi/leaderboard/levelLabelPrefix/spriteFrame",
       3,
       1
     ],
     "38": [
-      "tex/book/duck/y77/spriteFrame",
+      "tex/book/duck/duckSkin77/spriteFrame",
       3,
       1
     ],
     "39": [
-      "tex/体力获取/体力回复/spriteFrame",
+      "tex/energyPanel/energyRecovery/spriteFrame",
       3,
       1
     ],
     "40": [
-      "tex/book/fruitCollection/西瓜鸭/spriteFrame",
+      "tex/book/fruitCollection/watermelonDuck/spriteFrame",
       3,
       1
     ],
     "41": [
-      "tex/book/duck/y11/spriteFrame",
+      "tex/book/duck/duckSkin11/spriteFrame",
       3,
       1
     ],
     "43": [
-      "tex/book/duck/y12/spriteFrame",
+      "tex/book/duck/duckSkin12/spriteFrame",
       3,
       1
     ],
@@ -747,7 +747,7 @@
       1
     ],
     "48": [
-      "tex/开局解锁/解锁1说明/spriteFrame",
+      "tex/startupUnlock/unlockHint1/spriteFrame",
       3,
       1
     ],
@@ -757,12 +757,12 @@
       1
     ],
     "53": [
-      "tex/book/duck/y39/spriteFrame",
+      "tex/book/duck/duckSkin39/spriteFrame",
       3,
       1
     ],
     "54": [
-      "tex/过关页面/关可晋升/spriteFrame",
+      "tex/levelCompletePage/levelCanPromote/spriteFrame",
       3,
       1
     ],
@@ -772,12 +772,12 @@
       1
     ],
     "58": [
-      "tex/book/duck/y55/spriteFrame",
+      "tex/book/duck/duckSkin55/spriteFrame",
       3,
       1
     ],
     "61": [
-      "tex/book/duck/y21/spriteFrame",
+      "tex/book/duck/duckSkin21/spriteFrame",
       3,
       1
     ],
@@ -797,12 +797,12 @@
       1
     ],
     "70": [
-      "tex/主页素材/排行榜/名次底1/spriteFrame",
+      "tex/homeUi/leaderboard/rankIndexBase1/spriteFrame",
       3,
       1
     ],
     "71": [
-      "tex/book/duck/y76/spriteFrame",
+      "tex/book/duck/duckSkin76/spriteFrame",
       3,
       1
     ],
@@ -812,22 +812,22 @@
       1
     ],
     "73": [
-      "tex/领取/spriteFrame",
+      "tex/claim/spriteFrame",
       3,
       1
     ],
     "74": [
-      "tex/book/duck/y5/spriteFrame",
+      "tex/book/duck/duckSkin5/spriteFrame",
       3,
       1
     ],
     "75": [
-      "tex/book/duck/y32/spriteFrame",
+      "tex/book/duck/duckSkin32/spriteFrame",
       3,
       1
     ],
     "76": [
-      "tex/失败页面/底2/spriteFrame",
+      "tex/failPage/base2/spriteFrame",
       3,
       1
     ],
@@ -842,12 +842,12 @@
       1
     ],
     "79": [
-      "tex/自动ui/进入/spriteFrame",
+      "tex/autoUi/enter/spriteFrame",
       3,
       1
     ],
     "80": [
-      "tex/book/duck/y81/spriteFrame",
+      "tex/book/duck/duckSkin81/spriteFrame",
       3,
       1
     ],
@@ -872,27 +872,27 @@
       1
     ],
     "85": [
-      "tex/道具/消除按钮",
+      "tex/props/eliminateButton",
       1,
       1
     ],
     "86": [
-      "tex/道具/消除按钮/texture",
+      "tex/props/eliminateButton/texture",
       2,
       1
     ],
     "87": [
-      "tex/道具/消除按钮/spriteFrame",
+      "tex/props/eliminateButton/spriteFrame",
       3,
       1
     ],
     "89": [
-      "tex/book/duck/y65/spriteFrame",
+      "tex/book/duck/duckSkin65/spriteFrame",
       3,
       1
     ],
     "90": [
-      "tex/主页素材/排行榜/排行底2/spriteFrame",
+      "tex/homeUi/leaderboard/leaderboardRowBase2/spriteFrame",
       3,
       1
     ],
@@ -907,12 +907,12 @@
       1
     ],
     "93": [
-      "tex/book/duck/y23/spriteFrame",
+      "tex/book/duck/duckSkin23/spriteFrame",
       3,
       1
     ],
     "94": [
-      "tex/主页素材/分享有奖/分享标/spriteFrame",
+      "tex/homeUi/shareRewards/shareBadge/spriteFrame",
       3,
       1
     ],
@@ -922,22 +922,22 @@
       1
     ],
     "96": [
-      "tex/复活/底2",
+      "tex/revive/base2",
       1,
       1
     ],
     "97": [
-      "tex/复活/底2/texture",
+      "tex/revive/base2/texture",
       2,
       1
     ],
     "98": [
-      "tex/复活/底2/spriteFrame",
+      "tex/revive/base2/spriteFrame",
       3,
       1
     ],
     "99": [
-      "tex/体力获取/体力/spriteFrame",
+      "tex/energyPanel/energy/spriteFrame",
       3,
       1
     ],
@@ -947,7 +947,7 @@
       1
     ],
     "101": [
-      "tex/book/fruitCollection/火龙果鸭/spriteFrame",
+      "tex/book/fruitCollection/pitayaDuck/spriteFrame",
       3,
       1
     ],
@@ -957,17 +957,17 @@
       1
     ],
     "103": [
-      "tex/book/duck/y74/spriteFrame",
+      "tex/book/duck/duckSkin74/spriteFrame",
       3,
       1
     ],
     "104": [
-      "tex/喊人页面/道具/spriteFrame",
+      "tex/sharePage/props/spriteFrame",
       3,
       1
     ],
     "105": [
-      "tex/book/duck/y98/spriteFrame",
+      "tex/book/duck/duckSkin98/spriteFrame",
       3,
       1
     ],
@@ -992,17 +992,17 @@
       1
     ],
     "110": [
-      "tex/主页素材/排行榜/排行榜/spriteFrame",
+      "tex/homeUi/leaderboard/leaderboard/spriteFrame",
       3,
       1
     ],
     "111": [
-      "tex/book/duck/y15/spriteFrame",
+      "tex/book/duck/duckSkin15/spriteFrame",
       3,
       1
     ],
     "112": [
-      "tex/开局解锁/解锁1道具/spriteFrame",
+      "tex/startupUnlock/unlockProp1/spriteFrame",
       3,
       1
     ],
@@ -1022,7 +1022,7 @@
       1
     ],
     "116": [
-      "tex/主页素材/排行榜/底2/spriteFrame",
+      "tex/homeUi/leaderboard/base2/spriteFrame",
       3,
       1
     ],
@@ -1032,27 +1032,27 @@
       1
     ],
     "118": [
-      "tex/主页素材/分享有奖/分享",
+      "tex/homeUi/shareRewards/share",
       1,
       1
     ],
     "119": [
-      "tex/主页素材/分享有奖/分享/texture",
+      "tex/homeUi/shareRewards/share/texture",
       2,
       1
     ],
     "120": [
-      "tex/主页素材/分享有奖/分享/spriteFrame",
+      "tex/homeUi/shareRewards/share/spriteFrame",
       3,
       1
     ],
     "121": [
-      "tex/主页素材/分享有奖/分享失败/spriteFrame",
+      "tex/homeUi/shareRewards/shareFailed/spriteFrame",
       3,
       1
     ],
     "122": [
-      "tex/过关页面/挑战成功/spriteFrame",
+      "tex/levelCompletePage/challengeSuccess/spriteFrame",
       3,
       1
     ],
@@ -1062,22 +1062,22 @@
       1
     ],
     "124": [
-      "tex/求助/spriteFrame",
+      "tex/help/spriteFrame",
       3,
       1
     ],
     "125": [
-      "tex/更多玩法/图标鸽/spriteFrame",
+      "tex/moreGames/iconPigeon/spriteFrame",
       3,
       1
     ],
     "126": [
-      "tex/主页素材/排行榜/排行底1/spriteFrame",
+      "tex/homeUi/leaderboard/leaderboardRowBase1/spriteFrame",
       3,
       1
     ],
     "127": [
-      "tex/book/duck/y6/spriteFrame",
+      "tex/book/duck/duckSkin6/spriteFrame",
       3,
       1
     ],
@@ -1102,12 +1102,12 @@
       1
     ],
     "132": [
-      "tex/book/duck/y80/spriteFrame",
+      "tex/book/duck/duckSkin80/spriteFrame",
       3,
       1
     ],
     "133": [
-      "tex/自动ui/失败/spriteFrame",
+      "tex/autoUi/fail/spriteFrame",
       3,
       1
     ],
@@ -1127,42 +1127,42 @@
       1
     ],
     "137": [
-      "tex/book/duck/y47/spriteFrame",
+      "tex/book/duck/duckSkin47/spriteFrame",
       3,
       1
     ],
     "138": [
-      "tex/使用按钮/spriteFrame",
+      "tex/useButton/spriteFrame",
       3,
       1
     ],
     "139": [
-      "tex/道具/点击摇摇",
+      "tex/props/tapToShake",
       1,
       1
     ],
     "140": [
-      "tex/道具/点击摇摇/texture",
+      "tex/props/tapToShake/texture",
       2,
       1
     ],
     "141": [
-      "tex/道具/点击摇摇/spriteFrame",
+      "tex/props/tapToShake/spriteFrame",
       3,
       1
     ],
     "142": [
-      "tex/book/duck/y97/spriteFrame",
+      "tex/book/duck/duckSkin97/spriteFrame",
       3,
       1
     ],
     "143": [
-      "tex/book/bigEaterCollection/大胃袋鸭/spriteFrame",
+      "tex/book/bigEaterCollection/bigBellyDuck/spriteFrame",
       3,
       1
     ],
     "144": [
-      "tex/book/shareCollection/甄嬛鸭/spriteFrame",
+      "tex/book/shareCollection/zhenHuanDuck/spriteFrame",
       3,
       1
     ],
@@ -1172,12 +1172,12 @@
       1
     ],
     "146": [
-      "tex/失败页面/图2/spriteFrame",
+      "tex/failPage/image2/spriteFrame",
       3,
       1
     ],
     "147": [
-      "tex/失败页面/overLabel3/spriteFrame",
+      "tex/failPage/overLabel3/spriteFrame",
       3,
       1
     ],
@@ -1192,32 +1192,32 @@
       1
     ],
     "150": [
-      "tex/book/fruitCollection/哈密瓜鸭/spriteFrame",
+      "tex/book/fruitCollection/hamiMelonDuck/spriteFrame",
       3,
       1
     ],
     "151": [
-      "tex/复活/心1/spriteFrame",
+      "tex/revive/heart1/spriteFrame",
       3,
       1
     ],
     "153": [
-      "tex/book/duck/y20/spriteFrame",
+      "tex/book/duck/duckSkin20/spriteFrame",
       3,
       1
     ],
     "154": [
-      "tex/主页素材/排行榜/人头/spriteFrame",
+      "tex/homeUi/leaderboard/avatar/spriteFrame",
       3,
       1
     ],
     "155": [
-      "tex/失败页面/overLabelFruit/spriteFrame",
+      "tex/failPage/overLabelFruit/spriteFrame",
       3,
       1
     ],
     "156": [
-      "tex/主页素材/分享有奖/分享好友/spriteFrame",
+      "tex/homeUi/shareRewards/shareToFriend/spriteFrame",
       3,
       1
     ],
@@ -1227,22 +1227,22 @@
       1
     ],
     "158": [
-      "tex/book/duck/y45/spriteFrame",
+      "tex/book/duck/duckSkin45/spriteFrame",
       3,
       1
     ],
     "159": [
-      "tex/失败页面/底1/spriteFrame",
+      "tex/failPage/base1/spriteFrame",
       3,
       1
     ],
     "160": [
-      "tex/主页素材/排行榜/第/spriteFrame",
+      "tex/homeUi/leaderboard/rankPrefix/spriteFrame",
       3,
       1
     ],
     "161": [
-      "tex/道具/打乱说明/spriteFrame",
+      "tex/props/shuffleHint/spriteFrame",
       3,
       1
     ],
@@ -1262,32 +1262,32 @@
       1
     ],
     "165": [
-      "tex/book/duck/y33/spriteFrame",
+      "tex/book/duck/duckSkin33/spriteFrame",
       3,
       1
     ],
     "166": [
-      "tex/book/duck/y44/spriteFrame",
+      "tex/book/duck/duckSkin44/spriteFrame",
       3,
       1
     ],
     "167": [
-      "tex/book/duck/y100/spriteFrame",
+      "tex/book/duck/duckSkin100/spriteFrame",
       3,
       1
     ],
     "168": [
-      "tex/叹号",
+      "tex/exclamationMark",
       1,
       1
     ],
     "169": [
-      "tex/叹号/texture",
+      "tex/exclamationMark/texture",
       2,
       1
     ],
     "170": [
-      "tex/叹号/spriteFrame",
+      "tex/exclamationMark/spriteFrame",
       3,
       1
     ],
@@ -1302,7 +1302,7 @@
       1
     ],
     "173": [
-      "tex/book/duck/y91/spriteFrame",
+      "tex/book/duck/duckSkin91/spriteFrame",
       3,
       1
     ],
@@ -1317,37 +1317,37 @@
       1
     ],
     "176": [
-      "tex/复活/关卡已完成/spriteFrame",
+      "tex/revive/levelCompleted/spriteFrame",
       3,
       1
     ],
     "177": [
-      "tex/book/duck/y42/spriteFrame",
+      "tex/book/duck/duckSkin42/spriteFrame",
       3,
       1
     ],
     "178": [
-      "tex/转发录屏/spriteFrame",
+      "tex/shareReplay/spriteFrame",
       3,
       1
     ],
     "179": [
-      "tex/分享/spriteFrame",
+      "tex/share/spriteFrame",
       3,
       1
     ],
     "180": [
-      "tex/更多玩法/图标牛/spriteFrame",
+      "tex/moreGames/iconBull/spriteFrame",
       3,
       1
     ],
     "181": [
-      "tex/道具/打乱/spriteFrame",
+      "tex/props/shuffle/spriteFrame",
       3,
       1
     ],
     "182": [
-      "tex/book/duck/y1/spriteFrame",
+      "tex/book/duck/duckSkin1/spriteFrame",
       3,
       1
     ],
@@ -1362,7 +1362,7 @@
       1
     ],
     "185": [
-      "tex/按键底/spriteFrame",
+      "tex/buttonBase/spriteFrame",
       3,
       1
     ],
@@ -1377,17 +1377,17 @@
       1
     ],
     "188": [
-      "tex/自动ui/胜利/spriteFrame",
+      "tex/autoUi/victory/spriteFrame",
       3,
       1
     ],
     "189": [
-      "tex/book/fruitCollection/葡萄鸭/spriteFrame",
+      "tex/book/fruitCollection/grapeDuck/spriteFrame",
       3,
       1
     ],
     "190": [
-      "tex/book/duck/y94/spriteFrame",
+      "tex/book/duck/duckSkin94/spriteFrame",
       3,
       1
     ],
@@ -1397,7 +1397,7 @@
       1
     ],
     "192": [
-      "tex/失败页面/挑战失败2/spriteFrame",
+      "tex/failPage/challengeFailed2/spriteFrame",
       3,
       1
     ],
@@ -1422,17 +1422,17 @@
       1
     ],
     "197": [
-      "tex/book/duck/y70/spriteFrame",
+      "tex/book/duck/duckSkin70/spriteFrame",
       3,
       1
     ],
     "198": [
-      "tex/圆/spriteFrame",
+      "tex/circle/spriteFrame",
       3,
       1
     ],
     "199": [
-      "tex/更多玩法/锁/spriteFrame",
+      "tex/moreGames/lock/spriteFrame",
       3,
       1
     ],
@@ -1442,7 +1442,7 @@
       1
     ],
     "201": [
-      "tex/自动ui/全自动/spriteFrame",
+      "tex/autoUi/fullAuto/spriteFrame",
       3,
       1
     ],
@@ -1452,27 +1452,27 @@
       1
     ],
     "203": [
-      "tex/失败页面/挑战成功2/spriteFrame",
+      "tex/failPage/challengeSuccess2/spriteFrame",
       3,
       1
     ],
     "204": [
-      "tex/复活/底1",
+      "tex/revive/base1",
       1,
       1
     ],
     "205": [
-      "tex/复活/底1/texture",
+      "tex/revive/base1/texture",
       2,
       1
     ],
     "206": [
-      "tex/复活/底1/spriteFrame",
+      "tex/revive/base1/spriteFrame",
       3,
       1
     ],
     "207": [
-      "tex/失败页面/overLabel1/spriteFrame",
+      "tex/failPage/overLabel1/spriteFrame",
       3,
       1
     ],
@@ -1497,7 +1497,7 @@
       1
     ],
     "212": [
-      "tex/道具/排序说明/spriteFrame",
+      "tex/props/sortHint/spriteFrame",
       3,
       1
     ],
@@ -1522,7 +1522,7 @@
       1
     ],
     "217": [
-      "tex/按键底灰/spriteFrame",
+      "tex/buttonBaseGray/spriteFrame",
       3,
       1
     ],
@@ -1532,12 +1532,12 @@
       1
     ],
     "219": [
-      "tex/复活/移除槽位中的钉子/spriteFrame",
+      "tex/revive/removeNailInSlot/spriteFrame",
       3,
       1
     ],
     "220": [
-      "tex/book/duck/y46/spriteFrame",
+      "tex/book/duck/duckSkin46/spriteFrame",
       3,
       1
     ],
@@ -1552,12 +1552,12 @@
       1
     ],
     "223": [
-      "tex/book/duck/y19/spriteFrame",
+      "tex/book/duck/duckSkin19/spriteFrame",
       3,
       1
     ],
     "224": [
-      "tex/book/duck/y68/spriteFrame",
+      "tex/book/duck/duckSkin68/spriteFrame",
       3,
       1
     ],
@@ -1567,62 +1567,62 @@
       1
     ],
     "226": [
-      "tex/过关页面/进度底/spriteFrame",
+      "tex/levelCompletePage/progressBase/spriteFrame",
       3,
       1
     ],
     "227": [
-      "tex/复活/转发复活按钮/spriteFrame",
+      "tex/revive/shareReviveButton/spriteFrame",
       3,
       1
     ],
     "228": [
-      "tex/道具/消除道具/spriteFrame",
+      "tex/props/eliminateProp/spriteFrame",
       3,
       1
     ],
     "229": [
-      "tex/体力获取/免费获得体力/spriteFrame",
+      "tex/energyPanel/freeEnergy/spriteFrame",
       3,
       1
     ],
     "230": [
-      "tex/book/duck/y50/spriteFrame",
+      "tex/book/duck/duckSkin50/spriteFrame",
       3,
       1
     ],
     "231": [
-      "tex/主页素材/分享有奖/今日剩余次数（1_1）/spriteFrame",
+      "tex/homeUi/shareRewards/dailyRemainingCount_1_1/spriteFrame",
       3,
       1
     ],
     "232": [
-      "tex/book/duck/y59/spriteFrame",
+      "tex/book/duck/duckSkin59/spriteFrame",
       3,
       1
     ],
     "233": [
-      "tex/book/duck/y22/spriteFrame",
+      "tex/book/duck/duckSkin22/spriteFrame",
       3,
       1
     ],
     "234": [
-      "tex/体力获取/体力box/体力图标/spriteFrame",
+      "tex/energyPanel/energyBox/energyIcon/spriteFrame",
       3,
       1
     ],
     "235": [
-      "tex/主页素材/添加桌面/添加桌面领取奖励/spriteFrame",
+      "tex/homeUi/addToDesktop/addToDesktopClaimReward/spriteFrame",
       3,
       1
     ],
     "236": [
-      "tex/主页素材/领取奖励/分享有奖/spriteFrame",
+      "tex/homeUi/claimRewards/shareRewards/spriteFrame",
       3,
       1
     ],
     "237": [
-      "tex/开局解锁/解锁说明/spriteFrame",
+      "tex/startupUnlock/unlockHint/spriteFrame",
       3,
       1
     ],
@@ -1637,7 +1637,7 @@
       1
     ],
     "240": [
-      "tex/book/duck/y37/spriteFrame",
+      "tex/book/duck/duckSkin37/spriteFrame",
       3,
       1
     ],
@@ -1647,7 +1647,7 @@
       1
     ],
     "242": [
-      "tex/book/duck/y18/spriteFrame",
+      "tex/book/duck/duckSkin18/spriteFrame",
       3,
       1
     ],
@@ -1657,32 +1657,32 @@
       1
     ],
     "244": [
-      "tex/book/duck/y48/spriteFrame",
+      "tex/book/duck/duckSkin48/spriteFrame",
       3,
       1
     ],
     "245": [
-      "tex/book/duck/y84/spriteFrame",
+      "tex/book/duck/duckSkin84/spriteFrame",
       3,
       1
     ],
     "246": [
-      "tex/book/duck/y63/spriteFrame",
+      "tex/book/duck/duckSkin63/spriteFrame",
       3,
       1
     ],
     "247": [
-      "tex/主页素材/关注抖音/关注官方抖音获得奖励/spriteFrame",
+      "tex/homeUi/followDouyin/followOfficialDouyinReward/spriteFrame",
       3,
       1
     ],
     "248": [
-      "tex/book/duck/y85/spriteFrame",
+      "tex/book/duck/duckSkin85/spriteFrame",
       3,
       1
     ],
     "249": [
-      "tex/book/duck/y89/spriteFrame",
+      "tex/book/duck/duckSkin89/spriteFrame",
       3,
       1
     ],
@@ -1717,22 +1717,22 @@
       1
     ],
     "257": [
-      "tex/过关页面/光圈/spriteFrame",
+      "tex/levelCompletePage/halo/spriteFrame",
       3,
       1
     ],
     "258": [
-      "tex/道具/排序道具/spriteFrame",
+      "tex/props/sortProp/spriteFrame",
       3,
       1
     ],
     "259": [
-      "tex/转发使用按钮/spriteFrame",
+      "tex/shareUseButton/spriteFrame",
       3,
       1
     ],
     "260": [
-      "tex/失败页面/overLabel2/spriteFrame",
+      "tex/failPage/overLabel2/spriteFrame",
       3,
       1
     ],
@@ -1742,7 +1742,7 @@
       1
     ],
     "262": [
-      "tex/book/duck/y93/spriteFrame",
+      "tex/book/duck/duckSkin93/spriteFrame",
       3,
       1
     ],
@@ -1752,12 +1752,12 @@
       1
     ],
     "264": [
-      "tex/复活/复活/spriteFrame",
+      "tex/revive/revive/spriteFrame",
       3,
       1
     ],
     "265": [
-      "tex/book/duck/y49/spriteFrame",
+      "tex/book/duck/duckSkin49/spriteFrame",
       3,
       1
     ],
@@ -1767,27 +1767,27 @@
       1
     ],
     "267": [
-      "tex/主页素材/排行榜/底1/spriteFrame",
+      "tex/homeUi/leaderboard/base1/spriteFrame",
       3,
       1
     ],
     "268": [
-      "tex/主页素材/侧边栏/入口有礼/spriteFrame",
+      "tex/homeUi/sideBar/entryGift/spriteFrame",
       3,
       1
     ],
     "269": [
-      "tex/book/duck/y58/spriteFrame",
+      "tex/book/duck/duckSkin58/spriteFrame",
       3,
       1
     ],
     "270": [
-      "tex/主页素材/领取奖励/添加收藏奖励/spriteFrame",
+      "tex/homeUi/claimRewards/addToFavoritesReward/spriteFrame",
       3,
       1
     ],
     "271": [
-      "tex/复活/图标/spriteFrame",
+      "tex/revive/icon/spriteFrame",
       3,
       1
     ],
@@ -1797,42 +1797,42 @@
       1
     ],
     "273": [
-      "tex/更多玩法/更多玩法/spriteFrame",
+      "tex/moreGames/moreGames/spriteFrame",
       3,
       1
     ],
     "274": [
-      "tex/主页素材/订阅/奖",
+      "tex/homeUi/subscribe/rewardBadge",
       1,
       1
     ],
     "275": [
-      "tex/主页素材/订阅/奖/texture",
+      "tex/homeUi/subscribe/rewardBadge/texture",
       2,
       1
     ],
     "276": [
-      "tex/主页素材/订阅/奖/spriteFrame",
+      "tex/homeUi/subscribe/rewardBadge/spriteFrame",
       3,
       1
     ],
     "277": [
-      "tex/book/duck/y82/spriteFrame",
+      "tex/book/duck/duckSkin82/spriteFrame",
       3,
       1
     ],
     "278": [
-      "tex/book/duck/y13/spriteFrame",
+      "tex/book/duck/duckSkin13/spriteFrame",
       3,
       1
     ],
     "279": [
-      "tex/book/duck/y86/spriteFrame",
+      "tex/book/duck/duckSkin86/spriteFrame",
       3,
       1
     ],
     "281": [
-      "tex/失败页面/fruitLose/spriteFrame",
+      "tex/failPage/fruitLose/spriteFrame",
       3,
       1
     ],
@@ -1842,7 +1842,7 @@
       1
     ],
     "283": [
-      "tex/主页素材/排行榜/未上榜/spriteFrame",
+      "tex/homeUi/leaderboard/unranked/spriteFrame",
       3,
       1
     ],
@@ -1862,12 +1862,12 @@
       1
     ],
     "287": [
-      "tex/主页素材/添加桌面/字/spriteFrame",
+      "tex/homeUi/addToDesktop/labelText/spriteFrame",
       3,
       1
     ],
     "288": [
-      "tex/book/duck/y66/spriteFrame",
+      "tex/book/duck/duckSkin66/spriteFrame",
       3,
       1
     ],
@@ -1882,7 +1882,7 @@
       1
     ],
     "291": [
-      "tex/book/fruitCollection/蓝莓鸭/spriteFrame",
+      "tex/book/fruitCollection/blueberryDuck/spriteFrame",
       3,
       1
     ],
@@ -1892,12 +1892,12 @@
       1
     ],
     "293": [
-      "tex/book/duck/y52/spriteFrame",
+      "tex/book/duck/duckSkin52/spriteFrame",
       3,
       1
     ],
     "294": [
-      "tex/book/duck/y35/spriteFrame",
+      "tex/book/duck/duckSkin35/spriteFrame",
       3,
       1
     ],
@@ -1907,17 +1907,17 @@
       1
     ],
     "296": [
-      "tex/book/duck/y36/spriteFrame",
+      "tex/book/duck/duckSkin36/spriteFrame",
       3,
       1
     ],
     "297": [
-      "tex/book/duck/y56/spriteFrame",
+      "tex/book/duck/duckSkin56/spriteFrame",
       3,
       1
     ],
     "298": [
-      "tex/开局解锁/解锁道具/spriteFrame",
+      "tex/startupUnlock/unlockProp/spriteFrame",
       3,
       1
     ],
@@ -1932,22 +1932,22 @@
       1
     ],
     "301": [
-      "tex/book/duck/y88/spriteFrame",
+      "tex/book/duck/duckSkin88/spriteFrame",
       3,
       1
     ],
     "302": [
-      "tex/book/duck/y67/spriteFrame",
+      "tex/book/duck/duckSkin67/spriteFrame",
       3,
       1
     ],
     "303": [
-      "tex/主页素材/领取奖励/添加桌面奖励/spriteFrame",
+      "tex/homeUi/claimRewards/addToDesktopReward/spriteFrame",
       3,
       1
     ],
     "304": [
-      "tex/book/duck/y61/spriteFrame",
+      "tex/book/duck/duckSkin61/spriteFrame",
       3,
       1
     ],
@@ -1957,7 +1957,7 @@
       1
     ],
     "306": [
-      "tex/主页素材/分享有奖/分享有奖/spriteFrame",
+      "tex/homeUi/shareRewards/shareRewards/spriteFrame",
       3,
       1
     ],
@@ -1972,7 +1972,7 @@
       1
     ],
     "309": [
-      "tex/book/duck/y28/spriteFrame",
+      "tex/book/duck/duckSkin28/spriteFrame",
       3,
       1
     ],
@@ -1982,12 +1982,12 @@
       1
     ],
     "311": [
-      "tex/book/duck/y2/spriteFrame",
+      "tex/book/duck/duckSkin2/spriteFrame",
       3,
       1
     ],
     "312": [
-      "tex/book/duck/y72/spriteFrame",
+      "tex/book/duck/duckSkin72/spriteFrame",
       3,
       1
     ],
@@ -2002,7 +2002,7 @@
       1
     ],
     "315": [
-      "tex/自动ui/跳选关卡/spriteFrame",
+      "tex/autoUi/jumpSelectLevel/spriteFrame",
       3,
       1
     ],
@@ -2037,52 +2037,52 @@
       1
     ],
     "322": [
-      "tex/主页素材/订阅/官方抖音",
+      "tex/homeUi/subscribe/officialDouyin",
       1,
       1
     ],
     "323": [
-      "tex/主页素材/订阅/官方抖音/texture",
+      "tex/homeUi/subscribe/officialDouyin/texture",
       2,
       1
     ],
     "324": [
-      "tex/主页素材/订阅/官方抖音/spriteFrame",
+      "tex/homeUi/subscribe/officialDouyin/spriteFrame",
       3,
       1
     ],
     "325": [
-      "tex/book/duck/y16/spriteFrame",
+      "tex/book/duck/duckSkin16/spriteFrame",
       3,
       1
     ],
     "326": [
-      "tex/主页素材/关注抖音/关注/spriteFrame",
+      "tex/homeUi/followDouyin/follow/spriteFrame",
       3,
       1
     ],
     "327": [
-      "tex/失败页面/返回主页/spriteFrame",
+      "tex/failPage/backHome/spriteFrame",
       3,
       1
     ],
     "328": [
-      "tex/book/duck/y78/spriteFrame",
+      "tex/book/duck/duckSkin78/spriteFrame",
       3,
       1
     ],
     "329": [
-      "tex/book/duck/y25/spriteFrame",
+      "tex/book/duck/duckSkin25/spriteFrame",
       3,
       1
     ],
     "330": [
-      "tex/book/duck/y9/spriteFrame",
+      "tex/book/duck/duckSkin9/spriteFrame",
       3,
       1
     ],
     "331": [
-      "tex/复活/%/spriteFrame",
+      "tex/revive/percentSign/spriteFrame",
       3,
       1
     ],
@@ -2092,27 +2092,27 @@
       1
     ],
     "333": [
-      "tex/主页素材/分享有奖/分享好友可获得奖励/spriteFrame",
+      "tex/homeUi/shareRewards/shareToFriendReward/spriteFrame",
       3,
       1
     ],
     "334": [
-      "tex/道具/打乱道具/spriteFrame",
+      "tex/props/shuffleProp/spriteFrame",
       3,
       1
     ],
     "335": [
-      "tex/book/fruitCollection/苹果鸭/spriteFrame",
+      "tex/book/fruitCollection/appleDuck/spriteFrame",
       3,
       1
     ],
     "336": [
-      "tex/book/duck/y26/spriteFrame",
+      "tex/book/duck/duckSkin26/spriteFrame",
       3,
       1
     ],
     "337": [
-      "tex/book/duck/y96/spriteFrame",
+      "tex/book/duck/duckSkin96/spriteFrame",
       3,
       1
     ],
@@ -2122,12 +2122,12 @@
       1
     ],
     "339": [
-      "tex/book/duck/y7/spriteFrame",
+      "tex/book/duck/duckSkin7/spriteFrame",
       3,
       1
     ],
     "340": [
-      "tex/book/duck/y4/spriteFrame",
+      "tex/book/duck/duckSkin4/spriteFrame",
       3,
       1
     ],
@@ -2137,12 +2137,12 @@
       1
     ],
     "342": [
-      "tex/体力获取/体力box/体力框/spriteFrame",
+      "tex/energyPanel/energyBox/energyFrame/spriteFrame",
       3,
       1
     ],
     "343": [
-      "tex/体力获取/获得/spriteFrame",
+      "tex/energyPanel/receive/spriteFrame",
       3,
       1
     ],
@@ -2152,17 +2152,17 @@
       1
     ],
     "345": [
-      "tex/道具/摇摇道具",
+      "tex/props/shakeProp",
       1,
       1
     ],
     "346": [
-      "tex/道具/摇摇道具/texture",
+      "tex/props/shakeProp/texture",
       2,
       1
     ],
     "347": [
-      "tex/道具/摇摇道具/spriteFrame",
+      "tex/props/shakeProp/spriteFrame",
       3,
       1
     ],
@@ -2172,62 +2172,62 @@
       1
     ],
     "349": [
-      "tex/book/duck/y73/spriteFrame",
+      "tex/book/duck/duckSkin73/spriteFrame",
       3,
       1
     ],
     "350": [
-      "tex/book/duck/y8/spriteFrame",
+      "tex/book/duck/duckSkin8/spriteFrame",
       3,
       1
     ],
     "351": [
-      "tex/主页素材/订阅/订阅btn",
+      "tex/homeUi/subscribe/subscribeButton",
       1,
       1
     ],
     "352": [
-      "tex/主页素材/订阅/订阅btn/texture",
+      "tex/homeUi/subscribe/subscribeButton/texture",
       2,
       1
     ],
     "353": [
-      "tex/主页素材/订阅/订阅btn/spriteFrame",
+      "tex/homeUi/subscribe/subscribeButton/spriteFrame",
       3,
       1
     ],
     "354": [
-      "tex/失败页面/挑战失败/spriteFrame",
+      "tex/failPage/challengeFailed/spriteFrame",
       3,
       1
     ],
     "355": [
-      "tex/book/duck/y83/spriteFrame",
+      "tex/book/duck/duckSkin83/spriteFrame",
       3,
       1
     ],
     "356": [
-      "tex/按键底绿/spriteFrame",
+      "tex/buttonBaseGreen/spriteFrame",
       3,
       1
     ],
     "357": [
-      "tex/book/duck/y64/spriteFrame",
+      "tex/book/duck/duckSkin64/spriteFrame",
       3,
       1
     ],
     "358": [
-      "tex/按键底红/spriteFrame",
+      "tex/buttonBaseRed/spriteFrame",
       3,
       1
     ],
     "359": [
-      "tex/book/duck/y29/spriteFrame",
+      "tex/book/duck/duckSkin29/spriteFrame",
       3,
       1
     ],
     "360": [
-      "tex/book/duck/y31/spriteFrame",
+      "tex/book/duck/duckSkin31/spriteFrame",
       3,
       1
     ],
@@ -2242,22 +2242,22 @@
       1
     ],
     "363": [
-      "tex/道具/spriteFrame",
+      "tex/props/spriteFrame",
       3,
       1
     ],
     "364": [
-      "tex/主页素材/领取奖励/确定/spriteFrame",
+      "tex/homeUi/claimRewards/confirm/spriteFrame",
       3,
       1
     ],
     "365": [
-      "tex/book/duck/y69/spriteFrame",
+      "tex/book/duck/duckSkin69/spriteFrame",
       3,
       1
     ],
     "366": [
-      "tex/更多玩法/按钮/spriteFrame",
+      "tex/moreGames/button/spriteFrame",
       3,
       1
     ],
@@ -2287,17 +2287,17 @@
       1
     ],
     "372": [
-      "tex/book/duck/y43/spriteFrame",
+      "tex/book/duck/duckSkin43/spriteFrame",
       3,
       1
     ],
     "373": [
-      "tex/book/duck/y95/spriteFrame",
+      "tex/book/duck/duckSkin95/spriteFrame",
       3,
       1
     ],
     "374": [
-      "tex/体力获取/体力box/加体力/spriteFrame",
+      "tex/energyPanel/energyBox/addEnergy/spriteFrame",
       3,
       1
     ],
@@ -2307,27 +2307,27 @@
       1
     ],
     "376": [
-      "tex/book/duck/y90/spriteFrame",
+      "tex/book/duck/duckSkin90/spriteFrame",
       3,
       1
     ],
     "377": [
-      "tex/book/shareCollection/刘备鸭/spriteFrame",
+      "tex/book/shareCollection/liuBeiDuck/spriteFrame",
       3,
       1
     ],
     "378": [
-      "tex/开局解锁/解锁/spriteFrame",
+      "tex/startupUnlock/unlock/spriteFrame",
       3,
       1
     ],
     "379": [
-      "tex/book/duck/y53/spriteFrame",
+      "tex/book/duck/duckSkin53/spriteFrame",
       3,
       1
     ],
     "380": [
-      "tex/book/duck/y54/spriteFrame",
+      "tex/book/duck/duckSkin54/spriteFrame",
       3,
       1
     ],
@@ -2337,7 +2337,7 @@
       1
     ],
     "382": [
-      "tex/book/duck/y79/spriteFrame",
+      "tex/book/duck/duckSkin79/spriteFrame",
       3,
       1
     ],
@@ -2347,7 +2347,7 @@
       1
     ],
     "384": [
-      "tex/主页素材/分享有奖/今日剩余次数（0_1）/spriteFrame",
+      "tex/homeUi/shareRewards/dailyRemainingCount_0_1/spriteFrame",
       3,
       1
     ],
@@ -2362,22 +2362,22 @@
       1
     ],
     "387": [
-      "tex/更多玩法/叹号更多玩法",
+      "tex/moreGames/moreGamesExclamation",
       1,
       1
     ],
     "388": [
-      "tex/更多玩法/叹号更多玩法/texture",
+      "tex/moreGames/moreGamesExclamation/texture",
       2,
       1
     ],
     "389": [
-      "tex/更多玩法/叹号更多玩法/spriteFrame",
+      "tex/moreGames/moreGamesExclamation/spriteFrame",
       3,
       1
     ],
     "390": [
-      "tex/主页素材/关注抖音/关注抖音/spriteFrame",
+      "tex/homeUi/followDouyin/followDouyin/spriteFrame",
       3,
       1
     ],
@@ -2387,27 +2387,27 @@
       1
     ],
     "392": [
-      "tex/标题底/spriteFrame",
+      "tex/titleBase/spriteFrame",
       3,
       1
     ],
     "393": [
-      "tex/book/duck/y87/spriteFrame",
+      "tex/book/duck/duckSkin87/spriteFrame",
       3,
       1
     ],
     "394": [
-      "tex/book/duck/y24/spriteFrame",
+      "tex/book/duck/duckSkin24/spriteFrame",
       3,
       1
     ],
     "395": [
-      "tex/book/duck/y92/spriteFrame",
+      "tex/book/duck/duckSkin92/spriteFrame",
       3,
       1
     ],
     "396": [
-      "tex/主页素材/订阅/订阅抖音推荐即可获得奖励/spriteFrame",
+      "tex/homeUi/subscribe/subscribeDouyinReward/spriteFrame",
       3,
       1
     ],
@@ -2417,22 +2417,22 @@
       1
     ],
     "398": [
-      "tex/主页素材/添加桌面/添加桌面/spriteFrame",
+      "tex/homeUi/addToDesktop/addToDesktop/spriteFrame",
       3,
       1
     ],
     "399": [
-      "tex/过关页面/进度条/spriteFrame",
+      "tex/levelCompletePage/progressBar/spriteFrame",
       3,
       1
     ],
     "400": [
-      "tex/复活/是否复活/spriteFrame",
+      "tex/revive/reviveQuestion/spriteFrame",
       3,
       1
     ],
     "401": [
-      "tex/book/duck/y60/spriteFrame",
+      "tex/book/duck/duckSkin60/spriteFrame",
       3,
       1
     ],
@@ -2442,22 +2442,22 @@
       1
     ],
     "403": [
-      "tex/book/duck/y3/spriteFrame",
+      "tex/book/duck/duckSkin3/spriteFrame",
       3,
       1
     ],
     "404": [
-      "tex/book/duck/y27/spriteFrame",
+      "tex/book/duck/duckSkin27/spriteFrame",
       3,
       1
     ],
     "405": [
-      "tex/book/duck/y71/spriteFrame",
+      "tex/book/duck/duckSkin71/spriteFrame",
       3,
       1
     ],
     "406": [
-      "tex/主页素材/添加桌面/提示/spriteFrame",
+      "tex/homeUi/addToDesktop/hint/spriteFrame",
       3,
       1
     ],
@@ -2472,37 +2472,37 @@
       1
     ],
     "409": [
-      "tex/book/shareCollection/安陵容鸭/spriteFrame",
+      "tex/book/shareCollection/anLingRongDuck/spriteFrame",
       3,
       1
     ],
     "410": [
-      "tex/道具/打乱按钮",
+      "tex/props/shuffleButton",
       1,
       1
     ],
     "411": [
-      "tex/道具/打乱按钮/texture",
+      "tex/props/shuffleButton/texture",
       2,
       1
     ],
     "412": [
-      "tex/道具/打乱按钮/spriteFrame",
+      "tex/props/shuffleButton/spriteFrame",
       3,
       1
     ],
     "413": [
-      "tex/book/duck/y62/spriteFrame",
+      "tex/book/duck/duckSkin62/spriteFrame",
       3,
       1
     ],
     "414": [
-      "tex/book/duck/y41/spriteFrame",
+      "tex/book/duck/duckSkin41/spriteFrame",
       3,
       1
     ],
     "415": [
-      "tex/主页素材/订阅/订阅/spriteFrame",
+      "tex/homeUi/subscribe/subscribe/spriteFrame",
       3,
       1
     ],
@@ -2512,7 +2512,7 @@
       1
     ],
     "417": [
-      "tex/book/duck/y14/spriteFrame",
+      "tex/book/duck/duckSkin14/spriteFrame",
       3,
       1
     ],
@@ -2522,17 +2522,17 @@
       1
     ],
     "419": [
-      "tex/book/duck/y99/spriteFrame",
+      "tex/book/duck/duckSkin99/spriteFrame",
       3,
       1
     ],
     "420": [
-      "tex/book/duck/y57/spriteFrame",
+      "tex/book/duck/duckSkin57/spriteFrame",
       3,
       1
     ],
     "421": [
-      "tex/book/shareCollection/华妃鸭/spriteFrame",
+      "tex/book/shareCollection/huaFeiDuck/spriteFrame",
       3,
       1
     ],
@@ -2542,7 +2542,7 @@
       1
     ],
     "424": [
-      "tex/道具/消除/spriteFrame",
+      "tex/props/eliminate/spriteFrame",
       3,
       1
     ]

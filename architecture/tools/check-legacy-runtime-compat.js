@@ -28,16 +28,36 @@ const CHECK_TARGETS = [
         pattern: /tex\/book\/鸽鸽图鉴\/皮肤图鉴\/p(?:10|[1-9]|"\+this\.id\.toString\(\))/g
       },
       {
+        label: 'uiBundle 旧图鉴鸭子短编号路径',
+        pattern: /tex\/book\/duck\/y/g
+      },
+      {
         label: 'uiBundle 旧设置路径',
         pattern: /tex\/设置(?:二级)?\//g
+      },
+      {
+        label: 'aniBundle 旧神兽路径拼接',
+        pattern: /神兽动画合集\/"\+P\.SpecialNameArr\[o\]\+"\/"\+P\.SpecialNameArr\[o\]/g
+      },
+      {
+        label: 'aniBundle 旧鸭子骨骼路径',
+        pattern: /骨骼动画\/鸭子动画\/duck/g
       },
       {
         label: 'uiBundle 旧图鉴分类路径',
         pattern: /tex\/book\/(?:分享鸭|大胃王鸭|水果鸭|特殊图鉴)\//g
       },
       {
+        label: 'uiBundle 旧图鉴动态集合中文拼接路径',
+        pattern: /tex\/book\/shareCollection\/"\+t\+"\/spriteFrame|tex\/book\/fruitCollection\/"\+n\+"\/spriteFrame|tex\/book\/bigEaterCollection\/"\+n\+"\/spriteFrame/g
+      },
+      {
         label: 'uiBundle 旧领取按钮路径',
         pattern: /tex\/(?:已)?领取按钮\/spriteFrame/g
+      },
+      {
+        label: 'uiBundle 旧主界面中文路径',
+        pattern: /tex\/(?:主页素材|道具|失败页面|复活|订阅|排行榜|分享有奖|更多玩法|体力获取|过关页面|领取奖励|开局解锁|自动ui|添加桌面|关注抖音|喊人页面)\//g
       },
       {
         label: 'DuckBundle newNail 旧 ls 短编号运行时路径',
@@ -97,6 +117,19 @@ const CHECK_TARGETS = [
     ]
   },
   {
+    relativePath: 'subpackages/aniBundle/config.animation-bundle.json',
+    checks: [
+      {
+        label: 'aniBundle 配置旧动画目录路径段',
+        pattern: /(?:吃饱动画|圈动画|套鹅动画|小三视频|开始动画|引导动画|戴夫|救救水果鸭|杀手动画|标题动画1|每日|比比拉布|水果大胃王|直玩动画|破门动画|陀螺仪|鸽子动画|神兽动画合集|百鸭朝(?:雀|鲲|龙)|百鹅朝(?:凤|鹏|麟)|鸭子动画|骨骼动画\/门动画)(?:\/(?:skeleton(?:[2-6])?|spriteFrame|texture|[^"\r\n]+))?/g
+      },
+      {
+        label: 'aniBundle 配置旧紧凑命名路径段',
+        pattern: /(?:Done for eat|ZYQ|Kid-eating|new_dove)(?:\/(?:skeleton(?:[2-6])?|spriteFrame|texture|[^"\r\n]+))?/g
+      }
+    ]
+  },
+  {
     relativePath: 'subpackages/audioBundle/config.audio-bundle.json',
     checks: [
       {
@@ -120,6 +153,14 @@ const CHECK_TARGETS = [
       {
         label: 'uiBundle 配置旧图鉴分类路径',
         pattern: /tex\/book\/(?:分享鸭|大胃王鸭|水果鸭|特殊图鉴)\//g
+      },
+      {
+        label: 'uiBundle 配置旧图鉴动态集合中文路径',
+        pattern: /tex\/book\/shareCollection\/(?:甄嬛鸭|华妃鸭|安陵容鸭|刘备鸭|关羽鸭|张飞鸭)\/spriteFrame|tex\/book\/fruitCollection\/(?:西瓜鸭|火龙果鸭|葡萄鸭|蓝莓鸭|苹果鸭|哈密瓜鸭)\/spriteFrame|tex\/book\/bigEaterCollection\/大胃袋鸭\/spriteFrame/g
+      },
+      {
+        label: 'uiBundle 配置旧图鉴鸭子短编号路径',
+        pattern: /tex\/book\/duck\/y(?:[1-9]\d{0,2})\/spriteFrame/g
       },
       {
         label: 'uiBundle 配置旧图鉴展示路径',
@@ -148,6 +189,10 @@ const CHECK_TARGETS = [
       {
         label: 'uiBundle 配置旧自动 UI 路径',
         pattern: /tex\/自动ui\/框\/spriteFrame/g
+      },
+      {
+        label: 'uiBundle 配置旧主界面中文路径',
+        pattern: /tex\/(?:主页素材|道具|失败页面|复活|订阅|排行榜|分享有奖|更多玩法|体力获取|过关页面|领取奖励|开局解锁|自动ui|添加桌面|关注抖音|喊人页面|已领取|领取|求助|使用按钮|转发录屏|转发使用按钮|按键底(?:灰|绿|红)?|标题底|叹号|圆|分享)(?:\/(?:texture|spriteFrame|[^"\r\n]+))?/g
       }
     ]
   },

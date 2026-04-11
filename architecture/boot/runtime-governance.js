@@ -2,7 +2,7 @@
 
 const { getRuntimeStateStore, getRuntimeGlobalObject } = require('./global-context');
 const { updateBootMetrics } = require('./boot-observer');
-const { logInfo, logWarn, logDebug } = require('./boot-logger');
+const { logInfo, logWarn, logDebug, isBootDebugEnabled } = require('./boot-logger');
 
 const RUNTIME_GOVERNANCE_STATE_KEY = '__DUCK_RUNTIME_GOVERNANCE';
 const MEMORY_WARNING_HANDLER_KEY = '__DUCK_MEMORY_WARNING_HANDLERS';
@@ -27,6 +27,7 @@ function installRuntimeGovernance(bootObserver, bootConfig, systemInfo) {
   runtimeState.installedAt = new Date().toISOString();
   runtimeState.platform = String((systemInfo && systemInfo.platform) || 'unknown');
   runtimeState.capabilities = resolveWechatCapabilities();
+  applyConsoleLogGovernance(runtimeState, bootConfig, systemInfo);
 
   if (shouldEnableLifecycleObservers(bootConfig)) {
     registerAppVisibilityListeners(runtimeState, bootObserver);
@@ -436,6 +437,89 @@ function shouldEnableLifecycleObservers(bootConfig) {
  */
 function shouldEnableMemoryWarningObservers(bootConfig) {
   return Boolean(bootConfig.enableMemoryWarningObservers);
+}
+
+/**
+ * 应用运行期日志治理。
+ * 目标：防止高频业务日志在体验版/线上导致帧时间抖动与 I/O 压力。
+ * @param {Record<string, any>} runtimeState 治理状态
+ * @param {Record<string, any>} bootConfig 启动配置
+ * @param {Record<string, any>} systemInfo 系统信息
+ */
+function applyConsoleLogGovernance(runtimeState, bootConfig, systemInfo) {
+  if (!Boolean(bootConfig.enableConsoleLogGovernance)) {
+    return;
+  }
+  if (isBootDebugEnabled()) {
+    return;
+  }
+  if (typeof console === 'undefined' || !console) {
+    return;
+  }
+
+  const normalizedPlatform = String((systemInfo && systemInfo.platform) || '').toLocaleLowerCase();
+  if (normalizedPlatform === 'devtools') {
+    return;
+  }
+
+  const maxLogCount = sanitizeLogBudget(bootConfig.maxRuntimeLogCount, 120);
+  const maxWarnCount = sanitizeLogBudget(bootConfig.maxRuntimeWarnCount, 80);
+  const originalLog = typeof console.log === 'function' ? console.log.bind(console) : function noop() {};
+  const originalWarn = typeof console.warn === 'function' ? console.warn.bind(console) : originalLog;
+
+  const logState = { count: 0, budget: maxLogCount, level: 'log', notified: false };
+  const warnState = { count: 0, budget: maxWarnCount, level: 'warn', notified: false };
+
+  console.log = createBudgetedConsoleMethod(originalLog, logState, originalWarn);
+  console.warn = createBudgetedConsoleMethod(originalWarn, warnState, originalWarn);
+
+  runtimeState.logGovernance = {
+    enabled: true,
+    installedAt: new Date().toISOString(),
+    maxRuntimeLogCount: maxLogCount,
+    maxRuntimeWarnCount: maxWarnCount
+  };
+
+  logInfo('已启用运行期日志治理。', {
+    maxRuntimeLogCount: maxLogCount,
+    maxRuntimeWarnCount: maxWarnCount
+  });
+}
+
+/**
+ * 创建带预算限制的 console 方法。
+ * @param {(message?: any, ...optionalParams: any[]) => void} originalMethod 原始方法
+ * @param {{count: number, budget: number, level: string, notified: boolean}} state 状态
+ * @param {(message?: any, ...optionalParams: any[]) => void} fallbackWarn 提示方法
+ * @returns {(message?: any, ...optionalParams: any[]) => void}
+ */
+function createBudgetedConsoleMethod(originalMethod, state, fallbackWarn) {
+  return function budgetedConsoleMethod() {
+    if (state.count < state.budget) {
+      state.count += 1;
+      originalMethod.apply(null, arguments);
+      return;
+    }
+
+    if (!state.notified) {
+      state.notified = true;
+      fallbackWarn('[DuckBoot][警告] 运行期 ' + state.level + ' 日志已达到预算，后续将静默。');
+    }
+  };
+}
+
+/**
+ * 规范化日志预算值。
+ * @param {any} rawBudget 输入预算
+ * @param {number} fallbackBudget 回退预算
+ * @returns {number}
+ */
+function sanitizeLogBudget(rawBudget, fallbackBudget) {
+  const normalizedBudget = Math.round(Number(rawBudget));
+  if (!Number.isFinite(normalizedBudget)) {
+    return fallbackBudget;
+  }
+  return Math.max(20, Math.min(normalizedBudget, 2000));
 }
 
 /**

@@ -1,7 +1,68 @@
 {
   "description": "WeChat mini game project.",
   "packOptions": {
-    "ignore": [],
+    "ignore": [
+      {
+        "type": "folder",
+        "value": ".git"
+      },
+      {
+        "type": "folder",
+        "value": ".idea"
+      },
+      {
+        "type": "folder",
+        "value": "architecture/docs"
+      },
+      {
+        "type": "folder",
+        "value": "architecture/generated"
+      },
+      {
+        "type": "folder",
+        "value": "architecture/memory"
+      },
+      {
+        "type": "folder",
+        "value": "architecture/skills"
+      },
+      {
+        "type": "folder",
+        "value": "architecture/tools"
+      },
+      {
+        "type": "folder",
+        "value": "wechat-test"
+      },
+      {
+        "type": "folder",
+        "value": "tools"
+      },
+      {
+        "type": "file",
+        "value": "README.md"
+      },
+      {
+        "type": "file",
+        "value": "analyse-data.json"
+      },
+      {
+        "type": "file",
+        "value": "architecture/README.md"
+      },
+      {
+        "type": "file",
+        "value": "package-lock.json"
+      },
+      {
+        "type": "file",
+        "value": "package.json"
+      },
+      {
+        "type": "file",
+        "value": "project.private.config.json"
+      }
+    ],
     "include": []
   },
   "setting": {

@@ -1,5 +1,76 @@
 # 素材治理记录
 
+## 2026-04-11 `aniBundle` 运行时直连路径同步收口（第二批，清零）
+
+在第一批完成后，`aniBundle` 仍剩 `50` 个噪音候选，集中在两类：
+- 运行时动态拼接的 `神兽动画合集/*/*`
+- 运行时直连的 `骨骼动画/鸭子动画/duck`
+
+本轮继续按“源头重构，不加兼容”执行，做了两处同步：
+- `game.js`：
+  - 将神兽资源拼接从 `神兽动画合集/...` 切到 `mythicCollection/...`，并在拼接处对 `百鸭/百鹅` 名称做路径映射，保持展示文案不变。
+  - 将 `骨骼动画/鸭子动画/duck` 改为 `skeletonAnimations/duckAnimation/duck`。
+- `semanticize-anibundle-path-assets.js`：
+  - 放开此前保留的 `神兽动画合集/*` 与 `骨骼动画/鸭子动画/*` 收敛；
+  - 新增 `神兽动画合集`、`百鸭朝*`、`百鹅朝*`、`鸭子动画` 段映射。
+
+本轮同步治理：
+- `architecture/tools/check-legacy-runtime-compat.js` 新增 `game.js` 的 `aniBundle` 旧路径拼接/直连路径回流检测。
+
+验证结果：
+- `node architecture/tools/semanticize-anibundle-path-assets.js` 本轮改写 `50`，二次执行 `0`（幂等通过）。
+- `npm run -s guardrails` 通过。
+- `node architecture/tools/run-wechat-official-checks.js --skip-cli --with-minigame-test-doctor --allow-missing-test-sdk` 通过。
+- `asset-readability-audit`：`aniBundle` 命中候选 `50 -> 0`，全局命中候选 `310 -> 260`。
+
+## 2026-04-11 `aniBundle` 非运行时直连路径语义化收敛（第一批）
+
+本轮目标：
+- 在不增加兼容层的前提下，继续把 `aniBundle` 可读性噪音从 canonical 源头收敛。
+- 对已确认运行时直连路径先保留不动，避免引入线上行为回归。
+
+本轮新增脚本：
+- `architecture/tools/semanticize-anibundle-path-assets.js`
+
+本轮策略：
+- 语义化映射了 `aniBundle` 中非运行时直连路径段，包括：
+  - `吃饱动画 -> eatFullAnimation`
+  - `Done for eat -> eatFull`
+  - `圈动画 -> ringAnimation`
+  - `ZYQ -> ringLoop`
+  - `套鹅动画 -> gooseTrapAnimation`
+  - `小三视频 -> sideStoryVideo`
+  - `开始动画 -> startAnimation`
+  - `引导动画 -> tutorialAnimation`
+  - `戴夫 -> daveAnimation`
+  - `救救水果鸭 -> saveFruitDuckAnimation`
+  - `杀手动画 -> assassinAnimation`
+  - `标题动画1 -> titleAnimation1`
+  - `每日 -> dailyAnimation`
+  - `比比拉布 -> bibiLabuAnimation`
+  - `水果大胃王 -> fruitBigEaterAnimation`
+  - `Kid-eating -> kidEating`
+  - `直玩动画 -> instantPlayAnimation`
+  - `破门动画 -> doorBreakAnimation`
+  - `陀螺仪 -> gyroscopeAnimation`
+  - `鸽子动画 -> pigeonAnimation`
+  - `new_dove -> newDove`
+  - `骨骼动画 -> skeletonAnimations`
+  - `门动画 -> doorAnimation`
+- 运行时保留路径（本轮不改）：
+  - `prefab/SubBg`
+  - `骨骼动画/鸭子动画/duck`
+  - `神兽动画合集/*`
+
+本轮同步治理：
+- `architecture/tools/check-legacy-runtime-compat.js` 新增 `aniBundle` 旧目录段与紧凑命名回流检测。
+- `architecture/tools/run-guardrails.js` 接入 `semanticize-anibundle-path-assets.js` 语法检查。
+
+验证结果：
+- `node architecture/tools/semanticize-anibundle-path-assets.js` 首次执行改写 `124`，二次执行改写 `0`（幂等通过）。
+- `npm run -s guardrails` 通过。
+- `asset-readability-audit`：总命中候选 `435 -> 310`，其中 `aniBundle` `155 -> 50`。
+
 ## 2026-04-11 `DuckBundle` `newNail/ls|lw` 运行时旧路径根因修复
 
 本轮处理线上阻塞报错 `Bundle DuckBundle doesn't contain tex/newNail/ls7/spriteFrame`。根因不是 `config.duck-bundle.json` 回退，而是 `game.js` 钉子初始化仍在拼接旧短编号路径：
@@ -791,3 +862,38 @@
   - pack 名称改写 `26`
 - 第二次执行改写数均为 `0`（幂等通过）。
 - `node architecture/tools/check-legacy-runtime-compat.js` 通过。
+
+## 2026-04-11 `uiBundle` 主界面/图鉴残留路径清零
+
+本轮目标：
+- 在不增加兼容层的前提下，把 `uiBundle` 剩余中文与短编号路径彻底收敛到语义化英文 canonical。
+- 同步修正 `game.js` 中对应动态拼接路径，避免运行期继续依赖 legacy token。
+- 将收敛动作脚本化并纳入护栏，保证后续回归可自动阻断。
+
+本轮新增语义化脚本：
+- `architecture/tools/semanticize-uibundle-home-assets.js`
+  - 清理 `主页素材/道具/失败页面/复活/更多玩法/体力获取/过关页面/...` 共 `147` 条路径
+  - 保留运行时动态拼接的 `book/shareCollection|fruitCollection|bigEaterCollection` 路径，避免误改
+- `architecture/tools/semanticize-uibundle-book-duck-assets.js`
+  - `tex/book/duck/yN/spriteFrame -> tex/book/duck/duckSkinN/spriteFrame`，共 `100` 条
+- `architecture/tools/semanticize-uibundle-book-collection-assets.js`
+  - `shareCollection/fruitCollection/bigEaterCollection` 的 `13` 条中文条目改为英文 token
+
+本轮运行时同步调整：
+- `game.js`：
+  - `tex/book/duck/y... -> tex/book/duck/duckSkin...`（2 处）
+  - `shareCollection/fruitCollection/bigEaterCollection` 动态拼接改为 `显示名 -> 资源 token` 内联映射，保持 UI 显示中文、资源路径英文
+
+本轮护栏与治理更新：
+- `architecture/tools/run-guardrails.js` 新增 3 个 uiBundle 语义化脚本语法检查步骤
+- `architecture/tools/check-legacy-runtime-compat.js` 新增：
+  - `game.js` 旧 `tex/book/duck/y...` 路径检查
+  - `game.js` 旧图鉴动态集合中文直拼接路径检查
+  - `uiBundle` 配置旧 duck 短编号与旧中文动态集合路径检查
+
+本轮验证结果：
+- `npm run -s guardrails`：通过
+- `node architecture/tools/run-wechat-official-checks.js --skip-cli --with-minigame-test-doctor --allow-missing-test-sdk`：通过
+- `node architecture/tools/generate-asset-readability-audit.js`：
+  - `candidateCount: 0`
+  - `uiBundle` 剩余噪音候选：`0`

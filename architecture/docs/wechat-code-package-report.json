@@ -29,9 +29,9 @@
       "runtime",
       "src"
     ],
-    "fileCount": 35,
-    "sizeBytes": 3533993,
-    "sizeText": "3.37 MiB",
+    "fileCount": 36,
+    "sizeBytes": 3546652,
+    "sizeText": "3.38 MiB",
     "limitBytes": 4194304,
     "limitText": "4.00 MiB",
     "withinLimit": true,
@@ -75,7 +75,7 @@
       {
         "path": "architecture/boot/config.js",
         "displayPath": "architecture/boot/config.js",
-        "sizeBytes": 6215,
+        "sizeBytes": 6745,
         "sizeText": "0.01 MiB"
       },
       {
@@ -111,7 +111,7 @@
       {
         "path": "architecture/boot/render-policies.js",
         "displayPath": "architecture/boot/render-policies.js",
-        "sizeBytes": 8901,
+        "sizeBytes": 10722,
         "sizeText": "0.01 MiB"
       },
       {
@@ -123,14 +123,20 @@
       {
         "path": "architecture/boot/runtime-governance.js",
         "displayPath": "architecture/boot/runtime-governance.js",
-        "sizeBytes": 15583,
-        "sizeText": "0.01 MiB"
+        "sizeBytes": 18629,
+        "sizeText": "0.02 MiB"
       },
       {
         "path": "architecture/boot/system-info.js",
         "displayPath": "architecture/boot/system-info.js",
         "sizeBytes": 1465,
         "sizeText": "0.00 MiB"
+      },
+      {
+        "path": "assets/.DS_Store",
+        "displayPath": "assets/.DS_Store",
+        "sizeBytes": 6148,
+        "sizeText": "0.01 MiB"
       },
       {
         "path": "assets/internal/config.internal.json",
@@ -219,7 +225,7 @@
       {
         "path": "game.js",
         "displayPath": "game.js",
-        "sizeBytes": 2697680,
+        "sizeBytes": 2698794,
         "sizeText": "2.57 MiB"
       },
       {
@@ -1726,7 +1732,7 @@
         "subpackages/aniBundle"
       ],
       "fileCount": 130,
-      "sizeBytes": 3162587,
+      "sizeBytes": 3163457,
       "sizeText": "3.02 MiB",
       "limitBytes": null,
       "limitText": null,
@@ -1735,7 +1741,7 @@
         {
           "path": "subpackages/aniBundle/config.animation-bundle.json",
           "displayPath": "subpackages/aniBundle/config.animation-bundle.json",
-          "sizeBytes": 22125,
+          "sizeBytes": 22995,
           "sizeText": "0.02 MiB"
         },
         {
@@ -11507,7 +11513,7 @@
         "subpackages/uiBundle"
       ],
       "fileCount": 115,
-      "sizeBytes": 2239978,
+      "sizeBytes": 2240479,
       "sizeText": "2.14 MiB",
       "limitBytes": null,
       "limitText": null,
@@ -11516,7 +11522,7 @@
         {
           "path": "subpackages/uiBundle/config.ui-bundle.json",
           "displayPath": "subpackages/uiBundle/config.ui-bundle.json",
-          "sizeBytes": 60789,
+          "sizeBytes": 61290,
           "sizeText": "0.06 MiB"
         },
         {
@@ -12209,9 +12215,9 @@
   "workerPackage": null,
   "totals": {
     "packageCount": 9,
-    "fileCount": 2005,
-    "sizeBytes": 26760749,
-    "sizeText": "25.52 MiB",
+    "fileCount": 2006,
+    "sizeBytes": 26774779,
+    "sizeText": "25.53 MiB",
     "limitBytes": 31457280,
     "limitText": "30.00 MiB",
     "withinLimit": true

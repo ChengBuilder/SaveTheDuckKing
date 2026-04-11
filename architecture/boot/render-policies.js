@@ -47,7 +47,8 @@ function applyRenderResolutionPolicy(systemInfo, renderPixelRatioCap) {
 
   const baseSize = getCanvasBaseSize();
   const rawDpr = Number(window.devicePixelRatio || systemInfo.pixelRatio || 1);
-  const renderDpr = sanitizeRenderDpr(rawDpr, renderPixelRatioCap);
+  const adaptiveRenderCap = resolveAdaptiveRenderPixelRatioCap(systemInfo, renderPixelRatioCap);
+  const renderDpr = sanitizeRenderDpr(rawDpr, adaptiveRenderCap);
   const normalizedBaseWidth = sanitizePositiveInteger(baseSize.width, canvas.width);
   const normalizedBaseHeight = sanitizePositiveInteger(baseSize.height, canvas.height);
   const targetRenderWidth = sanitizePositiveInteger(
@@ -135,13 +136,14 @@ function resolveRenderResolutionState(systemInfo, renderPixelRatioCap) {
   const hasCanvas = typeof canvas !== 'undefined' && Boolean(canvas);
   const hasWindow = typeof window !== 'undefined' && Boolean(window);
   const rawDpr = Number((hasWindow ? window.devicePixelRatio : 0) || systemInfo.pixelRatio || 1);
-  const renderDpr = sanitizeRenderDpr(rawDpr, renderPixelRatioCap);
+  const adaptiveRenderCap = resolveAdaptiveRenderPixelRatioCap(systemInfo, renderPixelRatioCap);
+  const renderDpr = sanitizeRenderDpr(rawDpr, adaptiveRenderCap);
 
   if (!hasCanvas) {
     return {
       canApplyRenderResolution: false,
       devicePixelRatio: Number.isFinite(rawDpr) && rawDpr > 0 ? rawDpr : 1,
-      renderPixelRatioCap: Number(renderPixelRatioCap),
+      renderPixelRatioCap: adaptiveRenderCap,
       targetRenderDpr: renderDpr,
       baseWidth: null,
       baseHeight: null,
@@ -157,7 +159,7 @@ function resolveRenderResolutionState(systemInfo, renderPixelRatioCap) {
   return {
     canApplyRenderResolution: hasCanvas && hasWindow,
     devicePixelRatio: Number.isFinite(rawDpr) && rawDpr > 0 ? rawDpr : 1,
-    renderPixelRatioCap: Number(renderPixelRatioCap),
+    renderPixelRatioCap: adaptiveRenderCap,
     targetRenderDpr: renderDpr,
     baseWidth: normalizedBaseWidth,
     baseHeight: normalizedBaseHeight,
@@ -177,9 +179,20 @@ function resolveRenderResolutionState(systemInfo, renderPixelRatioCap) {
  */
 function resolveTargetFrameRate(systemInfo, lowEndBenchmarkLevel, lowEndFps, defaultFps) {
   const benchmarkLevel = Number(systemInfo.benchmarkLevel || 0);
-  return benchmarkLevel > 0 && benchmarkLevel <= Number(lowEndBenchmarkLevel)
+  let targetFps = benchmarkLevel > 0 && benchmarkLevel <= Number(lowEndBenchmarkLevel)
     ? Number(lowEndFps)
     : Number(defaultFps);
+  const normalizedPlatform = String(systemInfo.platform || '').toLocaleLowerCase();
+
+  // 中端机（benchmark <= 30）也适度降档，优先稳定帧时间。
+  if (benchmarkLevel > 0 && benchmarkLevel <= 30) {
+    targetFps = Math.min(targetFps, 45);
+  }
+  // Android 设备普遍更容易出现持续发热和掉帧，默认不上 55+。
+  if (normalizedPlatform === 'android') {
+    targetFps = Math.min(targetFps, 50);
+  }
+  return sanitizeTargetFrameRate(targetFps);
 }
 
 /**
@@ -254,6 +267,47 @@ function sanitizeRenderDpr(rawDpr, renderPixelRatioCap) {
   }
 
   return Math.max(1, Math.min(normalizedDpr, normalizedCap));
+}
+
+/**
+ * 依据机型性能分层动态收紧渲染像素比上限。
+ * @param {Record<string, any>} systemInfo 系统信息
+ * @param {number} renderPixelRatioCap 配置像素比上限
+ * @returns {number}
+ */
+function resolveAdaptiveRenderPixelRatioCap(systemInfo, renderPixelRatioCap) {
+  let cap = Number(renderPixelRatioCap);
+  if (!Number.isFinite(cap) || cap <= 0) {
+    cap = 1.6;
+  }
+
+  const benchmarkLevel = Number(systemInfo.benchmarkLevel || 0);
+  const normalizedPlatform = String(systemInfo.platform || '').toLocaleLowerCase();
+
+  if (benchmarkLevel > 0 && benchmarkLevel <= 15) {
+    cap = Math.min(cap, 1.25);
+  } else if (benchmarkLevel > 0 && benchmarkLevel <= 30) {
+    cap = Math.min(cap, 1.4);
+  }
+
+  if (normalizedPlatform === 'android') {
+    cap = Math.min(cap, 1.4);
+  }
+
+  return Math.max(1, cap);
+}
+
+/**
+ * 规范化目标帧率，避免配置异常导致失控。
+ * @param {number} rawFps 输入帧率
+ * @returns {number}
+ */
+function sanitizeTargetFrameRate(rawFps) {
+  const normalizedFps = Math.round(Number(rawFps));
+  if (!Number.isFinite(normalizedFps)) {
+    return 45;
+  }
+  return Math.max(20, Math.min(normalizedFps, 60));
 }
 
 module.exports = {
