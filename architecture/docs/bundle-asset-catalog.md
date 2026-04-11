@@ -20,7 +20,7 @@
 | `DuckBundle` | `duck-game` | subpackage-bundle | `main`、`resources` | 1227 | 0 | tex / prefab |
 | `Game2Bundle` | `fruit-game` | subpackage-bundle | `main` | 161 | 0 | tex / prefab |
 | `HomeBundle` | `duck-game` | subpackage-bundle | `main` | 231 | 0 | tex / prefab |
-| `aniBundle` | `animation-assets` | subpackage-bundle | `main`、`start-scene` | 156 | 0 | 神兽动画合集 / 骨骼动画 / 小三视频 |
+| `aniBundle` | `animation-assets` | subpackage-bundle | `main`、`start-scene` | 156 | 0 | mythicCollection / skeletonAnimations / sideStoryVideo |
 | `audioBundle` | `audio-assets` | subpackage-bundle | 无 | 65 | 0 | fruitGame / legacy / comboMusic |
 | `main` | `main-scenes` | subpackage-bundle | `start-scene` | 5 | 5 | db: |
 | `resources` | `shared-effects` | subpackage-bundle | 无 | 27 | 0 | particleEffects / ribbonBurst / multiTexture |
@@ -288,68 +288,67 @@
   - `skeleton3`：6
   - `skeleton4`：6
   - `skeleton5`：6
-  - `ZYQ`：5
   - `skeleton6`：3
 - 命名噪声样例路径：
-  - `小三视频/skeleton2`
-  - `小三视频/skeleton5`
-  - `小三视频/skeleton3`
-  - `圈动画/ZYQ`
-  - `小三视频/skeleton4`
-  - `破门动画/skeleton2`
-  - `小三视频/skeleton2/texture`
-  - `小三视频/skeleton2/spriteFrame`
-  - `骨骼动画/鸭子动画/skeleton4`
-  - `骨骼动画/鸭子动画/skeleton4/texture`
-  - `骨骼动画/鸭子动画/skeleton4/spriteFrame`
-  - `小三视频/skeleton5/texture`
-  - `小三视频/skeleton5/spriteFrame`
-  - `小三视频/skeleton3/texture`
-  - `小三视频/skeleton3/spriteFrame`
-  - `骨骼动画/鸭子动画/skeleton6`
+  - `sideStoryVideo/skeleton2`
+  - `sideStoryVideo/skeleton5`
+  - `sideStoryVideo/skeleton3`
+  - `sideStoryVideo/skeleton4`
+  - `doorBreakAnimation/skeleton2`
+  - `sideStoryVideo/skeleton2/texture`
+  - `sideStoryVideo/skeleton2/spriteFrame`
+  - `skeletonAnimations/duckAnimation/skeleton4`
+  - `skeletonAnimations/duckAnimation/skeleton4/texture`
+  - `skeletonAnimations/duckAnimation/skeleton4/spriteFrame`
+  - `sideStoryVideo/skeleton5/texture`
+  - `sideStoryVideo/skeleton5/spriteFrame`
+  - `sideStoryVideo/skeleton3/texture`
+  - `sideStoryVideo/skeleton3/spriteFrame`
+  - `skeletonAnimations/duckAnimation/skeleton6`
+  - `skeletonAnimations/duckAnimation/skeleton6/texture`
 - 主要路径前缀：
-  - `神兽动画合集`：30
-  - `骨骼动画`：25
-  - `小三视频`：17
-  - `破门动画`：8
-  - `比比拉布`：5
-  - `标题动画1`：5
-  - `吃饱动画`：5
-  - `戴夫`：5
-  - `鸽子动画`：5
-  - `救救水果鸭`：5
-  - `开始动画`：5
-  - `每日`：5
+  - `mythicCollection`：30
+  - `skeletonAnimations`：25
+  - `sideStoryVideo`：17
+  - `doorBreakAnimation`：8
+  - `assassinAnimation`：5
+  - `bibiLabuAnimation`：5
+  - `dailyAnimation`：5
+  - `daveAnimation`：5
+  - `eatFullAnimation`：5
+  - `fruitBigEaterAnimation`：5
+  - `gooseTrapAnimation`：5
+  - `gyroscopeAnimation`：5
 - 主要语义路径：
-  - `骨骼动画/鸭子动画`：20
-  - `比比拉布/skeleton`：5
-  - `吃饱动画/Done for eat`：5
-  - `戴夫/skeleton`：5
-  - `鸽子动画/new_dove`：5
-  - `骨骼动画/门动画`：5
-  - `救救水果鸭/skeleton`：5
-  - `开始动画/skeleton`：5
-  - `每日/skeleton`：5
-  - `破门动画/skeleton`：5
-  - `圈动画/ZYQ`：5
-  - `杀手动画/skeleton`：5
+  - `skeletonAnimations/duckAnimation`：20
+  - `assassinAnimation/skeleton`：5
+  - `bibiLabuAnimation/skeleton`：5
+  - `dailyAnimation/skeleton`：5
+  - `daveAnimation/skeleton`：5
+  - `doorBreakAnimation/skeleton`：5
+  - `eatFullAnimation/eatFull`：5
+  - `fruitBigEaterAnimation/kidEating`：5
+  - `gooseTrapAnimation/skeleton`：5
+  - `gyroscopeAnimation/skeleton`：5
+  - `instantPlayAnimation/skeleton`：5
+  - `mythicCollection/hundredDucksToDragon`：5
 - 样例路径：
-  - `神兽动画合集/百鹅朝麟/skeleton`
-  - `陀螺仪/skeleton`
-  - `神兽动画合集/百鹅朝凤/skeleton`
-  - `小三视频/skeleton`
-  - `神兽动画合集/百鸭朝龙/skeleton`
-  - `神兽动画合集/百鹅朝鹏/skeleton`
-  - `破门动画/skeleton`
-  - `开始动画/skeleton`
-  - `小三视频/skeleton2`
-  - `神兽动画合集/百鹅朝麟/skeleton`
-  - `神兽动画合集/百鹅朝鹏/skeleton`
-  - `神兽动画合集/百鸭朝雀/skeleton`
-  - `杀手动画/skeleton`
-  - `小三视频/skeleton5`
-  - `神兽动画合集/百鸭朝鲲/skeleton`
-  - `戴夫/skeleton`
+  - `mythicCollection/hundredGeeseToQilin/skeleton`
+  - `gyroscopeAnimation/skeleton`
+  - `mythicCollection/hundredGeeseToPhoenix/skeleton`
+  - `sideStoryVideo/skeleton`
+  - `mythicCollection/hundredDucksToDragon/skeleton`
+  - `mythicCollection/hundredGeeseToRoc/skeleton`
+  - `doorBreakAnimation/skeleton`
+  - `startAnimation/skeleton`
+  - `sideStoryVideo/skeleton2`
+  - `mythicCollection/hundredGeeseToQilin/skeleton`
+  - `mythicCollection/hundredGeeseToRoc/skeleton`
+  - `mythicCollection/hundredDucksToSparrow/skeleton`
+  - `assassinAnimation/skeleton`
+  - `sideStoryVideo/skeleton5`
+  - `mythicCollection/hundredDucksToKun/skeleton`
+  - `daveAnimation/skeleton`
 - 场景路径：
   - 无
 
@@ -512,67 +511,43 @@
 - UUID 风格编译文件：0
 - 命名噪声高频片段：
   - `new`：3
-  - `%`：1
-  - `y1`：1
-  - `y10`：1
-  - `y100`：1
-  - `y11`：1
-  - `y12`：1
-  - `y13`：1
-  - `y14`：1
-  - `y15`：1
-  - `y16`：1
-  - `y17`：1
 - 命名噪声样例路径：
-  - `tex/book/duck/y30/spriteFrame`
-  - `tex/book/duck/y51/spriteFrame`
-  - `tex/book/duck/y75/spriteFrame`
-  - `tex/book/duck/y17/spriteFrame`
-  - `tex/book/duck/y10/spriteFrame`
-  - `tex/book/duck/y34/spriteFrame`
-  - `tex/book/duck/y38/spriteFrame`
-  - `tex/book/duck/y40/spriteFrame`
-  - `tex/book/duck/y77/spriteFrame`
-  - `tex/book/duck/y11/spriteFrame`
-  - `tex/book/duck/y12/spriteFrame`
-  - `tex/book/duck/y39/spriteFrame`
-  - `tex/book/duck/y55/spriteFrame`
-  - `tex/book/duck/y21/spriteFrame`
-  - `tex/book/duck/y76/spriteFrame`
-  - `tex/book/duck/y5/spriteFrame`
+  - `tex/new`
+  - `tex/new/texture`
+  - `tex/new/spriteFrame`
 - 主要路径前缀：
   - `tex`：372
   - `prefab`：28
 - 主要语义路径：
   - `tex/book`：151
-  - `tex/主页素材`：48
-  - `tex/道具`：21
-  - `tex/过关页面`：20
+  - `tex/homeUi`：48
+  - `tex/levelCompletePage`：27
+  - `tex/props`：21
   - `tex/settings`：17
-  - `tex/失败页面`：15
-  - `tex/复活`：14
-  - `tex/sharePage`：12
-  - `tex/更多玩法`：9
+  - `tex/failPage`：15
+  - `tex/revive`：14
+  - `tex/sharePage`：13
+  - `tex/moreGames`：9
   - `tex/reportDialog`：8
-  - `tex/体力获取`：7
-  - `tex/levelCompletePage`：7
+  - `tex/energyPanel`：7
+  - `tex/autoUi`：6
 - 样例路径：
-  - `tex/过关页面/还差/spriteFrame`
-  - `tex/book/duck/y30/spriteFrame`
-  - `tex/过关页面/成功进度/只鸭解锁百鸭朝雀/spriteFrame`
+  - `tex/levelCompletePage/remainingNeeded/spriteFrame`
+  - `tex/book/duck/duckSkin30/spriteFrame`
+  - `tex/levelCompletePage/successProgress/unlockByDuckCount_hundredDucksToSparrow/spriteFrame`
   - `tex/settings/giveUpChallengeText/spriteFrame`
-  - `tex/更多玩法/图标算数/spriteFrame`
+  - `tex/moreGames/iconMath/spriteFrame`
   - `tex/book/ui/filterAll/spriteFrame`
-  - `tex/主页素材/排行榜/名次底2/spriteFrame`
-  - `tex/失败页面/继续挑战/spriteFrame`
-  - `tex/book/duck/y51/spriteFrame`
-  - `tex/book/duck/y75/spriteFrame`
-  - `tex/book/shareCollection/张飞鸭/spriteFrame`
+  - `tex/homeUi/leaderboard/rankIndexBase2/spriteFrame`
+  - `tex/failPage/continueChallenge/spriteFrame`
+  - `tex/book/duck/duckSkin51/spriteFrame`
+  - `tex/book/duck/duckSkin75/spriteFrame`
+  - `tex/book/shareCollection/zhangFeiDuck/spriteFrame`
   - `tex/book/pigeonGallery/skinCollection/skinPage8/spriteFrame`
   - `tex/settings/soundEffectIcon/spriteFrame`
   - `prefab/ShareUI`
   - `tex/book/ui/completion100Label/spriteFrame`
-  - `tex/book/duck/y17/spriteFrame`
+  - `tex/book/duck/duckSkin17/spriteFrame`
 - 场景路径：
   - 无
 

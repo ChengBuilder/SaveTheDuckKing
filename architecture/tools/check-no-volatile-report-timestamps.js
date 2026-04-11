@@ -72,6 +72,32 @@ const TARGET_RULES = Object.freeze([
         pattern: /lines\.push\(\s*['"`]-\s*生成时间：/
       }
     ]
+  },
+  {
+    relativePath: 'architecture/tools/sync-safe-ignore-from-analyse.js',
+    checks: [
+      {
+        label: 'generatedAt 动态时间戳字段',
+        pattern: /generatedAt:\s*new Date\(\)\.toISOString\(\)/
+      },
+      {
+        label: 'Markdown Generated At 行',
+        pattern: /lines\.push\(\s*['"`]-\s*Generated At:/
+      }
+    ]
+  },
+  {
+    relativePath: 'architecture/tools/generate-gamejs-deobfuscation-audit.js',
+    checks: [
+      {
+        label: 'generatedAt 动态时间戳字段',
+        pattern: /generatedAt:\s*new Date\(\)\.toISOString\(\)/
+      },
+      {
+        label: 'Markdown 生成时间行',
+        pattern: /lines\.push\(\s*['"`]-\s*生成时间：/
+      }
+    ]
   }
 ]);
 

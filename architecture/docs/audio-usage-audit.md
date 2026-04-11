@@ -5,44 +5,17 @@
 ## 总览
 - Bundle：`audioBundle`
 - 音频 canonical 路径数：65
-- 直接引用条目数：27
-- 动态前缀匹配条目数：15
-- 未引用候选数：23
+- 直接引用条目数：0
+- 动态前缀匹配条目数：0
+- 未引用候选数：65
 - 低可读命名候选数：0
 - 根层路径候选数：0
 
 ## 直接引用
-- `bgm/defaultGameplay`：`playMusic` x 12
-- `bgm/pureColor`：`playMusic` x 3
-- `duckGame/cageBreak`：`playSound` x 2
-- `duckGame/duckQuack`：`playSound` x 2
-- `duckGame/duckVictory`：`playLongSound` x 1
-- `duckGame/errorPrompt`：`playSound` x 3
-- `duckGame/nailPop`：`playSound` x 1
-- `duckGame/stoneCollision`：`playSound` x 2
-- `duckGame/woodAssembleFollow`：`playSound` x 2
-- `duckGame/woodAssembleLead`：`playSound` x 2
-- `duckGame/woodCollision`：`playSound` x 1
-- `fruitGame/fruitBgm`：`playMusic` x 5
-- `fruitGame/fruitClick`：`playSound` x 2
-- `fruitGame/FruitWin`：`playLongSound` x 1
-- `fruitGame/slotFull`：`playSound` x 3
-- `sceneTransition/duckDrop`：`playSound` x 1
-- `sceneTransition/fruitGameReveal`：`playSound` x 1
-- `ui/applause`：`playSound` x 1
-- `ui/buttonClick`：`playSound` x 94
-- `ui/duckUnlock`：`playSound` x 1
-- `ui/failurePrompt`：`playSound` x 2
-- `ui/failureStinger`：`playSound` x 2
-- `ui/levelComplete`：`playSound` x 2
-- `ui/powerConsume`：`playSound` x 2
-- `ui/ribbonBurst`：`playSound` x 1
-- `ui/victoryStinger`：`playSound` x 2
-- `ui/warningPrompt`：`playSound` x 2
+- 无
 
 ## 动态前缀引用
-- `fruitGame/`：`playSound` x 1
-- `woodDrop/woodDrop_`：`playSound` x 2
+- 无
 
 ## 根层路径候选
 - 无
@@ -51,6 +24,8 @@
 - 无
 
 ## 未引用候选
+- `bgm/defaultGameplay`
+- `bgm/pureColor`
 - `comboMusic/combo_1`
 - `comboMusic/combo_10`
 - `comboMusic/combo_2`
@@ -61,6 +36,31 @@
 - `comboMusic/combo_7`
 - `comboMusic/combo_8`
 - `comboMusic/combo_9`
+- `duckGame/cageBreak`
+- `duckGame/duckQuack`
+- `duckGame/duckVictory`
+- `duckGame/errorPrompt`
+- `duckGame/nailPop`
+- `duckGame/stoneCollision`
+- `duckGame/woodAssembleFollow`
+- `duckGame/woodAssembleLead`
+- `duckGame/woodCollision`
+- `fruitGame/born`
+- `fruitGame/born1`
+- `fruitGame/eat`
+- `fruitGame/eliminate1`
+- `fruitGame/eliminate2`
+- `fruitGame/eliminate3`
+- `fruitGame/eliminate4`
+- `fruitGame/eliminate5`
+- `fruitGame/eliminate6`
+- `fruitGame/eliminate7`
+- `fruitGame/eliminate8`
+- `fruitGame/fruitBgm`
+- `fruitGame/fruitClick`
+- `fruitGame/FruitWin`
+- `fruitGame/plateUnlock`
+- `fruitGame/slotFull`
 - `legacy/door`
 - `legacy/fly`
 - `legacy/fruitBornDuplicateLz`
@@ -73,7 +73,22 @@
 - `legacy/unknownBdz`
 - `legacy/unknownLs`
 - `legacy/victory`
+- `sceneTransition/duckDrop`
 - `sceneTransition/duckGameReveal`
+- `sceneTransition/fruitGameReveal`
+- `ui/applause`
+- `ui/buttonClick`
+- `ui/duckUnlock`
+- `ui/failurePrompt`
+- `ui/failureStinger`
+- `ui/levelComplete`
+- `ui/powerConsume`
+- `ui/ribbonBurst`
+- `ui/victoryStinger`
+- `ui/warningPrompt`
+- `woodDrop/woodDrop_1`
+- `woodDrop/woodDrop_2`
+- `woodDrop/woodDrop_3`
 
 ## 结果文件
 - Markdown：`architecture/docs/audio-usage-audit.md`

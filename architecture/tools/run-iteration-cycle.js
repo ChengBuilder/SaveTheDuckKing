@@ -17,11 +17,14 @@ function runIterationCycle() {
   const steps = [
     createScriptStep(layout, '生成模块索引', 'architecture/tools/generate-module-index.js'),
     createScriptStep(layout, '格式化关键 JSON 清单', 'architecture/tools/format-project-json.js'),
+    createScriptStep(layout, '拆分 game.js 入口与模块定义', 'architecture/tools/split-gamejs-into-modules.js'),
     createScriptStep(layout, '生成素材分层报告', 'architecture/tools/generate-asset-code-report.js'),
     createScriptStep(layout, '生成 Bundle 资产目录', 'architecture/tools/generate-bundle-asset-catalog.js'),
     createScriptStep(layout, '生成 UUID 资产审计', 'architecture/tools/generate-uuid-asset-report.js'),
     createScriptStep(layout, '生成素材可读性审计', 'architecture/tools/generate-asset-readability-audit.js'),
+    createScriptStep(layout, '生成 game.js 反混淆审计', 'architecture/tools/generate-gamejs-deobfuscation-audit.js'),
     createScriptStep(layout, '生成音频使用审计', 'architecture/tools/generate-audio-usage-audit.js'),
+    createScriptStep(layout, '生成 unused safe-ignore 报告', 'architecture/tools/sync-safe-ignore-from-analyse.js'),
     createScriptStep(layout, '执行护栏检查', 'architecture/tools/run-guardrails.js'),
     createScriptStep(layout, '生成迭代报告', 'architecture/tools/generate-iteration-report.js')
   ];

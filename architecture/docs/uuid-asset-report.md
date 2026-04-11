@@ -158,14 +158,14 @@
 - native 命中：0
 - 主要资产类型：cc.ImageAsset x 35，cc.SpriteFrame x 35，cc.Texture2D x 35，cc.Asset x 25，sp.SkeletonData x 25，cc.Prefab x 1
 - 样例资产映射：
-  - `神兽动画合集/百鹅朝麟/skeleton` / cc.ImageAsset / missing-import-json
-  - `陀螺仪/skeleton` / cc.Asset / missing-import-json
-  - `神兽动画合集/百鹅朝凤/skeleton` / cc.ImageAsset / missing-import-json
-  - `小三视频/skeleton` / cc.ImageAsset / missing-import-json
-  - `神兽动画合集/百鸭朝龙/skeleton` / cc.Asset / missing-import-json
-  - `神兽动画合集/百鹅朝鹏/skeleton` / cc.Asset / missing-import-json
-  - `破门动画/skeleton` / cc.Asset / missing-import-json
-  - `开始动画/skeleton` / cc.Asset / missing-import-json
+  - `mythicCollection/hundredGeeseToQilin/skeleton` / cc.ImageAsset / missing-import-json
+  - `gyroscopeAnimation/skeleton` / cc.Asset / missing-import-json
+  - `mythicCollection/hundredGeeseToPhoenix/skeleton` / cc.ImageAsset / missing-import-json
+  - `sideStoryVideo/skeleton` / cc.ImageAsset / missing-import-json
+  - `mythicCollection/hundredDucksToDragon/skeleton` / cc.Asset / missing-import-json
+  - `mythicCollection/hundredGeeseToRoc/skeleton` / cc.Asset / missing-import-json
+  - `doorBreakAnimation/skeleton` / cc.Asset / missing-import-json
+  - `startAnimation/skeleton` / cc.Asset / missing-import-json
 - 未命中 import 文件样例：`import/_packs/pack/goose__pack_179.json`，`import/_packs/pack/skeleton__pack_17.json`，`import/bibiLabu/skeleton.json`，`import/bibiLabu/skeleton/spriteFrame.json`，`import/breakDoorAnimation/skeleton.json`，`import/breakDoorAnimation/skeleton/spriteFrame.json`，`import/breakDoorAnimation/skeleton/spriteFrame__2.json`，`import/breakDoorAnimation/skeleton2/spriteFrame.json`
 - 其余未命中 import 文件：46 项（仅在 full-records 模式写入 JSON）。
 - 未命中 native 文件样例：`native/bibiLabu/skeleton.atlas`，`native/breakDoorAnimation/skeleton.atlas`，`native/breakDoorAnimation/skeleton/spriteFrame.png`，`native/breakDoorAnimation/skeleton2/spriteFrame.png`，`native/daily/skeleton.atlas`，`native/dave/skeleton.atlas`，`native/fruitBigEater/Kid-eating.atlas`，`native/fullAnimation/Done_for_eat.atlas`
@@ -249,14 +249,14 @@
 - native 命中：0
 - 主要资产类型：cc.SpriteFrame x 336，cc.Prefab x 28，cc.ImageAsset x 18，cc.Texture2D x 18
 - 样例资产映射：
-  - `tex/过关页面/还差/spriteFrame` / cc.SpriteFrame / missing-import-json
-  - `tex/book/duck/y30/spriteFrame` / cc.SpriteFrame / missing-import-json
-  - `tex/过关页面/成功进度/只鸭解锁百鸭朝雀/spriteFrame` / cc.SpriteFrame / missing-import-json
+  - `tex/levelCompletePage/remainingNeeded/spriteFrame` / cc.SpriteFrame / missing-import-json
+  - `tex/book/duck/duckSkin30/spriteFrame` / cc.SpriteFrame / missing-import-json
+  - `tex/levelCompletePage/successProgress/unlockByDuckCount_hundredDucksToSparrow/spriteFrame` / cc.SpriteFrame / missing-import-json
   - `tex/settings/giveUpChallengeText/spriteFrame` / cc.SpriteFrame / missing-import-json
-  - `tex/更多玩法/图标算数/spriteFrame` / cc.SpriteFrame / missing-import-json
+  - `tex/moreGames/iconMath/spriteFrame` / cc.SpriteFrame / missing-import-json
   - `tex/book/ui/filterAll/spriteFrame` / cc.SpriteFrame / missing-import-json
-  - `tex/主页素材/排行榜/名次底2/spriteFrame` / cc.SpriteFrame / missing-import-json
-  - `tex/失败页面/继续挑战/spriteFrame` / cc.SpriteFrame / missing-import-json
+  - `tex/homeUi/leaderboard/rankIndexBase2/spriteFrame` / cc.SpriteFrame / missing-import-json
+  - `tex/failPage/continueChallenge/spriteFrame` / cc.SpriteFrame / missing-import-json
 - 未命中 import 文件样例：`import/_packs/gooseSuccessNumber/gooseSuccessNumber__pack_1.json`，`import/_packs/pack/callFriend__pack_15.json`，`import/_packs/prefab/OverUI/reviveNumber__pack_2.json`，`import/_packs/prefab/SuccessUI/arm__pack_21.json`，`import/_packs/settingsDialogNumber/settingsDialogNumber__pack_1.json`，`import/_packs/staminaCount/staminaCount__pack_1.json`，`import/_packs/tex/autoUi/frame__pack_12.json`，`import/_packs/tex/banner__pack_20.json`
 - 其余未命中 import 文件：49 项（仅在 full-records 模式写入 JSON）。
 - 未命中 native 文件样例：`native/fullAnimation/Done_for_eat.png`，`native/restoredNames/blackOutlineNumberStrip.png`，`native/restoredNames/whiteBlockStrip.png`，`native/restoredNames/whiteHorizontalBar.png`，`native/restoredNames/whiteNumberStrip.png`，`native/tex/autoUi/frame__texture_12.png`，`native/tex/book/duck/y1__texture_48.png`，`native/tex/book/duck/y26__texture_12.png`

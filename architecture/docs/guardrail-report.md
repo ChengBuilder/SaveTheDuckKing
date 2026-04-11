@@ -4,8 +4,8 @@
 
 ## 总览
 - 项目目录：`./`
-- 已执行步骤：61
-- 通过步骤：61
+- 已执行步骤：64
+- 通过步骤：64
 - 失败步骤：0
 
 ## 步骤明细
@@ -36,10 +36,13 @@
 | 语义化共享工具语法检查 | 通过 | `node -c architecture/tools/semanticize-shared.js` |
 | audioBundle legacy 语义化工具语法检查 | 通过 | `node -c architecture/tools/semanticize-audiobundle-legacy-assets.js` |
 | aniBundle 路径语义化工具语法检查 | 通过 | `node -c architecture/tools/semanticize-anibundle-path-assets.js` |
+| unused safe-ignore 同步工具语法检查 | 通过 | `node -c architecture/tools/sync-safe-ignore-from-analyse.js` |
 | 关键 JSON 格式化工具语法检查 | 通过 | `node -c architecture/tools/format-project-json.js` |
 | Bundle 资产目录工具语法检查 | 通过 | `node -c architecture/tools/generate-bundle-asset-catalog.js` |
 | UUID 资产审计工具语法检查 | 通过 | `node -c architecture/tools/generate-uuid-asset-report.js` |
 | 素材可读性审计工具语法检查 | 通过 | `node -c architecture/tools/generate-asset-readability-audit.js` |
+| game.js 反混淆审计工具语法检查 | 通过 | `node -c architecture/tools/generate-gamejs-deobfuscation-audit.js` |
+| game.js 拆分工具语法检查 | 通过 | `node -c architecture/tools/split-gamejs-into-modules.js` |
 | 音频使用审计工具语法检查 | 通过 | `node -c architecture/tools/generate-audio-usage-audit.js` |
 | 子包结构审计工具语法检查 | 通过 | `node -c architecture/tools/generate-subpackage-structure-audit.js` |
 | 兼容镜像审计工具语法检查 | 通过 | `node -c architecture/tools/generate-compatibility-mirror-audit.js` |

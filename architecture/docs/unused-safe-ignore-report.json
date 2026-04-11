@@ -1,0 +1,68 @@
+{
+  "source": {
+    "analyseData": "analyse-data.json",
+    "projectConfig": "project.config.json"
+  },
+  "policy": {
+    "safeDevPrefixes": [
+      ".git/",
+      ".idea/",
+      "architecture/docs/",
+      "architecture/generated/",
+      "architecture/memory/",
+      "architecture/skills/",
+      "architecture/tools/",
+      "wechat-test/",
+      "tools/"
+    ],
+    "protectedRuntimePrefixes": [
+      "game.js",
+      "game.json",
+      "app-config.json",
+      "src/",
+      "runtime/",
+      "assets/",
+      "subpackages/",
+      "cocos-js/",
+      "architecture/boot/"
+    ]
+  },
+  "summary": {
+    "totalUnusedFiles": 1406,
+    "alreadyCovered": 65,
+    "notCovered": 1341,
+    "notCoveredProtectedRuntime": 1341,
+    "notCoveredSafeDev": 0,
+    "notCoveredManualReview": 0,
+    "addedSafeCandidates": 0
+  },
+  "addableSafeIgnoreCandidates": [],
+  "blockedProtectedRuntimeSamples": [
+    "app-config.json",
+    "assets/internal/config.internal.json",
+    "assets/internal/import/0ca60d3e4.ea248.json",
+    "assets/internal/index.js",
+    "assets/internalbundle/config.json",
+    "assets/internalbundle/index.js",
+    "assets/start-scene/config.start-scene.json",
+    "assets/start-scene/import/0cd5fa212.c4590.json",
+    "assets/start-scene/index.js",
+    "assets/start-scenebundle/config.json",
+    "assets/start-scenebundle/index.js",
+    "runtime/asset-file-remap.js",
+    "runtime/generated/subpackage-asset-remap-manifest.js",
+    "src/runtime-settings.json",
+    "subpackages/DuckBundle/config.duck-bundle.json",
+    "subpackages/DuckBundle/game.js",
+    "subpackages/DuckBundle/import/_packs/pack/bottom__pack_13.json",
+    "subpackages/DuckBundle/import/_packs/pack/grayWood22__pack_3.json",
+    "subpackages/DuckBundle/import/_packs/pack/nailHalo__pack_10.json",
+    "subpackages/DuckBundle/import/_packs/pack/slotFull__pack_5.json",
+    "subpackages/DuckBundle/import/_packs/pack/star__pack_3.json",
+    "subpackages/DuckBundle/import/_packs/pack/wood20__pack_3.json",
+    "subpackages/DuckBundle/import/_packs/pack/wood24__pack_3.json",
+    "subpackages/DuckBundle/import/_packs/prefab/GyroscopeTip/shake__pack_18.json",
+    "subpackages/DuckBundle/import/_packs/prefab/iceNode/iceBlockNumber__pack_2.json"
+  ],
+  "manualReviewSamples": []
+}

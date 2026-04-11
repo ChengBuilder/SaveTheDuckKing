@@ -467,139 +467,139 @@
       "scenePaths": [],
       "topLevelGroups": [
         {
-          "name": "神兽动画合集",
+          "name": "mythicCollection",
           "count": 30
         },
         {
-          "name": "骨骼动画",
+          "name": "skeletonAnimations",
           "count": 25
         },
         {
-          "name": "小三视频",
+          "name": "sideStoryVideo",
           "count": 17
         },
         {
-          "name": "破门动画",
+          "name": "doorBreakAnimation",
           "count": 8
         },
         {
-          "name": "比比拉布",
+          "name": "assassinAnimation",
           "count": 5
         },
         {
-          "name": "标题动画1",
+          "name": "bibiLabuAnimation",
           "count": 5
         },
         {
-          "name": "吃饱动画",
+          "name": "dailyAnimation",
           "count": 5
         },
         {
-          "name": "戴夫",
+          "name": "daveAnimation",
           "count": 5
         },
         {
-          "name": "鸽子动画",
+          "name": "eatFullAnimation",
           "count": 5
         },
         {
-          "name": "救救水果鸭",
+          "name": "fruitBigEaterAnimation",
           "count": 5
         },
         {
-          "name": "开始动画",
+          "name": "gooseTrapAnimation",
           "count": 5
         },
         {
-          "name": "每日",
+          "name": "gyroscopeAnimation",
           "count": 5
         }
       ],
       "topSemanticPaths": [
         {
-          "name": "骨骼动画/鸭子动画",
+          "name": "skeletonAnimations/duckAnimation",
           "count": 20
         },
         {
-          "name": "比比拉布/skeleton",
+          "name": "assassinAnimation/skeleton",
           "count": 5
         },
         {
-          "name": "吃饱动画/Done for eat",
+          "name": "bibiLabuAnimation/skeleton",
           "count": 5
         },
         {
-          "name": "戴夫/skeleton",
+          "name": "dailyAnimation/skeleton",
           "count": 5
         },
         {
-          "name": "鸽子动画/new_dove",
+          "name": "daveAnimation/skeleton",
           "count": 5
         },
         {
-          "name": "骨骼动画/门动画",
+          "name": "doorBreakAnimation/skeleton",
           "count": 5
         },
         {
-          "name": "救救水果鸭/skeleton",
+          "name": "eatFullAnimation/eatFull",
           "count": 5
         },
         {
-          "name": "开始动画/skeleton",
+          "name": "fruitBigEaterAnimation/kidEating",
           "count": 5
         },
         {
-          "name": "每日/skeleton",
+          "name": "gooseTrapAnimation/skeleton",
           "count": 5
         },
         {
-          "name": "破门动画/skeleton",
+          "name": "gyroscopeAnimation/skeleton",
           "count": 5
         },
         {
-          "name": "圈动画/ZYQ",
+          "name": "instantPlayAnimation/skeleton",
           "count": 5
         },
         {
-          "name": "杀手动画/skeleton",
+          "name": "mythicCollection/hundredDucksToDragon",
           "count": 5
         }
       ],
       "samplePaths": [
-        "神兽动画合集/百鹅朝麟/skeleton",
-        "陀螺仪/skeleton",
-        "神兽动画合集/百鹅朝凤/skeleton",
-        "小三视频/skeleton",
-        "神兽动画合集/百鸭朝龙/skeleton",
-        "神兽动画合集/百鹅朝鹏/skeleton",
-        "破门动画/skeleton",
-        "开始动画/skeleton",
-        "小三视频/skeleton2",
-        "神兽动画合集/百鹅朝麟/skeleton",
-        "神兽动画合集/百鹅朝鹏/skeleton",
-        "神兽动画合集/百鸭朝雀/skeleton",
-        "杀手动画/skeleton",
-        "小三视频/skeleton5",
-        "神兽动画合集/百鸭朝鲲/skeleton",
-        "戴夫/skeleton"
+        "mythicCollection/hundredGeeseToQilin/skeleton",
+        "gyroscopeAnimation/skeleton",
+        "mythicCollection/hundredGeeseToPhoenix/skeleton",
+        "sideStoryVideo/skeleton",
+        "mythicCollection/hundredDucksToDragon/skeleton",
+        "mythicCollection/hundredGeeseToRoc/skeleton",
+        "doorBreakAnimation/skeleton",
+        "startAnimation/skeleton",
+        "sideStoryVideo/skeleton2",
+        "mythicCollection/hundredGeeseToQilin/skeleton",
+        "mythicCollection/hundredGeeseToRoc/skeleton",
+        "mythicCollection/hundredDucksToSparrow/skeleton",
+        "assassinAnimation/skeleton",
+        "sideStoryVideo/skeleton5",
+        "mythicCollection/hundredDucksToKun/skeleton",
+        "daveAnimation/skeleton"
       ],
       "namingNoisePaths": [
-        "小三视频/skeleton2",
-        "小三视频/skeleton5",
-        "小三视频/skeleton3",
-        "圈动画/ZYQ",
-        "小三视频/skeleton4",
-        "破门动画/skeleton2",
-        "小三视频/skeleton2/texture",
-        "小三视频/skeleton2/spriteFrame",
-        "骨骼动画/鸭子动画/skeleton4",
-        "骨骼动画/鸭子动画/skeleton4/texture",
-        "骨骼动画/鸭子动画/skeleton4/spriteFrame",
-        "小三视频/skeleton5/texture",
-        "小三视频/skeleton5/spriteFrame",
-        "小三视频/skeleton3/texture",
-        "小三视频/skeleton3/spriteFrame",
-        "骨骼动画/鸭子动画/skeleton6"
+        "sideStoryVideo/skeleton2",
+        "sideStoryVideo/skeleton5",
+        "sideStoryVideo/skeleton3",
+        "sideStoryVideo/skeleton4",
+        "doorBreakAnimation/skeleton2",
+        "sideStoryVideo/skeleton2/texture",
+        "sideStoryVideo/skeleton2/spriteFrame",
+        "skeletonAnimations/duckAnimation/skeleton4",
+        "skeletonAnimations/duckAnimation/skeleton4/texture",
+        "skeletonAnimations/duckAnimation/skeleton4/spriteFrame",
+        "sideStoryVideo/skeleton5/texture",
+        "sideStoryVideo/skeleton5/spriteFrame",
+        "sideStoryVideo/skeleton3/texture",
+        "sideStoryVideo/skeleton3/spriteFrame",
+        "skeletonAnimations/duckAnimation/skeleton6",
+        "skeletonAnimations/duckAnimation/skeleton6/texture"
       ],
       "namingNoiseTokens": [
         {
@@ -617,10 +617,6 @@
         {
           "name": "skeleton5",
           "count": 6
-        },
-        {
-          "name": "ZYQ",
-          "count": 5
         },
         {
           "name": "skeleton6",
@@ -943,35 +939,35 @@
           "count": 151
         },
         {
-          "name": "tex/主页素材",
+          "name": "tex/homeUi",
           "count": 48
         },
         {
-          "name": "tex/道具",
-          "count": 21
+          "name": "tex/levelCompletePage",
+          "count": 27
         },
         {
-          "name": "tex/过关页面",
-          "count": 20
+          "name": "tex/props",
+          "count": 21
         },
         {
           "name": "tex/settings",
           "count": 17
         },
         {
-          "name": "tex/失败页面",
+          "name": "tex/failPage",
           "count": 15
         },
         {
-          "name": "tex/复活",
+          "name": "tex/revive",
           "count": 14
         },
         {
           "name": "tex/sharePage",
-          "count": 12
+          "count": 13
         },
         {
-          "name": "tex/更多玩法",
+          "name": "tex/moreGames",
           "count": 9
         },
         {
@@ -979,98 +975,41 @@
           "count": 8
         },
         {
-          "name": "tex/体力获取",
+          "name": "tex/energyPanel",
           "count": 7
         },
         {
-          "name": "tex/levelCompletePage",
-          "count": 7
+          "name": "tex/autoUi",
+          "count": 6
         }
       ],
       "samplePaths": [
-        "tex/过关页面/还差/spriteFrame",
-        "tex/book/duck/y30/spriteFrame",
-        "tex/过关页面/成功进度/只鸭解锁百鸭朝雀/spriteFrame",
+        "tex/levelCompletePage/remainingNeeded/spriteFrame",
+        "tex/book/duck/duckSkin30/spriteFrame",
+        "tex/levelCompletePage/successProgress/unlockByDuckCount_hundredDucksToSparrow/spriteFrame",
         "tex/settings/giveUpChallengeText/spriteFrame",
-        "tex/更多玩法/图标算数/spriteFrame",
+        "tex/moreGames/iconMath/spriteFrame",
         "tex/book/ui/filterAll/spriteFrame",
-        "tex/主页素材/排行榜/名次底2/spriteFrame",
-        "tex/失败页面/继续挑战/spriteFrame",
-        "tex/book/duck/y51/spriteFrame",
-        "tex/book/duck/y75/spriteFrame",
-        "tex/book/shareCollection/张飞鸭/spriteFrame",
+        "tex/homeUi/leaderboard/rankIndexBase2/spriteFrame",
+        "tex/failPage/continueChallenge/spriteFrame",
+        "tex/book/duck/duckSkin51/spriteFrame",
+        "tex/book/duck/duckSkin75/spriteFrame",
+        "tex/book/shareCollection/zhangFeiDuck/spriteFrame",
         "tex/book/pigeonGallery/skinCollection/skinPage8/spriteFrame",
         "tex/settings/soundEffectIcon/spriteFrame",
         "prefab/ShareUI",
         "tex/book/ui/completion100Label/spriteFrame",
-        "tex/book/duck/y17/spriteFrame"
+        "tex/book/duck/duckSkin17/spriteFrame"
       ],
       "namingNoisePaths": [
-        "tex/book/duck/y30/spriteFrame",
-        "tex/book/duck/y51/spriteFrame",
-        "tex/book/duck/y75/spriteFrame",
-        "tex/book/duck/y17/spriteFrame",
-        "tex/book/duck/y10/spriteFrame",
-        "tex/book/duck/y34/spriteFrame",
-        "tex/book/duck/y38/spriteFrame",
-        "tex/book/duck/y40/spriteFrame",
-        "tex/book/duck/y77/spriteFrame",
-        "tex/book/duck/y11/spriteFrame",
-        "tex/book/duck/y12/spriteFrame",
-        "tex/book/duck/y39/spriteFrame",
-        "tex/book/duck/y55/spriteFrame",
-        "tex/book/duck/y21/spriteFrame",
-        "tex/book/duck/y76/spriteFrame",
-        "tex/book/duck/y5/spriteFrame"
+        "tex/new",
+        "tex/new/texture",
+        "tex/new/spriteFrame"
       ],
       "namingNoiseTokens": [
         {
           "name": "new",
           "count": 3
-        },
-        {
-          "name": "%",
-          "count": 1
-        },
-        {
-          "name": "y1",
-          "count": 1
-        },
-        {
-          "name": "y10",
-          "count": 1
-        },
-        {
-          "name": "y100",
-          "count": 1
-        },
-        {
-          "name": "y11",
-          "count": 1
-        },
-        {
-          "name": "y12",
-          "count": 1
-        },
-        {
-          "name": "y13",
-          "count": 1
-        },
-        {
-          "name": "y14",
-          "count": 1
-        },
-        {
-          "name": "y15",
-          "count": 1
-        },
-        {
-          "name": "y16",
-          "count": 1
-        },
-        {
-          "name": "y17",
-          "count": 1
         }
       ],
       "uuidCount": 538,

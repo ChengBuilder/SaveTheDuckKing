@@ -1,164 +1,19 @@
 {
   "bundleName": "audioBundle",
   "totalAudioPaths": 65,
-  "directReferenceCount": 27,
-  "dynamicPrefixReferenceCount": 2,
-  "directMatchCount": 27,
-  "dynamicPrefixMatchCount": 15,
-  "unreferencedCount": 23,
+  "directReferenceCount": 0,
+  "dynamicPrefixReferenceCount": 0,
+  "directMatchCount": 0,
+  "dynamicPrefixMatchCount": 0,
+  "unreferencedCount": 65,
   "rootLevelCandidateCount": 0,
-  "exactReferences": [
-    {
-      "method": "playMusic",
-      "value": "bgm/defaultGameplay",
-      "count": 12
-    },
-    {
-      "method": "playMusic",
-      "value": "bgm/pureColor",
-      "count": 3
-    },
-    {
-      "method": "playSound",
-      "value": "duckGame/cageBreak",
-      "count": 2
-    },
-    {
-      "method": "playSound",
-      "value": "duckGame/duckQuack",
-      "count": 2
-    },
-    {
-      "method": "playLongSound",
-      "value": "duckGame/duckVictory",
-      "count": 1
-    },
-    {
-      "method": "playSound",
-      "value": "duckGame/errorPrompt",
-      "count": 3
-    },
-    {
-      "method": "playSound",
-      "value": "duckGame/nailPop",
-      "count": 1
-    },
-    {
-      "method": "playSound",
-      "value": "duckGame/stoneCollision",
-      "count": 2
-    },
-    {
-      "method": "playSound",
-      "value": "duckGame/woodAssembleFollow",
-      "count": 2
-    },
-    {
-      "method": "playSound",
-      "value": "duckGame/woodAssembleLead",
-      "count": 2
-    },
-    {
-      "method": "playSound",
-      "value": "duckGame/woodCollision",
-      "count": 1
-    },
-    {
-      "method": "playMusic",
-      "value": "fruitGame/fruitBgm",
-      "count": 5
-    },
-    {
-      "method": "playSound",
-      "value": "fruitGame/fruitClick",
-      "count": 2
-    },
-    {
-      "method": "playLongSound",
-      "value": "fruitGame/FruitWin",
-      "count": 1
-    },
-    {
-      "method": "playSound",
-      "value": "fruitGame/slotFull",
-      "count": 3
-    },
-    {
-      "method": "playSound",
-      "value": "sceneTransition/duckDrop",
-      "count": 1
-    },
-    {
-      "method": "playSound",
-      "value": "sceneTransition/fruitGameReveal",
-      "count": 1
-    },
-    {
-      "method": "playSound",
-      "value": "ui/applause",
-      "count": 1
-    },
-    {
-      "method": "playSound",
-      "value": "ui/buttonClick",
-      "count": 94
-    },
-    {
-      "method": "playSound",
-      "value": "ui/duckUnlock",
-      "count": 1
-    },
-    {
-      "method": "playSound",
-      "value": "ui/failurePrompt",
-      "count": 2
-    },
-    {
-      "method": "playSound",
-      "value": "ui/failureStinger",
-      "count": 2
-    },
-    {
-      "method": "playSound",
-      "value": "ui/levelComplete",
-      "count": 2
-    },
-    {
-      "method": "playSound",
-      "value": "ui/powerConsume",
-      "count": 2
-    },
-    {
-      "method": "playSound",
-      "value": "ui/ribbonBurst",
-      "count": 1
-    },
-    {
-      "method": "playSound",
-      "value": "ui/victoryStinger",
-      "count": 2
-    },
-    {
-      "method": "playSound",
-      "value": "ui/warningPrompt",
-      "count": 2
-    }
-  ],
-  "prefixReferences": [
-    {
-      "method": "playSound",
-      "value": "fruitGame/",
-      "count": 1
-    },
-    {
-      "method": "playSound",
-      "value": "woodDrop/woodDrop_",
-      "count": 2
-    }
-  ],
+  "exactReferences": [],
+  "prefixReferences": [],
   "unresolvedCandidates": [],
   "rootLevelCandidates": [],
   "unreferencedPaths": [
+    "bgm/defaultGameplay",
+    "bgm/pureColor",
     "comboMusic/combo_1",
     "comboMusic/combo_10",
     "comboMusic/combo_2",
@@ -169,6 +24,31 @@
     "comboMusic/combo_7",
     "comboMusic/combo_8",
     "comboMusic/combo_9",
+    "duckGame/cageBreak",
+    "duckGame/duckQuack",
+    "duckGame/duckVictory",
+    "duckGame/errorPrompt",
+    "duckGame/nailPop",
+    "duckGame/stoneCollision",
+    "duckGame/woodAssembleFollow",
+    "duckGame/woodAssembleLead",
+    "duckGame/woodCollision",
+    "fruitGame/born",
+    "fruitGame/born1",
+    "fruitGame/eat",
+    "fruitGame/eliminate1",
+    "fruitGame/eliminate2",
+    "fruitGame/eliminate3",
+    "fruitGame/eliminate4",
+    "fruitGame/eliminate5",
+    "fruitGame/eliminate6",
+    "fruitGame/eliminate7",
+    "fruitGame/eliminate8",
+    "fruitGame/fruitBgm",
+    "fruitGame/fruitClick",
+    "fruitGame/FruitWin",
+    "fruitGame/plateUnlock",
+    "fruitGame/slotFull",
     "legacy/door",
     "legacy/fly",
     "legacy/fruitBornDuplicateLz",
@@ -181,23 +61,34 @@
     "legacy/unknownBdz",
     "legacy/unknownLs",
     "legacy/victory",
-    "sceneTransition/duckGameReveal"
+    "sceneTransition/duckDrop",
+    "sceneTransition/duckGameReveal",
+    "sceneTransition/fruitGameReveal",
+    "ui/applause",
+    "ui/buttonClick",
+    "ui/duckUnlock",
+    "ui/failurePrompt",
+    "ui/failureStinger",
+    "ui/levelComplete",
+    "ui/powerConsume",
+    "ui/ribbonBurst",
+    "ui/victoryStinger",
+    "ui/warningPrompt",
+    "woodDrop/woodDrop_1",
+    "woodDrop/woodDrop_2",
+    "woodDrop/woodDrop_3"
   ],
   "records": [
     {
       "path": "bgm/defaultGameplay",
-      "usageStatus": "direct",
-      "matchedBy": [
-        "bgm/defaultGameplay <- playMusic"
-      ],
+      "usageStatus": "unreferenced",
+      "matchedBy": [],
       "lowReadability": false
     },
     {
       "path": "bgm/pureColor",
-      "usageStatus": "direct",
-      "matchedBy": [
-        "bgm/pureColor <- playMusic"
-      ],
+      "usageStatus": "unreferenced",
+      "matchedBy": [],
       "lowReadability": false
     },
     {
@@ -262,202 +153,152 @@
     },
     {
       "path": "duckGame/cageBreak",
-      "usageStatus": "direct",
-      "matchedBy": [
-        "duckGame/cageBreak <- playSound"
-      ],
+      "usageStatus": "unreferenced",
+      "matchedBy": [],
       "lowReadability": false
     },
     {
       "path": "duckGame/duckQuack",
-      "usageStatus": "direct",
-      "matchedBy": [
-        "duckGame/duckQuack <- playSound"
-      ],
+      "usageStatus": "unreferenced",
+      "matchedBy": [],
       "lowReadability": false
     },
     {
       "path": "duckGame/duckVictory",
-      "usageStatus": "direct",
-      "matchedBy": [
-        "duckGame/duckVictory <- playLongSound"
-      ],
+      "usageStatus": "unreferenced",
+      "matchedBy": [],
       "lowReadability": false
     },
     {
       "path": "duckGame/errorPrompt",
-      "usageStatus": "direct",
-      "matchedBy": [
-        "duckGame/errorPrompt <- playSound"
-      ],
+      "usageStatus": "unreferenced",
+      "matchedBy": [],
       "lowReadability": false
     },
     {
       "path": "duckGame/nailPop",
-      "usageStatus": "direct",
-      "matchedBy": [
-        "duckGame/nailPop <- playSound"
-      ],
+      "usageStatus": "unreferenced",
+      "matchedBy": [],
       "lowReadability": false
     },
     {
       "path": "duckGame/stoneCollision",
-      "usageStatus": "direct",
-      "matchedBy": [
-        "duckGame/stoneCollision <- playSound"
-      ],
+      "usageStatus": "unreferenced",
+      "matchedBy": [],
       "lowReadability": false
     },
     {
       "path": "duckGame/woodAssembleFollow",
-      "usageStatus": "direct",
-      "matchedBy": [
-        "duckGame/woodAssembleFollow <- playSound"
-      ],
+      "usageStatus": "unreferenced",
+      "matchedBy": [],
       "lowReadability": false
     },
     {
       "path": "duckGame/woodAssembleLead",
-      "usageStatus": "direct",
-      "matchedBy": [
-        "duckGame/woodAssembleLead <- playSound"
-      ],
+      "usageStatus": "unreferenced",
+      "matchedBy": [],
       "lowReadability": false
     },
     {
       "path": "duckGame/woodCollision",
-      "usageStatus": "direct",
-      "matchedBy": [
-        "duckGame/woodCollision <- playSound"
-      ],
+      "usageStatus": "unreferenced",
+      "matchedBy": [],
       "lowReadability": false
     },
     {
       "path": "fruitGame/born",
-      "usageStatus": "dynamic-prefix",
-      "matchedBy": [
-        "fruitGame/ <- playSound"
-      ],
+      "usageStatus": "unreferenced",
+      "matchedBy": [],
       "lowReadability": false
     },
     {
       "path": "fruitGame/born1",
-      "usageStatus": "dynamic-prefix",
-      "matchedBy": [
-        "fruitGame/ <- playSound"
-      ],
+      "usageStatus": "unreferenced",
+      "matchedBy": [],
       "lowReadability": false
     },
     {
       "path": "fruitGame/eat",
-      "usageStatus": "dynamic-prefix",
-      "matchedBy": [
-        "fruitGame/ <- playSound"
-      ],
+      "usageStatus": "unreferenced",
+      "matchedBy": [],
       "lowReadability": false
     },
     {
       "path": "fruitGame/eliminate1",
-      "usageStatus": "dynamic-prefix",
-      "matchedBy": [
-        "fruitGame/ <- playSound"
-      ],
+      "usageStatus": "unreferenced",
+      "matchedBy": [],
       "lowReadability": false
     },
     {
       "path": "fruitGame/eliminate2",
-      "usageStatus": "dynamic-prefix",
-      "matchedBy": [
-        "fruitGame/ <- playSound"
-      ],
+      "usageStatus": "unreferenced",
+      "matchedBy": [],
       "lowReadability": false
     },
     {
       "path": "fruitGame/eliminate3",
-      "usageStatus": "dynamic-prefix",
-      "matchedBy": [
-        "fruitGame/ <- playSound"
-      ],
+      "usageStatus": "unreferenced",
+      "matchedBy": [],
       "lowReadability": false
     },
     {
       "path": "fruitGame/eliminate4",
-      "usageStatus": "dynamic-prefix",
-      "matchedBy": [
-        "fruitGame/ <- playSound"
-      ],
+      "usageStatus": "unreferenced",
+      "matchedBy": [],
       "lowReadability": false
     },
     {
       "path": "fruitGame/eliminate5",
-      "usageStatus": "dynamic-prefix",
-      "matchedBy": [
-        "fruitGame/ <- playSound"
-      ],
+      "usageStatus": "unreferenced",
+      "matchedBy": [],
       "lowReadability": false
     },
     {
       "path": "fruitGame/eliminate6",
-      "usageStatus": "dynamic-prefix",
-      "matchedBy": [
-        "fruitGame/ <- playSound"
-      ],
+      "usageStatus": "unreferenced",
+      "matchedBy": [],
       "lowReadability": false
     },
     {
       "path": "fruitGame/eliminate7",
-      "usageStatus": "dynamic-prefix",
-      "matchedBy": [
-        "fruitGame/ <- playSound"
-      ],
+      "usageStatus": "unreferenced",
+      "matchedBy": [],
       "lowReadability": false
     },
     {
       "path": "fruitGame/eliminate8",
-      "usageStatus": "dynamic-prefix",
-      "matchedBy": [
-        "fruitGame/ <- playSound"
-      ],
+      "usageStatus": "unreferenced",
+      "matchedBy": [],
       "lowReadability": false
     },
     {
       "path": "fruitGame/fruitBgm",
-      "usageStatus": "direct",
-      "matchedBy": [
-        "fruitGame/fruitBgm <- playMusic"
-      ],
+      "usageStatus": "unreferenced",
+      "matchedBy": [],
       "lowReadability": false
     },
     {
       "path": "fruitGame/fruitClick",
-      "usageStatus": "direct",
-      "matchedBy": [
-        "fruitGame/fruitClick <- playSound"
-      ],
+      "usageStatus": "unreferenced",
+      "matchedBy": [],
       "lowReadability": false
     },
     {
       "path": "fruitGame/FruitWin",
-      "usageStatus": "direct",
-      "matchedBy": [
-        "fruitGame/FruitWin <- playLongSound"
-      ],
+      "usageStatus": "unreferenced",
+      "matchedBy": [],
       "lowReadability": false
     },
     {
       "path": "fruitGame/plateUnlock",
-      "usageStatus": "dynamic-prefix",
-      "matchedBy": [
-        "fruitGame/ <- playSound"
-      ],
+      "usageStatus": "unreferenced",
+      "matchedBy": [],
       "lowReadability": false
     },
     {
       "path": "fruitGame/slotFull",
-      "usageStatus": "direct",
-      "matchedBy": [
-        "fruitGame/slotFull <- playSound"
-      ],
+      "usageStatus": "unreferenced",
+      "matchedBy": [],
       "lowReadability": false
     },
     {
@@ -534,10 +375,8 @@
     },
     {
       "path": "sceneTransition/duckDrop",
-      "usageStatus": "direct",
-      "matchedBy": [
-        "sceneTransition/duckDrop <- playSound"
-      ],
+      "usageStatus": "unreferenced",
+      "matchedBy": [],
       "lowReadability": false
     },
     {
@@ -548,114 +387,86 @@
     },
     {
       "path": "sceneTransition/fruitGameReveal",
-      "usageStatus": "direct",
-      "matchedBy": [
-        "sceneTransition/fruitGameReveal <- playSound"
-      ],
+      "usageStatus": "unreferenced",
+      "matchedBy": [],
       "lowReadability": false
     },
     {
       "path": "ui/applause",
-      "usageStatus": "direct",
-      "matchedBy": [
-        "ui/applause <- playSound"
-      ],
+      "usageStatus": "unreferenced",
+      "matchedBy": [],
       "lowReadability": false
     },
     {
       "path": "ui/buttonClick",
-      "usageStatus": "direct",
-      "matchedBy": [
-        "ui/buttonClick <- playSound"
-      ],
+      "usageStatus": "unreferenced",
+      "matchedBy": [],
       "lowReadability": false
     },
     {
       "path": "ui/duckUnlock",
-      "usageStatus": "direct",
-      "matchedBy": [
-        "ui/duckUnlock <- playSound"
-      ],
+      "usageStatus": "unreferenced",
+      "matchedBy": [],
       "lowReadability": false
     },
     {
       "path": "ui/failurePrompt",
-      "usageStatus": "direct",
-      "matchedBy": [
-        "ui/failurePrompt <- playSound"
-      ],
+      "usageStatus": "unreferenced",
+      "matchedBy": [],
       "lowReadability": false
     },
     {
       "path": "ui/failureStinger",
-      "usageStatus": "direct",
-      "matchedBy": [
-        "ui/failureStinger <- playSound"
-      ],
+      "usageStatus": "unreferenced",
+      "matchedBy": [],
       "lowReadability": false
     },
     {
       "path": "ui/levelComplete",
-      "usageStatus": "direct",
-      "matchedBy": [
-        "ui/levelComplete <- playSound"
-      ],
+      "usageStatus": "unreferenced",
+      "matchedBy": [],
       "lowReadability": false
     },
     {
       "path": "ui/powerConsume",
-      "usageStatus": "direct",
-      "matchedBy": [
-        "ui/powerConsume <- playSound"
-      ],
+      "usageStatus": "unreferenced",
+      "matchedBy": [],
       "lowReadability": false
     },
     {
       "path": "ui/ribbonBurst",
-      "usageStatus": "direct",
-      "matchedBy": [
-        "ui/ribbonBurst <- playSound"
-      ],
+      "usageStatus": "unreferenced",
+      "matchedBy": [],
       "lowReadability": false
     },
     {
       "path": "ui/victoryStinger",
-      "usageStatus": "direct",
-      "matchedBy": [
-        "ui/victoryStinger <- playSound"
-      ],
+      "usageStatus": "unreferenced",
+      "matchedBy": [],
       "lowReadability": false
     },
     {
       "path": "ui/warningPrompt",
-      "usageStatus": "direct",
-      "matchedBy": [
-        "ui/warningPrompt <- playSound"
-      ],
+      "usageStatus": "unreferenced",
+      "matchedBy": [],
       "lowReadability": false
     },
     {
       "path": "woodDrop/woodDrop_1",
-      "usageStatus": "dynamic-prefix",
-      "matchedBy": [
-        "woodDrop/woodDrop_ <- playSound"
-      ],
+      "usageStatus": "unreferenced",
+      "matchedBy": [],
       "lowReadability": false
     },
     {
       "path": "woodDrop/woodDrop_2",
-      "usageStatus": "dynamic-prefix",
-      "matchedBy": [
-        "woodDrop/woodDrop_ <- playSound"
-      ],
+      "usageStatus": "unreferenced",
+      "matchedBy": [],
       "lowReadability": false
     },
     {
       "path": "woodDrop/woodDrop_3",
-      "usageStatus": "dynamic-prefix",
-      "matchedBy": [
-        "woodDrop/woodDrop_ <- playSound"
-      ],
+      "usageStatus": "unreferenced",
+      "matchedBy": [],
       "lowReadability": false
     }
   ]

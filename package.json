@@ -4,6 +4,8 @@
   "description": "Tooling for official WeChat mini game checks and CI workflows.",
   "scripts": {
     "guardrails": "node architecture/tools/run-guardrails.js",
+    "gamejs:split": "node architecture/tools/split-gamejs-into-modules.js",
+    "deobfuscation:audit": "node architecture/tools/generate-gamejs-deobfuscation-audit.js",
     "wechat:code-package:check": "node architecture/tools/check-wechat-code-package-limits.js",
     "wechat:official:check": "node architecture/tools/run-wechat-official-checks.js",
     "wechat:official:fix": "node architecture/tools/run-wechat-official-checks.js --fix",

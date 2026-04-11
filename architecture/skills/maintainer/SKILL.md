@@ -64,6 +64,44 @@ node architecture/tools/run-iteration-cycle.js
 4. 护栏验证：执行 `node architecture/tools/check-legacy-runtime-compat.js` 与 `node architecture/tools/run-guardrails.js`，确保无中文 canonical 回流。
 5. 收口文档：在 `architecture/docs/asset-governance-log.md` 记录本轮映射与验证结果，再执行 `node architecture/tools/run-iteration-cycle.js` 更新整体量化报告。
 
+## Unused Safe-Ignore 收敛切片
+1. 定位：先看 `analyse-data.json` 的 `unusedCodeFiles`，只处理“开发侧无运行时依赖”的路径，明确禁止把 `game.js`、`assets/`、`subpackages/`、`runtime/` 加入 ignore。
+2. 执行：
+   - 审计预览：`node architecture/tools/sync-safe-ignore-from-analyse.js`
+   - 安全应用：`node architecture/tools/sync-safe-ignore-from-analyse.js --apply`
+3. 幂等验证：`--apply` 连续执行两次，第二次 `addedSafeCandidates` 必须为 `0`。
+4. 护栏验证：执行 `node architecture/tools/run-guardrails.js`，确认 `unused safe-ignore` 工具语法检查通过且全量护栏仍绿色。
+5. 收口文档：检查 `architecture/docs/unused-safe-ignore-report.md` 与 `architecture/docs/wechat-code-package-report.md`，确认本轮只做“安全忽略收敛”，没有引入运行时路径风险。
+
+## game.js 反混淆收敛切片
+1. 定位：先执行 `node architecture/tools/generate-gamejs-deobfuscation-audit.js`，读取 `architecture/docs/gamejs-deobfuscation-audit.md` 的三组信号：`保守不可达模块`、`壳模块候选`、`高混淆热点`。
+2. 拆批：
+   - 优先批次 A：`保守不可达模块`（静态和启发式入口都不可达，清理风险最低）
+   - 优先批次 B：`壳模块候选`（只做转发的薄壳，适合并到统一入口）
+   - 优先批次 C：`高混淆热点`（先导出阅读，再做等价重构）
+3. 导出阅读：
+   - 不可达导出：`node architecture/tools/generate-gamejs-deobfuscation-audit.js --export-unreachable`
+   - 高混淆导出：`node architecture/tools/generate-gamejs-deobfuscation-audit.js --export-high-obfuscation`
+   - 定点导出：`node architecture/tools/generate-gamejs-deobfuscation-audit.js --export-module=assets/start-scene/index.start-scene.js`
+4. 实施原则：删除和替换必须“可逆 + 可验证”，优先改薄壳和重复桥接，不直接大面积改 gameplay 逻辑。
+5. 回归验证：执行 `node architecture/tools/run-guardrails.js`，并重新跑一遍 `generate-gamejs-deobfuscation-audit`，确认 `保守不可达模块` 和 `高混淆热点` 数量在下降。
+
+## game.js 入口瘦身切片
+1. 定位：当 `game.js` 持续膨胀且难以审阅时，优先改为“瘦入口 + 模块清单”，而不是继续在单文件内硬改。
+2. 执行：运行 `node architecture/tools/split-gamejs-into-modules.js`，将 `define(...)` 模块拆到 `runtime/gamejs-modules/`，入口仅保留插件桥接和启动编排。
+3. 并行协作建议：
+   - 线程 A：执行拆分与回归（`gamejs:split` + `run-guardrails`）
+   - 线程 B：基于 `runtime/gamejs-modules/manifest.json` 做模块归类（入口/平台适配/业务层）
+   - 线程 C：对高混淆模块做定点语义化改造草案
+4. 收口：提交前必须确认 `game.js` 不再包含大段 `define` 产物，且 `require(\"game.js\")` 仍可启动。
+5. 回归验证：执行 `node architecture/tools/run-guardrails.js`，并重点观察 `verify-runtime-safety` 与微信包体检查结果。
+
+### 拆分后 `Error 3804` 快速排查
+1. 现象：控制台出现 `Error 3804` 且栈落在某个组件 `update` 的 `getComponent(...)` 调用。
+2. 根因高频项：循环依赖下，`getComponent(变量)` 的变量在运行时未绑定（值为 `undefined`）。
+3. 处理原则：不回滚拆分，不加 runtime 兼容层；直接把调用改成稳定组件名字符串，例如 `getComponent(\"DuckController\")`。
+4. 落地点：优先写进 `architecture/tools/split-gamejs-into-modules.js` 的 `patchFactorySourceForRuntimeId`，保证每次重切分自动带上修复。
+
 ## 多 Agent 并行模板
 1. 先切片：按“互不重叠文件集”分配子任务，至少拆成 `路径迁移`、`护栏扩展`、`文档沉淀` 三条线。
 2. 再并行：优先把不阻塞主线的只读分析交给 explorer；主线程同时推进一条可直接落地的改动，避免空等。

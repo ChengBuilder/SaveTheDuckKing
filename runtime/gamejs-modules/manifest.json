@@ -1,0 +1,257 @@
+[
+  {
+    "moduleId": "@babel/runtime/helpers/Arrayincludes.js",
+    "runtimeModuleId": "runtime/gamejs-modules/@babel/runtime/helpers/Arrayincludes.js",
+    "filename": "001__babel__runtime__helpers__Arrayincludes.js__522b7078.js"
+  },
+  {
+    "moduleId": "@babel/runtime/helpers/Objectentries.js",
+    "runtimeModuleId": "runtime/gamejs-modules/@babel/runtime/helpers/Objectentries.js",
+    "filename": "002__babel__runtime__helpers__Objectentries.js__550b25db.js"
+  },
+  {
+    "moduleId": "@babel/runtime/helpers/arrayLikeToArray.js",
+    "runtimeModuleId": "runtime/gamejs-modules/@babel/runtime/helpers/arrayLikeToArray.js",
+    "filename": "003__babel__runtime__helpers__arrayLikeToArray.js__9443df62.js"
+  },
+  {
+    "moduleId": "@babel/runtime/helpers/createForOfIteratorHelper.js",
+    "runtimeModuleId": "runtime/gamejs-modules/@babel/runtime/helpers/createForOfIteratorHelper.js",
+    "filename": "004__babel__runtime__helpers__createForOfIteratorHelper.js__13871e60.js"
+  },
+  {
+    "moduleId": "@babel/runtime/helpers/regeneratorRuntime.js",
+    "runtimeModuleId": "runtime/gamejs-modules/@babel/runtime/helpers/regeneratorRuntime.js",
+    "filename": "005__babel__runtime__helpers__regeneratorRuntime.js__c4d2f86c.js"
+  },
+  {
+    "moduleId": "@babel/runtime/helpers/typeof.js",
+    "runtimeModuleId": "runtime/gamejs-modules/@babel/runtime/helpers/typeof.js",
+    "filename": "006__babel__runtime__helpers__typeof.js__eb8a3589.js"
+  },
+  {
+    "moduleId": "@babel/runtime/helpers/unsupportedIterableToArray.js",
+    "runtimeModuleId": "runtime/gamejs-modules/@babel/runtime/helpers/unsupportedIterableToArray.js",
+    "filename": "007__babel__runtime__helpers__unsupportedIterableToArray.js__9c53e6ad.js"
+  },
+  {
+    "moduleId": "application-main.js",
+    "runtimeModuleId": "runtime/gamejs-modules/application-main.js",
+    "filename": "008__application-main.js__b6bbfd66.js"
+  },
+  {
+    "moduleId": "assets/internalbundle/index.js",
+    "runtimeModuleId": "runtime/gamejs-modules/assets/internalbundle/index.js",
+    "filename": "009__assets__internalbundle__index.js__a0da8154.js"
+  },
+  {
+    "moduleId": "assets/internal/index.js",
+    "runtimeModuleId": "runtime/gamejs-modules/assets/internal/index.js",
+    "filename": "010__assets__internal__index.js__dc6a82ac.js"
+  },
+  {
+    "moduleId": "assets/start-scenebundle/index.js",
+    "runtimeModuleId": "runtime/gamejs-modules/assets/start-scenebundle/index.js",
+    "filename": "011__assets__start-scenebundle__index.js__8e817012.js"
+  },
+  {
+    "moduleId": "assets/start-scene/index.js",
+    "runtimeModuleId": "runtime/gamejs-modules/assets/start-scene/index.js",
+    "filename": "012__assets__start-scene__index.js__7b25a5d2.js"
+  },
+  {
+    "moduleId": "assets/resourcesbundle/index.js",
+    "runtimeModuleId": "runtime/gamejs-modules/assets/resourcesbundle/index.js",
+    "filename": "013__assets__resourcesbundle__index.js__d5f27146.js"
+  },
+  {
+    "moduleId": "assets/mainbundle/index.js",
+    "runtimeModuleId": "runtime/gamejs-modules/assets/mainbundle/index.js",
+    "filename": "014__assets__mainbundle__index.js__a065370c.js"
+  },
+  {
+    "moduleId": "assets/anibundle/index.js",
+    "runtimeModuleId": "runtime/gamejs-modules/assets/anibundle/index.js",
+    "filename": "015__assets__anibundle__index.js__eaa1c4f3.js"
+  },
+  {
+    "moduleId": "assets/aniBundlebundle/index.js",
+    "runtimeModuleId": "runtime/gamejs-modules/assets/aniBundlebundle/index.js",
+    "filename": "016__assets__aniBundlebundle__index.js__b4d5a7f3.js"
+  },
+  {
+    "moduleId": "assets/audiobundle/index.js",
+    "runtimeModuleId": "runtime/gamejs-modules/assets/audiobundle/index.js",
+    "filename": "017__assets__audiobundle__index.js__afd38867.js"
+  },
+  {
+    "moduleId": "assets/audioBundlebundle/index.js",
+    "runtimeModuleId": "runtime/gamejs-modules/assets/audioBundlebundle/index.js",
+    "filename": "018__assets__audioBundlebundle__index.js__fdbe2ccf.js"
+  },
+  {
+    "moduleId": "assets/duckbundle/index.js",
+    "runtimeModuleId": "runtime/gamejs-modules/assets/duckbundle/index.js",
+    "filename": "019__assets__duckbundle__index.js__16d574dc.js"
+  },
+  {
+    "moduleId": "assets/DuckBundlebundle/index.js",
+    "runtimeModuleId": "runtime/gamejs-modules/assets/DuckBundlebundle/index.js",
+    "filename": "020__assets__DuckBundlebundle__index.js__936e37a4.js"
+  },
+  {
+    "moduleId": "assets/game2bundle/index.js",
+    "runtimeModuleId": "runtime/gamejs-modules/assets/game2bundle/index.js",
+    "filename": "021__assets__game2bundle__index.js__247dff0d.js"
+  },
+  {
+    "moduleId": "assets/Game2Bundlebundle/index.js",
+    "runtimeModuleId": "runtime/gamejs-modules/assets/Game2Bundlebundle/index.js",
+    "filename": "022__assets__Game2Bundlebundle__index.js__b247c805.js"
+  },
+  {
+    "moduleId": "assets/homebundle/index.js",
+    "runtimeModuleId": "runtime/gamejs-modules/assets/homebundle/index.js",
+    "filename": "023__assets__homebundle__index.js__3ac47d7a.js"
+  },
+  {
+    "moduleId": "assets/HomeBundlebundle/index.js",
+    "runtimeModuleId": "runtime/gamejs-modules/assets/HomeBundlebundle/index.js",
+    "filename": "024__assets__HomeBundlebundle__index.js__3832241a.js"
+  },
+  {
+    "moduleId": "assets/uibundle/index.js",
+    "runtimeModuleId": "runtime/gamejs-modules/assets/uibundle/index.js",
+    "filename": "025__assets__uibundle__index.js__108a75c1.js"
+  },
+  {
+    "moduleId": "assets/uiBundlebundle/index.js",
+    "runtimeModuleId": "runtime/gamejs-modules/assets/uiBundlebundle/index.js",
+    "filename": "026__assets__uiBundlebundle__index.js__89684761.js"
+  },
+  {
+    "moduleId": "subpackages/resources/game.js",
+    "runtimeModuleId": "runtime/gamejs-modules/subpackages/resources/game.js",
+    "filename": "027__subpackages__resources__game.js__5615ef8e.js"
+  },
+  {
+    "moduleId": "subpackages/main/game.js",
+    "runtimeModuleId": "runtime/gamejs-modules/subpackages/main/game.js",
+    "filename": "028__subpackages__main__game.js__d6b77a0.js"
+  },
+  {
+    "moduleId": "subpackages/aniBundle/game.js",
+    "runtimeModuleId": "runtime/gamejs-modules/subpackages/aniBundle/game.js",
+    "filename": "029__subpackages__aniBundle__game.js__16d978a5.js"
+  },
+  {
+    "moduleId": "subpackages/audioBundle/game.js",
+    "runtimeModuleId": "runtime/gamejs-modules/subpackages/audioBundle/game.js",
+    "filename": "030__subpackages__audioBundle__game.js__52aae971.js"
+  },
+  {
+    "moduleId": "subpackages/DuckBundle/game.js",
+    "runtimeModuleId": "runtime/gamejs-modules/subpackages/DuckBundle/game.js",
+    "filename": "031__subpackages__DuckBundle__game.js__b8f61b08.js"
+  },
+  {
+    "moduleId": "subpackages/Game2Bundle/game.js",
+    "runtimeModuleId": "runtime/gamejs-modules/subpackages/Game2Bundle/game.js",
+    "filename": "032__subpackages__Game2Bundle__game.js__17e68423.js"
+  },
+  {
+    "moduleId": "subpackages/HomeBundle/game.js",
+    "runtimeModuleId": "runtime/gamejs-modules/subpackages/HomeBundle/game.js",
+    "filename": "033__subpackages__HomeBundle__game.js__3d745e32.js"
+  },
+  {
+    "moduleId": "subpackages/uiBundle/game.js",
+    "runtimeModuleId": "runtime/gamejs-modules/subpackages/uiBundle/game.js",
+    "filename": "034__subpackages__uiBundle__game.js__ed56a74f.js"
+  },
+  {
+    "moduleId": "assets/internal/index.internal.js",
+    "runtimeModuleId": "runtime/gamejs-modules/assets/internal/index.internal.js",
+    "filename": "035__assets__internal__index.internal.js__fe460d27.js"
+  },
+  {
+    "moduleId": "assets/start-scene/index.start-scene.js",
+    "runtimeModuleId": "runtime/gamejs-modules/assets/start-scene/index.start-scene.js",
+    "filename": "036__assets__start-scene__index.start-scene.js__c6e1947.js"
+  },
+  {
+    "moduleId": "cocos-js/_virtual_cc-cf1p7Jgo.js",
+    "runtimeModuleId": "runtime/gamejs-modules/cocos-js/_virtual_cc-cf1p7Jgo.js",
+    "filename": "037__cocos-js___virtual_cc-cf1p7Jgo.js__d0943627.js"
+  },
+  {
+    "moduleId": "cocos-js/cc.1e1cd.js",
+    "runtimeModuleId": "runtime/gamejs-modules/cocos-js/cc.1e1cd.js",
+    "filename": "038__cocos-js__cc.1e1cd.js__994b77ea.js"
+  },
+  {
+    "moduleId": "cocos-js/spine-BGFFnNyc.js",
+    "runtimeModuleId": "runtime/gamejs-modules/cocos-js/spine-BGFFnNyc.js",
+    "filename": "039__cocos-js__spine-BGFFnNyc.js__6fab287.js"
+  },
+  {
+    "moduleId": "cocos-js/spine.asm-DxRECbrD.js",
+    "runtimeModuleId": "runtime/gamejs-modules/cocos-js/spine.asm-DxRECbrD.js",
+    "filename": "040__cocos-js__spine.asm-DxRECbrD.js__a67c7ac5.js"
+  },
+  {
+    "moduleId": "cocos-js/spine.js-1Pcan4ap.js",
+    "runtimeModuleId": "runtime/gamejs-modules/cocos-js/spine.js-1Pcan4ap.js",
+    "filename": "041__cocos-js__spine.js-1Pcan4ap.js__1f7da915.js"
+  },
+  {
+    "moduleId": "cocos-js/spine.wasm-CKrzExoH.js",
+    "runtimeModuleId": "runtime/gamejs-modules/cocos-js/spine.wasm-CKrzExoH.js",
+    "filename": "042__cocos-js__spine.wasm-CKrzExoH.js__5e99508.js"
+  },
+  {
+    "moduleId": "engine-adapter.js",
+    "runtimeModuleId": "runtime/gamejs-modules/engine-adapter.js",
+    "filename": "043__engine-adapter.js__41d8b212.js"
+  },
+  {
+    "moduleId": "first-screen.js",
+    "runtimeModuleId": "runtime/gamejs-modules/first-screen.js",
+    "filename": "044__first-screen.js__9e6fe0f9.js"
+  },
+  {
+    "moduleId": "src/chunks/game-scripts.js",
+    "runtimeModuleId": "runtime/gamejs-modules/src/chunks/game-scripts.js",
+    "filename": "045__src__chunks__game-scripts.js__2f52d25f.js"
+  },
+  {
+    "moduleId": "src/import-map.ae243.js",
+    "runtimeModuleId": "runtime/gamejs-modules/src/import-map.ae243.js",
+    "filename": "046__src__import-map.ae243.js__8c4393b4.js"
+  },
+  {
+    "moduleId": "src/polyfills.bundle.43263.js",
+    "runtimeModuleId": "runtime/gamejs-modules/src/polyfills.bundle.43263.js",
+    "filename": "047__src__polyfills.bundle.43263.js__fade3229.js"
+  },
+  {
+    "moduleId": "src/system.bundle.f45da.js",
+    "runtimeModuleId": "runtime/gamejs-modules/src/system.bundle.f45da.js",
+    "filename": "048__src__system.bundle.f45da.js__3f6a7a9c.js"
+  },
+  {
+    "moduleId": "web-adapter.js",
+    "runtimeModuleId": "runtime/gamejs-modules/web-adapter.js",
+    "filename": "049__web-adapter.js__bab040d4.js"
+  },
+  {
+    "moduleId": "game.js",
+    "runtimeModuleId": "runtime/gamejs-modules/game.js",
+    "filename": "050__game.js__1bbee7c0.js"
+  },
+  {
+    "moduleId": "subpackages-bootstrap.js",
+    "runtimeModuleId": "runtime/gamejs-modules/subpackages-bootstrap.js",
+    "filename": "051__subpackages-bootstrap.js__a3c74a2c.js"
+  }
+]

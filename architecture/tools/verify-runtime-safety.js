@@ -33,7 +33,7 @@ function verifyRuntimeSafety() {
 
   if (errors.length === 0) {
     const gameSource = fs.readFileSync(gamePath, 'utf8');
-    verifyGameBridge(gameSource, errors);
+    verifyGameBridge(projectRoot, gameSource, errors);
   }
 
   if (errors.length === 0) {
@@ -66,10 +66,16 @@ function assertFileExists(filePath, errors, message) {
 
 /**
  * 校验 game.js 是否仍然通过可维护入口桥接。
+ * @param {string} projectRoot 项目根目录
  * @param {string} source game.js 文本
  * @param {string[]} errors 错误收集器
  */
-function verifyGameBridge(source, errors) {
+function verifyGameBridge(projectRoot, source, errors) {
+  if (isSplitEntryMode(source)) {
+    verifySplitGameBridge(projectRoot, source, errors);
+    return;
+  }
+
   const requiredSnippets = [
     'define("game.js", function(require, module, exports){',
     'require("./architecture/boot/game-bootstrap.js")',
@@ -82,6 +88,118 @@ function verifyGameBridge(source, errors) {
       errors.push('game.js 缺少关键桥接片段: ' + snippet);
     }
   }
+}
+
+/**
+ * 判断 game.js 是否已切到“瘦入口 + 模块清单”模式。
+ * @param {string} source game.js 文本
+ * @returns {boolean}
+ */
+function isSplitEntryMode(source) {
+  return source.includes('runtime/gamejs-modules/manifest.js');
+}
+
+/**
+ * 校验拆分入口模式下的关键桥接是否完整。
+ * @param {string} projectRoot 项目根目录
+ * @param {string} source game.js 文本
+ * @param {string[]} errors 错误收集器
+ */
+function verifySplitGameBridge(projectRoot, source, errors) {
+  const requiredEntrySnippets = [
+    'globalObject.requirePlugin = globalObject.requirePlugin || function(path) {',
+    'require("./runtime/gamejs-modules/manifest.js")',
+    'require("runtime/gamejs-modules/game.js")'
+  ];
+
+  for (const snippet of requiredEntrySnippets) {
+    if (!source.includes(snippet)) {
+      errors.push('拆分入口缺少关键桥接片段: ' + snippet);
+    }
+  }
+
+  const manifestScriptPath = path.join(projectRoot, 'runtime', 'gamejs-modules', 'manifest.js');
+  const manifestJsonPath = path.join(projectRoot, 'runtime', 'gamejs-modules', 'manifest.json');
+
+  assertFileExists(manifestScriptPath, errors, '拆分入口缺少模块清单脚本');
+  assertFileExists(manifestJsonPath, errors, '拆分入口缺少模块清单索引');
+
+  if (errors.length > 0) {
+    return;
+  }
+
+  let manifest = null;
+  try {
+    manifest = JSON.parse(fs.readFileSync(manifestJsonPath, 'utf8'));
+  } catch (error) {
+    errors.push('读取拆分入口 manifest 失败: ' + error.message);
+    return;
+  }
+
+  if (!Array.isArray(manifest) || manifest.length === 0) {
+    errors.push('拆分入口 manifest 为空或格式非法');
+    return;
+  }
+
+  const moduleMap = new Map();
+  for (const entry of manifest) {
+    const moduleId = String(entry && entry.moduleId ? entry.moduleId : '');
+    const filename = String(entry && entry.filename ? entry.filename : '');
+    if (moduleId.length === 0 || filename.length === 0) {
+      continue;
+    }
+    moduleMap.set(moduleId, filename);
+  }
+
+  if (!moduleMap.has('game.js')) {
+    errors.push('拆分入口 manifest 缺少核心启动模块: game.js');
+    return;
+  }
+  if (!moduleMap.has('subpackages-bootstrap.js')) {
+    errors.push('拆分入口 manifest 缺少核心启动模块: subpackages-bootstrap.js');
+    return;
+  }
+
+  const gameModulePath = path.join(projectRoot, 'runtime', 'gamejs-modules', moduleMap.get('game.js'));
+  assertFileExists(gameModulePath, errors, '拆分入口缺少 game.js 模块文件');
+  if (errors.length > 0) {
+    return;
+  }
+
+  const gameModuleSource = fs.readFileSync(gameModulePath, 'utf8');
+  const assetRemapSnippetCandidates = [
+    'require("./runtime/asset-file-remap.js").installAssetFileRemap()',
+    'require("../../runtime/asset-file-remap.js").installAssetFileRemap()'
+  ];
+  const gameBootstrapSnippetCandidates = [
+    'require("./architecture/boot/game-bootstrap.js")',
+    'require("../../architecture/boot/game-bootstrap.js")'
+  ];
+
+  if (!containsAnySnippet(gameModuleSource, assetRemapSnippetCandidates)) {
+    errors.push('拆分入口 game.js 模块缺少关键桥接片段: asset-file-remap install');
+  }
+  if (!containsAnySnippet(gameModuleSource, gameBootstrapSnippetCandidates)) {
+    errors.push('拆分入口 game.js 模块缺少关键桥接片段: game-bootstrap require');
+  }
+  if (!gameModuleSource.includes('bootModule.bootGameRuntime(require)')) {
+    errors.push('拆分入口 game.js 模块缺少关键桥接片段: bootModule.bootGameRuntime(require)');
+  }
+}
+
+/**
+ * 判断源码是否包含候选片段之一。
+ * @param {string} sourceCode 源码
+ * @param {string[]} snippetCandidates 候选片段
+ * @returns {boolean}
+ */
+function containsAnySnippet(sourceCode, snippetCandidates) {
+  for (const snippet of snippetCandidates) {
+    if (sourceCode.includes(snippet)) {
+      return true;
+    }
+  }
+  return false;
 }
 
 /**

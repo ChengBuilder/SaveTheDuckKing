@@ -29,9 +29,9 @@
       "runtime",
       "src"
     ],
-    "fileCount": 36,
-    "sizeBytes": 3546652,
-    "sizeText": "3.38 MiB",
+    "fileCount": 89,
+    "sizeBytes": 3573215,
+    "sizeText": "3.41 MiB",
     "limitBytes": 4194304,
     "limitText": "4.00 MiB",
     "withinLimit": true,
@@ -225,8 +225,8 @@
       {
         "path": "game.js",
         "displayPath": "game.js",
-        "sizeBytes": 2698794,
-        "sizeText": "2.57 MiB"
+        "sizeBytes": 1137,
+        "sizeText": "0.00 MiB"
       },
       {
         "path": "game.json",
@@ -239,6 +239,324 @@
         "displayPath": "runtime/asset-file-remap.js",
         "sizeBytes": 20625,
         "sizeText": "0.02 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/001__babel__runtime__helpers__Arrayincludes.js__522b7078.js",
+        "displayPath": "runtime/gamejs-modules/001__babel__runtime__helpers__Arrayincludes.js__522b7078.js",
+        "sizeBytes": 585,
+        "sizeText": "0.00 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/002__babel__runtime__helpers__Objectentries.js__550b25db.js",
+        "displayPath": "runtime/gamejs-modules/002__babel__runtime__helpers__Objectentries.js__550b25db.js",
+        "sizeBytes": 338,
+        "sizeText": "0.00 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/003__babel__runtime__helpers__arrayLikeToArray.js__9443df62.js",
+        "displayPath": "runtime/gamejs-modules/003__babel__runtime__helpers__arrayLikeToArray.js__9443df62.js",
+        "sizeBytes": 365,
+        "sizeText": "0.00 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/004__babel__runtime__helpers__createForOfIteratorHelper.js__13871e60.js",
+        "displayPath": "runtime/gamejs-modules/004__babel__runtime__helpers__createForOfIteratorHelper.js__13871e60.js",
+        "sizeBytes": 1024,
+        "sizeText": "0.00 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/005__babel__runtime__helpers__regeneratorRuntime.js__c4d2f86c.js",
+        "displayPath": "runtime/gamejs-modules/005__babel__runtime__helpers__regeneratorRuntime.js__c4d2f86c.js",
+        "sizeBytes": 6984,
+        "sizeText": "0.01 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/006__babel__runtime__helpers__typeof.js__eb8a3589.js",
+        "displayPath": "runtime/gamejs-modules/006__babel__runtime__helpers__typeof.js__eb8a3589.js",
+        "sizeBytes": 486,
+        "sizeText": "0.00 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/007__babel__runtime__helpers__unsupportedIterableToArray.js__9c53e6ad.js",
+        "displayPath": "runtime/gamejs-modules/007__babel__runtime__helpers__unsupportedIterableToArray.js__9c53e6ad.js",
+        "sizeBytes": 656,
+        "sizeText": "0.00 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/008__application-main.js__b6bbfd66.js",
+        "displayPath": "runtime/gamejs-modules/008__application-main.js__b6bbfd66.js",
+        "sizeBytes": 1827,
+        "sizeText": "0.00 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/009__assets__internalbundle__index.js__a0da8154.js",
+        "displayPath": "runtime/gamejs-modules/009__assets__internalbundle__index.js__a0da8154.js",
+        "sizeBytes": 267,
+        "sizeText": "0.00 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/010__assets__internal__index.js__dc6a82ac.js",
+        "displayPath": "runtime/gamejs-modules/010__assets__internal__index.js__dc6a82ac.js",
+        "sizeBytes": 251,
+        "sizeText": "0.00 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/011__assets__start-scenebundle__index.js__8e817012.js",
+        "displayPath": "runtime/gamejs-modules/011__assets__start-scenebundle__index.js__8e817012.js",
+        "sizeBytes": 276,
+        "sizeText": "0.00 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/012__assets__start-scene__index.js__7b25a5d2.js",
+        "displayPath": "runtime/gamejs-modules/012__assets__start-scene__index.js__7b25a5d2.js",
+        "sizeBytes": 257,
+        "sizeText": "0.00 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/013__assets__resourcesbundle__index.js__d5f27146.js",
+        "displayPath": "runtime/gamejs-modules/013__assets__resourcesbundle__index.js__d5f27146.js",
+        "sizeBytes": 274,
+        "sizeText": "0.00 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/014__assets__mainbundle__index.js__a065370c.js",
+        "displayPath": "runtime/gamejs-modules/014__assets__mainbundle__index.js__a065370c.js",
+        "sizeBytes": 264,
+        "sizeText": "0.00 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/015__assets__anibundle__index.js__eaa1c4f3.js",
+        "displayPath": "runtime/gamejs-modules/015__assets__anibundle__index.js__eaa1c4f3.js",
+        "sizeBytes": 268,
+        "sizeText": "0.00 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/016__assets__aniBundlebundle__index.js__b4d5a7f3.js",
+        "displayPath": "runtime/gamejs-modules/016__assets__aniBundlebundle__index.js__b4d5a7f3.js",
+        "sizeBytes": 274,
+        "sizeText": "0.00 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/017__assets__audiobundle__index.js__afd38867.js",
+        "displayPath": "runtime/gamejs-modules/017__assets__audiobundle__index.js__afd38867.js",
+        "sizeBytes": 272,
+        "sizeText": "0.00 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/018__assets__audioBundlebundle__index.js__fdbe2ccf.js",
+        "displayPath": "runtime/gamejs-modules/018__assets__audioBundlebundle__index.js__fdbe2ccf.js",
+        "sizeBytes": 278,
+        "sizeText": "0.00 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/019__assets__duckbundle__index.js__16d574dc.js",
+        "displayPath": "runtime/gamejs-modules/019__assets__duckbundle__index.js__16d574dc.js",
+        "sizeBytes": 270,
+        "sizeText": "0.00 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/020__assets__DuckBundlebundle__index.js__936e37a4.js",
+        "displayPath": "runtime/gamejs-modules/020__assets__DuckBundlebundle__index.js__936e37a4.js",
+        "sizeBytes": 276,
+        "sizeText": "0.00 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/021__assets__game2bundle__index.js__247dff0d.js",
+        "displayPath": "runtime/gamejs-modules/021__assets__game2bundle__index.js__247dff0d.js",
+        "sizeBytes": 272,
+        "sizeText": "0.00 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/022__assets__Game2Bundlebundle__index.js__b247c805.js",
+        "displayPath": "runtime/gamejs-modules/022__assets__Game2Bundlebundle__index.js__b247c805.js",
+        "sizeBytes": 278,
+        "sizeText": "0.00 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/023__assets__homebundle__index.js__3ac47d7a.js",
+        "displayPath": "runtime/gamejs-modules/023__assets__homebundle__index.js__3ac47d7a.js",
+        "sizeBytes": 270,
+        "sizeText": "0.00 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/024__assets__HomeBundlebundle__index.js__3832241a.js",
+        "displayPath": "runtime/gamejs-modules/024__assets__HomeBundlebundle__index.js__3832241a.js",
+        "sizeBytes": 276,
+        "sizeText": "0.00 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/025__assets__uibundle__index.js__108a75c1.js",
+        "displayPath": "runtime/gamejs-modules/025__assets__uibundle__index.js__108a75c1.js",
+        "sizeBytes": 266,
+        "sizeText": "0.00 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/026__assets__uiBundlebundle__index.js__89684761.js",
+        "displayPath": "runtime/gamejs-modules/026__assets__uiBundlebundle__index.js__89684761.js",
+        "sizeBytes": 272,
+        "sizeText": "0.00 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/027__subpackages__resources__game.js__5615ef8e.js",
+        "displayPath": "runtime/gamejs-modules/027__subpackages__resources__game.js__5615ef8e.js",
+        "sizeBytes": 210,
+        "sizeText": "0.00 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/028__subpackages__main__game.js__d6b77a0.js",
+        "displayPath": "runtime/gamejs-modules/028__subpackages__main__game.js__d6b77a0.js",
+        "sizeBytes": 205,
+        "sizeText": "0.00 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/029__subpackages__aniBundle__game.js__16d978a5.js",
+        "displayPath": "runtime/gamejs-modules/029__subpackages__aniBundle__game.js__16d978a5.js",
+        "sizeBytes": 210,
+        "sizeText": "0.00 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/030__subpackages__audioBundle__game.js__52aae971.js",
+        "displayPath": "runtime/gamejs-modules/030__subpackages__audioBundle__game.js__52aae971.js",
+        "sizeBytes": 212,
+        "sizeText": "0.00 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/031__subpackages__DuckBundle__game.js__b8f61b08.js",
+        "displayPath": "runtime/gamejs-modules/031__subpackages__DuckBundle__game.js__b8f61b08.js",
+        "sizeBytes": 211,
+        "sizeText": "0.00 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/032__subpackages__Game2Bundle__game.js__17e68423.js",
+        "displayPath": "runtime/gamejs-modules/032__subpackages__Game2Bundle__game.js__17e68423.js",
+        "sizeBytes": 212,
+        "sizeText": "0.00 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/033__subpackages__HomeBundle__game.js__3d745e32.js",
+        "displayPath": "runtime/gamejs-modules/033__subpackages__HomeBundle__game.js__3d745e32.js",
+        "sizeBytes": 211,
+        "sizeText": "0.00 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/034__subpackages__uiBundle__game.js__ed56a74f.js",
+        "displayPath": "runtime/gamejs-modules/034__subpackages__uiBundle__game.js__ed56a74f.js",
+        "sizeBytes": 209,
+        "sizeText": "0.00 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/035__assets__internal__index.internal.js__fe460d27.js",
+        "displayPath": "runtime/gamejs-modules/035__assets__internal__index.internal.js__fe460d27.js",
+        "sizeBytes": 8240,
+        "sizeText": "0.01 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/036__assets__start-scene__index.start-scene.js__c6e1947.js",
+        "displayPath": "runtime/gamejs-modules/036__assets__start-scene__index.start-scene.js__c6e1947.js",
+        "sizeBytes": 620188,
+        "sizeText": "0.59 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/037__cocos-js___virtual_cc-cf1p7Jgo.js__d0943627.js",
+        "displayPath": "runtime/gamejs-modules/037__cocos-js___virtual_cc-cf1p7Jgo.js__d0943627.js",
+        "sizeBytes": 1887192,
+        "sizeText": "1.80 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/038__cocos-js__cc.1e1cd.js__994b77ea.js",
+        "displayPath": "runtime/gamejs-modules/038__cocos-js__cc.1e1cd.js__994b77ea.js",
+        "sizeBytes": 8032,
+        "sizeText": "0.01 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/039__cocos-js__spine-BGFFnNyc.js__6fab287.js",
+        "displayPath": "runtime/gamejs-modules/039__cocos-js__spine-BGFFnNyc.js__6fab287.js",
+        "sizeBytes": 312,
+        "sizeText": "0.00 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/040__cocos-js__spine.asm-DxRECbrD.js__a67c7ac5.js",
+        "displayPath": "runtime/gamejs-modules/040__cocos-js__spine.asm-DxRECbrD.js__a67c7ac5.js",
+        "sizeBytes": 302,
+        "sizeText": "0.00 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/041__cocos-js__spine.js-1Pcan4ap.js__1f7da915.js",
+        "displayPath": "runtime/gamejs-modules/041__cocos-js__spine.js-1Pcan4ap.js__1f7da915.js",
+        "sizeBytes": 289,
+        "sizeText": "0.00 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/042__cocos-js__spine.wasm-CKrzExoH.js__5e99508.js",
+        "displayPath": "runtime/gamejs-modules/042__cocos-js__spine.wasm-CKrzExoH.js__5e99508.js",
+        "sizeBytes": 22482,
+        "sizeText": "0.02 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/043__engine-adapter.js__41d8b212.js",
+        "displayPath": "runtime/gamejs-modules/043__engine-adapter.js__41d8b212.js",
+        "sizeBytes": 20501,
+        "sizeText": "0.02 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/044__first-screen.js__9e6fe0f9.js",
+        "displayPath": "runtime/gamejs-modules/044__first-screen.js__9e6fe0f9.js",
+        "sizeBytes": 3857,
+        "sizeText": "0.00 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/045__src__chunks__game-scripts.js__2f52d25f.js",
+        "displayPath": "runtime/gamejs-modules/045__src__chunks__game-scripts.js__2f52d25f.js",
+        "sizeBytes": 3950,
+        "sizeText": "0.00 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/046__src__import-map.ae243.js__8c4393b4.js",
+        "displayPath": "runtime/gamejs-modules/046__src__import-map.ae243.js__8c4393b4.js",
+        "sizeBytes": 341,
+        "sizeText": "0.00 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/047__src__polyfills.bundle.43263.js__fade3229.js",
+        "displayPath": "runtime/gamejs-modules/047__src__polyfills.bundle.43263.js__fade3229.js",
+        "sizeBytes": 8704,
+        "sizeText": "0.01 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/048__src__system.bundle.f45da.js__3f6a7a9c.js",
+        "displayPath": "runtime/gamejs-modules/048__src__system.bundle.f45da.js__3f6a7a9c.js",
+        "sizeBytes": 8782,
+        "sizeText": "0.01 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/049__web-adapter.js__bab040d4.js",
+        "displayPath": "runtime/gamejs-modules/049__web-adapter.js__bab040d4.js",
+        "sizeBytes": 87811,
+        "sizeText": "0.08 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/050__game.js__1bbee7c0.js",
+        "displayPath": "runtime/gamejs-modules/050__game.js__1bbee7c0.js",
+        "sizeBytes": 361,
+        "sizeText": "0.00 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/051__subpackages-bootstrap.js__a3c74a2c.js",
+        "displayPath": "runtime/gamejs-modules/051__subpackages-bootstrap.js__a3c74a2c.js",
+        "sizeBytes": 10278,
+        "sizeText": "0.01 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/manifest.js",
+        "displayPath": "runtime/gamejs-modules/manifest.js",
+        "sizeBytes": 3332,
+        "sizeText": "0.00 MiB"
+      },
+      {
+        "path": "runtime/gamejs-modules/manifest.json",
+        "displayPath": "runtime/gamejs-modules/manifest.json",
+        "sizeBytes": 10460,
+        "sizeText": "0.01 MiB"
       },
       {
         "path": "runtime/generated/subpackage-asset-remap-manifest.js",
@@ -12215,9 +12533,9 @@
   "workerPackage": null,
   "totals": {
     "packageCount": 9,
-    "fileCount": 2006,
-    "sizeBytes": 26774779,
-    "sizeText": "25.53 MiB",
+    "fileCount": 2059,
+    "sizeBytes": 26801342,
+    "sizeText": "25.56 MiB",
     "limitBytes": 31457280,
     "limitText": "30.00 MiB",
     "withinLimit": true

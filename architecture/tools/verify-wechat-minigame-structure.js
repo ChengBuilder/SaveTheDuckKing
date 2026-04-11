@@ -24,6 +24,8 @@ const REQUIRED_EMBEDDED_ENTRY_MODULES = Object.freeze([
   'subpackages-bootstrap.js',
   'web-adapter.js'
 ]);
+const SPLIT_MANIFEST_SCRIPT_RELATIVE_PATH = 'runtime/gamejs-modules/manifest.js';
+const SPLIT_MANIFEST_JSON_RELATIVE_PATH = 'runtime/gamejs-modules/manifest.json';
 
 const REQUIRED_ROOT_DIRECTORIES = Object.freeze([
   'architecture',
@@ -136,6 +138,11 @@ function assertEmbeddedEntryModules(layout, errors) {
     gameScriptContent = fs.readFileSync(gameScriptPath, 'utf8');
   } catch (error) {
     errors.push('读取小游戏入口失败: ' + formatProjectPathFromWorkspace(layout, 'game.js') + ' -> ' + error.message);
+    return;
+  }
+
+  if (isSplitEntryMode(gameScriptContent)) {
+    assertSplitEntryModules(layout, errors);
     return;
   }
 
@@ -443,6 +450,63 @@ function assertDirectoryExists(layout, relativePath, errors, message) {
  */
 function hasEmbeddedDefineModule(scriptContent, moduleName) {
   return scriptContent.includes('define("' + moduleName + '"');
+}
+
+/**
+ * 判断当前入口是否采用“瘦入口 + runtime/gamejs-modules”模式。
+ * @param {string} scriptContent 脚本内容
+ * @returns {boolean}
+ */
+function isSplitEntryMode(scriptContent) {
+  return scriptContent.includes('runtime/gamejs-modules/manifest.js');
+}
+
+/**
+ * 校验拆分入口模式下的模块清单。
+ * @param {{projectRoot: string, projectPathFromWorkspace: string}} layout 项目布局
+ * @param {string[]} errors 错误收集器
+ */
+function assertSplitEntryModules(layout, errors) {
+  assertFileExists(layout, SPLIT_MANIFEST_SCRIPT_RELATIVE_PATH, errors, '拆分入口缺少模块清单脚本');
+  assertFileExists(layout, SPLIT_MANIFEST_JSON_RELATIVE_PATH, errors, '拆分入口缺少模块清单索引');
+
+  const manifestPath = resolveProjectFilePath(layout, SPLIT_MANIFEST_JSON_RELATIVE_PATH);
+  if (!fs.existsSync(manifestPath) || !fs.statSync(manifestPath).isFile()) {
+    return;
+  }
+
+  let manifest = null;
+  try {
+    manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
+  } catch (error) {
+    errors.push(
+      '读取拆分入口 manifest 失败: ' +
+      formatProjectPathFromWorkspace(layout, SPLIT_MANIFEST_JSON_RELATIVE_PATH) +
+      ' -> ' + error.message
+    );
+    return;
+  }
+
+  if (!Array.isArray(manifest) || manifest.length === 0) {
+    errors.push('拆分入口模块清单为空: ' + formatProjectPathFromWorkspace(layout, SPLIT_MANIFEST_JSON_RELATIVE_PATH));
+    return;
+  }
+
+  const moduleIdSet = new Set(
+    manifest.map(function mapEntry(entry) {
+      return normalizePath(entry && entry.moduleId ? entry.moduleId : '');
+    }).filter(Boolean)
+  );
+
+  if (!moduleIdSet.has('game.js')) {
+    errors.push('拆分入口模块清单缺少启动模块: game.js');
+  }
+
+  for (const moduleName of REQUIRED_EMBEDDED_ENTRY_MODULES) {
+    if (!moduleIdSet.has(moduleName)) {
+      errors.push('拆分入口模块清单缺少启动模块: ' + moduleName);
+    }
+  }
 }
 
 /**

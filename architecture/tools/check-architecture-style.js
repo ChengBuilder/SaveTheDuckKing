@@ -10,7 +10,9 @@ const path = require('path');
  */
 function checkArchitectureStyle() {
   const architectureDir = path.resolve(__dirname, '..');
-  const files = collectJsFiles(architectureDir).filter((filePath) => !filePath.includes('/tools/'));
+  const files = collectJsFiles(architectureDir).filter((filePath) => {
+    return !filePath.includes('/tools/') && !filePath.includes('/generated/');
+  });
   const issues = [];
 
   for (const filePath of files) {

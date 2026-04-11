@@ -897,3 +897,97 @@
 - `node architecture/tools/generate-asset-readability-audit.js`：
   - `candidateCount: 0`
   - `uiBundle` 剩余噪音候选：`0`
+
+## 2026-04-11 unused safe-ignore 安全收敛
+
+本轮目标：
+- 在不触碰运行时资源的前提下，收敛 `analyse-data.json` 中“可安全忽略”的开发侧无用文件，避免重复人工筛选。
+- 明确“安全忽略”和“运行时资源”边界，禁止误把 `game.js` / `assets` / `subpackages` / `runtime` 纳入 ignore。
+
+本轮新增治理基础设施：
+- 新增 `architecture/tools/sync-safe-ignore-from-analyse.js`
+  - 输入：`analyse-data.json` + `project.config.json`
+  - 输出：`architecture/docs/unused-safe-ignore-report.json/.md`
+  - 策略：仅对 `safe-dev` 前缀候选写入 `packOptions.ignore`，运行时路径一律阻断并抽样报告
+  - `--apply` 会自动开启 `project.config.json > setting.ignoreDevUnusedFiles = true`
+- `architecture/tools/run-guardrails.js` 已接入该脚本语法检查
+- `architecture/tools/run-iteration-cycle.js` 已接入 `unused safe-ignore` 报告生成步骤
+- `architecture/tools/check-no-volatile-report-timestamps.js` 已接入该脚本时间戳噪音检查
+
+本轮验证结果：
+- `node architecture/tools/sync-safe-ignore-from-analyse.js`：可生成稳定报告（无动态时间戳）
+- `node architecture/tools/sync-safe-ignore-from-analyse.js --apply`：`addedSafeCandidates = 0`
+- `node architecture/tools/run-guardrails.js`：通过
+- 微信包体检查：主包 `3.39 MiB / 4.00 MiB`，总包 `25.54 MiB / 30.00 MiB`
+
+## 2026-04-11 game.js 反混淆与死代码审计基线
+
+本轮目标：
+- 针对“解包产物 + 混淆单体入口”建立可复跑审计基线，而不是一次性冒进改 `game.js`。
+- 给后续“删死代码 / 拆薄壳 / 还原混淆”提供量化入口。
+
+本轮新增治理基础设施：
+- 新增 `architecture/tools/generate-gamejs-deobfuscation-audit.js`
+  - 用 VM 捕获 `game.js` 的全部 `define` 模块与顶层 `require`。
+  - 产出模块依赖图、严格/启发式双根可达分析、`保守不可达模块` 列表。
+  - 产出 `高混淆热点`（短变量占比 + 超长行）清单。
+  - 支持按需导出模块源码用于人工还原：
+    - `--export-unreachable`
+    - `--export-high-obfuscation`
+    - `--export-all`
+    - `--export-module=<moduleId>`（定点导出）
+- 护栏接入：
+  - `architecture/tools/run-guardrails.js` 增加该脚本语法检查。
+  - `architecture/tools/run-iteration-cycle.js` 增加“生成 game.js 反混淆审计”步骤。
+  - `package.json` 增加命令：`npm run deobfuscation:audit`
+  - `architecture/tools/check-architecture-style.js` 对 `architecture/generated/**` 生成切片目录免检，避免“导出还原文件”阻塞主线护栏。
+
+本轮审计结果（基线）：
+- define 模块总数：`51`
+- 严格可达（仅顶层 require）：`1`
+- 保守不可达（补齐小游戏运行入口后仍不可达）：`0`
+- 高混淆热点：`14`
+
+## 2026-04-12 game.js 入口瘦身与模块外置
+
+本轮目标：
+- 将 `game.js` 从超大单体编译产物改为“可维护入口编排层”，降低后续审阅与改造门槛。
+- 保持小游戏启动行为不变，避免一次性重写 gameplay 逻辑。
+
+本轮新增治理基础设施：
+- 新增 `architecture/tools/split-gamejs-into-modules.js`
+  - 从 `game.js` 捕获全部 `define(moduleId, factory)`。
+  - 自动生成 `runtime/gamejs-modules/*.js`（每个文件一个 define 模块）。
+  - 生成 `runtime/gamejs-modules/manifest.js` 与 `manifest.json`。
+  - 自动重写根入口 `game.js` 为瘦入口（插件桥接 + 模块清单加载 + `require("game.js")` 启动）。
+- `package.json` 新增命令：`npm run gamejs:split`
+- `architecture/tools/run-guardrails.js` 新增拆分脚本语法检查
+- `architecture/tools/run-iteration-cycle.js` 新增“拆分 game.js 入口与模块定义”步骤
+- `architecture/skills/maintainer/SKILL.md` 新增“game.js 入口瘦身切片”
+
+本轮结果：
+- `game.js` 体量从约 `2.7MB` 降至 `1114B`（36 行入口编排）。
+- `runtime/gamejs-modules/` 已生成 `51` 个模块切片 + 清单文件。
+- 后续可在不触碰入口编排的前提下，按模块逐步去混淆与语义化。
+
+## 2026-04-12 拆分后 Cocos `Error 3804` 定点修复
+
+问题现象：
+- 真机栈落在 `assets/start-scene/index.start-scene.js` 的 `update`，报 `Error 3804`。
+- 本地引擎代码定位到 `Node.getComponent` 的参数为空（`getComponent(undefined)`）。
+
+根因：
+- `start-scene` 内部存在 `DuckController <-> Nail/Wood` 循环引用。
+- 拆分后运行时时序下，部分 `getComponent(变量)` 调用命中未绑定变量，触发 3804。
+
+本轮修复：
+- 在 `architecture/tools/split-gamejs-into-modules.js` 的 `patchFactorySourceForRuntimeId` 中，
+  将以下调用固化为稳定组件名字符串：
+  - `p("Canvas").getComponent(A)` -> `p("Canvas").getComponent("DuckController")`
+  - `a("Canvas").getComponent(w)` -> `a("Canvas").getComponent("DuckController")`
+- 该修复随每次 `gamejs:split` 自动生效，不需要手工改生成文件。
+
+验证：
+- `node architecture/tools/split-gamejs-into-modules.js` 通过
+- `node architecture/tools/verify-runtime-safety.js` 通过
+- `node architecture/tools/run-guardrails.js` 全通过

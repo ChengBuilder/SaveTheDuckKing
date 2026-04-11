@@ -1713,7 +1713,7 @@
       "sampleAssetRecords": [
         {
           "assetIndex": 0,
-          "canonicalPath": "神兽动画合集/百鹅朝麟/skeleton",
+          "canonicalPath": "mythicCollection/hundredGeeseToQilin/skeleton",
           "assetType": "cc.ImageAsset",
           "compressedUuid": "00dIWSY6ZBCKg5aQKDZd0i",
           "uuid": "0074859263a64108a83969028365dd22",
@@ -1726,7 +1726,7 @@
         },
         {
           "assetIndex": 1,
-          "canonicalPath": "陀螺仪/skeleton",
+          "canonicalPath": "gyroscopeAnimation/skeleton",
           "assetType": "cc.Asset",
           "compressedUuid": "07zte/yqFNAZbfsoap+pkk",
           "uuid": "07ced7bfcaa14d0196dfb286a9fa9924",
@@ -1739,7 +1739,7 @@
         },
         {
           "assetIndex": 2,
-          "canonicalPath": "神兽动画合集/百鹅朝凤/skeleton",
+          "canonicalPath": "mythicCollection/hundredGeeseToPhoenix/skeleton",
           "assetType": "cc.ImageAsset",
           "compressedUuid": "09Cz7uCnhOQJb49LQs7yFG",
           "uuid": "090b3eee0a784e4096f8f4b42cef2146",
@@ -1752,7 +1752,7 @@
         },
         {
           "assetIndex": 3,
-          "canonicalPath": "小三视频/skeleton",
+          "canonicalPath": "sideStoryVideo/skeleton",
           "assetType": "cc.ImageAsset",
           "compressedUuid": "092R7ycTRFFKhF37EaWEbL",
           "uuid": "09d91ef271344514a845dfb11a5846cb",
@@ -1765,7 +1765,7 @@
         },
         {
           "assetIndex": 4,
-          "canonicalPath": "神兽动画合集/百鸭朝龙/skeleton",
+          "canonicalPath": "mythicCollection/hundredDucksToDragon/skeleton",
           "assetType": "cc.Asset",
           "compressedUuid": "0cA3Jw0ahLNoGvkI5zUPXL",
           "uuid": "0c037270d1a84b3681af908e7350f5cb",
@@ -1778,7 +1778,7 @@
         },
         {
           "assetIndex": 5,
-          "canonicalPath": "神兽动画合集/百鹅朝鹏/skeleton",
+          "canonicalPath": "mythicCollection/hundredGeeseToRoc/skeleton",
           "assetType": "cc.Asset",
           "compressedUuid": "14YJRnBV1NY4rxQGpiT5iJ",
           "uuid": "14609467055d4d638af1406a624f9889",
@@ -1791,7 +1791,7 @@
         },
         {
           "assetIndex": 6,
-          "canonicalPath": "破门动画/skeleton",
+          "canonicalPath": "doorBreakAnimation/skeleton",
           "assetType": "cc.Asset",
           "compressedUuid": "24lm6CqbVPvYsWPH1Log/E",
           "uuid": "24966e82a9b54fbd8b163c7d4ba20fc4",
@@ -1804,7 +1804,7 @@
         },
         {
           "assetIndex": 7,
-          "canonicalPath": "开始动画/skeleton",
+          "canonicalPath": "startAnimation/skeleton",
           "assetType": "cc.Asset",
           "compressedUuid": "2dukB4k2FNEr02P6WeIYdb",
           "uuid": "2dba407893614d12bd363fa59e21875b",
@@ -1817,7 +1817,7 @@
         },
         {
           "assetIndex": 8,
-          "canonicalPath": "小三视频/skeleton2",
+          "canonicalPath": "sideStoryVideo/skeleton2",
           "assetType": "cc.ImageAsset",
           "compressedUuid": "2fIgwJ/vxAkrPtSLZWtkQN",
           "uuid": "2f220c09fefc4092b3ed48b656b6440d",
@@ -1830,7 +1830,7 @@
         },
         {
           "assetIndex": 9,
-          "canonicalPath": "神兽动画合集/百鹅朝麟/skeleton",
+          "canonicalPath": "mythicCollection/hundredGeeseToQilin/skeleton",
           "assetType": "cc.Asset",
           "compressedUuid": "3cglctZ0JD8KNsYfuKSEeS",
           "uuid": "3c82572d674243f0a36c61fb8a484792",
@@ -1843,7 +1843,7 @@
         },
         {
           "assetIndex": 10,
-          "canonicalPath": "神兽动画合集/百鹅朝鹏/skeleton",
+          "canonicalPath": "mythicCollection/hundredGeeseToRoc/skeleton",
           "assetType": "cc.ImageAsset",
           "compressedUuid": "3ebHEFWMNOwJx7FtCV5M/R",
           "uuid": "3e6c710558c34ec09c7b16d095e4cfd1",
@@ -1856,7 +1856,7 @@
         },
         {
           "assetIndex": 11,
-          "canonicalPath": "神兽动画合集/百鸭朝雀/skeleton",
+          "canonicalPath": "mythicCollection/hundredDucksToSparrow/skeleton",
           "assetType": "cc.ImageAsset",
           "compressedUuid": "3er9xwSB9OLZlaCO18dJjh",
           "uuid": "3eafdc70481f4e2d995a08ed7c7498e1",
@@ -1869,7 +1869,7 @@
         },
         {
           "assetIndex": 12,
-          "canonicalPath": "杀手动画/skeleton",
+          "canonicalPath": "assassinAnimation/skeleton",
           "assetType": "cc.Asset",
           "compressedUuid": "41zRIfZFNOQ7B8JR0lwQEy",
           "uuid": "41cd121f64534e43b07c251d25c10132",
@@ -1882,7 +1882,7 @@
         },
         {
           "assetIndex": 13,
-          "canonicalPath": "小三视频/skeleton5",
+          "canonicalPath": "sideStoryVideo/skeleton5",
           "assetType": "cc.ImageAsset",
           "compressedUuid": "42jeyktlJB9IfDI/ZV8sXD",
           "uuid": "428deca4b65241f487c323f655f2c5c3",
@@ -1895,7 +1895,7 @@
         },
         {
           "assetIndex": 14,
-          "canonicalPath": "神兽动画合集/百鸭朝鲲/skeleton",
+          "canonicalPath": "mythicCollection/hundredDucksToKun/skeleton",
           "assetType": "cc.Asset",
           "compressedUuid": "46UESujCRE7JP3UcascYX1",
           "uuid": "465044ae8c2444ec93f751c6ac7185f5",
@@ -1908,7 +1908,7 @@
         },
         {
           "assetIndex": 15,
-          "canonicalPath": "戴夫/skeleton",
+          "canonicalPath": "daveAnimation/skeleton",
           "assetType": "cc.Asset",
           "compressedUuid": "46g2VHUyFIULObyLvyudMB",
           "uuid": "4683654753214850b39bc8bbf2b9d301",
@@ -1921,7 +1921,7 @@
         },
         {
           "assetIndex": 16,
-          "canonicalPath": "水果大胃王/Kid-eating",
+          "canonicalPath": "fruitBigEaterAnimation/kidEating",
           "assetType": "cc.Asset",
           "compressedUuid": "460cd12KRKwLNytM86ense",
           "uuid": "46d1c775d8a44ac0b372b4cf3a7a7b1e",
@@ -1934,7 +1934,7 @@
         },
         {
           "assetIndex": 17,
-          "canonicalPath": "直玩动画/skeleton",
+          "canonicalPath": "instantPlayAnimation/skeleton",
           "assetType": "cc.Asset",
           "compressedUuid": "48zBeQO7ZP9qWqjBt813yg",
           "uuid": "48cc17903bb64ff6a5aa8c1b7cd77ca0",
@@ -1947,7 +1947,7 @@
         },
         {
           "assetIndex": 18,
-          "canonicalPath": "套鹅动画/skeleton",
+          "canonicalPath": "gooseTrapAnimation/skeleton",
           "assetType": "cc.Asset",
           "compressedUuid": "5al6KnX4NBM4OJg/VKxpBc",
           "uuid": "5a97a2a75f834133838983f54ac6905c",
@@ -1960,7 +1960,7 @@
         },
         {
           "assetIndex": 19,
-          "canonicalPath": "比比拉布/skeleton",
+          "canonicalPath": "bibiLabuAnimation/skeleton",
           "assetType": "cc.Asset",
           "compressedUuid": "61UtEgeQ1Pxr6UCup1x3p/",
           "uuid": "6152d120790d4fc6be940aea75c77a7f",
@@ -3326,7 +3326,7 @@
       "sampleAssetRecords": [
         {
           "assetIndex": 0,
-          "canonicalPath": "tex/过关页面/还差/spriteFrame",
+          "canonicalPath": "tex/levelCompletePage/remainingNeeded/spriteFrame",
           "assetType": "cc.SpriteFrame",
           "compressedUuid": "01Mf0vVOhOEpYHK7k26Vbl@f9941",
           "uuid": "01Mf0vVOhOEpYHK7k26Vbl@f9941",
@@ -3341,7 +3341,7 @@
         },
         {
           "assetIndex": 1,
-          "canonicalPath": "tex/book/duck/y30/spriteFrame",
+          "canonicalPath": "tex/book/duck/duckSkin30/spriteFrame",
           "assetType": "cc.SpriteFrame",
           "compressedUuid": "01SUFeGtVEuYD3oeO/lT/Q@f9941",
           "uuid": "01SUFeGtVEuYD3oeO/lT/Q@f9941",
@@ -3356,7 +3356,7 @@
         },
         {
           "assetIndex": 2,
-          "canonicalPath": "tex/过关页面/成功进度/只鸭解锁百鸭朝雀/spriteFrame",
+          "canonicalPath": "tex/levelCompletePage/successProgress/unlockByDuckCount_hundredDucksToSparrow/spriteFrame",
           "assetType": "cc.SpriteFrame",
           "compressedUuid": "01WYaaH7NIqZmFG85XJn0X@f9941",
           "uuid": "01WYaaH7NIqZmFG85XJn0X@f9941",
@@ -3386,7 +3386,7 @@
         },
         {
           "assetIndex": 4,
-          "canonicalPath": "tex/更多玩法/图标算数/spriteFrame",
+          "canonicalPath": "tex/moreGames/iconMath/spriteFrame",
           "assetType": "cc.SpriteFrame",
           "compressedUuid": "02JEFy/NdOVJMZFP2WkDJW@f9941",
           "uuid": "02JEFy/NdOVJMZFP2WkDJW@f9941",
@@ -3416,7 +3416,7 @@
         },
         {
           "assetIndex": 6,
-          "canonicalPath": "tex/主页素材/排行榜/名次底2/spriteFrame",
+          "canonicalPath": "tex/homeUi/leaderboard/rankIndexBase2/spriteFrame",
           "assetType": "cc.SpriteFrame",
           "compressedUuid": "02W55q4zZEtZfABH4jr8PN@f9941",
           "uuid": "02W55q4zZEtZfABH4jr8PN@f9941",
@@ -3431,7 +3431,7 @@
         },
         {
           "assetIndex": 7,
-          "canonicalPath": "tex/失败页面/继续挑战/spriteFrame",
+          "canonicalPath": "tex/failPage/continueChallenge/spriteFrame",
           "assetType": "cc.SpriteFrame",
           "compressedUuid": "02aTxsfWpCcays8oHRSDns@f9941",
           "uuid": "02aTxsfWpCcays8oHRSDns@f9941",
@@ -3446,7 +3446,7 @@
         },
         {
           "assetIndex": 8,
-          "canonicalPath": "tex/book/duck/y51/spriteFrame",
+          "canonicalPath": "tex/book/duck/duckSkin51/spriteFrame",
           "assetType": "cc.SpriteFrame",
           "compressedUuid": "021EgkpptO/JGShkGuMI5W@f9941",
           "uuid": "021EgkpptO/JGShkGuMI5W@f9941",
@@ -3461,7 +3461,7 @@
         },
         {
           "assetIndex": 9,
-          "canonicalPath": "tex/book/duck/y75/spriteFrame",
+          "canonicalPath": "tex/book/duck/duckSkin75/spriteFrame",
           "assetType": "cc.SpriteFrame",
           "compressedUuid": "03YsWxicBIiIyxP5fdCG8p@f9941",
           "uuid": "03YsWxicBIiIyxP5fdCG8p@f9941",
@@ -3476,7 +3476,7 @@
         },
         {
           "assetIndex": 10,
-          "canonicalPath": "tex/book/shareCollection/张飞鸭/spriteFrame",
+          "canonicalPath": "tex/book/shareCollection/zhangFeiDuck/spriteFrame",
           "assetType": "cc.SpriteFrame",
           "compressedUuid": "03dVPegO9A/5BP81Ij4/Wb@f9941",
           "uuid": "03dVPegO9A/5BP81Ij4/Wb@f9941",
@@ -3549,7 +3549,7 @@
         },
         {
           "assetIndex": 15,
-          "canonicalPath": "tex/book/duck/y17/spriteFrame",
+          "canonicalPath": "tex/book/duck/duckSkin17/spriteFrame",
           "assetType": "cc.SpriteFrame",
           "compressedUuid": "07KKn9pCpAzqRTla04H1j8@f9941",
           "uuid": "07KKn9pCpAzqRTla04H1j8@f9941",
@@ -3564,7 +3564,7 @@
         },
         {
           "assetIndex": 16,
-          "canonicalPath": "tex/道具/消除说明/spriteFrame",
+          "canonicalPath": "tex/props/eliminateHint/spriteFrame",
           "assetType": "cc.SpriteFrame",
           "compressedUuid": "07m61Cc3BELa3D1oKNmOQP@f9941",
           "uuid": "07m61Cc3BELa3D1oKNmOQP@f9941",
@@ -3579,7 +3579,7 @@
         },
         {
           "assetIndex": 17,
-          "canonicalPath": "tex/失败页面/图3/spriteFrame",
+          "canonicalPath": "tex/failPage/image3/spriteFrame",
           "assetType": "cc.SpriteFrame",
           "compressedUuid": "077YDHmH9FfK7QJXG0WWJ0@f9941",
           "uuid": "077YDHmH9FfK7QJXG0WWJ0@f9941",
@@ -3594,7 +3594,7 @@
         },
         {
           "assetIndex": 18,
-          "canonicalPath": "tex/主页素材/侧边栏/侧边栏页面/spriteFrame",
+          "canonicalPath": "tex/homeUi/sideBar/sideBarPanel/spriteFrame",
           "assetType": "cc.SpriteFrame",
           "compressedUuid": "09URxjCMFA2reGdxxIaCnQ@f9941",
           "uuid": "09URxjCMFA2reGdxxIaCnQ@f9941",
@@ -3609,7 +3609,7 @@
         },
         {
           "assetIndex": 19,
-          "canonicalPath": "tex/book/duck/y10/spriteFrame",
+          "canonicalPath": "tex/book/duck/duckSkin10/spriteFrame",
           "assetType": "cc.SpriteFrame",
           "compressedUuid": "09YksqB8hL9rtSjRFUiJaw@f9941",
           "uuid": "09YksqB8hL9rtSjRFUiJaw@f9941",
