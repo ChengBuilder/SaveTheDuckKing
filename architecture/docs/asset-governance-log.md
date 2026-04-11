@@ -1,5 +1,24 @@
 # 素材治理记录
 
+## 2026-04-11 `DuckBundle` `newNail/ls|lw` 运行时旧路径根因修复
+
+本轮处理线上阻塞报错 `Bundle DuckBundle doesn't contain tex/newNail/ls7/spriteFrame`。根因不是 `config.duck-bundle.json` 回退，而是 `game.js` 钉子初始化仍在拼接旧短编号路径：
+
+- `tex/newNail/ls${index}/spriteFrame`
+- `tex/newNail/lw${index}/spriteFrame`
+
+本轮落地：
+- `game.js` 改为 canonical 语义化路径拼接：
+  - `tex/newNail/nailStyle${index}/spriteFrame`
+  - `tex/newNail/nailGlowStyle${index}/spriteFrame`
+- `architecture/tools/check-legacy-runtime-compat.js` 新增 `game.js` 运行时层护栏：
+  - `DuckBundle newNail 旧 ls 短编号运行时路径`
+  - `DuckBundle newNail 旧 lw 短编号运行时路径`
+
+验证命令：
+- `npm run -s guardrails`
+- `node architecture/tools/run-wechat-official-checks.js --skip-cli --with-minigame-test-doctor --allow-missing-test-sdk`
+
 ## 2026-04-11 `DuckBundle` 可读性 canonical 收敛与 bubble 短编号治理
 
 本轮继续沿用“只改 canonical 源头，不补 runtime alias”的策略，把 `DuckBundle` 里仍残留的旧中文段和 `bubble/t0..t12` 短编号统一收口为可读、可检索、可复跑的路径结构。
@@ -719,3 +738,56 @@
 本轮经验：
 - `variant + shape` 这种中性轴命名可以在“证据不足以映射业务语义”时安全落地，既提升可读性，也不制造错误语义债。
 - 资产治理建议固定为三件套：`语义化脚本 + 护栏 + 幂等验证`，并在迭代报告中持续量化收敛结果。
+
+## 2026-04-11 `uiBundle` 神兽进度与特殊图鉴命名收敛
+
+本轮目标：
+- 继续清理 `uiBundle` 中“过关成功进度 + 特殊图鉴”路径的中文命名残留。
+- 仍然保持“改 canonical 源头，不加 runtime 兼容层”。
+- 把本轮映射固化到已有脚本与护栏，保证可复跑、可回退检测。
+
+本轮新增 canonical 路径：
+- `tex/book/specialCollection/百鸭朝鲲/spriteFrame -> tex/book/specialCollection/hundredDucksToKun/spriteFrame`
+- `tex/book/specialCollection/百鸭朝雀/spriteFrame -> tex/book/specialCollection/hundredDucksToSparrow/spriteFrame`
+- `tex/book/specialCollection/百鸭朝龙/spriteFrame -> tex/book/specialCollection/hundredDucksToDragon/spriteFrame`
+- `tex/book/specialCollection/百鹅朝凤/spriteFrame -> tex/book/specialCollection/hundredGeeseToPhoenix/spriteFrame`
+- `tex/book/specialCollection/百鹅朝鹏/spriteFrame -> tex/book/specialCollection/hundredGeeseToRoc/spriteFrame`
+- `tex/book/specialCollection/百鹅朝麟/spriteFrame -> tex/book/specialCollection/hundredGeeseToQilin/spriteFrame`
+- `tex/过关页面/成功进度/百鸭朝鲲/spriteFrame -> tex/levelCompletePage/successProgress/hundredDucksToKun/spriteFrame`
+- `tex/过关页面/成功进度/百鸭朝雀/spriteFrame -> tex/levelCompletePage/successProgress/hundredDucksToSparrow/spriteFrame`
+- `tex/过关页面/成功进度/百鸭朝龙/spriteFrame -> tex/levelCompletePage/successProgress/hundredDucksToDragon/spriteFrame`
+- `tex/过关页面/成功进度/百鸭朝鹏/spriteFrame -> tex/levelCompletePage/successProgress/hundredDucksToRoc/spriteFrame`
+- `tex/过关页面/成功进度/百鹅朝凤/spriteFrame -> tex/levelCompletePage/successProgress/hundredGeeseToPhoenix/spriteFrame`
+- `tex/过关页面/成功进度/百鹅朝麟/spriteFrame -> tex/levelCompletePage/successProgress/hundredGeeseToQilin/spriteFrame`
+- `tex/过关页面/成功进度/只鸭解锁百鸭朝鲲/spriteFrame -> tex/levelCompletePage/successProgress/unlockByDuckCount_hundredDucksToKun/spriteFrame`
+- `tex/过关页面/成功进度/只鸭解锁百鸭朝雀/spriteFrame -> tex/levelCompletePage/successProgress/unlockByDuckCount_hundredDucksToSparrow/spriteFrame`
+- `tex/过关页面/成功进度/只鸭解锁百鸭朝龙/spriteFrame -> tex/levelCompletePage/successProgress/unlockByDuckCount_hundredDucksToDragon/spriteFrame`
+- `tex/过关页面/成功进度/只鸭解锁百鸭朝鹅/spriteFrame -> tex/levelCompletePage/successProgress/unlockByDuckCount_hundredDucksToGoose/spriteFrame`
+- `tex/过关页面/成功进度/只鹅解锁百鸭朝雀/spriteFrame -> tex/levelCompletePage/successProgress/unlockByGooseCount_hundredDucksToSparrow/spriteFrame`
+- `tex/过关页面/成功进度/只鹅解锁百鹅朝凤/spriteFrame -> tex/levelCompletePage/successProgress/unlockByGooseCount_hundredGeeseToPhoenix/spriteFrame`
+- `tex/过关页面/成功进度/只鹅解锁百鹅朝鹏/spriteFrame -> tex/levelCompletePage/successProgress/unlockByGooseCount_hundredGeeseToRoc/spriteFrame`
+- `tex/过关页面/成功进度/只鹅解锁百鹅朝麟/spriteFrame -> tex/levelCompletePage/successProgress/unlockByGooseCount_hundredGeeseToQilin/spriteFrame`
+
+本轮同步调整：
+- `subpackages/uiBundle/config.ui-bundle.json`
+- `subpackages/uiBundle/import/_packs/pack/callFriend__pack_15.json`
+- `subpackages/uiBundle/import/_packs/tex/banner__pack_20.json`
+- `subpackages/uiBundle/import/_packs/tex/share__pack_22.json`
+- `subpackages/uiBundle/import/_packs/tex/close__pack_28.json`
+- `subpackages/uiBundle/import/_packs/tex/bottom__pack_32.json`
+- `subpackages/uiBundle/import/_packs/tex/props__pack_24.json`
+- `subpackages/uiBundle/import/_packs/tex/levelCompletePage/successProgress/silhouette__pack_34.json`
+
+本轮新增治理基础设施：
+- `architecture/tools/semanticize-uibundle-book-display-assets.js` 新增“神兽进度 + 特殊图鉴”映射，并覆盖对应 pack 名称批量改写。
+- `architecture/tools/check-legacy-runtime-compat.js` 新增：
+  - `uiBundle` 神兽进度旧中文 canonical 路径回流检查
+  - 相关 `_packs` 旧中文 `SpriteFrame.name` 回流检查
+- `architecture/skills/maintainer/SKILL.md` 新增“多 Agent 并行模板”与 `429` 限流回退策略，便于并行迭代稳定收口。
+
+本轮验证结果：
+- `semanticize-uibundle-book-display-assets.js` 首次执行改写：
+  - config 路径改写 `20`
+  - pack 名称改写 `26`
+- 第二次执行改写数均为 `0`（幂等通过）。
+- `node architecture/tools/check-legacy-runtime-compat.js` 通过。

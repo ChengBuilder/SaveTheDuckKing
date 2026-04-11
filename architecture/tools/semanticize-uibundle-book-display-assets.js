@@ -12,6 +12,28 @@ const {
 
 const CONFIG_TARGET = 'subpackages/uiBundle/config.ui-bundle.json';
 
+const MYTHIC_FORMATION_NAME_MAP = {
+  '百鸭朝鲲': 'hundredDucksToKun',
+  '百鸭朝雀': 'hundredDucksToSparrow',
+  '百鸭朝龙': 'hundredDucksToDragon',
+  '百鸭朝鹏': 'hundredDucksToRoc',
+  '百鸭朝鹅': 'hundredDucksToGoose',
+  '百鹅朝凤': 'hundredGeeseToPhoenix',
+  '百鹅朝鹏': 'hundredGeeseToRoc',
+  '百鹅朝麟': 'hundredGeeseToQilin'
+};
+
+const MYTHIC_UNLOCK_NAME_MAP = {
+  '只鸭解锁百鸭朝雀': 'unlockByDuckCount_hundredDucksToSparrow',
+  '只鸭解锁百鸭朝鲲': 'unlockByDuckCount_hundredDucksToKun',
+  '只鸭解锁百鸭朝龙': 'unlockByDuckCount_hundredDucksToDragon',
+  '只鸭解锁百鸭朝鹅': 'unlockByDuckCount_hundredDucksToGoose',
+  '只鹅解锁百鸭朝雀': 'unlockByGooseCount_hundredDucksToSparrow',
+  '只鹅解锁百鹅朝凤': 'unlockByGooseCount_hundredGeeseToPhoenix',
+  '只鹅解锁百鹅朝鹏': 'unlockByGooseCount_hundredGeeseToRoc',
+  '只鹅解锁百鹅朝麟': 'unlockByGooseCount_hundredGeeseToQilin'
+};
+
 const CONFIG_PATH_MAP = new Map([
   ['tex/book/tex/全部/spriteFrame', 'tex/book/ui/filterAll/spriteFrame'],
   ['tex/book/tex/100/spriteFrame', 'tex/book/ui/completion100Label/spriteFrame'],
@@ -63,6 +85,26 @@ const CONFIG_PATH_MAP = new Map([
   ['tex/过关页面/成功进度/条1/spriteFrame', 'tex/levelCompletePage/successProgress/progressBarTrack/spriteFrame'],
   ['tex/过关页面/成功进度/剪影/spriteFrame', 'tex/levelCompletePage/successProgress/silhouette/spriteFrame'],
   ['tex/过关页面/成功进度/再救/spriteFrame', 'tex/levelCompletePage/successProgress/reviveAgainLabel/spriteFrame'],
+  ['tex/book/specialCollection/百鸭朝鲲/spriteFrame', 'tex/book/specialCollection/hundredDucksToKun/spriteFrame'],
+  ['tex/book/specialCollection/百鸭朝雀/spriteFrame', 'tex/book/specialCollection/hundredDucksToSparrow/spriteFrame'],
+  ['tex/book/specialCollection/百鸭朝龙/spriteFrame', 'tex/book/specialCollection/hundredDucksToDragon/spriteFrame'],
+  ['tex/book/specialCollection/百鹅朝凤/spriteFrame', 'tex/book/specialCollection/hundredGeeseToPhoenix/spriteFrame'],
+  ['tex/book/specialCollection/百鹅朝鹏/spriteFrame', 'tex/book/specialCollection/hundredGeeseToRoc/spriteFrame'],
+  ['tex/book/specialCollection/百鹅朝麟/spriteFrame', 'tex/book/specialCollection/hundredGeeseToQilin/spriteFrame'],
+  ['tex/过关页面/成功进度/百鸭朝雀/spriteFrame', 'tex/levelCompletePage/successProgress/hundredDucksToSparrow/spriteFrame'],
+  ['tex/过关页面/成功进度/百鸭朝鲲/spriteFrame', 'tex/levelCompletePage/successProgress/hundredDucksToKun/spriteFrame'],
+  ['tex/过关页面/成功进度/百鸭朝龙/spriteFrame', 'tex/levelCompletePage/successProgress/hundredDucksToDragon/spriteFrame'],
+  ['tex/过关页面/成功进度/百鸭朝鹏/spriteFrame', 'tex/levelCompletePage/successProgress/hundredDucksToRoc/spriteFrame'],
+  ['tex/过关页面/成功进度/百鹅朝凤/spriteFrame', 'tex/levelCompletePage/successProgress/hundredGeeseToPhoenix/spriteFrame'],
+  ['tex/过关页面/成功进度/百鹅朝麟/spriteFrame', 'tex/levelCompletePage/successProgress/hundredGeeseToQilin/spriteFrame'],
+  ['tex/过关页面/成功进度/只鸭解锁百鸭朝雀/spriteFrame', 'tex/levelCompletePage/successProgress/unlockByDuckCount_hundredDucksToSparrow/spriteFrame'],
+  ['tex/过关页面/成功进度/只鸭解锁百鸭朝鲲/spriteFrame', 'tex/levelCompletePage/successProgress/unlockByDuckCount_hundredDucksToKun/spriteFrame'],
+  ['tex/过关页面/成功进度/只鸭解锁百鸭朝龙/spriteFrame', 'tex/levelCompletePage/successProgress/unlockByDuckCount_hundredDucksToDragon/spriteFrame'],
+  ['tex/过关页面/成功进度/只鸭解锁百鸭朝鹅/spriteFrame', 'tex/levelCompletePage/successProgress/unlockByDuckCount_hundredDucksToGoose/spriteFrame'],
+  ['tex/过关页面/成功进度/只鹅解锁百鸭朝雀/spriteFrame', 'tex/levelCompletePage/successProgress/unlockByGooseCount_hundredDucksToSparrow/spriteFrame'],
+  ['tex/过关页面/成功进度/只鹅解锁百鹅朝凤/spriteFrame', 'tex/levelCompletePage/successProgress/unlockByGooseCount_hundredGeeseToPhoenix/spriteFrame'],
+  ['tex/过关页面/成功进度/只鹅解锁百鹅朝鹏/spriteFrame', 'tex/levelCompletePage/successProgress/unlockByGooseCount_hundredGeeseToRoc/spriteFrame'],
+  ['tex/过关页面/成功进度/只鹅解锁百鹅朝麟/spriteFrame', 'tex/levelCompletePage/successProgress/unlockByGooseCount_hundredGeeseToQilin/spriteFrame'],
   ['tex/自动ui/框/spriteFrame', 'tex/autoUi/frame/spriteFrame']
 ]);
 
@@ -111,7 +153,8 @@ const IMPORT_FILE_MAPPINGS = [
       '横幅': 'banner',
       '求助': 'helpLabel',
       '更多玩法': 'moreGamesLabel',
-      '旋转光': 'rotatingGlow'
+      '旋转光': 'rotatingGlow',
+      ...MYTHIC_FORMATION_NAME_MAP
     }
   },
   {
@@ -125,7 +168,8 @@ const IMPORT_FILE_MAPPINGS = [
       '投诉': 'reportLabel',
       '排行榜': 'leaderboardLabel',
       '更多玩法': 'moreGamesLabel',
-      '添加桌面': 'addToDesktopLabel'
+      '添加桌面': 'addToDesktopLabel',
+      ...MYTHIC_FORMATION_NAME_MAP
     }
   },
   {
@@ -133,7 +177,8 @@ const IMPORT_FILE_MAPPINGS = [
     label: 'uiBundle 复用分享图集',
     nameMap: {
       '分享': 'shareLabel',
-      '转发录屏': 'shareReplayButton'
+      '转发录屏': 'shareReplayButton',
+      ...MYTHIC_FORMATION_NAME_MAP
     }
   },
   {
@@ -154,7 +199,8 @@ const IMPORT_FILE_MAPPINGS = [
       '按钮': 'buttonBackground',
       '加体力': 'addEnergyIcon',
       '标题底': 'titleBackground',
-      '底': 'pillBase'
+      '底': 'pillBase',
+      ...MYTHIC_FORMATION_NAME_MAP
     }
   },
   {
@@ -173,7 +219,8 @@ const IMPORT_FILE_MAPPINGS = [
       '进度条': 'progressBarForeground',
       '获得': 'rewardLabel',
       '按键底绿': 'primaryButtonBackground',
-      '线': 'dividerLine'
+      '线': 'dividerLine',
+      ...MYTHIC_FORMATION_NAME_MAP
     }
   },
   {
@@ -190,7 +237,16 @@ const IMPORT_FILE_MAPPINGS = [
       '剪影': 'silhouette',
       '条2': 'progressBarFill',
       '条1': 'progressBarTrack',
-      '再救': 'reviveAgainLabel'
+      '再救': 'reviveAgainLabel',
+      ...MYTHIC_FORMATION_NAME_MAP,
+      ...MYTHIC_UNLOCK_NAME_MAP
+    }
+  },
+  {
+    relativePath: 'subpackages/uiBundle/import/_packs/tex/props__pack_24.json',
+    label: 'uiBundle 道具图集神兽命名',
+    nameMap: {
+      ...MYTHIC_FORMATION_NAME_MAP
     }
   },
   {
@@ -211,7 +267,8 @@ const LEGACY_CONFIG_PATH_PATTERNS = [
   /^tex\/视频(?:\/(?:texture|spriteFrame))?$/,
   /^tex\/视频\(分享\)\/spriteFrame$/,
   /^tex\/底\/spriteFrame$/,
-  /^tex\/过关页面\/成功进度\/(?:光圈(?:\/(?:texture|spriteFrame))?|条[12]\/spriteFrame|剪影\/spriteFrame|再救\/spriteFrame)$/
+  /^tex\/过关页面\/成功进度\/(?:光圈(?:\/(?:texture|spriteFrame))?|条[12]\/spriteFrame|剪影\/spriteFrame|再救\/spriteFrame|百鸭朝(?:雀|鲲|龙|鹏)|百鹅朝(?:凤|麟)|只鸭解锁百鸭朝(?:雀|鲲|龙|鹅)|只鹅解锁(?:百鸭朝雀|百鹅朝(?:凤|鹏|麟)))\/spriteFrame$/,
+  /^tex\/book\/specialCollection\/(?:百鸭朝(?:雀|鲲|龙)|百鹅朝(?:凤|鹏|麟))\/spriteFrame$/
 ];
 
 function semanticizeUiBundleBookDisplayAssets() {

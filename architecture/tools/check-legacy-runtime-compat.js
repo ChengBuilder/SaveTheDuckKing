@@ -40,6 +40,14 @@ const CHECK_TARGETS = [
         pattern: /tex\/(?:已)?领取按钮\/spriteFrame/g
       },
       {
+        label: 'DuckBundle newNail 旧 ls 短编号运行时路径',
+        pattern: /tex\/newNail\/ls(?:[1-9]|1[0-4]|"\+w\.nameArr1\[e-1\])/g
+      },
+      {
+        label: 'DuckBundle newNail 旧 lw 短编号运行时路径',
+        pattern: /tex\/newNail\/lw(?:[1-9]|1[0-4]|"\+w\.nameArr1\[e-1\])/g
+      },
+      {
         label: 'DuckBundle fragment 死 helper 残留',
         pattern: /fragmentEffect=function/g
       }
@@ -134,6 +142,10 @@ const CHECK_TARGETS = [
         pattern: /tex\/过关页面\/成功进度\/(?:光圈(?:\/(?:texture|spriteFrame))?|条[12]\/spriteFrame|剪影\/spriteFrame|再救\/spriteFrame)/g
       },
       {
+        label: 'uiBundle 配置神兽进度旧中文路径',
+        pattern: /tex\/(?:过关页面\/成功进度\/(?:百鸭朝(?:雀|鲲|龙|鹏)|百鹅朝(?:凤|麟)|只鸭解锁百鸭朝(?:雀|鲲|龙|鹅)|只鹅解锁(?:百鸭朝雀|百鹅朝(?:凤|鹏|麟)))|book\/specialCollection\/(?:百鸭朝(?:雀|鲲|龙)|百鹅朝(?:凤|鹏|麟)))\/spriteFrame/g
+      },
+      {
         label: 'uiBundle 配置旧自动 UI 路径',
         pattern: /tex\/自动ui\/框\/spriteFrame/g
       }
@@ -162,7 +174,7 @@ const CHECK_TARGETS = [
     checks: [
       {
         label: 'uiBundle 鸽子图鉴与分享页横幅旧名称',
-        pattern: createImportJsonNamePattern('(?:鸽鸽图鉴|横幅|求助|更多玩法|旋转光)')
+        pattern: createImportJsonNamePattern('(?:鸽鸽图鉴|横幅|求助|更多玩法|旋转光|百鸭朝雀)')
       }
     ]
   },
@@ -171,7 +183,7 @@ const CHECK_TARGETS = [
     checks: [
       {
         label: 'uiBundle 分享页与投诉弹窗底部旧名称',
-        pattern: createImportJsonNamePattern('(?:已领取|领取|进度条2|提交|按键底灰|底|免费获得体力|体力图标|圆1|进度条|获得|按键底绿|线)')
+        pattern: createImportJsonNamePattern('(?:已领取|领取|进度条2|提交|按键底灰|底|免费获得体力|体力图标|圆1|进度条|获得|按键底绿|线|百鸭朝鲲)')
       }
     ]
   },
@@ -180,7 +192,7 @@ const CHECK_TARGETS = [
     checks: [
       {
         label: 'uiBundle 分享页与投诉弹窗复用图集旧名称',
-        pattern: createImportJsonNamePattern('(?:视频\\(分享\\)|体力回复|视频|体力|已提交|×|叹号|底2|锁|new|圆2|按钮|加体力|标题底|底)')
+        pattern: createImportJsonNamePattern('(?:视频\\(分享\\)|体力回复|视频|体力|已提交|×|叹号|底2|锁|new|圆2|按钮|加体力|标题底|底|百鹅朝凤|百鹅朝麟)')
       }
     ]
   },
@@ -198,7 +210,7 @@ const CHECK_TARGETS = [
     checks: [
       {
         label: 'uiBundle 过关页成功进度图集旧名称',
-        pattern: createImportJsonNamePattern('(?:剪影|条2|条1|再救)')
+        pattern: createImportJsonNamePattern('(?:剪影|条2|条1|再救|百鸭朝(?:雀|鲲|龙|鹏|鹅)|百鹅朝(?:凤|鹏|麟)|只鸭解锁百鸭朝(?:雀|鲲|龙|鹅)|只鹅解锁(?:百鸭朝雀|百鹅朝(?:凤|鹏|麟)))')
       }
     ]
   },
@@ -216,7 +228,7 @@ const CHECK_TARGETS = [
     checks: [
       {
         label: 'uiBundle 复用标题图集旧名称',
-        pattern: createImportJsonNamePattern('(?:鸽鸽图鉴|入口有奖|加入鸭群|喊人|投诉|排行榜|更多玩法|添加桌面)')
+        pattern: createImportJsonNamePattern('(?:鸽鸽图鉴|入口有奖|加入鸭群|喊人|投诉|排行榜|更多玩法|添加桌面|百鸭朝(?:雀|鲲|龙|鹏|鹅)|百鹅朝(?:凤|鹏|麟))')
       }
     ]
   },
@@ -225,7 +237,16 @@ const CHECK_TARGETS = [
     checks: [
       {
         label: 'uiBundle 复用分享图集旧名称',
-        pattern: createImportJsonNamePattern('(?:分享|转发录屏)')
+        pattern: createImportJsonNamePattern('(?:分享|转发录屏|百鹅朝鹏)')
+      }
+    ]
+  },
+  {
+    relativePath: 'subpackages/uiBundle/import/_packs/tex/props__pack_24.json',
+    checks: [
+      {
+        label: 'uiBundle 道具图集神兽旧名称',
+        pattern: createImportJsonNamePattern('(?:百鸭朝(?:龙|鹅|鲲))')
       }
     ]
   },

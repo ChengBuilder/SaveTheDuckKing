@@ -1,1 +1,591 @@
-[1,["13a4cca66@6c48a"],["_textureSource"],["cc.SpriteFrame"],0,[[[{"name":"张飞鸭","rect":{"x":631,"y":3,"width":226,"height":282},"offset":{"x":0,"y":0},"originalSize":{"width":226,"height":282},"rotated":false,"capInsets":[0,0,0,0],"packable":true,"pixelsToUnit":100,"pivot":{"x":0.5,"y":0.5},"meshType":0}],[0],0,[0],[0],[0]],[[{"name":"关羽鸭","rect":{"x":403,"y":317,"width":226,"height":283},"offset":{"x":0,"y":0},"originalSize":{"width":226,"height":283},"rotated":false,"capInsets":[0,0,0,0],"packable":true,"pixelsToUnit":100,"pivot":{"x":0.5,"y":0.5},"meshType":0}],[0],0,[0],[0],[0]],[[{"name":"西瓜鸭","rect":{"x":251,"y":464,"width":129,"height":284},"offset":{"x":0,"y":0},"originalSize":{"width":129,"height":284},"rotated":false,"capInsets":[0,0,0,0],"packable":true,"pixelsToUnit":100,"pivot":{"x":0.5,"y":0.5},"meshType":0}],[0],0,[0],[0],[0]],[[{"name":"火龙果鸭","rect":{"x":386,"y":741,"width":127,"height":284},"offset":{"x":0,"y":0},"originalSize":{"width":127,"height":284},"rotated":true,"capInsets":[0,0,0,0],"packable":true,"pixelsToUnit":100,"pivot":{"x":0.5,"y":0.5},"meshType":0}],[0],0,[0],[0],[0]],[[{"name":"图标鸽","rect":{"x":3,"y":3,"width":308,"height":308},"offset":{"x":0,"y":0},"originalSize":{"width":308,"height":308},"rotated":false,"capInsets":[0,0,0,0],"packable":true,"pixelsToUnit":100,"pivot":{"x":0.5,"y":0.5},"meshType":0}],[0],0,[0],[0],[0]],[[{"name":"图标牛","rect":{"x":317,"y":3,"width":308,"height":308},"offset":{"x":0,"y":0},"originalSize":{"width":308,"height":308},"rotated":false,"capInsets":[0,0,0,0],"packable":true,"pixelsToUnit":100,"pivot":{"x":0.5,"y":0.5},"meshType":0}],[0],0,[0],[0],[0]],[[{"name":"百鸭朝龙","rect":{"x":635,"y":291,"width":154,"height":271},"offset":{"x":0,"y":0},"originalSize":{"width":154,"height":271},"rotated":false,"capInsets":[0,0,0,0],"packable":true,"pixelsToUnit":100,"pivot":{"x":0.5,"y":0.5},"meshType":0}],[0],0,[0],[0],[0]],[[{"name":"蓝莓鸭","rect":{"x":676,"y":568,"width":128,"height":284},"offset":{"x":0,"y":0},"originalSize":{"width":128,"height":284},"rotated":false,"capInsets":[0,0,0,0],"packable":true,"pixelsToUnit":100,"pivot":{"x":0.5,"y":0.5},"meshType":0}],[0],0,[0],[0],[0]],[[{"name":"按键底红","rect":{"x":3,"y":317,"width":394,"height":141},"offset":{"x":0,"y":0},"originalSize":{"width":394,"height":141},"rotated":false,"capInsets":[0,0,0,0],"packable":true,"pixelsToUnit":100,"pivot":{"x":0.5,"y":0.5},"meshType":0}],[0],0,[0],[0],[0]],[[{"name":"道具","rect":{"x":3,"y":464,"width":242,"height":252},"offset":{"x":0,"y":0},"originalSize":{"width":242,"height":252},"rotated":false,"capInsets":[0,0,0,0],"packable":true,"pixelsToUnit":100,"pivot":{"x":0.5,"y":0.5},"meshType":0}],[0],0,[0],[0],[0]],[[{"name":"安陵容鸭","rect":{"x":386,"y":606,"width":129,"height":284},"offset":{"x":0,"y":0},"originalSize":{"width":129,"height":284},"rotated":true,"capInsets":[0,0,0,0],"packable":true,"pixelsToUnit":100,"pivot":{"x":0.5,"y":0.5},"meshType":0}],[0],0,[0],[0],[0]],[[{"name":"华妃鸭","rect":{"x":3,"y":754,"width":124,"height":283},"offset":{"x":0,"y":0},"originalSize":{"width":124,"height":283},"rotated":true,"capInsets":[0,0,0,0],"packable":true,"pixelsToUnit":100,"pivot":{"x":0.5,"y":0.5},"meshType":0}],[0],0,[0],[0],[0]]]]
+[
+  1,
+  [
+    "13a4cca66@6c48a"
+  ],
+  [
+    "_textureSource"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    [
+      [
+        {
+          "name": "张飞鸭",
+          "rect": {
+            "x": 631,
+            "y": 3,
+            "width": 226,
+            "height": 282
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "originalSize": {
+            "width": 226,
+            "height": 282
+          },
+          "rotated": false,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "meshType": 0
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "关羽鸭",
+          "rect": {
+            "x": 403,
+            "y": 317,
+            "width": 226,
+            "height": 283
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "originalSize": {
+            "width": 226,
+            "height": 283
+          },
+          "rotated": false,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "meshType": 0
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "西瓜鸭",
+          "rect": {
+            "x": 251,
+            "y": 464,
+            "width": 129,
+            "height": 284
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "originalSize": {
+            "width": 129,
+            "height": 284
+          },
+          "rotated": false,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "meshType": 0
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "火龙果鸭",
+          "rect": {
+            "x": 386,
+            "y": 741,
+            "width": 127,
+            "height": 284
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "originalSize": {
+            "width": 127,
+            "height": 284
+          },
+          "rotated": true,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "meshType": 0
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "图标鸽",
+          "rect": {
+            "x": 3,
+            "y": 3,
+            "width": 308,
+            "height": 308
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "originalSize": {
+            "width": 308,
+            "height": 308
+          },
+          "rotated": false,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "meshType": 0
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "图标牛",
+          "rect": {
+            "x": 317,
+            "y": 3,
+            "width": 308,
+            "height": 308
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "originalSize": {
+            "width": 308,
+            "height": 308
+          },
+          "rotated": false,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "meshType": 0
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "hundredDucksToDragon",
+          "rect": {
+            "x": 635,
+            "y": 291,
+            "width": 154,
+            "height": 271
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "originalSize": {
+            "width": 154,
+            "height": 271
+          },
+          "rotated": false,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "meshType": 0
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "蓝莓鸭",
+          "rect": {
+            "x": 676,
+            "y": 568,
+            "width": 128,
+            "height": 284
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "originalSize": {
+            "width": 128,
+            "height": 284
+          },
+          "rotated": false,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "meshType": 0
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "按键底红",
+          "rect": {
+            "x": 3,
+            "y": 317,
+            "width": 394,
+            "height": 141
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "originalSize": {
+            "width": 394,
+            "height": 141
+          },
+          "rotated": false,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "meshType": 0
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "道具",
+          "rect": {
+            "x": 3,
+            "y": 464,
+            "width": 242,
+            "height": 252
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "originalSize": {
+            "width": 242,
+            "height": 252
+          },
+          "rotated": false,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "meshType": 0
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "安陵容鸭",
+          "rect": {
+            "x": 386,
+            "y": 606,
+            "width": 129,
+            "height": 284
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "originalSize": {
+            "width": 129,
+            "height": 284
+          },
+          "rotated": true,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "meshType": 0
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ],
+    [
+      [
+        {
+          "name": "华妃鸭",
+          "rect": {
+            "x": 3,
+            "y": 754,
+            "width": 124,
+            "height": 283
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "originalSize": {
+            "width": 124,
+            "height": 283
+          },
+          "rotated": true,
+          "capInsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "packable": true,
+          "pixelsToUnit": 100,
+          "pivot": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "meshType": 0
+        }
+      ],
+      [
+        0
+      ],
+      0,
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        0
+      ]
+    ]
+  ]
+]

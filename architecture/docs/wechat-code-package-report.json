@@ -30,7 +30,7 @@
       "src"
     ],
     "fileCount": 35,
-    "sizeBytes": 3533975,
+    "sizeBytes": 3533993,
     "sizeText": "3.37 MiB",
     "limitBytes": 4194304,
     "limitText": "4.00 MiB",
@@ -219,7 +219,7 @@
       {
         "path": "game.js",
         "displayPath": "game.js",
-        "sizeBytes": 2697662,
+        "sizeBytes": 2697680,
         "sizeText": "2.57 MiB"
       },
       {
@@ -11507,8 +11507,8 @@
         "subpackages/uiBundle"
       ],
       "fileCount": 115,
-      "sizeBytes": 2233285,
-      "sizeText": "2.13 MiB",
+      "sizeBytes": 2239978,
+      "sizeText": "2.14 MiB",
       "limitBytes": null,
       "limitText": null,
       "withinLimit": true,
@@ -11516,7 +11516,7 @@
         {
           "path": "subpackages/uiBundle/config.ui-bundle.json",
           "displayPath": "subpackages/uiBundle/config.ui-bundle.json",
-          "sizeBytes": 60480,
+          "sizeBytes": 60789,
           "sizeText": "0.06 MiB"
         },
         {
@@ -11534,7 +11534,7 @@
         {
           "path": "subpackages/uiBundle/import/_packs/pack/callFriend__pack_15.json",
           "displayPath": "subpackages/uiBundle/import/_packs/pack/callFriend__pack_15.json",
-          "sizeBytes": 11845,
+          "sizeBytes": 11895,
           "sizeText": "0.01 MiB"
         },
         {
@@ -11570,7 +11570,7 @@
         {
           "path": "subpackages/uiBundle/import/_packs/tex/banner__pack_20.json",
           "displayPath": "subpackages/uiBundle/import/_packs/tex/banner__pack_20.json",
-          "sizeBytes": 7890,
+          "sizeBytes": 7899,
           "sizeText": "0.01 MiB"
         },
         {
@@ -11618,13 +11618,13 @@
         {
           "path": "subpackages/uiBundle/import/_packs/tex/bottom__pack_32.json",
           "displayPath": "subpackages/uiBundle/import/_packs/tex/bottom__pack_32.json",
-          "sizeBytes": 12609,
+          "sizeBytes": 12614,
           "sizeText": "0.01 MiB"
         },
         {
           "path": "subpackages/uiBundle/import/_packs/tex/close__pack_28.json",
           "displayPath": "subpackages/uiBundle/import/_packs/tex/close__pack_28.json",
-          "sizeBytes": 11028,
+          "sizeBytes": 11044,
           "sizeText": "0.01 MiB"
         },
         {
@@ -11696,14 +11696,14 @@
         {
           "path": "subpackages/uiBundle/import/_packs/tex/levelCompletePage/successProgress/silhouette__pack_34.json",
           "displayPath": "subpackages/uiBundle/import/_packs/tex/levelCompletePage/successProgress/silhouette__pack_34.json",
-          "sizeBytes": 13467,
+          "sizeBytes": 13616,
           "sizeText": "0.01 MiB"
         },
         {
           "path": "subpackages/uiBundle/import/_packs/tex/props__pack_24.json",
           "displayPath": "subpackages/uiBundle/import/_packs/tex/props__pack_24.json",
-          "sizeBytes": 3298,
-          "sizeText": "0.00 MiB"
+          "sizeBytes": 9448,
+          "sizeText": "0.01 MiB"
         },
         {
           "path": "subpackages/uiBundle/import/_packs/tex/props/shuffle__pack_16.json",
@@ -11732,7 +11732,7 @@
         {
           "path": "subpackages/uiBundle/import/_packs/tex/share__pack_22.json",
           "displayPath": "subpackages/uiBundle/import/_packs/tex/share__pack_22.json",
-          "sizeBytes": 8684,
+          "sizeBytes": 8689,
           "sizeText": "0.01 MiB"
         },
         {
@@ -12210,8 +12210,8 @@
   "totals": {
     "packageCount": 9,
     "fileCount": 2005,
-    "sizeBytes": 26754038,
-    "sizeText": "25.51 MiB",
+    "sizeBytes": 26760749,
+    "sizeText": "25.52 MiB",
     "limitBytes": 31457280,
     "limitText": "30.00 MiB",
     "withinLimit": true

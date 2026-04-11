@@ -557,7 +557,7 @@
       1
     ],
     "2": [
-      "tex/过关页面/成功进度/只鸭解锁百鸭朝雀/spriteFrame",
+      "tex/levelCompletePage/successProgress/unlockByDuckCount_hundredDucksToSparrow/spriteFrame",
       3,
       1
     ],
@@ -647,7 +647,7 @@
       1
     ],
     "20": [
-      "tex/过关页面/成功进度/百鸭朝鲲/spriteFrame",
+      "tex/levelCompletePage/successProgress/hundredDucksToKun/spriteFrame",
       3,
       1
     ],
@@ -737,7 +737,7 @@
       1
     ],
     "44": [
-      "tex/过关页面/成功进度/只鹅解锁百鹅朝凤/spriteFrame",
+      "tex/levelCompletePage/successProgress/unlockByGooseCount_hundredGeeseToPhoenix/spriteFrame",
       3,
       1
     ],
@@ -752,7 +752,7 @@
       1
     ],
     "50": [
-      "tex/过关页面/成功进度/百鸭朝雀/spriteFrame",
+      "tex/levelCompletePage/successProgress/hundredDucksToSparrow/spriteFrame",
       3,
       1
     ],
@@ -767,7 +767,7 @@
       1
     ],
     "55": [
-      "tex/book/specialCollection/百鸭朝鲲/spriteFrame",
+      "tex/book/specialCollection/hundredDucksToKun/spriteFrame",
       3,
       1
     ],
@@ -942,7 +942,7 @@
       1
     ],
     "100": [
-      "tex/book/specialCollection/百鸭朝雀/spriteFrame",
+      "tex/book/specialCollection/hundredDucksToSparrow/spriteFrame",
       3,
       1
     ],
@@ -1082,7 +1082,7 @@
       1
     ],
     "128": [
-      "tex/book/specialCollection/百鹅朝鹏/spriteFrame",
+      "tex/book/specialCollection/hundredGeeseToRoc/spriteFrame",
       3,
       1
     ],
@@ -1167,7 +1167,7 @@
       1
     ],
     "145": [
-      "tex/过关页面/成功进度/只鹅解锁百鹅朝鹏/spriteFrame",
+      "tex/levelCompletePage/successProgress/unlockByGooseCount_hundredGeeseToRoc/spriteFrame",
       3,
       1
     ],
@@ -1187,7 +1187,7 @@
       1
     ],
     "149": [
-      "tex/过关页面/成功进度/百鹅朝麟/spriteFrame",
+      "tex/levelCompletePage/successProgress/hundredGeeseToQilin/spriteFrame",
       3,
       1
     ],
@@ -1372,7 +1372,7 @@
       1
     ],
     "187": [
-      "tex/book/specialCollection/百鸭朝龙/spriteFrame",
+      "tex/book/specialCollection/hundredDucksToDragon/spriteFrame",
       3,
       1
     ],
@@ -1502,12 +1502,12 @@
       1
     ],
     "213": [
-      "tex/过关页面/成功进度/百鸭朝龙/spriteFrame",
+      "tex/levelCompletePage/successProgress/hundredDucksToDragon/spriteFrame",
       3,
       1
     ],
     "214": [
-      "tex/book/specialCollection/百鹅朝凤/spriteFrame",
+      "tex/book/specialCollection/hundredGeeseToPhoenix/spriteFrame",
       3,
       1
     ],
@@ -1627,7 +1627,7 @@
       1
     ],
     "238": [
-      "tex/过关页面/成功进度/只鸭解锁百鸭朝鲲/spriteFrame",
+      "tex/levelCompletePage/successProgress/unlockByDuckCount_hundredDucksToKun/spriteFrame",
       3,
       1
     ],
@@ -1642,7 +1642,7 @@
       1
     ],
     "241": [
-      "tex/过关页面/成功进度/只鸭解锁百鸭朝鹅/spriteFrame",
+      "tex/levelCompletePage/successProgress/unlockByDuckCount_hundredDucksToGoose/spriteFrame",
       3,
       1
     ],
@@ -1792,7 +1792,7 @@
       1
     ],
     "272": [
-      "tex/过关页面/成功进度/百鸭朝鹏/spriteFrame",
+      "tex/levelCompletePage/successProgress/hundredDucksToRoc/spriteFrame",
       3,
       1
     ],
@@ -1872,7 +1872,7 @@
       1
     ],
     "289": [
-      "tex/过关页面/成功进度/只鸭解锁百鸭朝龙/spriteFrame",
+      "tex/levelCompletePage/successProgress/unlockByDuckCount_hundredDucksToDragon/spriteFrame",
       3,
       1
     ],
@@ -1967,7 +1967,7 @@
       1
     ],
     "308": [
-      "tex/过关页面/成功进度/百鹅朝凤/spriteFrame",
+      "tex/levelCompletePage/successProgress/hundredGeeseToPhoenix/spriteFrame",
       3,
       1
     ],
@@ -2012,7 +2012,7 @@
       1
     ],
     "317": [
-      "tex/book/specialCollection/百鹅朝麟/spriteFrame",
+      "tex/book/specialCollection/hundredGeeseToQilin/spriteFrame",
       3,
       1
     ],
@@ -2117,7 +2117,7 @@
       1
     ],
     "338": [
-      "tex/过关页面/成功进度/只鹅解锁百鸭朝雀/spriteFrame",
+      "tex/levelCompletePage/successProgress/unlockByGooseCount_hundredDucksToSparrow/spriteFrame",
       3,
       1
     ],
@@ -2537,7 +2537,7 @@
       1
     ],
     "422": [
-      "tex/过关页面/成功进度/只鹅解锁百鹅朝麟/spriteFrame",
+      "tex/levelCompletePage/successProgress/unlockByGooseCount_hundredGeeseToQilin/spriteFrame",
       3,
       1
     ],

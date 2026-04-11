@@ -14,7 +14,7 @@
     [
       [
         {
-          "name": "百鸭朝雀",
+          "name": "hundredDucksToSparrow",
           "rect": {
             "x": 3,
             "y": 3,
@@ -62,7 +62,7 @@
     [
       [
         {
-          "name": "百鹅朝鹏",
+          "name": "hundredGeeseToRoc",
           "rect": {
             "x": 324,
             "y": 3,
@@ -158,7 +158,7 @@
     [
       [
         {
-          "name": "百鹅朝麟",
+          "name": "hundredGeeseToQilin",
           "rect": {
             "x": 3,
             "y": 259,
@@ -542,7 +542,7 @@
     [
       [
         {
-          "name": "百鹅朝凤",
+          "name": "hundredGeeseToPhoenix",
           "rect": {
             "x": 645,
             "y": 3,
@@ -590,7 +590,7 @@
     [
       [
         {
-          "name": "百鸭朝龙",
+          "name": "hundredDucksToDragon",
           "rect": {
             "x": 3,
             "y": 570,
@@ -638,7 +638,7 @@
     [
       [
         {
-          "name": "百鸭朝鹅",
+          "name": "hundredDucksToGoose",
           "rect": {
             "x": 254,
             "y": 570,
@@ -686,7 +686,7 @@
     [
       [
         {
-          "name": "百鸭朝鲲",
+          "name": "hundredDucksToKun",
           "rect": {
             "x": 254,
             "y": 259,

@@ -6,7 +6,7 @@
 
 ## 核心原则
 1. 先在 `architecture/` 做可维护层改造，再桥接到 `game.js`
-2. 不深改 `game.js` 压缩业务代码
+2. 不做无证据的大范围 `game.js` 深改；允许在“有引用证据”的前提下定点删死逻辑/改旧路径
 3. 每次改动后必须执行运行安全检查
 4. 素材与代码目录必须保持分层，不在 `architecture/` 混入二进制素材
 5. 每轮优化结束后必须生成迭代报告，记录架构/入口/使用方式
@@ -63,6 +63,13 @@ node architecture/tools/run-iteration-cycle.js
 3. 幂等验证：`semanticize-game2bundle-path-assets` 连续执行两次，第二次改写数必须为 0。
 4. 护栏验证：执行 `node architecture/tools/check-legacy-runtime-compat.js` 与 `node architecture/tools/run-guardrails.js`，确保无中文 canonical 回流。
 5. 收口文档：在 `architecture/docs/asset-governance-log.md` 记录本轮映射与验证结果，再执行 `node architecture/tools/run-iteration-cycle.js` 更新整体量化报告。
+
+## 多 Agent 并行模板
+1. 先切片：按“互不重叠文件集”分配子任务，至少拆成 `路径迁移`、`护栏扩展`、`文档沉淀` 三条线。
+2. 再并行：优先把不阻塞主线的只读分析交给 explorer；主线程同时推进一条可直接落地的改动，避免空等。
+3. 冲突约束：每个 agent 在任务里显式声明负责文件，禁止回滚他人改动，提交前统一二次审查 `git diff --name-only`。
+4. 限流回退：若子 agent 出现 `429` 或超时，主线程立即切回本地串行执行，并把“已完成/未完成清单”写入本轮迭代说明，避免断点丢失。
+5. 收口标准：并行任务最终必须汇总为“一次可回归提交”，并完成 `幂等复跑 + 护栏 + 官方检查`。
 
 ## DuckBundle 可读性收敛切片
 1. 定位：先看 `architecture/docs/asset-readability-audit.md`，确认 `DuckBundle` 是否仍残留 `tex/背景`、`tex/随机道具`、`tex/newNail/问号`、`tex/newNail/ls1..ls14`、`tex/newNail/lw1..lw14`、`tex/难度飙升/*`、`tex/bubble/t0..t12` 这类可读性噪音。

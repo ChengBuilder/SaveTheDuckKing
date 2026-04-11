@@ -14,7 +14,7 @@
     [
       [
         {
-          "name": "只鸭解锁百鸭朝雀",
+          "name": "unlockByDuckCount_hundredDucksToSparrow",
           "rect": {
             "x": 648,
             "y": 301,
@@ -62,7 +62,7 @@
     [
       [
         {
-          "name": "只鹅解锁百鹅朝凤",
+          "name": "unlockByGooseCount_hundredGeeseToPhoenix",
           "rect": {
             "x": 256,
             "y": 909,
@@ -110,7 +110,7 @@
     [
       [
         {
-          "name": "百鸭朝雀",
+          "name": "hundredDucksToSparrow",
           "rect": {
             "x": 652,
             "y": 3,
@@ -158,7 +158,7 @@
     [
       [
         {
-          "name": "只鹅解锁百鹅朝鹏",
+          "name": "unlockByGooseCount_hundredGeeseToRoc",
           "rect": {
             "x": 621,
             "y": 352,
@@ -206,7 +206,7 @@
     [
       [
         {
-          "name": "百鹅朝麟",
+          "name": "hundredGeeseToQilin",
           "rect": {
             "x": 621,
             "y": 402,
@@ -302,7 +302,7 @@
     [
       [
         {
-          "name": "百鸭朝龙",
+          "name": "hundredDucksToDragon",
           "rect": {
             "x": 621,
             "y": 646,
@@ -350,7 +350,7 @@
     [
       [
         {
-          "name": "只鸭解锁百鸭朝鲲",
+          "name": "unlockByDuckCount_hundredDucksToKun",
           "rect": {
             "x": 495,
             "y": 251,
@@ -398,7 +398,7 @@
     [
       [
         {
-          "name": "只鸭解锁百鸭朝鹅",
+          "name": "unlockByDuckCount_hundredDucksToGoose",
           "rect": {
             "x": 570,
             "y": 308,
@@ -446,7 +446,7 @@
     [
       [
         {
-          "name": "百鸭朝鹏",
+          "name": "hundredDucksToRoc",
           "rect": {
             "x": 3,
             "y": 593,
@@ -542,7 +542,7 @@
     [
       [
         {
-          "name": "只鸭解锁百鸭朝龙",
+          "name": "unlockByDuckCount_hundredDucksToDragon",
           "rect": {
             "x": 506,
             "y": 565,
@@ -590,7 +590,7 @@
     [
       [
         {
-          "name": "百鹅朝凤",
+          "name": "hundredGeeseToPhoenix",
           "rect": {
             "x": 256,
             "y": 593,
@@ -638,7 +638,7 @@
     [
       [
         {
-          "name": "只鹅解锁百鸭朝雀",
+          "name": "unlockByGooseCount_hundredDucksToSparrow",
           "rect": {
             "x": 570,
             "y": 621,
@@ -782,7 +782,7 @@
     [
       [
         {
-          "name": "只鹅解锁百鹅朝麟",
+          "name": "unlockByGooseCount_hundredGeeseToQilin",
           "rect": {
             "x": 648,
             "y": 251,
