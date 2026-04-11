@@ -65,10 +65,10 @@ node architecture/tools/run-iteration-cycle.js
 5. 收口文档：在 `architecture/docs/asset-governance-log.md` 记录本轮映射与验证结果，再执行 `node architecture/tools/run-iteration-cycle.js` 更新整体量化报告。
 
 ## DuckBundle 可读性收敛切片
-1. 定位：先看 `architecture/docs/asset-readability-audit.md`，确认 `DuckBundle` 是否仍残留 `tex/背景`、`tex/随机道具`、`tex/newNail/问号`、`tex/难度飙升/*`、`tex/bubble/t0..t12` 这类可读性噪音。
+1. 定位：先看 `architecture/docs/asset-readability-audit.md`，确认 `DuckBundle` 是否仍残留 `tex/背景`、`tex/随机道具`、`tex/newNail/问号`、`tex/newNail/ls1..ls14`、`tex/newNail/lw1..lw14`、`tex/难度飙升/*`、`tex/bubble/t0..t12` 这类可读性噪音。
 2. 并行执行：
    - 路径迁移：`node architecture/tools/semanticize-duckbundle-readability-assets.js`
-   - 护栏扩展：在 `architecture/tools/check-legacy-runtime-compat.js` 注册 DuckBundle 旧中文段与 `bubble/t0..t12` 禁回流检查，并在 `architecture/tools/run-guardrails.js` 接入脚本语法检查。
+   - 护栏扩展：在 `architecture/tools/check-legacy-runtime-compat.js` 注册 DuckBundle 旧中文段、`newNail/ls1..ls14`、`newNail/lw1..lw14` 与 `bubble/t0..t12` 禁回流检查，并在 `architecture/tools/run-guardrails.js` 接入脚本语法检查。
 3. 幂等验证：`semanticize-duckbundle-readability-assets` 连续执行两次，第二次改写数必须为 0。
-4. 护栏验证：执行 `node architecture/tools/check-legacy-runtime-compat.js` 与 `node architecture/tools/run-guardrails.js`，确保无旧中文段或 `bubble` 短编号回流。
+4. 护栏验证：执行 `node architecture/tools/check-legacy-runtime-compat.js` 与 `node architecture/tools/run-guardrails.js`，确保无旧中文段、`newNail/ls1..ls14`、`newNail/lw1..lw14` 或 `bubble` 短编号回流。
 5. 收口文档：在 `architecture/docs/asset-governance-log.md` 记录本轮映射与验证结果，再执行 `node architecture/tools/run-iteration-cycle.js` 更新整体量化报告。

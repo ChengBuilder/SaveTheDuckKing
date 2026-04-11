@@ -1,9 +1,9 @@
 {
   "bundleCount": 10,
   "totalAssetPaths": 2293,
-  "candidateCount": 465,
+  "candidateCount": 435,
   "highSeverityCount": 0,
-  "mediumSeverityCount": 328,
+  "mediumSeverityCount": 298,
   "lowSeverityCount": 137,
   "topCandidates": [
     {
@@ -1953,13 +1953,13 @@
       ]
     },
     {
-      "bundleId": "DuckBundle",
-      "path": "tex/newNail/ls1/spriteFrame",
+      "bundleId": "uiBundle",
+      "path": "tex/book/duck/y1/spriteFrame",
       "score": 3,
       "severity": "medium",
       "issues": [
         {
-          "segment": "ls1",
+          "segment": "y1",
           "type": "short-indexed-token",
           "score": 3,
           "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
@@ -1967,13 +1967,13 @@
       ]
     },
     {
-      "bundleId": "DuckBundle",
-      "path": "tex/newNail/ls10",
+      "bundleId": "uiBundle",
+      "path": "tex/book/duck/y10/spriteFrame",
       "score": 3,
       "severity": "medium",
       "issues": [
         {
-          "segment": "ls10",
+          "segment": "y10",
           "type": "short-indexed-token",
           "score": 3,
           "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
@@ -1981,13 +1981,13 @@
       ]
     },
     {
-      "bundleId": "DuckBundle",
-      "path": "tex/newNail/ls10/spriteFrame",
+      "bundleId": "uiBundle",
+      "path": "tex/book/duck/y100/spriteFrame",
       "score": 3,
       "severity": "medium",
       "issues": [
         {
-          "segment": "ls10",
+          "segment": "y100",
           "type": "short-indexed-token",
           "score": 3,
           "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
@@ -1995,13 +1995,13 @@
       ]
     },
     {
-      "bundleId": "DuckBundle",
-      "path": "tex/newNail/ls10/texture",
+      "bundleId": "uiBundle",
+      "path": "tex/book/duck/y11/spriteFrame",
       "score": 3,
       "severity": "medium",
       "issues": [
         {
-          "segment": "ls10",
+          "segment": "y11",
           "type": "short-indexed-token",
           "score": 3,
           "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
@@ -2705,230 +2705,20 @@
       ]
     },
     {
-      "bundleId": "DuckBundle",
-      "configPath": "subpackages/DuckBundle/config.duck-bundle.json",
-      "assetCount": 1227,
-      "candidateCount": 30,
-      "highSeverityCount": 0,
-      "mediumSeverityCount": 30,
-      "lowSeverityCount": 0,
-      "noisySegments": [
-        {
-          "segment": "ls10",
-          "count": 3
-        },
-        {
-          "segment": "ls1",
-          "count": 1
-        },
-        {
-          "segment": "ls11",
-          "count": 1
-        },
-        {
-          "segment": "ls12",
-          "count": 1
-        },
-        {
-          "segment": "ls13",
-          "count": 1
-        },
-        {
-          "segment": "ls14",
-          "count": 1
-        },
-        {
-          "segment": "ls2",
-          "count": 1
-        },
-        {
-          "segment": "ls3",
-          "count": 1
-        },
-        {
-          "segment": "ls4",
-          "count": 1
-        },
-        {
-          "segment": "ls5",
-          "count": 1
-        }
-      ],
-      "sampleCandidates": [
-        {
-          "bundleId": "DuckBundle",
-          "path": "tex/newNail/ls1/spriteFrame",
-          "score": 3,
-          "severity": "medium",
-          "issues": [
-            {
-              "segment": "ls1",
-              "type": "short-indexed-token",
-              "score": 3,
-              "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
-            }
-          ]
-        },
-        {
-          "bundleId": "DuckBundle",
-          "path": "tex/newNail/ls10",
-          "score": 3,
-          "severity": "medium",
-          "issues": [
-            {
-              "segment": "ls10",
-              "type": "short-indexed-token",
-              "score": 3,
-              "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
-            }
-          ]
-        },
-        {
-          "bundleId": "DuckBundle",
-          "path": "tex/newNail/ls10/spriteFrame",
-          "score": 3,
-          "severity": "medium",
-          "issues": [
-            {
-              "segment": "ls10",
-              "type": "short-indexed-token",
-              "score": 3,
-              "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
-            }
-          ]
-        },
-        {
-          "bundleId": "DuckBundle",
-          "path": "tex/newNail/ls10/texture",
-          "score": 3,
-          "severity": "medium",
-          "issues": [
-            {
-              "segment": "ls10",
-              "type": "short-indexed-token",
-              "score": 3,
-              "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
-            }
-          ]
-        },
-        {
-          "bundleId": "DuckBundle",
-          "path": "tex/newNail/ls11/spriteFrame",
-          "score": 3,
-          "severity": "medium",
-          "issues": [
-            {
-              "segment": "ls11",
-              "type": "short-indexed-token",
-              "score": 3,
-              "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
-            }
-          ]
-        },
-        {
-          "bundleId": "DuckBundle",
-          "path": "tex/newNail/ls12/spriteFrame",
-          "score": 3,
-          "severity": "medium",
-          "issues": [
-            {
-              "segment": "ls12",
-              "type": "short-indexed-token",
-              "score": 3,
-              "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
-            }
-          ]
-        },
-        {
-          "bundleId": "DuckBundle",
-          "path": "tex/newNail/ls13/spriteFrame",
-          "score": 3,
-          "severity": "medium",
-          "issues": [
-            {
-              "segment": "ls13",
-              "type": "short-indexed-token",
-              "score": 3,
-              "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
-            }
-          ]
-        },
-        {
-          "bundleId": "DuckBundle",
-          "path": "tex/newNail/ls14/spriteFrame",
-          "score": 3,
-          "severity": "medium",
-          "issues": [
-            {
-              "segment": "ls14",
-              "type": "short-indexed-token",
-              "score": 3,
-              "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
-            }
-          ]
-        },
-        {
-          "bundleId": "DuckBundle",
-          "path": "tex/newNail/ls2/spriteFrame",
-          "score": 3,
-          "severity": "medium",
-          "issues": [
-            {
-              "segment": "ls2",
-              "type": "short-indexed-token",
-              "score": 3,
-              "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
-            }
-          ]
-        },
-        {
-          "bundleId": "DuckBundle",
-          "path": "tex/newNail/ls3/spriteFrame",
-          "score": 3,
-          "severity": "medium",
-          "issues": [
-            {
-              "segment": "ls3",
-              "type": "short-indexed-token",
-              "score": 3,
-              "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
-            }
-          ]
-        },
-        {
-          "bundleId": "DuckBundle",
-          "path": "tex/newNail/ls4/spriteFrame",
-          "score": 3,
-          "severity": "medium",
-          "issues": [
-            {
-              "segment": "ls4",
-              "type": "short-indexed-token",
-              "score": 3,
-              "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
-            }
-          ]
-        },
-        {
-          "bundleId": "DuckBundle",
-          "path": "tex/newNail/ls5/spriteFrame",
-          "score": 3,
-          "severity": "medium",
-          "issues": [
-            {
-              "segment": "ls5",
-              "type": "short-indexed-token",
-              "score": 3,
-              "reason": "片段为“短缩写 + 序号”模式，可读性低且难以长期维护"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "bundleId": "audioBundle",
       "configPath": "subpackages/audioBundle/config.audio-bundle.json",
       "assetCount": 65,
+      "candidateCount": 0,
+      "highSeverityCount": 0,
+      "mediumSeverityCount": 0,
+      "lowSeverityCount": 0,
+      "noisySegments": [],
+      "sampleCandidates": []
+    },
+    {
+      "bundleId": "DuckBundle",
+      "configPath": "subpackages/DuckBundle/config.duck-bundle.json",
+      "assetCount": 1227,
       "candidateCount": 0,
       "highSeverityCount": 0,
       "mediumSeverityCount": 0,

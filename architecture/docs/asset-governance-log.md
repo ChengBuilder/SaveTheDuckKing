@@ -21,16 +21,32 @@
 - `tex/newNail/随机钉灰/*` 收敛为 `tex/newNail/randomNailGray/*`
 - `tex/newNail/高光*` 收敛为 `tex/newNail/highlight*`
 - `tex/newNail/高光2*` 收敛为 `tex/newNail/highlight2*`
+- `tex/newNail/ls1..ls14` 收敛为 `tex/newNail/nailStyle1..nailStyle14`
+- `tex/newNail/lw1..lw14` 收敛为 `tex/newNail/nailGlowStyle1..nailGlowStyle14`
 - `tex/难度飙升/*` 收敛为 `tex/difficultySurge/*`
 - `tex/bubble/t0..t12` 收敛为 `tex/bubble/bubbleFrame0..bubbleFrame12`
 
 本轮同步调整：
 - 新增 `architecture/tools/semanticize-duckbundle-readability-assets.js`
-- `architecture/tools/check-legacy-runtime-compat.js` 新增 `DuckBundle` 旧中文 canonical 残留与 `bubble/t0..t12` 禁回流检查
+- `architecture/tools/check-legacy-runtime-compat.js` 新增 `DuckBundle` 旧中文 canonical 残留、`newNail/ls1..ls14`、`newNail/lw1..lw14` 与 `bubble/t0..t12` 禁回流检查
 - `architecture/tools/run-guardrails.js` 接入该脚本的语法检查
 
 验证命令：
 - `node architecture/tools/semanticize-duckbundle-readability-assets.js`（连续执行两次，确认第二次改写数为 0）
+- `node architecture/tools/check-legacy-runtime-compat.js`
+- `node architecture/tools/run-guardrails.js`
+
+## 2026-04-11 `DuckBundle` `newNail/lw1..lw14` 语义化补收敛
+
+本轮继续在 `DuckBundle` 可读性治理基础上，补齐 `tex/newNail/lw1..lw14` 这批短编号目录的收口，将其统一语义化为 `tex/newNail/nailGlowStyle1..nailGlowStyle14`。沿用“只改 canonical 源头、不补 runtime alias”的原则，避免旧 `lw` 编号回流到配置或护栏缺口。
+
+本轮新增落地的 canonical 映射：
+- `tex/newNail/lw1..lw14` 收敛为 `tex/newNail/nailGlowStyle1..nailGlowStyle14`
+
+本轮同步调整：
+- `architecture/tools/check-legacy-runtime-compat.js` 新增 `tex/newNail/lw1..lw14` 禁回流检查
+
+验证命令：
 - `node architecture/tools/check-legacy-runtime-compat.js`
 - `node architecture/tools/run-guardrails.js`
 

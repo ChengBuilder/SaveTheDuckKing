@@ -221,10 +221,6 @@
           "count": 3
         },
         {
-          "name": "ls10",
-          "count": 3
-        },
-        {
           "name": "lva",
           "count": 3
         },
@@ -254,6 +250,10 @@
         },
         {
           "name": "sln",
+          "count": 3
+        },
+        {
+          "name": "tha",
           "count": 3
         }
       ],

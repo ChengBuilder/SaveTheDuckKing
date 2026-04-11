@@ -7,7 +7,8 @@ const PROJECT_ROOT = process.cwd();
 const FRAGMENT_VARIANT_DIRECTORY_NAMES = ['variantA', 'variantB', 'variantC', 'variantD', 'variantE'];
 const FRAGMENT_VARIANT_SHAPE_SLOTS = [1, 2, 3, 4, 5, 6];
 const DUCK_BUNDLE_LEGACY_READABILITY_PATTERN =
-  /tex\/(?:背景|随机道具|木桩|槽位已满|钉子光圈|钥匙|无法消除|剪影3|鸭子阴影|star\/星星|newNail\/(?:问号|问号2|问号3|随机钉灰|高光|高光2)|难度飙升(?:\/(?:上层阴影|底|滑动条|通关数量|飙升|飙升2))?)(?:\/(?:texture|spriteFrame|[^"\r\n]+))?/g;
+  /tex\/(?:背景|随机道具|木桩|槽位已满|钉子光圈|钥匙|无法消除|剪影3|鸭子阴影|star\/星星|newNail\/(?:问号|问号2|问号3|随机钉灰|高光|高光2|ls(?:[1-9]|1[0-4]))|难度飙升(?:\/(?:上层阴影|底|滑动条|通关数量|飙升|飙升2))?)(?:\/(?:texture|spriteFrame|[^"\r\n]+))?/g;
+const DUCK_BUNDLE_LEGACY_NEW_NAIL_LW_PATTERN = /tex\/newNail\/lw(?:[1-9]|1[0-4])(?:\/(?:texture|spriteFrame|[^"\r\n]+))?/g;
 const DUCK_BUNDLE_LEGACY_BUBBLE_PATTERN = /tex\/bubble\/t(?:[0-9]|1[0-2])(?:\/(?:texture|spriteFrame))?/g;
 
 const CHECK_TARGETS = [
@@ -71,6 +72,10 @@ const CHECK_TARGETS = [
       {
         label: 'DuckBundle bubble 短编号路径',
         pattern: DUCK_BUNDLE_LEGACY_BUBBLE_PATTERN
+      },
+      {
+        label: 'DuckBundle newNail lw 短编号路径',
+        pattern: DUCK_BUNDLE_LEGACY_NEW_NAIL_LW_PATTERN
       }
     ]
   },

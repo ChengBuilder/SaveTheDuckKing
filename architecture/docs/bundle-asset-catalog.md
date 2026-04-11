@@ -109,7 +109,6 @@
   - `cla`：3
   - `cln`：3
   - `key`：3
-  - `ls10`：3
   - `lva`：3
   - `lvn`：3
   - `mla`：3
@@ -118,6 +117,7 @@
   - `sfn`：3
   - `sla`：3
   - `sln`：3
+  - `tha`：3
 - 命名噪声样例路径：
   - `tex/nail/sfa`
   - `tex/nail/zin`
