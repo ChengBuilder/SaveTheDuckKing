@@ -3332,7 +3332,7 @@
         "subpackages/DuckBundle"
       ],
       "fileCount": 1045,
-      "sizeBytes": 2381630,
+      "sizeBytes": 2381836,
       "sizeText": "2.27 MiB",
       "limitBytes": null,
       "limitText": null,
@@ -3341,7 +3341,7 @@
         {
           "path": "subpackages/DuckBundle/config.duck-bundle.json",
           "displayPath": "subpackages/DuckBundle/config.duck-bundle.json",
-          "sizeBytes": 175460,
+          "sizeBytes": 175666,
           "sizeText": "0.17 MiB"
         },
         {
@@ -12210,7 +12210,7 @@
   "totals": {
     "packageCount": 9,
     "fileCount": 2005,
-    "sizeBytes": 26753566,
+    "sizeBytes": 26753772,
     "sizeText": "25.51 MiB",
     "limitBytes": 31457280,
     "limitText": "30.00 MiB",

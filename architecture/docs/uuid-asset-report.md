@@ -93,7 +93,7 @@
   - `tex/wood/brownWood/brownWood16` / cc.ImageAsset / missing-import-json
   - `tex/wood/grayWood/grayWood5` / cc.ImageAsset / missing-import-json
   - `tex/wood/goldWood/goldWood31` / cc.ImageAsset / missing-import-json
-  - `tex/难度飙升/上层阴影` / cc.ImageAsset / missing-import-json
+  - `tex/difficultySurge/topShadow` / cc.ImageAsset / missing-import-json
   - `tex/wood/goldWood/goldWood18` / cc.ImageAsset / missing-import-json
 - 未命中 import 文件样例：`import/_packs/pack/bottom__pack_13.json`，`import/_packs/pack/grayWood22__pack_3.json`，`import/_packs/pack/nailHalo__pack_10.json`，`import/_packs/pack/slotFull__pack_5.json`，`import/_packs/pack/star__pack_3.json`，`import/_packs/pack/wood20__pack_3.json`，`import/_packs/pack/wood24__pack_3.json`，`import/_packs/prefab/GyroscopeTip/shake__pack_18.json`
 - 其余未命中 import 文件：668 项（仅在 full-records 模式写入 JSON）。

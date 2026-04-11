@@ -1,5 +1,39 @@
 # 素材治理记录
 
+## 2026-04-11 `DuckBundle` 可读性 canonical 收敛与 bubble 短编号治理
+
+本轮继续沿用“只改 canonical 源头，不补 runtime alias”的策略，把 `DuckBundle` 里仍残留的旧中文段和 `bubble/t0..t12` 短编号统一收口为可读、可检索、可复跑的路径结构。
+
+本轮新增的代表性 canonical 映射：
+- `tex/背景/*` 收敛为 `tex/backgroundPanel/*`
+- `tex/随机道具/*` 收敛为 `tex/randomProp/*`
+- `tex/木桩/*` 收敛为 `tex/woodPile/*`
+- `tex/槽位已满/*` 收敛为 `tex/slotFull/*`
+- `tex/无法消除/*` 收敛为 `tex/cannotEliminate/*`
+- `tex/钉子光圈/*` 收敛为 `tex/nailGlow/*`
+- `tex/钥匙/*` 收敛为 `tex/key/*`
+- `tex/star/星星/*` 收敛为 `tex/star/star/*`
+- `tex/剪影3/*` 收敛为 `tex/silhouette3/*`
+- `tex/鸭子阴影/*` 收敛为 `tex/duckShadow/*`
+- `tex/newNail/问号*` 收敛为 `tex/newNail/questionMark*`
+- `tex/newNail/问号2*` 收敛为 `tex/newNail/questionMark2*`
+- `tex/newNail/问号3*` 收敛为 `tex/newNail/questionMark3*`
+- `tex/newNail/随机钉灰/*` 收敛为 `tex/newNail/randomNailGray/*`
+- `tex/newNail/高光*` 收敛为 `tex/newNail/highlight*`
+- `tex/newNail/高光2*` 收敛为 `tex/newNail/highlight2*`
+- `tex/难度飙升/*` 收敛为 `tex/difficultySurge/*`
+- `tex/bubble/t0..t12` 收敛为 `tex/bubble/bubbleFrame0..bubbleFrame12`
+
+本轮同步调整：
+- 新增 `architecture/tools/semanticize-duckbundle-readability-assets.js`
+- `architecture/tools/check-legacy-runtime-compat.js` 新增 `DuckBundle` 旧中文 canonical 残留与 `bubble/t0..t12` 禁回流检查
+- `architecture/tools/run-guardrails.js` 接入该脚本的语法检查
+
+验证命令：
+- `node architecture/tools/semanticize-duckbundle-readability-assets.js`（连续执行两次，确认第二次改写数为 0）
+- `node architecture/tools/check-legacy-runtime-compat.js`
+- `node architecture/tools/run-guardrails.js`
+
 ## 2026-04-11 `Game2Bundle` 中文 canonical 路径段收敛
 
 本轮针对 `Game2Bundle` 中仍保留中文目录段的 canonical 路径做集中收敛，目标是先移除“读不懂/不稳定 token”，再通过护栏阻断回流，全程不新增 runtime alias。

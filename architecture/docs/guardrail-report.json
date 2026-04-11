@@ -1,7 +1,7 @@
 {
   "projectPath": "./",
-  "totalSteps": 56,
-  "passedSteps": 56,
+  "totalSteps": 57,
+  "passedSteps": 57,
   "failedSteps": 0,
   "results": [
     {
@@ -229,6 +229,12 @@
     {
       "label": "DuckBundle %2 语义化工具语法检查",
       "commandText": "node -c architecture/tools/semanticize-duckbundle-percent-assets.js",
+      "status": "passed",
+      "errorMessage": ""
+    },
+    {
+      "label": "DuckBundle 可读性语义化工具语法检查",
+      "commandText": "node -c architecture/tools/semanticize-duckbundle-readability-assets.js",
       "status": "passed",
       "errorMessage": ""
     },

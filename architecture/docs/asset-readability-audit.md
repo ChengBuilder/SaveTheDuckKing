@@ -5,10 +5,10 @@
 ## 总览
 - Bundle 数：10
 - 扫描 canonical 路径数：2293
-- 命中候选数：534
+- 命中候选数：465
 - 高优先级候选数：0
-- 中优先级候选数：361
-- 低优先级候选数：173
+- 中优先级候选数：328
+- 低优先级候选数：137
 
 ## 全局高优先级候选
 - 无
@@ -18,7 +18,7 @@
 | --- | ---: | ---: | ---: | --- |
 | `uiBundle` | 400 | 280 | 0 | `主页素材` x 48，`道具` x 22，`过关页面` x 20，`复活` x 15，`失败页面` x 15，`成功进度` x 14，`订阅` x 13，`分享有奖` x 12，`排行榜` x 12，`更多玩法` x 10 |
 | `aniBundle` | 156 | 155 | 0 | `神兽动画合集` x 30，`骨骼动画` x 25，`鸭子动画` x 20，`小三视频` x 17，`破门动画` x 8，`百鹅朝凤` x 6，`百鹅朝麟` x 6，`百鹅朝鹏` x 6，`百鸭朝鲲` x 6，`百鸭朝龙` x 6 |
-| `DuckBundle` | 1227 | 99 | 0 | `难度飙升` x 18，`背景` x 3，`飙升` x 3，`飙升2` x 3，`槽位已满` x 3，`底` x 3，`钉子光圈` x 3，`滑动条` x 3，`剪影3` x 3，`木桩` x 3 |
+| `DuckBundle` | 1227 | 30 | 0 | `ls10` x 3，`ls1` x 1，`ls11` x 1，`ls12` x 1，`ls13` x 1，`ls14` x 1，`ls2` x 1，`ls3` x 1，`ls4` x 1，`ls5` x 1 |
 | `audioBundle` | 65 | 0 | 0 | 无 |
 | `Game2Bundle` | 161 | 0 | 0 | 无 |
 | `HomeBundle` | 231 | 0 | 0 | 无 |
@@ -72,22 +72,22 @@
 ### DuckBundle
 - 配置：`subpackages/DuckBundle/config.duck-bundle.json`
 - 资产路径数：1227
-- 命中候选：99
-- 高/中/低优先级：0 / 63 / 36
-- 高频问题片段：`难度飙升` x 18，`背景` x 3，`飙升` x 3，`飙升2` x 3，`槽位已满` x 3，`底` x 3，`钉子光圈` x 3，`滑动条` x 3，`剪影3` x 3，`木桩` x 3
+- 命中候选：30
+- 高/中/低优先级：0 / 30 / 0
+- 高频问题片段：`ls10` x 3，`ls1` x 1，`ls11` x 1，`ls12` x 1，`ls13` x 1，`ls14` x 1，`ls2` x 1，`ls3` x 1，`ls4` x 1，`ls5` x 1
 - 样例候选：
-  - `tex/bubble/t0`：t0 (short-indexed-token)
-  - `tex/bubble/t0/spriteFrame`：t0 (short-indexed-token)
-  - `tex/bubble/t0/texture`：t0 (short-indexed-token)
-  - `tex/bubble/t1/spriteFrame`：t1 (short-indexed-token)
-  - `tex/bubble/t10/spriteFrame`：t10 (short-indexed-token)
-  - `tex/bubble/t11/spriteFrame`：t11 (short-indexed-token)
-  - `tex/bubble/t12/spriteFrame`：t12 (short-indexed-token)
-  - `tex/bubble/t2/spriteFrame`：t2 (short-indexed-token)
-  - `tex/bubble/t3/spriteFrame`：t3 (short-indexed-token)
-  - `tex/bubble/t4/spriteFrame`：t4 (short-indexed-token)
-  - `tex/bubble/t5/spriteFrame`：t5 (short-indexed-token)
-  - `tex/bubble/t6/spriteFrame`：t6 (short-indexed-token)
+  - `tex/newNail/ls1/spriteFrame`：ls1 (short-indexed-token)
+  - `tex/newNail/ls10`：ls10 (short-indexed-token)
+  - `tex/newNail/ls10/spriteFrame`：ls10 (short-indexed-token)
+  - `tex/newNail/ls10/texture`：ls10 (short-indexed-token)
+  - `tex/newNail/ls11/spriteFrame`：ls11 (short-indexed-token)
+  - `tex/newNail/ls12/spriteFrame`：ls12 (short-indexed-token)
+  - `tex/newNail/ls13/spriteFrame`：ls13 (short-indexed-token)
+  - `tex/newNail/ls14/spriteFrame`：ls14 (short-indexed-token)
+  - `tex/newNail/ls2/spriteFrame`：ls2 (short-indexed-token)
+  - `tex/newNail/ls3/spriteFrame`：ls3 (short-indexed-token)
+  - `tex/newNail/ls4/spriteFrame`：ls4 (short-indexed-token)
+  - `tex/newNail/ls5/spriteFrame`：ls5 (short-indexed-token)
 
 ### audioBundle
 - 配置：`subpackages/audioBundle/config.audio-bundle.json`

@@ -151,11 +151,11 @@
           "count": 33
         },
         {
-          "name": "tex/难度飙升",
+          "name": "tex/bubble",
           "count": 18
         },
         {
-          "name": "tex/bubble",
+          "name": "tex/difficultySurge",
           "count": 18
         },
         {
@@ -167,7 +167,7 @@
           "count": 6
         },
         {
-          "name": "tex/背景",
+          "name": "tex/backgroundPanel",
           "count": 3
         }
       ],
@@ -178,7 +178,7 @@
         "tex/wood/brownWood/brownWood16",
         "tex/wood/grayWood/grayWood5",
         "tex/wood/goldWood/goldWood31",
-        "tex/难度飙升/上层阴影",
+        "tex/difficultySurge/topShadow",
         "tex/wood/goldWood/goldWood18",
         "tex/wood/yellowWood/yellowWood15",
         "tex/wood/grayWood/grayWood2",
@@ -217,6 +217,10 @@
           "count": 3
         },
         {
+          "name": "key",
+          "count": 3
+        },
+        {
           "name": "ls10",
           "count": 3
         },
@@ -250,10 +254,6 @@
         },
         {
           "name": "sln",
-          "count": 3
-        },
-        {
-          "name": "t0",
           "count": 3
         }
       ],

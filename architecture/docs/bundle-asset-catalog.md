@@ -108,6 +108,7 @@
 - 命名噪声高频片段：
   - `cla`：3
   - `cln`：3
+  - `key`：3
   - `ls10`：3
   - `lva`：3
   - `lvn`：3
@@ -117,7 +118,6 @@
   - `sfn`：3
   - `sla`：3
   - `sln`：3
-  - `t0`：3
 - 命名噪声样例路径：
   - `tex/nail/sfa`
   - `tex/nail/zin`
@@ -146,11 +146,11 @@
   - `prefab/wood`：43
   - `tex/newNail`：39
   - `tex/background`：33
-  - `tex/难度飙升`：18
   - `tex/bubble`：18
+  - `tex/difficultySurge`：18
   - `tex/circle`：6
   - `tex/star`：6
-  - `tex/背景`：3
+  - `tex/backgroundPanel`：3
 - 样例路径：
   - `tex/nail/sfa`
   - `tex/wood/goldWood/goldWood26`
@@ -158,7 +158,7 @@
   - `tex/wood/brownWood/brownWood16`
   - `tex/wood/grayWood/grayWood5`
   - `tex/wood/goldWood/goldWood31`
-  - `tex/难度飙升/上层阴影`
+  - `tex/difficultySurge/topShadow`
   - `tex/wood/goldWood/goldWood18`
   - `tex/wood/yellowWood/yellowWood15`
   - `tex/wood/grayWood/grayWood2`
