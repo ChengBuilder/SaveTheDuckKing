@@ -1,8 +1,8 @@
 {
   "projectPath": "./",
-  "totalSteps": 64,
-  "passedSteps": 64,
-  "failedSteps": 0,
+  "totalSteps": 62,
+  "passedSteps": 61,
+  "failedSteps": 1,
   "results": [
     {
       "label": "主入口语法检查",
@@ -373,20 +373,8 @@
     {
       "label": "微信代码包体检查",
       "commandText": "node architecture/tools/check-wechat-code-package-limits.js",
-      "status": "passed",
-      "errorMessage": ""
-    },
-    {
-      "label": "旧运行时路径护栏",
-      "commandText": "node architecture/tools/check-legacy-runtime-compat.js",
-      "status": "passed",
-      "errorMessage": ""
-    },
-    {
-      "label": "运行安全校验",
-      "commandText": "node architecture/tools/verify-runtime-safety.js",
-      "status": "passed",
-      "errorMessage": ""
+      "status": "failed",
+      "errorMessage": "退出码 1"
     }
   ]
 }

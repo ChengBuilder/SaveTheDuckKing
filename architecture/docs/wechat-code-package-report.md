@@ -4,9 +4,9 @@
 
 ## 总览
 - 项目目录：`./`
-- 主包：`3.41 MiB / 4.00 MiB`
-- 总包：`25.56 MiB / 30.00 MiB`
-- 违规项：0
+- 主包：`6.44 MiB / 4.00 MiB`
+- 总包：`28.59 MiB / 30.00 MiB`
+- 违规项：1
 
 ## 官方依据
 - https://developers.weixin.qq.com/minigame/dev/guide/base-ability/code-package.html
@@ -16,7 +16,7 @@
 ## 包体明细
 | 包 | 类型 | 文件数 | 大小 | 上限 | 状态 |
 | --- | --- | ---: | ---: | ---: | --- |
-| 主包 | main | 89 | 3.41 MiB | 4.00 MiB | 通过 |
+| 主包 | main | 89 | 6.44 MiB | 4.00 MiB | 失败 |
 | resources | subpackage | 16 | 0.08 MiB | 无 | 通过 |
 | main | subpackage | 223 | 9.63 MiB | 无 | 通过 |
 | aniBundle | subpackage | 130 | 3.02 MiB | 无 | 通过 |
@@ -41,5 +41,5 @@
 - 若需要上传口径的精确包体信息，可结合微信开发者工具 CLI 的 auto-preview/upload --info-output 二次验证。
 
 ## 失败信息
-- 无
+- 主包 超出上限：6.44 MiB > 4.00 MiB
 

@@ -4,9 +4,9 @@
 
 ## 总览
 - 项目目录：`./`
-- 已执行步骤：64
-- 通过步骤：64
-- 失败步骤：0
+- 已执行步骤：62
+- 通过步骤：61
+- 失败步骤：1
 
 ## 步骤明细
 | 步骤 | 状态 | 命令 |
@@ -72,10 +72,8 @@
 | URL 编码路径校验 | 通过 | `node architecture/tools/check-no-url-encoded-paths.js` |
 | 审计时间戳护栏 | 通过 | `node architecture/tools/check-no-volatile-report-timestamps.js` |
 | 微信小游戏结构校验 | 通过 | `node architecture/tools/verify-wechat-minigame-structure.js` |
-| 微信代码包体检查 | 通过 | `node architecture/tools/check-wechat-code-package-limits.js` |
-| 旧运行时路径护栏 | 通过 | `node architecture/tools/check-legacy-runtime-compat.js` |
-| 运行安全校验 | 通过 | `node architecture/tools/verify-runtime-safety.js` |
+| 微信代码包体检查 | 失败 | `node architecture/tools/check-wechat-code-package-limits.js` |
 
 ## 失败信息
-- 无
+- `微信代码包体检查`：退出码 1
 

@@ -4,6 +4,24 @@
 const fs = require('fs');
 const path = require('path');
 const vm = require('vm');
+let prettier = null;
+let babelParser = null;
+let babelTraverse = null;
+let babelGenerator = null;
+try {
+  prettier = require('prettier');
+} catch (error) {
+  prettier = null;
+}
+try {
+  babelParser = require('@babel/parser');
+  babelTraverse = require('@babel/traverse').default;
+  babelGenerator = require('@babel/generator').default;
+} catch (error) {
+  babelParser = null;
+  babelTraverse = null;
+  babelGenerator = null;
+}
 const {
   resolveProjectLayout,
   resolveProjectFilePath,
@@ -15,6 +33,55 @@ const OUTPUT_DIR_RELATIVE_PATH = 'runtime/gamejs-modules';
 const MANIFEST_JS_FILENAME = 'manifest.js';
 const MANIFEST_JSON_FILENAME = 'manifest.json';
 const RUNTIME_MODULE_ID_PREFIX = 'runtime/gamejs-modules';
+const KEYWORD_SET = new Set([
+  'break',
+  'case',
+  'catch',
+  'class',
+  'const',
+  'continue',
+  'debugger',
+  'default',
+  'delete',
+  'do',
+  'else',
+  'export',
+  'extends',
+  'false',
+  'finally',
+  'for',
+  'function',
+  'if',
+  'import',
+  'in',
+  'instanceof',
+  'new',
+  'null',
+  'return',
+  'super',
+  'switch',
+  'this',
+  'throw',
+  'true',
+  'try',
+  'typeof',
+  'var',
+  'void',
+  'while',
+  'with',
+  'yield',
+  'let',
+  'static',
+  'await',
+  'enum',
+  'implements',
+  'interface',
+  'package',
+  'private',
+  'protected',
+  'public',
+  'arguments'
+]);
 
 function main() {
   const layout = resolveProjectLayout(__dirname);
@@ -227,7 +294,7 @@ function writeModuleFiles(outputDirPath, defineRecords) {
       ''
     ].join('\n');
 
-    fs.writeFileSync(targetPath, content);
+    fs.writeFileSync(targetPath, formatModuleSourceForReadability(content));
 
     moduleEntries.push({
       moduleId: moduleId,
@@ -255,7 +322,7 @@ function patchFactorySourceForRuntimeId(moduleId, factorySource) {
       .replace(/a\("Canvas"\)\.getComponent\(w\)/g, 'a("Canvas").getComponent("DuckController")')
       .replace(/y\("Canvas"\)\.getComponent\(P\)/g, 'y("Canvas").getComponent("Game2Controller")');
 
-    return patchGetComponentImportedClassRefs(patchedSource);
+    return semanticizeSystemRegisterImportAliases(patchGetComponentImportedClassRefs(patchedSource));
   }
 
   return factorySource;
@@ -294,16 +361,18 @@ function patchGetComponentImportedClassRefs(factorySource) {
 function patchSystemRegisterChunkGetComponentRefs(chunkSource) {
   const localClassImportNameMap = collectImportNameMapFromSystemRegisterChunk(chunkSource, {
     onlyLocalScriptDeps: true,
-    requireUppercaseExport: true
+    requireUppercaseExport: false
+  });
+  const ccComponentImportNameMap = collectImportNameMapFromSystemRegisterChunk(chunkSource, {
+    onlyLocalScriptDeps: false,
+    requireUppercaseExport: true,
+    includeDependencyPaths: ['cc'],
+    exportNameAllowSet: CC_COMPONENT_EXPORT_NAMES
   });
   const dependencyImportNameMap = collectImportNameMapFromSystemRegisterChunk(chunkSource, {
     onlyLocalScriptDeps: false,
     requireUppercaseExport: false
   });
-
-  if (localClassImportNameMap.size === 0 && dependencyImportNameMap.size === 0) {
-    return chunkSource;
-  }
 
   let patchedChunk = chunkSource;
   for (const [identifier, exportName] of localClassImportNameMap.entries()) {
@@ -312,6 +381,14 @@ function patchSystemRegisterChunkGetComponentRefs(chunkSource) {
     patchedChunk = patchedChunk
       .replace(getComponentPattern, '.getComponent("' + exportName + '")')
       .replace(getComponentsPattern, '.getComponents("' + exportName + '")');
+  }
+
+  for (const [identifier, exportName] of ccComponentImportNameMap.entries()) {
+    const getComponentPattern = new RegExp('\\.getComponent\\(' + escapeRegExp(identifier) + '\\)', 'g');
+    const getComponentsPattern = new RegExp('\\.getComponents\\(' + escapeRegExp(identifier) + '\\)', 'g');
+    patchedChunk = patchedChunk
+      .replace(getComponentPattern, '.getComponent("cc.' + exportName + '")')
+      .replace(getComponentsPattern, '.getComponents("cc.' + exportName + '")');
   }
 
   for (const [identifier, exportName] of dependencyImportNameMap.entries()) {
@@ -326,6 +403,19 @@ function patchSystemRegisterChunkGetComponentRefs(chunkSource) {
       });
   }
 
+  const moduleId = getSystemRegisterModuleId(chunkSource);
+  if (moduleId && Object.prototype.hasOwnProperty.call(MODULE_SPECIFIC_COMPONENT_IDENTIFIER_MAP, moduleId)) {
+    const identifierMap = MODULE_SPECIFIC_COMPONENT_IDENTIFIER_MAP[moduleId];
+    for (const identifier of Object.keys(identifierMap)) {
+      const componentName = identifierMap[identifier];
+      const getComponentPattern = new RegExp('\\.getComponent\\(' + escapeRegExp(identifier) + '\\)', 'g');
+      const getComponentsPattern = new RegExp('\\.getComponents\\(' + escapeRegExp(identifier) + '\\)', 'g');
+      patchedChunk = patchedChunk
+        .replace(getComponentPattern, '.getComponent("' + componentName + '")')
+        .replace(getComponentsPattern, '.getComponents("' + componentName + '")');
+    }
+  }
+
   return patchedChunk;
 }
 
@@ -335,10 +425,12 @@ function collectImportNameMapFromSystemRegisterChunk(chunkSource, options) {
   const settings = options || {};
   const onlyLocalScriptDeps = settings.onlyLocalScriptDeps === true;
   const requireUppercaseExport = settings.requireUppercaseExport === true;
+  const includeDependencyPaths = Array.isArray(settings.includeDependencyPaths) ? settings.includeDependencyPaths : null;
+  const exportNameAllowSet = settings.exportNameAllowSet instanceof Set ? settings.exportNameAllowSet : null;
   const depsStart = chunkSource.indexOf('[');
-  const depsEnd = chunkSource.indexOf('],(function(e){', depsStart);
-  const settersStart = chunkSource.indexOf('setters:[', depsEnd);
-  const executeStart = chunkSource.indexOf('],execute:function', settersStart);
+  const depsEnd = findPatternIndex(chunkSource, /\],\s*\(function\(/g, depsStart);
+  const settersStart = findPatternIndex(chunkSource, /setters:\s*\[/g, depsEnd);
+  const executeStart = findPatternIndex(chunkSource, /\],\s*execute:\s*function/g, settersStart);
 
   if (depsStart === -1 || depsEnd === -1 || settersStart === -1 || executeStart === -1) {
     return map;
@@ -356,18 +448,29 @@ function collectImportNameMapFromSystemRegisterChunk(chunkSource, options) {
     return map;
   }
 
-  const settersBlock = chunkSource.slice(settersStart + 'setters:['.length, executeStart);
-  const setterBodies = collectSetterBodies(settersBlock);
-  const setterCount = Math.min(dependencies.length, setterBodies.length);
+  const settersBlockSource = chunkSource.slice(settersStart, executeStart);
+  const settersArrayStart = findPatternIndex(settersBlockSource, /setters:\s*\[/g, 0);
+  const settersBlock = settersArrayStart === -1
+    ? ''
+    : settersBlockSource.slice(settersArrayStart + settersBlockSource.match(/setters:\s*\[/)[0].length);
+  const setterBlocks = collectSetterBlocks(settersBlock);
+  const setterCount = Math.min(dependencies.length, setterBlocks.length);
 
   for (let index = 0; index < setterCount; index += 1) {
     const dependency = dependencies[index];
     if (onlyLocalScriptDeps && !isLocalScriptDependency(dependency)) {
       continue;
     }
+    if (includeDependencyPaths && !includeDependencyPaths.includes(dependency)) {
+      continue;
+    }
 
-    const setterBody = setterBodies[index];
-    const assignmentPattern = /\b([A-Za-z_$][\w$]*)\s*=\s*e\.([A-Za-z_$][\w$]*)/g;
+    const setter = setterBlocks[index];
+    const setterBody = setter.bodySource;
+    const assignmentPattern = new RegExp(
+      '([A-Za-z_$][\\w$]*)\\s*=\\s*' + escapeRegExp(setter.paramName) + '\\.([A-Za-z_$][\\w$]*)',
+      'g'
+    );
     let match = assignmentPattern.exec(setterBody);
 
     while (match) {
@@ -375,6 +478,10 @@ function collectImportNameMapFromSystemRegisterChunk(chunkSource, options) {
       const exportName = match[2];
 
       if (exportName !== 'default' && (!requireUppercaseExport || /^[A-Z]/.test(exportName))) {
+        if (exportNameAllowSet && !exportNameAllowSet.has(exportName)) {
+          match = assignmentPattern.exec(setterBody);
+          continue;
+        }
         if (!map.has(identifier)) {
           map.set(identifier, exportName);
         } else if (map.get(identifier) !== exportName) {
@@ -393,40 +500,41 @@ function collectImportNameMapFromSystemRegisterChunk(chunkSource, options) {
   return map;
 }
 
-function collectSetterBodies(settersBlockSource) {
-  const bodies = [];
-  const token = 'function(e){';
-  let cursor = 0;
+function collectSetterBlocks(settersBlockSource) {
+  const setterBlocks = [];
+  const functionPattern = /function\s*\(([A-Za-z_$][\w$]*)\)\s*\{/g;
+  let match = functionPattern.exec(settersBlockSource);
 
-  while (true) {
-    const start = settersBlockSource.indexOf(token, cursor);
-    if (start === -1) {
-      break;
-    }
-
-    const bodyStart = start + token.length;
+  while (match) {
+    const paramName = match[1];
+    const bodyStart = match.index + match[0].length;
     let depth = 1;
-    let index = bodyStart;
+    let cursor = bodyStart;
 
-    while (index < settersBlockSource.length && depth > 0) {
-      const char = settersBlockSource[index];
+    while (cursor < settersBlockSource.length && depth > 0) {
+      const char = settersBlockSource[cursor];
       if (char === '{') {
         depth += 1;
       } else if (char === '}') {
         depth -= 1;
       }
-      index += 1;
+      cursor += 1;
     }
 
     if (depth !== 0) {
       break;
     }
 
-    bodies.push(settersBlockSource.slice(bodyStart, index - 1));
-    cursor = index;
+    setterBlocks.push({
+      paramName: paramName,
+      bodySource: settersBlockSource.slice(bodyStart, cursor - 1)
+    });
+
+    functionPattern.lastIndex = cursor;
+    match = functionPattern.exec(settersBlockSource);
   }
 
-  return bodies;
+  return setterBlocks;
 }
 
 function isLocalScriptDependency(dependency) {
@@ -435,6 +543,42 @@ function isLocalScriptDependency(dependency) {
   }
   return dependency.startsWith('./') && dependency.endsWith('.ts');
 }
+
+const CC_COMPONENT_EXPORT_NAMES = new Set([
+  'Button',
+  'BoxCollider2D',
+  'Camera',
+  'CircleCollider2D',
+  'Component',
+  'DistanceJoint2D',
+  'EditBox',
+  'Graphics',
+  'HingeJoint2D',
+  'HorizontalTextAlignment',
+  'Joint2D',
+  'Label',
+  'Mask',
+  'PolygonCollider2D',
+  'ProgressBar',
+  'RigidBody2D',
+  'ScrollView',
+  'Sprite',
+  'UIOpacity',
+  'UITransform',
+  'VerticalTextAlignment'
+]);
+
+const MODULE_SPECIFIC_COMPONENT_IDENTIFIER_MAP = {
+  'chunks:///_virtual/Fruit.ts': {
+    t: 'Fruit'
+  },
+  'chunks:///_virtual/Nail.ts': {
+    t: 'Nail'
+  },
+  'chunks:///_virtual/MathGridItem.ts': {
+    t: 'MathGridItem'
+  }
+};
 
 function writeManifestFiles(outputDirPath, moduleEntries) {
   const manifestJsonPath = path.join(outputDirPath, MANIFEST_JSON_FILENAME);
@@ -531,6 +675,339 @@ function hashText(text) {
 
 function normalizePath(targetPath) {
   return String(targetPath || '').replace(/\\/g, '/');
+}
+
+function formatModuleSourceForReadability(sourceCode) {
+  if (!prettier || typeof prettier.format !== 'function') {
+    return sourceCode;
+  }
+
+  try {
+    return prettier.format(sourceCode, {
+      parser: 'babel',
+      printWidth: 120,
+      singleQuote: false,
+      trailingComma: 'none',
+      semi: true
+    });
+  } catch (error) {
+    return sourceCode;
+  }
+}
+
+function semanticizeSystemRegisterImportAliases(factorySource) {
+  if (!babelParser || typeof babelTraverse !== 'function' || typeof babelGenerator !== 'function') {
+    return factorySource;
+  }
+
+  const wrapperSource = 'const __factory__ = ' + factorySource + ';';
+  let ast = null;
+
+  try {
+    ast = babelParser.parse(wrapperSource, {
+      sourceType: 'script'
+    });
+  } catch (error) {
+    return factorySource;
+  }
+
+  let hasChanges = false;
+
+  babelTraverse(ast, {
+    CallExpression(pathRef) {
+      if (!isSystemRegisterCallExpression(pathRef.node)) {
+        return;
+      }
+
+      const argumentsPath = pathRef.get('arguments');
+      if (!Array.isArray(argumentsPath) || argumentsPath.length < 3) {
+        return;
+      }
+
+      const dependencyPathNode = argumentsPath[1];
+      const callbackPathNode = argumentsPath[2];
+      if (!dependencyPathNode.isArrayExpression() || !callbackPathNode.isFunction()) {
+        return;
+      }
+
+      const dependencyPaths = dependencyPathNode.node.elements.map((element) =>
+        element && element.type === 'StringLiteral' ? element.value : ''
+      );
+      const setterDefinitions = collectSetterAliasDefinitions(callbackPathNode.node);
+      if (setterDefinitions.length === 0) {
+        return;
+      }
+
+      const renamePlan = buildAliasRenamePlan(setterDefinitions, dependencyPaths, callbackPathNode.scope);
+      if (renamePlan.length === 0) {
+        return;
+      }
+
+      for (const planItem of renamePlan) {
+        callbackPathNode.scope.rename(planItem.oldName, planItem.newName);
+      }
+
+      hasChanges = true;
+    }
+  });
+
+  if (!hasChanges) {
+    return factorySource;
+  }
+
+  const declarationNode = ast.program.body[0];
+  if (!declarationNode || declarationNode.type !== 'VariableDeclaration') {
+    return factorySource;
+  }
+  const declaration = declarationNode.declarations[0];
+  if (!declaration || !declaration.init) {
+    return factorySource;
+  }
+
+  return babelGenerator(declaration.init, {
+    compact: false,
+    comments: true,
+    retainLines: false
+  }).code;
+}
+
+function isSystemRegisterCallExpression(node) {
+  return Boolean(
+    node &&
+      node.type === 'CallExpression' &&
+      node.callee &&
+      node.callee.type === 'MemberExpression' &&
+      node.callee.object &&
+      node.callee.object.type === 'Identifier' &&
+      node.callee.object.name === 'System' &&
+      node.callee.property &&
+      node.callee.property.type === 'Identifier' &&
+      node.callee.property.name === 'register'
+  );
+}
+
+function collectSetterAliasDefinitions(callbackNode) {
+  if (!callbackNode || callbackNode.type !== 'FunctionExpression') {
+    return [];
+  }
+
+  const returnStatement = callbackNode.body.body.find((statement) => statement.type === 'ReturnStatement');
+  if (!returnStatement || !returnStatement.argument || returnStatement.argument.type !== 'ObjectExpression') {
+    return [];
+  }
+
+  const settersProperty = returnStatement.argument.properties.find((property) => {
+    if (property.type !== 'ObjectProperty' && property.type !== 'Property') {
+      return false;
+    }
+    if (property.key.type === 'Identifier') {
+      return property.key.name === 'setters';
+    }
+    return property.key.type === 'StringLiteral' && property.key.value === 'setters';
+  });
+
+  if (!settersProperty || !settersProperty.value || settersProperty.value.type !== 'ArrayExpression') {
+    return [];
+  }
+
+  const definitions = [];
+  const setterElements = settersProperty.value.elements;
+
+  for (let setterIndex = 0; setterIndex < setterElements.length; setterIndex += 1) {
+    const setterElement = setterElements[setterIndex];
+    if (!setterElement || setterElement.type !== 'FunctionExpression') {
+      continue;
+    }
+    if (setterElement.params.length === 0 || setterElement.params[0].type !== 'Identifier') {
+      continue;
+    }
+
+    const setterParamName = setterElement.params[0].name;
+    const bodyStatements = setterElement.body.body || [];
+    for (const statement of bodyStatements) {
+      if (statement.type !== 'ExpressionStatement') {
+        continue;
+      }
+      collectAliasDefinitionsFromExpression(statement.expression, setterParamName, setterIndex, definitions);
+    }
+  }
+
+  return definitions;
+}
+
+function collectAliasDefinitionsFromExpression(expressionNode, setterParamName, setterIndex, sink) {
+  if (!expressionNode) {
+    return;
+  }
+
+  if (expressionNode.type === 'SequenceExpression') {
+    for (const subExpression of expressionNode.expressions) {
+      collectAliasDefinitionsFromExpression(subExpression, setterParamName, setterIndex, sink);
+    }
+    return;
+  }
+
+  if (expressionNode.type !== 'AssignmentExpression' || expressionNode.operator !== '=') {
+    return;
+  }
+  if (!expressionNode.left || expressionNode.left.type !== 'Identifier') {
+    return;
+  }
+  if (!expressionNode.right || expressionNode.right.type !== 'MemberExpression') {
+    return;
+  }
+  if (!expressionNode.right.object || expressionNode.right.object.type !== 'Identifier') {
+    return;
+  }
+  if (expressionNode.right.object.name !== setterParamName) {
+    return;
+  }
+  if (!expressionNode.right.property || expressionNode.right.property.type !== 'Identifier') {
+    return;
+  }
+
+  sink.push({
+    setterIndex: setterIndex,
+    localAlias: expressionNode.left.name,
+    exportName: expressionNode.right.property.name
+  });
+}
+
+function buildAliasRenamePlan(definitions, dependencyPaths, callbackScope) {
+  const aliasToDefinition = new Map();
+  for (const definition of definitions) {
+    if (!definition.localAlias || definition.localAlias.length === 0) {
+      continue;
+    }
+    const oldDefinition = aliasToDefinition.get(definition.localAlias);
+    if (!oldDefinition) {
+      aliasToDefinition.set(definition.localAlias, definition);
+      continue;
+    }
+    if (
+      oldDefinition.exportName !== definition.exportName ||
+      oldDefinition.setterIndex !== definition.setterIndex
+    ) {
+      aliasToDefinition.set(definition.localAlias, null);
+    }
+  }
+
+  const usedNames = new Set(Object.keys(callbackScope.bindings));
+  const renamePlan = [];
+
+  for (const [localAlias, definition] of aliasToDefinition.entries()) {
+    if (!definition) {
+      continue;
+    }
+    if (!callbackScope.bindings[localAlias]) {
+      continue;
+    }
+    if (!shouldSemanticizeAlias(localAlias)) {
+      continue;
+    }
+
+    const dependencyPath = dependencyPaths[definition.setterIndex] || '';
+    const readableName = createReadableAliasName(localAlias, definition.exportName, dependencyPath, usedNames);
+    if (!readableName || readableName === localAlias) {
+      continue;
+    }
+
+    usedNames.delete(localAlias);
+    usedNames.add(readableName);
+    renamePlan.push({
+      oldName: localAlias,
+      newName: readableName
+    });
+  }
+
+  return renamePlan;
+}
+
+function shouldSemanticizeAlias(identifier) {
+  return /^[A-Za-z_$][\w$]*$/.test(identifier) && identifier.length <= 2;
+}
+
+function createReadableAliasName(localAlias, exportName, dependencyPath, usedNames) {
+  const dependencyToken = dependencyPathToToken(dependencyPath);
+  let baseName = exportName;
+
+  if (!baseName || baseName === 'default') {
+    baseName = dependencyToken;
+  } else if (baseName === '_decorator') {
+    baseName = 'cc_decorator';
+  } else if (baseName === 'cclegacy') {
+    baseName = 'cc_legacy';
+  } else if (baseName === 'default') {
+    baseName = dependencyToken;
+  }
+
+  if (!baseName) {
+    baseName = localAlias;
+  }
+
+  let candidate = sanitizeIdentifier(baseName);
+  if (candidate.length === 0) {
+    candidate = localAlias;
+  }
+  if (KEYWORD_SET.has(candidate)) {
+    candidate = candidate + '_alias';
+  }
+
+  const originalCandidate = candidate;
+  let suffix = 2;
+  while (usedNames.has(candidate) && candidate !== localAlias) {
+    candidate = originalCandidate + '_' + suffix;
+    suffix += 1;
+  }
+
+  return candidate;
+}
+
+function dependencyPathToToken(dependencyPath) {
+  if (!dependencyPath) {
+    return '';
+  }
+  if (dependencyPath === 'cc') {
+    return 'cc';
+  }
+
+  const normalized = normalizePath(String(dependencyPath || ''));
+  const segments = normalized.split('/');
+  const lastSegment = segments[segments.length - 1] || '';
+  const withoutExtension = lastSegment.replace(/\.[A-Za-z0-9]+$/, '');
+  return sanitizeIdentifier(withoutExtension);
+}
+
+function sanitizeIdentifier(rawName) {
+  let normalized = String(rawName || '')
+    .replace(/[^A-Za-z0-9_$]+/g, '_')
+    .replace(/^_+|_+$/g, '');
+
+  if (normalized.length === 0) {
+    return '';
+  }
+  if (!/^[A-Za-z_$]/.test(normalized)) {
+    normalized = '_' + normalized;
+  }
+  return normalized;
+}
+
+function getSystemRegisterModuleId(chunkSource) {
+  const match = chunkSource.match(/^System\.register\("([^"]+)"/);
+  return match ? match[1] : '';
+}
+
+function findPatternIndex(sourceCode, pattern, startIndex) {
+  if (!(pattern instanceof RegExp)) {
+    return -1;
+  }
+
+  const safeStartIndex = Number.isFinite(startIndex) ? Math.max(0, startIndex) : 0;
+  const flags = pattern.flags.includes('g') ? pattern.flags : pattern.flags + 'g';
+  const matcher = new RegExp(pattern.source, flags);
+  matcher.lastIndex = safeStartIndex;
+  const match = matcher.exec(sourceCode);
+  return match ? match.index : -1;
 }
 
 function escapeRegExp(text) {

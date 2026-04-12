@@ -17,6 +17,7 @@
     "wechat:test:run": "node architecture/tools/run-minigame-test.js"
   },
   "devDependencies": {
-    "miniprogram-ci": "2.1.31"
+    "miniprogram-ci": "2.1.31",
+    "prettier": "^2.8.8"
   }
 }
