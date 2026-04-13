@@ -14,6 +14,7 @@
 ## 建议执行顺序
 
 ```bash
+node architecture/tools/normalize-runtime-module-filenames.js
 node architecture/tools/format-project-json.js
 node architecture/tools/check-config-version-asset-integrity.js --strict-shard
 node architecture/tools/verify-wechat-minigame-structure.js

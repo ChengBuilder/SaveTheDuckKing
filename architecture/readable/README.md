@@ -4,7 +4,7 @@
 
 - Readable module: `architecture/readable/duck-board-generation.js`
 - Runtime source today:
-  - `runtime/gamejs-modules/036__assets__start-scene__index.start-scene.js__c6e1947.js`
+  - `runtime/gamejs-modules/mod__assets_start-scene_index.start-scene.js`
   - chunk `chunks:///_virtual/DuckController.ts`
   - chunk `chunks:///_virtual/Wood.ts`
   - chunk `chunks:///_virtual/Nail.ts`

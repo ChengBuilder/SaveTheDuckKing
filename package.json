@@ -4,6 +4,7 @@
   "description": "Tooling for official WeChat mini game checks and CI workflows.",
   "scripts": {
     "guardrails": "node architecture/tools/run-guardrails.js",
+    "runtime:normalize-module-filenames": "node architecture/tools/normalize-runtime-module-filenames.js",
     "assets:prune-legacy-hash-layout": "node architecture/tools/prune-legacy-hash-layout.js",
     "assets:check-config-integrity": "node architecture/tools/check-config-version-asset-integrity.js --strict-shard",
     "wechat:code-package:check": "node architecture/tools/check-wechat-code-package-limits.js",

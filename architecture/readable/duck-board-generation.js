@@ -4,7 +4,7 @@
  * Readable mirror of Duck board/nail generation logic.
  *
  * Source of truth at runtime is still:
- * - runtime/gamejs-modules/036__assets__start-scene__index.start-scene.js__c6e1947.js
+ * - runtime/gamejs-modules/mod__assets_start-scene_index.start-scene.js
  *   (DuckController.ts + Wood.ts + Nail.ts)
  *
  * This module is for maintenance/readability and future migration.

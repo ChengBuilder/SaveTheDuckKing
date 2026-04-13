@@ -2,241 +2,241 @@
   {
     "moduleId": "@babel/runtime/helpers/Arrayincludes.js",
     "runtimeModuleId": "runtime/gamejs-modules/@babel/runtime/helpers/Arrayincludes.js",
-    "filename": "001__babel__runtime__helpers__Arrayincludes.js__522b7078.js"
+    "filename": "mod__babel_runtime_helpers_Arrayincludes.js"
   },
   {
     "moduleId": "@babel/runtime/helpers/Objectentries.js",
     "runtimeModuleId": "runtime/gamejs-modules/@babel/runtime/helpers/Objectentries.js",
-    "filename": "002__babel__runtime__helpers__Objectentries.js__550b25db.js"
+    "filename": "mod__babel_runtime_helpers_Objectentries.js"
   },
   {
     "moduleId": "@babel/runtime/helpers/arrayLikeToArray.js",
     "runtimeModuleId": "runtime/gamejs-modules/@babel/runtime/helpers/arrayLikeToArray.js",
-    "filename": "003__babel__runtime__helpers__arrayLikeToArray.js__9443df62.js"
+    "filename": "mod__babel_runtime_helpers_arrayLikeToArray.js"
   },
   {
     "moduleId": "@babel/runtime/helpers/createForOfIteratorHelper.js",
     "runtimeModuleId": "runtime/gamejs-modules/@babel/runtime/helpers/createForOfIteratorHelper.js",
-    "filename": "004__babel__runtime__helpers__createForOfIteratorHelper.js__13871e60.js"
+    "filename": "mod__babel_runtime_helpers_createForOfIteratorHelper.js"
   },
   {
     "moduleId": "@babel/runtime/helpers/regeneratorRuntime.js",
     "runtimeModuleId": "runtime/gamejs-modules/@babel/runtime/helpers/regeneratorRuntime.js",
-    "filename": "005__babel__runtime__helpers__regeneratorRuntime.js__c4d2f86c.js"
+    "filename": "mod__babel_runtime_helpers_regeneratorRuntime.js"
   },
   {
     "moduleId": "@babel/runtime/helpers/typeof.js",
     "runtimeModuleId": "runtime/gamejs-modules/@babel/runtime/helpers/typeof.js",
-    "filename": "006__babel__runtime__helpers__typeof.js__eb8a3589.js"
+    "filename": "mod__babel_runtime_helpers_typeof.js"
   },
   {
     "moduleId": "@babel/runtime/helpers/unsupportedIterableToArray.js",
     "runtimeModuleId": "runtime/gamejs-modules/@babel/runtime/helpers/unsupportedIterableToArray.js",
-    "filename": "007__babel__runtime__helpers__unsupportedIterableToArray.js__9c53e6ad.js"
+    "filename": "mod__babel_runtime_helpers_unsupportedIterableToArray.js"
   },
   {
     "moduleId": "application-main.js",
     "runtimeModuleId": "runtime/gamejs-modules/application-main.js",
-    "filename": "008__application-main.js__b6bbfd66.js"
+    "filename": "mod__application-main.js"
   },
   {
     "moduleId": "assets/internalbundle/index.js",
     "runtimeModuleId": "runtime/gamejs-modules/assets/internalbundle/index.js",
-    "filename": "009__assets__internalbundle__index.js__a0da8154.js"
+    "filename": "mod__assets_internalbundle_index.js"
   },
   {
     "moduleId": "assets/internal/index.js",
     "runtimeModuleId": "runtime/gamejs-modules/assets/internal/index.js",
-    "filename": "010__assets__internal__index.js__dc6a82ac.js"
+    "filename": "mod__assets_internal_index.js"
   },
   {
     "moduleId": "assets/start-scenebundle/index.js",
     "runtimeModuleId": "runtime/gamejs-modules/assets/start-scenebundle/index.js",
-    "filename": "011__assets__start-scenebundle__index.js__8e817012.js"
+    "filename": "mod__assets_start-scenebundle_index.js"
   },
   {
     "moduleId": "assets/start-scene/index.js",
     "runtimeModuleId": "runtime/gamejs-modules/assets/start-scene/index.js",
-    "filename": "012__assets__start-scene__index.js__7b25a5d2.js"
+    "filename": "mod__assets_start-scene_index.js"
   },
   {
     "moduleId": "assets/resourcesbundle/index.js",
     "runtimeModuleId": "runtime/gamejs-modules/assets/resourcesbundle/index.js",
-    "filename": "013__assets__resourcesbundle__index.js__d5f27146.js"
+    "filename": "mod__assets_resourcesbundle_index.js"
   },
   {
     "moduleId": "assets/mainbundle/index.js",
     "runtimeModuleId": "runtime/gamejs-modules/assets/mainbundle/index.js",
-    "filename": "014__assets__mainbundle__index.js__a065370c.js"
+    "filename": "mod__assets_mainbundle_index.js"
   },
   {
     "moduleId": "assets/anibundle/index.js",
     "runtimeModuleId": "runtime/gamejs-modules/assets/anibundle/index.js",
-    "filename": "015__assets__anibundle__index.js__eaa1c4f3.js"
+    "filename": "mod__assets_anibundle_index.js"
   },
   {
     "moduleId": "assets/aniBundlebundle/index.js",
     "runtimeModuleId": "runtime/gamejs-modules/assets/aniBundlebundle/index.js",
-    "filename": "016__assets__aniBundlebundle__index.js__b4d5a7f3.js"
+    "filename": "mod__assets_aniBundlebundle_index.js"
   },
   {
     "moduleId": "assets/audiobundle/index.js",
     "runtimeModuleId": "runtime/gamejs-modules/assets/audiobundle/index.js",
-    "filename": "017__assets__audiobundle__index.js__afd38867.js"
+    "filename": "mod__assets_audiobundle_index.js"
   },
   {
     "moduleId": "assets/audioBundlebundle/index.js",
     "runtimeModuleId": "runtime/gamejs-modules/assets/audioBundlebundle/index.js",
-    "filename": "018__assets__audioBundlebundle__index.js__fdbe2ccf.js"
+    "filename": "mod__assets_audioBundlebundle_index.js"
   },
   {
     "moduleId": "assets/duckbundle/index.js",
     "runtimeModuleId": "runtime/gamejs-modules/assets/duckbundle/index.js",
-    "filename": "019__assets__duckbundle__index.js__16d574dc.js"
+    "filename": "mod__assets_duckbundle_index.js"
   },
   {
     "moduleId": "assets/DuckBundlebundle/index.js",
     "runtimeModuleId": "runtime/gamejs-modules/assets/DuckBundlebundle/index.js",
-    "filename": "020__assets__DuckBundlebundle__index.js__936e37a4.js"
+    "filename": "mod__assets_DuckBundlebundle_index.js"
   },
   {
     "moduleId": "assets/homebundle/index.js",
     "runtimeModuleId": "runtime/gamejs-modules/assets/homebundle/index.js",
-    "filename": "023__assets__homebundle__index.js__3ac47d7a.js"
+    "filename": "mod__assets_homebundle_index.js"
   },
   {
     "moduleId": "assets/HomeBundlebundle/index.js",
     "runtimeModuleId": "runtime/gamejs-modules/assets/HomeBundlebundle/index.js",
-    "filename": "024__assets__HomeBundlebundle__index.js__3832241a.js"
+    "filename": "mod__assets_HomeBundlebundle_index.js"
   },
   {
     "moduleId": "assets/uibundle/index.js",
     "runtimeModuleId": "runtime/gamejs-modules/assets/uibundle/index.js",
-    "filename": "025__assets__uibundle__index.js__108a75c1.js"
+    "filename": "mod__assets_uibundle_index.js"
   },
   {
     "moduleId": "assets/uiBundlebundle/index.js",
     "runtimeModuleId": "runtime/gamejs-modules/assets/uiBundlebundle/index.js",
-    "filename": "026__assets__uiBundlebundle__index.js__89684761.js"
+    "filename": "mod__assets_uiBundlebundle_index.js"
   },
   {
     "moduleId": "subpackages/resources/game.js",
     "runtimeModuleId": "runtime/gamejs-modules/subpackages/resources/game.js",
-    "filename": "027__subpackages__resources__game.js__5615ef8e.js"
+    "filename": "mod__subpackages_resources_game.js"
   },
   {
     "moduleId": "subpackages/main/game.js",
     "runtimeModuleId": "runtime/gamejs-modules/subpackages/main/game.js",
-    "filename": "028__subpackages__main__game.js__d6b77a0.js"
+    "filename": "mod__subpackages_main_game.js"
   },
   {
     "moduleId": "subpackages/aniBundle/game.js",
     "runtimeModuleId": "runtime/gamejs-modules/subpackages/aniBundle/game.js",
-    "filename": "029__subpackages__aniBundle__game.js__16d978a5.js"
+    "filename": "mod__subpackages_aniBundle_game.js"
   },
   {
     "moduleId": "subpackages/audioBundle/game.js",
     "runtimeModuleId": "runtime/gamejs-modules/subpackages/audioBundle/game.js",
-    "filename": "030__subpackages__audioBundle__game.js__52aae971.js"
+    "filename": "mod__subpackages_audioBundle_game.js"
   },
   {
     "moduleId": "subpackages/DuckBundle/game.js",
     "runtimeModuleId": "runtime/gamejs-modules/subpackages/DuckBundle/game.js",
-    "filename": "031__subpackages__DuckBundle__game.js__b8f61b08.js"
+    "filename": "mod__subpackages_DuckBundle_game.js"
   },
   {
     "moduleId": "subpackages/HomeBundle/game.js",
     "runtimeModuleId": "runtime/gamejs-modules/subpackages/HomeBundle/game.js",
-    "filename": "033__subpackages__HomeBundle__game.js__3d745e32.js"
+    "filename": "mod__subpackages_HomeBundle_game.js"
   },
   {
     "moduleId": "subpackages/uiBundle/game.js",
     "runtimeModuleId": "runtime/gamejs-modules/subpackages/uiBundle/game.js",
-    "filename": "034__subpackages__uiBundle__game.js__ed56a74f.js"
+    "filename": "mod__subpackages_uiBundle_game.js"
   },
   {
     "moduleId": "assets/internal/index.internal.js",
     "runtimeModuleId": "runtime/gamejs-modules/assets/internal/index.internal.js",
-    "filename": "035__assets__internal__index.internal.js__fe460d27.js"
+    "filename": "mod__assets_internal_index.internal.js"
   },
   {
     "moduleId": "assets/start-scene/index.start-scene.js",
     "runtimeModuleId": "runtime/gamejs-modules/assets/start-scene/index.start-scene.js",
-    "filename": "036__assets__start-scene__index.start-scene.js__c6e1947.js"
+    "filename": "mod__assets_start-scene_index.start-scene.js"
   },
   {
     "moduleId": "cocos-js/_virtual_cc-cf1p7Jgo.js",
     "runtimeModuleId": "runtime/gamejs-modules/cocos-js/_virtual_cc-cf1p7Jgo.js",
-    "filename": "037__cocos-js___virtual_cc-cf1p7Jgo.js__d0943627.js"
+    "filename": "mod__cocos-js_virtual_cc-cf1p7Jgo.js"
   },
   {
     "moduleId": "cocos-js/cc.1e1cd.js",
     "runtimeModuleId": "runtime/gamejs-modules/cocos-js/cc.1e1cd.js",
-    "filename": "038__cocos-js__cc.1e1cd.js__994b77ea.js"
+    "filename": "mod__cocos-js_cc.1e1cd.js"
   },
   {
     "moduleId": "cocos-js/spine-BGFFnNyc.js",
     "runtimeModuleId": "runtime/gamejs-modules/cocos-js/spine-BGFFnNyc.js",
-    "filename": "039__cocos-js__spine-BGFFnNyc.js__6fab287.js"
+    "filename": "mod__cocos-js_spine-BGFFnNyc.js"
   },
   {
     "moduleId": "cocos-js/spine.asm-DxRECbrD.js",
     "runtimeModuleId": "runtime/gamejs-modules/cocos-js/spine.asm-DxRECbrD.js",
-    "filename": "040__cocos-js__spine.asm-DxRECbrD.js__a67c7ac5.js"
+    "filename": "mod__cocos-js_spine.asm-DxRECbrD.js"
   },
   {
     "moduleId": "cocos-js/spine.js-1Pcan4ap.js",
     "runtimeModuleId": "runtime/gamejs-modules/cocos-js/spine.js-1Pcan4ap.js",
-    "filename": "041__cocos-js__spine.js-1Pcan4ap.js__1f7da915.js"
+    "filename": "mod__cocos-js_spine.js-1Pcan4ap.js"
   },
   {
     "moduleId": "cocos-js/spine.wasm-CKrzExoH.js",
     "runtimeModuleId": "runtime/gamejs-modules/cocos-js/spine.wasm-CKrzExoH.js",
-    "filename": "042__cocos-js__spine.wasm-CKrzExoH.js__5e99508.js"
+    "filename": "mod__cocos-js_spine.wasm-CKrzExoH.js"
   },
   {
     "moduleId": "engine-adapter.js",
     "runtimeModuleId": "runtime/gamejs-modules/engine-adapter.js",
-    "filename": "043__engine-adapter.js__41d8b212.js"
+    "filename": "mod__engine-adapter.js"
   },
   {
     "moduleId": "first-screen.js",
     "runtimeModuleId": "runtime/gamejs-modules/first-screen.js",
-    "filename": "044__first-screen.js__9e6fe0f9.js"
+    "filename": "mod__first-screen.js"
   },
   {
     "moduleId": "src/chunks/game-scripts.js",
     "runtimeModuleId": "runtime/gamejs-modules/src/chunks/game-scripts.js",
-    "filename": "045__src__chunks__game-scripts.js__2f52d25f.js"
+    "filename": "mod__src_chunks_game-scripts.js"
   },
   {
     "moduleId": "src/import-map.ae243.js",
     "runtimeModuleId": "runtime/gamejs-modules/src/import-map.ae243.js",
-    "filename": "046__src__import-map.ae243.js__8c4393b4.js"
+    "filename": "mod__src_import-map.ae243.js"
   },
   {
     "moduleId": "src/polyfills.bundle.43263.js",
     "runtimeModuleId": "runtime/gamejs-modules/src/polyfills.bundle.43263.js",
-    "filename": "047__src__polyfills.bundle.43263.js__fade3229.js"
+    "filename": "mod__src_polyfills.bundle.43263.js"
   },
   {
     "moduleId": "src/system.bundle.f45da.js",
     "runtimeModuleId": "runtime/gamejs-modules/src/system.bundle.f45da.js",
-    "filename": "048__src__system.bundle.f45da.js__3f6a7a9c.js"
+    "filename": "mod__src_system.bundle.f45da.js"
   },
   {
     "moduleId": "web-adapter.js",
     "runtimeModuleId": "runtime/gamejs-modules/web-adapter.js",
-    "filename": "049__web-adapter.js__bab040d4.js"
+    "filename": "mod__web-adapter.js"
   },
   {
     "moduleId": "game.js",
     "runtimeModuleId": "runtime/gamejs-modules/game.js",
-    "filename": "050__game.js__1bbee7c0.js"
+    "filename": "mod__game.js"
   },
   {
     "moduleId": "subpackages-bootstrap.js",
     "runtimeModuleId": "runtime/gamejs-modules/subpackages-bootstrap.js",
-    "filename": "051__subpackages-bootstrap.js__a3c74a2c.js"
+    "filename": "mod__subpackages-bootstrap.js"
   }
 ]
