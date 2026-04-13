@@ -4500,16 +4500,16 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                               t.localId + 1 < GameModel.instance.level2 ||
                               GameModel.LockAllDuck) &&
                               e.on(Node.EventType.TOUCH_END, this.onClickItem, this);
-                        else if ("fruit" == t.kind || "daWeiWang" == t.kind) e.active = !1;
                         else
                           "special" == t.kind
                             ? ((e.getComponent("itemSpecialNode").id = t.localId),
                               e.getComponent("itemSpecialNode").initSpecialItem())
-                            : "share" == t.kind &&
-                              ((e.getComponent("itemSpecialNode").id = t.localId),
+                            : "share" == t.kind
+                            ? ((e.getComponent("itemSpecialNode").id = t.localId),
                               e.getComponent("itemSpecialNode").initShareItem(),
                               (GameModel.instance.shareLevel >= t.localId || GameModel.LockAllDuck) &&
-                                e.on(Node.EventType.TOUCH_END, this.onClickShareItem, this));
+                                e.on(Node.EventType.TOUCH_END, this.onClickShareItem, this))
+                            : (e.active = !1);
                       }),
                       (l.hideItemNode = function (e) {
                         this.bookType == ge.normalType
@@ -4519,7 +4519,6 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                           e.setScale(Vec3.ZERO),
                           (e.active = !1),
                           e.off(Node.EventType.TOUCH_END, this.onClickItem, this),
-                          e.off(Node.EventType.TOUCH_END, this.onClickFruitItem, this),
                           e.off(Node.EventType.TOUCH_END, this.onClickShareItem, this);
                       }),
                       (l.update = function (e) {
@@ -4531,83 +4530,43 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                       (l.onClickItem = function (e) {
                         if (director.getScene().name == GameModel.instance.HomeSceneName) {
                           AudioManager.instance.playSound("ui/buttonClick");
-                          var t = this.itemRoot,
-                            n = e.target.getComponent("itemNode").id - 1,
-                            i = n;
-                          n > 99
-                            ? ((n -= 100),
+                          var itemRoot = this.itemRoot,
+                            selectedDuckIndex = e.target.getComponent("itemNode").id - 1,
+                            selectedCockNameIndex = selectedDuckIndex;
+                          selectedDuckIndex > 99
+                            ? ((selectedDuckIndex -= 100),
                               (find("Canvas/homeBg/duck/circle/ani").getComponent("sp.Skeleton").animation = "walk4"))
                             : (find("Canvas/homeBg/duck/circle/ani").getComponent("sp.Skeleton").animation = "walk3"),
-                            (GameModel.instance.duckName = GameModel.cockNameArr[i]);
-                          var o = "y" + (n + 1).toString();
-                          this.changeDuckSkin(o);
-                          for (var r = 0; r < t.children.length; r++) {
-                            var a = t.children[r],
-                              s = a.getChildByName("useTip"),
-                              l = a.getChildByName("useLight");
-                            a.getComponent("itemNode").id == e.target.getComponent("itemNode").id
-                              ? ((s.active = !0), (l.active = !0))
-                              : ((s.active = !1), (l.active = !1));
-                          }
-                        }
-                      }),
-                      (l.onClickFruitItem = function (e) {
-                        if (director.getScene().name == GameModel.instance.HomeSceneName) {
-                          AudioManager.instance.playSound("ui/buttonClick");
-                          var t = this.itemRoot,
-                            n = e.target.getComponent("itemSpecialNode").id - 1;
-                          (find("Canvas/homeBg/duck/circle/ani").getComponent("sp.Skeleton").animation = "walk3"),
-                            (GameModel.instance.duckName = GameModel.FruitNameArr[n]);
-                          var i = "f" + (n + 1).toString();
-                          this.changeDuckSkin(i);
-                          for (var o = 0; o < t.children.length; o++) {
-                            var r = t.children[o],
-                              a = r.getChildByName("useTip"),
-                              s = r.getChildByName("useLight");
-                            r.getComponent("itemSpecialNode").id == e.target.getComponent("itemSpecialNode").id &&
-                            r.getComponent("itemSpecialNode").duckClass == duckSpecialType.fruit
-                              ? ((a.active = !0), (s.active = !0))
-                              : ((a.active = !1), (s.active = !1));
-                          }
-                        }
-                      }),
-                      (l.onClickDWWItem = function (e) {
-                        if (director.getScene().name == GameModel.instance.HomeSceneName) {
-                          AudioManager.instance.playSound("ui/buttonClick");
-                          var t = this.itemRoot,
-                            n = e.target.getComponent("itemSpecialNode").id - 1;
-                          (find("Canvas/homeBg/duck/circle/ani").getComponent("sp.Skeleton").animation = "walk3"),
-                            (GameModel.instance.duckName = GameModel.DaWeiWangNameArr[n]);
-                          var i = "w" + (n + 1).toString();
-                          this.changeDuckSkin(i);
-                          for (var o = 0; o < t.children.length; o++) {
-                            var r = t.children[o],
-                              a = r.getChildByName("useTip"),
-                              s = r.getChildByName("useLight");
-                            r.getComponent("itemSpecialNode").id == e.target.getComponent("itemSpecialNode").id &&
-                            r.getComponent("itemSpecialNode").duckClass == duckSpecialType.DWW
-                              ? ((a.active = !0), (s.active = !0))
-                              : ((a.active = !1), (s.active = !1));
+                            (GameModel.instance.duckName = GameModel.cockNameArr[selectedCockNameIndex]);
+                          var selectedSkinName = "y" + (selectedDuckIndex + 1).toString();
+                          this.changeDuckSkin(selectedSkinName);
+                          for (var childIndex = 0; childIndex < itemRoot.children.length; childIndex++) {
+                            var itemNode = itemRoot.children[childIndex],
+                              useTipNode = itemNode.getChildByName("useTip"),
+                              useLightNode = itemNode.getChildByName("useLight");
+                            itemNode.getComponent("itemNode").id == e.target.getComponent("itemNode").id
+                              ? ((useTipNode.active = !0), (useLightNode.active = !0))
+                              : ((useTipNode.active = !1), (useLightNode.active = !1));
                           }
                         }
                       }),
                       (l.onClickShareItem = function (e) {
                         if (director.getScene().name == GameModel.instance.HomeSceneName) {
                           AudioManager.instance.playSound("ui/buttonClick");
-                          var t = this.itemRoot,
-                            n = e.target.getComponent("itemSpecialNode").id - 1;
+                          var itemRoot = this.itemRoot,
+                            selectedShareDuckIndex = e.target.getComponent("itemSpecialNode").id - 1;
                           (find("Canvas/homeBg/duck/circle/ani").getComponent("sp.Skeleton").animation = "walk3"),
-                            (GameModel.instance.duckName = GameModel.SanGuoNameArr[n]);
-                          var i = "p" + (n + 1).toString();
-                          this.changeDuckSkin(i);
-                          for (var o = 0; o < t.children.length; o++) {
-                            var r = t.children[o],
-                              a = r.getChildByName("useTip"),
-                              s = r.getChildByName("useLight");
-                            r.getComponent("itemSpecialNode").id == e.target.getComponent("itemSpecialNode").id &&
-                            r.getComponent("itemSpecialNode").duckClass == duckSpecialType.share
-                              ? ((a.active = !0), (s.active = !0))
-                              : ((a.active = !1), (s.active = !1));
+                            (GameModel.instance.duckName = GameModel.SanGuoNameArr[selectedShareDuckIndex]);
+                          var selectedSkinName = "p" + (selectedShareDuckIndex + 1).toString();
+                          this.changeDuckSkin(selectedSkinName);
+                          for (var childIndex = 0; childIndex < itemRoot.children.length; childIndex++) {
+                            var itemNode = itemRoot.children[childIndex],
+                              useTipNode = itemNode.getChildByName("useTip"),
+                              useLightNode = itemNode.getChildByName("useLight");
+                            itemNode.getComponent("itemSpecialNode").id == e.target.getComponent("itemSpecialNode").id &&
+                            itemNode.getComponent("itemSpecialNode").duckClass == duckSpecialType.share
+                              ? ((useTipNode.active = !0), (useLightNode.active = !0))
+                              : ((useTipNode.active = !1), (useLightNode.active = !1));
                           }
                         }
                       }),
@@ -32005,27 +31964,12 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                     var s = t.prototype;
                     return (
                       (s.onLoad = function () {
-                        director.getScene().name == GameModel.instance.DuckSceneName
-                          ? (this.levelNum = GameModel.instance.level)
-                          : director.getScene().name == GameModel.instance.RemovedSideScene2Name
-                          ? (this.levelNum = GameModel.instance.level2)
-                          : director.getScene().name == GameModel.instance.RemovedSideScene3Name &&
-                            (this.levelNum = GameModel.instance.level3),
+                        (this.levelNum = GameModel.instance.level),
                           this.initDuckSkin(),
                           this.initUi(),
                           (GameModel.instance.currentLevelPlayNum = 0),
-                          director.getScene().name == GameModel.instance.DuckSceneName
-                            ? (GameModel.instance.level += 1)
-                            : director.getScene().name == GameModel.instance.RemovedSideScene2Name
-                            ? (GameModel.instance.level2 += 1)
-                            : director.getScene().name == GameModel.instance.RemovedSideScene3Name &&
-                              (GameModel.instance.level3 += 1),
-                          director.getScene().name == GameModel.instance.DuckSceneName
-                            ? (this.levelNum = GameModel.instance.level)
-                            : director.getScene().name == GameModel.instance.RemovedSideScene2Name
-                            ? (this.levelNum = GameModel.instance.level2)
-                            : director.getScene().name == GameModel.instance.RemovedSideScene3Name &&
-                              (this.levelNum = GameModel.instance.level3),
+                          (GameModel.instance.level += 1),
+                          (this.levelNum = GameModel.instance.level),
                           AudioManager.instance.playSound("ui/levelComplete");
                         var e = this.panel.getChildByName("banner");
                         Util.playRibbonAni(60, find("Canvas"), v2(0, e.y - 100)), this.uiAnimation();
@@ -32068,11 +32012,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                       }),
                       (s.initUi = function () {
                         GameModel.instance.releaseType == releaseType.applet_wechat &&
-                          ((this.shareVideoBtn.node.active = !1), (this.goSideBarBtn.node.active = !1)),
-                          director.getScene().name == GameModel.instance.RemovedSideScene3Name &&
-                            ((this.aniNode.active = !1),
-                            (this.fruitWinAni.active = !0),
-                            GameModel.instance.level3 > 101 && (this.gooseProgress.active = !1));
+                          ((this.shareVideoBtn.node.active = !1), (this.goSideBarBtn.node.active = !1));
                         var e = this.aniNode.getChildByName("DuckAni").getComponent("sp.Skeleton"),
                           t = this.GetTypeNumber();
                         1 == t
@@ -32169,11 +32109,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                         this.levelNum;
                         var e = this.gooseProgress.getChildByName("duckLabel").getChildByName("last"),
                           t = this.gooseProgress.getChildByName("duck").getChildByName("剪影");
-                        director.getScene().name == GameModel.instance.RemovedSideScene2Name
-                          ? this.initGame2Last(e, t)
-                          : director.getScene().name == GameModel.instance.DuckSceneName
-                          ? this.initGame1Last(e, t)
-                          : director.getScene().name == GameModel.instance.RemovedSideScene3Name && this.initGame3Last(e, t);
+                        this.initGame1Last(e, t);
                       }),
                       (s.initGame1Last = function (e, t) {
                         this.levelNum < 102 ||
@@ -32201,30 +32137,6 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                               ((e.getComponent("cc.Sprite").spriteFrame = this.tipsFrame[6]),
                               (t.getChildByName("百鸭朝鹅").active = !1),
                               (t.getChildByName("百鸭朝鲲").active = !0)));
-                      }),
-                      (s.initGame2Last = function (e, t) {
-                        this.levelNum < 102
-                          ? (e.getComponent("cc.Sprite").spriteFrame = ResManager.instance.getSpriteFrame("game2_s1"))
-                          : this.levelNum < 202
-                          ? (e.getComponent("cc.Sprite").spriteFrame = ResManager.instance.getSpriteFrame("game2_s2"))
-                          : this.levelNum < 302
-                          ? (e.getComponent("cc.Sprite").spriteFrame = ResManager.instance.getSpriteFrame("game2_s3"))
-                          : this.levelNum < 402
-                          ? (e.getComponent("cc.Sprite").spriteFrame = ResManager.instance.getSpriteFrame("game2_s4"))
-                          : this.levelNum < 502
-                          ? (e.getComponent("cc.Sprite").spriteFrame = ResManager.instance.getSpriteFrame("game2_s5"))
-                          : this.levelNum < 602
-                          ? (e.getComponent("cc.Sprite").spriteFrame = ResManager.instance.getSpriteFrame("game2_s6"))
-                          : this.levelNum < 702 &&
-                            (e.getComponent("cc.Sprite").spriteFrame = ResManager.instance.getSpriteFrame("game2_s7"));
-                      }),
-                      (s.initGame3Last = function (e, t) {
-                        (this.gooseProgress
-                          .getChildByName("duckLabel")
-                          .getChildByName("front")
-                          .getComponent("cc.Sprite").spriteFrame = ResManager.instance.getSpriteFrame("game3_front")),
-                          this.levelNum < 102 &&
-                            (e.getComponent("cc.Sprite").spriteFrame = ResManager.instance.getSpriteFrame("game3_s1"));
                       }),
                       (s.uiAnimation = function () {
                         var e = this;
@@ -32257,13 +32169,6 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                         var d = v3(this.nextLevelBtn.node.scale);
                         if (
                           (this.nextLevelBtn.node.setScale(0, 0, 0),
-                          director.getScene().name == GameModel.instance.RemovedSideScene3Name &&
-                            (0,
-                            this.fruitWinAni.getComponent("sp.Skeleton").setAnimation(0, "laugh", !1),
-                            this.scheduleOnce(function () {
-                              (e.fruitWinAni.getComponent("sp.Skeleton").loop = !0),
-                                (e.fruitWinAni.getComponent("sp.Skeleton").animation = "stand by");
-                            }, 3.5)),
                           tween(i)
                             .to(
                               0.5,
@@ -32278,8 +32183,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                           tween(this.aniNode)
                             .delay(0.5)
                             .call(function () {
-                              director.getScene().name != GameModel.instance.RemovedSideScene3Name &&
-                                AudioManager.instance.playLongSound("duckGame/duckVictory", 0.5);
+                              AudioManager.instance.playLongSound("duckGame/duckVictory", 0.5);
                             })
                             .to(
                               0.5,
@@ -32344,10 +32248,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                           )
                           .call(function () {
                             console.log("this.levelNum - 1", e.levelNum - 1),
-                              e.levelNum - 1 != 1 &&
-                                (director.getScene().name == GameModel.instance.RemovedSideScene3Name
-                                  ? e.gooseProgressMoveToBookBtn(0)
-                                  : e.newDuckSpriteMoveToBookBtn());
+                              e.levelNum - 1 != 1 && e.animateDuckRewardToBookButton();
                           })
                           .start(),
                           tween(this.goSideBarBtn.node)
@@ -32405,7 +32306,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                           .repeatForever()
                           .start();
                       }),
-                      (s.gooseProgressMoveToBookBtn = function (e) {
+                      (s.animateProgressToBookButton = function (e) {
                         var t = this,
                           n = this.gooseProgress.getChildByName("ProgressBar"),
                           i = this.gooseProgress.getChildByName("duckLabel").getChildByName("Label"),
@@ -32448,15 +32349,11 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                               }
                             )
                             .call(function () {
-                              director.getScene().name == GameModel.instance.DuckSceneName
-                                ? t.judgeSpecialDuck()
-                                : director.getScene().name == GameModel.instance.RemovedSideScene2Name
-                                ? t.judgeSpecialFruitDuck()
-                                : director.getScene().name == GameModel.instance.RemovedSideScene3Name && t.judgeDWWDuck();
+                              director.getScene().name == GameModel.instance.DuckSceneName && t.judgeSpecialDuck();
                             })
                             .start();
                       }),
-                      (s.newDuckSpriteMoveToBookBtn = function (e) {
+                      (s.animateDuckRewardToBookButton = function (e) {
                         var t = this,
                           n = this.levelNum - 1 - 1;
                         n > GameModel.instance.MaxDuckTypeNum &&
@@ -32480,7 +32377,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                                   v3(t.bookBtn.node.x, t.bookBtn.node.y),
                                   !1
                                 ),
-                                t.gooseProgressMoveToBookBtn(o),
+                                t.animateProgressToBookButton(o),
                                 tween(t.duckSprite)
                                   .to(o, {
                                     scale: v3(0, 0)
@@ -32612,170 +32509,10 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                                               "tex/book/specialCollection/" +
                                               GameModel.SpecialNameArr[o] +
                                               "/spriteFrame";
-                                            t.newDuckSpriteMoveToBookBtn(e);
+                                            t.animateDuckRewardToBookButton(e);
                                           })
                                           .start();
                                     case 13:
-                                    case "end":
-                                      return e.stop();
-                                  }
-                              },
-                              e,
-                              this
-                            );
-                          })
-                        );
-                        return function () {
-                          return e.apply(this, arguments);
-                        };
-                      })()),
-                      (s.judgeSpecialFruitDuck = (function () {
-                        var e = asyncToGenerator(
-                          i().mark(function e() {
-                            var t, n, o, r, a;
-                            return i().wrap(
-                              function (e) {
-                                for (;;)
-                                  switch ((e.prev = e.next)) {
-                                    case 0:
-                                      if (
-                                        ((t = this),
-                                        (n = (GameModel.instance.level2 - 2) % 100),
-                                        (o = (GameModel.instance.level2 - 2) / 100 - 1),
-                                        GameModel.instance.level2 < 100 ||
-                                          0 != n ||
-                                          this.isShowSpecial ||
-                                          o >= GameModel.FruitNameArr.length)
-                                      ) {
-                                        e.next = 17;
-                                        break;
-                                      }
-                                      return (
-                                        (this.isShowSpecial = !0),
-                                        (r = this.specialDuckNode.getChildByName("skeleton")).setPosition(
-                                          v3(0, -150, 0)
-                                        ),
-                                        (a = null),
-                                        (e.next = 8),
-                                        ResManager.instance.bundleLoad(
-                                          "aniBundle",
-                                          "skeletonAnimations/duckAnimation/duck",
-                                          null,
-                                          function (e, t) {
-                                            e ? console.error(e) : (a = t);
-                                          }
-                                        )
-                                      );
-                                    case 8:
-                                      this.specialDuckNode.setScale(Vec3.ZERO),
-                                        (r.getComponent("sp.Skeleton").skeletonData = a),
-                                        r.getComponent("sp.Skeleton").setSkin("f" + (o + 1).toString()),
-                                        r.getComponent("sp.Skeleton").setAnimation(0, "daiji", !0),
-                                        (r.getComponent("sp.Skeleton").timeScale = 3),
-                                        (this.specialDuckNode
-                                          .getChildByName("specialName")
-                                          .getComponent("cc.Label").string = GameModel.FruitNameArr[o]),
-                                        this.hideBasicAni(),
-                                        (this.specialDuckNode.active = !0),
-                                        tween(this.specialDuckNode)
-                                          .delay(0.4)
-                                          .to(
-                                            0.5,
-                                            {
-                                              scale: v3(1, 1)
-                                            },
-                                            {
-                                              easing: "backOut"
-                                            }
-                                          )
-                                          .call(function () {
-                                            var e =
-                                              "tex/book/removedCollection/" + GameModel.FruitNameArr[o] + "/spriteFrame";
-                                            t.newDuckSpriteMoveToBookBtn(e);
-                                          })
-                                          .start();
-                                    case 17:
-                                    case "end":
-                                      return e.stop();
-                                  }
-                              },
-                              e,
-                              this
-                            );
-                          })
-                        );
-                        return function () {
-                          return e.apply(this, arguments);
-                        };
-                      })()),
-                      (s.judgeDWWDuck = (function () {
-                        var e = asyncToGenerator(
-                          i().mark(function e() {
-                            var t, n, o, r, a;
-                            return i().wrap(
-                              function (e) {
-                                for (;;)
-                                  switch ((e.prev = e.next)) {
-                                    case 0:
-                                      if (
-                                        ((t = this),
-                                        (n = (GameModel.instance.level3 - 2) % 100),
-                                        (o = (GameModel.instance.level3 - 2) / 100 - 1),
-                                        GameModel.instance.level3 < 100 ||
-                                          0 != n ||
-                                          this.isShowSpecial ||
-                                          o >= GameModel.DaWeiWangNameArr.length)
-                                      ) {
-                                        e.next = 17;
-                                        break;
-                                      }
-                                      return (
-                                        (this.isShowSpecial = !0),
-                                        (r = this.specialDuckNode.getChildByName("skeleton")).setPosition(
-                                          v3(0, -150, 0)
-                                        ),
-                                        (a = null),
-                                        (e.next = 8),
-                                        ResManager.instance.bundleLoad(
-                                          "aniBundle",
-                                          "skeletonAnimations/duckAnimation/duck",
-                                          null,
-                                          function (e, t) {
-                                            e ? console.error(e) : (a = t);
-                                          }
-                                        )
-                                      );
-                                    case 8:
-                                      this.specialDuckNode.setScale(Vec3.ZERO),
-                                        (r.getComponent("sp.Skeleton").skeletonData = a),
-                                        r.getComponent("sp.Skeleton").setSkin("w" + (o + 1).toString()),
-                                        r.getComponent("sp.Skeleton").setAnimation(0, "daiji", !0),
-                                        (r.getComponent("sp.Skeleton").timeScale = 3),
-                                        (this.specialDuckNode
-                                          .getChildByName("specialName")
-                                          .getComponent("cc.Label").string = GameModel.DaWeiWangNameArr[o]),
-                                        this.hideBasicAni(),
-                                        (this.specialDuckNode.active = !0),
-                                        tween(this.specialDuckNode)
-                                          .delay(0.4)
-                                          .to(
-                                            0.5,
-                                            {
-                                              scale: v3(1, 1)
-                                            },
-                                            {
-                                              easing: "backOut"
-                                            }
-                                          )
-                                          .call(function () {
-                                            var e =
-                                              "tex/book/removedCollection2/" +
-                                              GameModel.DaWeiWangNameArr[o] +
-                                              "/spriteFrame";
-                                            t.newDuckSpriteMoveToBookBtn(e);
-                                          })
-                                          .start();
-                                    case 17:
                                     case "end":
                                       return e.stop();
                                   }

@@ -79,7 +79,6 @@ function verifyGameBridge(projectRoot, source, errors) {
   const requiredSnippets = [
     'define("game.js", function(require, module, exports){',
     'require("./architecture/boot/game-bootstrap.js")',
-    'bootModule.bootGameRuntime(require)',
     'define("subpackages-bootstrap.js", function(require, module, exports){'
   ];
 
@@ -87,6 +86,10 @@ function verifyGameBridge(projectRoot, source, errors) {
     if (!source.includes(snippet)) {
       errors.push('game.js 缺少关键桥接片段: ' + snippet);
     }
+  }
+
+  if (!hasBootRuntimeCall(source)) {
+    errors.push('game.js 缺少关键桥接片段: *.bootGameRuntime(require)');
   }
 }
 
@@ -182,9 +185,18 @@ function verifySplitGameBridge(projectRoot, source, errors) {
   if (!containsAnySnippet(gameModuleSource, gameBootstrapSnippetCandidates)) {
     errors.push('拆分入口 game.js 模块缺少关键桥接片段: game-bootstrap require');
   }
-  if (!gameModuleSource.includes('bootModule.bootGameRuntime(require)')) {
-    errors.push('拆分入口 game.js 模块缺少关键桥接片段: bootModule.bootGameRuntime(require)');
+  if (!hasBootRuntimeCall(gameModuleSource)) {
+    errors.push('拆分入口 game.js 模块缺少关键桥接片段: *.bootGameRuntime(require)');
   }
+}
+
+/**
+ * 校验源码中是否存在任意变量名调用 `bootGameRuntime(require)`。
+ * @param {string} sourceCode 源码
+ * @returns {boolean}
+ */
+function hasBootRuntimeCall(sourceCode) {
+  return /[A-Za-z_$][\w$]*\.bootGameRuntime\(require\)/.test(sourceCode);
 }
 
 /**
