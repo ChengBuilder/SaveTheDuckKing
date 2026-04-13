@@ -1,6 +1,6 @@
 {
   "bundleName": "resources",
-  "generatedAt": "2026-04-09T05:24:45.817Z",
+  "generatedAt": "2026-04-13T05:26:38.767Z",
   "importAliases": [
     {
       "kind": "import",
@@ -194,6 +194,16 @@
       }
     }
   ],
-  "unresolvedImports": [],
-  "unresolvedNative": []
+  "unresolvedImports": [
+    {
+      "originalRelativePath": "import/4423cbfc-6924-404e-b6c4-505fb57e25e7.a2533.json",
+      "stem": "4423cbfc-6924-404e-b6c4-505fb57e25e7"
+    }
+  ],
+  "unresolvedNative": [
+    {
+      "originalRelativePath": "native/4423cbfc-6924-404e-b6c4-505fb57e25e7.84bd9.png",
+      "stem": "4423cbfc-6924-404e-b6c4-505fb57e25e7"
+    }
+  ]
 }

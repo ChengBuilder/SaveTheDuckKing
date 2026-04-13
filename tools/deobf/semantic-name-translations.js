@@ -29,8 +29,6 @@ const SEMANTIC_NAME_TRANSLATIONS = Object.freeze({
   "戴夫": "dave",
   "比比拉布": "bibiLabu",
   "小三视频": "xiaoSanVideo",
-  "救救水果鸭": "saveFruitDuck",
-  "水果大胃王": "fruitBigEater",
   "鹅": "goose",
 
   // 通用场景/UI 目录

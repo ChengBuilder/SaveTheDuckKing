@@ -1,6 +1,6 @@
 {
   "bundleName": "uiBundle",
-  "generatedAt": "2026-04-09T05:24:46.045Z",
+  "generatedAt": "2026-04-13T05:26:38.879Z",
   "importAliases": [
     {
       "kind": "import",
@@ -29,7 +29,7 @@
       "detail": {
         "commonPrefixSegments": [
           "tex",
-          "失败页面"
+          "failPage"
         ],
         "primaryLeafName": "图2",
         "assetCount": 12,
@@ -56,14 +56,14 @@
     {
       "kind": "import",
       "originalRelativePath": "import/02300d1e9.ec414.json",
-      "semanticRelativePath": "__semantic__/_packs/tex/homeAssets/douyinFollow/follow__pack_6.json",
-      "materializedRelativePath": "import/_packs/tex/homeAssets/douyinFollow/follow__pack_6.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/homeUi/followDouyin/follow__pack_6.json",
+      "materializedRelativePath": "import/_packs/tex/homeUi/followDouyin/follow__pack_6.json",
       "strategy": "import-pack",
       "detail": {
         "commonPrefixSegments": [
           "tex",
-          "主页素材",
-          "关注抖音"
+          "homeUi",
+          "followDouyin"
         ],
         "primaryLeafName": "关注",
         "assetCount": 6,
@@ -81,7 +81,7 @@
       "detail": {
         "commonPrefixSegments": [
           "tex",
-          "失败页面"
+          "failPage"
         ],
         "primaryLeafName": "底2",
         "assetCount": 4,
@@ -93,14 +93,14 @@
     {
       "kind": "import",
       "originalRelativePath": "import/02cd0da06.aa8b8.json",
-      "semanticRelativePath": "__semantic__/_packs/tex/bottom__pack_32.json",
-      "materializedRelativePath": "import/_packs/tex/bottom__pack_32.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/大胃袋鸭__pack_32.json",
+      "materializedRelativePath": "import/_packs/tex/大胃袋鸭__pack_32.json",
       "strategy": "import-pack",
       "detail": {
         "commonPrefixSegments": [
           "tex"
         ],
-        "primaryLeafName": "底",
+        "primaryLeafName": "大胃袋鸭",
         "assetCount": 32,
         "textureUuidKeys": [
           "1f5276afb"
@@ -110,14 +110,14 @@
     {
       "kind": "import",
       "originalRelativePath": "import/0361f2d0d.36476.json",
-      "semanticRelativePath": "__semantic__/_packs/tex/bottom__pack_30.json",
-      "materializedRelativePath": "import/_packs/tex/bottom__pack_30.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/圆__pack_30.json",
+      "materializedRelativePath": "import/_packs/tex/圆__pack_30.json",
       "strategy": "import-pack",
       "detail": {
         "commonPrefixSegments": [
           "tex"
         ],
-        "primaryLeafName": "底",
+        "primaryLeafName": "圆",
         "assetCount": 30,
         "textureUuidKeys": [
           "1361f2d0d"
@@ -127,14 +127,14 @@
     {
       "kind": "import",
       "originalRelativePath": "import/0397f6716.c20b4.json",
-      "semanticRelativePath": "__semantic__/_packs/tex/homeAssets/subscribe/subscribe__pack_6.json",
-      "materializedRelativePath": "import/_packs/tex/homeAssets/subscribe/subscribe__pack_6.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/homeUi/subscribe/subscribe__pack_6.json",
+      "materializedRelativePath": "import/_packs/tex/homeUi/subscribe/subscribe__pack_6.json",
       "strategy": "import-pack",
       "detail": {
         "commonPrefixSegments": [
           "tex",
-          "主页素材",
-          "订阅"
+          "homeUi",
+          "subscribe"
         ],
         "primaryLeafName": "订阅",
         "assetCount": 6,
@@ -179,7 +179,7 @@
       "detail": {
         "commonPrefixSegments": [
           "tex",
-          "道具"
+          "props"
         ],
         "primaryLeafName": "打乱",
         "assetCount": 16,
@@ -213,25 +213,26 @@
       "detail": {
         "commonPrefixSegments": [
           "tex",
-          "过关页面"
+          "levelCompletePage"
         ],
-        "primaryLeafName": "光圈",
+        "primaryLeafName": "还差",
         "assetCount": 12,
         "textureUuidKeys": [
           "152454659"
-        ]
+        ],
+        "resolvedFromExistingMaterializedFile": true
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/0624fb9f0.edd3e.json",
-      "semanticRelativePath": "__semantic__/_packs/tex/startUnlock/unlock__pack_10.json",
-      "materializedRelativePath": "import/_packs/tex/startUnlock/unlock__pack_10.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/startupUnlock/unlock__pack_10.json",
+      "materializedRelativePath": "import/_packs/tex/startupUnlock/unlock__pack_10.json",
       "strategy": "import-pack",
       "detail": {
         "commonPrefixSegments": [
           "tex",
-          "开局解锁"
+          "startupUnlock"
         ],
         "primaryLeafName": "解锁",
         "assetCount": 10,
@@ -249,10 +250,10 @@
       "detail": {
         "commonPrefixSegments": [
           "tex",
-          "过关页面",
-          "成功进度"
+          "levelCompletePage",
+          "successProgress"
         ],
-        "primaryLeafName": "剪影",
+        "primaryLeafName": "silhouette",
         "assetCount": 34,
         "textureUuidKeys": [
           "1a08c225f"
@@ -286,11 +287,12 @@
       "strategy": "import-pack",
       "detail": {
         "commonPrefixSegments": [],
-        "primaryLeafName": "喊人",
+        "primaryLeafName": "reportLabel",
         "assetCount": 15,
         "textureUuidKeys": [
           "17f9bf2d5"
-        ]
+        ],
+        "resolvedFromExistingMaterializedFile": true
       }
     },
     {
@@ -334,20 +336,20 @@
       "materializedRelativePath": "import/tex/levelCompletePage/successProgress/hundredDucksToKun/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/过关页面/成功进度/百鸭朝鲲/spriteFrame"
+        "canonicalPath": "tex/levelCompletePage/successProgress/hundredDucksToKun/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/09dd2415e.263f3.json",
-      "semanticRelativePath": "__semantic__/_packs/tex/homeAssets/addToDesktop/text__pack_8.json",
-      "materializedRelativePath": "import/_packs/tex/homeAssets/addToDesktop/text__pack_8.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/homeUi/addToDesktop/text__pack_8.json",
+      "materializedRelativePath": "import/_packs/tex/homeUi/addToDesktop/text__pack_8.json",
       "strategy": "import-pack",
       "detail": {
         "commonPrefixSegments": [
           "tex",
-          "主页素材",
-          "添加桌面"
+          "homeUi",
+          "addToDesktop"
         ],
         "primaryLeafName": "字",
         "assetCount": 8,
@@ -385,7 +387,7 @@
       "detail": {
         "commonPrefixSegments": [
           "tex",
-          "失败页面"
+          "failPage"
         ],
         "primaryLeafName": "底1",
         "assetCount": 14,
@@ -397,14 +399,14 @@
     {
       "kind": "import",
       "originalRelativePath": "import/0b11118e2.28a6b.json",
-      "semanticRelativePath": "__semantic__/_packs/tex/homeAssets/leaderboard/rankPrefix__pack_22.json",
-      "materializedRelativePath": "import/_packs/tex/homeAssets/leaderboard/rankPrefix__pack_22.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/homeUi/leaderboard/rankPrefix__pack_22.json",
+      "materializedRelativePath": "import/_packs/tex/homeUi/leaderboard/rankPrefix__pack_22.json",
       "strategy": "import-pack",
       "detail": {
         "commonPrefixSegments": [
           "tex",
-          "主页素材",
-          "排行榜"
+          "homeUi",
+          "leaderboard"
         ],
         "primaryLeafName": "第",
         "assetCount": 22,
@@ -422,26 +424,27 @@
       "detail": {
         "commonPrefixSegments": [
           "tex",
-          "复活"
+          "revive"
         ],
-        "primaryLeafName": "%",
+        "primaryLeafName": "复活",
         "assetCount": 16,
         "textureUuidKeys": [
           "1353ef82c"
-        ]
+        ],
+        "resolvedFromExistingMaterializedFile": true
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/0b966a368.6b48b.json",
-      "semanticRelativePath": "__semantic__/_packs/tex/homeAssets/shareReward/shareBadge__pack_14.json",
-      "materializedRelativePath": "import/_packs/tex/homeAssets/shareReward/shareBadge__pack_14.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/homeUi/shareRewards/shareBadge__pack_14.json",
+      "materializedRelativePath": "import/_packs/tex/homeUi/shareRewards/shareBadge__pack_14.json",
       "strategy": "import-pack",
       "detail": {
         "commonPrefixSegments": [
           "tex",
-          "主页素材",
-          "分享有奖"
+          "homeUi",
+          "shareRewards"
         ],
         "primaryLeafName": "分享标",
         "assetCount": 14,
@@ -453,14 +456,14 @@
     {
       "kind": "import",
       "originalRelativePath": "import/0ba0f9046.72a19.json",
-      "semanticRelativePath": "__semantic__/_packs/tex/homeAssets/sidebar/entryGift__pack_4.json",
-      "materializedRelativePath": "import/_packs/tex/homeAssets/sidebar/entryGift__pack_4.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/homeUi/sideBar/entryGift__pack_4.json",
+      "materializedRelativePath": "import/_packs/tex/homeUi/sideBar/entryGift__pack_4.json",
       "strategy": "import-pack",
       "detail": {
         "commonPrefixSegments": [
           "tex",
-          "主页素材",
-          "侧边栏"
+          "homeUi",
+          "sideBar"
         ],
         "primaryLeafName": "入口有礼",
         "assetCount": 4,
@@ -487,14 +490,14 @@
     {
       "kind": "import",
       "originalRelativePath": "import/0cf9b8bfe.8925c.json",
-      "semanticRelativePath": "__semantic__/_packs/tex/share__pack_22.json",
-      "materializedRelativePath": "import/_packs/tex/share__pack_22.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/刘备鸭__pack_22.json",
+      "materializedRelativePath": "import/_packs/tex/刘备鸭__pack_22.json",
       "strategy": "import-pack",
       "detail": {
         "commonPrefixSegments": [
           "tex"
         ],
-        "primaryLeafName": "分享",
+        "primaryLeafName": "刘备鸭",
         "assetCount": 22,
         "textureUuidKeys": [
           "1cf9b8bfe"
@@ -523,16 +526,16 @@
     {
       "kind": "import",
       "originalRelativePath": "import/0d8faeafa.f5f0a.json",
-      "semanticRelativePath": "__semantic__/_packs/tex/book/tex/bottom__pack_30.json",
-      "materializedRelativePath": "import/_packs/tex/book/tex/bottom__pack_30.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/book/ui/filterAll__pack_30.json",
+      "materializedRelativePath": "import/_packs/tex/book/ui/filterAll__pack_30.json",
       "strategy": "import-pack",
       "detail": {
         "commonPrefixSegments": [
           "tex",
           "book",
-          "tex"
+          "ui"
         ],
-        "primaryLeafName": "底",
+        "primaryLeafName": "filterAll",
         "assetCount": 30,
         "textureUuidKeys": [
           "1d8faeafa"
@@ -542,14 +545,14 @@
     {
       "kind": "import",
       "originalRelativePath": "import/0e53c456f.e2bcf.json",
-      "semanticRelativePath": "__semantic__/_packs/tex/close__pack_28.json",
-      "materializedRelativePath": "import/_packs/tex/close__pack_28.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/lock__pack_28.json",
+      "materializedRelativePath": "import/_packs/tex/lock__pack_28.json",
       "strategy": "import-pack",
       "detail": {
         "commonPrefixSegments": [
           "tex"
         ],
-        "primaryLeafName": "×",
+        "primaryLeafName": "lock",
         "assetCount": 28,
         "textureUuidKeys": [
           "1cfb4391b"
@@ -559,14 +562,14 @@
     {
       "kind": "import",
       "originalRelativePath": "import/0e7790d59.eb634.json",
-      "semanticRelativePath": "__semantic__/_packs/tex/banner__pack_20.json",
-      "materializedRelativePath": "import/_packs/tex/banner__pack_20.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/图标算数__pack_20.json",
+      "materializedRelativePath": "import/_packs/tex/图标算数__pack_20.json",
       "strategy": "import-pack",
       "detail": {
         "commonPrefixSegments": [
           "tex"
         ],
-        "primaryLeafName": "横幅",
+        "primaryLeafName": "图标算数",
         "assetCount": 20,
         "textureUuidKeys": [
           "1972c63c0"
@@ -610,14 +613,14 @@
     {
       "kind": "import",
       "originalRelativePath": "import/0f268f10f.2f7fe.json",
-      "semanticRelativePath": "__semantic__/_packs/tex/homeAssets/claimReward/glow__pack_12.json",
-      "materializedRelativePath": "import/_packs/tex/homeAssets/claimReward/glow__pack_12.json",
+      "semanticRelativePath": "__semantic__/_packs/tex/homeUi/claimRewards/glow__pack_12.json",
+      "materializedRelativePath": "import/_packs/tex/homeUi/claimRewards/glow__pack_12.json",
       "strategy": "import-pack",
       "detail": {
         "commonPrefixSegments": [
           "tex",
-          "主页素材",
-          "领取奖励"
+          "homeUi",
+          "claimRewards"
         ],
         "primaryLeafName": "光",
         "assetCount": 12,
@@ -673,13 +676,14 @@
       "detail": {
         "commonPrefixSegments": [
           "tex",
-          "自动ui"
+          "autoUi"
         ],
-        "primaryLeafName": "框",
+        "primaryLeafName": "进入",
         "assetCount": 12,
         "textureUuidKeys": [
           "1f9308ab4"
-        ]
+        ],
+        "resolvedFromExistingMaterializedFile": true
       }
     },
     {
@@ -708,7 +712,7 @@
       "detail": {
         "commonPrefixSegments": [
           "tex",
-          "失败页面"
+          "failPage"
         ],
         "primaryLeafName": "图2",
         "assetCount": 12,
@@ -719,14 +723,14 @@
     {
       "kind": "import",
       "originalRelativePath": "import/12300d1e9.dd907.json",
-      "semanticRelativePath": "__semantic__/tex/homeAssets/douyinFollow/follow__texture_6.json",
-      "materializedRelativePath": "import/tex/homeAssets/douyinFollow/follow__texture_6.json",
+      "semanticRelativePath": "__semantic__/tex/homeUi/followDouyin/follow__texture_6.json",
+      "materializedRelativePath": "import/tex/homeUi/followDouyin/follow__texture_6.json",
       "strategy": "texture-source-import",
       "detail": {
         "commonPrefixSegments": [
           "tex",
-          "主页素材",
-          "关注抖音"
+          "homeUi",
+          "followDouyin"
         ],
         "primaryLeafName": "关注",
         "assetCount": 6,
@@ -743,7 +747,7 @@
       "detail": {
         "commonPrefixSegments": [
           "tex",
-          "失败页面"
+          "failPage"
         ],
         "primaryLeafName": "底2",
         "assetCount": 4,
@@ -760,24 +764,25 @@
       "detail": {
         "commonPrefixSegments": [
           "tex",
-          "过关页面"
+          "levelCompletePage"
         ],
-        "primaryLeafName": "光圈",
+        "primaryLeafName": "还差",
         "assetCount": 12,
         "textureUuidKey": "152454659",
-        "packStem": "052454659"
+        "packStem": "052454659",
+        "resolvedFromExistingMaterializedFile": true
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/1624fb9f0.4e4e3.json",
-      "semanticRelativePath": "__semantic__/tex/startUnlock/unlock__texture_10.json",
-      "materializedRelativePath": "import/tex/startUnlock/unlock__texture_10.json",
+      "semanticRelativePath": "__semantic__/tex/startupUnlock/unlock__texture_10.json",
+      "materializedRelativePath": "import/tex/startupUnlock/unlock__texture_10.json",
       "strategy": "texture-source-import",
       "detail": {
         "commonPrefixSegments": [
           "tex",
-          "开局解锁"
+          "startupUnlock"
         ],
         "primaryLeafName": "解锁",
         "assetCount": 10,
@@ -823,14 +828,14 @@
     {
       "kind": "import",
       "originalRelativePath": "import/19dd2415e.01d6e.json",
-      "semanticRelativePath": "__semantic__/tex/homeAssets/addToDesktop/text__texture_8.json",
-      "materializedRelativePath": "import/tex/homeAssets/addToDesktop/text__texture_8.json",
+      "semanticRelativePath": "__semantic__/tex/homeUi/addToDesktop/text__texture_8.json",
+      "materializedRelativePath": "import/tex/homeUi/addToDesktop/text__texture_8.json",
       "strategy": "texture-source-import",
       "detail": {
         "commonPrefixSegments": [
           "tex",
-          "主页素材",
-          "添加桌面"
+          "homeUi",
+          "addToDesktop"
         ],
         "primaryLeafName": "字",
         "assetCount": 8,
@@ -847,7 +852,7 @@
       "detail": {
         "commonPrefixSegments": [
           "tex",
-          "失败页面"
+          "failPage"
         ],
         "primaryLeafName": "底1",
         "assetCount": 14,
@@ -858,14 +863,14 @@
     {
       "kind": "import",
       "originalRelativePath": "import/1b11118e2.bc2cc.json",
-      "semanticRelativePath": "__semantic__/tex/homeAssets/leaderboard/rankPrefix__texture_22.json",
-      "materializedRelativePath": "import/tex/homeAssets/leaderboard/rankPrefix__texture_22.json",
+      "semanticRelativePath": "__semantic__/tex/homeUi/leaderboard/rankPrefix__texture_22.json",
+      "materializedRelativePath": "import/tex/homeUi/leaderboard/rankPrefix__texture_22.json",
       "strategy": "texture-source-import",
       "detail": {
         "commonPrefixSegments": [
           "tex",
-          "主页素材",
-          "排行榜"
+          "homeUi",
+          "leaderboard"
         ],
         "primaryLeafName": "第",
         "assetCount": 22,
@@ -876,14 +881,14 @@
     {
       "kind": "import",
       "originalRelativePath": "import/1ba0f9046.48629.json",
-      "semanticRelativePath": "__semantic__/tex/homeAssets/sidebar/entryGift__texture_4.json",
-      "materializedRelativePath": "import/tex/homeAssets/sidebar/entryGift__texture_4.json",
+      "semanticRelativePath": "__semantic__/tex/homeUi/sideBar/entryGift__texture_4.json",
+      "materializedRelativePath": "import/tex/homeUi/sideBar/entryGift__texture_4.json",
       "strategy": "texture-source-import",
       "detail": {
         "commonPrefixSegments": [
           "tex",
-          "主页素材",
-          "侧边栏"
+          "homeUi",
+          "sideBar"
         ],
         "primaryLeafName": "入口有礼",
         "assetCount": 4,
@@ -912,16 +917,16 @@
     {
       "kind": "import",
       "originalRelativePath": "import/1d8faeafa.f1c80.json",
-      "semanticRelativePath": "__semantic__/tex/book/tex/bottom__texture_30.json",
-      "materializedRelativePath": "import/tex/book/tex/bottom__texture_30.json",
+      "semanticRelativePath": "__semantic__/tex/book/ui/filterAll__texture_30.json",
+      "materializedRelativePath": "import/tex/book/ui/filterAll__texture_30.json",
       "strategy": "texture-source-import",
       "detail": {
         "commonPrefixSegments": [
           "tex",
           "book",
-          "tex"
+          "ui"
         ],
-        "primaryLeafName": "底",
+        "primaryLeafName": "filterAll",
         "assetCount": 30,
         "textureUuidKey": "1d8faeafa",
         "packStem": "0d8faeafa"
@@ -948,14 +953,14 @@
     {
       "kind": "import",
       "originalRelativePath": "import/1f268f10f.41d17.json",
-      "semanticRelativePath": "__semantic__/tex/homeAssets/claimReward/glow__texture_12.json",
-      "materializedRelativePath": "import/tex/homeAssets/claimReward/glow__texture_12.json",
+      "semanticRelativePath": "__semantic__/tex/homeUi/claimRewards/glow__texture_12.json",
+      "materializedRelativePath": "import/tex/homeUi/claimRewards/glow__texture_12.json",
       "strategy": "texture-source-import",
       "detail": {
         "commonPrefixSegments": [
           "tex",
-          "主页素材",
-          "领取奖励"
+          "homeUi",
+          "claimRewards"
         ],
         "primaryLeafName": "光",
         "assetCount": 12,
@@ -1008,12 +1013,13 @@
       "detail": {
         "commonPrefixSegments": [
           "tex",
-          "自动ui"
+          "autoUi"
         ],
-        "primaryLeafName": "框",
+        "primaryLeafName": "进入",
         "assetCount": 12,
         "textureUuidKey": "1f9308ab4",
-        "packStem": "0f9308ab4"
+        "packStem": "0f9308ab4",
+        "resolvedFromExistingMaterializedFile": true
       }
     },
     {
@@ -1209,11 +1215,11 @@
     {
       "kind": "import",
       "originalRelativePath": "import/955c4145-c371-4d50-865b-4fd83f923889.a2533.json",
-      "semanticRelativePath": "__semantic__/fullAnimation/Done_for_eat.json",
-      "materializedRelativePath": "import/fullAnimation/Done_for_eat.json",
+      "semanticRelativePath": "__semantic__/fullAnimation/eatFull.json",
+      "materializedRelativePath": "import/fullAnimation/eatFull.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "吃饱动画/Done for eat"
+        "canonicalPath": "吃饱动画/eatFull"
       }
     },
     {
@@ -1354,7 +1360,7 @@
       "detail": {
         "commonPrefixSegments": [
           "tex",
-          "失败页面"
+          "failPage"
         ],
         "primaryLeafName": "图2",
         "assetCount": 12,
@@ -1365,14 +1371,14 @@
     {
       "kind": "native",
       "originalRelativePath": "native/12300d1e9.f211e.png",
-      "semanticRelativePath": "__semantic__/tex/homeAssets/douyinFollow/follow__texture_6.png",
-      "materializedRelativePath": "native/tex/homeAssets/douyinFollow/follow__texture_6.png",
+      "semanticRelativePath": "__semantic__/tex/homeUi/followDouyin/follow__texture_6.png",
+      "materializedRelativePath": "native/tex/homeUi/followDouyin/follow__texture_6.png",
       "strategy": "texture-source-from-pack",
       "detail": {
         "commonPrefixSegments": [
           "tex",
-          "主页素材",
-          "关注抖音"
+          "homeUi",
+          "followDouyin"
         ],
         "primaryLeafName": "关注",
         "assetCount": 6,
@@ -1389,7 +1395,7 @@
       "detail": {
         "commonPrefixSegments": [
           "tex",
-          "失败页面"
+          "failPage"
         ],
         "primaryLeafName": "底2",
         "assetCount": 4,
@@ -1406,24 +1412,25 @@
       "detail": {
         "commonPrefixSegments": [
           "tex",
-          "过关页面"
+          "levelCompletePage"
         ],
-        "primaryLeafName": "光圈",
+        "primaryLeafName": "还差",
         "assetCount": 12,
         "textureUuidKey": "152454659",
-        "packStem": "052454659"
+        "packStem": "052454659",
+        "resolvedFromExistingMaterializedFile": true
       }
     },
     {
       "kind": "native",
       "originalRelativePath": "native/1624fb9f0.ec36f.png",
-      "semanticRelativePath": "__semantic__/tex/startUnlock/unlock__texture_10.png",
-      "materializedRelativePath": "native/tex/startUnlock/unlock__texture_10.png",
+      "semanticRelativePath": "__semantic__/tex/startupUnlock/unlock__texture_10.png",
+      "materializedRelativePath": "native/tex/startupUnlock/unlock__texture_10.png",
       "strategy": "texture-source-from-pack",
       "detail": {
         "commonPrefixSegments": [
           "tex",
-          "开局解锁"
+          "startupUnlock"
         ],
         "primaryLeafName": "解锁",
         "assetCount": 10,
@@ -1469,14 +1476,14 @@
     {
       "kind": "native",
       "originalRelativePath": "native/19dd2415e.90b60.png",
-      "semanticRelativePath": "__semantic__/tex/homeAssets/addToDesktop/text__texture_8.png",
-      "materializedRelativePath": "native/tex/homeAssets/addToDesktop/text__texture_8.png",
+      "semanticRelativePath": "__semantic__/tex/homeUi/addToDesktop/text__texture_8.png",
+      "materializedRelativePath": "native/tex/homeUi/addToDesktop/text__texture_8.png",
       "strategy": "texture-source-from-pack",
       "detail": {
         "commonPrefixSegments": [
           "tex",
-          "主页素材",
-          "添加桌面"
+          "homeUi",
+          "addToDesktop"
         ],
         "primaryLeafName": "字",
         "assetCount": 8,
@@ -1493,7 +1500,7 @@
       "detail": {
         "commonPrefixSegments": [
           "tex",
-          "失败页面"
+          "failPage"
         ],
         "primaryLeafName": "底1",
         "assetCount": 14,
@@ -1504,14 +1511,14 @@
     {
       "kind": "native",
       "originalRelativePath": "native/1b11118e2.f3049.png",
-      "semanticRelativePath": "__semantic__/tex/homeAssets/leaderboard/rankPrefix__texture_22.png",
-      "materializedRelativePath": "native/tex/homeAssets/leaderboard/rankPrefix__texture_22.png",
+      "semanticRelativePath": "__semantic__/tex/homeUi/leaderboard/rankPrefix__texture_22.png",
+      "materializedRelativePath": "native/tex/homeUi/leaderboard/rankPrefix__texture_22.png",
       "strategy": "texture-source-from-pack",
       "detail": {
         "commonPrefixSegments": [
           "tex",
-          "主页素材",
-          "排行榜"
+          "homeUi",
+          "leaderboard"
         ],
         "primaryLeafName": "第",
         "assetCount": 22,
@@ -1522,14 +1529,14 @@
     {
       "kind": "native",
       "originalRelativePath": "native/1ba0f9046.e01a7.png",
-      "semanticRelativePath": "__semantic__/tex/homeAssets/sidebar/entryGift__texture_4.png",
-      "materializedRelativePath": "native/tex/homeAssets/sidebar/entryGift__texture_4.png",
+      "semanticRelativePath": "__semantic__/tex/homeUi/sideBar/entryGift__texture_4.png",
+      "materializedRelativePath": "native/tex/homeUi/sideBar/entryGift__texture_4.png",
       "strategy": "texture-source-from-pack",
       "detail": {
         "commonPrefixSegments": [
           "tex",
-          "主页素材",
-          "侧边栏"
+          "homeUi",
+          "sideBar"
         ],
         "primaryLeafName": "入口有礼",
         "assetCount": 4,
@@ -1558,16 +1565,16 @@
     {
       "kind": "native",
       "originalRelativePath": "native/1d8faeafa.4ce55.png",
-      "semanticRelativePath": "__semantic__/tex/book/tex/bottom__texture_30.png",
-      "materializedRelativePath": "native/tex/book/tex/bottom__texture_30.png",
+      "semanticRelativePath": "__semantic__/tex/book/ui/filterAll__texture_30.png",
+      "materializedRelativePath": "native/tex/book/ui/filterAll__texture_30.png",
       "strategy": "texture-source-from-pack",
       "detail": {
         "commonPrefixSegments": [
           "tex",
           "book",
-          "tex"
+          "ui"
         ],
-        "primaryLeafName": "底",
+        "primaryLeafName": "filterAll",
         "assetCount": 30,
         "textureUuidKey": "1d8faeafa",
         "packStem": "0d8faeafa"
@@ -1594,14 +1601,14 @@
     {
       "kind": "native",
       "originalRelativePath": "native/1f268f10f.1b510.png",
-      "semanticRelativePath": "__semantic__/tex/homeAssets/claimReward/glow__texture_12.png",
-      "materializedRelativePath": "native/tex/homeAssets/claimReward/glow__texture_12.png",
+      "semanticRelativePath": "__semantic__/tex/homeUi/claimRewards/glow__texture_12.png",
+      "materializedRelativePath": "native/tex/homeUi/claimRewards/glow__texture_12.png",
       "strategy": "texture-source-from-pack",
       "detail": {
         "commonPrefixSegments": [
           "tex",
-          "主页素材",
-          "领取奖励"
+          "homeUi",
+          "claimRewards"
         ],
         "primaryLeafName": "光",
         "assetCount": 12,
@@ -1654,12 +1661,13 @@
       "detail": {
         "commonPrefixSegments": [
           "tex",
-          "自动ui"
+          "autoUi"
         ],
-        "primaryLeafName": "框",
+        "primaryLeafName": "进入",
         "assetCount": 12,
         "textureUuidKey": "1f9308ab4",
-        "packStem": "0f9308ab4"
+        "packStem": "0f9308ab4",
+        "resolvedFromExistingMaterializedFile": true
       }
     },
     {
@@ -1675,11 +1683,11 @@
     {
       "kind": "native",
       "originalRelativePath": "native/955c4145-c371-4d50-865b-4fd83f923889.8d3b5.png",
-      "semanticRelativePath": "__semantic__/fullAnimation/Done_for_eat.png",
-      "materializedRelativePath": "native/fullAnimation/Done_for_eat.png",
+      "semanticRelativePath": "__semantic__/fullAnimation/eatFull.png",
+      "materializedRelativePath": "native/fullAnimation/eatFull.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "吃饱动画/Done for eat"
+        "canonicalPath": "吃饱动画/eatFull"
       }
     },
     {
@@ -1703,6 +1711,16 @@
       }
     }
   ],
-  "unresolvedImports": [],
-  "unresolvedNative": []
+  "unresolvedImports": [
+    {
+      "originalRelativePath": "import/955c4145-c371-4d50-865b-4fd83f923889.a2533.json",
+      "stem": "955c4145-c371-4d50-865b-4fd83f923889"
+    }
+  ],
+  "unresolvedNative": [
+    {
+      "originalRelativePath": "native/955c4145-c371-4d50-865b-4fd83f923889.8d3b5.png",
+      "stem": "955c4145-c371-4d50-865b-4fd83f923889"
+    }
+  ]
 }

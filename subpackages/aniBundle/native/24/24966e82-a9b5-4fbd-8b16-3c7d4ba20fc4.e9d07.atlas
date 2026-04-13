@@ -1,0 +1,89 @@
+
+skeleton.png
+size: 1871,1945
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+人
+  rotate: false
+  xy: 943, 2
+  size: 921, 1185
+  orig: 1080, 1306
+  offset: 19, 52
+  index: -1
+光圈
+  rotate: false
+  xy: 240, 1415
+  size: 427, 427
+  orig: 427, 427
+  offset: 0, 0
+  index: -1
+小三
+  rotate: true
+  xy: 2, 614
+  size: 573, 939
+  orig: 631, 939
+  offset: 32, 0
+  index: -1
+居然背着我干这种事
+  rotate: false
+  xy: 73, 1844
+  size: 779, 99
+  orig: 779, 99
+  offset: 0, 0
+  index: -1
+心
+  rotate: false
+  xy: 1420, 1777
+  size: 178, 166
+  orig: 178, 166
+  offset: 0, 0
+  index: -1
+怒火
+  rotate: true
+  xy: 2, 1875
+  size: 68, 69
+  orig: 68, 69
+  offset: 0, 0
+  index: -1
+手
+  rotate: false
+  xy: 1600, 1731
+  size: 234, 212
+  orig: 234, 212
+  offset: 0, 0
+  index: -1
+破门而入
+  rotate: false
+  xy: 854, 1781
+  size: 564, 162
+  orig: 564, 162
+  offset: 0, 0
+  index: -1
+背景
+  rotate: true
+  xy: 669, 1189
+  size: 540, 1200
+  orig: 540, 1200
+  offset: 0, 0
+  index: -1
+表情
+  rotate: false
+  xy: 2, 1617
+  size: 236, 225
+  orig: 236, 225
+  offset: 0, 0
+  index: -1
+
+skeleton2.png
+size: 807,1192
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+窗户
+  rotate: false
+  xy: 2, 2
+  size: 803, 1188
+  orig: 803, 1188
+  offset: 0, 0
+  index: -1

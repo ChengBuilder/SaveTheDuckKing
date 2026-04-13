@@ -1,6 +1,6 @@
 {
   "bundleName": "DuckBundle",
-  "generatedAt": "2026-04-09T05:24:44.382Z",
+  "generatedAt": "2026-04-13T05:26:37.899Z",
   "importAliases": [
     {
       "kind": "import",
@@ -218,11 +218,11 @@
     {
       "kind": "import",
       "originalRelativePath": "import/0878eef6-bcc6-4dc0-8eb8-1f2b2bad4935.a2533.json",
-      "semanticRelativePath": "__semantic__/tex/difficultySpike/topShadow/spriteFrame.json",
-      "materializedRelativePath": "import/tex/difficultySpike/topShadow/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/tex/difficultySurge/topShadow/spriteFrame.json",
+      "materializedRelativePath": "import/tex/difficultySurge/topShadow/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/难度飙升/上层阴影/spriteFrame"
+        "canonicalPath": "tex/difficultySurge/topShadow/spriteFrame"
       }
     },
     {
@@ -568,9 +568,10 @@
         "commonPrefixSegments": [
           "tex"
         ],
-        "primaryLeafName": "1",
+        "primaryLeafName": "cla",
         "assetCount": 333,
-        "textureUuidKeys": []
+        "textureUuidKeys": [],
+        "resolvedFromExistingMaterializedFile": true
       }
     },
     {
@@ -809,61 +810,61 @@
     {
       "kind": "import",
       "originalRelativePath": "import/1975f6f5-d896-42c6-98ee-6fcf7251a558.a2533.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/a/5/spriteFrame.json",
-      "materializedRelativePath": "import/tex/fragment/a/5/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantA/shape5/spriteFrame.json",
+      "materializedRelativePath": "import/tex/fragment/variantA/shape5/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/a/5/spriteFrame"
+        "canonicalPath": "tex/fragment/variantA/shape5/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/1975f6f5-d896-42c6-98ee-6fcf7251a558@f9941.6b06c.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/a/5/spriteFrame__2.json",
-      "materializedRelativePath": "import/tex/fragment/a/5/spriteFrame__2.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantA/shape5/spriteFrame__2.json",
+      "materializedRelativePath": "import/tex/fragment/variantA/shape5/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/a/5/spriteFrame"
+        "canonicalPath": "tex/fragment/variantA/shape5/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/1ad1dd95-461f-45fa-9c31-0e0331fb31c8.a2533.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/c/1/spriteFrame.json",
-      "materializedRelativePath": "import/tex/fragment/c/1/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantC/shape1/spriteFrame.json",
+      "materializedRelativePath": "import/tex/fragment/variantC/shape1/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/c/1/spriteFrame"
+        "canonicalPath": "tex/fragment/variantC/shape1/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/1ad1dd95-461f-45fa-9c31-0e0331fb31c8@f9941.c597b.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/c/1/spriteFrame__2.json",
-      "materializedRelativePath": "import/tex/fragment/c/1/spriteFrame__2.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantC/shape1/spriteFrame__2.json",
+      "materializedRelativePath": "import/tex/fragment/variantC/shape1/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/c/1/spriteFrame"
+        "canonicalPath": "tex/fragment/variantC/shape1/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/1beeca5c-bb15-46b6-bb0c-cb521a62f8c2.a2533.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/d/1/spriteFrame.json",
-      "materializedRelativePath": "import/tex/fragment/d/1/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantD/shape1/spriteFrame.json",
+      "materializedRelativePath": "import/tex/fragment/variantD/shape1/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/d/1/spriteFrame"
+        "canonicalPath": "tex/fragment/variantD/shape1/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/1beeca5c-bb15-46b6-bb0c-cb521a62f8c2@f9941.d66e4.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/d/1/spriteFrame__2.json",
-      "materializedRelativePath": "import/tex/fragment/d/1/spriteFrame__2.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantD/shape1/spriteFrame__2.json",
+      "materializedRelativePath": "import/tex/fragment/variantD/shape1/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/d/1/spriteFrame"
+        "canonicalPath": "tex/fragment/variantD/shape1/spriteFrame"
       }
     },
     {
@@ -889,21 +890,21 @@
     {
       "kind": "import",
       "originalRelativePath": "import/1c25c68f-4dd8-461b-9bde-32e12eaec393.a2533.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/c/2/spriteFrame.json",
-      "materializedRelativePath": "import/tex/fragment/c/2/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantC/shape2/spriteFrame.json",
+      "materializedRelativePath": "import/tex/fragment/variantC/shape2/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/c/2/spriteFrame"
+        "canonicalPath": "tex/fragment/variantC/shape2/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/1c25c68f-4dd8-461b-9bde-32e12eaec393@f9941.03008.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/c/2/spriteFrame__2.json",
-      "materializedRelativePath": "import/tex/fragment/c/2/spriteFrame__2.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantC/shape2/spriteFrame__2.json",
+      "materializedRelativePath": "import/tex/fragment/variantC/shape2/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/c/2/spriteFrame"
+        "canonicalPath": "tex/fragment/variantC/shape2/spriteFrame"
       }
     },
     {
@@ -959,11 +960,11 @@
     {
       "kind": "import",
       "originalRelativePath": "import/1dab75dc-d37d-46cc-a241-b7e8ad0f2569.a2533.json",
-      "semanticRelativePath": "__semantic__/tex/difficultySpike/spike2/spriteFrame.json",
-      "materializedRelativePath": "import/tex/difficultySpike/spike2/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/tex/difficultySurge/surge2/spriteFrame.json",
+      "materializedRelativePath": "import/tex/difficultySurge/surge2/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/难度飙升/飙升2/spriteFrame"
+        "canonicalPath": "tex/difficultySurge/surge2/spriteFrame"
       }
     },
     {
@@ -993,7 +994,7 @@
       "materializedRelativePath": "import/tex/star/star/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/star/星星/spriteFrame"
+        "canonicalPath": "tex/star/star/spriteFrame"
       }
     },
     {
@@ -1089,21 +1090,21 @@
     {
       "kind": "import",
       "originalRelativePath": "import/219163ff-3a7b-48c4-91ed-3e9182fe645b.a2533.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/e/2/spriteFrame.json",
-      "materializedRelativePath": "import/tex/fragment/e/2/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantE/shape2/spriteFrame.json",
+      "materializedRelativePath": "import/tex/fragment/variantE/shape2/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/e/2/spriteFrame"
+        "canonicalPath": "tex/fragment/variantE/shape2/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/219163ff-3a7b-48c4-91ed-3e9182fe645b@f9941.43690.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/e/2/spriteFrame__2.json",
-      "materializedRelativePath": "import/tex/fragment/e/2/spriteFrame__2.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantE/shape2/spriteFrame__2.json",
+      "materializedRelativePath": "import/tex/fragment/variantE/shape2/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/e/2/spriteFrame"
+        "canonicalPath": "tex/fragment/variantE/shape2/spriteFrame"
       }
     },
     {
@@ -1249,11 +1250,11 @@
     {
       "kind": "import",
       "originalRelativePath": "import/2b4104af-6132-4aee-a152-64e035e85c86.a2533.json",
-      "semanticRelativePath": "__semantic__/tex/difficultySpike/spike/spriteFrame.json",
-      "materializedRelativePath": "import/tex/difficultySpike/spike/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/tex/difficultySurge/surge/spriteFrame.json",
+      "materializedRelativePath": "import/tex/difficultySurge/surge/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/难度飙升/飙升/spriteFrame"
+        "canonicalPath": "tex/difficultySurge/surge/spriteFrame"
       }
     },
     {
@@ -1779,21 +1780,21 @@
     {
       "kind": "import",
       "originalRelativePath": "import/4a8fc8ee-3991-4f07-99f0-6f5907cf571f.c16a8.json",
-      "semanticRelativePath": "__semantic__/tex/background/spriteFrame.json",
-      "materializedRelativePath": "import/tex/background/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/tex/backgroundPanel/spriteFrame.json",
+      "materializedRelativePath": "import/tex/backgroundPanel/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/背景/spriteFrame"
+        "canonicalPath": "tex/backgroundPanel/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/4a8fc8ee-3991-4f07-99f0-6f5907cf571f@f9941.5671c.json",
-      "semanticRelativePath": "__semantic__/tex/background/spriteFrame__2.json",
-      "materializedRelativePath": "import/tex/background/spriteFrame__2.json",
+      "semanticRelativePath": "__semantic__/tex/backgroundPanel/spriteFrame__2.json",
+      "materializedRelativePath": "import/tex/backgroundPanel/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/背景/spriteFrame"
+        "canonicalPath": "tex/backgroundPanel/spriteFrame"
       }
     },
     {
@@ -2029,11 +2030,11 @@
     {
       "kind": "import",
       "originalRelativePath": "import/54dbf1c1-0051-4cf4-95f7-14dbad59da29.a2533.json",
-      "semanticRelativePath": "__semantic__/tex/cannotClear/spriteFrame.json",
-      "materializedRelativePath": "import/tex/cannotClear/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/tex/cannotEliminate/spriteFrame.json",
+      "materializedRelativePath": "import/tex/cannotEliminate/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/无法消除/spriteFrame"
+        "canonicalPath": "tex/cannotEliminate/spriteFrame"
       }
     },
     {
@@ -2279,41 +2280,41 @@
     {
       "kind": "import",
       "originalRelativePath": "import/5ec61fb8-e2d3-4a9f-bc4c-d5cf784bac6c.a2533.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/d/3/spriteFrame.json",
-      "materializedRelativePath": "import/tex/fragment/d/3/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantD/shape3/spriteFrame.json",
+      "materializedRelativePath": "import/tex/fragment/variantD/shape3/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/d/3/spriteFrame"
+        "canonicalPath": "tex/fragment/variantD/shape3/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/5ec61fb8-e2d3-4a9f-bc4c-d5cf784bac6c@f9941.2f142.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/d/3/spriteFrame__2.json",
-      "materializedRelativePath": "import/tex/fragment/d/3/spriteFrame__2.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantD/shape3/spriteFrame__2.json",
+      "materializedRelativePath": "import/tex/fragment/variantD/shape3/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/d/3/spriteFrame"
+        "canonicalPath": "tex/fragment/variantD/shape3/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/61f458a5-f4dc-4e89-b51d-d9be4457e4b2.a2533.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/d/2/spriteFrame.json",
-      "materializedRelativePath": "import/tex/fragment/d/2/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantD/shape2/spriteFrame.json",
+      "materializedRelativePath": "import/tex/fragment/variantD/shape2/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/d/2/spriteFrame"
+        "canonicalPath": "tex/fragment/variantD/shape2/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/61f458a5-f4dc-4e89-b51d-d9be4457e4b2@f9941.dff99.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/d/2/spriteFrame__2.json",
-      "materializedRelativePath": "import/tex/fragment/d/2/spriteFrame__2.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantD/shape2/spriteFrame__2.json",
+      "materializedRelativePath": "import/tex/fragment/variantD/shape2/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/d/2/spriteFrame"
+        "canonicalPath": "tex/fragment/variantD/shape2/spriteFrame"
       }
     },
     {
@@ -2503,7 +2504,7 @@
       "materializedRelativePath": "import/tex/slotFull/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/槽位已满/spriteFrame"
+        "canonicalPath": "tex/slotFull/spriteFrame"
       }
     },
     {
@@ -2749,21 +2750,21 @@
     {
       "kind": "import",
       "originalRelativePath": "import/6ee82493-c14b-4420-8bdf-f5f76d58b5a3.a2533.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/d/4/spriteFrame.json",
-      "materializedRelativePath": "import/tex/fragment/d/4/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantD/shape4/spriteFrame.json",
+      "materializedRelativePath": "import/tex/fragment/variantD/shape4/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/d/4/spriteFrame"
+        "canonicalPath": "tex/fragment/variantD/shape4/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/6ee82493-c14b-4420-8bdf-f5f76d58b5a3@f9941.ac30f.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/d/4/spriteFrame__2.json",
-      "materializedRelativePath": "import/tex/fragment/d/4/spriteFrame__2.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantD/shape4/spriteFrame__2.json",
+      "materializedRelativePath": "import/tex/fragment/variantD/shape4/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/d/4/spriteFrame"
+        "canonicalPath": "tex/fragment/variantD/shape4/spriteFrame"
       }
     },
     {
@@ -2809,21 +2810,21 @@
     {
       "kind": "import",
       "originalRelativePath": "import/70a22166-8718-4c69-b384-b9795c29615d.a2533.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/e/5/spriteFrame.json",
-      "materializedRelativePath": "import/tex/fragment/e/5/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantE/shape5/spriteFrame.json",
+      "materializedRelativePath": "import/tex/fragment/variantE/shape5/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/e/5/spriteFrame"
+        "canonicalPath": "tex/fragment/variantE/shape5/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/70a22166-8718-4c69-b384-b9795c29615d@f9941.393c5.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/e/5/spriteFrame__2.json",
-      "materializedRelativePath": "import/tex/fragment/e/5/spriteFrame__2.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantE/shape5/spriteFrame__2.json",
+      "materializedRelativePath": "import/tex/fragment/variantE/shape5/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/e/5/spriteFrame"
+        "canonicalPath": "tex/fragment/variantE/shape5/spriteFrame"
       }
     },
     {
@@ -2849,21 +2850,21 @@
     {
       "kind": "import",
       "originalRelativePath": "import/715bc81e-b843-422e-9ac5-e798c48ff5d2.a2533.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/d/6/spriteFrame.json",
-      "materializedRelativePath": "import/tex/fragment/d/6/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantD/shape6/spriteFrame.json",
+      "materializedRelativePath": "import/tex/fragment/variantD/shape6/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/d/6/spriteFrame"
+        "canonicalPath": "tex/fragment/variantD/shape6/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/715bc81e-b843-422e-9ac5-e798c48ff5d2@f9941.355f2.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/d/6/spriteFrame__2.json",
-      "materializedRelativePath": "import/tex/fragment/d/6/spriteFrame__2.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantD/shape6/spriteFrame__2.json",
+      "materializedRelativePath": "import/tex/fragment/variantD/shape6/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/d/6/spriteFrame"
+        "canonicalPath": "tex/fragment/variantD/shape6/spriteFrame"
       }
     },
     {
@@ -3009,21 +3010,21 @@
     {
       "kind": "import",
       "originalRelativePath": "import/73aa2581-75bf-46cd-88f9-8549832b6492.a2533.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/a/2/spriteFrame.json",
-      "materializedRelativePath": "import/tex/fragment/a/2/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantA/shape2/spriteFrame.json",
+      "materializedRelativePath": "import/tex/fragment/variantA/shape2/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/a/2/spriteFrame"
+        "canonicalPath": "tex/fragment/variantA/shape2/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/73aa2581-75bf-46cd-88f9-8549832b6492@f9941.5c470.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/a/2/spriteFrame__2.json",
-      "materializedRelativePath": "import/tex/fragment/a/2/spriteFrame__2.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantA/shape2/spriteFrame__2.json",
+      "materializedRelativePath": "import/tex/fragment/variantA/shape2/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/a/2/spriteFrame"
+        "canonicalPath": "tex/fragment/variantA/shape2/spriteFrame"
       }
     },
     {
@@ -3139,21 +3140,21 @@
     {
       "kind": "import",
       "originalRelativePath": "import/7793aded-2772-462c-b1ea-e3a1d6530113.a2533.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/a/3/spriteFrame.json",
-      "materializedRelativePath": "import/tex/fragment/a/3/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantA/shape3/spriteFrame.json",
+      "materializedRelativePath": "import/tex/fragment/variantA/shape3/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/a/3/spriteFrame"
+        "canonicalPath": "tex/fragment/variantA/shape3/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/7793aded-2772-462c-b1ea-e3a1d6530113@f9941.ce02d.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/a/3/spriteFrame__2.json",
-      "materializedRelativePath": "import/tex/fragment/a/3/spriteFrame__2.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantA/shape3/spriteFrame__2.json",
+      "materializedRelativePath": "import/tex/fragment/variantA/shape3/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/a/3/spriteFrame"
+        "canonicalPath": "tex/fragment/variantA/shape3/spriteFrame"
       }
     },
     {
@@ -3279,21 +3280,21 @@
     {
       "kind": "import",
       "originalRelativePath": "import/7be1c3f2-580e-42d4-a96c-f6924aa72d90.a2533.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/c/3/spriteFrame.json",
-      "materializedRelativePath": "import/tex/fragment/c/3/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantC/shape3/spriteFrame.json",
+      "materializedRelativePath": "import/tex/fragment/variantC/shape3/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/c/3/spriteFrame"
+        "canonicalPath": "tex/fragment/variantC/shape3/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/7be1c3f2-580e-42d4-a96c-f6924aa72d90@f9941.a5e13.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/c/3/spriteFrame__2.json",
-      "materializedRelativePath": "import/tex/fragment/c/3/spriteFrame__2.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantC/shape3/spriteFrame__2.json",
+      "materializedRelativePath": "import/tex/fragment/variantC/shape3/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/c/3/spriteFrame"
+        "canonicalPath": "tex/fragment/variantC/shape3/spriteFrame"
       }
     },
     {
@@ -3379,11 +3380,11 @@
     {
       "kind": "import",
       "originalRelativePath": "import/7ef00b8b-d191-4f16-bd98-72cf086062ce.a2533.json",
-      "semanticRelativePath": "__semantic__/tex/difficultySpike/completedLevelCount/spriteFrame.json",
-      "materializedRelativePath": "import/tex/difficultySpike/completedLevelCount/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/tex/difficultySurge/clearCount/spriteFrame.json",
+      "materializedRelativePath": "import/tex/difficultySurge/clearCount/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/难度飙升/通关数量/spriteFrame"
+        "canonicalPath": "tex/difficultySurge/clearCount/spriteFrame"
       }
     },
     {
@@ -3399,21 +3400,21 @@
     {
       "kind": "import",
       "originalRelativePath": "import/7f4a5ac5-37ce-4286-9a50-c886ac93eafa.a2533.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/d/5/spriteFrame.json",
-      "materializedRelativePath": "import/tex/fragment/d/5/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantD/shape5/spriteFrame.json",
+      "materializedRelativePath": "import/tex/fragment/variantD/shape5/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/d/5/spriteFrame"
+        "canonicalPath": "tex/fragment/variantD/shape5/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/7f4a5ac5-37ce-4286-9a50-c886ac93eafa@f9941.7fe47.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/d/5/spriteFrame__2.json",
-      "materializedRelativePath": "import/tex/fragment/d/5/spriteFrame__2.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantD/shape5/spriteFrame__2.json",
+      "materializedRelativePath": "import/tex/fragment/variantD/shape5/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/d/5/spriteFrame"
+        "canonicalPath": "tex/fragment/variantD/shape5/spriteFrame"
       }
     },
     {
@@ -3549,11 +3550,11 @@
     {
       "kind": "import",
       "originalRelativePath": "import/828174d4-3e01-4fae-9b63-00732bcd0e29.a2533.json",
-      "semanticRelativePath": "__semantic__/tex/nailHalo/spriteFrame.json",
-      "materializedRelativePath": "import/tex/nailHalo/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/tex/nailGlow/spriteFrame.json",
+      "materializedRelativePath": "import/tex/nailGlow/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/钉子光圈/spriteFrame"
+        "canonicalPath": "tex/nailGlow/spriteFrame"
       }
     },
     {
@@ -4339,21 +4340,21 @@
     {
       "kind": "import",
       "originalRelativePath": "import/a161cb4d-0086-4402-bfde-aaed28512ed6.a2533.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/e/1/spriteFrame.json",
-      "materializedRelativePath": "import/tex/fragment/e/1/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantE/shape1/spriteFrame.json",
+      "materializedRelativePath": "import/tex/fragment/variantE/shape1/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/e/1/spriteFrame"
+        "canonicalPath": "tex/fragment/variantE/shape1/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/a161cb4d-0086-4402-bfde-aaed28512ed6@f9941.c1f09.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/e/1/spriteFrame__2.json",
-      "materializedRelativePath": "import/tex/fragment/e/1/spriteFrame__2.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantE/shape1/spriteFrame__2.json",
+      "materializedRelativePath": "import/tex/fragment/variantE/shape1/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/e/1/spriteFrame"
+        "canonicalPath": "tex/fragment/variantE/shape1/spriteFrame"
       }
     },
     {
@@ -4709,11 +4710,11 @@
     {
       "kind": "import",
       "originalRelativePath": "import/afade395-2adf-4579-99b3-79794fd280f2.a2533.json",
-      "semanticRelativePath": "__semantic__/tex/difficultySpike/bottom/spriteFrame.json",
-      "materializedRelativePath": "import/tex/difficultySpike/bottom/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/tex/difficultySurge/base/spriteFrame.json",
+      "materializedRelativePath": "import/tex/difficultySurge/base/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/难度飙升/底/spriteFrame"
+        "canonicalPath": "tex/difficultySurge/base/spriteFrame"
       }
     },
     {
@@ -4859,21 +4860,21 @@
     {
       "kind": "import",
       "originalRelativePath": "import/b4dad589-4c73-4c8f-9cbb-844c44c3be68.a2533.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/b/3/spriteFrame.json",
-      "materializedRelativePath": "import/tex/fragment/b/3/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantB/shape3/spriteFrame.json",
+      "materializedRelativePath": "import/tex/fragment/variantB/shape3/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/b/3/spriteFrame"
+        "canonicalPath": "tex/fragment/variantB/shape3/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/b4dad589-4c73-4c8f-9cbb-844c44c3be68@f9941.d8dcf.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/b/3/spriteFrame__2.json",
-      "materializedRelativePath": "import/tex/fragment/b/3/spriteFrame__2.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantB/shape3/spriteFrame__2.json",
+      "materializedRelativePath": "import/tex/fragment/variantB/shape3/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/b/3/spriteFrame"
+        "canonicalPath": "tex/fragment/variantB/shape3/spriteFrame"
       }
     },
     {
@@ -5049,21 +5050,21 @@
     {
       "kind": "import",
       "originalRelativePath": "import/b99d9b5a-2bfc-4293-b3ba-14180532fe67.a2533.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/c/5/spriteFrame.json",
-      "materializedRelativePath": "import/tex/fragment/c/5/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantC/shape5/spriteFrame.json",
+      "materializedRelativePath": "import/tex/fragment/variantC/shape5/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/c/5/spriteFrame"
+        "canonicalPath": "tex/fragment/variantC/shape5/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/b99d9b5a-2bfc-4293-b3ba-14180532fe67@f9941.29635.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/c/5/spriteFrame__2.json",
-      "materializedRelativePath": "import/tex/fragment/c/5/spriteFrame__2.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantC/shape5/spriteFrame__2.json",
+      "materializedRelativePath": "import/tex/fragment/variantC/shape5/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/c/5/spriteFrame"
+        "canonicalPath": "tex/fragment/variantC/shape5/spriteFrame"
       }
     },
     {
@@ -5689,21 +5690,21 @@
     {
       "kind": "import",
       "originalRelativePath": "import/d11f900e-73af-4c85-9fd5-f258c34c9f10.a2533.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/e/4/spriteFrame.json",
-      "materializedRelativePath": "import/tex/fragment/e/4/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantE/shape4/spriteFrame.json",
+      "materializedRelativePath": "import/tex/fragment/variantE/shape4/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/e/4/spriteFrame"
+        "canonicalPath": "tex/fragment/variantE/shape4/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/d11f900e-73af-4c85-9fd5-f258c34c9f10@f9941.cdd87.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/e/4/spriteFrame__2.json",
-      "materializedRelativePath": "import/tex/fragment/e/4/spriteFrame__2.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantE/shape4/spriteFrame__2.json",
+      "materializedRelativePath": "import/tex/fragment/variantE/shape4/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/e/4/spriteFrame"
+        "canonicalPath": "tex/fragment/variantE/shape4/spriteFrame"
       }
     },
     {
@@ -5729,21 +5730,21 @@
     {
       "kind": "import",
       "originalRelativePath": "import/d21cd108-521d-47d7-8377-47a7be95bcd9.a2533.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/e/3/spriteFrame.json",
-      "materializedRelativePath": "import/tex/fragment/e/3/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantE/shape3/spriteFrame.json",
+      "materializedRelativePath": "import/tex/fragment/variantE/shape3/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/e/3/spriteFrame"
+        "canonicalPath": "tex/fragment/variantE/shape3/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/d21cd108-521d-47d7-8377-47a7be95bcd9@f9941.271e5.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/e/3/spriteFrame__2.json",
-      "materializedRelativePath": "import/tex/fragment/e/3/spriteFrame__2.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantE/shape3/spriteFrame__2.json",
+      "materializedRelativePath": "import/tex/fragment/variantE/shape3/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/e/3/spriteFrame"
+        "canonicalPath": "tex/fragment/variantE/shape3/spriteFrame"
       }
     },
     {
@@ -5769,21 +5770,21 @@
     {
       "kind": "import",
       "originalRelativePath": "import/d35e1230-8b84-4641-92f4-a58da4a048b3.a2533.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/b/4/spriteFrame.json",
-      "materializedRelativePath": "import/tex/fragment/b/4/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantB/shape4/spriteFrame.json",
+      "materializedRelativePath": "import/tex/fragment/variantB/shape4/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/b/4/spriteFrame"
+        "canonicalPath": "tex/fragment/variantB/shape4/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/d35e1230-8b84-4641-92f4-a58da4a048b3@f9941.6c044.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/b/4/spriteFrame__2.json",
-      "materializedRelativePath": "import/tex/fragment/b/4/spriteFrame__2.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantB/shape4/spriteFrame__2.json",
+      "materializedRelativePath": "import/tex/fragment/variantB/shape4/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/b/4/spriteFrame"
+        "canonicalPath": "tex/fragment/variantB/shape4/spriteFrame"
       }
     },
     {
@@ -5919,11 +5920,11 @@
     {
       "kind": "import",
       "originalRelativePath": "import/d76e3813-1708-4eab-a54d-808251747518.a2533.json",
-      "semanticRelativePath": "__semantic__/tex/difficultySpike/slider/spriteFrame.json",
-      "materializedRelativePath": "import/tex/difficultySpike/slider/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/tex/difficultySurge/slider/spriteFrame.json",
+      "materializedRelativePath": "import/tex/difficultySurge/slider/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/难度飙升/滑动条/spriteFrame"
+        "canonicalPath": "tex/difficultySurge/slider/spriteFrame"
       }
     },
     {
@@ -6049,21 +6050,21 @@
     {
       "kind": "import",
       "originalRelativePath": "import/db5e7ae9-3bfd-48a6-8ca6-4ca882403f55.a2533.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/e/6/spriteFrame.json",
-      "materializedRelativePath": "import/tex/fragment/e/6/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantE/shape6/spriteFrame.json",
+      "materializedRelativePath": "import/tex/fragment/variantE/shape6/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/e/6/spriteFrame"
+        "canonicalPath": "tex/fragment/variantE/shape6/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/db5e7ae9-3bfd-48a6-8ca6-4ca882403f55@f9941.60e33.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/e/6/spriteFrame__2.json",
-      "materializedRelativePath": "import/tex/fragment/e/6/spriteFrame__2.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantE/shape6/spriteFrame__2.json",
+      "materializedRelativePath": "import/tex/fragment/variantE/shape6/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/e/6/spriteFrame"
+        "canonicalPath": "tex/fragment/variantE/shape6/spriteFrame"
       }
     },
     {
@@ -6149,21 +6150,21 @@
     {
       "kind": "import",
       "originalRelativePath": "import/dfd007b0-a14d-4885-94e2-3b2426bd19b5.a2533.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/b/5/spriteFrame.json",
-      "materializedRelativePath": "import/tex/fragment/b/5/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantB/shape5/spriteFrame.json",
+      "materializedRelativePath": "import/tex/fragment/variantB/shape5/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/b/5/spriteFrame"
+        "canonicalPath": "tex/fragment/variantB/shape5/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/dfd007b0-a14d-4885-94e2-3b2426bd19b5@f9941.bf54d.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/b/5/spriteFrame__2.json",
-      "materializedRelativePath": "import/tex/fragment/b/5/spriteFrame__2.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantB/shape5/spriteFrame__2.json",
+      "materializedRelativePath": "import/tex/fragment/variantB/shape5/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/b/5/spriteFrame"
+        "canonicalPath": "tex/fragment/variantB/shape5/spriteFrame"
       }
     },
     {
@@ -6219,21 +6220,21 @@
     {
       "kind": "import",
       "originalRelativePath": "import/e53198d5-b18d-47fd-871e-3c58d3f0719c.a2533.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/b/2/spriteFrame.json",
-      "materializedRelativePath": "import/tex/fragment/b/2/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantB/shape2/spriteFrame.json",
+      "materializedRelativePath": "import/tex/fragment/variantB/shape2/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/b/2/spriteFrame"
+        "canonicalPath": "tex/fragment/variantB/shape2/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/e53198d5-b18d-47fd-871e-3c58d3f0719c@f9941.b55c1.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/b/2/spriteFrame__2.json",
-      "materializedRelativePath": "import/tex/fragment/b/2/spriteFrame__2.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantB/shape2/spriteFrame__2.json",
+      "materializedRelativePath": "import/tex/fragment/variantB/shape2/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/b/2/spriteFrame"
+        "canonicalPath": "tex/fragment/variantB/shape2/spriteFrame"
       }
     },
     {
@@ -6579,21 +6580,21 @@
     {
       "kind": "import",
       "originalRelativePath": "import/ef65ba39-e437-47da-bd55-620837efa91c.a2533.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/a/1/spriteFrame.json",
-      "materializedRelativePath": "import/tex/fragment/a/1/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantA/shape1/spriteFrame.json",
+      "materializedRelativePath": "import/tex/fragment/variantA/shape1/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/a/1/spriteFrame"
+        "canonicalPath": "tex/fragment/variantA/shape1/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/ef65ba39-e437-47da-bd55-620837efa91c@f9941.38e3a.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/a/1/spriteFrame__2.json",
-      "materializedRelativePath": "import/tex/fragment/a/1/spriteFrame__2.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantA/shape1/spriteFrame__2.json",
+      "materializedRelativePath": "import/tex/fragment/variantA/shape1/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/a/1/spriteFrame"
+        "canonicalPath": "tex/fragment/variantA/shape1/spriteFrame"
       }
     },
     {
@@ -6619,21 +6620,21 @@
     {
       "kind": "import",
       "originalRelativePath": "import/f0993194-83e3-4364-9d42-b19dd457d5b7.a2533.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/b/1/spriteFrame.json",
-      "materializedRelativePath": "import/tex/fragment/b/1/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantB/shape1/spriteFrame.json",
+      "materializedRelativePath": "import/tex/fragment/variantB/shape1/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/b/1/spriteFrame"
+        "canonicalPath": "tex/fragment/variantB/shape1/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/f0993194-83e3-4364-9d42-b19dd457d5b7@f9941.81875.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/b/1/spriteFrame__2.json",
-      "materializedRelativePath": "import/tex/fragment/b/1/spriteFrame__2.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantB/shape1/spriteFrame__2.json",
+      "materializedRelativePath": "import/tex/fragment/variantB/shape1/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/b/1/spriteFrame"
+        "canonicalPath": "tex/fragment/variantB/shape1/spriteFrame"
       }
     },
     {
@@ -6719,21 +6720,21 @@
     {
       "kind": "import",
       "originalRelativePath": "import/f33145c5-412e-4073-b420-014d2ee996ef.a2533.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/a/6/spriteFrame.json",
-      "materializedRelativePath": "import/tex/fragment/a/6/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantA/shape6/spriteFrame.json",
+      "materializedRelativePath": "import/tex/fragment/variantA/shape6/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/a/6/spriteFrame"
+        "canonicalPath": "tex/fragment/variantA/shape6/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/f33145c5-412e-4073-b420-014d2ee996ef@f9941.3984b.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/a/6/spriteFrame__2.json",
-      "materializedRelativePath": "import/tex/fragment/a/6/spriteFrame__2.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantA/shape6/spriteFrame__2.json",
+      "materializedRelativePath": "import/tex/fragment/variantA/shape6/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/a/6/spriteFrame"
+        "canonicalPath": "tex/fragment/variantA/shape6/spriteFrame"
       }
     },
     {
@@ -6799,21 +6800,21 @@
     {
       "kind": "import",
       "originalRelativePath": "import/f441c71a-7b45-451e-8ecf-6bb73729fcec.a2533.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/c/4/spriteFrame.json",
-      "materializedRelativePath": "import/tex/fragment/c/4/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantC/shape4/spriteFrame.json",
+      "materializedRelativePath": "import/tex/fragment/variantC/shape4/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/c/4/spriteFrame"
+        "canonicalPath": "tex/fragment/variantC/shape4/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/f441c71a-7b45-451e-8ecf-6bb73729fcec@f9941.270d5.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/c/4/spriteFrame__2.json",
-      "materializedRelativePath": "import/tex/fragment/c/4/spriteFrame__2.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantC/shape4/spriteFrame__2.json",
+      "materializedRelativePath": "import/tex/fragment/variantC/shape4/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/c/4/spriteFrame"
+        "canonicalPath": "tex/fragment/variantC/shape4/spriteFrame"
       }
     },
     {
@@ -6929,21 +6930,21 @@
     {
       "kind": "import",
       "originalRelativePath": "import/fba7243c-b17c-48da-b35b-70c9aad53531.a2533.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/a/4/spriteFrame.json",
-      "materializedRelativePath": "import/tex/fragment/a/4/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantA/shape4/spriteFrame.json",
+      "materializedRelativePath": "import/tex/fragment/variantA/shape4/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/a/4/spriteFrame"
+        "canonicalPath": "tex/fragment/variantA/shape4/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/fba7243c-b17c-48da-b35b-70c9aad53531@f9941.0c7f2.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/a/4/spriteFrame__2.json",
-      "materializedRelativePath": "import/tex/fragment/a/4/spriteFrame__2.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantA/shape4/spriteFrame__2.json",
+      "materializedRelativePath": "import/tex/fragment/variantA/shape4/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/a/4/spriteFrame"
+        "canonicalPath": "tex/fragment/variantA/shape4/spriteFrame"
       }
     },
     {
@@ -7029,21 +7030,21 @@
     {
       "kind": "import",
       "originalRelativePath": "import/fd56dded-3853-43fc-85fa-00845ddc01d8.a2533.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/c/6/spriteFrame.json",
-      "materializedRelativePath": "import/tex/fragment/c/6/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantC/shape6/spriteFrame.json",
+      "materializedRelativePath": "import/tex/fragment/variantC/shape6/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/c/6/spriteFrame"
+        "canonicalPath": "tex/fragment/variantC/shape6/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/fd56dded-3853-43fc-85fa-00845ddc01d8@f9941.d9c73.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/c/6/spriteFrame__2.json",
-      "materializedRelativePath": "import/tex/fragment/c/6/spriteFrame__2.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantC/shape6/spriteFrame__2.json",
+      "materializedRelativePath": "import/tex/fragment/variantC/shape6/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/c/6/spriteFrame"
+        "canonicalPath": "tex/fragment/variantC/shape6/spriteFrame"
       }
     },
     {
@@ -7099,21 +7100,21 @@
     {
       "kind": "import",
       "originalRelativePath": "import/ff30d444-bca3-494a-88d7-830f7679e2e5.a2533.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/b/6/spriteFrame.json",
-      "materializedRelativePath": "import/tex/fragment/b/6/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantB/shape6/spriteFrame.json",
+      "materializedRelativePath": "import/tex/fragment/variantB/shape6/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/b/6/spriteFrame"
+        "canonicalPath": "tex/fragment/variantB/shape6/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/ff30d444-bca3-494a-88d7-830f7679e2e5@f9941.21947.json",
-      "semanticRelativePath": "__semantic__/tex/fragment/b/6/spriteFrame__2.json",
-      "materializedRelativePath": "import/tex/fragment/b/6/spriteFrame__2.json",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantB/shape6/spriteFrame__2.json",
+      "materializedRelativePath": "import/tex/fragment/variantB/shape6/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/b/6/spriteFrame"
+        "canonicalPath": "tex/fragment/variantB/shape6/spriteFrame"
       }
     },
     {
@@ -7201,11 +7202,11 @@
     {
       "kind": "native",
       "originalRelativePath": "native/0878eef6-bcc6-4dc0-8eb8-1f2b2bad4935.166ce.png",
-      "semanticRelativePath": "__semantic__/tex/difficultySpike/topShadow/spriteFrame.png",
-      "materializedRelativePath": "native/tex/difficultySpike/topShadow/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/tex/difficultySurge/topShadow/spriteFrame.png",
+      "materializedRelativePath": "native/tex/difficultySurge/topShadow/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/难度飙升/上层阴影/spriteFrame"
+        "canonicalPath": "tex/difficultySurge/topShadow/spriteFrame"
       }
     },
     {
@@ -7431,31 +7432,31 @@
     {
       "kind": "native",
       "originalRelativePath": "native/1975f6f5-d896-42c6-98ee-6fcf7251a558.3b53b.png",
-      "semanticRelativePath": "__semantic__/tex/fragment/a/5/spriteFrame.png",
-      "materializedRelativePath": "native/tex/fragment/a/5/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantA/shape5/spriteFrame.png",
+      "materializedRelativePath": "native/tex/fragment/variantA/shape5/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/a/5/spriteFrame"
+        "canonicalPath": "tex/fragment/variantA/shape5/spriteFrame"
       }
     },
     {
       "kind": "native",
       "originalRelativePath": "native/1ad1dd95-461f-45fa-9c31-0e0331fb31c8.535b6.png",
-      "semanticRelativePath": "__semantic__/tex/fragment/c/1/spriteFrame.png",
-      "materializedRelativePath": "native/tex/fragment/c/1/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantC/shape1/spriteFrame.png",
+      "materializedRelativePath": "native/tex/fragment/variantC/shape1/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/c/1/spriteFrame"
+        "canonicalPath": "tex/fragment/variantC/shape1/spriteFrame"
       }
     },
     {
       "kind": "native",
       "originalRelativePath": "native/1beeca5c-bb15-46b6-bb0c-cb521a62f8c2.1a09a.png",
-      "semanticRelativePath": "__semantic__/tex/fragment/d/1/spriteFrame.png",
-      "materializedRelativePath": "native/tex/fragment/d/1/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantD/shape1/spriteFrame.png",
+      "materializedRelativePath": "native/tex/fragment/variantD/shape1/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/d/1/spriteFrame"
+        "canonicalPath": "tex/fragment/variantD/shape1/spriteFrame"
       }
     },
     {
@@ -7471,11 +7472,11 @@
     {
       "kind": "native",
       "originalRelativePath": "native/1c25c68f-4dd8-461b-9bde-32e12eaec393.4cadd.png",
-      "semanticRelativePath": "__semantic__/tex/fragment/c/2/spriteFrame.png",
-      "materializedRelativePath": "native/tex/fragment/c/2/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantC/shape2/spriteFrame.png",
+      "materializedRelativePath": "native/tex/fragment/variantC/shape2/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/c/2/spriteFrame"
+        "canonicalPath": "tex/fragment/variantC/shape2/spriteFrame"
       }
     },
     {
@@ -7501,11 +7502,11 @@
     {
       "kind": "native",
       "originalRelativePath": "native/1dab75dc-d37d-46cc-a241-b7e8ad0f2569.4ec7f.png",
-      "semanticRelativePath": "__semantic__/tex/difficultySpike/spike2/spriteFrame.png",
-      "materializedRelativePath": "native/tex/difficultySpike/spike2/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/tex/difficultySurge/surge2/spriteFrame.png",
+      "materializedRelativePath": "native/tex/difficultySurge/surge2/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/难度飙升/飙升2/spriteFrame"
+        "canonicalPath": "tex/difficultySurge/surge2/spriteFrame"
       }
     },
     {
@@ -7525,7 +7526,7 @@
       "materializedRelativePath": "native/tex/star/star/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/star/星星/spriteFrame"
+        "canonicalPath": "tex/star/star/spriteFrame"
       }
     },
     {
@@ -7581,11 +7582,11 @@
     {
       "kind": "native",
       "originalRelativePath": "native/219163ff-3a7b-48c4-91ed-3e9182fe645b.b7c68.png",
-      "semanticRelativePath": "__semantic__/tex/fragment/e/2/spriteFrame.png",
-      "materializedRelativePath": "native/tex/fragment/e/2/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantE/shape2/spriteFrame.png",
+      "materializedRelativePath": "native/tex/fragment/variantE/shape2/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/e/2/spriteFrame"
+        "canonicalPath": "tex/fragment/variantE/shape2/spriteFrame"
       }
     },
     {
@@ -7651,11 +7652,11 @@
     {
       "kind": "native",
       "originalRelativePath": "native/2b4104af-6132-4aee-a152-64e035e85c86.a48d1.png",
-      "semanticRelativePath": "__semantic__/tex/difficultySpike/spike/spriteFrame.png",
-      "materializedRelativePath": "native/tex/difficultySpike/spike/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/tex/difficultySurge/surge/spriteFrame.png",
+      "materializedRelativePath": "native/tex/difficultySurge/surge/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/难度飙升/飙升/spriteFrame"
+        "canonicalPath": "tex/difficultySurge/surge/spriteFrame"
       }
     },
     {
@@ -7921,11 +7922,11 @@
     {
       "kind": "native",
       "originalRelativePath": "native/4a8fc8ee-3991-4f07-99f0-6f5907cf571f.cfc7c.jpg",
-      "semanticRelativePath": "__semantic__/tex/background/spriteFrame.jpg",
-      "materializedRelativePath": "native/tex/background/spriteFrame.jpg",
+      "semanticRelativePath": "__semantic__/tex/backgroundPanel/spriteFrame.jpg",
+      "materializedRelativePath": "native/tex/backgroundPanel/spriteFrame.jpg",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/背景/spriteFrame"
+        "canonicalPath": "tex/backgroundPanel/spriteFrame"
       }
     },
     {
@@ -8031,11 +8032,11 @@
     {
       "kind": "native",
       "originalRelativePath": "native/54dbf1c1-0051-4cf4-95f7-14dbad59da29.49b96.png",
-      "semanticRelativePath": "__semantic__/tex/cannotClear/spriteFrame.png",
-      "materializedRelativePath": "native/tex/cannotClear/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/tex/cannotEliminate/spriteFrame.png",
+      "materializedRelativePath": "native/tex/cannotEliminate/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/无法消除/spriteFrame"
+        "canonicalPath": "tex/cannotEliminate/spriteFrame"
       }
     },
     {
@@ -8161,21 +8162,21 @@
     {
       "kind": "native",
       "originalRelativePath": "native/5ec61fb8-e2d3-4a9f-bc4c-d5cf784bac6c.6aad5.png",
-      "semanticRelativePath": "__semantic__/tex/fragment/d/3/spriteFrame.png",
-      "materializedRelativePath": "native/tex/fragment/d/3/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantD/shape3/spriteFrame.png",
+      "materializedRelativePath": "native/tex/fragment/variantD/shape3/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/d/3/spriteFrame"
+        "canonicalPath": "tex/fragment/variantD/shape3/spriteFrame"
       }
     },
     {
       "kind": "native",
       "originalRelativePath": "native/61f458a5-f4dc-4e89-b51d-d9be4457e4b2.10eea.png",
-      "semanticRelativePath": "__semantic__/tex/fragment/d/2/spriteFrame.png",
-      "materializedRelativePath": "native/tex/fragment/d/2/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantD/shape2/spriteFrame.png",
+      "materializedRelativePath": "native/tex/fragment/variantD/shape2/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/d/2/spriteFrame"
+        "canonicalPath": "tex/fragment/variantD/shape2/spriteFrame"
       }
     },
     {
@@ -8275,7 +8276,7 @@
       "materializedRelativePath": "native/tex/slotFull/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/槽位已满/spriteFrame"
+        "canonicalPath": "tex/slotFull/spriteFrame"
       }
     },
     {
@@ -8391,11 +8392,11 @@
     {
       "kind": "native",
       "originalRelativePath": "native/6ee82493-c14b-4420-8bdf-f5f76d58b5a3.da447.png",
-      "semanticRelativePath": "__semantic__/tex/fragment/d/4/spriteFrame.png",
-      "materializedRelativePath": "native/tex/fragment/d/4/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantD/shape4/spriteFrame.png",
+      "materializedRelativePath": "native/tex/fragment/variantD/shape4/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/d/4/spriteFrame"
+        "canonicalPath": "tex/fragment/variantD/shape4/spriteFrame"
       }
     },
     {
@@ -8421,11 +8422,11 @@
     {
       "kind": "native",
       "originalRelativePath": "native/70a22166-8718-4c69-b384-b9795c29615d.e6c65.png",
-      "semanticRelativePath": "__semantic__/tex/fragment/e/5/spriteFrame.png",
-      "materializedRelativePath": "native/tex/fragment/e/5/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantE/shape5/spriteFrame.png",
+      "materializedRelativePath": "native/tex/fragment/variantE/shape5/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/e/5/spriteFrame"
+        "canonicalPath": "tex/fragment/variantE/shape5/spriteFrame"
       }
     },
     {
@@ -8441,11 +8442,11 @@
     {
       "kind": "native",
       "originalRelativePath": "native/715bc81e-b843-422e-9ac5-e798c48ff5d2.ad77b.png",
-      "semanticRelativePath": "__semantic__/tex/fragment/d/6/spriteFrame.png",
-      "materializedRelativePath": "native/tex/fragment/d/6/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantD/shape6/spriteFrame.png",
+      "materializedRelativePath": "native/tex/fragment/variantD/shape6/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/d/6/spriteFrame"
+        "canonicalPath": "tex/fragment/variantD/shape6/spriteFrame"
       }
     },
     {
@@ -8521,11 +8522,11 @@
     {
       "kind": "native",
       "originalRelativePath": "native/73aa2581-75bf-46cd-88f9-8549832b6492.495f4.png",
-      "semanticRelativePath": "__semantic__/tex/fragment/a/2/spriteFrame.png",
-      "materializedRelativePath": "native/tex/fragment/a/2/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantA/shape2/spriteFrame.png",
+      "materializedRelativePath": "native/tex/fragment/variantA/shape2/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/a/2/spriteFrame"
+        "canonicalPath": "tex/fragment/variantA/shape2/spriteFrame"
       }
     },
     {
@@ -8581,11 +8582,11 @@
     {
       "kind": "native",
       "originalRelativePath": "native/7793aded-2772-462c-b1ea-e3a1d6530113.50cd6.png",
-      "semanticRelativePath": "__semantic__/tex/fragment/a/3/spriteFrame.png",
-      "materializedRelativePath": "native/tex/fragment/a/3/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantA/shape3/spriteFrame.png",
+      "materializedRelativePath": "native/tex/fragment/variantA/shape3/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/a/3/spriteFrame"
+        "canonicalPath": "tex/fragment/variantA/shape3/spriteFrame"
       }
     },
     {
@@ -8631,11 +8632,11 @@
     {
       "kind": "native",
       "originalRelativePath": "native/7be1c3f2-580e-42d4-a96c-f6924aa72d90.e2af8.png",
-      "semanticRelativePath": "__semantic__/tex/fragment/c/3/spriteFrame.png",
-      "materializedRelativePath": "native/tex/fragment/c/3/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantC/shape3/spriteFrame.png",
+      "materializedRelativePath": "native/tex/fragment/variantC/shape3/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/c/3/spriteFrame"
+        "canonicalPath": "tex/fragment/variantC/shape3/spriteFrame"
       }
     },
     {
@@ -8681,21 +8682,21 @@
     {
       "kind": "native",
       "originalRelativePath": "native/7ef00b8b-d191-4f16-bd98-72cf086062ce.52107.png",
-      "semanticRelativePath": "__semantic__/tex/difficultySpike/completedLevelCount/spriteFrame.png",
-      "materializedRelativePath": "native/tex/difficultySpike/completedLevelCount/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/tex/difficultySurge/clearCount/spriteFrame.png",
+      "materializedRelativePath": "native/tex/difficultySurge/clearCount/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/难度飙升/通关数量/spriteFrame"
+        "canonicalPath": "tex/difficultySurge/clearCount/spriteFrame"
       }
     },
     {
       "kind": "native",
       "originalRelativePath": "native/7f4a5ac5-37ce-4286-9a50-c886ac93eafa.39c76.png",
-      "semanticRelativePath": "__semantic__/tex/fragment/d/5/spriteFrame.png",
-      "materializedRelativePath": "native/tex/fragment/d/5/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantD/shape5/spriteFrame.png",
+      "materializedRelativePath": "native/tex/fragment/variantD/shape5/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/d/5/spriteFrame"
+        "canonicalPath": "tex/fragment/variantD/shape5/spriteFrame"
       }
     },
     {
@@ -8761,11 +8762,11 @@
     {
       "kind": "native",
       "originalRelativePath": "native/828174d4-3e01-4fae-9b63-00732bcd0e29.8738d.png",
-      "semanticRelativePath": "__semantic__/tex/nailHalo/spriteFrame.png",
-      "materializedRelativePath": "native/tex/nailHalo/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/tex/nailGlow/spriteFrame.png",
+      "materializedRelativePath": "native/tex/nailGlow/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/钉子光圈/spriteFrame"
+        "canonicalPath": "tex/nailGlow/spriteFrame"
       }
     },
     {
@@ -9131,11 +9132,11 @@
     {
       "kind": "native",
       "originalRelativePath": "native/a161cb4d-0086-4402-bfde-aaed28512ed6.a44ce.png",
-      "semanticRelativePath": "__semantic__/tex/fragment/e/1/spriteFrame.png",
-      "materializedRelativePath": "native/tex/fragment/e/1/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantE/shape1/spriteFrame.png",
+      "materializedRelativePath": "native/tex/fragment/variantE/shape1/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/e/1/spriteFrame"
+        "canonicalPath": "tex/fragment/variantE/shape1/spriteFrame"
       }
     },
     {
@@ -9311,11 +9312,11 @@
     {
       "kind": "native",
       "originalRelativePath": "native/afade395-2adf-4579-99b3-79794fd280f2.6cc59.png",
-      "semanticRelativePath": "__semantic__/tex/difficultySpike/bottom/spriteFrame.png",
-      "materializedRelativePath": "native/tex/difficultySpike/bottom/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/tex/difficultySurge/base/spriteFrame.png",
+      "materializedRelativePath": "native/tex/difficultySurge/base/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/难度飙升/底/spriteFrame"
+        "canonicalPath": "tex/difficultySurge/base/spriteFrame"
       }
     },
     {
@@ -9391,11 +9392,11 @@
     {
       "kind": "native",
       "originalRelativePath": "native/b4dad589-4c73-4c8f-9cbb-844c44c3be68.646b7.png",
-      "semanticRelativePath": "__semantic__/tex/fragment/b/3/spriteFrame.png",
-      "materializedRelativePath": "native/tex/fragment/b/3/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantB/shape3/spriteFrame.png",
+      "materializedRelativePath": "native/tex/fragment/variantB/shape3/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/b/3/spriteFrame"
+        "canonicalPath": "tex/fragment/variantB/shape3/spriteFrame"
       }
     },
     {
@@ -9481,11 +9482,11 @@
     {
       "kind": "native",
       "originalRelativePath": "native/b99d9b5a-2bfc-4293-b3ba-14180532fe67.43fea.png",
-      "semanticRelativePath": "__semantic__/tex/fragment/c/5/spriteFrame.png",
-      "materializedRelativePath": "native/tex/fragment/c/5/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantC/shape5/spriteFrame.png",
+      "materializedRelativePath": "native/tex/fragment/variantC/shape5/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/c/5/spriteFrame"
+        "canonicalPath": "tex/fragment/variantC/shape5/spriteFrame"
       }
     },
     {
@@ -9781,11 +9782,11 @@
     {
       "kind": "native",
       "originalRelativePath": "native/d11f900e-73af-4c85-9fd5-f258c34c9f10.99835.png",
-      "semanticRelativePath": "__semantic__/tex/fragment/e/4/spriteFrame.png",
-      "materializedRelativePath": "native/tex/fragment/e/4/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantE/shape4/spriteFrame.png",
+      "materializedRelativePath": "native/tex/fragment/variantE/shape4/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/e/4/spriteFrame"
+        "canonicalPath": "tex/fragment/variantE/shape4/spriteFrame"
       }
     },
     {
@@ -9801,11 +9802,11 @@
     {
       "kind": "native",
       "originalRelativePath": "native/d21cd108-521d-47d7-8377-47a7be95bcd9.f7ea9.png",
-      "semanticRelativePath": "__semantic__/tex/fragment/e/3/spriteFrame.png",
-      "materializedRelativePath": "native/tex/fragment/e/3/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantE/shape3/spriteFrame.png",
+      "materializedRelativePath": "native/tex/fragment/variantE/shape3/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/e/3/spriteFrame"
+        "canonicalPath": "tex/fragment/variantE/shape3/spriteFrame"
       }
     },
     {
@@ -9821,11 +9822,11 @@
     {
       "kind": "native",
       "originalRelativePath": "native/d35e1230-8b84-4641-92f4-a58da4a048b3.6ca89.png",
-      "semanticRelativePath": "__semantic__/tex/fragment/b/4/spriteFrame.png",
-      "materializedRelativePath": "native/tex/fragment/b/4/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantB/shape4/spriteFrame.png",
+      "materializedRelativePath": "native/tex/fragment/variantB/shape4/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/b/4/spriteFrame"
+        "canonicalPath": "tex/fragment/variantB/shape4/spriteFrame"
       }
     },
     {
@@ -9901,11 +9902,11 @@
     {
       "kind": "native",
       "originalRelativePath": "native/d76e3813-1708-4eab-a54d-808251747518.fde7b.png",
-      "semanticRelativePath": "__semantic__/tex/difficultySpike/slider/spriteFrame.png",
-      "materializedRelativePath": "native/tex/difficultySpike/slider/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/tex/difficultySurge/slider/spriteFrame.png",
+      "materializedRelativePath": "native/tex/difficultySurge/slider/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/难度飙升/滑动条/spriteFrame"
+        "canonicalPath": "tex/difficultySurge/slider/spriteFrame"
       }
     },
     {
@@ -9971,11 +9972,11 @@
     {
       "kind": "native",
       "originalRelativePath": "native/db5e7ae9-3bfd-48a6-8ca6-4ca882403f55.11a79.png",
-      "semanticRelativePath": "__semantic__/tex/fragment/e/6/spriteFrame.png",
-      "materializedRelativePath": "native/tex/fragment/e/6/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantE/shape6/spriteFrame.png",
+      "materializedRelativePath": "native/tex/fragment/variantE/shape6/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/e/6/spriteFrame"
+        "canonicalPath": "tex/fragment/variantE/shape6/spriteFrame"
       }
     },
     {
@@ -10021,11 +10022,11 @@
     {
       "kind": "native",
       "originalRelativePath": "native/dfd007b0-a14d-4885-94e2-3b2426bd19b5.cd41c.png",
-      "semanticRelativePath": "__semantic__/tex/fragment/b/5/spriteFrame.png",
-      "materializedRelativePath": "native/tex/fragment/b/5/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantB/shape5/spriteFrame.png",
+      "materializedRelativePath": "native/tex/fragment/variantB/shape5/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/b/5/spriteFrame"
+        "canonicalPath": "tex/fragment/variantB/shape5/spriteFrame"
       }
     },
     {
@@ -10051,11 +10052,11 @@
     {
       "kind": "native",
       "originalRelativePath": "native/e53198d5-b18d-47fd-871e-3c58d3f0719c.4363e.png",
-      "semanticRelativePath": "__semantic__/tex/fragment/b/2/spriteFrame.png",
-      "materializedRelativePath": "native/tex/fragment/b/2/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantB/shape2/spriteFrame.png",
+      "materializedRelativePath": "native/tex/fragment/variantB/shape2/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/b/2/spriteFrame"
+        "canonicalPath": "tex/fragment/variantB/shape2/spriteFrame"
       }
     },
     {
@@ -10221,11 +10222,11 @@
     {
       "kind": "native",
       "originalRelativePath": "native/ef65ba39-e437-47da-bd55-620837efa91c.ce81c.png",
-      "semanticRelativePath": "__semantic__/tex/fragment/a/1/spriteFrame.png",
-      "materializedRelativePath": "native/tex/fragment/a/1/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantA/shape1/spriteFrame.png",
+      "materializedRelativePath": "native/tex/fragment/variantA/shape1/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/a/1/spriteFrame"
+        "canonicalPath": "tex/fragment/variantA/shape1/spriteFrame"
       }
     },
     {
@@ -10241,11 +10242,11 @@
     {
       "kind": "native",
       "originalRelativePath": "native/f0993194-83e3-4364-9d42-b19dd457d5b7.dbffb.png",
-      "semanticRelativePath": "__semantic__/tex/fragment/b/1/spriteFrame.png",
-      "materializedRelativePath": "native/tex/fragment/b/1/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantB/shape1/spriteFrame.png",
+      "materializedRelativePath": "native/tex/fragment/variantB/shape1/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/b/1/spriteFrame"
+        "canonicalPath": "tex/fragment/variantB/shape1/spriteFrame"
       }
     },
     {
@@ -10291,11 +10292,11 @@
     {
       "kind": "native",
       "originalRelativePath": "native/f33145c5-412e-4073-b420-014d2ee996ef.bfa4a.png",
-      "semanticRelativePath": "__semantic__/tex/fragment/a/6/spriteFrame.png",
-      "materializedRelativePath": "native/tex/fragment/a/6/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantA/shape6/spriteFrame.png",
+      "materializedRelativePath": "native/tex/fragment/variantA/shape6/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/a/6/spriteFrame"
+        "canonicalPath": "tex/fragment/variantA/shape6/spriteFrame"
       }
     },
     {
@@ -10331,11 +10332,11 @@
     {
       "kind": "native",
       "originalRelativePath": "native/f441c71a-7b45-451e-8ecf-6bb73729fcec.bb664.png",
-      "semanticRelativePath": "__semantic__/tex/fragment/c/4/spriteFrame.png",
-      "materializedRelativePath": "native/tex/fragment/c/4/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantC/shape4/spriteFrame.png",
+      "materializedRelativePath": "native/tex/fragment/variantC/shape4/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/c/4/spriteFrame"
+        "canonicalPath": "tex/fragment/variantC/shape4/spriteFrame"
       }
     },
     {
@@ -10381,11 +10382,11 @@
     {
       "kind": "native",
       "originalRelativePath": "native/fba7243c-b17c-48da-b35b-70c9aad53531.0a0f5.png",
-      "semanticRelativePath": "__semantic__/tex/fragment/a/4/spriteFrame.png",
-      "materializedRelativePath": "native/tex/fragment/a/4/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantA/shape4/spriteFrame.png",
+      "materializedRelativePath": "native/tex/fragment/variantA/shape4/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/a/4/spriteFrame"
+        "canonicalPath": "tex/fragment/variantA/shape4/spriteFrame"
       }
     },
     {
@@ -10431,11 +10432,11 @@
     {
       "kind": "native",
       "originalRelativePath": "native/fd56dded-3853-43fc-85fa-00845ddc01d8.66e75.png",
-      "semanticRelativePath": "__semantic__/tex/fragment/c/6/spriteFrame.png",
-      "materializedRelativePath": "native/tex/fragment/c/6/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantC/shape6/spriteFrame.png",
+      "materializedRelativePath": "native/tex/fragment/variantC/shape6/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/c/6/spriteFrame"
+        "canonicalPath": "tex/fragment/variantC/shape6/spriteFrame"
       }
     },
     {
@@ -10471,11 +10472,11 @@
     {
       "kind": "native",
       "originalRelativePath": "native/ff30d444-bca3-494a-88d7-830f7679e2e5.d1b4a.png",
-      "semanticRelativePath": "__semantic__/tex/fragment/b/6/spriteFrame.png",
-      "materializedRelativePath": "native/tex/fragment/b/6/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/tex/fragment/variantB/shape6/spriteFrame.png",
+      "materializedRelativePath": "native/tex/fragment/variantB/shape6/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/fragment/b/6/spriteFrame"
+        "canonicalPath": "tex/fragment/variantB/shape6/spriteFrame"
       }
     },
     {
@@ -10489,6 +10490,16 @@
       }
     }
   ],
-  "unresolvedImports": [],
-  "unresolvedNative": []
+  "unresolvedImports": [
+    {
+      "originalRelativePath": "import/d37af975-2b38-4f46-a65b-c863c0ed8e66.a2533.json",
+      "stem": "d37af975-2b38-4f46-a65b-c863c0ed8e66"
+    }
+  ],
+  "unresolvedNative": [
+    {
+      "originalRelativePath": "native/d37af975-2b38-4f46-a65b-c863c0ed8e66.c87ec.png",
+      "stem": "d37af975-2b38-4f46-a65b-c863c0ed8e66"
+    }
+  ]
 }

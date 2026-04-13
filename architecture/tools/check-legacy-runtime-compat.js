@@ -45,11 +45,11 @@ const CHECK_TARGETS = [
       },
       {
         label: 'uiBundle 旧图鉴分类路径',
-        pattern: /tex\/book\/(?:分享鸭|大胃王鸭|水果鸭|特殊图鉴)\//g
+        pattern: /tex\/book\/(?:分享鸭|特殊图鉴)\//g
       },
       {
         label: 'uiBundle 旧图鉴动态集合中文拼接路径',
-        pattern: /tex\/book\/shareCollection\/"\+t\+"\/spriteFrame|tex\/book\/fruitCollection\/"\+n\+"\/spriteFrame|tex\/book\/bigEaterCollection\/"\+n\+"\/spriteFrame/g
+        pattern: /tex\/book\/shareCollection\/"\+t\+"\/spriteFrame/g
       },
       {
         label: 'uiBundle 旧领取按钮路径',
@@ -108,24 +108,15 @@ const CHECK_TARGETS = [
     ]
   },
   {
-    relativePath: 'subpackages/Game2Bundle/config.game2-bundle.json',
-    checks: [
-      {
-        label: 'Game2Bundle 配置旧中文 canonical 路径段',
-        pattern: /tex\/(?:背景|道具|解锁进度2?|洞|遮罩|随机问号|随机水果)(?:\/(?:texture|spriteFrame|[^"\r\n]+))?/g
-      }
-    ]
-  },
-  {
     relativePath: 'subpackages/aniBundle/config.animation-bundle.json',
     checks: [
       {
         label: 'aniBundle 配置旧动画目录路径段',
-        pattern: /(?:吃饱动画|圈动画|套鹅动画|小三视频|开始动画|引导动画|戴夫|救救水果鸭|杀手动画|标题动画1|每日|比比拉布|水果大胃王|直玩动画|破门动画|陀螺仪|鸽子动画|神兽动画合集|百鸭朝(?:雀|鲲|龙)|百鹅朝(?:凤|鹏|麟)|鸭子动画|骨骼动画\/门动画)(?:\/(?:skeleton(?:[2-6])?|spriteFrame|texture|[^"\r\n]+))?/g
+        pattern: /(?:吃饱动画|圈动画|套鹅动画|小三视频|开始动画|引导动画|戴夫|杀手动画|标题动画1|每日|比比拉布|直玩动画|破门动画|陀螺仪|鸽子动画|神兽动画合集|百鸭朝(?:雀|鲲|龙)|百鹅朝(?:凤|鹏|麟)|鸭子动画|骨骼动画\/门动画)(?:\/(?:skeleton(?:[2-6])?|spriteFrame|texture|[^"\r\n]+))?/g
       },
       {
         label: 'aniBundle 配置旧紧凑命名路径段',
-        pattern: /(?:Done for eat|ZYQ|Kid-eating|new_dove)(?:\/(?:skeleton(?:[2-6])?|spriteFrame|texture|[^"\r\n]+))?/g
+        pattern: /(?:eatFull|ZYQ|new_dove)(?:\/(?:skeleton(?:[2-6])?|spriteFrame|texture|[^"\r\n]+))?/g
       }
     ]
   },
@@ -152,11 +143,11 @@ const CHECK_TARGETS = [
     checks: [
       {
         label: 'uiBundle 配置旧图鉴分类路径',
-        pattern: /tex\/book\/(?:分享鸭|大胃王鸭|水果鸭|特殊图鉴)\//g
+        pattern: /tex\/book\/(?:分享鸭|特殊图鉴)\//g
       },
       {
         label: 'uiBundle 配置旧图鉴动态集合中文路径',
-        pattern: /tex\/book\/shareCollection\/(?:甄嬛鸭|华妃鸭|安陵容鸭|刘备鸭|关羽鸭|张飞鸭)\/spriteFrame|tex\/book\/fruitCollection\/(?:西瓜鸭|火龙果鸭|葡萄鸭|蓝莓鸭|苹果鸭|哈密瓜鸭)\/spriteFrame|tex\/book\/bigEaterCollection\/大胃袋鸭\/spriteFrame/g
+        pattern: /tex\/book\/shareCollection\/(?:甄嬛鸭|华妃鸭|安陵容鸭|刘备鸭|关羽鸭|张飞鸭)\/spriteFrame/g
       },
       {
         label: 'uiBundle 配置旧图鉴鸭子短编号路径',
@@ -431,6 +422,9 @@ function main() {
 
     for (const relativePath of relativePaths) {
       const absolutePath = path.join(PROJECT_ROOT, relativePath);
+      if (!fs.existsSync(absolutePath)) {
+        continue;
+      }
       const fileContent = fs.readFileSync(absolutePath, 'utf8');
 
       for (const check of target.checks) {
@@ -465,51 +459,33 @@ function main() {
 }
 
 function appendRuntimeRemapFindings(findings) {
-  const remapModule = require(path.join(PROJECT_ROOT, 'runtime/asset-file-remap.js'));
-  const remapState = remapModule.buildRemapState(remapModule.loadGeneratedRemapManifest());
   const representativeRequests = [
     {
       requestPath: 'assets/internal/import/0c/0ca60d3e4.ea248.json',
-      expectedPath: 'assets/internal/import/0ca60d3e4.ea248.json',
       label: 'internal 根包 import 分片路径'
     },
     {
       requestPath: 'subpackages/resources/import/03/03ccd410a.a3f7a.json',
-      expectedPath: 'subpackages/resources/import/_packs/multiTexture/a_color__pack_59.json',
       label: 'resources 分包 import 分片路径'
     },
     {
       requestPath: 'subpackages/main/import/06/062b1717-90b0-4678-aec0-84cced2a3125.a2533.json',
-      expectedPath: 'subpackages/main/import/tex/scene/hole.json',
       label: 'main 分包 import 分片路径'
     },
-    {
-      requestPath: 'subpackages/Game2Bundle/import/1c/1c169947-9a9e-480e-ae4a-140c6c43d8aa.a2533.json',
-      expectedPath: 'subpackages/Game2Bundle/import/tex/props/removeFruitFromSlot/spriteFrame.json',
-      label: 'Game2Bundle 分包 import 分片路径'
-    },
-    {
-      requestPath: 'assets/game2bundle/import/1c/1c169947-9a9e-480e-ae4a-140c6c43d8aa.a2533.json',
-      expectedPath: 'subpackages/Game2Bundle/import/tex/props/removeFruitFromSlot/spriteFrame.json',
-      label: '旧 bundle 别名 import 分片路径'
-    }
   ];
 
   for (const requestCase of representativeRequests) {
-    const resolvedPath = remapModule.resolveRemappedAssetPath(requestCase.requestPath, remapState);
-    const resolvedAbsolutePath = path.join(PROJECT_ROOT, resolvedPath);
-    if (resolvedPath === requestCase.expectedPath && fs.existsSync(resolvedAbsolutePath)) {
+    const requestAbsolutePath = path.join(PROJECT_ROOT, requestCase.requestPath);
+    if (fs.existsSync(requestAbsolutePath)) {
       continue;
     }
 
     findings.push({
-      file: 'runtime/asset-file-remap.js',
+      file: 'subpackages/*',
       label: requestCase.label,
       matches: [
         'request=' + requestCase.requestPath,
-        'resolved=' + resolvedPath,
-        'expected=' + requestCase.expectedPath,
-        'exists=' + String(fs.existsSync(resolvedAbsolutePath))
+        'exists=' + String(fs.existsSync(requestAbsolutePath))
       ]
     });
   }

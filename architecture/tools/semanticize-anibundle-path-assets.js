@@ -19,7 +19,7 @@ const RUNTIME_RETAINED_PATH_PATTERNS = Object.freeze([
 
 const PATH_SEGMENT_MAP = Object.freeze({
   吃饱动画: 'eatFullAnimation',
-  'Done for eat': 'eatFull',
+  'eatFull': 'eatFull',
   圈动画: 'ringAnimation',
   ZYQ: 'ringLoop',
   套鹅动画: 'gooseTrapAnimation',
@@ -27,13 +27,10 @@ const PATH_SEGMENT_MAP = Object.freeze({
   开始动画: 'startAnimation',
   引导动画: 'tutorialAnimation',
   戴夫: 'daveAnimation',
-  救救水果鸭: 'saveFruitDuckAnimation',
   杀手动画: 'assassinAnimation',
   标题动画1: 'titleAnimation1',
   每日: 'dailyAnimation',
   比比拉布: 'bibiLabuAnimation',
-  水果大胃王: 'fruitBigEaterAnimation',
-  'Kid-eating': 'kidEating',
   直玩动画: 'instantPlayAnimation',
   破门动画: 'doorBreakAnimation',
   陀螺仪: 'gyroscopeAnimation',

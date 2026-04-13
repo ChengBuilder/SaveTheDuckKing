@@ -167,17 +167,17 @@ function verifySplitGameBridge(projectRoot, source, errors) {
   }
 
   const gameModuleSource = fs.readFileSync(gameModulePath, 'utf8');
-  const assetRemapSnippetCandidates = [
-    'require("./runtime/asset-file-remap.js").installAssetFileRemap()',
-    'require("../../runtime/asset-file-remap.js").installAssetFileRemap()'
-  ];
   const gameBootstrapSnippetCandidates = [
     'require("./architecture/boot/game-bootstrap.js")',
     'require("../../architecture/boot/game-bootstrap.js")'
   ];
 
-  if (!containsAnySnippet(gameModuleSource, assetRemapSnippetCandidates)) {
-    errors.push('拆分入口 game.js 模块缺少关键桥接片段: asset-file-remap install');
+  const assetRemapSnippetCandidates = [
+    'require("./runtime/asset-file-remap.js").installAssetFileRemap()',
+    'require("../../runtime/asset-file-remap.js").installAssetFileRemap()'
+  ];
+  if (containsAnySnippet(gameModuleSource, assetRemapSnippetCandidates)) {
+    errors.push('拆分入口 game.js 模块仍包含 remap 安装，请移除运行时 remap 依赖');
   }
   if (!containsAnySnippet(gameModuleSource, gameBootstrapSnippetCandidates)) {
     errors.push('拆分入口 game.js 模块缺少关键桥接片段: game-bootstrap require');

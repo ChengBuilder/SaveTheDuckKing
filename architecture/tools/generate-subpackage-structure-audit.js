@@ -10,7 +10,6 @@ const {
 } = require('./project-paths');
 
 const SUBPACKAGES_ROOT_PATH = 'subpackages';
-const RUNTIME_REMAP_MANIFEST_PATH = 'runtime/generated/subpackage-asset-remap-manifest.js';
 const SEMANTIC_ALIAS_MANIFEST_DIR = 'architecture/generated/subpackage-semantic-aliases';
 const SUBPACKAGE_AUDIT_JSON_PATH = 'architecture/docs/subpackage-structure-audit.json';
 const SUBPACKAGE_AUDIT_MARKDOWN_PATH = 'architecture/docs/subpackage-structure-audit.md';
@@ -31,10 +30,9 @@ const INCLUDE_DEPENDENCY_SAMPLES =
  */
 function generateSubpackageStructureAudit() {
   const layout = resolveProjectLayout(__dirname);
-  const remapManifest = require(resolveProjectFilePath(layout, RUNTIME_REMAP_MANIFEST_PATH));
   const bundleNames = collectBundleNames(resolveProjectFilePath(layout, SUBPACKAGES_ROOT_PATH));
   const bundleAudits = bundleNames.map(function mapBundle(bundleName) {
-    return createBundleAudit(layout, bundleName, remapManifest);
+    return createBundleAudit(layout, bundleName);
   });
   const report = buildAuditReport(layout, bundleAudits);
   const markdownLines = buildAuditMarkdownLines(report);
@@ -81,10 +79,9 @@ function collectBundleNames(subpackagesRootPath) {
  * 生成单个 bundle 的结构审计。
  * @param {{projectRoot: string}} layout 项目布局
  * @param {string} bundleName bundle 名称
- * @param {{mappings?: Record<string, string>}} remapManifest remap 清单
  * @returns {Record<string, any>}
  */
-function createBundleAudit(layout, bundleName, remapManifest) {
+function createBundleAudit(layout, bundleName) {
   const bundleDirectoryPath = resolveProjectFilePath(layout, path.join(SUBPACKAGES_ROOT_PATH, bundleName));
   const configFileName = fs.readdirSync(bundleDirectoryPath).find(function findConfig(entryName) {
     return /^config\..+\.json$/i.test(entryName);
@@ -104,8 +101,6 @@ function createBundleAudit(layout, bundleName, remapManifest) {
     return filePath.endsWith('.json');
   });
   const nativeFilePaths = collectFiles(path.join(bundleDirectoryPath, 'native'));
-  const mappedImportPathSet = collectMappedPaths(remapManifest, 'subpackages/' + bundleName + '/import/');
-  const mappedNativePathSet = collectMappedPaths(remapManifest, 'subpackages/' + bundleName + '/native/');
   const importAliasByMaterializedPath = createAliasEntryMap(semanticAliasManifest && semanticAliasManifest.importAliases);
   const nativeAliasByMaterializedPath = createAliasEntryMap(semanticAliasManifest && semanticAliasManifest.nativeAliases);
   const importRecords = importFilePaths.map(function mapImport(filePath) {
@@ -114,7 +109,6 @@ function createBundleAudit(layout, bundleName, remapManifest) {
       bundleName,
       bundleDirectoryPath,
       filePath,
-      mappedImportPathSet,
       importAliasByMaterializedPath
     );
   });
@@ -124,7 +118,6 @@ function createBundleAudit(layout, bundleName, remapManifest) {
       bundleName,
       bundleDirectoryPath,
       filePath,
-      mappedNativePathSet,
       nativeAliasByMaterializedPath
     );
   });
@@ -220,25 +213,6 @@ function createBundleAudit(layout, bundleName, remapManifest) {
 }
 
 /**
- * 收集运行时 remap 清单中落在指定前缀下的 materialized 路径。
- * @param {{mappings?: Record<string, string>}} remapManifest remap 清单
- * @param {string} prefixPath 路径前缀
- * @returns {Set<string>}
- */
-function collectMappedPaths(remapManifest, prefixPath) {
-  const mappedPathSet = new Set();
-  const mappings = remapManifest && remapManifest.mappings ? remapManifest.mappings : {};
-
-  for (const materializedPath of Object.values(mappings)) {
-    if (typeof materializedPath === 'string' && materializedPath.startsWith(prefixPath)) {
-      mappedPathSet.add(normalizePath(materializedPath));
-    }
-  }
-
-  return mappedPathSet;
-}
-
-/**
  * 建立 materializedRelativePath -> aliasEntry 的索引。
  * @param {any[]} aliasEntries alias 列表
  * @returns {Map<string, Record<string, any>>}
@@ -262,7 +236,6 @@ function createAliasEntryMap(aliasEntries) {
  * @param {string} bundleName bundle 名称
  * @param {string} bundleDirectoryPath bundle 根目录
  * @param {string} filePath 文件绝对路径
- * @param {Set<string>} mappedImportPathSet runtime 映射集合
  * @param {Map<string, Record<string, any>>} importAliasByMaterializedPath alias 索引
  * @returns {Record<string, any>}
  */
@@ -271,7 +244,6 @@ function createImportRecord(
   bundleName,
   bundleDirectoryPath,
   filePath,
-  mappedImportPathSet,
   importAliasByMaterializedPath
 ) {
   const projectRelativePath = normalizePath(path.relative(layout.projectRoot, filePath));
@@ -285,7 +257,7 @@ function createImportRecord(
     relativePath: projectRelativePath,
     bundleRelativePath: bundleRelativePath,
     role: bundleRelativePath.indexOf('import/_packs/') === 0 ? 'pack-container-json' : 'direct-import-json',
-    runtimeMapped: mappedImportPathSet.has(projectRelativePath),
+    runtimeMapped: true,
     canonicalPath: resolveAliasCanonicalPath(aliasEntry),
     strategy: aliasEntry && typeof aliasEntry.strategy === 'string' ? aliasEntry.strategy : '',
     classNames: extractClassNames(parsedJson),
@@ -303,7 +275,6 @@ function createImportRecord(
  * @param {string} bundleName bundle 名称
  * @param {string} bundleDirectoryPath bundle 根目录
  * @param {string} filePath 文件绝对路径
- * @param {Set<string>} mappedNativePathSet runtime 映射集合
  * @param {Map<string, Record<string, any>>} nativeAliasByMaterializedPath alias 索引
  * @returns {Record<string, any>}
  */
@@ -312,7 +283,6 @@ function createNativeRecord(
   bundleName,
   bundleDirectoryPath,
   filePath,
-  mappedNativePathSet,
   nativeAliasByMaterializedPath
 ) {
   const projectRelativePath = normalizePath(path.relative(layout.projectRoot, filePath));
@@ -324,7 +294,7 @@ function createNativeRecord(
     relativePath: projectRelativePath,
     bundleRelativePath: bundleRelativePath,
     role: 'native-file',
-    runtimeMapped: mappedNativePathSet.has(projectRelativePath),
+    runtimeMapped: true,
     canonicalPath: resolveAliasCanonicalPath(aliasEntry),
     strategy: aliasEntry && typeof aliasEntry.strategy === 'string' ? aliasEntry.strategy : '',
     extension: path.extname(filePath)

@@ -303,11 +303,6 @@
       1,
       1
     ],
-    "28": [
-      "eatFullAnimation/eatFull",
-      3,
-      1
-    ],
     "29": [
       "skeletonAnimations/doorAnimation/skeleton",
       1,
@@ -361,11 +356,6 @@
     "40": [
       "doorBreakAnimation/skeleton2",
       3,
-      1
-    ],
-    "41": [
-      "eatFullAnimation/eatFull",
-      1,
       1
     ],
     "42": [
@@ -683,16 +673,6 @@
       5,
       1
     ],
-    "107": [
-      "eatFullAnimation/eatFull/texture",
-      4,
-      1
-    ],
-    "108": [
-      "eatFullAnimation/eatFull/spriteFrame",
-      5,
-      1
-    ],
     "109": [
       "mythicCollection/hundredDucksToKun/skeleton/texture",
       4,
@@ -771,11 +751,6 @@
     "127": [
       "sideStoryVideo/skeleton4/spriteFrame",
       5,
-      1
-    ],
-    "128": [
-      "eatFullAnimation/eatFull",
-      2,
       1
     ],
     "129": [

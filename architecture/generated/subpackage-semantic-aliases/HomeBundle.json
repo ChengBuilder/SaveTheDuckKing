@@ -1,6 +1,6 @@
 {
   "bundleName": "HomeBundle",
-  "generatedAt": "2026-04-09T05:24:44.718Z",
+  "generatedAt": "2026-04-13T05:26:38.180Z",
   "importAliases": [
     {
       "kind": "import",
@@ -25,11 +25,11 @@
     {
       "kind": "import",
       "originalRelativePath": "import/01457198-91b3-4563-a986-6d565250f877.a2533.json",
-      "semanticRelativePath": "__semantic__/tex/unlockAt100Ducks/spriteFrame.json",
-      "materializedRelativePath": "import/tex/unlockAt100Ducks/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/tex/unlockTips/duckUnlockAt100/spriteFrame.json",
+      "materializedRelativePath": "import/tex/unlockTips/duckUnlockAt100/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/获得100只鸭子解锁/spriteFrame"
+        "canonicalPath": "tex/unlockTips/duckUnlockAt100/spriteFrame"
       }
     },
     {
@@ -147,9 +147,10 @@
         "commonPrefixSegments": [
           "tex"
         ],
-        "primaryLeafName": "获得100只鹅解锁",
+        "primaryLeafName": "bottomOverlay",
         "assetCount": 72,
-        "textureUuidKeys": []
+        "textureUuidKeys": [],
+        "resolvedFromExistingMaterializedFile": true
       }
     },
     {
@@ -369,11 +370,11 @@
     {
       "kind": "import",
       "originalRelativePath": "import/3f1855bc-739a-4571-b673-b63093dd1bb6.a2533.json",
-      "semanticRelativePath": "__semantic__/tex/unlockAt100Geese/spriteFrame.json",
-      "materializedRelativePath": "import/tex/unlockAt100Geese/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/tex/unlockTips/gooseUnlockAt100/spriteFrame.json",
+      "materializedRelativePath": "import/tex/unlockTips/gooseUnlockAt100/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/获得100只鹅解锁/spriteFrame"
+        "canonicalPath": "tex/unlockTips/gooseUnlockAt100/spriteFrame"
       }
     },
     {
@@ -1541,11 +1542,11 @@
     {
       "kind": "native",
       "originalRelativePath": "native/01457198-91b3-4563-a986-6d565250f877.fcb5c.png",
-      "semanticRelativePath": "__semantic__/tex/unlockAt100Ducks/spriteFrame.png",
-      "materializedRelativePath": "native/tex/unlockAt100Ducks/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/tex/unlockTips/duckUnlockAt100/spriteFrame.png",
+      "materializedRelativePath": "native/tex/unlockTips/duckUnlockAt100/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/获得100只鸭子解锁/spriteFrame"
+        "canonicalPath": "tex/unlockTips/duckUnlockAt100/spriteFrame"
       }
     },
     {
@@ -1705,11 +1706,11 @@
     {
       "kind": "native",
       "originalRelativePath": "native/3f1855bc-739a-4571-b673-b63093dd1bb6.5f2bc.png",
-      "semanticRelativePath": "__semantic__/tex/unlockAt100Geese/spriteFrame.png",
-      "materializedRelativePath": "native/tex/unlockAt100Geese/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/tex/unlockTips/gooseUnlockAt100/spriteFrame.png",
+      "materializedRelativePath": "native/tex/unlockTips/gooseUnlockAt100/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "tex/获得100只鹅解锁/spriteFrame"
+        "canonicalPath": "tex/unlockTips/gooseUnlockAt100/spriteFrame"
       }
     },
     {

@@ -309,7 +309,8 @@ function writeModuleFiles(outputDirPath, defineRecords) {
 function patchFactorySourceForRuntimeId(moduleId, factorySource) {
   if (moduleId === 'game.js') {
     return factorySource
-      .replace(/require\((['"])\.\/runtime\/asset-file-remap\.js\1\)/g, 'require("../../runtime/asset-file-remap.js")')
+      .replace(/require\((['"])\.\/runtime\/asset-file-remap\.js\1\)\.installAssetFileRemap\(\);?/g, '')
+      .replace(/require\((['"])\.\.\/\.\.\/runtime\/asset-file-remap\.js\1\)\.installAssetFileRemap\(\);?/g, '')
       .replace(/require\((['"])\.\/architecture\/boot\/game-bootstrap\.js\1\)/g, 'require("../../architecture/boot/game-bootstrap.js")');
   }
 

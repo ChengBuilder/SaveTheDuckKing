@@ -8,12 +8,6 @@ const { SEMANTIC_NAME_TRANSLATIONS } = require("./semantic-name-translations");
 const PROJECT_ROOT = process.cwd();
 const SUBPACKAGES_DIR = path.join(PROJECT_ROOT, "subpackages");
 const UUID_REPORT_PATH = path.join(PROJECT_ROOT, "architecture", "docs", "uuid-asset-report.json");
-const RUNTIME_REMAP_MANIFEST_PATH = path.join(
-  PROJECT_ROOT,
-  "runtime",
-  "generated",
-  "subpackage-asset-remap-manifest.js"
-);
 const SEMANTIC_ALIAS_MANIFEST_DIR = path.join(
   PROJECT_ROOT,
   "architecture",
@@ -185,10 +179,6 @@ function main() {
       unresolvedImports: bundleManifest.unresolvedImports.length,
       unresolvedNative: bundleManifest.unresolvedNative.length,
     });
-  }
-
-  if (shouldPersistArtifacts) {
-    writeRuntimeRemapManifest(bundleManifests);
   }
 
   console.log("[semanticize-subpackage-assets] summary");
@@ -1079,55 +1069,6 @@ function resolveExistingMaterializedRelativePath(bundleDir, materializedRelative
   }
 
   return normalizePathForPosix(path.join(path.dirname(normalizedMaterializedRelativePath), siblingFileNames[0]));
-}
-
-function writeRuntimeRemapManifest(bundleManifests) {
-  const bundleManifestByName = new Map();
-
-  for (const bundleName of getBundleNames()) {
-    const bundleDir = path.join(SUBPACKAGES_DIR, bundleName);
-    const existingBundleManifest = loadExistingBundleManifest(bundleDir);
-    if (existingBundleManifest && existingBundleManifest.bundleName) {
-      bundleManifestByName.set(existingBundleManifest.bundleName, existingBundleManifest);
-    }
-  }
-
-  for (const bundleManifest of bundleManifests) {
-    if (bundleManifest && bundleManifest.bundleName) {
-      bundleManifestByName.set(bundleManifest.bundleName, bundleManifest);
-    }
-  }
-
-  const runtimeManifest = {
-    generatedAt: new Date().toISOString(),
-    mappings: {},
-  };
-
-  for (const bundleManifest of bundleManifestByName.values()) {
-    const bundleName = bundleManifest.bundleName;
-    const aliasEntries = bundleManifest.importAliases.concat(bundleManifest.nativeAliases);
-
-    for (const entry of aliasEntries) {
-      if (!entry.materializedRelativePath) {
-        continue;
-      }
-
-      const originalPath = path.posix.join("subpackages", bundleName, entry.originalRelativePath);
-      const resolvedMaterializedRelativePath = resolveExistingMaterializedRelativePath(
-        path.join(SUBPACKAGES_DIR, bundleName),
-        entry.materializedRelativePath
-      );
-      const materializedPath = path.posix.join("subpackages", bundleName, resolvedMaterializedRelativePath);
-      runtimeManifest.mappings[originalPath] = materializedPath;
-    }
-  }
-
-  ensureDirectory(path.dirname(RUNTIME_REMAP_MANIFEST_PATH));
-  fs.writeFileSync(
-    RUNTIME_REMAP_MANIFEST_PATH,
-    "\"use strict\";\n\nmodule.exports = " + JSON.stringify(runtimeManifest, null, 2) + ";\n",
-    "utf8"
-  );
 }
 
 function findCanonicalPathForUuidStem(

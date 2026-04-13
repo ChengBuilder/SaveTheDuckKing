@@ -44,7 +44,6 @@
 - `subpackages/HomeBundle/`：主页/大厅相关资源。
 - `subpackages/uiBundle/`：通用 UI、图鉴、弹窗、结算页等。
 - `subpackages/DuckBundle/`：鸭子主玩法资源。
-- `subpackages/Game2Bundle/`：第二玩法资源。
 - `subpackages/resources/`：跨玩法共享资源与通用特效。
 - `subpackages/aniBundle/`：动画资源。
 - `subpackages/audioBundle/`：音频资源。

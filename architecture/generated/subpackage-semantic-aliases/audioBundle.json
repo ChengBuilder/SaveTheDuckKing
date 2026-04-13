@@ -1,6 +1,6 @@
 {
   "bundleName": "audioBundle",
-  "generatedAt": "2026-04-09T05:24:45.322Z",
+  "generatedAt": "2026-04-13T05:26:38.444Z",
   "importAliases": [
     {
       "kind": "import",
@@ -10,26 +10,6 @@
       "strategy": "direct-canonical-path",
       "detail": {
         "canonicalPath": "comboMusic/combo_3"
-      }
-    },
-    {
-      "kind": "import",
-      "originalRelativePath": "import/099bc925-a0f0-485a-be12-49e4e0b69297.7cc67.json",
-      "semanticRelativePath": "__semantic__/fruitGame/eliminate3.json",
-      "materializedRelativePath": "import/fruitGame/eliminate3.json",
-      "strategy": "direct-canonical-path",
-      "detail": {
-        "canonicalPath": "fruitGame/eliminate3"
-      }
-    },
-    {
-      "kind": "import",
-      "originalRelativePath": "import/0b114abf-f089-44f0-9904-c46a707e665d.205d7.json",
-      "semanticRelativePath": "__semantic__/fruitGame/eliminate8.json",
-      "materializedRelativePath": "import/fruitGame/eliminate8.json",
-      "strategy": "direct-canonical-path",
-      "detail": {
-        "canonicalPath": "fruitGame/eliminate8"
       }
     },
     {
@@ -65,11 +45,11 @@
     {
       "kind": "import",
       "originalRelativePath": "import/22a6dd72-d08b-46c9-9da5-5d2a4fefacc2.a0322.json",
-      "semanticRelativePath": "__semantic__/win.json",
-      "materializedRelativePath": "import/win.json",
+      "semanticRelativePath": "__semantic__/legacy/victory.json",
+      "materializedRelativePath": "import/legacy/victory.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "win"
+        "canonicalPath": "legacy/victory"
       }
     },
     {
@@ -95,21 +75,11 @@
     {
       "kind": "import",
       "originalRelativePath": "import/2e5be8e9-e343-4990-acfd-51e7942ab2c4.02dbf.json",
-      "semanticRelativePath": "__semantic__/adz.json",
-      "materializedRelativePath": "import/adz.json",
+      "semanticRelativePath": "__semantic__/legacy/unknownAdz.json",
+      "materializedRelativePath": "import/legacy/unknownAdz.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "adz"
-      }
-    },
-    {
-      "kind": "import",
-      "originalRelativePath": "import/317cbbaa-6213-481b-b327-2b666d6e835b.59f2f.json",
-      "semanticRelativePath": "__semantic__/fruitGame/FruitWin.json",
-      "materializedRelativePath": "import/fruitGame/FruitWin.json",
-      "strategy": "direct-canonical-path",
-      "detail": {
-        "canonicalPath": "fruitGame/FruitWin"
+        "canonicalPath": "legacy/unknownAdz"
       }
     },
     {
@@ -124,32 +94,12 @@
     },
     {
       "kind": "import",
-      "originalRelativePath": "import/35cf13de-f938-4b03-b983-0398b824720b.910d6.json",
-      "semanticRelativePath": "__semantic__/fruitGame/eliminate1.json",
-      "materializedRelativePath": "import/fruitGame/eliminate1.json",
-      "strategy": "direct-canonical-path",
-      "detail": {
-        "canonicalPath": "fruitGame/eliminate1"
-      }
-    },
-    {
-      "kind": "import",
       "originalRelativePath": "import/376cbf2b-51ed-4917-b52e-18c34ba34095.f9d83.json",
       "semanticRelativePath": "__semantic__/bgm/pureColor.json",
       "materializedRelativePath": "import/bgm/pureColor.json",
       "strategy": "direct-canonical-path",
       "detail": {
         "canonicalPath": "bgm/pureColor"
-      }
-    },
-    {
-      "kind": "import",
-      "originalRelativePath": "import/377b04d2-5b96-4b2e-97f3-7032e7ee05cb.4e562.json",
-      "semanticRelativePath": "__semantic__/fruitGame/eliminate6.json",
-      "materializedRelativePath": "import/fruitGame/eliminate6.json",
-      "strategy": "direct-canonical-path",
-      "detail": {
-        "canonicalPath": "fruitGame/eliminate6"
       }
     },
     {
@@ -165,11 +115,11 @@
     {
       "kind": "import",
       "originalRelativePath": "import/3e5523b9-a4ba-4f88-9a47-0b3bb0ab312a.6e27e.json",
-      "semanticRelativePath": "__semantic__/fly.json",
-      "materializedRelativePath": "import/fly.json",
+      "semanticRelativePath": "__semantic__/legacy/fly.json",
+      "materializedRelativePath": "import/legacy/fly.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "fly"
+        "canonicalPath": "legacy/fly"
       }
     },
     {
@@ -195,31 +145,11 @@
     {
       "kind": "import",
       "originalRelativePath": "import/4de3fa18-79cb-4894-9a31-ff346ac5703a.61fc5.json",
-      "semanticRelativePath": "__semantic__/bdz.json",
-      "materializedRelativePath": "import/bdz.json",
+      "semanticRelativePath": "__semantic__/legacy/unknownBdz.json",
+      "materializedRelativePath": "import/legacy/unknownBdz.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "bdz"
-      }
-    },
-    {
-      "kind": "import",
-      "originalRelativePath": "import/4fa3035e-54ef-4f8c-8ba4-084818724df6.59614.json",
-      "semanticRelativePath": "__semantic__/fruitGame/fruitClick.json",
-      "materializedRelativePath": "import/fruitGame/fruitClick.json",
-      "strategy": "direct-canonical-path",
-      "detail": {
-        "canonicalPath": "fruitGame/fruitClick"
-      }
-    },
-    {
-      "kind": "import",
-      "originalRelativePath": "import/506d144d-1977-4bcb-b1ef-e1e0a71cd4de.80481.json",
-      "semanticRelativePath": "__semantic__/fruitGame/plateUnlock.json",
-      "materializedRelativePath": "import/fruitGame/plateUnlock.json",
-      "strategy": "direct-canonical-path",
-      "detail": {
-        "canonicalPath": "fruitGame/plateUnlock"
+        "canonicalPath": "legacy/unknownBdz"
       }
     },
     {
@@ -304,26 +234,6 @@
     },
     {
       "kind": "import",
-      "originalRelativePath": "import/772a3b1d-4e92-4c81-a80e-53b49d207810.91a4f.json",
-      "semanticRelativePath": "__semantic__/fruitGame/eliminate2.json",
-      "materializedRelativePath": "import/fruitGame/eliminate2.json",
-      "strategy": "direct-canonical-path",
-      "detail": {
-        "canonicalPath": "fruitGame/eliminate2"
-      }
-    },
-    {
-      "kind": "import",
-      "originalRelativePath": "import/7ae99c44-a677-42d5-ba32-ae5bbe8cce4f.0f60b.json",
-      "semanticRelativePath": "__semantic__/fruitGame/eat.json",
-      "materializedRelativePath": "import/fruitGame/eat.json",
-      "strategy": "direct-canonical-path",
-      "detail": {
-        "canonicalPath": "fruitGame/eat"
-      }
-    },
-    {
-      "kind": "import",
       "originalRelativePath": "import/7e06696e-6616-481e-a048-c5bcbe47a1eb.01d6c.json",
       "semanticRelativePath": "__semantic__/ui/levelComplete.json",
       "materializedRelativePath": "import/ui/levelComplete.json",
@@ -344,32 +254,12 @@
     },
     {
       "kind": "import",
-      "originalRelativePath": "import/85619ea5-4e54-42f2-8dc3-31a0f101c34f.aad08.json",
-      "semanticRelativePath": "__semantic__/fruitGame/slotFull.json",
-      "materializedRelativePath": "import/fruitGame/slotFull.json",
-      "strategy": "direct-canonical-path",
-      "detail": {
-        "canonicalPath": "fruitGame/slotFull"
-      }
-    },
-    {
-      "kind": "import",
-      "originalRelativePath": "import/8bd84c3a-cc67-43fb-94a9-103bd2e9285d.8c6b5.json",
-      "semanticRelativePath": "__semantic__/fruitGame/born.json",
-      "materializedRelativePath": "import/fruitGame/born.json",
-      "strategy": "direct-canonical-path",
-      "detail": {
-        "canonicalPath": "fruitGame/born"
-      }
-    },
-    {
-      "kind": "import",
       "originalRelativePath": "import/8c5a5b89-eadd-48f0-9c20-1a3a76e579b9.30d92.json",
-      "semanticRelativePath": "__semantic__/door.json",
-      "materializedRelativePath": "import/door.json",
+      "semanticRelativePath": "__semantic__/legacy/door.json",
+      "materializedRelativePath": "import/legacy/door.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "door"
+        "canonicalPath": "legacy/door"
       }
     },
     {
@@ -385,11 +275,11 @@
     {
       "kind": "import",
       "originalRelativePath": "import/935818a2-63cc-448f-9077-98d671fa3c03.fcaf7.json",
-      "semanticRelativePath": "__semantic__/ls.json",
-      "materializedRelativePath": "import/ls.json",
+      "semanticRelativePath": "__semantic__/legacy/unknownLs.json",
+      "materializedRelativePath": "import/legacy/unknownLs.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "ls"
+        "canonicalPath": "legacy/unknownLs"
       }
     },
     {
@@ -400,26 +290,6 @@
       "strategy": "direct-canonical-path",
       "detail": {
         "canonicalPath": "woodDrop/woodDrop_2"
-      }
-    },
-    {
-      "kind": "import",
-      "originalRelativePath": "import/960d827f-fed0-42ae-b9d0-642738b0c9df.03396.json",
-      "semanticRelativePath": "__semantic__/sceneTransition/fruitGameReveal.json",
-      "materializedRelativePath": "import/sceneTransition/fruitGameReveal.json",
-      "strategy": "direct-canonical-path",
-      "detail": {
-        "canonicalPath": "sceneTransition/fruitGameReveal"
-      }
-    },
-    {
-      "kind": "import",
-      "originalRelativePath": "import/967dbad6-d1d0-4878-b808-91d1464476e0.18674.json",
-      "semanticRelativePath": "__semantic__/lz.json",
-      "materializedRelativePath": "import/lz.json",
-      "strategy": "direct-canonical-path",
-      "detail": {
-        "canonicalPath": "lz"
       }
     },
     {
@@ -455,11 +325,11 @@
     {
       "kind": "import",
       "originalRelativePath": "import/9ce37df9-90d1-4ee3-909a-3dd10334170f.2ef61.json",
-      "semanticRelativePath": "__semantic__/pop.json",
-      "materializedRelativePath": "import/pop.json",
+      "semanticRelativePath": "__semantic__/legacy/pop.json",
+      "materializedRelativePath": "import/legacy/pop.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "pop"
+        "canonicalPath": "legacy/pop"
       }
     },
     {
@@ -485,31 +355,21 @@
     {
       "kind": "import",
       "originalRelativePath": "import/ad04aeb5-ef02-41c4-890a-aab3b2ab436c.d0b3a.json",
-      "semanticRelativePath": "__semantic__/over.json",
-      "materializedRelativePath": "import/over.json",
+      "semanticRelativePath": "__semantic__/legacy/gameOver.json",
+      "materializedRelativePath": "import/legacy/gameOver.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "over"
+        "canonicalPath": "legacy/gameOver"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/adz.json",
-      "semanticRelativePath": "__semantic__/legacy/unknownAdz.json",
-      "materializedRelativePath": "import/legacy/unknownAdz.json",
+      "semanticRelativePath": "__semantic__/legacy/unknownAdz__2.json",
+      "materializedRelativePath": "import/legacy/unknownAdz__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
         "canonicalPath": "legacy/unknownAdz"
-      }
-    },
-    {
-      "kind": "import",
-      "originalRelativePath": "import/afed72bc-2904-420f-9fb9-5920f2950b97.58f89.json",
-      "semanticRelativePath": "__semantic__/fruitGame/born1.json",
-      "materializedRelativePath": "import/fruitGame/born1.json",
-      "strategy": "direct-canonical-path",
-      "detail": {
-        "canonicalPath": "fruitGame/born1"
       }
     },
     {
@@ -524,22 +384,12 @@
     },
     {
       "kind": "import",
-      "originalRelativePath": "import/b2299d5e-6e8b-4baa-bc82-10f295ceea82.cbf52.json",
-      "semanticRelativePath": "__semantic__/fruitGame/eliminate4.json",
-      "materializedRelativePath": "import/fruitGame/eliminate4.json",
-      "strategy": "direct-canonical-path",
-      "detail": {
-        "canonicalPath": "fruitGame/eliminate4"
-      }
-    },
-    {
-      "kind": "import",
       "originalRelativePath": "import/b482f9c1-d4b0-4e85-9131-88bddefe370c.1f752.json",
-      "semanticRelativePath": "__semantic__/gz.json",
-      "materializedRelativePath": "import/gz.json",
+      "semanticRelativePath": "__semantic__/legacy/levelCompleteDuplicateGz.json",
+      "materializedRelativePath": "import/legacy/levelCompleteDuplicateGz.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "gz"
+        "canonicalPath": "legacy/levelCompleteDuplicateGz"
       }
     },
     {
@@ -555,8 +405,8 @@
     {
       "kind": "import",
       "originalRelativePath": "import/bdz.json",
-      "semanticRelativePath": "__semantic__/legacy/unknownBdz.json",
-      "materializedRelativePath": "import/legacy/unknownBdz.json",
+      "semanticRelativePath": "__semantic__/legacy/unknownBdz__2.json",
+      "materializedRelativePath": "import/legacy/unknownBdz__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
         "canonicalPath": "legacy/unknownBdz"
@@ -585,11 +435,11 @@
     {
       "kind": "import",
       "originalRelativePath": "import/cea88659-80bc-4a20-b206-5484788b9b84.1471e.json",
-      "semanticRelativePath": "__semantic__/levelup.json",
-      "materializedRelativePath": "import/levelup.json",
+      "semanticRelativePath": "__semantic__/legacy/levelUp.json",
+      "materializedRelativePath": "import/legacy/levelUp.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "levelup"
+        "canonicalPath": "legacy/levelUp"
       }
     },
     {
@@ -605,21 +455,11 @@
     {
       "kind": "import",
       "originalRelativePath": "import/door.json",
-      "semanticRelativePath": "__semantic__/legacy/door.json",
-      "materializedRelativePath": "import/legacy/door.json",
+      "semanticRelativePath": "__semantic__/legacy/door__2.json",
+      "materializedRelativePath": "import/legacy/door__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
         "canonicalPath": "legacy/door"
-      }
-    },
-    {
-      "kind": "import",
-      "originalRelativePath": "import/e02a56cc-0d95-4a05-a231-c08e49acd1e3.4a320.json",
-      "semanticRelativePath": "__semantic__/fruitGame/eliminate5.json",
-      "materializedRelativePath": "import/fruitGame/eliminate5.json",
-      "strategy": "direct-canonical-path",
-      "detail": {
-        "canonicalPath": "fruitGame/eliminate5"
       }
     },
     {
@@ -635,11 +475,11 @@
     {
       "kind": "import",
       "originalRelativePath": "import/eb6d3dec-4c58-4cfa-baa3-4df6cfea73c2.ece13.json",
-      "semanticRelativePath": "__semantic__/show.json",
-      "materializedRelativePath": "import/show.json",
+      "semanticRelativePath": "__semantic__/legacy/levelCompleteDuplicateShow.json",
+      "materializedRelativePath": "import/legacy/levelCompleteDuplicateShow.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "show"
+        "canonicalPath": "legacy/levelCompleteDuplicateShow"
       }
     },
     {
@@ -664,29 +504,9 @@
     },
     {
       "kind": "import",
-      "originalRelativePath": "import/f75d0f9c-d888-4b93-872f-80944e37e4b1.be810.json",
-      "semanticRelativePath": "__semantic__/fruitGame/fruitBgm.json",
-      "materializedRelativePath": "import/fruitGame/fruitBgm.json",
-      "strategy": "direct-canonical-path",
-      "detail": {
-        "canonicalPath": "fruitGame/fruitBgm"
-      }
-    },
-    {
-      "kind": "import",
-      "originalRelativePath": "import/fb89a5d3-096b-44a2-9309-c240abdfab67.5536b.json",
-      "semanticRelativePath": "__semantic__/fruitGame/eliminate7.json",
-      "materializedRelativePath": "import/fruitGame/eliminate7.json",
-      "strategy": "direct-canonical-path",
-      "detail": {
-        "canonicalPath": "fruitGame/eliminate7"
-      }
-    },
-    {
-      "kind": "import",
       "originalRelativePath": "import/fly.json",
-      "semanticRelativePath": "__semantic__/legacy/fly.json",
-      "materializedRelativePath": "import/legacy/fly.json",
+      "semanticRelativePath": "__semantic__/legacy/fly__2.json",
+      "materializedRelativePath": "import/legacy/fly__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
         "canonicalPath": "legacy/fly"
@@ -695,8 +515,8 @@
     {
       "kind": "import",
       "originalRelativePath": "import/gz.json",
-      "semanticRelativePath": "__semantic__/legacy/levelCompleteDuplicateGz.json",
-      "materializedRelativePath": "import/legacy/levelCompleteDuplicateGz.json",
+      "semanticRelativePath": "__semantic__/legacy/levelCompleteDuplicateGz__2.json",
+      "materializedRelativePath": "import/legacy/levelCompleteDuplicateGz__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
         "canonicalPath": "legacy/levelCompleteDuplicateGz"
@@ -705,8 +525,8 @@
     {
       "kind": "import",
       "originalRelativePath": "import/levelup.json",
-      "semanticRelativePath": "__semantic__/legacy/levelUp.json",
-      "materializedRelativePath": "import/legacy/levelUp.json",
+      "semanticRelativePath": "__semantic__/legacy/levelUp__2.json",
+      "materializedRelativePath": "import/legacy/levelUp__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
         "canonicalPath": "legacy/levelUp"
@@ -715,8 +535,8 @@
     {
       "kind": "import",
       "originalRelativePath": "import/ls.json",
-      "semanticRelativePath": "__semantic__/legacy/unknownLs.json",
-      "materializedRelativePath": "import/legacy/unknownLs.json",
+      "semanticRelativePath": "__semantic__/legacy/unknownLs__2.json",
+      "materializedRelativePath": "import/legacy/unknownLs__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
         "canonicalPath": "legacy/unknownLs"
@@ -735,8 +555,8 @@
     {
       "kind": "import",
       "originalRelativePath": "import/over.json",
-      "semanticRelativePath": "__semantic__/legacy/gameOver.json",
-      "materializedRelativePath": "import/legacy/gameOver.json",
+      "semanticRelativePath": "__semantic__/legacy/gameOver__2.json",
+      "materializedRelativePath": "import/legacy/gameOver__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
         "canonicalPath": "legacy/gameOver"
@@ -745,8 +565,8 @@
     {
       "kind": "import",
       "originalRelativePath": "import/pop.json",
-      "semanticRelativePath": "__semantic__/legacy/pop.json",
-      "materializedRelativePath": "import/legacy/pop.json",
+      "semanticRelativePath": "__semantic__/legacy/pop__2.json",
+      "materializedRelativePath": "import/legacy/pop__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
         "canonicalPath": "legacy/pop"
@@ -755,8 +575,8 @@
     {
       "kind": "import",
       "originalRelativePath": "import/show.json",
-      "semanticRelativePath": "__semantic__/legacy/levelCompleteDuplicateShow.json",
-      "materializedRelativePath": "import/legacy/levelCompleteDuplicateShow.json",
+      "semanticRelativePath": "__semantic__/legacy/levelCompleteDuplicateShow__2.json",
+      "materializedRelativePath": "import/legacy/levelCompleteDuplicateShow__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
         "canonicalPath": "legacy/levelCompleteDuplicateShow"
@@ -765,8 +585,8 @@
     {
       "kind": "import",
       "originalRelativePath": "import/win.json",
-      "semanticRelativePath": "__semantic__/legacy/victory.json",
-      "materializedRelativePath": "import/legacy/victory.json",
+      "semanticRelativePath": "__semantic__/legacy/victory__2.json",
+      "materializedRelativePath": "import/legacy/victory__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
         "canonicalPath": "legacy/victory"
@@ -782,26 +602,6 @@
       "strategy": "direct-canonical-path",
       "detail": {
         "canonicalPath": "comboMusic/combo_3"
-      }
-    },
-    {
-      "kind": "native",
-      "originalRelativePath": "native/099bc925-a0f0-485a-be12-49e4e0b69297.a30dd.mp3",
-      "semanticRelativePath": "__semantic__/fruitGame/eliminate3.mp3",
-      "materializedRelativePath": "native/fruitGame/eliminate3.mp3",
-      "strategy": "direct-canonical-path",
-      "detail": {
-        "canonicalPath": "fruitGame/eliminate3"
-      }
-    },
-    {
-      "kind": "native",
-      "originalRelativePath": "native/0b114abf-f089-44f0-9904-c46a707e665d.9f029.mp3",
-      "semanticRelativePath": "__semantic__/fruitGame/eliminate8.mp3",
-      "materializedRelativePath": "native/fruitGame/eliminate8.mp3",
-      "strategy": "direct-canonical-path",
-      "detail": {
-        "canonicalPath": "fruitGame/eliminate8"
       }
     },
     {
@@ -837,11 +637,11 @@
     {
       "kind": "native",
       "originalRelativePath": "native/22a6dd72-d08b-46c9-9da5-5d2a4fefacc2.79192.mp3",
-      "semanticRelativePath": "__semantic__/win.mp3",
-      "materializedRelativePath": "native/win.mp3",
+      "semanticRelativePath": "__semantic__/legacy/victory.mp3",
+      "materializedRelativePath": "native/legacy/victory.mp3",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "win"
+        "canonicalPath": "legacy/victory"
       }
     },
     {
@@ -867,21 +667,11 @@
     {
       "kind": "native",
       "originalRelativePath": "native/2e5be8e9-e343-4990-acfd-51e7942ab2c4.c4aa8.mp3",
-      "semanticRelativePath": "__semantic__/adz.mp3",
-      "materializedRelativePath": "native/adz.mp3",
+      "semanticRelativePath": "__semantic__/legacy/unknownAdz.mp3",
+      "materializedRelativePath": "native/legacy/unknownAdz.mp3",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "adz"
-      }
-    },
-    {
-      "kind": "native",
-      "originalRelativePath": "native/317cbbaa-6213-481b-b327-2b666d6e835b.1960e.mp3",
-      "semanticRelativePath": "__semantic__/fruitGame/FruitWin.mp3",
-      "materializedRelativePath": "native/fruitGame/FruitWin.mp3",
-      "strategy": "direct-canonical-path",
-      "detail": {
-        "canonicalPath": "fruitGame/FruitWin"
+        "canonicalPath": "legacy/unknownAdz"
       }
     },
     {
@@ -896,32 +686,12 @@
     },
     {
       "kind": "native",
-      "originalRelativePath": "native/35cf13de-f938-4b03-b983-0398b824720b.bb8df.mp3",
-      "semanticRelativePath": "__semantic__/fruitGame/eliminate1.mp3",
-      "materializedRelativePath": "native/fruitGame/eliminate1.mp3",
-      "strategy": "direct-canonical-path",
-      "detail": {
-        "canonicalPath": "fruitGame/eliminate1"
-      }
-    },
-    {
-      "kind": "native",
       "originalRelativePath": "native/376cbf2b-51ed-4917-b52e-18c34ba34095.17363.mp3",
       "semanticRelativePath": "__semantic__/bgm/pureColor.mp3",
       "materializedRelativePath": "native/bgm/pureColor.mp3",
       "strategy": "direct-canonical-path",
       "detail": {
         "canonicalPath": "bgm/pureColor"
-      }
-    },
-    {
-      "kind": "native",
-      "originalRelativePath": "native/377b04d2-5b96-4b2e-97f3-7032e7ee05cb.c0154.mp3",
-      "semanticRelativePath": "__semantic__/fruitGame/eliminate6.mp3",
-      "materializedRelativePath": "native/fruitGame/eliminate6.mp3",
-      "strategy": "direct-canonical-path",
-      "detail": {
-        "canonicalPath": "fruitGame/eliminate6"
       }
     },
     {
@@ -937,11 +707,11 @@
     {
       "kind": "native",
       "originalRelativePath": "native/3e5523b9-a4ba-4f88-9a47-0b3bb0ab312a.be7df.mp3",
-      "semanticRelativePath": "__semantic__/fly.mp3",
-      "materializedRelativePath": "native/fly.mp3",
+      "semanticRelativePath": "__semantic__/legacy/fly.mp3",
+      "materializedRelativePath": "native/legacy/fly.mp3",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "fly"
+        "canonicalPath": "legacy/fly"
       }
     },
     {
@@ -967,31 +737,11 @@
     {
       "kind": "native",
       "originalRelativePath": "native/4de3fa18-79cb-4894-9a31-ff346ac5703a.60a11.mp3",
-      "semanticRelativePath": "__semantic__/bdz.mp3",
-      "materializedRelativePath": "native/bdz.mp3",
+      "semanticRelativePath": "__semantic__/legacy/unknownBdz.mp3",
+      "materializedRelativePath": "native/legacy/unknownBdz.mp3",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "bdz"
-      }
-    },
-    {
-      "kind": "native",
-      "originalRelativePath": "native/4fa3035e-54ef-4f8c-8ba4-084818724df6.a8b04.mp3",
-      "semanticRelativePath": "__semantic__/fruitGame/fruitClick.mp3",
-      "materializedRelativePath": "native/fruitGame/fruitClick.mp3",
-      "strategy": "direct-canonical-path",
-      "detail": {
-        "canonicalPath": "fruitGame/fruitClick"
-      }
-    },
-    {
-      "kind": "native",
-      "originalRelativePath": "native/506d144d-1977-4bcb-b1ef-e1e0a71cd4de.57513.mp3",
-      "semanticRelativePath": "__semantic__/fruitGame/plateUnlock.mp3",
-      "materializedRelativePath": "native/fruitGame/plateUnlock.mp3",
-      "strategy": "direct-canonical-path",
-      "detail": {
-        "canonicalPath": "fruitGame/plateUnlock"
+        "canonicalPath": "legacy/unknownBdz"
       }
     },
     {
@@ -1076,26 +826,6 @@
     },
     {
       "kind": "native",
-      "originalRelativePath": "native/772a3b1d-4e92-4c81-a80e-53b49d207810.bf6a0.mp3",
-      "semanticRelativePath": "__semantic__/fruitGame/eliminate2.mp3",
-      "materializedRelativePath": "native/fruitGame/eliminate2.mp3",
-      "strategy": "direct-canonical-path",
-      "detail": {
-        "canonicalPath": "fruitGame/eliminate2"
-      }
-    },
-    {
-      "kind": "native",
-      "originalRelativePath": "native/7ae99c44-a677-42d5-ba32-ae5bbe8cce4f.319a3.mp3",
-      "semanticRelativePath": "__semantic__/fruitGame/eat.mp3",
-      "materializedRelativePath": "native/fruitGame/eat.mp3",
-      "strategy": "direct-canonical-path",
-      "detail": {
-        "canonicalPath": "fruitGame/eat"
-      }
-    },
-    {
-      "kind": "native",
       "originalRelativePath": "native/7e06696e-6616-481e-a048-c5bcbe47a1eb.1fb26.mp3",
       "semanticRelativePath": "__semantic__/ui/levelComplete.mp3",
       "materializedRelativePath": "native/ui/levelComplete.mp3",
@@ -1116,32 +846,12 @@
     },
     {
       "kind": "native",
-      "originalRelativePath": "native/85619ea5-4e54-42f2-8dc3-31a0f101c34f.ec9f7.mp3",
-      "semanticRelativePath": "__semantic__/fruitGame/slotFull.mp3",
-      "materializedRelativePath": "native/fruitGame/slotFull.mp3",
-      "strategy": "direct-canonical-path",
-      "detail": {
-        "canonicalPath": "fruitGame/slotFull"
-      }
-    },
-    {
-      "kind": "native",
-      "originalRelativePath": "native/8bd84c3a-cc67-43fb-94a9-103bd2e9285d.9938a.mp3",
-      "semanticRelativePath": "__semantic__/fruitGame/born.mp3",
-      "materializedRelativePath": "native/fruitGame/born.mp3",
-      "strategy": "direct-canonical-path",
-      "detail": {
-        "canonicalPath": "fruitGame/born"
-      }
-    },
-    {
-      "kind": "native",
       "originalRelativePath": "native/8c5a5b89-eadd-48f0-9c20-1a3a76e579b9.18eee.mp3",
-      "semanticRelativePath": "__semantic__/door.mp3",
-      "materializedRelativePath": "native/door.mp3",
+      "semanticRelativePath": "__semantic__/legacy/door.mp3",
+      "materializedRelativePath": "native/legacy/door.mp3",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "door"
+        "canonicalPath": "legacy/door"
       }
     },
     {
@@ -1157,11 +867,11 @@
     {
       "kind": "native",
       "originalRelativePath": "native/935818a2-63cc-448f-9077-98d671fa3c03.b1180.mp3",
-      "semanticRelativePath": "__semantic__/ls.mp3",
-      "materializedRelativePath": "native/ls.mp3",
+      "semanticRelativePath": "__semantic__/legacy/unknownLs.mp3",
+      "materializedRelativePath": "native/legacy/unknownLs.mp3",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "ls"
+        "canonicalPath": "legacy/unknownLs"
       }
     },
     {
@@ -1172,26 +882,6 @@
       "strategy": "direct-canonical-path",
       "detail": {
         "canonicalPath": "woodDrop/woodDrop_2"
-      }
-    },
-    {
-      "kind": "native",
-      "originalRelativePath": "native/960d827f-fed0-42ae-b9d0-642738b0c9df.b9d4e.mp3",
-      "semanticRelativePath": "__semantic__/sceneTransition/fruitGameReveal.mp3",
-      "materializedRelativePath": "native/sceneTransition/fruitGameReveal.mp3",
-      "strategy": "direct-canonical-path",
-      "detail": {
-        "canonicalPath": "sceneTransition/fruitGameReveal"
-      }
-    },
-    {
-      "kind": "native",
-      "originalRelativePath": "native/967dbad6-d1d0-4878-b808-91d1464476e0.9938a.mp3",
-      "semanticRelativePath": "__semantic__/lz.mp3",
-      "materializedRelativePath": "native/lz.mp3",
-      "strategy": "direct-canonical-path",
-      "detail": {
-        "canonicalPath": "lz"
       }
     },
     {
@@ -1227,11 +917,11 @@
     {
       "kind": "native",
       "originalRelativePath": "native/9ce37df9-90d1-4ee3-909a-3dd10334170f.b7e39.mp3",
-      "semanticRelativePath": "__semantic__/pop.mp3",
-      "materializedRelativePath": "native/pop.mp3",
+      "semanticRelativePath": "__semantic__/legacy/pop.mp3",
+      "materializedRelativePath": "native/legacy/pop.mp3",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "pop"
+        "canonicalPath": "legacy/pop"
       }
     },
     {
@@ -1257,31 +947,21 @@
     {
       "kind": "native",
       "originalRelativePath": "native/ad04aeb5-ef02-41c4-890a-aab3b2ab436c.9b82a.mp3",
-      "semanticRelativePath": "__semantic__/over.mp3",
-      "materializedRelativePath": "native/over.mp3",
+      "semanticRelativePath": "__semantic__/legacy/gameOver.mp3",
+      "materializedRelativePath": "native/legacy/gameOver.mp3",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "over"
+        "canonicalPath": "legacy/gameOver"
       }
     },
     {
       "kind": "native",
       "originalRelativePath": "native/adz.mp3",
-      "semanticRelativePath": "__semantic__/legacy/unknownAdz.mp3",
-      "materializedRelativePath": "native/legacy/unknownAdz.mp3",
+      "semanticRelativePath": "__semantic__/legacy/unknownAdz__2.mp3",
+      "materializedRelativePath": "native/legacy/unknownAdz__2.mp3",
       "strategy": "direct-canonical-path",
       "detail": {
         "canonicalPath": "legacy/unknownAdz"
-      }
-    },
-    {
-      "kind": "native",
-      "originalRelativePath": "native/afed72bc-2904-420f-9fb9-5920f2950b97.adb97.mp3",
-      "semanticRelativePath": "__semantic__/fruitGame/born1.mp3",
-      "materializedRelativePath": "native/fruitGame/born1.mp3",
-      "strategy": "direct-canonical-path",
-      "detail": {
-        "canonicalPath": "fruitGame/born1"
       }
     },
     {
@@ -1296,22 +976,12 @@
     },
     {
       "kind": "native",
-      "originalRelativePath": "native/b2299d5e-6e8b-4baa-bc82-10f295ceea82.14cf0.mp3",
-      "semanticRelativePath": "__semantic__/fruitGame/eliminate4.mp3",
-      "materializedRelativePath": "native/fruitGame/eliminate4.mp3",
-      "strategy": "direct-canonical-path",
-      "detail": {
-        "canonicalPath": "fruitGame/eliminate4"
-      }
-    },
-    {
-      "kind": "native",
       "originalRelativePath": "native/b482f9c1-d4b0-4e85-9131-88bddefe370c.1fb26.mp3",
-      "semanticRelativePath": "__semantic__/gz.mp3",
-      "materializedRelativePath": "native/gz.mp3",
+      "semanticRelativePath": "__semantic__/legacy/levelCompleteDuplicateGz.mp3",
+      "materializedRelativePath": "native/legacy/levelCompleteDuplicateGz.mp3",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "gz"
+        "canonicalPath": "legacy/levelCompleteDuplicateGz"
       }
     },
     {
@@ -1327,8 +997,8 @@
     {
       "kind": "native",
       "originalRelativePath": "native/bdz.mp3",
-      "semanticRelativePath": "__semantic__/legacy/unknownBdz.mp3",
-      "materializedRelativePath": "native/legacy/unknownBdz.mp3",
+      "semanticRelativePath": "__semantic__/legacy/unknownBdz__2.mp3",
+      "materializedRelativePath": "native/legacy/unknownBdz__2.mp3",
       "strategy": "direct-canonical-path",
       "detail": {
         "canonicalPath": "legacy/unknownBdz"
@@ -1357,11 +1027,11 @@
     {
       "kind": "native",
       "originalRelativePath": "native/cea88659-80bc-4a20-b206-5484788b9b84.4cca6.mp3",
-      "semanticRelativePath": "__semantic__/levelup.mp3",
-      "materializedRelativePath": "native/levelup.mp3",
+      "semanticRelativePath": "__semantic__/legacy/levelUp.mp3",
+      "materializedRelativePath": "native/legacy/levelUp.mp3",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "levelup"
+        "canonicalPath": "legacy/levelUp"
       }
     },
     {
@@ -1377,21 +1047,11 @@
     {
       "kind": "native",
       "originalRelativePath": "native/door.mp3",
-      "semanticRelativePath": "__semantic__/legacy/door.mp3",
-      "materializedRelativePath": "native/legacy/door.mp3",
+      "semanticRelativePath": "__semantic__/legacy/door__2.mp3",
+      "materializedRelativePath": "native/legacy/door__2.mp3",
       "strategy": "direct-canonical-path",
       "detail": {
         "canonicalPath": "legacy/door"
-      }
-    },
-    {
-      "kind": "native",
-      "originalRelativePath": "native/e02a56cc-0d95-4a05-a231-c08e49acd1e3.b2f6b.mp3",
-      "semanticRelativePath": "__semantic__/fruitGame/eliminate5.mp3",
-      "materializedRelativePath": "native/fruitGame/eliminate5.mp3",
-      "strategy": "direct-canonical-path",
-      "detail": {
-        "canonicalPath": "fruitGame/eliminate5"
       }
     },
     {
@@ -1407,11 +1067,11 @@
     {
       "kind": "native",
       "originalRelativePath": "native/eb6d3dec-4c58-4cfa-baa3-4df6cfea73c2.1fb26.mp3",
-      "semanticRelativePath": "__semantic__/show.mp3",
-      "materializedRelativePath": "native/show.mp3",
+      "semanticRelativePath": "__semantic__/legacy/levelCompleteDuplicateShow.mp3",
+      "materializedRelativePath": "native/legacy/levelCompleteDuplicateShow.mp3",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "show"
+        "canonicalPath": "legacy/levelCompleteDuplicateShow"
       }
     },
     {
@@ -1436,29 +1096,9 @@
     },
     {
       "kind": "native",
-      "originalRelativePath": "native/f75d0f9c-d888-4b93-872f-80944e37e4b1.a0add.mp3",
-      "semanticRelativePath": "__semantic__/fruitGame/fruitBgm.mp3",
-      "materializedRelativePath": "native/fruitGame/fruitBgm.mp3",
-      "strategy": "direct-canonical-path",
-      "detail": {
-        "canonicalPath": "fruitGame/fruitBgm"
-      }
-    },
-    {
-      "kind": "native",
-      "originalRelativePath": "native/fb89a5d3-096b-44a2-9309-c240abdfab67.c4173.mp3",
-      "semanticRelativePath": "__semantic__/fruitGame/eliminate7.mp3",
-      "materializedRelativePath": "native/fruitGame/eliminate7.mp3",
-      "strategy": "direct-canonical-path",
-      "detail": {
-        "canonicalPath": "fruitGame/eliminate7"
-      }
-    },
-    {
-      "kind": "native",
       "originalRelativePath": "native/fly.mp3",
-      "semanticRelativePath": "__semantic__/legacy/fly.mp3",
-      "materializedRelativePath": "native/legacy/fly.mp3",
+      "semanticRelativePath": "__semantic__/legacy/fly__2.mp3",
+      "materializedRelativePath": "native/legacy/fly__2.mp3",
       "strategy": "direct-canonical-path",
       "detail": {
         "canonicalPath": "legacy/fly"
@@ -1467,8 +1107,8 @@
     {
       "kind": "native",
       "originalRelativePath": "native/gz.mp3",
-      "semanticRelativePath": "__semantic__/legacy/levelCompleteDuplicateGz.mp3",
-      "materializedRelativePath": "native/legacy/levelCompleteDuplicateGz.mp3",
+      "semanticRelativePath": "__semantic__/legacy/levelCompleteDuplicateGz__2.mp3",
+      "materializedRelativePath": "native/legacy/levelCompleteDuplicateGz__2.mp3",
       "strategy": "direct-canonical-path",
       "detail": {
         "canonicalPath": "legacy/levelCompleteDuplicateGz"
@@ -1477,8 +1117,8 @@
     {
       "kind": "native",
       "originalRelativePath": "native/levelup.mp3",
-      "semanticRelativePath": "__semantic__/legacy/levelUp.mp3",
-      "materializedRelativePath": "native/legacy/levelUp.mp3",
+      "semanticRelativePath": "__semantic__/legacy/levelUp__2.mp3",
+      "materializedRelativePath": "native/legacy/levelUp__2.mp3",
       "strategy": "direct-canonical-path",
       "detail": {
         "canonicalPath": "legacy/levelUp"
@@ -1487,8 +1127,8 @@
     {
       "kind": "native",
       "originalRelativePath": "native/ls.mp3",
-      "semanticRelativePath": "__semantic__/legacy/unknownLs.mp3",
-      "materializedRelativePath": "native/legacy/unknownLs.mp3",
+      "semanticRelativePath": "__semantic__/legacy/unknownLs__2.mp3",
+      "materializedRelativePath": "native/legacy/unknownLs__2.mp3",
       "strategy": "direct-canonical-path",
       "detail": {
         "canonicalPath": "legacy/unknownLs"
@@ -1507,8 +1147,8 @@
     {
       "kind": "native",
       "originalRelativePath": "native/over.mp3",
-      "semanticRelativePath": "__semantic__/legacy/gameOver.mp3",
-      "materializedRelativePath": "native/legacy/gameOver.mp3",
+      "semanticRelativePath": "__semantic__/legacy/gameOver__2.mp3",
+      "materializedRelativePath": "native/legacy/gameOver__2.mp3",
       "strategy": "direct-canonical-path",
       "detail": {
         "canonicalPath": "legacy/gameOver"
@@ -1517,8 +1157,8 @@
     {
       "kind": "native",
       "originalRelativePath": "native/pop.mp3",
-      "semanticRelativePath": "__semantic__/legacy/pop.mp3",
-      "materializedRelativePath": "native/legacy/pop.mp3",
+      "semanticRelativePath": "__semantic__/legacy/pop__2.mp3",
+      "materializedRelativePath": "native/legacy/pop__2.mp3",
       "strategy": "direct-canonical-path",
       "detail": {
         "canonicalPath": "legacy/pop"
@@ -1527,8 +1167,8 @@
     {
       "kind": "native",
       "originalRelativePath": "native/show.mp3",
-      "semanticRelativePath": "__semantic__/legacy/levelCompleteDuplicateShow.mp3",
-      "materializedRelativePath": "native/legacy/levelCompleteDuplicateShow.mp3",
+      "semanticRelativePath": "__semantic__/legacy/levelCompleteDuplicateShow__2.mp3",
+      "materializedRelativePath": "native/legacy/levelCompleteDuplicateShow__2.mp3",
       "strategy": "direct-canonical-path",
       "detail": {
         "canonicalPath": "legacy/levelCompleteDuplicateShow"
@@ -1537,14 +1177,160 @@
     {
       "kind": "native",
       "originalRelativePath": "native/win.mp3",
-      "semanticRelativePath": "__semantic__/legacy/victory.mp3",
-      "materializedRelativePath": "native/legacy/victory.mp3",
+      "semanticRelativePath": "__semantic__/legacy/victory__2.mp3",
+      "materializedRelativePath": "native/legacy/victory__2.mp3",
       "strategy": "direct-canonical-path",
       "detail": {
         "canonicalPath": "legacy/victory"
       }
     }
   ],
-  "unresolvedImports": [],
-  "unresolvedNative": []
+  "unresolvedImports": [
+    {
+      "originalRelativePath": "import/099bc925-a0f0-485a-be12-49e4e0b69297.7cc67.json",
+      "stem": "099bc925-a0f0-485a-be12-49e4e0b69297"
+    },
+    {
+      "originalRelativePath": "import/0b114abf-f089-44f0-9904-c46a707e665d.205d7.json",
+      "stem": "0b114abf-f089-44f0-9904-c46a707e665d"
+    },
+    {
+      "originalRelativePath": "import/317cbbaa-6213-481b-b327-2b666d6e835b.59f2f.json",
+      "stem": "317cbbaa-6213-481b-b327-2b666d6e835b"
+    },
+    {
+      "originalRelativePath": "import/35cf13de-f938-4b03-b983-0398b824720b.910d6.json",
+      "stem": "35cf13de-f938-4b03-b983-0398b824720b"
+    },
+    {
+      "originalRelativePath": "import/377b04d2-5b96-4b2e-97f3-7032e7ee05cb.4e562.json",
+      "stem": "377b04d2-5b96-4b2e-97f3-7032e7ee05cb"
+    },
+    {
+      "originalRelativePath": "import/4fa3035e-54ef-4f8c-8ba4-084818724df6.59614.json",
+      "stem": "4fa3035e-54ef-4f8c-8ba4-084818724df6"
+    },
+    {
+      "originalRelativePath": "import/506d144d-1977-4bcb-b1ef-e1e0a71cd4de.80481.json",
+      "stem": "506d144d-1977-4bcb-b1ef-e1e0a71cd4de"
+    },
+    {
+      "originalRelativePath": "import/772a3b1d-4e92-4c81-a80e-53b49d207810.91a4f.json",
+      "stem": "772a3b1d-4e92-4c81-a80e-53b49d207810"
+    },
+    {
+      "originalRelativePath": "import/7ae99c44-a677-42d5-ba32-ae5bbe8cce4f.0f60b.json",
+      "stem": "7ae99c44-a677-42d5-ba32-ae5bbe8cce4f"
+    },
+    {
+      "originalRelativePath": "import/85619ea5-4e54-42f2-8dc3-31a0f101c34f.aad08.json",
+      "stem": "85619ea5-4e54-42f2-8dc3-31a0f101c34f"
+    },
+    {
+      "originalRelativePath": "import/8bd84c3a-cc67-43fb-94a9-103bd2e9285d.8c6b5.json",
+      "stem": "8bd84c3a-cc67-43fb-94a9-103bd2e9285d"
+    },
+    {
+      "originalRelativePath": "import/960d827f-fed0-42ae-b9d0-642738b0c9df.03396.json",
+      "stem": "960d827f-fed0-42ae-b9d0-642738b0c9df"
+    },
+    {
+      "originalRelativePath": "import/967dbad6-d1d0-4878-b808-91d1464476e0.18674.json",
+      "stem": "967dbad6-d1d0-4878-b808-91d1464476e0"
+    },
+    {
+      "originalRelativePath": "import/afed72bc-2904-420f-9fb9-5920f2950b97.58f89.json",
+      "stem": "afed72bc-2904-420f-9fb9-5920f2950b97"
+    },
+    {
+      "originalRelativePath": "import/b2299d5e-6e8b-4baa-bc82-10f295ceea82.cbf52.json",
+      "stem": "b2299d5e-6e8b-4baa-bc82-10f295ceea82"
+    },
+    {
+      "originalRelativePath": "import/e02a56cc-0d95-4a05-a231-c08e49acd1e3.4a320.json",
+      "stem": "e02a56cc-0d95-4a05-a231-c08e49acd1e3"
+    },
+    {
+      "originalRelativePath": "import/f75d0f9c-d888-4b93-872f-80944e37e4b1.be810.json",
+      "stem": "f75d0f9c-d888-4b93-872f-80944e37e4b1"
+    },
+    {
+      "originalRelativePath": "import/fb89a5d3-096b-44a2-9309-c240abdfab67.5536b.json",
+      "stem": "fb89a5d3-096b-44a2-9309-c240abdfab67"
+    }
+  ],
+  "unresolvedNative": [
+    {
+      "originalRelativePath": "native/099bc925-a0f0-485a-be12-49e4e0b69297.a30dd.mp3",
+      "stem": "099bc925-a0f0-485a-be12-49e4e0b69297"
+    },
+    {
+      "originalRelativePath": "native/0b114abf-f089-44f0-9904-c46a707e665d.9f029.mp3",
+      "stem": "0b114abf-f089-44f0-9904-c46a707e665d"
+    },
+    {
+      "originalRelativePath": "native/317cbbaa-6213-481b-b327-2b666d6e835b.1960e.mp3",
+      "stem": "317cbbaa-6213-481b-b327-2b666d6e835b"
+    },
+    {
+      "originalRelativePath": "native/35cf13de-f938-4b03-b983-0398b824720b.bb8df.mp3",
+      "stem": "35cf13de-f938-4b03-b983-0398b824720b"
+    },
+    {
+      "originalRelativePath": "native/377b04d2-5b96-4b2e-97f3-7032e7ee05cb.c0154.mp3",
+      "stem": "377b04d2-5b96-4b2e-97f3-7032e7ee05cb"
+    },
+    {
+      "originalRelativePath": "native/4fa3035e-54ef-4f8c-8ba4-084818724df6.a8b04.mp3",
+      "stem": "4fa3035e-54ef-4f8c-8ba4-084818724df6"
+    },
+    {
+      "originalRelativePath": "native/506d144d-1977-4bcb-b1ef-e1e0a71cd4de.57513.mp3",
+      "stem": "506d144d-1977-4bcb-b1ef-e1e0a71cd4de"
+    },
+    {
+      "originalRelativePath": "native/772a3b1d-4e92-4c81-a80e-53b49d207810.bf6a0.mp3",
+      "stem": "772a3b1d-4e92-4c81-a80e-53b49d207810"
+    },
+    {
+      "originalRelativePath": "native/7ae99c44-a677-42d5-ba32-ae5bbe8cce4f.319a3.mp3",
+      "stem": "7ae99c44-a677-42d5-ba32-ae5bbe8cce4f"
+    },
+    {
+      "originalRelativePath": "native/85619ea5-4e54-42f2-8dc3-31a0f101c34f.ec9f7.mp3",
+      "stem": "85619ea5-4e54-42f2-8dc3-31a0f101c34f"
+    },
+    {
+      "originalRelativePath": "native/8bd84c3a-cc67-43fb-94a9-103bd2e9285d.9938a.mp3",
+      "stem": "8bd84c3a-cc67-43fb-94a9-103bd2e9285d"
+    },
+    {
+      "originalRelativePath": "native/960d827f-fed0-42ae-b9d0-642738b0c9df.b9d4e.mp3",
+      "stem": "960d827f-fed0-42ae-b9d0-642738b0c9df"
+    },
+    {
+      "originalRelativePath": "native/967dbad6-d1d0-4878-b808-91d1464476e0.9938a.mp3",
+      "stem": "967dbad6-d1d0-4878-b808-91d1464476e0"
+    },
+    {
+      "originalRelativePath": "native/afed72bc-2904-420f-9fb9-5920f2950b97.adb97.mp3",
+      "stem": "afed72bc-2904-420f-9fb9-5920f2950b97"
+    },
+    {
+      "originalRelativePath": "native/b2299d5e-6e8b-4baa-bc82-10f295ceea82.14cf0.mp3",
+      "stem": "b2299d5e-6e8b-4baa-bc82-10f295ceea82"
+    },
+    {
+      "originalRelativePath": "native/e02a56cc-0d95-4a05-a231-c08e49acd1e3.b2f6b.mp3",
+      "stem": "e02a56cc-0d95-4a05-a231-c08e49acd1e3"
+    },
+    {
+      "originalRelativePath": "native/f75d0f9c-d888-4b93-872f-80944e37e4b1.a0add.mp3",
+      "stem": "f75d0f9c-d888-4b93-872f-80944e37e4b1"
+    },
+    {
+      "originalRelativePath": "native/fb89a5d3-096b-44a2-9309-c240abdfab67.c4173.mp3",
+      "stem": "fb89a5d3-096b-44a2-9309-c240abdfab67"
+    }
+  ]
 }

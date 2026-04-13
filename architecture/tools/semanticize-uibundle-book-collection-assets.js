@@ -18,20 +18,11 @@ const CONFIG_PATH_MAP = Object.freeze({
   'tex/book/shareCollection/安陵容鸭/spriteFrame': 'tex/book/shareCollection/anLingRongDuck/spriteFrame',
   'tex/book/shareCollection/刘备鸭/spriteFrame': 'tex/book/shareCollection/liuBeiDuck/spriteFrame',
   'tex/book/shareCollection/关羽鸭/spriteFrame': 'tex/book/shareCollection/guanYuDuck/spriteFrame',
-  'tex/book/shareCollection/张飞鸭/spriteFrame': 'tex/book/shareCollection/zhangFeiDuck/spriteFrame',
-  'tex/book/fruitCollection/西瓜鸭/spriteFrame': 'tex/book/fruitCollection/watermelonDuck/spriteFrame',
-  'tex/book/fruitCollection/火龙果鸭/spriteFrame': 'tex/book/fruitCollection/pitayaDuck/spriteFrame',
-  'tex/book/fruitCollection/葡萄鸭/spriteFrame': 'tex/book/fruitCollection/grapeDuck/spriteFrame',
-  'tex/book/fruitCollection/蓝莓鸭/spriteFrame': 'tex/book/fruitCollection/blueberryDuck/spriteFrame',
-  'tex/book/fruitCollection/苹果鸭/spriteFrame': 'tex/book/fruitCollection/appleDuck/spriteFrame',
-  'tex/book/fruitCollection/哈密瓜鸭/spriteFrame': 'tex/book/fruitCollection/hamiMelonDuck/spriteFrame',
-  'tex/book/bigEaterCollection/大胃袋鸭/spriteFrame': 'tex/book/bigEaterCollection/bigBellyDuck/spriteFrame'
+  'tex/book/shareCollection/张飞鸭/spriteFrame': 'tex/book/shareCollection/zhangFeiDuck/spriteFrame'
 });
 
 const LEGACY_PATH_PATTERNS = Object.freeze([
-  /^tex\/book\/shareCollection\/(?:甄嬛鸭|华妃鸭|安陵容鸭|刘备鸭|关羽鸭|张飞鸭)\/spriteFrame$/,
-  /^tex\/book\/fruitCollection\/(?:西瓜鸭|火龙果鸭|葡萄鸭|蓝莓鸭|苹果鸭|哈密瓜鸭)\/spriteFrame$/,
-  /^tex\/book\/bigEaterCollection\/大胃袋鸭\/spriteFrame$/
+  /^tex\/book\/shareCollection\/(?:甄嬛鸭|华妃鸭|安陵容鸭|刘备鸭|关羽鸭|张飞鸭)\/spriteFrame$/
 ]);
 
 function semanticizeUiBundleBookCollectionAssets() {

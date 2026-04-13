@@ -55,15 +55,6 @@ node architecture/tools/run-iteration-cycle.js
 4. 护栏验证：依次执行 `node architecture/tools/check-no-url-encoded-paths.js`、`node architecture/tools/check-legacy-runtime-compat.js`、`node architecture/tools/run-guardrails.js`。
 5. 收口文档：更新 `architecture/docs/asset-governance-log.md` 记录 mapping、护栏与结果，并跑 `node architecture/tools/run-iteration-cycle.js` 产出最新量化数据。
 
-## Game2Bundle 中文 canonical 收敛切片
-1. 定位：先看 `architecture/docs/asset-readability-audit.md` 与 `subpackages/Game2Bundle/config.game2-bundle.json`，确认是否仍残留 `背景/道具/解锁进度/洞/遮罩/随机水果` 等中文目录段。
-2. 并行执行：
-   - 路径迁移：`node architecture/tools/semanticize-game2bundle-path-assets.js`
-   - 护栏扩展：在 `architecture/tools/check-legacy-runtime-compat.js` 注册 Game2 中文段禁回流检查，并在 `architecture/tools/run-guardrails.js` 接入脚本语法检查。
-3. 幂等验证：`semanticize-game2bundle-path-assets` 连续执行两次，第二次改写数必须为 0。
-4. 护栏验证：执行 `node architecture/tools/check-legacy-runtime-compat.js` 与 `node architecture/tools/run-guardrails.js`，确保无中文 canonical 回流。
-5. 收口文档：在 `architecture/docs/asset-governance-log.md` 记录本轮映射与验证结果，再执行 `node architecture/tools/run-iteration-cycle.js` 更新整体量化报告。
-
 ## Unused Safe-Ignore 收敛切片
 1. 定位：先看 `analyse-data.json` 的 `unusedCodeFiles`，只处理“开发侧无运行时依赖”的路径，明确禁止把 `game.js`、`assets/`、`subpackages/`、`runtime/` 加入 ignore。
 2. 执行：

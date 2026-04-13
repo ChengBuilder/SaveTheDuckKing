@@ -1412,7 +1412,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                             e.x > 5 ? (t = 5) : e.x < -5 && (t = -5),
                               director.getScene().name == GameModel.instance.DuckSceneName
                                 ? find("Canvas").getComponent("DuckController").woodAddLinerVelocity(-t, 0)
-                                : director.getScene().name == GameModel.instance.Game2SceneName &&
+                                : director.getScene().name == GameModel.instance.RemovedSideScene2Name &&
                                   find("Canvas").getComponent("Game2Controller").moveFruitByGyroscope(t, 0);
                           }
                         });
@@ -1863,7 +1863,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                           e.x > 5 ? (t = 5) : e.x < -5 && (t = -5),
                             director.getScene().name == GameModel.instance.DuckSceneName
                               ? find("Canvas").getComponent("DuckController").woodAddLinerVelocity(-t, 0)
-                              : director.getScene().name == GameModel.instance.Game2SceneName &&
+                              : director.getScene().name == GameModel.instance.RemovedSideScene2Name &&
                                 find("Canvas").getComponent("Game2Controller").moveFruitByGyroscope(t, 0);
                         }
                       }));
@@ -4299,12 +4299,10 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                               : GameModel.instance.level2) - 2;
                       }),
                       (l.getSpecialCollectCount = function () {
-                        var e = GameModel.SpecialBookNum + GameModel.FruitDuckBookNum + GameModel.DaWeiWangBookNum;
+                        var e = GameModel.SpecialBookNum;
                         if (GameModel.LockAllDuck) return e;
-                        for (var t = 0, n = 1; n <= GameModel.FruitDuckBookNum; n++)
-                          GameModel.instance.level2 > 100 * n + 1 && t++;
-                        for (var i = 1; i <= GameModel.SpecialBookNum; i++)
-                          GameModel.instance.level > 100 * (i + 1) + 1 && t++;
+                        for (var t = 0, n = 1; n <= GameModel.SpecialBookNum; n++)
+                          GameModel.instance.level > 100 * (n + 1) + 1 && t++;
                         return t;
                       }),
                       (l.getActivityCollectCount = function () {
@@ -4325,18 +4323,6 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                             ]
                           : this.bookType == ge.specialType
                           ? [
-                              {
-                                title: "水果鸭",
-                                kind: "fruit",
-                                itemCount: GameModel.FruitDuckBookNum,
-                                showTitle: !0
-                              },
-                              {
-                                title: "大胃袋鸭",
-                                kind: "daWeiWang",
-                                itemCount: GameModel.DaWeiWangBookNum,
-                                showTitle: !0
-                              },
                               {
                                 title: "主线",
                                 kind: "special",
@@ -4514,19 +4500,8 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                               t.localId + 1 < GameModel.instance.level2 ||
                               GameModel.LockAllDuck) &&
                               e.on(Node.EventType.TOUCH_END, this.onClickItem, this);
-                        else if ("fruit" == t.kind) {
-                          (e.getComponent("itemSpecialNode").id = t.localId),
-                            e.getComponent("itemSpecialNode").initSpecialFruitItem();
-                          var i = 100 * t.localId + 1;
-                          (GameModel.instance.level2 > i || GameModel.LockAllDuck) &&
-                            e.on(Node.EventType.TOUCH_END, this.onClickFruitItem, this);
-                        } else if ("daWeiWang" == t.kind) {
-                          (e.getComponent("itemSpecialNode").id = t.localId),
-                            e.getComponent("itemSpecialNode").initDWWItem();
-                          var o = 100 * t.localId + 1;
-                          (GameModel.instance.level3 > o || GameModel.LockAllDuck) &&
-                            e.on(Node.EventType.TOUCH_END, this.onClickDWWItem, this);
-                        } else
+                        else if ("fruit" == t.kind || "daWeiWang" == t.kind) e.active = !1;
+                        else
                           "special" == t.kind
                             ? ((e.getComponent("itemSpecialNode").id = t.localId),
                               e.getComponent("itemSpecialNode").initSpecialItem())
@@ -7417,7 +7392,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                                 tween(o.getComponent("cc.UIOpacity"))
                                   .delay(0.5)
                                   .call(function () {
-                                    AudioManager.instance.playSound("fruitGame/slotFull");
+                                    0;
                                   })
                                   .to(0.3, {
                                     opacity: 255
@@ -9150,7 +9125,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
         "./AdManager.ts",
         "./GameData2.ts",
         "./GameModel2.ts",
-        "./FruitHole.ts"
+        "./RemovedHole.ts"
       ],
       function (e) {
         var applyDecoratedDescriptor,
@@ -9185,7 +9160,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
           AdManager,
           GameData2,
           GameModel,
-          FruitHole;
+          RemovedHole;
         return {
           setters: [
             function (e) {
@@ -9242,7 +9217,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
               GameModel = e.GameModel;
             },
             function (e) {
-              FruitHole = e.FruitHole;
+              RemovedHole = e.RemovedHole;
             }
           ],
           execute: function () {
@@ -9402,7 +9377,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                             this.popFruit());
                       }),
                       (r.popFruit = function () {
-                        AudioManager.instance.playSound("fruitGame/fruitClick"),
+                        0,
                           AdManager.vibrate(),
                           (this.rb.type = ERigidBody2DType.Dynamic),
                           (this.rb.gravityScale = 18),
@@ -9413,7 +9388,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                         (this.polygonCollider.tag = COLLIDER_TAG.NAIL),
                           e.NoTouchFruitNum--,
                           this.belongToHole &&
-                            (this.belongToHole.getComponent("FruitHole").sendFruit(), (this.belongToHole = null)),
+                            (this.belongToHole.getComponent("RemovedHole").sendFruit(), (this.belongToHole = null)),
                           this.openColliderListener(),
                           EventManager.instance.off(GAME2_EVENT_KEYS.ALL_FRUIT_MOVE, this.fruitMove, this),
                           EventManager.instance.off(GAME2_EVENT_KEYS.ALL_FRUIT_MOVE_COMPLETE, this.moveComplete, this),
@@ -9428,7 +9403,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                           this.polygonCollider.off(Contact2DType.BEGIN_CONTACT, this.onBeginContact, this);
                       }),
                       (r.removeFromHole = function () {
-                        this.belongToHole.getComponent("FruitHole").deleteFruitByProp(this.node),
+                        this.belongToHole.getComponent("RemovedHole").deleteFruitByProp(this.node),
                           (this.belongToHole = null);
                       }),
                       (r.update = function (e) {
@@ -9763,7 +9738,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
       }
     ),
     System.register(
-      "chunks:///_virtual/FruitHole.ts",
+      "chunks:///_virtual/RemovedHole.ts",
       ["./rollupPluginModLoBabelHelpers.js", "cc", "./Fruit.ts"],
       function (e) {
         var inheritsLoose, cc_legacy, cc_decorator, Label, Vec3, tween, v3, Component, Fruit;
@@ -9787,12 +9762,12 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
           ],
           execute: function () {
             var u;
-            cc_legacy._RF.push({}, "d9a5ayX/7VLzpiAubTgH/Al", "FruitHole", void 0);
+            cc_legacy._RF.push({}, "d9a5ayX/7VLzpiAubTgH/Al", "RemovedHole", void 0);
             var d = cc_decorator.ccclass;
             cc_decorator.property,
               e(
-                "FruitHole",
-                d("FruitHole")(
+                "RemovedHole",
+                d("RemovedHole")(
                   (u = (function (e) {
                     function n() {
                       for (var t, n = arguments.length, i = new Array(n), o = 0; o < n; o++) i[o] = arguments[o];
@@ -9812,7 +9787,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                           .getChildByName("Num")
                           .getComponent("cc.Label");
                       }),
-                      (i.initFruitHole = function (e) {
+                      (i.initRemovedHole = function (e) {
                         var t = this;
                         this.fruitNodeArr = e;
                         for (var n = 0; n < e.length; n++) e[n].getComponent("Fruit").initHoleFlag(this.node);
@@ -9839,7 +9814,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                               })
                               .start(),
                             this.updateCountLabel();
-                        } else this.hideFruitHole();
+                        } else this.hideRemovedHole();
                       }),
                       (i.updateCountLabel = function () {
                         (this.countLabel.string = this.fruitNodeArr.length.toString()),
@@ -9849,7 +9824,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                         var t = this.fruitNodeArr.indexOf(e);
                         -1 != t ? (this.fruitNodeArr.splice(t, 1), this.updateCountLabel()) : this.sendFruit();
                       }),
-                      (i.hideFruitHole = function () {
+                      (i.hideRemovedHole = function () {
                         var e = this;
                         tween(this.node)
                           .to(0.2, {
@@ -9886,7 +9861,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
         "./PoolManager.ts",
         "./GameData2.ts",
         "./GridManager.ts",
-        "./FruitHole.ts"
+        "./RemovedHole.ts"
       ],
       function (e) {
         var inheritsLoose,
@@ -9913,7 +9888,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
           PoolManager,
           GameData2,
           GridManager,
-          FruitHole;
+          RemovedHole;
         return {
           setters: [
             function (e) {
@@ -9966,7 +9941,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
               GridManager = e.GridManager;
             },
             function (e) {
-              FruitHole = e.FruitHole;
+              RemovedHole = e.RemovedHole;
             }
           ],
           execute: function () {
@@ -9997,7 +9972,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                           (t.allFruitNode = []),
                           (t.grids = []),
                           (t.gridFruitPos = []),
-                          (t.fruitHoleArr = []),
+                          (t.removedHoleArr = []),
                           (t.fruitInHoleArr = []),
                           (t.fruitInHoleNum = 20),
                           (t.fruitCreateNum = 0),
@@ -10025,8 +10000,8 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                             (this.allFruitTs = []),
                             (this.allFruitNode = []),
                             (this.fruitInHoleArr = []),
-                            (this.fruitHoleArr = []),
-                            GameData2._ins.holeFlag && this.createFruitHole();
+                            (this.removedHoleArr = []),
+                            GameData2._ins.holeFlag && this.createRemovedHole();
                           var n = this.initLevelConfig(e);
                           console.log("DataConfig", n);
                           for (var i = 0; i < n.countNumArr.length; i++)
@@ -10121,15 +10096,15 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                             )
                               F(R);
                         }),
-                        (r.createFruitHole = function () {
-                          var e = PoolManager.Spawn("fruitHole", find("Canvas/gameNode/FruitHoleManager")),
-                            t = PoolManager.Spawn("fruitHole", find("Canvas/gameNode/FruitHoleManager")),
+                        (r.createRemovedHole = function () {
+                          var e = PoolManager.Spawn("removedHole", find("Canvas/gameNode/RemovedHoleManager")),
+                            t = PoolManager.Spawn("removedHole", find("Canvas/gameNode/RemovedHoleManager")),
                             n = find("Canvas/gameNode/block").position;
                           e.setPosition(v3(-200, n.y + 50)),
                             t.setPosition(v3(200, n.y + 50)),
                             e.setScale(Vec3.ZERO),
                             t.setScale(Vec3.ZERO),
-                            this.fruitHoleArr.push(e, t);
+                            this.removedHoleArr.push(e, t);
                         }),
                         (r.initLevelConfig = function (e) {
                           var t = {
@@ -10518,8 +10493,8 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                           var i = Math.floor(this.fruitInHoleNum / 2),
                             o = this.fruitInHoleArr.slice(0, i),
                             r = this.fruitInHoleArr.slice(i);
-                          this.fruitHoleArr[0].getComponent("FruitHole").initFruitHole(o),
-                            this.fruitHoleArr[1].getComponent("FruitHole").initFruitHole(r);
+                          this.removedHoleArr[0].getComponent("RemovedHole").initRemovedHole(o),
+                            this.removedHoleArr[1].getComponent("RemovedHole").initRemovedHole(r);
                         }),
                         (r.getLegalPos = function (e, t, n, i, o) {
                           for (var r = v3(0, 0), s = 0; !this.isLegalPos(r, e); ) {
@@ -11426,7 +11401,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                     return (
                       (s.onLoad = function () {
                         var e = this;
-                        AudioManager.instance.playMusic("fruitGame/fruitBgm", 0.5),
+                        0,
                           (this._ctl = new GameCtl(this, GameModel.instance.level3)),
                           this.nodeTip && (this.nodeTip.active = !1),
                           this.btnNext && this.btnNext.node.on(Button.EventType.CLICK, this._onBtnNext, this),
@@ -11471,7 +11446,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                         var e = find("Canvas/GameGuide");
                         (GameModel.instance.releaseType == releaseType.test_TEST ||
                           (TooYueManager.userMsg && TooYueManager.userMsg.userTags.includes("gm"))) &&
-                          ((e.active = !0), (e.getComponent("cc.Label").string = "首页-水果大胃王"));
+                          ((e.active = !0), (e.getComponent("cc.Label").string = "首页-副玩法已移除"));
                       }),
                       (s.registerEvent = function () {
                         EventManager.instance.on(EVENT_KEYS.PROP1, this.doClean, this),
@@ -11809,7 +11784,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                               tween(n.getComponent("cc.UIOpacity"))
                                 .delay(0.5)
                                 .call(function () {
-                                  AudioManager.instance.playSound("fruitGame/slotFull");
+                                  0;
                                 })
                                 .to(0.3, {
                                   opacity: 255
@@ -12499,7 +12474,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                             });
                       }),
                       (s.playSoundById = function (e, t) {
-                        AudioManager.instance.playSound("fruitGame/" + e);
+                        0;
                       }),
                       (s.playEliminateComboSound = function (e) {
                         var t = Math.max(1, Math.min(8, Math.floor(e)));
@@ -13556,7 +13531,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                         var e = find("Canvas/uiNode/GameGuide");
                         (GameModel.instance.releaseType == releaseType.test_TEST ||
                           (TooYueManager.userMsg && TooYueManager.userMsg.userTags.includes("gm"))) &&
-                          ((e.active = !0), (e.getComponent("cc.Label").string = "首页-救救水果鸭"));
+                          ((e.active = !0), (e.getComponent("cc.Label").string = "首页-救救收藏鸭"));
                       }),
                       (s.initNode = function () {
                         (this.uiNode = find("Canvas/uiNode")),
@@ -14010,7 +13985,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                         if (
                           (console.log("NextLevel"),
                           (GameModel.isReplay = !1),
-                          director.loadScene(GameModel.instance.Game2SceneName),
+                          0,
                           this.fruitNode.children.length > 0)
                         )
                           for (var e = 0; e < this.fruitNode.children.length; e++) this.fruitNode.children[e].destroy();
@@ -14029,7 +14004,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                         (GameModel.instance.duckLevelInformation = null),
                           (GameCtrl.instance.gameIsOver = !0),
                           (GameCtrl.instance.canTouch = !1),
-                          director.preloadScene(GameModel.instance.Game2SceneName),
+                          0,
                           TooYueManager._ins.reportStage(2e6 + GameModel.instance.level2, "end", "win", 0),
                           AudioManager.instance.playSound("ui/victoryStinger"),
                           this.gameSuccess(),
@@ -14088,7 +14063,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                                 tween(o.getComponent("cc.UIOpacity"))
                                   .delay(0.5)
                                   .call(function () {
-                                    AudioManager.instance.playSound("fruitGame/slotFull");
+                                    0;
                                   })
                                   .to(0.3, {
                                     opacity: 255
@@ -14139,7 +14114,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                           });
                       }),
                       (s.replay = function () {
-                        (GameModel.isReplay = !0), director.loadScene(GameModel.instance.Game2SceneName);
+                        (GameModel.isReplay = !0), 0;
                       }),
                       (s.pop = function (e, t) {
                         var n = this;
@@ -15161,7 +15136,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                       (this._sortSlotPosB = new Vec3()),
                       (this._holeQueueL = []),
                       (this._holeQueueR = []),
-                      (this._fruitHoleSideMap = new Map()),
+                      (this._removedHoleSideMap = new Map()),
                       (this._pendingHoleSpawn = 0),
                       (this._holeFruitPendingReplenish = new Map()),
                       (this._rowHoleFruitByNode = new Map()),
@@ -15326,7 +15301,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                           "pendingHole:",
                           this._pendingHoleSpawn,
                           "holeOnBoard:",
-                          this._fruitHoleSideMap.size,
+                          this._removedHoleSideMap.size,
                           "| ropeMax:",
                           this._model.getRopeMaxCount(),
                           "ropes:",
@@ -15567,7 +15542,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                           ) {
                             var s = o.value;
                             s.isValid &&
-                              (this._fruitHoleSideMap.has(s) ||
+                              (this._removedHoleSideMap.has(s) ||
                                 this._rowHoleFruitByNode.has(s) ||
                                 this._toEliminate.has(s) ||
                                 this._isFruitEliminating(s) ||
@@ -16387,7 +16362,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
 
                         ) {
                           var b = v.value;
-                          o(b) && this._fruitHoleSideMap.get(b) === y && r.push(b);
+                          o(b) && this._removedHoleSideMap.get(b) === y && r.push(b);
                         }
                       return r;
                     }),
@@ -16764,14 +16739,14 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                               var l = void 0 !== s.holeSide && null != i && i.isValid ? i : e;
                               a.setParent(l, !0),
                                 this._view.resetFruitRigidBodyToStatic(a),
-                                void 0 !== s.holeSide && this._fruitHoleSideMap.set(a, s.holeSide),
+                                void 0 !== s.holeSide && this._removedHoleSideMap.set(a, s.holeSide),
                                 void 0 !== s.rowHoleIdx && this._rowHoleFruitByNode.set(a, s.rowHoleIdx),
                                 void 0 !== s.row && this._occupyLayerSlotAt(s.row, s.localX, s.localY),
                                 this._staticFruits.indexOf(a) < 0 && this._staticFruits.push(a);
                             }
                           }
                         }
-                        this._model.hasRowFruitHoleData() && this._ensureAllRowHoleBackDecorationsFromSlots();
+                        this._model.hasRowRemovedHoleData() && this._ensureAllRowHoleBackDecorationsFromSlots();
                       }
                     }),
                     (n._pruneStaleFruitArrayRefs = function (e) {
@@ -16867,7 +16842,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                                 0 === this._holeQueueL.length &&
                                 0 === this._holeQueueR.length &&
                                 0 === this._pendingHoleSpawn &&
-                                0 === this._fruitHoleSideMap.size &&
+                                0 === this._removedHoleSideMap.size &&
                                 0 === this._model.getRowHoleQueueRemainingTotal() &&
                                 0 === this._pendingRowHoleSpawn &&
                                 0 === this._rowHoleFruitPendingReplenish.size &&
@@ -16993,7 +16968,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                       (this._holeQueueL = this._model.getHoleIdsLeft().slice()),
                         (this._holeQueueR = this._model.getHoleIdsRight().slice()),
                         (this._pendingHoleSpawn = 0),
-                        this._fruitHoleSideMap.clear();
+                        this._removedHoleSideMap.clear();
                     }),
                     (n._spawnInitialHoleFruits = function () {
                       this._spawnHoleFruit("L"), this._spawnHoleFruit("R");
@@ -17011,7 +16986,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                             ? (this._fruitIdMap.set(a, i),
                               this._fruitNodes.push(a),
                               this._staticFruits.push(a),
-                              this._fruitHoleSideMap.set(a, e),
+                              this._removedHoleSideMap.set(a, e),
                               this._refreshHoleQueueLabels(),
                               this._playSpawnPopScaleOnFruit(a, 0))
                             : n.unshift(i);
@@ -17073,7 +17048,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                           a.isValid &&
                           !this._toEliminate.has(a) &&
                           !this._isFruitEliminating(a) &&
-                          !this._fruitHoleSideMap.has(a)
+                          !this._removedHoleSideMap.has(a)
                         ) {
                           var s = this._fruitRowMap.get(a);
                           void 0 !== s &&
@@ -17374,7 +17349,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                       }
                     }),
                     (n._ensureAllRowHoleBackDecorationsFromSlots = function () {
-                      if (this._model.hasRowFruitHoleData())
+                      if (this._model.hasRowRemovedHoleData())
                         for (var e = this._model.getRowHoleCount(), t = 0; t < e; t++)
                           if (this._model.hasRowHoleQueue(t)) {
                             var n = this._model.getRowHoleCell(t);
@@ -17479,16 +17454,16 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                     }),
                     (n._onFruitClick = function (e) {
                       if (null === this._layContentDropTarget) {
-                        AudioManager.instance.playSound("fruitGame/fruitClick");
+                        0;
                         for (var t = e.target; t && !this._fruitIdMap.has(t); ) t = t.parent;
                         if (t && this._fruitIdMap.has(t) && this._staticFruits.indexOf(t) >= 0) {
-                          var n = this._fruitHoleSideMap.get(t),
+                          var n = this._removedHoleSideMap.get(t),
                             a = this._rowHoleFruitByNode.get(t),
                             s = void 0 === n && this._isLastStaticInPlayZone(t);
                           this._releaseBoardSlotForNode(t),
                             this._removeFromFruitArray(this._staticFruits, t),
                             void 0 !== n &&
-                              (this._fruitHoleSideMap.delete(t),
+                              (this._removedHoleSideMap.delete(t),
                               ("L" === n ? this._holeQueueL : this._holeQueueR).length > 0 &&
                                 this._holeFruitPendingReplenish.set(t, n)),
                             void 0 !== a &&
@@ -17581,7 +17556,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                       }
                       (this._holeQueueL.length = 0),
                         (this._holeQueueR.length = 0),
-                        this._fruitHoleSideMap.clear(),
+                        this._removedHoleSideMap.clear(),
                         this._holeFruitPendingReplenish.clear(),
                         this._rowHoleFruitByNode.clear(),
                         this._rowHoleFruitPendingReplenish.clear(),
@@ -17680,9 +17655,9 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                         var i = this._rowHoleFruitPendingReplenish.get(e);
                         this._rowHoleFruitPendingReplenish.delete(e), this._scheduleRowHoleReplenish(i);
                       }
-                      var o = this._fruitHoleSideMap.get(e);
+                      var o = this._removedHoleSideMap.get(e);
                       void 0 !== o &&
-                        (this._fruitHoleSideMap.delete(e),
+                        (this._removedHoleSideMap.delete(e),
                         ("L" === o ? this._holeQueueL : this._holeQueueR).length > 0 && this._scheduleHoleReplenish(o));
                       var r = this._rowHoleFruitByNode.get(e);
                       void 0 !== r &&
@@ -17738,7 +17713,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                       }
                     }),
                     (n._bottomRowRowHoleQueueStillSpawning = function () {
-                      if (!this._model.hasRowFruitHoleData()) return !1;
+                      if (!this._model.hasRowRemovedHoleData()) return !1;
                       for (var e = this._bottomRowOffset, n = 0; n < this._model.getRowHoleCount(); n++) {
                         var i = this._model.getRowHoleCell(n);
                         if (i && i.row === e && this._model.hasRowHoleQueue(n)) {
@@ -18543,7 +18518,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                       t += e.value.length;
                     return t;
                   }),
-                  (i.hasRowFruitHoleData = function () {
+                  (i.hasRowRemovedHoleData = function () {
                     return this._rowHoleCells.length > 0;
                   }),
                   (i.getRowHoleCount = function () {
@@ -18632,7 +18607,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                       i.push(o), (o += 20 + Math.floor(11 * Math.random()));
                     return i;
                   }),
-                  (i._buildRowFruitHoleIds = function (e, t, n) {
+                  (i._buildRowRemovedHoleIds = function (e, t, n) {
                     for (
                       var i,
                         o,
@@ -18793,7 +18768,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                         )
                           b((I = S(a, o)), a);
                         else {
-                          var R = this._buildRowFruitHoleIds(M, o, w);
+                          var R = this._buildRowRemovedHoleIds(M, o, w);
                           R && R.length === M
                             ? (I = R)
                             : (console.warn("[GameModel] row_fruit_hole id 生成失败，回退普通分段"),
@@ -18951,10 +18926,10 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                         (t.HomeSceneName = "HomeScene"),
                         (t.DuckSceneName = "DuckScene"),
                         (t.PigeonSceneName = "PigeonScene"),
-                        (t.Game2SceneName = "Game2Scene"),
+                        (t.RemovedSideScene2Name = "__REMOVED_SideScene2"),
                         (t.CowSceneName = "CowScene"),
                         (t.MathSceneName = "MathScene"),
-                        (t.FruitSceneName = "FruitScene"),
+                        (t.RemovedSideScene3Name = "__REMOVED_SideScene3"),
                         (t.isFromLoad = !1),
                         (t.releaseType = void 0),
                         (t.MaxDuckTypeNum = 100),
@@ -19605,8 +19580,8 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                   (c.isZJ_PC = !1),
                   (c.PigeonTotalNum = 10),
                   (c.SpecialBookNum = 6),
-                  (c.FruitDuckBookNum = 6),
-                  (c.DaWeiWangBookNum = 1),
+                  (c.FruitDuckBookNum = 0),
+                  (c.DaWeiWangBookNum = 0),
                   (c.bgNum = null),
                   (c.LockAllDuck = !1),
                   (c.woodHoleConfig = {
@@ -19688,7 +19663,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                     "沙僧鸭",
                     "木乃伊鸭",
                     "彩虹鸭",
-                    "西瓜鸭",
+                    "星辉鸭",
                     "金鸭",
                     "打工鸭",
                     "企鹅鸭",
@@ -19744,7 +19719,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                     "灰太鸭",
                     "懒鸭鸭",
                     "光头鸭",
-                    "火龙果鸭",
+                    "烈焰红鸭",
                     "茄子鸭",
                     "幽灵鸭",
                     "水晶鸭",
@@ -19887,8 +19862,8 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                     "屠夫"
                   ]),
                   (c.SpecialNameArr = ["百鹅朝凤", "百鸭朝龙", "百鹅朝麟", "百鸭朝雀", "百鹅朝鹏", "百鸭朝鲲"]),
-                  (c.FruitNameArr = ["西瓜鸭", "火龙果鸭", "葡萄鸭", "蓝莓鸭", "苹果鸭", "哈密瓜鸭"]),
-                  (c.DaWeiWangNameArr = ["大胃袋鸭"]),
+                  (c.FruitNameArr = []),
+                  (c.DaWeiWangNameArr = []),
                   (c.SanGuoNameArr = ["甄嬛鸭", "华妃鸭", "安陵容鸭", "刘备鸭", "关羽鸭", "张飞鸭"]),
                   (l = c))
                 ) || l
@@ -22219,89 +22194,10 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                         }
                       }),
                       (r.initSpecialFruitItem = function () {
-                        var e = this,
-                          t = 100 * this.id + 1;
-                        if (((this.duckClass = x.fruit), GameModel.instance.level2 > t || GameModel.LockAllDuck)) {
-                          (this.node.getComponent("cc.Sprite").color = Color.WHITE),
-                            (this.specialSprite.getComponent("cc.Sprite").color = Color.WHITE),
-                            (this.specialName.active = !0),
-                            (this.specialShadow.active = !0);
-                          var n = GameModel.FruitNameArr[this.id - 1];
-                          this.specialName.getComponent("cc.Label").string = n;
-                          var i =
-                            "tex/book/fruitCollection/" +
-                            ({
-                              西瓜鸭: "watermelonDuck",
-                              火龙果鸭: "pitayaDuck",
-                              葡萄鸭: "grapeDuck",
-                              蓝莓鸭: "blueberryDuck",
-                              苹果鸭: "appleDuck",
-                              哈密瓜鸭: "hamiMelonDuck"
-                            }[n] || n) +
-                            "/spriteFrame";
-                          ResManager.instance.bundleLoad("uiBundle", i, null, function (t, n) {
-                            t
-                              ? console.error(t)
-                              : e.node && (e.specialSprite.getComponent("cc.Sprite").spriteFrame = n);
-                          }),
-                            GameModel.instance.duckName == GameModel.FruitNameArr[this.id - 1] &&
-                              ((this.useTag.active = !0), (this.useLight.active = !0)),
-                            this.updateGetTipsFruit();
-                        } else {
-                          (this.node.getComponent("cc.Sprite").color = Color.GRAY),
-                            (this.specialSprite.getComponent("cc.Sprite").color = Color.BLACK),
-                            (this.specialName.active = !0),
-                            (this.specialShadow.active = !0);
-                          var o = GameModel.FruitNameArr[this.id - 1];
-                          this.specialName.getComponent("cc.Label").string = o;
-                          var r = "tex/book/fruitCollection/" + o + "/spriteFrame";
-                          ResManager.instance.bundleLoad("uiBundle", r, null, function (t, n) {
-                            t
-                              ? console.error(t)
-                              : e.node && (e.specialSprite.getComponent("cc.Sprite").spriteFrame = n);
-                          }),
-                            this.updateGetTipsFruit();
-                        }
+                        this.node && (this.node.active = !1);
                       }),
                       (r.initDWWItem = function () {
-                        var e = this,
-                          t = 100 * this.id + 1;
-                        if (((this.duckClass = x.DWW), GameModel.instance.level3 > t || GameModel.LockAllDuck)) {
-                          (this.node.getComponent("cc.Sprite").color = Color.WHITE),
-                            (this.specialSprite.getComponent("cc.Sprite").color = Color.WHITE),
-                            (this.specialName.active = !0),
-                            (this.specialShadow.active = !0);
-                          var n = GameModel.DaWeiWangNameArr[this.id - 1];
-                          this.specialName.getComponent("cc.Label").string = n;
-                          var i =
-                            "tex/book/bigEaterCollection/" +
-                            ({
-                              大胃袋鸭: "bigBellyDuck"
-                            }[n] || n) +
-                            "/spriteFrame";
-                          ResManager.instance.bundleLoad("uiBundle", i, null, function (t, n) {
-                            t
-                              ? console.error(t)
-                              : e.node && (e.specialSprite.getComponent("cc.Sprite").spriteFrame = n);
-                          }),
-                            GameModel.instance.duckName == GameModel.DaWeiWangNameArr[this.id - 1] &&
-                              ((this.useTag.active = !0), (this.useLight.active = !0)),
-                            this.updateGetTipsDWW();
-                        } else {
-                          (this.node.getComponent("cc.Sprite").color = Color.GRAY),
-                            (this.specialSprite.getComponent("cc.Sprite").color = Color.BLACK),
-                            (this.specialName.active = !0),
-                            (this.specialShadow.active = !0);
-                          var o = GameModel.DaWeiWangNameArr[this.id - 1];
-                          this.specialName.getComponent("cc.Label").string = o;
-                          var r = "tex/book/bigEaterCollection/" + o + "/spriteFrame";
-                          ResManager.instance.bundleLoad("uiBundle", r, null, function (t, n) {
-                            t
-                              ? console.error(t)
-                              : e.node && (e.specialSprite.getComponent("cc.Sprite").spriteFrame = n);
-                          }),
-                            this.updateGetTipsDWW();
-                        }
+                        this.node && (this.node.active = !1);
                       }),
                       (r.initShareItem = function () {
                         var e = this;
@@ -22362,13 +22258,13 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                       }),
                       (r.updateGetTipsFruit = function () {
                         (this.GetTag.getChildByName("GetNum").getComponent("cc.Label").string =
-                          "水果鸭" + (100 * this.id + 1) + "关解锁"),
+                          "收藏鸭" + (100 * this.id + 1) + "关解锁"),
                           (GameModel.instance.level2 > 100 * this.id + 1 || GameModel.LockAllDuck) &&
                             ((this.GetTag.active = !1), this.showUnlock());
                       }),
                       (r.updateGetTipsDWW = function () {
                         (this.GetTag.getChildByName("GetNum").getComponent("cc.Label").string =
-                          "大胃王鸭" + (100 * this.id + 1) + "关解锁"),
+                          "专属鸭" + (100 * this.id + 1) + "关解锁"),
                           (GameModel.instance.level3 > 100 * this.id + 1 || GameModel.LockAllDuck) &&
                             ((this.GetTag.active = !1), this.showUnlock());
                       }),
@@ -23661,9 +23557,9 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                         if (e) error("[LoadScene] 加载bundle场景失败:", e);
                         else {
                           AdManager.onShow(function () {
-                            director.getScene().name != GameModel.instance.FruitSceneName
+                            director.getScene().name != GameModel.instance.RemovedSideScene3Name
                               ? AudioManager.instance.playMusic("bgm/defaultGameplay")
-                              : AudioManager.instance.playMusic("fruitGame/fruitBgm");
+                              : 0;
                           }),
                             AdManager.onHide(function () {
                               AudioManager.instance.stopMusic();
@@ -23686,9 +23582,9 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                       }),
                       (s.loadInScene = function (e) {
                         AdManager.onShow(function () {
-                          director.getScene().name != GameModel.instance.FruitSceneName
+                          director.getScene().name != GameModel.instance.RemovedSideScene3Name
                             ? AudioManager.instance.playMusic("bgm/defaultGameplay")
-                            : AudioManager.instance.playMusic("fruitGame/fruitBgm");
+                            : 0;
                         }),
                           AdManager.onHide(function () {
                             AudioManager.instance.stopMusic();
@@ -26140,7 +26036,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                         var e = this;
                         TooYueManager._ins.stopRecordVideo();
                         var t = Util.getRandomNum(0, this.duckSpriteFrames.length - 1, !0);
-                        director.getScene().name == GameModel.instance.FruitSceneName && (t = 3),
+                        director.getScene().name == GameModel.instance.RemovedSideScene3Name && (t = 3),
                           (this.sprite.getComponent("cc.Sprite").spriteFrame = this.duckSpriteFrames[t]),
                           (this.overLabel.getComponent("cc.Sprite").spriteFrame = this.duckLabelFrames[t]),
                           (0 != t && 1 != t) ||
@@ -26149,9 +26045,9 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                         var n = 0;
                         director.getScene().name == GameModel.instance.DuckSceneName
                           ? (n = GameModel.instance.failNum)
-                          : director.getScene().name == GameModel.instance.Game2SceneName
+                          : director.getScene().name == GameModel.instance.RemovedSideScene2Name
                           ? (n = GameModel.instance.failNum_Game2)
-                          : director.getScene().name == GameModel.instance.FruitSceneName &&
+                          : director.getScene().name == GameModel.instance.RemovedSideScene3Name &&
                             (n = GameModel.instance.failNum_Game3),
                           (this.failNumLabel.getComponent("cc.Label").string = "本关已挑战" + n + "次"),
                           AutoManager._ins.isAuto &&
@@ -26331,10 +26227,10 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                       (r.initProgressBar = function () {
                         var e = null,
                           t = 0;
-                        director.getScene().name == GameModel.instance.Game2SceneName
+                        director.getScene().name == GameModel.instance.RemovedSideScene2Name
                           ? ((t = (e = find("Canvas").getComponent("Game2Controller")).popNum / e.fruitNum),
                             (t = Util.fakeProgressSmooth(e.popNum, e.fruitNum)))
-                          : director.getScene().name == GameModel.instance.FruitSceneName
+                          : director.getScene().name == GameModel.instance.RemovedSideScene3Name
                           ? ((t = ((e = find("Canvas").getComponent("Game")).fruitNum - e.remainNum) / e.fruitNum),
                             (t = Util.fakeProgressSmooth(e.fruitNum - e.remainNum, e.fruitNum)))
                           : ((t = (e = find("Canvas").getComponent("DuckController")).popNum / e.nailNum),
@@ -26398,8 +26294,8 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                         GameCtrl.instance.btnCanTouch &&
                           ((GameCtrl.instance.btnCanTouch = !1),
                           AudioManager.instance.playSound("ui/buttonClick"),
-                          director.getScene().name == GameModel.instance.FruitSceneName
-                            ? AudioManager.instance.playMusic("fruitGame/fruitBgm", 0.5)
+                          director.getScene().name == GameModel.instance.RemovedSideScene3Name
+                            ? 0
                             : AudioManager.instance.playMusic("bgm/defaultGameplay", 0.5),
                           GameModel.instance.userPowerNum > 0
                             ? (GameModel.instance.subPowerNum(),
@@ -27572,14 +27468,14 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                         (n.getComponent("cc.Sprite").spriteFrame = this.nameSpr[e]),
                           (i.getComponent("cc.Sprite").spriteFrame = this.propSpr[e]),
                           (o.getComponent("cc.Sprite").spriteFrame = this.wordSpr[e]),
-                          (e == PROP_TYPE.PROP2 && director.getScene().name == GameModel.instance.Game2SceneName) ||
-                          (e == PROP_TYPE.PROP2 && director.getScene().name == GameModel.instance.FruitSceneName)
+                          (e == PROP_TYPE.PROP2 && director.getScene().name == GameModel.instance.RemovedSideScene2Name) ||
+                          (e == PROP_TYPE.PROP2 && director.getScene().name == GameModel.instance.RemovedSideScene3Name)
                             ? (o.getComponent("cc.Sprite").spriteFrame =
                                 ResManager.instance.getSpriteFrame("打乱水果位置"))
                             : ((e == PROP_TYPE.PROP1 &&
-                                director.getScene().name == GameModel.instance.Game2SceneName) ||
+                                director.getScene().name == GameModel.instance.RemovedSideScene2Name) ||
                                 (e == PROP_TYPE.PROP1 &&
-                                  director.getScene().name == GameModel.instance.FruitSceneName)) &&
+                                  director.getScene().name == GameModel.instance.RemovedSideScene3Name)) &&
                               (o.getComponent("cc.Sprite").spriteFrame =
                                 ResManager.instance.getSpriteFrame("消除2组水果")),
                           this.addClickEvent(),
@@ -27618,7 +27514,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                               : Number(t) == PROP_TYPE.PROP4
                               ? (i = "全部格子解锁道具")
                               : Number(t) == PROP_TYPE.PROP5 && (i = "解锁单个格子道具"),
-                              director.getScene().name == GameModel.instance.Game2SceneName && (i += "模式2"),
+                              director.getScene().name == GameModel.instance.RemovedSideScene2Name && (i += "模式2"),
                               TooYueManager._ins.showVideoAd(
                                 i,
                                 function () {
@@ -27637,7 +27533,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                                   n.finishVideoBack(t),
                                   director.getScene().name == GameModel.instance.DuckSceneName
                                     ? find("Canvas").getComponent("Game2Controller").updateAdGridTip()
-                                    : director.getScene().name == GameModel.instance.Game2SceneName &&
+                                    : director.getScene().name == GameModel.instance.RemovedSideScene2Name &&
                                       find("Canvas").getComponent("Game2Controller").updateAdGridTip();
                               },
                               function () {
@@ -28793,8 +28689,8 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                             this.scheduleOnce(function () {
                               e.onNoClick();
                             }, Util.getRandomNum(1, 2)),
-                          (director.getScene().name == GameModel.instance.Game2SceneName ||
-                            director.getScene().name == GameModel.instance.FruitSceneName) &&
+                          (director.getScene().name == GameModel.instance.RemovedSideScene2Name ||
+                            director.getScene().name == GameModel.instance.RemovedSideScene3Name) &&
                             (this.node
                               .getChildByName("panel")
                               .getChildByName("baseMap")
@@ -28807,10 +28703,10 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                         if (director.getScene().name == GameModel.instance.DuckSceneName) {
                           var t = find("Canvas").getComponent("DuckController");
                           (e = t.popNum / t.nailNum), (e = Util.fakeProgressSmooth(t.popNum, t.nailNum));
-                        } else if (director.getScene().name == GameModel.instance.Game2SceneName) {
+                        } else if (director.getScene().name == GameModel.instance.RemovedSideScene2Name) {
                           var n = find("Canvas").getComponent("Game2Controller");
                           (e = n.popNum / n.fruitNum), (e = Util.fakeProgressSmooth(n.popNum, n.fruitNum));
-                        } else if (director.getScene().name == GameModel.instance.FruitSceneName) {
+                        } else if (director.getScene().name == GameModel.instance.RemovedSideScene3Name) {
                           var i = find("Canvas").getComponent("Game");
                           (e = i.remainNum / i.fruitNum),
                             (e = Util.fakeProgressSmooth(i.fruitNum - i.remainNum, i.fruitNum));
@@ -28852,9 +28748,9 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                                 "复活道具",
                                 function (t) {
                                   director.getScene().name == GameModel.instance.DuckSceneName ||
-                                  director.getScene().name == GameModel.instance.FruitSceneName
+                                  director.getScene().name == GameModel.instance.RemovedSideScene3Name
                                     ? EventManager.instance.emit(EVENT_KEYS.REVIVE)
-                                    : director.getScene().name == GameModel.instance.Game2SceneName &&
+                                    : director.getScene().name == GameModel.instance.RemovedSideScene2Name &&
                                       EventManager.instance.emit(GAME2_EVENT_KEYS.REVIVE),
                                     e.node.destroy(),
                                     (GameCtrl.instance.btnCanTouch = !0);
@@ -28901,9 +28797,9 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                             })
                             .call(function () {
                               director.getScene().name == GameModel.instance.DuckSceneName ||
-                              director.getScene().name == GameModel.instance.FruitSceneName
+                              director.getScene().name == GameModel.instance.RemovedSideScene3Name
                                 ? EventManager.instance.emit(EVENT_KEYS.GAME_END)
-                                : director.getScene().name == GameModel.instance.Game2SceneName &&
+                                : director.getScene().name == GameModel.instance.RemovedSideScene2Name &&
                                   EventManager.instance.emit(GAME2_EVENT_KEYS.GAME_END),
                                 (GameCtrl.instance.btnCanTouch = !0),
                                 e.node.destroy();
@@ -29499,7 +29395,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                                 }
                               )
                             );
-                          if (director.getScene().name == GameModel.instance.Game2SceneName)
+                          if (director.getScene().name == GameModel.instance.RemovedSideScene2Name)
                             return (
                               console.log("点击设置按钮"),
                               (GameCtrl.instance.btnCanTouch = !1),
@@ -29514,7 +29410,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                                 }
                               )
                             );
-                          if (director.getScene().name == GameModel.instance.FruitSceneName)
+                          if (director.getScene().name == GameModel.instance.RemovedSideScene3Name)
                             return (
                               console.log("点击设置按钮"),
                               (GameCtrl.instance.btnCanTouch = !1),
@@ -29906,8 +29802,8 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                             ? AudioManager.instance.playMusic("bgm/defaultGameplay", 0.5)
                             : 7 == find("Canvas").getComponent("HomeScene").bgType
                             ? AudioManager.instance.playMusic("bgm/pureColor", 0.5)
-                            : director.getScene().name == GameModel.instance.FruitSceneName
-                            ? AudioManager.instance.playMusic("fruitGame/fruitBgm", 0.5)
+                            : director.getScene().name == GameModel.instance.RemovedSideScene3Name
+                            ? 0
                             : AudioManager.instance.playMusic("bgm/defaultGameplay", 0.5);
                       }),
                       (r.onSound = function () {
@@ -29922,15 +29818,15 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                           TooYueManager._ins.stopRecordVideo(),
                           director.getScene().name == GameModel.instance.DuckSceneName
                             ? TooYueManager._ins.reportStage(GameModel.instance.level, "end", "giveup", 0)
-                            : director.getScene().name == GameModel.instance.Game2SceneName
+                            : director.getScene().name == GameModel.instance.RemovedSideScene2Name
                             ? TooYueManager._ins.reportStage(2e6 + GameModel.instance.level2, "end", "giveup", 0)
-                            : director.getScene().name == GameModel.instance.FruitSceneName &&
+                            : director.getScene().name == GameModel.instance.RemovedSideScene3Name &&
                               TooYueManager._ins.reportStage(3e6 + GameModel.instance.level, "end", "giveup", 0),
                           director.getScene().name != GameModel.instance.PigeonSceneName &&
                           director.getScene().name != GameModel.instance.CowSceneName &&
-                          director.getScene().name != GameModel.instance.Game2SceneName &&
+                          director.getScene().name != GameModel.instance.RemovedSideScene2Name &&
                           director.getScene().name != GameModel.instance.MathSceneName &&
-                          director.getScene().name != GameModel.instance.FruitSceneName
+                          director.getScene().name != GameModel.instance.RemovedSideScene3Name
                             ? ResManager.instance.bundleLoad(
                                 "uiBundle",
                                 UIConfigTable.Set2UI.path,
@@ -29964,8 +29860,8 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                             : (this.autoBtn.getChildByName("point").setPosition(-55, 0),
                               (this.autoBtn.getChildByName("point").getComponent("cc.Sprite").spriteFrame =
                                 this.changeSpriteFrame[0])),
-                          (director.getScene().name != GameModel.instance.Game2SceneName &&
-                            director.getScene().name != GameModel.instance.FruitSceneName) ||
+                          (director.getScene().name != GameModel.instance.RemovedSideScene2Name &&
+                            director.getScene().name != GameModel.instance.RemovedSideScene3Name) ||
                             (this.autoBtn.active = !1);
                       }),
                       (r.openHomeGM = function () {
@@ -30011,11 +29907,11 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                         if ("" != e) {
                           var t = e.split(" ").map(Number);
                           t[0] &&
-                            (director.getScene().name == GameModel.instance.Game2SceneName
+                            (director.getScene().name == GameModel.instance.RemovedSideScene2Name
                               ? (GameModel.instance.level2 = t[0])
                               : director.getScene().name == GameModel.instance.DuckSceneName
                               ? (GameModel.instance.level = t[0])
-                              : director.getScene().name == GameModel.instance.FruitSceneName &&
+                              : director.getScene().name == GameModel.instance.RemovedSideScene3Name &&
                                 (GameModel.instance.level3 = t[0]),
                             ServiceManager.instance.setStorageToServer()),
                             t[1] &&
@@ -30024,12 +29920,12 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                               (GameModel.instance.freeProp3Num = t[1])),
                             (GameModel.instance.duckLevelInformation = null);
                         }
-                        director.getScene().name == GameModel.instance.Game2SceneName
-                          ? director.loadScene(GameModel.instance.Game2SceneName)
+                        director.getScene().name == GameModel.instance.RemovedSideScene2Name
+                          ? 0
                           : director.getScene().name == GameModel.instance.DuckSceneName
                           ? director.loadScene(GameModel.instance.DuckSceneName)
-                          : director.getScene().name == GameModel.instance.FruitSceneName &&
-                            director.loadScene(GameModel.instance.FruitSceneName);
+                          : director.getScene().name == GameModel.instance.RemovedSideScene3Name &&
+                            0;
                       }),
                       (r.ChangeHomeDuckSkin = function () {
                         var e = this.editNameNode.getComponent("cc.EditBox").string;
@@ -30086,20 +29982,20 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                         AdManager_ZJ._ins.setClipboardText(e);
                       }),
                       (r.winEffect = function () {
-                        director.getScene().name == GameModel.instance.Game2SceneName
+                        director.getScene().name == GameModel.instance.RemovedSideScene2Name
                           ? find("Canvas").getComponent("Game2Controller").successEffect()
                           : director.getScene().name == GameModel.instance.DuckSceneName
-                          ? find("Canvas").getComponent("Game2Controller").successEffect()
-                          : director.getScene().name == GameModel.instance.FruitSceneName &&
+                          ? find("Canvas").getComponent("Game").gameWin()
+                          : director.getScene().name == GameModel.instance.RemovedSideScene3Name &&
                             find("Canvas").getComponent("Game").gameWin(),
                           this.node.destroy();
                       }),
                       (r.loseEffect = function () {
-                        director.getScene().name == GameModel.instance.Game2SceneName
+                        director.getScene().name == GameModel.instance.RemovedSideScene2Name
                           ? find("Canvas").getComponent("Game2Controller").OverEffect()
                           : director.getScene().name == GameModel.instance.DuckSceneName
-                          ? find("Canvas").getComponent("Game2Controller").OverEffect()
-                          : director.getScene().name == GameModel.instance.FruitSceneName &&
+                          ? find("Canvas").getComponent("Game").gameEnd()
+                          : director.getScene().name == GameModel.instance.RemovedSideScene3Name &&
                             find("Canvas").getComponent("Game").gameEnd(),
                           this.node.destroy();
                       }),
@@ -31403,7 +31299,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
         "./LevelMechanismManager.ts",
         "./RopeGenerator.ts",
         "./Fruit.ts",
-        "./FruitHole.ts",
+        "./RemovedHole.ts",
         "./FruitManager.ts",
         "./Game2Controller.ts",
         "./Grid.ts",
@@ -32111,24 +32007,24 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                       (s.onLoad = function () {
                         director.getScene().name == GameModel.instance.DuckSceneName
                           ? (this.levelNum = GameModel.instance.level)
-                          : director.getScene().name == GameModel.instance.Game2SceneName
+                          : director.getScene().name == GameModel.instance.RemovedSideScene2Name
                           ? (this.levelNum = GameModel.instance.level2)
-                          : director.getScene().name == GameModel.instance.FruitSceneName &&
+                          : director.getScene().name == GameModel.instance.RemovedSideScene3Name &&
                             (this.levelNum = GameModel.instance.level3),
                           this.initDuckSkin(),
                           this.initUi(),
                           (GameModel.instance.currentLevelPlayNum = 0),
                           director.getScene().name == GameModel.instance.DuckSceneName
                             ? (GameModel.instance.level += 1)
-                            : director.getScene().name == GameModel.instance.Game2SceneName
+                            : director.getScene().name == GameModel.instance.RemovedSideScene2Name
                             ? (GameModel.instance.level2 += 1)
-                            : director.getScene().name == GameModel.instance.FruitSceneName &&
+                            : director.getScene().name == GameModel.instance.RemovedSideScene3Name &&
                               (GameModel.instance.level3 += 1),
                           director.getScene().name == GameModel.instance.DuckSceneName
                             ? (this.levelNum = GameModel.instance.level)
-                            : director.getScene().name == GameModel.instance.Game2SceneName
+                            : director.getScene().name == GameModel.instance.RemovedSideScene2Name
                             ? (this.levelNum = GameModel.instance.level2)
-                            : director.getScene().name == GameModel.instance.FruitSceneName &&
+                            : director.getScene().name == GameModel.instance.RemovedSideScene3Name &&
                               (this.levelNum = GameModel.instance.level3),
                           AudioManager.instance.playSound("ui/levelComplete");
                         var e = this.panel.getChildByName("banner");
@@ -32173,7 +32069,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                       (s.initUi = function () {
                         GameModel.instance.releaseType == releaseType.applet_wechat &&
                           ((this.shareVideoBtn.node.active = !1), (this.goSideBarBtn.node.active = !1)),
-                          director.getScene().name == GameModel.instance.FruitSceneName &&
+                          director.getScene().name == GameModel.instance.RemovedSideScene3Name &&
                             ((this.aniNode.active = !1),
                             (this.fruitWinAni.active = !0),
                             GameModel.instance.level3 > 101 && (this.gooseProgress.active = !1));
@@ -32273,11 +32169,11 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                         this.levelNum;
                         var e = this.gooseProgress.getChildByName("duckLabel").getChildByName("last"),
                           t = this.gooseProgress.getChildByName("duck").getChildByName("剪影");
-                        director.getScene().name == GameModel.instance.Game2SceneName
+                        director.getScene().name == GameModel.instance.RemovedSideScene2Name
                           ? this.initGame2Last(e, t)
                           : director.getScene().name == GameModel.instance.DuckSceneName
                           ? this.initGame1Last(e, t)
-                          : director.getScene().name == GameModel.instance.FruitSceneName && this.initGame3Last(e, t);
+                          : director.getScene().name == GameModel.instance.RemovedSideScene3Name && this.initGame3Last(e, t);
                       }),
                       (s.initGame1Last = function (e, t) {
                         this.levelNum < 102 ||
@@ -32361,8 +32257,8 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                         var d = v3(this.nextLevelBtn.node.scale);
                         if (
                           (this.nextLevelBtn.node.setScale(0, 0, 0),
-                          director.getScene().name == GameModel.instance.FruitSceneName &&
-                            (AudioManager.instance.playLongSound("fruitGame/FruitWin", 0.5),
+                          director.getScene().name == GameModel.instance.RemovedSideScene3Name &&
+                            (0,
                             this.fruitWinAni.getComponent("sp.Skeleton").setAnimation(0, "laugh", !1),
                             this.scheduleOnce(function () {
                               (e.fruitWinAni.getComponent("sp.Skeleton").loop = !0),
@@ -32382,7 +32278,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                           tween(this.aniNode)
                             .delay(0.5)
                             .call(function () {
-                              director.getScene().name != GameModel.instance.FruitSceneName &&
+                              director.getScene().name != GameModel.instance.RemovedSideScene3Name &&
                                 AudioManager.instance.playLongSound("duckGame/duckVictory", 0.5);
                             })
                             .to(
@@ -32449,7 +32345,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                           .call(function () {
                             console.log("this.levelNum - 1", e.levelNum - 1),
                               e.levelNum - 1 != 1 &&
-                                (director.getScene().name == GameModel.instance.FruitSceneName
+                                (director.getScene().name == GameModel.instance.RemovedSideScene3Name
                                   ? e.gooseProgressMoveToBookBtn(0)
                                   : e.newDuckSpriteMoveToBookBtn());
                           })
@@ -32554,9 +32450,9 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                             .call(function () {
                               director.getScene().name == GameModel.instance.DuckSceneName
                                 ? t.judgeSpecialDuck()
-                                : director.getScene().name == GameModel.instance.Game2SceneName
+                                : director.getScene().name == GameModel.instance.RemovedSideScene2Name
                                 ? t.judgeSpecialFruitDuck()
-                                : director.getScene().name == GameModel.instance.FruitSceneName && t.judgeDWWDuck();
+                                : director.getScene().name == GameModel.instance.RemovedSideScene3Name && t.judgeDWWDuck();
                             })
                             .start();
                       }),
@@ -32794,7 +32690,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                                           )
                                           .call(function () {
                                             var e =
-                                              "tex/book/fruitCollection/" + GameModel.FruitNameArr[o] + "/spriteFrame";
+                                              "tex/book/removedCollection/" + GameModel.FruitNameArr[o] + "/spriteFrame";
                                             t.newDuckSpriteMoveToBookBtn(e);
                                           })
                                           .start();
@@ -32873,7 +32769,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                                           )
                                           .call(function () {
                                             var e =
-                                              "tex/book/bigEaterCollection/" +
+                                              "tex/book/removedCollection2/" +
                                               GameModel.DaWeiWangNameArr[o] +
                                               "/spriteFrame";
                                             t.newDuckSpriteMoveToBookBtn(e);
@@ -32962,9 +32858,9 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                               )
                               .call(function () {
                                 director.getScene().name == GameModel.instance.DuckSceneName ||
-                                director.getScene().name == GameModel.instance.FruitSceneName
+                                director.getScene().name == GameModel.instance.RemovedSideScene3Name
                                   ? EventManager.instance.emit(EVENT_KEYS.NEXT_LEVEL)
-                                  : director.getScene().name == GameModel.instance.Game2SceneName &&
+                                  : director.getScene().name == GameModel.instance.RemovedSideScene2Name &&
                                     EventManager.instance.emit(GAME2_EVENT_KEYS.NEXT_LEVEL),
                                   (GameCtrl.instance.btnCanTouch = !0),
                                   e.node.destroy();

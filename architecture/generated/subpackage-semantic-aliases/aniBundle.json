@@ -1,96 +1,96 @@
 {
   "bundleName": "aniBundle",
-  "generatedAt": "2026-04-09T05:24:44.872Z",
+  "generatedAt": "2026-04-13T05:26:38.330Z",
   "importAliases": [
     {
       "kind": "import",
       "originalRelativePath": "import/00748592-63a6-4108-a839-69028365dd22.a2533.json",
-      "semanticRelativePath": "__semantic__/mythicBeastAnimations/hundredGeeseToQilin/skeleton/spriteFrame.json",
-      "materializedRelativePath": "import/mythicBeastAnimations/hundredGeeseToQilin/skeleton/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/mythicCollection/hundredGeeseToQilin/skeleton/spriteFrame.json",
+      "materializedRelativePath": "import/mythicCollection/hundredGeeseToQilin/skeleton/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "神兽动画合集/百鹅朝麟/skeleton/spriteFrame"
+        "canonicalPath": "mythicCollection/hundredGeeseToQilin/skeleton/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/00748592-63a6-4108-a839-69028365dd22@f9941.1fd31.json",
-      "semanticRelativePath": "__semantic__/mythicBeastAnimations/hundredGeeseToQilin/skeleton/spriteFrame__2.json",
-      "materializedRelativePath": "import/mythicBeastAnimations/hundredGeeseToQilin/skeleton/spriteFrame__2.json",
+      "semanticRelativePath": "__semantic__/mythicCollection/hundredGeeseToQilin/skeleton/spriteFrame__2.json",
+      "materializedRelativePath": "import/mythicCollection/hundredGeeseToQilin/skeleton/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "神兽动画合集/百鹅朝麟/skeleton/spriteFrame"
+        "canonicalPath": "mythicCollection/hundredGeeseToQilin/skeleton/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/0599c030-38ec-4e55-8ec6-e400c1f90e7d@f9941.59117.json",
-      "semanticRelativePath": "__semantic__/skeletalAnimations/doorAnimation/skeleton/spriteFrame.json",
-      "materializedRelativePath": "import/skeletalAnimations/doorAnimation/skeleton/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/skeletonAnimations/doorAnimation/skeleton/spriteFrame.json",
+      "materializedRelativePath": "import/skeletonAnimations/doorAnimation/skeleton/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "骨骼动画/门动画/skeleton/spriteFrame"
+        "canonicalPath": "skeletonAnimations/doorAnimation/skeleton/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/07ced7bf-caa1-4d01-96df-b286a9fa9924.621e2.json",
-      "semanticRelativePath": "__semantic__/gyroscope/skeleton.json",
-      "materializedRelativePath": "import/gyroscope/skeleton.json",
+      "semanticRelativePath": "__semantic__/gyroscopeAnimation/skeleton.json",
+      "materializedRelativePath": "import/gyroscopeAnimation/skeleton.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "陀螺仪/skeleton"
+        "canonicalPath": "gyroscopeAnimation/skeleton"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/090b3eee-0a78-4e40-96f8-f4b42cef2146.a2533.json",
-      "semanticRelativePath": "__semantic__/mythicBeastAnimations/hundredGeeseToPhoenix/skeleton/spriteFrame.json",
-      "materializedRelativePath": "import/mythicBeastAnimations/hundredGeeseToPhoenix/skeleton/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/mythicCollection/hundredGeeseToPhoenix/skeleton/spriteFrame.json",
+      "materializedRelativePath": "import/mythicCollection/hundredGeeseToPhoenix/skeleton/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "神兽动画合集/百鹅朝凤/skeleton/spriteFrame"
+        "canonicalPath": "mythicCollection/hundredGeeseToPhoenix/skeleton/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/090b3eee-0a78-4e40-96f8-f4b42cef2146@f9941.000ef.json",
-      "semanticRelativePath": "__semantic__/mythicBeastAnimations/hundredGeeseToPhoenix/skeleton/spriteFrame__2.json",
-      "materializedRelativePath": "import/mythicBeastAnimations/hundredGeeseToPhoenix/skeleton/spriteFrame__2.json",
+      "semanticRelativePath": "__semantic__/mythicCollection/hundredGeeseToPhoenix/skeleton/spriteFrame__2.json",
+      "materializedRelativePath": "import/mythicCollection/hundredGeeseToPhoenix/skeleton/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "神兽动画合集/百鹅朝凤/skeleton/spriteFrame"
+        "canonicalPath": "mythicCollection/hundredGeeseToPhoenix/skeleton/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/09d91ef2-7134-4514-a845-dfb11a5846cb.a2533.json",
-      "semanticRelativePath": "__semantic__/xiaoSanVideo/skeleton/spriteFrame.json",
-      "materializedRelativePath": "import/xiaoSanVideo/skeleton/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/sideStoryVideo/skeleton/spriteFrame.json",
+      "materializedRelativePath": "import/sideStoryVideo/skeleton/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "小三视频/skeleton/spriteFrame"
+        "canonicalPath": "sideStoryVideo/skeleton/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/09d91ef2-7134-4514-a845-dfb11a5846cb@f9941.bd616.json",
-      "semanticRelativePath": "__semantic__/xiaoSanVideo/skeleton/spriteFrame__2.json",
-      "materializedRelativePath": "import/xiaoSanVideo/skeleton/spriteFrame__2.json",
+      "semanticRelativePath": "__semantic__/sideStoryVideo/skeleton/spriteFrame__2.json",
+      "materializedRelativePath": "import/sideStoryVideo/skeleton/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "小三视频/skeleton/spriteFrame"
+        "canonicalPath": "sideStoryVideo/skeleton/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/0a3d48d62.f4943.json",
-      "semanticRelativePath": "__semantic__/_packs/pack/skeleton__pack_17.json",
-      "materializedRelativePath": "import/_packs/pack/skeleton__pack_17.json",
+      "semanticRelativePath": "__semantic__/_packs/pack/eatFull__pack_17.json",
+      "materializedRelativePath": "import/_packs/pack/eatFull__pack_17.json",
       "strategy": "import-pack",
       "detail": {
         "commonPrefixSegments": [],
-        "primaryLeafName": "skeleton",
+        "primaryLeafName": "eatFull",
         "assetCount": 17,
         "textureUuidKeys": []
       }
@@ -98,11 +98,11 @@
     {
       "kind": "import",
       "originalRelativePath": "import/0c037270-d1a8-4b36-81af-908e7350f5cb.621e2.json",
-      "semanticRelativePath": "__semantic__/mythicBeastAnimations/hundredDucksToDragon/skeleton.json",
-      "materializedRelativePath": "import/mythicBeastAnimations/hundredDucksToDragon/skeleton.json",
+      "semanticRelativePath": "__semantic__/mythicCollection/hundredDucksToDragon/skeleton.json",
+      "materializedRelativePath": "import/mythicCollection/hundredDucksToDragon/skeleton.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "神兽动画合集/百鸭朝龙/skeleton"
+        "canonicalPath": "mythicCollection/hundredDucksToDragon/skeleton"
       }
     },
     {
@@ -121,51 +121,51 @@
     {
       "kind": "import",
       "originalRelativePath": "import/135aec12-874e-4bd8-841e-6359ff461316@f9941.6abfc.json",
-      "semanticRelativePath": "__semantic__/guideAnimation/skeleton/spriteFrame.json",
-      "materializedRelativePath": "import/guideAnimation/skeleton/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/tutorialAnimation/skeleton/spriteFrame.json",
+      "materializedRelativePath": "import/tutorialAnimation/skeleton/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "引导动画/skeleton/spriteFrame"
+        "canonicalPath": "tutorialAnimation/skeleton/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/14609467-055d-4d63-8af1-406a624f9889.621e2.json",
-      "semanticRelativePath": "__semantic__/mythicBeastAnimations/hundredGeeseToRoc/skeleton.json",
-      "materializedRelativePath": "import/mythicBeastAnimations/hundredGeeseToRoc/skeleton.json",
+      "semanticRelativePath": "__semantic__/mythicCollection/hundredGeeseToRoc/skeleton.json",
+      "materializedRelativePath": "import/mythicCollection/hundredGeeseToRoc/skeleton.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "神兽动画合集/百鹅朝鹏/skeleton"
+        "canonicalPath": "mythicCollection/hundredGeeseToRoc/skeleton"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/1f149e4f-cd20-4f91-ad8a-c4e2b5b5af1f.c0309.json",
-      "semanticRelativePath": "__semantic__/mythicBeastAnimations/hundredDucksToDragon/hundredDucksToDragon.json",
-      "materializedRelativePath": "import/mythicBeastAnimations/hundredDucksToDragon/hundredDucksToDragon.json",
+      "semanticRelativePath": "__semantic__/mythicCollection/hundredDucksToDragon/hundredDucksToDragon.json",
+      "materializedRelativePath": "import/mythicCollection/hundredDucksToDragon/hundredDucksToDragon.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "神兽动画合集/百鸭朝龙/百鸭朝龙"
+        "canonicalPath": "mythicCollection/hundredDucksToDragon/hundredDucksToDragon"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/24966e82-a9b5-4fbd-8b16-3c7d4ba20fc4.621e2.json",
-      "semanticRelativePath": "__semantic__/breakDoorAnimation/skeleton.json",
-      "materializedRelativePath": "import/breakDoorAnimation/skeleton.json",
+      "semanticRelativePath": "__semantic__/doorBreakAnimation/skeleton.json",
+      "materializedRelativePath": "import/doorBreakAnimation/skeleton.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "破门动画/skeleton"
+        "canonicalPath": "doorBreakAnimation/skeleton"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/2c0c1a1f-1bce-4b98-b093-dd92b680ade9@f9941.0bdbf.json",
-      "semanticRelativePath": "__semantic__/skeletalAnimations/duckAnimations/skeleton/spriteFrame.json",
-      "materializedRelativePath": "import/skeletalAnimations/duckAnimations/skeleton/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/skeletonAnimations/duckAnimation/skeleton/spriteFrame.json",
+      "materializedRelativePath": "import/skeletonAnimations/duckAnimation/skeleton/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "骨骼动画/鸭子动画/skeleton/spriteFrame"
+        "canonicalPath": "skeletonAnimations/duckAnimation/skeleton/spriteFrame"
       }
     },
     {
@@ -175,7 +175,7 @@
       "materializedRelativePath": "import/startAnimation/skeleton.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "开始动画/skeleton"
+        "canonicalPath": "startAnimation/skeleton"
       }
     },
     {
@@ -185,157 +185,147 @@
       "materializedRelativePath": "import/startAnimation/skeleton/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "开始动画/skeleton/spriteFrame"
+        "canonicalPath": "startAnimation/skeleton/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/2f220c09-fefc-4092-b3ed-48b656b6440d.a2533.json",
-      "semanticRelativePath": "__semantic__/xiaoSanVideo/skeleton2/spriteFrame.json",
-      "materializedRelativePath": "import/xiaoSanVideo/skeleton2/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/sideStoryVideo/skeleton2/spriteFrame.json",
+      "materializedRelativePath": "import/sideStoryVideo/skeleton2/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "小三视频/skeleton2/spriteFrame"
+        "canonicalPath": "sideStoryVideo/skeleton2/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/2f220c09-fefc-4092-b3ed-48b656b6440d@f9941.60358.json",
-      "semanticRelativePath": "__semantic__/xiaoSanVideo/skeleton2/spriteFrame__2.json",
-      "materializedRelativePath": "import/xiaoSanVideo/skeleton2/spriteFrame__2.json",
+      "semanticRelativePath": "__semantic__/sideStoryVideo/skeleton2/spriteFrame__2.json",
+      "materializedRelativePath": "import/sideStoryVideo/skeleton2/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "小三视频/skeleton2/spriteFrame"
+        "canonicalPath": "sideStoryVideo/skeleton2/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/305e3925-607c-44f6-8a85-221b9b585508@f9941.349fb.json",
-      "semanticRelativePath": "__semantic__/skeletalAnimations/duckAnimations/skeleton4/spriteFrame.json",
-      "materializedRelativePath": "import/skeletalAnimations/duckAnimations/skeleton4/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/skeletonAnimations/duckAnimation/skeleton4/spriteFrame.json",
+      "materializedRelativePath": "import/skeletonAnimations/duckAnimation/skeleton4/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "骨骼动画/鸭子动画/skeleton4/spriteFrame"
+        "canonicalPath": "skeletonAnimations/duckAnimation/skeleton4/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/3c82572d-6742-43f0-a36c-61fb8a484792.621e2.json",
-      "semanticRelativePath": "__semantic__/mythicBeastAnimations/hundredGeeseToQilin/skeleton.json",
-      "materializedRelativePath": "import/mythicBeastAnimations/hundredGeeseToQilin/skeleton.json",
+      "semanticRelativePath": "__semantic__/mythicCollection/hundredGeeseToQilin/skeleton.json",
+      "materializedRelativePath": "import/mythicCollection/hundredGeeseToQilin/skeleton.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "神兽动画合集/百鹅朝麟/skeleton"
+        "canonicalPath": "mythicCollection/hundredGeeseToQilin/skeleton"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/3e6c7105-58c3-4ec0-9c7b-16d095e4cfd1.a2533.json",
-      "semanticRelativePath": "__semantic__/mythicBeastAnimations/hundredGeeseToRoc/skeleton/spriteFrame.json",
-      "materializedRelativePath": "import/mythicBeastAnimations/hundredGeeseToRoc/skeleton/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/mythicCollection/hundredGeeseToRoc/skeleton/spriteFrame.json",
+      "materializedRelativePath": "import/mythicCollection/hundredGeeseToRoc/skeleton/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "神兽动画合集/百鹅朝鹏/skeleton/spriteFrame"
+        "canonicalPath": "mythicCollection/hundredGeeseToRoc/skeleton/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/3e6c7105-58c3-4ec0-9c7b-16d095e4cfd1@f9941.3654b.json",
-      "semanticRelativePath": "__semantic__/mythicBeastAnimations/hundredGeeseToRoc/skeleton/spriteFrame__2.json",
-      "materializedRelativePath": "import/mythicBeastAnimations/hundredGeeseToRoc/skeleton/spriteFrame__2.json",
+      "semanticRelativePath": "__semantic__/mythicCollection/hundredGeeseToRoc/skeleton/spriteFrame__2.json",
+      "materializedRelativePath": "import/mythicCollection/hundredGeeseToRoc/skeleton/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "神兽动画合集/百鹅朝鹏/skeleton/spriteFrame"
+        "canonicalPath": "mythicCollection/hundredGeeseToRoc/skeleton/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/3eafdc70-481f-4e2d-995a-08ed7c7498e1.a2533.json",
-      "semanticRelativePath": "__semantic__/mythicBeastAnimations/hundredDucksToSparrow/skeleton/spriteFrame.json",
-      "materializedRelativePath": "import/mythicBeastAnimations/hundredDucksToSparrow/skeleton/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/mythicCollection/hundredDucksToSparrow/skeleton/spriteFrame.json",
+      "materializedRelativePath": "import/mythicCollection/hundredDucksToSparrow/skeleton/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "神兽动画合集/百鸭朝雀/skeleton/spriteFrame"
+        "canonicalPath": "mythicCollection/hundredDucksToSparrow/skeleton/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/3eafdc70-481f-4e2d-995a-08ed7c7498e1@f9941.ca29e.json",
-      "semanticRelativePath": "__semantic__/mythicBeastAnimations/hundredDucksToSparrow/skeleton/spriteFrame__2.json",
-      "materializedRelativePath": "import/mythicBeastAnimations/hundredDucksToSparrow/skeleton/spriteFrame__2.json",
+      "semanticRelativePath": "__semantic__/mythicCollection/hundredDucksToSparrow/skeleton/spriteFrame__2.json",
+      "materializedRelativePath": "import/mythicCollection/hundredDucksToSparrow/skeleton/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "神兽动画合集/百鸭朝雀/skeleton/spriteFrame"
+        "canonicalPath": "mythicCollection/hundredDucksToSparrow/skeleton/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/41cd121f-6453-4e43-b07c-251d25c10132.621e2.json",
-      "semanticRelativePath": "__semantic__/killerAnimation/skeleton.json",
-      "materializedRelativePath": "import/killerAnimation/skeleton.json",
+      "semanticRelativePath": "__semantic__/assassinAnimation/skeleton.json",
+      "materializedRelativePath": "import/assassinAnimation/skeleton.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "杀手动画/skeleton"
+        "canonicalPath": "assassinAnimation/skeleton"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/428deca4-b652-41f4-87c3-23f655f2c5c3.a2533.json",
-      "semanticRelativePath": "__semantic__/xiaoSanVideo/skeleton5/spriteFrame.json",
-      "materializedRelativePath": "import/xiaoSanVideo/skeleton5/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/sideStoryVideo/skeleton5/spriteFrame.json",
+      "materializedRelativePath": "import/sideStoryVideo/skeleton5/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "小三视频/skeleton5/spriteFrame"
+        "canonicalPath": "sideStoryVideo/skeleton5/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/428deca4-b652-41f4-87c3-23f655f2c5c3@f9941.80afc.json",
-      "semanticRelativePath": "__semantic__/xiaoSanVideo/skeleton5/spriteFrame__2.json",
-      "materializedRelativePath": "import/xiaoSanVideo/skeleton5/spriteFrame__2.json",
+      "semanticRelativePath": "__semantic__/sideStoryVideo/skeleton5/spriteFrame__2.json",
+      "materializedRelativePath": "import/sideStoryVideo/skeleton5/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "小三视频/skeleton5/spriteFrame"
+        "canonicalPath": "sideStoryVideo/skeleton5/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/465044ae-8c24-44ec-93f7-51c6ac7185f5.621e2.json",
-      "semanticRelativePath": "__semantic__/mythicBeastAnimations/hundredDucksToKun/skeleton.json",
-      "materializedRelativePath": "import/mythicBeastAnimations/hundredDucksToKun/skeleton.json",
+      "semanticRelativePath": "__semantic__/mythicCollection/hundredDucksToKun/skeleton.json",
+      "materializedRelativePath": "import/mythicCollection/hundredDucksToKun/skeleton.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "神兽动画合集/百鸭朝鲲/skeleton"
+        "canonicalPath": "mythicCollection/hundredDucksToKun/skeleton"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/46836547-5321-4850-b39b-c8bbf2b9d301.621e2.json",
-      "semanticRelativePath": "__semantic__/dave/skeleton.json",
-      "materializedRelativePath": "import/dave/skeleton.json",
+      "semanticRelativePath": "__semantic__/daveAnimation/skeleton.json",
+      "materializedRelativePath": "import/daveAnimation/skeleton.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "戴夫/skeleton"
-      }
-    },
-    {
-      "kind": "import",
-      "originalRelativePath": "import/46d1c775-d8a4-4ac0-b372-b4cf3a7a7b1e.82878.json",
-      "semanticRelativePath": "__semantic__/fruitBigEater/Kid-eating.json",
-      "materializedRelativePath": "import/fruitBigEater/Kid-eating.json",
-      "strategy": "direct-canonical-path",
-      "detail": {
-        "canonicalPath": "水果大胃王/Kid-eating"
+        "canonicalPath": "daveAnimation/skeleton"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/46f65887-d738-4c40-9c3e-d252f5442c21.af416.json",
-      "semanticRelativePath": "__semantic__/mythicBeastAnimations/hundredGeeseToRoc/hundredGeeseToRoc.json",
-      "materializedRelativePath": "import/mythicBeastAnimations/hundredGeeseToRoc/hundredGeeseToRoc.json",
+      "semanticRelativePath": "__semantic__/mythicCollection/hundredGeeseToRoc/hundredGeeseToRoc.json",
+      "materializedRelativePath": "import/mythicCollection/hundredGeeseToRoc/hundredGeeseToRoc.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "神兽动画合集/百鹅朝鹏/百鹅朝鹏"
+        "canonicalPath": "mythicCollection/hundredGeeseToRoc/hundredGeeseToRoc"
       }
     },
     {
@@ -345,7 +335,7 @@
       "materializedRelativePath": "import/instantPlayAnimation/skeleton.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "直玩动画/skeleton"
+        "canonicalPath": "instantPlayAnimation/skeleton"
       }
     },
     {
@@ -355,87 +345,87 @@
       "materializedRelativePath": "import/gooseTrapAnimation/skeleton.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "套鹅动画/skeleton"
+        "canonicalPath": "gooseTrapAnimation/skeleton"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/6017750f-6ae8-45be-881a-106cee6ce3f0@f9941.06907.json",
-      "semanticRelativePath": "__semantic__/dave/skeleton/spriteFrame.json",
-      "materializedRelativePath": "import/dave/skeleton/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/daveAnimation/skeleton/spriteFrame.json",
+      "materializedRelativePath": "import/daveAnimation/skeleton/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "戴夫/skeleton/spriteFrame"
+        "canonicalPath": "daveAnimation/skeleton/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/6152d120-790d-4fc6-be94-0aea75c77a7f.621e2.json",
-      "semanticRelativePath": "__semantic__/bibiLabu/skeleton.json",
-      "materializedRelativePath": "import/bibiLabu/skeleton.json",
+      "semanticRelativePath": "__semantic__/bibiLabuAnimation/skeleton.json",
+      "materializedRelativePath": "import/bibiLabuAnimation/skeleton.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "比比拉布/skeleton"
+        "canonicalPath": "bibiLabuAnimation/skeleton"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/65348080-f70f-4846-b089-8d1926bc714f.a2533.json",
-      "semanticRelativePath": "__semantic__/mythicBeastAnimations/hundredDucksToDragon/skeleton/spriteFrame.json",
-      "materializedRelativePath": "import/mythicBeastAnimations/hundredDucksToDragon/skeleton/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/mythicCollection/hundredDucksToDragon/skeleton/spriteFrame.json",
+      "materializedRelativePath": "import/mythicCollection/hundredDucksToDragon/skeleton/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "神兽动画合集/百鸭朝龙/skeleton/spriteFrame"
+        "canonicalPath": "mythicCollection/hundredDucksToDragon/skeleton/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/65348080-f70f-4846-b089-8d1926bc714f@f9941.6e738.json",
-      "semanticRelativePath": "__semantic__/mythicBeastAnimations/hundredDucksToDragon/skeleton/spriteFrame__2.json",
-      "materializedRelativePath": "import/mythicBeastAnimations/hundredDucksToDragon/skeleton/spriteFrame__2.json",
+      "semanticRelativePath": "__semantic__/mythicCollection/hundredDucksToDragon/skeleton/spriteFrame__2.json",
+      "materializedRelativePath": "import/mythicCollection/hundredDucksToDragon/skeleton/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "神兽动画合集/百鸭朝龙/skeleton/spriteFrame"
+        "canonicalPath": "mythicCollection/hundredDucksToDragon/skeleton/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/672d0c7c-c7cf-458f-ba54-e9925af9a9f9.a2533.json",
-      "semanticRelativePath": "__semantic__/xiaoSanVideo/skeleton3/spriteFrame.json",
-      "materializedRelativePath": "import/xiaoSanVideo/skeleton3/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/sideStoryVideo/skeleton3/spriteFrame.json",
+      "materializedRelativePath": "import/sideStoryVideo/skeleton3/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "小三视频/skeleton3/spriteFrame"
+        "canonicalPath": "sideStoryVideo/skeleton3/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/672d0c7c-c7cf-458f-ba54-e9925af9a9f9@f9941.44f23.json",
-      "semanticRelativePath": "__semantic__/xiaoSanVideo/skeleton3/spriteFrame__2.json",
-      "materializedRelativePath": "import/xiaoSanVideo/skeleton3/spriteFrame__2.json",
+      "semanticRelativePath": "__semantic__/sideStoryVideo/skeleton3/spriteFrame__2.json",
+      "materializedRelativePath": "import/sideStoryVideo/skeleton3/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "小三视频/skeleton3/spriteFrame"
+        "canonicalPath": "sideStoryVideo/skeleton3/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/68049651-6a2f-409e-abad-409b8f0c0fb7.f4d15.json",
-      "semanticRelativePath": "__semantic__/mythicBeastAnimations/hundredGeeseToQilin/hundredGeeseToQilin.json",
-      "materializedRelativePath": "import/mythicBeastAnimations/hundredGeeseToQilin/hundredGeeseToQilin.json",
+      "semanticRelativePath": "__semantic__/mythicCollection/hundredGeeseToQilin/hundredGeeseToQilin.json",
+      "materializedRelativePath": "import/mythicCollection/hundredGeeseToQilin/hundredGeeseToQilin.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "神兽动画合集/百鹅朝麟/百鹅朝麟"
+        "canonicalPath": "mythicCollection/hundredGeeseToQilin/hundredGeeseToQilin"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/692eb9be-a9bf-4860-a122-996d28bc1dcb@f9941.774d3.json",
-      "semanticRelativePath": "__semantic__/skeletalAnimations/duckAnimations/skeleton6/spriteFrame.json",
-      "materializedRelativePath": "import/skeletalAnimations/duckAnimations/skeleton6/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/skeletonAnimations/duckAnimation/skeleton6/spriteFrame.json",
+      "materializedRelativePath": "import/skeletonAnimations/duckAnimation/skeleton6/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "骨骼动画/鸭子动画/skeleton6/spriteFrame"
+        "canonicalPath": "skeletonAnimations/duckAnimation/skeleton6/spriteFrame"
       }
     },
     {
@@ -445,7 +435,7 @@
       "materializedRelativePath": "import/gooseTrapAnimation/skeleton/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "套鹅动画/skeleton/spriteFrame"
+        "canonicalPath": "gooseTrapAnimation/skeleton/spriteFrame"
       }
     },
     {
@@ -455,7 +445,7 @@
       "materializedRelativePath": "import/gooseTrapAnimation/skeleton/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "套鹅动画/skeleton/spriteFrame"
+        "canonicalPath": "gooseTrapAnimation/skeleton/spriteFrame"
       }
     },
     {
@@ -465,37 +455,38 @@
       "materializedRelativePath": "import/pigeonAnimation/new_dove.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "鸽子动画/new_dove"
+        "canonicalPath": "pigeonAnimation/newDove",
+        "resolvedFromExistingMaterializedFile": true
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/808cb7ec-cc26-4066-a1f5-d15dae6149db.621e2.json",
-      "semanticRelativePath": "__semantic__/mythicBeastAnimations/hundredGeeseToPhoenix/skeleton.json",
-      "materializedRelativePath": "import/mythicBeastAnimations/hundredGeeseToPhoenix/skeleton.json",
+      "semanticRelativePath": "__semantic__/mythicCollection/hundredGeeseToPhoenix/skeleton.json",
+      "materializedRelativePath": "import/mythicCollection/hundredGeeseToPhoenix/skeleton.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "神兽动画合集/百鹅朝凤/skeleton"
+        "canonicalPath": "mythicCollection/hundredGeeseToPhoenix/skeleton"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/817857ee-2122-4e46-9af1-6b752d8413eb.621e2.json",
-      "semanticRelativePath": "__semantic__/skeletalAnimations/duckAnimations/skeleton.json",
-      "materializedRelativePath": "import/skeletalAnimations/duckAnimations/skeleton.json",
+      "semanticRelativePath": "__semantic__/skeletonAnimations/duckAnimation/skeleton.json",
+      "materializedRelativePath": "import/skeletonAnimations/duckAnimation/skeleton.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "骨骼动画/鸭子动画/skeleton"
+        "canonicalPath": "skeletonAnimations/duckAnimation/skeleton"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/84bd517d-3516-4554-9482-7ffc6620cacd.65e91.json",
-      "semanticRelativePath": "__semantic__/mythicBeastAnimations/hundredDucksToSparrow/hundredDucksToSparrow.json",
-      "materializedRelativePath": "import/mythicBeastAnimations/hundredDucksToSparrow/hundredDucksToSparrow.json",
+      "semanticRelativePath": "__semantic__/mythicCollection/hundredDucksToSparrow/hundredDucksToSparrow.json",
+      "materializedRelativePath": "import/mythicCollection/hundredDucksToSparrow/hundredDucksToSparrow.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "神兽动画合集/百鸭朝雀/百鸭朝雀"
+        "canonicalPath": "mythicCollection/hundredDucksToSparrow/hundredDucksToSparrow"
       }
     },
     {
@@ -505,7 +496,7 @@
       "materializedRelativePath": "import/instantPlayAnimation/skeleton/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "直玩动画/skeleton/spriteFrame"
+        "canonicalPath": "instantPlayAnimation/skeleton/spriteFrame"
       }
     },
     {
@@ -515,37 +506,37 @@
       "materializedRelativePath": "import/instantPlayAnimation/skeleton/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "直玩动画/skeleton/spriteFrame"
+        "canonicalPath": "instantPlayAnimation/skeleton/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/8a8cb1b0-25de-43af-a005-316c49a4f212.32fab.json",
-      "semanticRelativePath": "__semantic__/gyroscope/skeleton__2.json",
-      "materializedRelativePath": "import/gyroscope/skeleton__2.json",
+      "semanticRelativePath": "__semantic__/gyroscopeAnimation/skeleton__2.json",
+      "materializedRelativePath": "import/gyroscopeAnimation/skeleton__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "陀螺仪/skeleton"
+        "canonicalPath": "gyroscopeAnimation/skeleton"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/8a8dd95f-4462-47ff-819a-65601405a155@f9941.25eed.json",
-      "semanticRelativePath": "__semantic__/skeletalAnimations/duckAnimations/skeleton3/spriteFrame.json",
-      "materializedRelativePath": "import/skeletalAnimations/duckAnimations/skeleton3/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/skeletonAnimations/duckAnimation/skeleton3/spriteFrame.json",
+      "materializedRelativePath": "import/skeletonAnimations/duckAnimation/skeleton3/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "骨骼动画/鸭子动画/skeleton3/spriteFrame"
+        "canonicalPath": "skeletonAnimations/duckAnimation/skeleton3/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/8aed7015-a2b7-49fb-881b-ee2776b64141@f9941.0e61d.json",
-      "semanticRelativePath": "__semantic__/skeletalAnimations/duckAnimations/skeleton5/spriteFrame.json",
-      "materializedRelativePath": "import/skeletalAnimations/duckAnimations/skeleton5/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/skeletonAnimations/duckAnimation/skeleton5/spriteFrame.json",
+      "materializedRelativePath": "import/skeletonAnimations/duckAnimation/skeleton5/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "骨骼动画/鸭子动画/skeleton5/spriteFrame"
+        "canonicalPath": "skeletonAnimations/duckAnimation/skeleton5/spriteFrame"
       }
     },
     {
@@ -555,117 +546,97 @@
       "materializedRelativePath": "import/titleAnimation1/skeleton.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "标题动画1/skeleton"
+        "canonicalPath": "titleAnimation1/skeleton"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/955c4145-c371-4d50-865b-4fd83f923889.a2533.json",
-      "semanticRelativePath": "__semantic__/fullAnimation/Done_for_eat/spriteFrame.json",
-      "materializedRelativePath": "import/fullAnimation/Done_for_eat/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/eatFullAnimation/eatFull/spriteFrame.json",
+      "materializedRelativePath": "import/eatFullAnimation/eatFull/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "吃饱动画/Done for eat/spriteFrame"
+        "canonicalPath": "eatFullAnimation/eatFull/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/955c4145-c371-4d50-865b-4fd83f923889@f9941.f005a.json",
-      "semanticRelativePath": "__semantic__/fullAnimation/Done_for_eat/spriteFrame__2.json",
-      "materializedRelativePath": "import/fullAnimation/Done_for_eat/spriteFrame__2.json",
+      "semanticRelativePath": "__semantic__/eatFullAnimation/eatFull/spriteFrame__2.json",
+      "materializedRelativePath": "import/eatFullAnimation/eatFull/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "吃饱动画/Done for eat/spriteFrame"
+        "canonicalPath": "eatFullAnimation/eatFull/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/97941801-437d-440e-8876-7dca506a589d.621e2.json",
-      "semanticRelativePath": "__semantic__/skeletalAnimations/doorAnimation/skeleton.json",
-      "materializedRelativePath": "import/skeletalAnimations/doorAnimation/skeleton.json",
+      "semanticRelativePath": "__semantic__/skeletonAnimations/doorAnimation/skeleton.json",
+      "materializedRelativePath": "import/skeletonAnimations/doorAnimation/skeleton.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "骨骼动画/门动画/skeleton"
+        "canonicalPath": "skeletonAnimations/doorAnimation/skeleton"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/9a9f1c3f-e717-4213-8df6-c32061ac23de.621e2.json",
-      "semanticRelativePath": "__semantic__/daily/skeleton.json",
-      "materializedRelativePath": "import/daily/skeleton.json",
+      "semanticRelativePath": "__semantic__/dailyAnimation/skeleton.json",
+      "materializedRelativePath": "import/dailyAnimation/skeleton.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "每日/skeleton"
+        "canonicalPath": "dailyAnimation/skeleton"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/9e9c5b3a-a9aa-4f25-b6f6-bc9287a39e94.a2533.json",
-      "semanticRelativePath": "__semantic__/mythicBeastAnimations/hundredDucksToKun/skeleton/spriteFrame.json",
-      "materializedRelativePath": "import/mythicBeastAnimations/hundredDucksToKun/skeleton/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/mythicCollection/hundredDucksToKun/skeleton/spriteFrame.json",
+      "materializedRelativePath": "import/mythicCollection/hundredDucksToKun/skeleton/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "神兽动画合集/百鸭朝鲲/skeleton/spriteFrame"
+        "canonicalPath": "mythicCollection/hundredDucksToKun/skeleton/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/9e9c5b3a-a9aa-4f25-b6f6-bc9287a39e94@f9941.a1fe3.json",
-      "semanticRelativePath": "__semantic__/mythicBeastAnimations/hundredDucksToKun/skeleton/spriteFrame__2.json",
-      "materializedRelativePath": "import/mythicBeastAnimations/hundredDucksToKun/skeleton/spriteFrame__2.json",
+      "semanticRelativePath": "__semantic__/mythicCollection/hundredDucksToKun/skeleton/spriteFrame__2.json",
+      "materializedRelativePath": "import/mythicCollection/hundredDucksToKun/skeleton/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "神兽动画合集/百鸭朝鲲/skeleton/spriteFrame"
+        "canonicalPath": "mythicCollection/hundredDucksToKun/skeleton/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/9f0454b6-4173-40f9-8ba7-1779c0ec2680.a7dd4.json",
-      "semanticRelativePath": "__semantic__/mythicBeastAnimations/hundredDucksToKun/hundredDucksToKun.json",
-      "materializedRelativePath": "import/mythicBeastAnimations/hundredDucksToKun/hundredDucksToKun.json",
+      "semanticRelativePath": "__semantic__/mythicCollection/hundredDucksToKun/hundredDucksToKun.json",
+      "materializedRelativePath": "import/mythicCollection/hundredDucksToKun/hundredDucksToKun.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "神兽动画合集/百鸭朝鲲/百鸭朝鲲"
-      }
-    },
-    {
-      "kind": "import",
-      "originalRelativePath": "import/a391d6e8-8def-4554-b662-ae24dcae735e@f9941.f44a3.json",
-      "semanticRelativePath": "__semantic__/saveFruitDuck/skeleton/spriteFrame.json",
-      "materializedRelativePath": "import/saveFruitDuck/skeleton/spriteFrame.json",
-      "strategy": "direct-canonical-path",
-      "detail": {
-        "canonicalPath": "救救水果鸭/skeleton/spriteFrame"
-      }
-    },
-    {
-      "kind": "import",
-      "originalRelativePath": "import/a80ab2cb-06e4-4f60-9f31-254d96d146a9.621e2.json",
-      "semanticRelativePath": "__semantic__/saveFruitDuck/skeleton.json",
-      "materializedRelativePath": "import/saveFruitDuck/skeleton.json",
-      "strategy": "direct-canonical-path",
-      "detail": {
-        "canonicalPath": "救救水果鸭/skeleton"
+        "canonicalPath": "mythicCollection/hundredDucksToKun/hundredDucksToKun"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/aba0148f-44df-4aa5-b463-57475c6aab39@f9941.522b1.json",
-      "semanticRelativePath": "__semantic__/daily/skeleton/spriteFrame.json",
-      "materializedRelativePath": "import/daily/skeleton/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/dailyAnimation/skeleton/spriteFrame.json",
+      "materializedRelativePath": "import/dailyAnimation/skeleton/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "每日/skeleton/spriteFrame"
+        "canonicalPath": "dailyAnimation/skeleton/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/b3c5eff2-c4f9-4be8-84a5-3e358fa802ae@f9941.29a67.json",
-      "semanticRelativePath": "__semantic__/skeletalAnimations/duckAnimations/skeleton2/spriteFrame.json",
-      "materializedRelativePath": "import/skeletalAnimations/duckAnimations/skeleton2/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/skeletonAnimations/duckAnimation/skeleton2/spriteFrame.json",
+      "materializedRelativePath": "import/skeletonAnimations/duckAnimation/skeleton2/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "骨骼动画/鸭子动画/skeleton2/spriteFrame"
+        "canonicalPath": "skeletonAnimations/duckAnimation/skeleton2/spriteFrame"
       }
     },
     {
@@ -675,197 +646,188 @@
       "materializedRelativePath": "import/ringAnimation/ZYQ.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "圈动画/ZYQ"
+        "canonicalPath": "ringAnimation/ringLoop",
+        "resolvedFromExistingMaterializedFile": true
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/b82c701e-16c2-4df1-bd12-527bc9eb2e4f@f9941.341a1.json",
-      "semanticRelativePath": "__semantic__/pigeonAnimation/new_dove/spriteFrame.json",
-      "materializedRelativePath": "import/pigeonAnimation/new_dove/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/pigeonAnimation/newDove/spriteFrame.json",
+      "materializedRelativePath": "import/pigeonAnimation/newDove/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "鸽子动画/new_dove/spriteFrame"
+        "canonicalPath": "pigeonAnimation/newDove/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/bb1f8ba0-189d-4889-b97b-0ad89a2c29ec.621e2.json",
-      "semanticRelativePath": "__semantic__/xiaoSanVideo/skeleton.json",
-      "materializedRelativePath": "import/xiaoSanVideo/skeleton.json",
+      "semanticRelativePath": "__semantic__/sideStoryVideo/skeleton.json",
+      "materializedRelativePath": "import/sideStoryVideo/skeleton.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "小三视频/skeleton"
+        "canonicalPath": "sideStoryVideo/skeleton"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/bc83320c-534c-4041-b272-79d2c62aeb0b.a2533.json",
-      "semanticRelativePath": "__semantic__/xiaoSanVideo/skeleton4/spriteFrame.json",
-      "materializedRelativePath": "import/xiaoSanVideo/skeleton4/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/sideStoryVideo/skeleton4/spriteFrame.json",
+      "materializedRelativePath": "import/sideStoryVideo/skeleton4/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "小三视频/skeleton4/spriteFrame"
+        "canonicalPath": "sideStoryVideo/skeleton4/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/bc83320c-534c-4041-b272-79d2c62aeb0b@f9941.af47e.json",
-      "semanticRelativePath": "__semantic__/xiaoSanVideo/skeleton4/spriteFrame__2.json",
-      "materializedRelativePath": "import/xiaoSanVideo/skeleton4/spriteFrame__2.json",
+      "semanticRelativePath": "__semantic__/sideStoryVideo/skeleton4/spriteFrame__2.json",
+      "materializedRelativePath": "import/sideStoryVideo/skeleton4/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "小三视频/skeleton4/spriteFrame"
+        "canonicalPath": "sideStoryVideo/skeleton4/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/c2964ddd-2816-418a-ba28-2f68e8c5126b.5412d.json",
-      "semanticRelativePath": "__semantic__/fullAnimation/Done_for_eat.json",
-      "materializedRelativePath": "import/fullAnimation/Done_for_eat.json",
+      "semanticRelativePath": "__semantic__/eatFullAnimation/eatFull.json",
+      "materializedRelativePath": "import/eatFullAnimation/eatFull.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "吃饱动画/Done for eat"
+        "canonicalPath": "eatFullAnimation/eatFull"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/d141dc7c-668b-4e00-a718-8a65a417d65f.621e2.json",
-      "semanticRelativePath": "__semantic__/guideAnimation/skeleton.json",
-      "materializedRelativePath": "import/guideAnimation/skeleton.json",
+      "semanticRelativePath": "__semantic__/tutorialAnimation/skeleton.json",
+      "materializedRelativePath": "import/tutorialAnimation/skeleton.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "引导动画/skeleton"
+        "canonicalPath": "tutorialAnimation/skeleton"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/d196e2d9-c4ca-4b38-9f42-6790d7e7ba52.621e2.json",
-      "semanticRelativePath": "__semantic__/mythicBeastAnimations/hundredDucksToSparrow/skeleton.json",
-      "materializedRelativePath": "import/mythicBeastAnimations/hundredDucksToSparrow/skeleton.json",
+      "semanticRelativePath": "__semantic__/mythicCollection/hundredDucksToSparrow/skeleton.json",
+      "materializedRelativePath": "import/mythicCollection/hundredDucksToSparrow/skeleton.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "神兽动画合集/百鸭朝雀/skeleton"
+        "canonicalPath": "mythicCollection/hundredDucksToSparrow/skeleton"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/d19f4fc4-681f-44af-8e19-41b34fc0f692@f9941.d85ff.json",
-      "semanticRelativePath": "__semantic__/killerAnimation/skeleton/spriteFrame.json",
-      "materializedRelativePath": "import/killerAnimation/skeleton/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/assassinAnimation/skeleton/spriteFrame.json",
+      "materializedRelativePath": "import/assassinAnimation/skeleton/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "杀手动画/skeleton/spriteFrame"
-      }
-    },
-    {
-      "kind": "import",
-      "originalRelativePath": "import/d32eb2a7-8aa5-47e4-a7e8-2ea475a611ec@f9941.a1d48.json",
-      "semanticRelativePath": "__semantic__/fruitBigEater/Kid-eating/spriteFrame.json",
-      "materializedRelativePath": "import/fruitBigEater/Kid-eating/spriteFrame.json",
-      "strategy": "direct-canonical-path",
-      "detail": {
-        "canonicalPath": "水果大胃王/Kid-eating/spriteFrame"
+        "canonicalPath": "assassinAnimation/skeleton/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/d37af975-2b38-4f46-a65b-c863c0ed8e66.a2533.json",
-      "semanticRelativePath": "__semantic__/gyroscope/skeleton/spriteFrame.json",
-      "materializedRelativePath": "import/gyroscope/skeleton/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/gyroscopeAnimation/skeleton/spriteFrame.json",
+      "materializedRelativePath": "import/gyroscopeAnimation/skeleton/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "陀螺仪/skeleton/spriteFrame"
+        "canonicalPath": "gyroscopeAnimation/skeleton/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/d37af975-2b38-4f46-a65b-c863c0ed8e66@f9941.e56dd.json",
-      "semanticRelativePath": "__semantic__/gyroscope/skeleton/spriteFrame__2.json",
-      "materializedRelativePath": "import/gyroscope/skeleton/spriteFrame__2.json",
+      "semanticRelativePath": "__semantic__/gyroscopeAnimation/skeleton/spriteFrame__2.json",
+      "materializedRelativePath": "import/gyroscopeAnimation/skeleton/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "陀螺仪/skeleton/spriteFrame"
+        "canonicalPath": "gyroscopeAnimation/skeleton/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/ddec110d-b951-4ecb-851e-9c2681186493@f9941.aa51a.json",
-      "semanticRelativePath": "__semantic__/ringAnimation/ZYQ/spriteFrame.json",
-      "materializedRelativePath": "import/ringAnimation/ZYQ/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/ringAnimation/ringLoop/spriteFrame.json",
+      "materializedRelativePath": "import/ringAnimation/ringLoop/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "圈动画/ZYQ/spriteFrame"
+        "canonicalPath": "ringAnimation/ringLoop/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/e85b96d8-3560-4110-bb33-1d4655ec9dbf.a2533.json",
-      "semanticRelativePath": "__semantic__/breakDoorAnimation/skeleton/spriteFrame.json",
-      "materializedRelativePath": "import/breakDoorAnimation/skeleton/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/doorBreakAnimation/skeleton/spriteFrame.json",
+      "materializedRelativePath": "import/doorBreakAnimation/skeleton/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "破门动画/skeleton/spriteFrame"
+        "canonicalPath": "doorBreakAnimation/skeleton/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/e85b96d8-3560-4110-bb33-1d4655ec9dbf@f9941.1500a.json",
-      "semanticRelativePath": "__semantic__/breakDoorAnimation/skeleton/spriteFrame__2.json",
-      "materializedRelativePath": "import/breakDoorAnimation/skeleton/spriteFrame__2.json",
+      "semanticRelativePath": "__semantic__/doorBreakAnimation/skeleton/spriteFrame__2.json",
+      "materializedRelativePath": "import/doorBreakAnimation/skeleton/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "破门动画/skeleton/spriteFrame"
+        "canonicalPath": "doorBreakAnimation/skeleton/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/eeb52953-13de-47d8-a19c-0347e1438e1c@f9941.8c2e0.json",
-      "semanticRelativePath": "__semantic__/bibiLabu/skeleton/spriteFrame.json",
-      "materializedRelativePath": "import/bibiLabu/skeleton/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/bibiLabuAnimation/skeleton/spriteFrame.json",
+      "materializedRelativePath": "import/bibiLabuAnimation/skeleton/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "比比拉布/skeleton/spriteFrame"
+        "canonicalPath": "bibiLabuAnimation/skeleton/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/f2eeb8cd-a001-49aa-875c-c284827460ac.fbbea.json",
-      "semanticRelativePath": "__semantic__/mythicBeastAnimations/hundredGeeseToPhoenix/hundredGeeseToPhoenix.json",
-      "materializedRelativePath": "import/mythicBeastAnimations/hundredGeeseToPhoenix/hundredGeeseToPhoenix.json",
+      "semanticRelativePath": "__semantic__/mythicCollection/hundredGeeseToPhoenix/hundredGeeseToPhoenix.json",
+      "materializedRelativePath": "import/mythicCollection/hundredGeeseToPhoenix/hundredGeeseToPhoenix.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "神兽动画合集/百鹅朝凤/百鹅朝凤"
+        "canonicalPath": "mythicCollection/hundredGeeseToPhoenix/hundredGeeseToPhoenix"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/fb2d41a2-75f9-4bc6-8ac4-fa98a74c5e58.a2533.json",
-      "semanticRelativePath": "__semantic__/breakDoorAnimation/skeleton2/spriteFrame.json",
-      "materializedRelativePath": "import/breakDoorAnimation/skeleton2/spriteFrame.json",
+      "semanticRelativePath": "__semantic__/doorBreakAnimation/skeleton2/spriteFrame.json",
+      "materializedRelativePath": "import/doorBreakAnimation/skeleton2/spriteFrame.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "破门动画/skeleton2/spriteFrame"
+        "canonicalPath": "doorBreakAnimation/skeleton2/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/fb2d41a2-75f9-4bc6-8ac4-fa98a74c5e58@f9941.01a34.json",
-      "semanticRelativePath": "__semantic__/breakDoorAnimation/skeleton2/spriteFrame__2.json",
-      "materializedRelativePath": "import/breakDoorAnimation/skeleton2/spriteFrame__2.json",
+      "semanticRelativePath": "__semantic__/doorBreakAnimation/skeleton2/spriteFrame__2.json",
+      "materializedRelativePath": "import/doorBreakAnimation/skeleton2/spriteFrame__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "破门动画/skeleton2/spriteFrame"
+        "canonicalPath": "doorBreakAnimation/skeleton2/spriteFrame"
       }
     },
     {
       "kind": "import",
       "originalRelativePath": "import/ffca00c9-a334-4e54-a9d3-427b14e9701a.11345.json",
-      "semanticRelativePath": "__semantic__/fullAnimation/Done_for_eat__2.json",
-      "materializedRelativePath": "import/fullAnimation/Done_for_eat__2.json",
+      "semanticRelativePath": "__semantic__/eatFullAnimation/eatFull__2.json",
+      "materializedRelativePath": "import/eatFullAnimation/eatFull__2.json",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "吃饱动画/Done for eat"
+        "canonicalPath": "eatFullAnimation/eatFull"
       }
     }
   ],
@@ -873,71 +835,71 @@
     {
       "kind": "native",
       "originalRelativePath": "native/00748592-63a6-4108-a839-69028365dd22.43e91.png",
-      "semanticRelativePath": "__semantic__/mythicBeastAnimations/hundredGeeseToQilin/skeleton/spriteFrame.png",
-      "materializedRelativePath": "native/mythicBeastAnimations/hundredGeeseToQilin/skeleton/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/mythicCollection/hundredGeeseToQilin/skeleton/spriteFrame.png",
+      "materializedRelativePath": "native/mythicCollection/hundredGeeseToQilin/skeleton/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "神兽动画合集/百鹅朝麟/skeleton/spriteFrame"
+        "canonicalPath": "mythicCollection/hundredGeeseToQilin/skeleton/spriteFrame"
       }
     },
     {
       "kind": "native",
       "originalRelativePath": "native/07ced7bf-caa1-4d01-96df-b286a9fa9924.1d751.atlas",
-      "semanticRelativePath": "__semantic__/gyroscope/skeleton.atlas",
-      "materializedRelativePath": "native/gyroscope/skeleton.atlas",
+      "semanticRelativePath": "__semantic__/gyroscopeAnimation/skeleton.atlas",
+      "materializedRelativePath": "native/gyroscopeAnimation/skeleton.atlas",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "陀螺仪/skeleton"
+        "canonicalPath": "gyroscopeAnimation/skeleton"
       }
     },
     {
       "kind": "native",
       "originalRelativePath": "native/090b3eee-0a78-4e40-96f8-f4b42cef2146.58c31.png",
-      "semanticRelativePath": "__semantic__/mythicBeastAnimations/hundredGeeseToPhoenix/skeleton/spriteFrame.png",
-      "materializedRelativePath": "native/mythicBeastAnimations/hundredGeeseToPhoenix/skeleton/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/mythicCollection/hundredGeeseToPhoenix/skeleton/spriteFrame.png",
+      "materializedRelativePath": "native/mythicCollection/hundredGeeseToPhoenix/skeleton/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "神兽动画合集/百鹅朝凤/skeleton/spriteFrame"
+        "canonicalPath": "mythicCollection/hundredGeeseToPhoenix/skeleton/spriteFrame"
       }
     },
     {
       "kind": "native",
       "originalRelativePath": "native/09d91ef2-7134-4514-a845-dfb11a5846cb.3c7d7.png",
-      "semanticRelativePath": "__semantic__/xiaoSanVideo/skeleton/spriteFrame.png",
-      "materializedRelativePath": "native/xiaoSanVideo/skeleton/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/sideStoryVideo/skeleton/spriteFrame.png",
+      "materializedRelativePath": "native/sideStoryVideo/skeleton/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "小三视频/skeleton/spriteFrame"
+        "canonicalPath": "sideStoryVideo/skeleton/spriteFrame"
       }
     },
     {
       "kind": "native",
       "originalRelativePath": "native/0c037270-d1a8-4b36-81af-908e7350f5cb.24685.atlas",
-      "semanticRelativePath": "__semantic__/mythicBeastAnimations/hundredDucksToDragon/skeleton.atlas",
-      "materializedRelativePath": "native/mythicBeastAnimations/hundredDucksToDragon/skeleton.atlas",
+      "semanticRelativePath": "__semantic__/mythicCollection/hundredDucksToDragon/skeleton.atlas",
+      "materializedRelativePath": "native/mythicCollection/hundredDucksToDragon/skeleton.atlas",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "神兽动画合集/百鸭朝龙/skeleton"
+        "canonicalPath": "mythicCollection/hundredDucksToDragon/skeleton"
       }
     },
     {
       "kind": "native",
       "originalRelativePath": "native/14609467-055d-4d63-8af1-406a624f9889.67f0b.atlas",
-      "semanticRelativePath": "__semantic__/mythicBeastAnimations/hundredGeeseToRoc/skeleton.atlas",
-      "materializedRelativePath": "native/mythicBeastAnimations/hundredGeeseToRoc/skeleton.atlas",
+      "semanticRelativePath": "__semantic__/mythicCollection/hundredGeeseToRoc/skeleton.atlas",
+      "materializedRelativePath": "native/mythicCollection/hundredGeeseToRoc/skeleton.atlas",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "神兽动画合集/百鹅朝鹏/skeleton"
+        "canonicalPath": "mythicCollection/hundredGeeseToRoc/skeleton"
       }
     },
     {
       "kind": "native",
       "originalRelativePath": "native/24966e82-a9b5-4fbd-8b16-3c7d4ba20fc4.e9d07.atlas",
-      "semanticRelativePath": "__semantic__/breakDoorAnimation/skeleton.atlas",
-      "materializedRelativePath": "native/breakDoorAnimation/skeleton.atlas",
+      "semanticRelativePath": "__semantic__/doorBreakAnimation/skeleton.atlas",
+      "materializedRelativePath": "native/doorBreakAnimation/skeleton.atlas",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "破门动画/skeleton"
+        "canonicalPath": "doorBreakAnimation/skeleton"
       }
     },
     {
@@ -947,97 +909,87 @@
       "materializedRelativePath": "native/startAnimation/skeleton.atlas",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "开始动画/skeleton"
+        "canonicalPath": "startAnimation/skeleton"
       }
     },
     {
       "kind": "native",
       "originalRelativePath": "native/2f220c09-fefc-4092-b3ed-48b656b6440d.a99e5.png",
-      "semanticRelativePath": "__semantic__/xiaoSanVideo/skeleton2/spriteFrame.png",
-      "materializedRelativePath": "native/xiaoSanVideo/skeleton2/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/sideStoryVideo/skeleton2/spriteFrame.png",
+      "materializedRelativePath": "native/sideStoryVideo/skeleton2/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "小三视频/skeleton2/spriteFrame"
+        "canonicalPath": "sideStoryVideo/skeleton2/spriteFrame"
       }
     },
     {
       "kind": "native",
       "originalRelativePath": "native/3c82572d-6742-43f0-a36c-61fb8a484792.a6fdd.atlas",
-      "semanticRelativePath": "__semantic__/mythicBeastAnimations/hundredGeeseToQilin/skeleton.atlas",
-      "materializedRelativePath": "native/mythicBeastAnimations/hundredGeeseToQilin/skeleton.atlas",
+      "semanticRelativePath": "__semantic__/mythicCollection/hundredGeeseToQilin/skeleton.atlas",
+      "materializedRelativePath": "native/mythicCollection/hundredGeeseToQilin/skeleton.atlas",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "神兽动画合集/百鹅朝麟/skeleton"
+        "canonicalPath": "mythicCollection/hundredGeeseToQilin/skeleton"
       }
     },
     {
       "kind": "native",
       "originalRelativePath": "native/3e6c7105-58c3-4ec0-9c7b-16d095e4cfd1.e5b2e.png",
-      "semanticRelativePath": "__semantic__/mythicBeastAnimations/hundredGeeseToRoc/skeleton/spriteFrame.png",
-      "materializedRelativePath": "native/mythicBeastAnimations/hundredGeeseToRoc/skeleton/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/mythicCollection/hundredGeeseToRoc/skeleton/spriteFrame.png",
+      "materializedRelativePath": "native/mythicCollection/hundredGeeseToRoc/skeleton/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "神兽动画合集/百鹅朝鹏/skeleton/spriteFrame"
+        "canonicalPath": "mythicCollection/hundredGeeseToRoc/skeleton/spriteFrame"
       }
     },
     {
       "kind": "native",
       "originalRelativePath": "native/3eafdc70-481f-4e2d-995a-08ed7c7498e1.86ce0.png",
-      "semanticRelativePath": "__semantic__/mythicBeastAnimations/hundredDucksToSparrow/skeleton/spriteFrame.png",
-      "materializedRelativePath": "native/mythicBeastAnimations/hundredDucksToSparrow/skeleton/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/mythicCollection/hundredDucksToSparrow/skeleton/spriteFrame.png",
+      "materializedRelativePath": "native/mythicCollection/hundredDucksToSparrow/skeleton/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "神兽动画合集/百鸭朝雀/skeleton/spriteFrame"
+        "canonicalPath": "mythicCollection/hundredDucksToSparrow/skeleton/spriteFrame"
       }
     },
     {
       "kind": "native",
       "originalRelativePath": "native/41cd121f-6453-4e43-b07c-251d25c10132.2d67c.atlas",
-      "semanticRelativePath": "__semantic__/killerAnimation/skeleton.atlas",
-      "materializedRelativePath": "native/killerAnimation/skeleton.atlas",
+      "semanticRelativePath": "__semantic__/assassinAnimation/skeleton.atlas",
+      "materializedRelativePath": "native/assassinAnimation/skeleton.atlas",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "杀手动画/skeleton"
+        "canonicalPath": "assassinAnimation/skeleton"
       }
     },
     {
       "kind": "native",
       "originalRelativePath": "native/428deca4-b652-41f4-87c3-23f655f2c5c3.09cdf.png",
-      "semanticRelativePath": "__semantic__/xiaoSanVideo/skeleton5/spriteFrame.png",
-      "materializedRelativePath": "native/xiaoSanVideo/skeleton5/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/sideStoryVideo/skeleton5/spriteFrame.png",
+      "materializedRelativePath": "native/sideStoryVideo/skeleton5/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "小三视频/skeleton5/spriteFrame"
+        "canonicalPath": "sideStoryVideo/skeleton5/spriteFrame"
       }
     },
     {
       "kind": "native",
       "originalRelativePath": "native/465044ae-8c24-44ec-93f7-51c6ac7185f5.fc2f2.atlas",
-      "semanticRelativePath": "__semantic__/mythicBeastAnimations/hundredDucksToKun/skeleton.atlas",
-      "materializedRelativePath": "native/mythicBeastAnimations/hundredDucksToKun/skeleton.atlas",
+      "semanticRelativePath": "__semantic__/mythicCollection/hundredDucksToKun/skeleton.atlas",
+      "materializedRelativePath": "native/mythicCollection/hundredDucksToKun/skeleton.atlas",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "神兽动画合集/百鸭朝鲲/skeleton"
+        "canonicalPath": "mythicCollection/hundredDucksToKun/skeleton"
       }
     },
     {
       "kind": "native",
       "originalRelativePath": "native/46836547-5321-4850-b39b-c8bbf2b9d301.8483a.atlas",
-      "semanticRelativePath": "__semantic__/dave/skeleton.atlas",
-      "materializedRelativePath": "native/dave/skeleton.atlas",
+      "semanticRelativePath": "__semantic__/daveAnimation/skeleton.atlas",
+      "materializedRelativePath": "native/daveAnimation/skeleton.atlas",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "戴夫/skeleton"
-      }
-    },
-    {
-      "kind": "native",
-      "originalRelativePath": "native/46d1c775-d8a4-4ac0-b372-b4cf3a7a7b1e.63d81.atlas",
-      "semanticRelativePath": "__semantic__/fruitBigEater/Kid-eating.atlas",
-      "materializedRelativePath": "native/fruitBigEater/Kid-eating.atlas",
-      "strategy": "direct-canonical-path",
-      "detail": {
-        "canonicalPath": "水果大胃王/Kid-eating"
+        "canonicalPath": "daveAnimation/skeleton"
       }
     },
     {
@@ -1047,7 +999,7 @@
       "materializedRelativePath": "native/instantPlayAnimation/skeleton.atlas",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "直玩动画/skeleton"
+        "canonicalPath": "instantPlayAnimation/skeleton"
       }
     },
     {
@@ -1057,37 +1009,37 @@
       "materializedRelativePath": "native/gooseTrapAnimation/skeleton.atlas",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "套鹅动画/skeleton"
+        "canonicalPath": "gooseTrapAnimation/skeleton"
       }
     },
     {
       "kind": "native",
       "originalRelativePath": "native/6152d120-790d-4fc6-be94-0aea75c77a7f.a62b4.atlas",
-      "semanticRelativePath": "__semantic__/bibiLabu/skeleton.atlas",
-      "materializedRelativePath": "native/bibiLabu/skeleton.atlas",
+      "semanticRelativePath": "__semantic__/bibiLabuAnimation/skeleton.atlas",
+      "materializedRelativePath": "native/bibiLabuAnimation/skeleton.atlas",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "比比拉布/skeleton"
+        "canonicalPath": "bibiLabuAnimation/skeleton"
       }
     },
     {
       "kind": "native",
       "originalRelativePath": "native/65348080-f70f-4846-b089-8d1926bc714f.f9edf.png",
-      "semanticRelativePath": "__semantic__/mythicBeastAnimations/hundredDucksToDragon/skeleton/spriteFrame.png",
-      "materializedRelativePath": "native/mythicBeastAnimations/hundredDucksToDragon/skeleton/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/mythicCollection/hundredDucksToDragon/skeleton/spriteFrame.png",
+      "materializedRelativePath": "native/mythicCollection/hundredDucksToDragon/skeleton/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "神兽动画合集/百鸭朝龙/skeleton/spriteFrame"
+        "canonicalPath": "mythicCollection/hundredDucksToDragon/skeleton/spriteFrame"
       }
     },
     {
       "kind": "native",
       "originalRelativePath": "native/672d0c7c-c7cf-458f-ba54-e9925af9a9f9.fc21c.png",
-      "semanticRelativePath": "__semantic__/xiaoSanVideo/skeleton3/spriteFrame.png",
-      "materializedRelativePath": "native/xiaoSanVideo/skeleton3/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/sideStoryVideo/skeleton3/spriteFrame.png",
+      "materializedRelativePath": "native/sideStoryVideo/skeleton3/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "小三视频/skeleton3/spriteFrame"
+        "canonicalPath": "sideStoryVideo/skeleton3/spriteFrame"
       }
     },
     {
@@ -1097,7 +1049,7 @@
       "materializedRelativePath": "native/gooseTrapAnimation/skeleton/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "套鹅动画/skeleton/spriteFrame"
+        "canonicalPath": "gooseTrapAnimation/skeleton/spriteFrame"
       }
     },
     {
@@ -1107,27 +1059,28 @@
       "materializedRelativePath": "native/pigeonAnimation/new_dove.atlas",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "鸽子动画/new_dove"
+        "canonicalPath": "pigeonAnimation/newDove",
+        "resolvedFromExistingMaterializedFile": true
       }
     },
     {
       "kind": "native",
       "originalRelativePath": "native/808cb7ec-cc26-4066-a1f5-d15dae6149db.014f0.atlas",
-      "semanticRelativePath": "__semantic__/mythicBeastAnimations/hundredGeeseToPhoenix/skeleton.atlas",
-      "materializedRelativePath": "native/mythicBeastAnimations/hundredGeeseToPhoenix/skeleton.atlas",
+      "semanticRelativePath": "__semantic__/mythicCollection/hundredGeeseToPhoenix/skeleton.atlas",
+      "materializedRelativePath": "native/mythicCollection/hundredGeeseToPhoenix/skeleton.atlas",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "神兽动画合集/百鹅朝凤/skeleton"
+        "canonicalPath": "mythicCollection/hundredGeeseToPhoenix/skeleton"
       }
     },
     {
       "kind": "native",
       "originalRelativePath": "native/817857ee-2122-4e46-9af1-6b752d8413eb.4684c.atlas",
-      "semanticRelativePath": "__semantic__/skeletalAnimations/duckAnimations/skeleton.atlas",
-      "materializedRelativePath": "native/skeletalAnimations/duckAnimations/skeleton.atlas",
+      "semanticRelativePath": "__semantic__/skeletonAnimations/duckAnimation/skeleton.atlas",
+      "materializedRelativePath": "native/skeletonAnimations/duckAnimation/skeleton.atlas",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "骨骼动画/鸭子动画/skeleton"
+        "canonicalPath": "skeletonAnimations/duckAnimation/skeleton"
       }
     },
     {
@@ -1137,7 +1090,7 @@
       "materializedRelativePath": "native/instantPlayAnimation/skeleton/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "直玩动画/skeleton/spriteFrame"
+        "canonicalPath": "instantPlayAnimation/skeleton/spriteFrame"
       }
     },
     {
@@ -1147,57 +1100,47 @@
       "materializedRelativePath": "native/titleAnimation1/skeleton.atlas",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "标题动画1/skeleton"
+        "canonicalPath": "titleAnimation1/skeleton"
       }
     },
     {
       "kind": "native",
       "originalRelativePath": "native/955c4145-c371-4d50-865b-4fd83f923889.8d3b5.png",
-      "semanticRelativePath": "__semantic__/fullAnimation/Done_for_eat/spriteFrame.png",
-      "materializedRelativePath": "native/fullAnimation/Done_for_eat/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/eatFullAnimation/eatFull/spriteFrame.png",
+      "materializedRelativePath": "native/eatFullAnimation/eatFull/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "吃饱动画/Done for eat/spriteFrame"
+        "canonicalPath": "eatFullAnimation/eatFull/spriteFrame"
       }
     },
     {
       "kind": "native",
       "originalRelativePath": "native/97941801-437d-440e-8876-7dca506a589d.7b923.atlas",
-      "semanticRelativePath": "__semantic__/skeletalAnimations/doorAnimation/skeleton.atlas",
-      "materializedRelativePath": "native/skeletalAnimations/doorAnimation/skeleton.atlas",
+      "semanticRelativePath": "__semantic__/skeletonAnimations/doorAnimation/skeleton.atlas",
+      "materializedRelativePath": "native/skeletonAnimations/doorAnimation/skeleton.atlas",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "骨骼动画/门动画/skeleton"
+        "canonicalPath": "skeletonAnimations/doorAnimation/skeleton"
       }
     },
     {
       "kind": "native",
       "originalRelativePath": "native/9a9f1c3f-e717-4213-8df6-c32061ac23de.1106d.atlas",
-      "semanticRelativePath": "__semantic__/daily/skeleton.atlas",
-      "materializedRelativePath": "native/daily/skeleton.atlas",
+      "semanticRelativePath": "__semantic__/dailyAnimation/skeleton.atlas",
+      "materializedRelativePath": "native/dailyAnimation/skeleton.atlas",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "每日/skeleton"
+        "canonicalPath": "dailyAnimation/skeleton"
       }
     },
     {
       "kind": "native",
       "originalRelativePath": "native/9e9c5b3a-a9aa-4f25-b6f6-bc9287a39e94.3cf86.png",
-      "semanticRelativePath": "__semantic__/mythicBeastAnimations/hundredDucksToKun/skeleton/spriteFrame.png",
-      "materializedRelativePath": "native/mythicBeastAnimations/hundredDucksToKun/skeleton/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/mythicCollection/hundredDucksToKun/skeleton/spriteFrame.png",
+      "materializedRelativePath": "native/mythicCollection/hundredDucksToKun/skeleton/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "神兽动画合集/百鸭朝鲲/skeleton/spriteFrame"
-      }
-    },
-    {
-      "kind": "native",
-      "originalRelativePath": "native/a80ab2cb-06e4-4f60-9f31-254d96d146a9.bc67d.atlas",
-      "semanticRelativePath": "__semantic__/saveFruitDuck/skeleton.atlas",
-      "materializedRelativePath": "native/saveFruitDuck/skeleton.atlas",
-      "strategy": "direct-canonical-path",
-      "detail": {
-        "canonicalPath": "救救水果鸭/skeleton"
+        "canonicalPath": "mythicCollection/hundredDucksToKun/skeleton/spriteFrame"
       }
     },
     {
@@ -1207,90 +1150,113 @@
       "materializedRelativePath": "native/ringAnimation/ZYQ.atlas",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "圈动画/ZYQ"
+        "canonicalPath": "ringAnimation/ringLoop",
+        "resolvedFromExistingMaterializedFile": true
       }
     },
     {
       "kind": "native",
       "originalRelativePath": "native/bb1f8ba0-189d-4889-b97b-0ad89a2c29ec.cd051.atlas",
-      "semanticRelativePath": "__semantic__/xiaoSanVideo/skeleton.atlas",
-      "materializedRelativePath": "native/xiaoSanVideo/skeleton.atlas",
+      "semanticRelativePath": "__semantic__/sideStoryVideo/skeleton.atlas",
+      "materializedRelativePath": "native/sideStoryVideo/skeleton.atlas",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "小三视频/skeleton"
+        "canonicalPath": "sideStoryVideo/skeleton"
       }
     },
     {
       "kind": "native",
       "originalRelativePath": "native/bc83320c-534c-4041-b272-79d2c62aeb0b.28f8f.png",
-      "semanticRelativePath": "__semantic__/xiaoSanVideo/skeleton4/spriteFrame.png",
-      "materializedRelativePath": "native/xiaoSanVideo/skeleton4/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/sideStoryVideo/skeleton4/spriteFrame.png",
+      "materializedRelativePath": "native/sideStoryVideo/skeleton4/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "小三视频/skeleton4/spriteFrame"
+        "canonicalPath": "sideStoryVideo/skeleton4/spriteFrame"
       }
     },
     {
       "kind": "native",
       "originalRelativePath": "native/d141dc7c-668b-4e00-a718-8a65a417d65f.0c0bf.atlas",
-      "semanticRelativePath": "__semantic__/guideAnimation/skeleton.atlas",
-      "materializedRelativePath": "native/guideAnimation/skeleton.atlas",
+      "semanticRelativePath": "__semantic__/tutorialAnimation/skeleton.atlas",
+      "materializedRelativePath": "native/tutorialAnimation/skeleton.atlas",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "引导动画/skeleton"
+        "canonicalPath": "tutorialAnimation/skeleton"
       }
     },
     {
       "kind": "native",
       "originalRelativePath": "native/d196e2d9-c4ca-4b38-9f42-6790d7e7ba52.cb7d6.atlas",
-      "semanticRelativePath": "__semantic__/mythicBeastAnimations/hundredDucksToSparrow/skeleton.atlas",
-      "materializedRelativePath": "native/mythicBeastAnimations/hundredDucksToSparrow/skeleton.atlas",
+      "semanticRelativePath": "__semantic__/mythicCollection/hundredDucksToSparrow/skeleton.atlas",
+      "materializedRelativePath": "native/mythicCollection/hundredDucksToSparrow/skeleton.atlas",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "神兽动画合集/百鸭朝雀/skeleton"
+        "canonicalPath": "mythicCollection/hundredDucksToSparrow/skeleton"
       }
     },
     {
       "kind": "native",
       "originalRelativePath": "native/d37af975-2b38-4f46-a65b-c863c0ed8e66.c87ec.png",
-      "semanticRelativePath": "__semantic__/gyroscope/skeleton/spriteFrame.png",
-      "materializedRelativePath": "native/gyroscope/skeleton/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/gyroscopeAnimation/skeleton/spriteFrame.png",
+      "materializedRelativePath": "native/gyroscopeAnimation/skeleton/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "陀螺仪/skeleton/spriteFrame"
+        "canonicalPath": "gyroscopeAnimation/skeleton/spriteFrame"
       }
     },
     {
       "kind": "native",
       "originalRelativePath": "native/e85b96d8-3560-4110-bb33-1d4655ec9dbf.fadaa.png",
-      "semanticRelativePath": "__semantic__/breakDoorAnimation/skeleton/spriteFrame.png",
-      "materializedRelativePath": "native/breakDoorAnimation/skeleton/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/doorBreakAnimation/skeleton/spriteFrame.png",
+      "materializedRelativePath": "native/doorBreakAnimation/skeleton/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "破门动画/skeleton/spriteFrame"
+        "canonicalPath": "doorBreakAnimation/skeleton/spriteFrame"
       }
     },
     {
       "kind": "native",
       "originalRelativePath": "native/fb2d41a2-75f9-4bc6-8ac4-fa98a74c5e58.3beca.png",
-      "semanticRelativePath": "__semantic__/breakDoorAnimation/skeleton2/spriteFrame.png",
-      "materializedRelativePath": "native/breakDoorAnimation/skeleton2/spriteFrame.png",
+      "semanticRelativePath": "__semantic__/doorBreakAnimation/skeleton2/spriteFrame.png",
+      "materializedRelativePath": "native/doorBreakAnimation/skeleton2/spriteFrame.png",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "破门动画/skeleton2/spriteFrame"
+        "canonicalPath": "doorBreakAnimation/skeleton2/spriteFrame"
       }
     },
     {
       "kind": "native",
       "originalRelativePath": "native/ffca00c9-a334-4e54-a9d3-427b14e9701a.6278e.atlas",
-      "semanticRelativePath": "__semantic__/fullAnimation/Done_for_eat.atlas",
-      "materializedRelativePath": "native/fullAnimation/Done_for_eat.atlas",
+      "semanticRelativePath": "__semantic__/eatFullAnimation/eatFull.atlas",
+      "materializedRelativePath": "native/eatFullAnimation/eatFull.atlas",
       "strategy": "direct-canonical-path",
       "detail": {
-        "canonicalPath": "吃饱动画/Done for eat"
+        "canonicalPath": "eatFullAnimation/eatFull"
       }
     }
   ],
-  "unresolvedImports": [],
-  "unresolvedNative": []
+  "unresolvedImports": [
+    {
+      "originalRelativePath": "import/46d1c775-d8a4-4ac0-b372-b4cf3a7a7b1e.82878.json",
+      "stem": "46d1c775-d8a4-4ac0-b372-b4cf3a7a7b1e"
+    },
+    {
+      "originalRelativePath": "import/a80ab2cb-06e4-4f60-9f31-254d96d146a9.621e2.json",
+      "stem": "a80ab2cb-06e4-4f60-9f31-254d96d146a9"
+    },
+    {
+      "originalRelativePath": "import/d32eb2a7-8aa5-47e4-a7e8-2ea475a611ec@f9941.a1d48.json",
+      "stem": "d32eb2a7-8aa5-47e4-a7e8-2ea475a611ec@f9941"
+    }
+  ],
+  "unresolvedNative": [
+    {
+      "originalRelativePath": "native/46d1c775-d8a4-4ac0-b372-b4cf3a7a7b1e.63d81.atlas",
+      "stem": "46d1c775-d8a4-4ac0-b372-b4cf3a7a7b1e"
+    },
+    {
+      "originalRelativePath": "native/a80ab2cb-06e4-4f60-9f31-254d96d146a9.bc67d.atlas",
+      "stem": "a80ab2cb-06e4-4f60-9f31-254d96d146a9"
+    }
+  ]
 }

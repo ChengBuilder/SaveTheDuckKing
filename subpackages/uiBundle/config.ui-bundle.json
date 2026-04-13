@@ -721,11 +721,6 @@
       3,
       1
     ],
-    "40": [
-      "tex/book/fruitCollection/watermelonDuck/spriteFrame",
-      3,
-      1
-    ],
     "41": [
       "tex/book/duck/duckSkin11/spriteFrame",
       3,
@@ -946,11 +941,6 @@
       3,
       1
     ],
-    "101": [
-      "tex/book/fruitCollection/pitayaDuck/spriteFrame",
-      3,
-      1
-    ],
     "102": [
       "prefab/AwemeUI",
       0,
@@ -1156,11 +1146,6 @@
       3,
       1
     ],
-    "143": [
-      "tex/book/bigEaterCollection/bigBellyDuck/spriteFrame",
-      3,
-      1
-    ],
     "144": [
       "tex/book/shareCollection/zhenHuanDuck/spriteFrame",
       3,
@@ -1191,11 +1176,6 @@
       3,
       1
     ],
-    "150": [
-      "tex/book/fruitCollection/hamiMelonDuck/spriteFrame",
-      3,
-      1
-    ],
     "151": [
       "tex/revive/heart1/spriteFrame",
       3,
@@ -1208,11 +1188,6 @@
     ],
     "154": [
       "tex/homeUi/leaderboard/avatar/spriteFrame",
-      3,
-      1
-    ],
-    "155": [
-      "tex/failPage/overLabelFruit/spriteFrame",
       3,
       1
     ],
@@ -1378,11 +1353,6 @@
     ],
     "188": [
       "tex/autoUi/victory/spriteFrame",
-      3,
-      1
-    ],
-    "189": [
-      "tex/book/fruitCollection/grapeDuck/spriteFrame",
       3,
       1
     ],
@@ -1831,11 +1801,6 @@
       3,
       1
     ],
-    "281": [
-      "tex/failPage/fruitLose/spriteFrame",
-      3,
-      1
-    ],
     "282": [
       "tex/levelCompletePage/successProgress/progressBarFill/spriteFrame",
       3,
@@ -1878,11 +1843,6 @@
     ],
     "290": [
       "tex/book/pigeonGallery/skinCollection/skinPage3/spriteFrame",
-      3,
-      1
-    ],
-    "291": [
-      "tex/book/fruitCollection/blueberryDuck/spriteFrame",
       3,
       1
     ],
@@ -2098,11 +2058,6 @@
     ],
     "334": [
       "tex/props/shuffleProp/spriteFrame",
-      3,
-      1
-    ],
-    "335": [
-      "tex/book/fruitCollection/appleDuck/spriteFrame",
       3,
       1
     ],

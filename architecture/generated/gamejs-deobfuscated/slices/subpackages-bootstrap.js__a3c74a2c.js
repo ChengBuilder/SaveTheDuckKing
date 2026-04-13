@@ -94,9 +94,9 @@ module.exports = function exportedModule(require, module, exports) {
           var i;
           r._RF.push({
           }
-          ,"2fd1aGtpKVOF4gwqe0Is37a","fruit",void 0);
+          ,"2fd1aGtpKVOF4gwqe0Is37a","removedSubgame",void 0);
           var s=u.ccclass;
-          u.property,t("fruit",s("fruit")(i=function(t){
+          u.property,t("removedSubgame",s("removedSubgame")(i=function(t){
             function r(){
               return t.apply(this,arguments)||this
             }
@@ -112,13 +112,13 @@ module.exports = function exportedModule(require, module, exports) {
         }
       }
     }
-    )),System.register("chunks:///_virtual/Game2Bundle",["./fruit2.ts"],(function(){
+    )),System.register("chunks:///_virtual/RemovedSubgameBundle",["./removed-subgame.ts"],(function(){
       return{
         setters:[null],execute:function(){
         }
       }
     }
-    )),t="virtual:///prerequisite-imports/Game2Bundle",e="chunks:///_virtual/Game2Bundle",System.register(t,[e],(function(t,e){
+    )),t="virtual:///prerequisite-imports/RemovedSubgameBundle",e="chunks:///_virtual/RemovedSubgameBundle",System.register(t,[e],(function(t,e){
       return{
         setters:[function(e){
           var r={
