@@ -1,32 +1,23 @@
 # architecture
 
-这里是项目的可维护层入口，建议把后续迭代都放在这里。
-当前工程已位于仓库根目录，工具脚本会自动兼容“仓库根目录 / 子目录项目”两种布局。
+这里只保留两层：
 
-- 启动逻辑：`boot/`
-- 规范与上手文档：`docs/`
-- 自动化脚本：`tools/`
-- 项目长期记忆：`memory/`
-- 项目内技能说明：`skills/`
-- 素材治理记录：`docs/asset-governance-log.md`
-- 音频治理审计：`docs/audio-usage-audit.md`
+- `boot/`：启动链路与运行治理。
+- `tools/`：主流程必需的校验与微信检查脚本。
 
-当前启动层已按职责拆到：
-- `boot/config.js`：配置解析与兜底
-- `boot/boot-safety.js`：状态机与重复启动保护
-- `boot/platform-strategy.js`：平台启动调度策略
-- `boot/performance-strategy.js`：渲染/帧率性能策略
-- `boot/boot-observer.js`：运行时观测与阶段记录
-- `boot/recovery-strategy.js`：启动失败归档与恢复策略
+## 已收敛策略
 
-命名清理策略统一采用“直接语义化 rename”，不再维护额外的运行时映射表。
+- 不再维护历史语义映射、兼容镜像、迭代审计工具链。
+- 资源完整性以 `config.*.json` 实际引用为准，直接校验真实文件是否存在。
+- 目标是让工具链服务运行稳定，而不是制造更多中间层。
 
-建议每次迭代后至少执行：
+## 建议执行顺序
 
 ```bash
 node architecture/tools/format-project-json.js
-node architecture/tools/generate-bundle-asset-catalog.js
-node architecture/tools/run-guardrails.js
-node architecture/tools/generate-iteration-report.js
-node architecture/tools/run-iteration-cycle.js
+node architecture/tools/check-config-version-asset-integrity.js --strict-shard
+node architecture/tools/verify-wechat-minigame-structure.js
+node architecture/tools/verify-runtime-safety.js
+node architecture/tools/check-legacy-runtime-compat.js
+node architecture/tools/check-wechat-code-package-limits.js
 ```

@@ -13,8 +13,8 @@ const BYTES_PER_MB = 1024 * 1024;
 const MAIN_PACKAGE_LIMIT_BYTES = 4 * BYTES_PER_MB;
 const TOTAL_PACKAGE_LIMIT_BYTES = 30 * BYTES_PER_MB;
 const INDEPENDENT_SUBPACKAGE_LIMIT_BYTES = 4 * BYTES_PER_MB;
-const REPORT_JSON_RELATIVE_PATH = 'architecture/docs/wechat-code-package-report.json';
-const REPORT_MARKDOWN_RELATIVE_PATH = 'architecture/docs/wechat-code-package-report.md';
+const REPORT_JSON_RELATIVE_PATH = 'architecture/reports/wechat-code-package-report.json';
+const REPORT_MARKDOWN_RELATIVE_PATH = 'architecture/reports/wechat-code-package-report.md';
 const DEFAULT_MAIN_PACKAGE_ENTRIES = Object.freeze([
   'game.js',
   'game.json',
@@ -267,6 +267,7 @@ function resolveSubpackages(gameConfig) {
 function writeReportFiles(layout, report) {
   const jsonReportPath = resolveProjectFilePath(layout, REPORT_JSON_RELATIVE_PATH);
   const markdownReportPath = resolveProjectFilePath(layout, REPORT_MARKDOWN_RELATIVE_PATH);
+  fs.mkdirSync(path.dirname(jsonReportPath), { recursive: true });
 
   fs.writeFileSync(jsonReportPath, JSON.stringify(report, null, 2) + '\n', 'utf8');
   fs.writeFileSync(markdownReportPath, buildMarkdownReport(layout, report).join('\n') + '\n', 'utf8');

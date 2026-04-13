@@ -384,33 +384,6 @@ const CHECK_TARGETS = [
         pattern: /applyLegacyBundleRequestPatch/g
       }
     ]
-  },
-  {
-    relativePath: 'architecture/memory/project-memory.md',
-    checks: [
-      {
-        label: '项目记忆中的旧兼容策略',
-        pattern: /兼容层最小化|保留必要补丁|Home\/ui 旧路径兼容|不深改 `game\.js`/g
-      }
-    ]
-  },
-  {
-    relativePath: 'architecture/docs/project-structure.md',
-    checks: [
-      {
-        label: '项目结构文档中的旧兼容策略',
-        pattern: /兼容层最小化|所有兼容补丁必须|兼容薄壳层/g
-      }
-    ]
-  },
-  {
-    relativePath: 'architecture/docs/wechat-official-project-guide.md',
-    checks: [
-      {
-        label: '官方指南落地文档中的旧兼容策略',
-        pattern: /兼容补丁层/g
-      }
-    ]
   }
 ];
 

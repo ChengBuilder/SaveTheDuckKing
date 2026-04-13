@@ -18,6 +18,7 @@ function main() {
   const shouldFix = args.includes("--fix");
   const skipCli = args.includes("--skip-cli");
   const skipGuardrails = args.includes("--skip-guardrails");
+  const skipPackageCheck = args.includes("--skip-package-check");
   const withMiniGameTestDoctor = args.includes("--with-minigame-test-doctor");
   const allowMissingTestSdk = args.includes("--allow-missing-test-sdk");
   const port = readNumericFlag(args, "--port", DEFAULT_PORT);
@@ -29,14 +30,18 @@ function main() {
   if (shouldFix) {
     logSection("执行安全修复");
     runNodeScript("architecture/tools/format-project-json.js");
-    runNodeScript("architecture/tools/generate-subpackage-structure-audit.js");
-    runNodeScript("architecture/tools/generate-compatibility-mirror-audit.js");
+    runNodeScript("architecture/tools/prune-legacy-hash-layout.js");
+    runNodeScript("architecture/tools/check-config-version-asset-integrity.js", ["--strict-shard"]);
   }
 
   const summary = validateProjectShape();
 
-  logSection("执行代码包体检查");
-  runNodeScript("architecture/tools/check-wechat-code-package-limits.js");
+  if (!skipPackageCheck) {
+    logSection("执行代码包体检查");
+    runNodeScript("architecture/tools/check-wechat-code-package-limits.js");
+  } else {
+    logSection("跳过代码包体检查");
+  }
 
   if (!skipGuardrails) {
     logSection("执行仓库护栏");
