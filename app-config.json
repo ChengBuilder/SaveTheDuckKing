@@ -28,10 +28,6 @@
       "root": "subpackages/DuckBundle/"
     },
     {
-      "name": "Game2Bundle",
-      "root": "subpackages/Game2Bundle/"
-    },
-    {
       "name": "HomeBundle",
       "root": "subpackages/HomeBundle/"
     },

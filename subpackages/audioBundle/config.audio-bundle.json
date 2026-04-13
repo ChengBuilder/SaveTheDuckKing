@@ -76,16 +76,6 @@
       0,
       1
     ],
-    "1": [
-      "fruitGame/eliminate3",
-      0,
-      1
-    ],
-    "2": [
-      "fruitGame/eliminate8",
-      0,
-      1
-    ],
     "3": [
       "duckGame/woodAssembleFollow",
       0,
@@ -121,28 +111,13 @@
       0,
       1
     ],
-    "10": [
-      "fruitGame/FruitWin",
-      0,
-      1
-    ],
     "11": [
       "duckGame/stoneCollision",
       0,
       1
     ],
-    "12": [
-      "fruitGame/eliminate1",
-      0,
-      1
-    ],
     "13": [
       "bgm/pureColor",
-      0,
-      1
-    ],
-    "14": [
-      "fruitGame/eliminate6",
       0,
       1
     ],
@@ -168,16 +143,6 @@
     ],
     "19": [
       "legacy/unknownBdz",
-      0,
-      1
-    ],
-    "20": [
-      "fruitGame/fruitClick",
-      0,
-      1
-    ],
-    "21": [
-      "fruitGame/plateUnlock",
       0,
       1
     ],
@@ -221,16 +186,6 @@
       0,
       1
     ],
-    "30": [
-      "fruitGame/eliminate2",
-      0,
-      1
-    ],
-    "31": [
-      "fruitGame/eat",
-      0,
-      1
-    ],
     "32": [
       "ui/levelComplete",
       0,
@@ -238,16 +193,6 @@
     ],
     "33": [
       "ui/failureStinger",
-      0,
-      1
-    ],
-    "34": [
-      "fruitGame/slotFull",
-      0,
-      1
-    ],
-    "35": [
-      "fruitGame/born",
       0,
       1
     ],
@@ -268,16 +213,6 @@
     ],
     "39": [
       "woodDrop/woodDrop_2",
-      0,
-      1
-    ],
-    "40": [
-      "sceneTransition/fruitGameReveal",
-      0,
-      1
-    ],
-    "41": [
-      "legacy/fruitBornDuplicateLz",
       0,
       1
     ],
@@ -316,18 +251,8 @@
       0,
       1
     ],
-    "49": [
-      "fruitGame/born1",
-      0,
-      1
-    ],
     "50": [
       "comboMusic/combo_6",
-      0,
-      1
-    ],
-    "51": [
-      "fruitGame/eliminate4",
       0,
       1
     ],
@@ -361,11 +286,6 @@
       0,
       1
     ],
-    "58": [
-      "fruitGame/eliminate5",
-      0,
-      1
-    ],
     "59": [
       "sceneTransition/duckDrop",
       0,
@@ -383,16 +303,6 @@
     ],
     "62": [
       "ui/powerConsume",
-      0,
-      1
-    ],
-    "63": [
-      "fruitGame/fruitBgm",
-      0,
-      1
-    ],
-    "64": [
-      "fruitGame/eliminate7",
       0,
       1
     ]

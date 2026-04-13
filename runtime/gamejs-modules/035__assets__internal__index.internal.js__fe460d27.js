@@ -144,7 +144,7 @@ define("runtime/gamejs-modules/assets/internal/index.internal.js", function (req
                   return (
                     (s.start = function () {
                       if (this.node.parent.getComponent(g)) {
-                        var t = this.node.parent.getComponent(h),
+                        var t = this.node.parent.getComponent("cc.UITransform"),
                           e = 0.5 * t.width,
                           o = 0.5 * t.height,
                           i = 0.1 * e - e,
@@ -157,7 +157,7 @@ define("runtime/gamejs-modules/assets/internal/index.internal.js", function (req
                         for (var m = 0; m < 2; m++) {
                           var f = c(this.EnableAllCompositeModeButton.getChildByName("Label"));
                           f.setPosition(i + (m > 0 ? 450 : 150), n, 0), f.setScale(0.75, 0.75, 0.75), (f.parent = l);
-                          var v = f.getComponent(p);
+                          var v = f.getComponent("cc.Label");
                           (v.string = m ? "----------Composite Mode----------" : "----------Single Mode----------"),
                             (v.color = a.WHITE),
                             (v.overflow = 0),

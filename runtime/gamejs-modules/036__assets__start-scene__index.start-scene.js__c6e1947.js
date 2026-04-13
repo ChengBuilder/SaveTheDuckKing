@@ -6549,9 +6549,6 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                                           .start(),
                                         tween(this.DuckAni)
                                           .delay(0.5)
-                                          .call(function () {
-                                            AudioManager.instance.playSound("sceneTransition/fruitGameReveal");
-                                          })
                                           .to(
                                             0.35,
                                             {
@@ -20950,6 +20947,8 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                             GameModel.instance.releaseType != releaseType.applet_ziJie ||
                             "Toutiao" == a) &&
                             (this.subscribeBtn.node.active = !1),
+                          (this.game2Btn.node.active = !1),
+                          (this.game3Btn.node.active = !1),
                           GameModel.instance.releaseType != releaseType.applet_ziJie &&
                             ((this.addTableBtn.node.active = !1),
                             (this.goSideBarBtn.node.active = !1),
@@ -21230,8 +21229,6 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                           this.gooseBtn.node.on(Button.EventType.CLICK, this.gooseBtnClick, this),
                           this.joinGroupBtn.node.on(Button.EventType.CLICK, this.joinGroupBtnClick, this),
                           this.pigeonStartBtn.node.on(Button.EventType.CLICK, this.pigeonStartBtnClick, this),
-                          this.game2Btn.node.on(Button.EventType.CLICK, this.game2BtnClick, this),
-                          this.game3Btn.node.on(Button.EventType.CLICK, this.game3BtnClick, this),
                           EventManager.instance.on(EVENT_KEYS.SIDE_REWARD, this.showSideBar, this),
                           EventManager.instance.on(EVENT_KEYS.CLOSE_HOME_BTN, this.GmChangeBtn, this),
                           EventManager.instance.on(EVENT_KEYS.SHOW_SHARE_LOSE, this.showShareLose, this);
@@ -21248,8 +21245,6 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                           this.gooseBtn.node.off(Button.EventType.CLICK, this.gooseBtnClick, this),
                           this.joinGroupBtn.node.off(Button.EventType.CLICK, this.joinGroupBtnClick, this),
                           this.pigeonStartBtn.node.off(Button.EventType.CLICK, this.pigeonStartBtnClick, this),
-                          this.game2Btn.node.off(Button.EventType.CLICK, this.game2BtnClick, this),
-                          this.game3Btn.node.off(Button.EventType.CLICK, this.game3BtnClick, this),
                           EventManager.instance.off(EVENT_KEYS.SIDE_REWARD, this.showSideBar, this),
                           EventManager.instance.off(EVENT_KEYS.CLOSE_HOME_BTN, this.GmChangeBtn, this),
                           EventManager.instance.off(EVENT_KEYS.SHOW_SHARE_LOSE, this.showShareLose, this);
@@ -21314,18 +21309,10 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                         }
                       }),
                       (r.game2BtnClick = function () {
-                        !1 !== GameCtrl.instance.btnCanTouch &&
-                          ((GameCtrl.instance.btnCanTouch = !1),
-                          AudioManager.instance.playSound("ui/buttonClick"),
-                          AdManager_ZJ._ins.reportAnalyticsEvent("Model2"),
-                          director.loadScene(GameModel.instance.Game2SceneName));
+                        GameCtrl.instance.btnCanTouch = !0;
                       }),
                       (r.game3BtnClick = function () {
-                        !1 !== GameCtrl.instance.btnCanTouch &&
-                          ((GameCtrl.instance.btnCanTouch = !1),
-                          AudioManager.instance.playSound("ui/buttonClick"),
-                          AdManager_ZJ._ins.reportAnalyticsEvent("Model3"),
-                          director.loadScene(GameModel.instance.FruitSceneName));
+                        GameCtrl.instance.btnCanTouch = !0;
                       }),
                       (r.pigeonStartBtnClick = function () {
                         var e = this;
@@ -23309,55 +23296,12 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
                                             progress: 0.6
                                           })
                                           .start(),
-                                        (e.next = 34),
-                                        ResManager.instance.loadBundle("Game2Bundle")
+                                        (e.next = 38),
+                                        ResManager.instance.loadBundle("HomeBundle")
                                       );
                                     case 34:
-                                      return (
-                                        (e.next = 36),
-                                        new Promise(function (e, t) {
-                                          ResManager.instance.bundleLoadDir(
-                                            "Game2Bundle",
-                                            "",
-                                            null,
-                                            asyncToGenerator(
-                                              i().mark(function n(o, r) {
-                                                return i().wrap(
-                                                  function (n) {
-                                                    for (;;)
-                                                      switch ((n.prev = n.next)) {
-                                                        case 0:
-                                                          if (!o) {
-                                                            n.next = 2;
-                                                            break;
-                                                          }
-                                                          return n.abrupt("return", (console.log(o), t(o)));
-                                                        case 2:
-                                                          return (
-                                                            console.log("resource加载完成"),
-                                                            (n.prev = 3),
-                                                            (n.next = 6),
-                                                            ResManager.instance.saveToAssetsCache(r)
-                                                          );
-                                                        case 6:
-                                                          e(), (n.next = 12);
-                                                          break;
-                                                        case 9:
-                                                          (n.prev = 9), (n.t0 = n.catch(3)), t(n.t0);
-                                                        case 12:
-                                                        case "end":
-                                                          return n.stop();
-                                                      }
-                                                  },
-                                                  n,
-                                                  null,
-                                                  [[3, 9]]
-                                                );
-                                              })
-                                            )
-                                          );
-                                        })
-                                      );
+                                      e.next = 36;
+                                      break;
                                     case 36:
                                       return (e.next = 38), ResManager.instance.loadBundle("HomeBundle");
                                     case 38:

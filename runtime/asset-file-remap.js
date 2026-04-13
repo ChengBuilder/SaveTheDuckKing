@@ -59,16 +59,6 @@ const SUBPACKAGE_COMPATIBILITY_MIRROR_ALIAS_ENTRIES = Object.freeze([
     canonicalConfigPath: "subpackages/DuckBundle/config.duck-bundle.json",
   }),
   Object.freeze({
-    legacyPrefix: "assets/game2bundle/",
-    canonicalPrefix: "subpackages/Game2Bundle/",
-    canonicalConfigPath: "subpackages/Game2Bundle/config.game2-bundle.json",
-  }),
-  Object.freeze({
-    legacyPrefix: "assets/game2bundlebundle/",
-    canonicalPrefix: "subpackages/Game2Bundle/",
-    canonicalConfigPath: "subpackages/Game2Bundle/config.game2-bundle.json",
-  }),
-  Object.freeze({
     legacyPrefix: "assets/homebundle/",
     canonicalPrefix: "subpackages/HomeBundle/",
     canonicalConfigPath: "subpackages/HomeBundle/config.home-bundle.json",

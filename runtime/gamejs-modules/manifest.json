@@ -100,16 +100,6 @@
     "filename": "020__assets__DuckBundlebundle__index.js__936e37a4.js"
   },
   {
-    "moduleId": "assets/game2bundle/index.js",
-    "runtimeModuleId": "runtime/gamejs-modules/assets/game2bundle/index.js",
-    "filename": "021__assets__game2bundle__index.js__247dff0d.js"
-  },
-  {
-    "moduleId": "assets/Game2Bundlebundle/index.js",
-    "runtimeModuleId": "runtime/gamejs-modules/assets/Game2Bundlebundle/index.js",
-    "filename": "022__assets__Game2Bundlebundle__index.js__b247c805.js"
-  },
-  {
     "moduleId": "assets/homebundle/index.js",
     "runtimeModuleId": "runtime/gamejs-modules/assets/homebundle/index.js",
     "filename": "023__assets__homebundle__index.js__3ac47d7a.js"
@@ -153,11 +143,6 @@
     "moduleId": "subpackages/DuckBundle/game.js",
     "runtimeModuleId": "runtime/gamejs-modules/subpackages/DuckBundle/game.js",
     "filename": "031__subpackages__DuckBundle__game.js__b8f61b08.js"
-  },
-  {
-    "moduleId": "subpackages/Game2Bundle/game.js",
-    "runtimeModuleId": "runtime/gamejs-modules/subpackages/Game2Bundle/game.js",
-    "filename": "032__subpackages__Game2Bundle__game.js__17e68423.js"
   },
   {
     "moduleId": "subpackages/HomeBundle/game.js",

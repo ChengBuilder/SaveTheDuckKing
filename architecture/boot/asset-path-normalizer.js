@@ -12,7 +12,6 @@ const CANONICAL_BUNDLE_NAME_MAP = Object.freeze({
   anibundle: 'aniBundle',
   audiobundle: 'audioBundle',
   duckbundle: 'DuckBundle',
-  game2bundle: 'Game2Bundle',
   homebundle: 'HomeBundle',
   uibundle: 'uiBundle'
 });
@@ -24,7 +23,6 @@ const LEGACY_BUNDLE_ALIAS_NAME_MAP = Object.freeze({
   anibundlebundle: 'aniBundle',
   audiobundlebundle: 'audioBundle',
   duckbundlebundle: 'DuckBundle',
-  game2bundlebundle: 'Game2Bundle',
   homebundlebundle: 'HomeBundle',
   uibundlebundle: 'uiBundle'
 });
@@ -36,7 +34,6 @@ const CANONICAL_BUNDLE_BASE_MAP = Object.freeze({
   aniBundle: 'subpackages/aniBundle/',
   audioBundle: 'subpackages/audioBundle/',
   DuckBundle: 'subpackages/DuckBundle/',
-  Game2Bundle: 'subpackages/Game2Bundle/',
   HomeBundle: 'subpackages/HomeBundle/',
   uiBundle: 'subpackages/uiBundle/'
 });

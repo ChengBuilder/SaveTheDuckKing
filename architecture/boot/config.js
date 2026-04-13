@@ -15,6 +15,7 @@ const DEFAULT_BOOT_CONFIG = {
   lowEndFps: 40,
   defaultFps: 55,
   enableConsoleLogGovernance: true,
+  enableComponentLookupGuard: true,
   maxRuntimeLogCount: 120,
   maxRuntimeWarnCount: 80,
   enableUpdateManager: true,
@@ -37,6 +38,7 @@ const HARD_FALLBACK_BOOT_CONFIG = Object.freeze({
   lowEndFps: 40,
   defaultFps: 55,
   enableConsoleLogGovernance: true,
+  enableComponentLookupGuard: true,
   maxRuntimeLogCount: 120,
   maxRuntimeWarnCount: 80,
   enableUpdateManager: true,
@@ -128,6 +130,10 @@ function normalizeBootConfig(sourceConfig, fallbackConfig) {
     enableConsoleLogGovernance: pickBoolean(
       safeSource.enableConsoleLogGovernance,
       safeFallback.enableConsoleLogGovernance
+    ),
+    enableComponentLookupGuard: pickBoolean(
+      safeSource.enableComponentLookupGuard,
+      safeFallback.enableComponentLookupGuard
     ),
     maxRuntimeLogCount: pickNumber(safeSource.maxRuntimeLogCount, safeFallback.maxRuntimeLogCount),
     maxRuntimeWarnCount: pickNumber(safeSource.maxRuntimeWarnCount, safeFallback.maxRuntimeWarnCount),

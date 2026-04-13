@@ -6,6 +6,8 @@ const { logInfo, logWarn, logDebug, isBootDebugEnabled } = require('./boot-logge
 
 const RUNTIME_GOVERNANCE_STATE_KEY = '__DUCK_RUNTIME_GOVERNANCE';
 const MEMORY_WARNING_HANDLER_KEY = '__DUCK_MEMORY_WARNING_HANDLERS';
+const COMPONENT_LOOKUP_GUARD_FLAG = '__DUCK_COMPONENT_LOOKUP_GUARD_INSTALLED';
+const COMPONENT_LOOKUP_GUARD_MAX_LOGS = 5;
 
 /**
  * 安装微信小游戏运行时治理能力。
@@ -28,6 +30,9 @@ function installRuntimeGovernance(bootObserver, bootConfig, systemInfo) {
   runtimeState.platform = String((systemInfo && systemInfo.platform) || 'unknown');
   runtimeState.capabilities = resolveWechatCapabilities();
   applyConsoleLogGovernance(runtimeState, bootConfig, systemInfo);
+  if (shouldEnableComponentLookupGuard(bootConfig)) {
+    installComponentLookupGuard(runtimeState);
+  }
 
   if (shouldEnableLifecycleObservers(bootConfig)) {
     registerAppVisibilityListeners(runtimeState, bootObserver);
@@ -137,10 +142,196 @@ function getRuntimeGovernanceState() {
       skippedInDevtools: false
     };
   }
+  if (!runtimeState.componentLookupGuard || typeof runtimeState.componentLookupGuard !== 'object') {
+    runtimeState.componentLookupGuard = {
+      enabled: false,
+      installedAt: null,
+      patchedTargets: [],
+      invalidCount: 0,
+      loggedCount: 0,
+      suppressedLogCount: 0,
+      lastInvalidAt: null,
+      lastInvalidMethod: null,
+      lastInvalidType: null
+    };
+  }
 
   const runtimeGlobal = getRuntimeGlobalObject();
   runtimeGlobal[MEMORY_WARNING_HANDLER_KEY] = runtimeState.memoryHandlers;
   return runtimeState;
+}
+
+/**
+ * 安装 getComponent/getComponents 参数守卫。
+ * 目标：避免非法参数直接触发 Cocos 3804，改为安全返回并记录一次告警。
+ * @param {Record<string, any>} runtimeState 运行时治理状态
+ */
+function installComponentLookupGuard(runtimeState) {
+  const runtimeGlobal = getRuntimeGlobalObject();
+  if (!runtimeGlobal || runtimeGlobal[COMPONENT_LOOKUP_GUARD_FLAG]) {
+    return;
+  }
+
+  const runtimeCc = runtimeGlobal.cc;
+  if (!runtimeCc || typeof runtimeCc !== 'object') {
+    return;
+  }
+
+  const guardState = runtimeState.componentLookupGuard;
+  const patchedTargets = [];
+  const nodePrototype = runtimeCc.Node && runtimeCc.Node.prototype;
+  const componentPrototype = runtimeCc.Component && runtimeCc.Component.prototype;
+
+  if (patchComponentLookupMethod(nodePrototype, 'getComponent', guardState)) {
+    patchedTargets.push('cc.Node#getComponent');
+  }
+  if (patchComponentLookupMethod(nodePrototype, 'getComponents', guardState)) {
+    patchedTargets.push('cc.Node#getComponents');
+  }
+  if (patchComponentLookupMethod(componentPrototype, 'getComponent', guardState)) {
+    patchedTargets.push('cc.Component#getComponent');
+  }
+  if (patchComponentLookupMethod(componentPrototype, 'getComponents', guardState)) {
+    patchedTargets.push('cc.Component#getComponents');
+  }
+
+  if (patchedTargets.length === 0) {
+    return;
+  }
+
+  runtimeGlobal[COMPONENT_LOOKUP_GUARD_FLAG] = true;
+  guardState.enabled = true;
+  guardState.installedAt = new Date().toISOString();
+  guardState.patchedTargets = patchedTargets;
+  logInfo('已启用组件查询参数守卫。', {
+    patchedTargets: patchedTargets
+  });
+}
+
+/**
+ * 为指定原型方法安装参数守卫包装器。
+ * @param {Record<string, any>} prototype 目标原型
+ * @param {'getComponent' | 'getComponents'} methodName 方法名
+ * @param {Record<string, any>} guardState 守卫状态
+ * @returns {boolean}
+ */
+function patchComponentLookupMethod(prototype, methodName, guardState) {
+  if (!prototype || typeof prototype !== 'object') {
+    return false;
+  }
+
+  const originalMethod = prototype[methodName];
+  if (typeof originalMethod !== 'function' || originalMethod.__duckComponentLookupGuardWrapped) {
+    return false;
+  }
+
+  const isCollectionLookup = methodName === 'getComponents';
+  const wrappedMethod = function componentLookupGuardWrapper(componentType) {
+    const normalizedType = normalizeComponentLookupType(componentType);
+    if (normalizedType === null) {
+      recordInvalidComponentLookup(guardState, methodName, componentType);
+      return isCollectionLookup ? [] : null;
+    }
+    return originalMethod.call(this, normalizedType);
+  };
+
+  wrappedMethod.__duckComponentLookupGuardWrapped = true;
+  prototype[methodName] = wrappedMethod;
+  return true;
+}
+
+/**
+ * 规范化组件查询参数。
+ * @param {any} componentType 原始参数
+ * @returns {string | Function | null}
+ */
+function normalizeComponentLookupType(componentType) {
+  if (typeof componentType === 'string' || typeof componentType === 'function') {
+    return componentType;
+  }
+
+  if (componentType && typeof componentType === 'object') {
+    const className = pickFirstNonEmptyString([
+      componentType.__classname__,
+      componentType.name,
+      componentType.constructor && componentType.constructor !== Object
+        ? componentType.constructor.name
+        : ''
+    ]);
+    if (className) {
+      return className;
+    }
+  }
+
+  return null;
+}
+
+/**
+ * 记录非法组件查询参数。
+ * @param {Record<string, any>} guardState 守卫状态
+ * @param {string} methodName 方法名
+ * @param {any} componentType 原始参数
+ */
+function recordInvalidComponentLookup(guardState, methodName, componentType) {
+  guardState.invalidCount += 1;
+  guardState.lastInvalidAt = new Date().toISOString();
+  guardState.lastInvalidMethod = methodName;
+  guardState.lastInvalidType = describeComponentLookupType(componentType);
+
+  if (guardState.loggedCount < COMPONENT_LOOKUP_GUARD_MAX_LOGS) {
+    guardState.loggedCount += 1;
+    logWarn('检测到无效组件查询参数，已降级为安全返回。', {
+      method: methodName,
+      componentType: guardState.lastInvalidType,
+      occurrence: guardState.invalidCount
+    });
+    return;
+  }
+
+  guardState.suppressedLogCount += 1;
+}
+
+/**
+ * 生成组件参数描述文本，便于问题定位。
+ * @param {any} componentType 原始参数
+ * @returns {string}
+ */
+function describeComponentLookupType(componentType) {
+  if (typeof componentType === 'undefined') {
+    return 'undefined';
+  }
+  if (componentType === null) {
+    return 'null';
+  }
+  if (typeof componentType === 'string') {
+    return 'string:' + componentType;
+  }
+  if (typeof componentType === 'function') {
+    return 'function:' + (componentType.name || '<anonymous>');
+  }
+  if (typeof componentType === 'object') {
+    const objectTypeName = pickFirstNonEmptyString([
+      componentType.__classname__,
+      componentType.name,
+      componentType.constructor && componentType.constructor.name
+    ]);
+    return objectTypeName ? 'object:' + objectTypeName : 'object:<anonymous>';
+  }
+  return typeof componentType;
+}
+
+/**
+ * 从候选值中读取第一个非空字符串。
+ * @param {any[]} values 候选值
+ * @returns {string}
+ */
+function pickFirstNonEmptyString(values) {
+  for (const value of values) {
+    if (typeof value === 'string' && value.trim().length > 0) {
+      return value.trim();
+    }
+  }
+  return '';
 }
 
 /**
@@ -437,6 +628,15 @@ function shouldEnableLifecycleObservers(bootConfig) {
  */
 function shouldEnableMemoryWarningObservers(bootConfig) {
   return Boolean(bootConfig.enableMemoryWarningObservers);
+}
+
+/**
+ * 是否启用组件查询参数守卫。
+ * @param {Record<string, any>} bootConfig 启动配置
+ * @returns {boolean}
+ */
+function shouldEnableComponentLookupGuard(bootConfig) {
+  return bootConfig.enableComponentLookupGuard !== false;
 }
 
 /**

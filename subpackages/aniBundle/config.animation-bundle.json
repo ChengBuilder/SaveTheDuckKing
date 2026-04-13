@@ -248,11 +248,6 @@
       1,
       1
     ],
-    "16": [
-      "fruitBigEaterAnimation/kidEating",
-      1,
-      1
-    ],
     "17": [
       "instantPlayAnimation/skeleton",
       1,
@@ -326,11 +321,6 @@
     "31": [
       "mythicCollection/hundredDucksToKun/skeleton",
       3,
-      1
-    ],
-    "32": [
-      "saveFruitDuckAnimation/skeleton",
-      1,
       1
     ],
     "33": [
@@ -548,11 +538,6 @@
       2,
       1
     ],
-    "76": [
-      "saveFruitDuckAnimation/skeleton",
-      2,
-      1
-    ],
     "77": [
       "sideStoryVideo/skeleton",
       2,
@@ -586,11 +571,6 @@
     "83": [
       "daveAnimation/skeleton/spriteFrame",
       5,
-      1
-    ],
-    "84": [
-      "fruitBigEaterAnimation/kidEating",
-      2,
       1
     ],
     "85": [
@@ -738,21 +718,6 @@
       2,
       1
     ],
-    "114": [
-      "saveFruitDuckAnimation/skeleton",
-      3,
-      1
-    ],
-    "115": [
-      "saveFruitDuckAnimation/skeleton/texture",
-      4,
-      1
-    ],
-    "116": [
-      "saveFruitDuckAnimation/skeleton/spriteFrame",
-      5,
-      1
-    ],
     "117": [
       "dailyAnimation/skeleton",
       3,
@@ -830,21 +795,6 @@
     ],
     "132": [
       "assassinAnimation/skeleton/spriteFrame",
-      5,
-      1
-    ],
-    "133": [
-      "fruitBigEaterAnimation/kidEating",
-      3,
-      1
-    ],
-    "134": [
-      "fruitBigEaterAnimation/kidEating/texture",
-      4,
-      1
-    ],
-    "135": [
-      "fruitBigEaterAnimation/kidEating/spriteFrame",
       5,
       1
     ],
@@ -1104,8 +1054,6 @@
       "a1fe3",
       111,
       "a7dd4",
-      116,
-      "f44a3",
       32,
       "621e2",
       119,
@@ -1130,8 +1078,6 @@
       "621e2",
       132,
       "d85ff",
-      135,
-      "a1d48",
       38,
       "a2533",
       137,
@@ -1297,10 +1243,6 @@
     "0",
     113,
     "0",
-    114,
-    "0",
-    115,
-    "0",
     117,
     "0",
     118,
@@ -1318,10 +1260,6 @@
     130,
     "0",
     131,
-    "0",
-    133,
-    "0",
-    134,
     "0",
     138,
     "0",

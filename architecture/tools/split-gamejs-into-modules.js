@@ -325,11 +325,15 @@ function patchFactorySourceForRuntimeId(moduleId, factorySource) {
     return semanticizeSystemRegisterImportAliases(patchGetComponentImportedClassRefs(patchedSource));
   }
 
+  if (moduleId === 'assets/internal/index.internal.js' || moduleId === 'cocos-js/_virtual_cc-cf1p7Jgo.js') {
+    return patchGetComponentImportedClassRefs(factorySource);
+  }
+
   return factorySource;
 }
 
 function patchGetComponentImportedClassRefs(factorySource) {
-  const token = 'System.register("';
+  const token = 'System.register(';
   const startIndices = [];
   let cursor = factorySource.indexOf(token);
 
@@ -428,7 +432,7 @@ function collectImportNameMapFromSystemRegisterChunk(chunkSource, options) {
   const includeDependencyPaths = Array.isArray(settings.includeDependencyPaths) ? settings.includeDependencyPaths : null;
   const exportNameAllowSet = settings.exportNameAllowSet instanceof Set ? settings.exportNameAllowSet : null;
   const depsStart = chunkSource.indexOf('[');
-  const depsEnd = findPatternIndex(chunkSource, /\],\s*\(function\(/g, depsStart);
+  const depsEnd = findPatternIndex(chunkSource, /\],\s*(?:\(\s*)?function\s*\(/g, depsStart);
   const settersStart = findPatternIndex(chunkSource, /setters:\s*\[/g, depsEnd);
   const executeStart = findPatternIndex(chunkSource, /\],\s*execute:\s*function/g, settersStart);
 
