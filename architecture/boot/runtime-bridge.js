@@ -19,8 +19,8 @@ function exposeRuntimeRequire(requireFn) {
  */
 function loadRuntimeDependencies(requireFn) {
   requireFn('./web-adapter');
-  requireFn('src/polyfills.bundle.43263.js');
-  requireFn('src/system.bundle.f45da.js');
+  requireFn('src/polyfills.bundle.js');
+  requireFn('src/system.bundle.js');
   requireFn('subpackages-bootstrap.js');
   logDebug('运行时依赖加载完成。');
 }
@@ -51,12 +51,12 @@ function resolvePluginRequire() {
  * @param {Function} requireFn 当前模块 require 函数
  */
 function warmupSystemRuntime(requireFn) {
-  const importMap = requireFn('src/import-map.ae243.js').default;
+  const importMap = requireFn('src/import-map.js').default;
   const pluginRequire = resolvePluginRequire();
 
   System.warmup({
     importMap: importMap,
-    importMapUrl: 'src/import-map.ae243.js',
+    importMapUrl: 'src/import-map.js',
     defaultHandler: function defaultRequire(modulePath) {
       const normalizedRequirePath = normalizeRuntimeModulePath(modulePath);
       requireFn(normalizedRequirePath);

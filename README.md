@@ -31,6 +31,12 @@ npm run wechat:official:check -- --skip-cli --skip-package-check
 
 ```bash
 npm run guardrails
+npm run source:migrate-runtime:clean
+npm run source:build
+npm run reconstruct:maintainable -- --dry-run
+npm run reconstruct:maintainable:clean
+npm run runtime:repack-from-source -- --dry-run
+npm run cocos:build:wechat
 npm run assets:check-config-integrity
 npm run assets:prune-legacy-hash-layout
 npm run wechat:code-package:check
@@ -39,6 +45,29 @@ npm run wechat:official:fix
 npm run wechat:test:doctor
 npm run wechat:test:run
 ```
+
+## 可维护重建
+
+- `npm run reconstruct:maintainable -- --dry-run`：预演重建，不改动文件。
+- `npm run reconstruct:maintainable:clean`：清空并重建 `reconstructed-project/`。
+- `npm run runtime:repack-from-source`：将 `source-project/runtime-modules` 回封装到 `runtime/gamejs-modules`，用于保持可运行。
+- 产物包含：
+  - `reconstructed-project/assets-restored/`（哈希资源按路径恢复）
+  - `reconstructed-project/source/runtime-modules/`（runtime 模块按 moduleId 还原）
+  - `reconstructed-project/reports/`（重建映射与摘要）
+
+## Source-First 开发流
+
+- `npm run source:migrate-runtime:clean`：将 `runtime/gamejs-modules` 迁移为可读源码到 `source-project/runtime-modules`。
+- `npm run runtime:repack-from-source`：把 `source-project/runtime-modules` 回封装到运行目录。
+- `npm run source:build`：执行去 hash 同步、从 `source-project` 回封装、guardrails 全链路校验（不会覆盖源码）。
+
+## Cocos 构建到微信可玩包
+
+- `npm run cocos:build:wechat`：
+  - 先触发 Cocos Creator 3.8.7 的 `wechatgame` 构建（用于验证 Creator 构建链路可用）。
+  - 然后将当前仓库可玩运行时包同步到 `build/wechatgame/`。
+  - 结果可直接导入微信开发者工具继续游玩主流程。
 
 ## 维护说明
 

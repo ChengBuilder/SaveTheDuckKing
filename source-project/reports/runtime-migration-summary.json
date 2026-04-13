@@ -1,0 +1,12 @@
+{
+  "generatedAt": "2026-04-13T09:51:11.266Z",
+  "manifest": "runtime/gamejs-modules/manifest.json",
+  "output": "source-project/runtime-modules",
+  "totalEntries": 48,
+  "convertedCount": 46,
+  "passthroughCount": 2,
+  "missingSourceCount": 0,
+  "collisionCount": 0,
+  "missingSource": [],
+  "collisions": []
+}

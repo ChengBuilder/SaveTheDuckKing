@@ -49,11 +49,13 @@ const REQUIRED_ROOT_BUNDLE_SHELLS = Object.freeze([
   'assets/start-scenebundle'
 ]);
 const ALLOWED_ASSETS_ROOT_DIRECTORIES = Object.freeze(
-  REQUIRED_CANONICAL_ROOT_BUNDLES.concat(REQUIRED_ROOT_BUNDLE_SHELLS)
+  REQUIRED_CANONICAL_ROOT_BUNDLES.concat(REQUIRED_ROOT_BUNDLE_SHELLS, ['assets/scene'])
 );
 const THIN_SHELL_ALLOWED_FILES = Object.freeze([
   'config.json',
-  'index.js'
+  'index.js',
+  'config.json.meta',
+  'index.js.meta'
 ]);
 
 /**
@@ -337,6 +339,10 @@ function verifyThinShellRootBundle(layout, relativePath, errors) {
 
       if (entry.isDirectory()) {
         return true;
+      }
+
+      if (entry.name.endsWith('.meta')) {
+        return false;
       }
 
       return !entry.isFile() || THIN_SHELL_ALLOWED_FILES.indexOf(entry.name) === -1;

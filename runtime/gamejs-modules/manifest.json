@@ -165,34 +165,34 @@
     "filename": "mod__assets_start-scene_index.start-scene.js"
   },
   {
-    "moduleId": "cocos-js/_virtual_cc-cf1p7Jgo.js",
-    "runtimeModuleId": "runtime/gamejs-modules/cocos-js/_virtual_cc-cf1p7Jgo.js",
-    "filename": "mod__cocos-js_virtual_cc-cf1p7Jgo.js"
+    "moduleId": "cocos-js/_virtual_cc.js",
+    "runtimeModuleId": "runtime/gamejs-modules/cocos-js/_virtual_cc.js",
+    "filename": "mod__cocos-js_virtual_cc.js"
   },
   {
-    "moduleId": "cocos-js/cc.1e1cd.js",
-    "runtimeModuleId": "runtime/gamejs-modules/cocos-js/cc.1e1cd.js",
-    "filename": "mod__cocos-js_cc.1e1cd.js"
+    "moduleId": "cocos-js/cc.js",
+    "runtimeModuleId": "runtime/gamejs-modules/cocos-js/cc.js",
+    "filename": "mod__cocos-js_cc.js"
   },
   {
-    "moduleId": "cocos-js/spine-BGFFnNyc.js",
-    "runtimeModuleId": "runtime/gamejs-modules/cocos-js/spine-BGFFnNyc.js",
-    "filename": "mod__cocos-js_spine-BGFFnNyc.js"
+    "moduleId": "cocos-js/spine-wasm-path.js",
+    "runtimeModuleId": "runtime/gamejs-modules/cocos-js/spine-wasm-path.js",
+    "filename": "mod__cocos-js_spine-wasm-path.js"
   },
   {
-    "moduleId": "cocos-js/spine.asm-DxRECbrD.js",
-    "runtimeModuleId": "runtime/gamejs-modules/cocos-js/spine.asm-DxRECbrD.js",
-    "filename": "mod__cocos-js_spine.asm-DxRECbrD.js"
+    "moduleId": "cocos-js/spine-asmjs-factory.js",
+    "runtimeModuleId": "runtime/gamejs-modules/cocos-js/spine-asmjs-factory.js",
+    "filename": "mod__cocos-js_spine-asmjs-factory.js"
   },
   {
-    "moduleId": "cocos-js/spine.js-1Pcan4ap.js",
-    "runtimeModuleId": "runtime/gamejs-modules/cocos-js/spine.js-1Pcan4ap.js",
-    "filename": "mod__cocos-js_spine.js-1Pcan4ap.js"
+    "moduleId": "cocos-js/spine-asmjs-path.js",
+    "runtimeModuleId": "runtime/gamejs-modules/cocos-js/spine-asmjs-path.js",
+    "filename": "mod__cocos-js_spine-asmjs-path.js"
   },
   {
-    "moduleId": "cocos-js/spine.wasm-CKrzExoH.js",
-    "runtimeModuleId": "runtime/gamejs-modules/cocos-js/spine.wasm-CKrzExoH.js",
-    "filename": "mod__cocos-js_spine.wasm-CKrzExoH.js"
+    "moduleId": "cocos-js/spine-wasm-runtime.js",
+    "runtimeModuleId": "runtime/gamejs-modules/cocos-js/spine-wasm-runtime.js",
+    "filename": "mod__cocos-js_spine-wasm-runtime.js"
   },
   {
     "moduleId": "engine-adapter.js",
@@ -210,19 +210,19 @@
     "filename": "mod__src_chunks_game-scripts.js"
   },
   {
-    "moduleId": "src/import-map.ae243.js",
-    "runtimeModuleId": "runtime/gamejs-modules/src/import-map.ae243.js",
-    "filename": "mod__src_import-map.ae243.js"
+    "moduleId": "src/import-map.js",
+    "runtimeModuleId": "runtime/gamejs-modules/src/import-map.js",
+    "filename": "mod__src_import-map.js"
   },
   {
-    "moduleId": "src/polyfills.bundle.43263.js",
-    "runtimeModuleId": "runtime/gamejs-modules/src/polyfills.bundle.43263.js",
-    "filename": "mod__src_polyfills.bundle.43263.js"
+    "moduleId": "src/polyfills.bundle.js",
+    "runtimeModuleId": "runtime/gamejs-modules/src/polyfills.bundle.js",
+    "filename": "mod__src_polyfills.bundle.js"
   },
   {
-    "moduleId": "src/system.bundle.f45da.js",
-    "runtimeModuleId": "runtime/gamejs-modules/src/system.bundle.f45da.js",
-    "filename": "mod__src_system.bundle.f45da.js"
+    "moduleId": "src/system.bundle.js",
+    "runtimeModuleId": "runtime/gamejs-modules/src/system.bundle.js",
+    "filename": "mod__src_system.bundle.js"
   },
   {
     "moduleId": "web-adapter.js",

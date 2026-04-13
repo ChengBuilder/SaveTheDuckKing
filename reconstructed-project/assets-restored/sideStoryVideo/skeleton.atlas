@@ -1,0 +1,254 @@
+
+skeleton.png
+size: 2045,1757
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+xx
+  rotate: false
+  xy: 44, 1657
+  size: 103, 98
+  orig: 103, 98
+  offset: 0, 0
+  index: -1
+人
+  rotate: true
+  xy: 850, 720
+  size: 339, 1009
+  orig: 339, 1009
+  offset: 0, 0
+  index: -1
+人10
+  rotate: true
+  xy: 652, 1462
+  size: 293, 846
+  orig: 293, 846
+  offset: 0, 0
+  index: -1
+人12
+  rotate: true
+  xy: 2, 35
+  size: 342, 1014
+  orig: 342, 1014
+  offset: 0, 0
+  index: -1
+人3
+  rotate: true
+  xy: 1018, 2
+  size: 375, 1025
+  orig: 375, 1025
+  offset: 0, 0
+  index: -1
+人8
+  rotate: true
+  xy: 824, 379
+  size: 339, 1009
+  orig: 339, 1009
+  offset: 0, 0
+  index: -1
+圈
+  rotate: false
+  xy: 436, 1541
+  size: 214, 214
+  orig: 214, 214
+  offset: 0, 0
+  index: -1
+手2
+  rotate: true
+  xy: 2, 402
+  size: 379, 820
+  orig: 423, 866
+  offset: 44, 46
+  index: -1
+找出第3者
+  rotate: false
+  xy: 2, 783
+  size: 846, 378
+  orig: 846, 378
+  offset: 0, 0
+  index: -1
+投影
+  rotate: false
+  xy: 149, 1638
+  size: 285, 117
+  orig: 312, 127
+  offset: 22, 5
+  index: -1
+抖1
+  rotate: true
+  xy: 2, 1163
+  size: 297, 1002
+  orig: 298, 1002
+  offset: 0, 0
+  index: -1
+抖2
+  rotate: true
+  xy: 1006, 1061
+  size: 299, 1002
+  orig: 299, 1002
+  offset: 0, 0
+  index: -1
+汗
+  rotate: true
+  xy: 2, 1727
+  size: 28, 40
+  orig: 28, 40
+  offset: 0, 0
+  index: -1
+纹理
+  rotate: false
+  xy: 1500, 1362
+  size: 416, 393
+  orig: 416, 393
+  offset: 0, 0
+  index: -1
+
+skeleton2.png
+size: 2023,1782
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+人11
+  rotate: true
+  xy: 2, 979
+  size: 416, 834
+  orig: 416, 834
+  offset: 0, 0
+  index: -1
+人13
+  rotate: true
+  xy: 493, 59
+  size: 475, 807
+  orig: 475, 807
+  offset: 0, 0
+  index: -1
+人2
+  rotate: true
+  xy: 2, 1397
+  size: 383, 968
+  orig: 383, 968
+  offset: 0, 0
+  index: -1
+人4
+  rotate: true
+  xy: 1030, 536
+  size: 440, 991
+  orig: 440, 991
+  offset: 0, 0
+  index: -1
+人5
+  rotate: true
+  xy: 972, 1385
+  size: 395, 984
+  orig: 413, 984
+  offset: 0, 0
+  index: -1
+人7
+  rotate: true
+  xy: 2, 547
+  size: 429, 1026
+  orig: 429, 1026
+  offset: 0, 0
+  index: -1
+人9
+  rotate: true
+  xy: 838, 978
+  size: 405, 1077
+  orig: 417, 1077
+  offset: 12, 0
+  index: -1
+弹窗
+  rotate: false
+  xy: 2, 93
+  size: 489, 452
+  orig: 489, 452
+  offset: 0, 0
+  index: -1
+抖3
+  rotate: true
+  xy: 1302, 2
+  size: 532, 627
+  orig: 532, 629
+  offset: 0, 1
+  index: -1
+
+skeleton3.png
+size: 1913,1678
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+人14
+  rotate: true
+  xy: 2, 1201
+  size: 475, 807
+  orig: 475, 807
+  offset: 0, 0
+  index: -1
+人6
+  rotate: true
+  xy: 811, 1147
+  size: 529, 1016
+  orig: 529, 1016
+  offset: 0, 0
+  index: -1
+光2
+  rotate: true
+  xy: 2, 2
+  size: 601, 1909
+  orig: 608, 1912
+  offset: 3, 3
+  index: -1
+抖4
+  rotate: true
+  xy: 2, 665
+  size: 534, 641
+  orig: 535, 643
+  offset: 1, 1
+  index: -1
+组 19
+  rotate: true
+  xy: 645, 605
+  size: 540, 1200
+  orig: 540, 1200
+  offset: 0, 0
+  index: -1
+
+skeleton4.png
+size: 1529,1665
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+光
+  rotate: false
+  xy: 2, 2
+  size: 803, 1661
+  orig: 816, 1668
+  offset: 7, 7
+  index: -1
+直玩图
+  rotate: false
+  xy: 807, 63
+  size: 720, 1600
+  orig: 720, 1600
+  offset: 0, 0
+  index: -1
+
+skeleton5.png
+size: 1706,1201
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+手
+  rotate: false
+  xy: 863, 33
+  size: 841, 1166
+  orig: 861, 1226
+  offset: 0, 60
+  index: -1
+手3
+  rotate: false
+  xy: 2, 2
+  size: 859, 1197
+  orig: 859, 1197
+  offset: 0, 0
+  index: -1

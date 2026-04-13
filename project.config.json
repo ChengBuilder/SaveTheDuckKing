@@ -32,6 +32,18 @@
       },
       {
         "type": "folder",
+        "value": "architecture/reports"
+      },
+      {
+        "type": "folder",
+        "value": "source-project"
+      },
+      {
+        "type": "folder",
+        "value": "reconstructed-project"
+      },
+      {
+        "type": "folder",
         "value": "wechat-test"
       },
       {

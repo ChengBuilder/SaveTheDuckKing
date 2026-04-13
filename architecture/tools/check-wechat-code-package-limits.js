@@ -36,7 +36,9 @@ function main() {
   const jsonOnly = args.includes('--json');
   const layout = resolveProjectLayout(__dirname);
   const gameConfig = readJson(layout, 'game.json');
-  const report = buildCodePackageReport(layout, gameConfig);
+  const projectConfig = readOptionalJson(layout, 'project.config.json') || {};
+  const ignoreRules = buildPackIgnoreRules(projectConfig);
+  const report = buildCodePackageReport(layout, gameConfig, ignoreRules);
 
   writeReportFiles(layout, report);
 
@@ -51,7 +53,7 @@ function main() {
   }
 }
 
-function buildCodePackageReport(layout, gameConfig) {
+function buildCodePackageReport(layout, gameConfig, ignoreRules) {
   const subpackages = resolveSubpackages(gameConfig);
   const mainEntryPaths = collectMainPackageEntries(gameConfig);
   const mainPackage = summarizePackage(layout, {
@@ -60,7 +62,8 @@ function buildCodePackageReport(layout, gameConfig) {
     limitBytes: MAIN_PACKAGE_LIMIT_BYTES,
     category: 'main',
     entryPaths: mainEntryPaths,
-    independent: false
+    independent: false,
+    ignoreRules: ignoreRules
   });
   const subpackageReports = subpackages.map(function mapSubpackage(subpackage) {
     return summarizePackage(layout, {
@@ -69,10 +72,11 @@ function buildCodePackageReport(layout, gameConfig) {
       limitBytes: subpackage.independent ? INDEPENDENT_SUBPACKAGE_LIMIT_BYTES : null,
       category: subpackage.independent ? 'independent-subpackage' : 'subpackage',
       entryPaths: [subpackage.root],
-      independent: Boolean(subpackage.independent)
+      independent: Boolean(subpackage.independent),
+      ignoreRules: ignoreRules
     });
   });
-  const workerPackage = resolveWorkerPackageReport(layout, gameConfig);
+  const workerPackage = resolveWorkerPackageReport(layout, gameConfig, ignoreRules);
   const packageReports = [mainPackage].concat(subpackageReports);
   if (workerPackage) {
     packageReports.push(workerPackage);
@@ -130,7 +134,7 @@ function collectMainPackageEntries(gameConfig) {
   return Array.from(entrySet).sort();
 }
 
-function resolveWorkerPackageReport(layout, gameConfig) {
+function resolveWorkerPackageReport(layout, gameConfig, ignoreRules) {
   const workersConfig = gameConfig.workers;
   if (!workersConfig || typeof workersConfig !== 'object' || !workersConfig.isSubpackage) {
     return null;
@@ -147,12 +151,13 @@ function resolveWorkerPackageReport(layout, gameConfig) {
     limitBytes: null,
     category: 'worker-subpackage',
     entryPaths: [workerPath],
-    independent: false
+    independent: false,
+    ignoreRules: ignoreRules
   });
 }
 
 function summarizePackage(layout, packageSpec) {
-  const files = collectFiles(layout, packageSpec.entryPaths);
+  const files = collectFiles(layout, packageSpec.entryPaths, packageSpec.ignoreRules);
   const sizeBytes = files.reduce(function sumBytes(total, file) {
     return total + file.sizeBytes;
   }, 0);
@@ -175,7 +180,7 @@ function summarizePackage(layout, packageSpec) {
   };
 }
 
-function collectFiles(layout, entryPaths) {
+function collectFiles(layout, entryPaths, ignoreRules) {
   const fileMap = new Map();
 
   for (const entryPath of entryPaths) {
@@ -190,12 +195,15 @@ function collectFiles(layout, entryPaths) {
     }
 
     const entryStat = fs.statSync(absoluteEntryPath);
+    if (shouldIgnoreByPackOptions(normalizedEntryPath, entryStat.isDirectory(), ignoreRules)) {
+      continue;
+    }
     if (entryStat.isFile()) {
       fileMap.set(normalizedEntryPath, buildFileRecord(layout, absoluteEntryPath));
       continue;
     }
 
-    walkDirectory(layout, absoluteEntryPath, fileMap);
+    walkDirectory(layout, absoluteEntryPath, fileMap, ignoreRules);
   }
 
   return Array.from(fileMap.values()).sort(function compareFileRecord(left, right) {
@@ -203,19 +211,22 @@ function collectFiles(layout, entryPaths) {
   });
 }
 
-function walkDirectory(layout, directoryPath, fileMap) {
+function walkDirectory(layout, directoryPath, fileMap, ignoreRules) {
   const entries = fs.readdirSync(directoryPath, { withFileTypes: true });
   for (const entry of entries) {
     const absoluteEntryPath = path.join(directoryPath, entry.name);
+    const relativeProjectPath = normalizePath(path.relative(layout.projectRoot, absoluteEntryPath));
+    if (shouldIgnoreByPackOptions(relativeProjectPath, entry.isDirectory(), ignoreRules)) {
+      continue;
+    }
     if (entry.isDirectory()) {
-      walkDirectory(layout, absoluteEntryPath, fileMap);
+      walkDirectory(layout, absoluteEntryPath, fileMap, ignoreRules);
       continue;
     }
     if (!entry.isFile()) {
       continue;
     }
 
-    const relativeProjectPath = normalizePath(path.relative(layout.projectRoot, absoluteEntryPath));
     fileMap.set(relativeProjectPath, buildFileRecord(layout, absoluteEntryPath));
   }
 }
@@ -365,6 +376,70 @@ function printHumanSummary(layout, report) {
 function readJson(layout, relativePath) {
   const absolutePath = resolveProjectFilePath(layout, relativePath);
   return JSON.parse(fs.readFileSync(absolutePath, 'utf8'));
+}
+
+function readOptionalJson(layout, relativePath) {
+  const absolutePath = resolveProjectFilePath(layout, relativePath);
+  if (!fs.existsSync(absolutePath)) {
+    return null;
+  }
+  return JSON.parse(fs.readFileSync(absolutePath, 'utf8'));
+}
+
+function buildPackIgnoreRules(projectConfig) {
+  const result = {
+    ignoreFolders: [],
+    ignoreFiles: new Set()
+  };
+  const ignoreList =
+    projectConfig &&
+    projectConfig.packOptions &&
+    Array.isArray(projectConfig.packOptions.ignore)
+      ? projectConfig.packOptions.ignore
+      : [];
+
+  for (const item of ignoreList) {
+    if (!item || typeof item !== 'object') {
+      continue;
+    }
+    const type = String(item.type || '').trim().toLowerCase();
+    const value = trimSlashes(item.value);
+    if (!value) {
+      continue;
+    }
+    if (type === 'folder') {
+      result.ignoreFolders.push(value);
+    } else if (type === 'file') {
+      result.ignoreFiles.add(value);
+    }
+  }
+
+  result.ignoreFolders.sort(function (left, right) {
+    return right.length - left.length;
+  });
+  return result;
+}
+
+function shouldIgnoreByPackOptions(relativePath, isDirectory, ignoreRules) {
+  if (!ignoreRules) {
+    return false;
+  }
+  const normalizedPath = trimSlashes(relativePath);
+  if (!normalizedPath) {
+    return false;
+  }
+  if (!isDirectory && ignoreRules.ignoreFiles && ignoreRules.ignoreFiles.has(normalizedPath)) {
+    return true;
+  }
+  if (!Array.isArray(ignoreRules.ignoreFolders) || ignoreRules.ignoreFolders.length === 0) {
+    return false;
+  }
+  for (const folderPath of ignoreRules.ignoreFolders) {
+    if (normalizedPath === folderPath || normalizedPath.startsWith(folderPath + '/')) {
+      return true;
+    }
+  }
+  return false;
 }
 
 function trimSlashes(input) {
