@@ -73,6 +73,8 @@ function buildGuardrailSteps(layout) {
     createSyntaxCheckStep(layout, '语义化共享工具语法检查', 'architecture/tools/semanticize-shared.js'),
     createSyntaxCheckStep(layout, 'audioBundle legacy 语义化工具语法检查', 'architecture/tools/semanticize-audiobundle-legacy-assets.js'),
     createSyntaxCheckStep(layout, 'aniBundle 路径语义化工具语法检查', 'architecture/tools/semanticize-anibundle-path-assets.js'),
+    createSyntaxCheckStep(layout, '配置资源完整性校验工具语法检查', 'architecture/tools/check-config-version-asset-integrity.js'),
+    createSyntaxCheckStep(layout, '旧哈希布局清理工具语法检查', 'architecture/tools/prune-legacy-hash-layout.js'),
     createSyntaxCheckStep(layout, 'unused safe-ignore 同步工具语法检查', 'architecture/tools/sync-safe-ignore-from-analyse.js'),
     createSyntaxCheckStep(layout, '关键 JSON 格式化工具语法检查', 'architecture/tools/format-project-json.js'),
     createSyntaxCheckStep(layout, 'Bundle 资产目录工具语法检查', 'architecture/tools/generate-bundle-asset-catalog.js'),
@@ -108,6 +110,7 @@ function buildGuardrailSteps(layout) {
     createScriptStep(layout, 'URL 编码路径校验', 'architecture/tools/check-no-url-encoded-paths.js'),
     createScriptStep(layout, '审计时间戳护栏', 'architecture/tools/check-no-volatile-report-timestamps.js'),
     createScriptStep(layout, '微信小游戏结构校验', 'architecture/tools/verify-wechat-minigame-structure.js'),
+    createScriptStep(layout, '配置资源完整性校验', 'architecture/tools/check-config-version-asset-integrity.js'),
     createScriptStep(layout, '微信代码包体检查', 'architecture/tools/check-wechat-code-package-limits.js'),
     createScriptStep(layout, '旧运行时路径护栏', 'architecture/tools/check-legacy-runtime-compat.js'),
     createScriptStep(layout, '运行安全校验', 'architecture/tools/verify-runtime-safety.js')

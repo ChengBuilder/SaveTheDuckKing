@@ -6,6 +6,8 @@
     "guardrails": "node architecture/tools/run-guardrails.js",
     "gamejs:split": "node architecture/tools/split-gamejs-into-modules.js",
     "assets:backfill-original": "node architecture/tools/backfill-original-asset-layout.js",
+    "assets:prune-legacy-hash-layout": "node architecture/tools/prune-legacy-hash-layout.js",
+    "assets:check-config-integrity": "node architecture/tools/check-config-version-asset-integrity.js --strict-shard",
     "deobfuscation:audit": "node architecture/tools/generate-gamejs-deobfuscation-audit.js",
     "wechat:code-package:check": "node architecture/tools/check-wechat-code-package-limits.js",
     "wechat:official:check": "node architecture/tools/run-wechat-official-checks.js",
