@@ -1,0 +1,39 @@
+{
+  "deviceOrientation": "portrait",
+  "networkTimeout": {
+    "request": 5000,
+    "connectSocket": 5000,
+    "uploadFile": 5000,
+    "downloadFile": 500000
+  },
+  "subPackages": [
+    {
+      "name": "resources",
+      "root": "subpackages/resources/"
+    },
+    {
+      "name": "main",
+      "root": "subpackages/main/"
+    },
+    {
+      "name": "aniBundle",
+      "root": "subpackages/aniBundle/"
+    },
+    {
+      "name": "audioBundle",
+      "root": "subpackages/audioBundle/"
+    },
+    {
+      "name": "DuckBundle",
+      "root": "subpackages/DuckBundle/"
+    },
+    {
+      "name": "HomeBundle",
+      "root": "subpackages/HomeBundle/"
+    },
+    {
+      "name": "uiBundle",
+      "root": "subpackages/uiBundle/"
+    }
+  ]
+}

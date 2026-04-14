@@ -1,25 +1,117 @@
 {
+  "description": "WeChat mini game project.",
+  "packOptions": {
+    "ignore": [
+      {
+        "value": ".git",
+        "type": "folder"
+      },
+      {
+        "value": ".idea",
+        "type": "folder"
+      },
+      {
+        "value": "architecture/docs",
+        "type": "folder"
+      },
+      {
+        "value": "architecture/generated",
+        "type": "folder"
+      },
+      {
+        "value": "architecture/memory",
+        "type": "folder"
+      },
+      {
+        "value": "architecture/skills",
+        "type": "folder"
+      },
+      {
+        "value": "architecture/tools",
+        "type": "folder"
+      },
+      {
+        "value": "architecture/reports",
+        "type": "folder"
+      },
+      {
+        "value": "source-project",
+        "type": "folder"
+      },
+      {
+        "value": "reconstructed-project",
+        "type": "folder"
+      },
+      {
+        "value": "wechat-test",
+        "type": "folder"
+      },
+      {
+        "value": "tools",
+        "type": "folder"
+      },
+      {
+        "value": "README.md",
+        "type": "file"
+      },
+      {
+        "value": "analyse-data.json",
+        "type": "file"
+      },
+      {
+        "value": "architecture/README.md",
+        "type": "file"
+      },
+      {
+        "value": "package-lock.json",
+        "type": "file"
+      },
+      {
+        "value": "package.json",
+        "type": "file"
+      },
+      {
+        "value": "project.private.config.json",
+        "type": "file"
+      }
+    ],
+    "include": []
+  },
   "setting": {
+    "urlCheck": false,
     "es6": true,
-    "postcss": true,
-    "minified": true,
-    "uglifyFileName": false,
     "enhance": true,
+    "postcss": false,
+    "minified": true,
+    "ignoreUploadUnusedFiles": true,
+    "compileHotReLoad": false,
+    "compileWorklet": false,
+    "uglifyFileName": false,
+    "uploadWithSourceMap": true,
+    "packNpmManually": false,
     "packNpmRelationList": [],
+    "minifyWXSS": true,
+    "minifyWXML": true,
+    "localPlugins": false,
+    "disableUseStrict": false,
+    "useCompilerPlugins": false,
+    "condition": false,
+    "swc": false,
+    "disableSWC": true,
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],
       "outputPath": ""
     },
-    "useCompilerPlugins": false
+    "ignoreDevUnusedFiles": true
   },
   "compileType": "game",
+  "libVersion": "3.15.1",
+  "appid": "wx6ac3f5090a6b99c5",
+  "projectname": "duck_game",
+  "simulatorType": "game",
+  "condition": {},
+  "isGameTourist": true,
   "simulatorPluginLibVersion": {},
-  "packOptions": {
-    "ignore": [],
-    "include": []
-  },
-  "isGameTourist": false,
-  "appid": "wx22d5e8134148a4f7",
   "editorSetting": {}
 }

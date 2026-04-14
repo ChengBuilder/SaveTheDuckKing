@@ -22,3 +22,6 @@ wechat-ci-output/
 
 # MiniGameTest 官方 SDK 安装包
 wechat-test/minigametest/vendor/*.tgz
+
+# 本地 Cocos MCP 扩展仓库（独立维护，不作为主仓库子模块提交）
+reconstructed-project/extensions/cocos-mcp-server/

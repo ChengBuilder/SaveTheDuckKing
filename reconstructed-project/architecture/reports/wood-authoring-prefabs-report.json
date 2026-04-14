@@ -1,0 +1,31 @@
+{
+  "generatedAt": "2026-04-13T14:58:49.938Z",
+  "sourceBlueprint": "assets/data/gameplay/wood/wood-prefab-blueprints.json",
+  "authoringHostTypeId": "f2306H5b8ZOC5t/IRvx/Hhb",
+  "generated": [
+    {
+      "woodType": 2,
+      "prefab": "assets/prefabs/gameplay/wood/wood2.prefab",
+      "meta": "assets/prefabs/gameplay/wood/wood2.prefab.meta",
+      "uuid": "45d86a1d-55ff-449e-10a6-b9a25ace6bfd"
+    },
+    {
+      "woodType": 11,
+      "prefab": "assets/prefabs/gameplay/wood/wood11.prefab",
+      "meta": "assets/prefabs/gameplay/wood/wood11.prefab.meta",
+      "uuid": "2923f5e8-c41a-9a33-03a7-93176428cae1"
+    },
+    {
+      "woodType": 37,
+      "prefab": "assets/prefabs/gameplay/wood/wood37.prefab",
+      "meta": "assets/prefabs/gameplay/wood/wood37.prefab.meta",
+      "uuid": "191e6eab-91e0-d700-2860-6c18a37cc9bd"
+    },
+    {
+      "woodType": 42,
+      "prefab": "assets/prefabs/gameplay/wood/wood42.prefab",
+      "meta": "assets/prefabs/gameplay/wood/wood42.prefab.meta",
+      "uuid": "25c83f68-fe28-8bdb-4848-542c4a863634"
+    }
+  ]
+}

@@ -14,6 +14,7 @@
 - `npm run guardrails` 通过。
 - `npm run wechat:official:check -- --skip-cli --skip-package-check` 通过。
 - 主流程资源完整性校验通过（无 import/native 缺失）。
+- `DuckController.CreateWoodInformation` 已对齐到命名 helper 流程，修正 revive 木板规划中的反编译残留分支（`case 8` 漏 `break`、`37/42` 分支误写为赋值）。
 
 ## 重要说明
 - `reconstructed-project/` 是“重建中间产物”，用于还原分析与迁移，不是当前运行入口。

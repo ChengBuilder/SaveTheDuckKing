@@ -1,0 +1,54 @@
+{
+  "bundles": {
+    "audioBundle": {
+      "dir": "subpackages/audioBundle"
+    },
+    "DuckBundle": {
+      "dir": "subpackages/DuckBundle"
+    }
+  },
+  "assets": [
+    {
+      "bundle": "audioBundle",
+      "kind": "audioClip",
+      "assetPath": "duckGame/woodAssembleLead",
+      "target": "assets/audio/gameplay/revive/woodAssembleLead.mp3"
+    },
+    {
+      "bundle": "audioBundle",
+      "kind": "audioClip",
+      "assetPath": "duckGame/woodAssembleFollow",
+      "target": "assets/audio/gameplay/revive/woodAssembleFollow.mp3"
+    },
+    {
+      "bundle": "audioBundle",
+      "kind": "audioClip",
+      "assetPath": "duckGame/woodCollision",
+      "target": "assets/audio/gameplay/revive/woodCollision.mp3"
+    },
+    {
+      "bundle": "DuckBundle",
+      "kind": "imageAsset",
+      "assetPath": "tex/wood/grayWood/grayWood2",
+      "target": "assets/textures/gameplay/wood/grayWood/grayWood2.png"
+    },
+    {
+      "bundle": "DuckBundle",
+      "kind": "imageAsset",
+      "assetPath": "tex/wood/grayWood/grayWood11",
+      "target": "assets/textures/gameplay/wood/grayWood/grayWood11.png"
+    },
+    {
+      "bundle": "DuckBundle",
+      "kind": "imageAsset",
+      "assetPath": "tex/wood/grayWood/grayWood37",
+      "target": "assets/textures/gameplay/wood/grayWood/grayWood37.png"
+    },
+    {
+      "bundle": "DuckBundle",
+      "kind": "imageAsset",
+      "assetPath": "tex/wood/grayWood/grayWood42",
+      "target": "assets/textures/gameplay/wood/grayWood/grayWood42.png"
+    }
+  ]
+}
