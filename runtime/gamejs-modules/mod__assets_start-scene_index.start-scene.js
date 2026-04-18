@@ -5962,7 +5962,7 @@ define("runtime/gamejs-modules/assets/start-scene/index.start-scene.js", functio
 
                         if (currentLevel == 2) {
                           var levelTwoTypes = [27, 8];
-                          woodType = levelTwoTypes[Util.getRandomNum(0, levelTwoTypes.length, true)];
+                          woodType = levelTwoTypes[Util.getRandomNum(0, levelTwoTypes.length - 1, true)];
                         }
 
                         var holeCount = getWoodHoleCountByType(woodType);

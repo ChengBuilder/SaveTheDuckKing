@@ -5957,7 +5957,7 @@
 
                       if (currentLevel == 2) {
                         var levelTwoTypes = [27, 8];
-                        woodType = levelTwoTypes[Util.getRandomNum(0, levelTwoTypes.length, true)];
+                        woodType = levelTwoTypes[Util.getRandomNum(0, levelTwoTypes.length - 1, true)];
                       }
 
                       var holeCount = getWoodHoleCountByType(woodType);
